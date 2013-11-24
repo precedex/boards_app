@@ -9,7 +9,6 @@ describe "Static Pages" do
   end
   
   describe "Welcome page" do
-<<<<<<< HEAD
     before { visit root_path }
     let(:heading)    { 'Welcome' }
     it_should_behave_like "all static pages"
@@ -31,36 +30,6 @@ describe "Static Pages" do
     before { visit search_path }
     let(:heading)    { 'Search' }
     it_should_behave_like "all static pages"
-=======
-    
-    it "should have the content 'Welcome'" do
-      visit root_path
-      expect(page).to have_content('Welcome')
-    end
->>>>>>> layout1
   end
-    
-    describe "Feedback page" do
-    
-      it "should have the content 'Feedback'" do
-        visit feedback_path
-        expect(page).to have_content('Feedback')
-      end   
-    end
-    
-    describe "Resources page" do
-    
-      it "should have the content 'Resources'" do
-        visit feedback_path
-        expect(page).to have_content('Resources')
-      end   
-    end
-    
-    describe "Search page" do
-    
-      it "should have the content 'Search'" do
-        visit feedback_path
-        expect(page).to have_content('Search')
-      end   
-    end
 end
+
