@@ -2,7 +2,7 @@ BoardsApp::Application.routes.draw do
   get "resources/new"
   root  'static_pages#welcome'
   match '/feedback',  to: 'static_pages#feedback',  via: 'get'
-  match '/resources', to: 'static_pages#resources', via: 'get'
+ # match '/resources', to: 'static_pages#resources', via: 'get'
   match '/search',    to: 'static_pages#search',    via: 'get'
   
   resources :resources
