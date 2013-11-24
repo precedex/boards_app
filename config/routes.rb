@@ -3,7 +3,7 @@ BoardsApp::Application.routes.draw do
   match '/feedback',  to: 'static_pages#feedback',  via: 'get'
   match '/resources', to: 'static_pages#resources', via: 'get'
   match '/search',    to: 'static_pages#search',    via: 'get'
-     
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
