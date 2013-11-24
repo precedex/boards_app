@@ -1,4 +1,6 @@
 BoardsApp::Application.routes.draw do
+  resources :resources
+
    root   'static_pages#welcome'
    match  '/feedback', to: 'static_pages#feedback', via: 'get'
    match  '/resources', to: 'static_pages#resources', via: 'get'
