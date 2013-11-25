@@ -7,26 +7,26 @@
 	}
 	
 	table tr td {
-		padding: 5px;
+		padding: 10px;
 		vertical-align:top;
 	}
 	
 	.list_image {
-		width: 60 px;
+		width:  60 px;
 		height: 70 px;
 	}
 	
 	.list_description {
-		width: 60%;
+		width: 100%;
 		
 		dl {
 			margin: 0;
 		}
 		
 		dt {
-			color: #244;
-			font-weight: bold;
-			font-size: larger;
+			color: #C44161;
+			font-weight: normal;
+			font-size: large;
 		}
 		
 		dd {
@@ -41,10 +41,10 @@
 	}
 
 	.list_line_even {
-		background: #e0f8f8;
+		background: #c3c3c3;
 	}
 	
 	.list_line_odd {
-		background: #f8b0f8;
+		background: #b1d5c0;
 	}
 }

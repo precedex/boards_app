@@ -1,4 +1,4 @@
-<h1>Listing resources</h1>
+<h1>Textbooks</h1>
 
 <table>
     <% @resources.each do |resource| %>
@@ -7,8 +7,9 @@
 			  <%= image_tag(resource.image_url, class: 'list_image') %>
 		  </td>
 		  <td class="list_description">
-			  <dl>
-				  <dt><%= resource.title %></dt>
+			  <dl> 
+				  <a href="<%= resource.link %>">
+				  <dt><%= resource.title %></a></dt>
 				  <dd><%= resource.authors %></dd><br/>
 				  <dd><%= resource.description %></dd>
 			  </dl>
