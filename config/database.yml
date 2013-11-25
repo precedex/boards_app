@@ -15,6 +15,8 @@ test:
 
 production:
   adapter: postgresql
+  host: localhost
+  user: precedex
   database: pg_database_production
   pool: 5
   timeout: 5000
