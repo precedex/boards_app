@@ -1,44 +1,18 @@
-Resource.delete_all
-
-Resource.create!(title: 'Basics of Anesthesia, 6th ed. (2011)',
-                 authors: "Ronald D. Miller, Manuel C. Pardo, Jr.",
-                 description: "My all-time favorite. This was assigned reading during my first month of residency. I consistently used this book for reference and review throughout my training. It is the condensed version of the field's most comprehensive textbook, Miller's Anesthesia, and is affectionately referred to in the community as 'Baby Miller'.",
-                 image_url: 'baby_miller.jpg',
-                 edition: 6,
-                 year: 2011,
-                 link: "http://www.amazon.com/Basics-Anesthesia-Expert-Consult-Online/dp/1437716148/ref=sr_1_1?ie=UTF8&qid=1385336065&sr=8-1&keywords=basics+of+anesthesia")
-                 
-Resource.create!(title: 'Morgan & Mikhail\'s Clinical Anesthesiology, 5th ed. (2013)',
-                 authors: "John F. Butterworth, David C. Mackey, John D. Wasnick",
-                 description: "everyone and their sister read this book.",
-                 image_url: 'morgan_mikhail.jpg',
-                 edition: 5,
-                 year: 2013,
-                 link: "http://www.amazon.com/Morgan-Mikhails-Clinical-Anesthesiology-Medical/dp/0071627030/ref=sr_1_1?ie=UTF8&qid=1385336644&sr=8-1&keywords=morgan+mikhail")
-                
-Resource.create!(title: 'Clinical Cases in Anesthesia, 4th ed. (2014)',
-                 authors: "Allen P. Reed, Francine S. Yudkowitz",
-                 description: "everyone and their brother read this book.",
-                 image_url: 'clinical_cases.jpg',
-                 edition: 4,
-                 year: 2014,
-                 link: "http://www.amazon.com/Clinical-Cases-Anesthesia-Expert-Consult/dp/1455704121/ref=sr_1_1?ie=UTF8&qid=1385337279&sr=8-1&keywords=clinical+cases+reed")
-                 
 text = ''
-File.open(File.join(Rails.root, 'db', '1990_A.txt')).each {|line| text << line}
-File.open(File.join(Rails.root, 'db', '1990_B.txt')).each {|line| text << line}
-File.open(File.join(Rails.root, 'db', '1991_A.txt')).each {|line| text << line}
-File.open(File.join(Rails.root, 'db', '1991_B.txt')).each {|line| text << line}
-File.open(File.join(Rails.root, 'db', '1992_A.txt')).each {|line| text << line}
-File.open(File.join(Rails.root, 'db', '1992_B.txt')).each {|line| text << line}
-File.open(File.join(Rails.root, 'db', '1993_A.txt')).each {|line| text << line}
-File.open(File.join(Rails.root, 'db', '1993_B.txt')).each {|line| text << line}
-File.open(File.join(Rails.root, 'db', '1994_A.txt')).each {|line| text << line}
-File.open(File.join(Rails.root, 'db', '1994_B.txt')).each {|line| text << line}
-File.open(File.join(Rails.root, 'db', '1995_A.txt')).each {|line| text << line}
-File.open(File.join(Rails.root, 'db', '1995_B.txt')).each {|line| text << line}
-File.open(File.join(Rails.root, 'db', '1996_A.txt')).each {|line| text << line}
-File.open(File.join(Rails.root, 'db', '1996_B.txt')).each {|line| text << line}
+File.open("1990_A.txt").each {|line| text << line}
+File.open("1990_B.txt").each {|line| text << line}
+File.open("1991_A.txt").each {|line| text << line}
+File.open("1991_B.txt").each {|line| text << line}
+File.open("1992_A.txt").each {|line| text << line}
+File.open("1992_B.txt").each {|line| text << line}
+File.open("1993_A.txt").each {|line| text << line}
+File.open("1993_B.txt").each {|line| text << line}
+File.open("1994_A.txt").each {|line| text << line}
+File.open("1994_B.txt").each {|line| text << line}
+File.open("1995_A.txt").each {|line| text << line}
+File.open("1995_B.txt").each {|line| text << line}
+File.open("1996_A.txt").each {|line| text << line}
+File.open("1996_B.txt").each {|line| text << line}
 
 ALL_QUESTIONS = text
 
@@ -145,15 +119,4 @@ option_c = stemfinder.map {|i| i.delete_at(0)}
 option_d = stemfinder.map {|i| i.delete_at(0)}
 option_e = stemfinder.map {|i| i[0]}
 
-Question.delete_all
-0.upto(number_of_questions-1).each do |i|
-Question.create!(stem: stems[i],
-                 option_a: option_a[i],
-                 option_b: option_b[i],
-                 option_c: option_c[i],
-                 option_d: option_d[i],
-                 option_e: option_e[i],
-                 answer: ANSWER_KEY[i])
-               end                            
-                 
-            
+puts option_e.inspect
