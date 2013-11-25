@@ -11,7 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131124230000) do
+ActiveRecord::Schema.define(version: 20131125155120) do
+
+  create_table "questions", force: true do |t|
+    t.string   "stem"
+    t.string   "options"
+    t.string   "answer"
+    t.string   "topic"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "resources", force: true do |t|
     t.string   "title"
@@ -21,6 +30,8 @@ ActiveRecord::Schema.define(version: 20131124230000) do
     t.string   "link"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "edition"
+    t.integer  "year"
   end
 
 end

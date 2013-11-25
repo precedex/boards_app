@@ -1,5 +1,4 @@
 <h1>Textbooks</h1>
-
 <table>
     <% @resources.each do |resource| %>
       <tr class="<%= cycle('list_line_odd', 'list_line_even') %>">
@@ -10,6 +9,8 @@
 			  <dl> 
 				  <a href="<%= resource.link %>">
 				  <dt><%= resource.title %></a></dt>
+				  <dd style="font-size: x-small; font-weight: bold">
+					  latest edition: <%= resource.edition %> (<%= resource.year%>)</dd>
 				  <dd><%= resource.authors %></dd><br/>
 				  <dd><%= resource.description %></dd>
 			  </dl>

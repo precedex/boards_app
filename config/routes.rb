@@ -1,4 +1,6 @@
 BoardsApp::Application.routes.draw do
+  resources :questions
+
   resources :resources
 
    root   'static_pages#welcome'

@@ -1,0 +1,48 @@
+.questions {
+	table {
+		border-collapse: collapse;
+	}
+	
+	table tr td {
+		padding: 10px;
+		vertical-align:top;
+	}
+	
+	.list_image {
+		width:  60 px;
+		height: 70 px;
+	}
+	
+	.list_description {
+		width: 100%;
+		
+		dl {
+			margin: 0;
+		}
+		
+		dt {
+			color: #C44161;
+			font-weight: normal;
+			font-size: large;
+		}
+		
+		dd {
+			margin: 0;
+		}
+	}
+	
+	.list_actions {
+		font-size: x-small;
+		text-align: right;
+		padding-left: 1em;
+	}
+
+	.list_line_even {
+		background: #c3c3c3;
+	}
+	
+	.list_line_odd {
+		background: #b1d5c0;
+	}
+}
+
