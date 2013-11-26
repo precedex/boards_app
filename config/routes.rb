@@ -1,13 +1,21 @@
 BoardsApp::Application.routes.draw do
-  resources :questions
-
-  resources :resources
-
-   root   'static_pages#welcome'
-   match  '/feedback', to: 'static_pages#feedback', via: 'get'
-   match  '/resources', to: 'static_pages#resources', via: 'get'
-   match  '/search', to: 'questions#index', via: 'get'
   
+  root  'static_pages#welcome'
+  
+  get   '/resources/review_textbooks',    to: 'resources#index', :category => 'Review textbook'
+  get   '/resources/concise_textbooks',   to: 'resources#index', :category => 'Concise textbook'
+  get   '/resources/reference_textbooks', to: 'resources#index', :category => 'Reference textbook'
+  get   '/resources/qanda_textbooks',     to: 'resources#index', :category => 'Q&A book'
+  get   '/resources/case-based_textbooks',to: 'resources#index', :category => 'Case-based textbook'
+  get   '/resources/websites',            to: 'resources#index', :category => 'Website'
+  
+  get    '/feedback',  to: 'static_pages#feedback'
+  get    '/resources', to: 'resources#index'
+  get    '/search',    to: 'questions#index'
+  
+  resources :questions, :resources
+  
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

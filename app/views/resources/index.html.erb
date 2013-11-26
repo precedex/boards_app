@@ -1,4 +1,30 @@
-<h1>Textbooks</h1>
+<h1><a href = /resources>Resources</a></h1>
+
+<p><a href= /resources/review_textbooks>
+Review textbooks</a>
+</p>
+
+<p><a href= /resources/concise_textbooks>
+Concise textbooks</a>
+</p>
+
+<p><a href= /resources/reference_textbooks>
+Reference textbooks</a>
+</p>
+
+<p><a href= /resources/qanda_textbooks>
+Q&A textbooks</a>
+</p>
+
+<p><a href= /resources/case-based_textbooks>
+Case-based textbooks</a>
+</p>
+
+<p><a href= /resources/websites>
+Websites</a>
+
+
+<h1><%=params[:category] %>s</h1>
 <table>
     <% @resources.each do |resource| %>
       <tr class="<%= cycle('list_line_odd', 'list_line_even') %>">

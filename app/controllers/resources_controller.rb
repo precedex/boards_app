@@ -1,15 +1,15 @@
 class ResourcesController < ApplicationController
   before_action :set_resource, only: [:show, :edit, :update, :destroy]
-
+  
   def index
-   @resources = Resource.all
-   #@resources = Resource.search(params[:search])
+    if params[:category].nil?
+      params[:category] = "All resource"
+      @resources = Resource.all
+    else 
+      @resources = Resource.where("category = ?", params[:category])
+    end
   end
   
-  def search
-    @resources = Resource.search(params[:search])
-  end
-
   def show
   end
 
