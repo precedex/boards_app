@@ -5,6 +5,7 @@ BoardsApp::Application.routes.draw do
   get   '/resources/review_textbooks',    to: 'resources#index', :category => 'Review textbook'
   get   '/resources/concise_textbooks',   to: 'resources#index', :category => 'Concise textbook'
   get   '/resources/reference_textbooks', to: 'resources#index', :category => 'Reference textbook'
+  get   '/resources/pediatric_textbooks', to: 'resources#index', :category => 'Pediatric textbook'
   get   '/resources/qanda_textbooks',     to: 'resources#index', :category => 'Q&A book'
   get   '/resources/case-based_textbooks',to: 'resources#index', :category => 'Case-based textbook'
   get   '/resources/websites',            to: 'resources#index', :category => 'Website'
