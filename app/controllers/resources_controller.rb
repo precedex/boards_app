@@ -4,9 +4,9 @@ class ResourcesController < ApplicationController
   def index
     if params[:category].nil?
       params[:category] = "All resource"
-      @resources = Resource.all
+      @resources = Resource.all.order(:title)
     else 
-      @resources = Resource.where("category = ?", params[:category])
+      @resources = Resource.where("category = ?", params[:category]).order(:title)
     end
   end
   
