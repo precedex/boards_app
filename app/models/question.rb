@@ -2,9 +2,9 @@ class Question < ActiveRecord::Base
   
   def self.search(search)
     if search
-      find(:all, :conditions => ['stem LIKE ?', "%#{search}%"])
+      Question.where('stem LIKE ?', "%#{search}%").all
     else
-      find(:all)
+      Question.all
     end
   end  
 end
