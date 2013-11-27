@@ -3,9 +3,12 @@
 <%= form_tag questions_path, :method => 'get' do %>
 <p>
 	<%= text_field_tag :search, params[:search] %>
-	<%= submit_tag "Search", :name => nil %>
+	<%= submit_tag "Search Question Stems", :name => nil %>
 </p>
 <% end %>
+<p>
+	There are <%= @questions.length %> questions that match your search.
+</p>
 
 <table>
     <% @questions.each do |question| %>
@@ -18,7 +21,7 @@
 				  <dd><%= question.option_c %></dd><br/>
 				  <dd><%= question.option_d %></dd><br/>
 				  <dd><%= question.option_e %></dd><br/>
-				  <dd><%= question.answer %></dd>
+
 			  </dl>
 		  </td>
 		  
