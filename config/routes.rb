@@ -9,6 +9,7 @@ BoardsApp::Application.routes.draw do
   get   '/resources/qanda_textbooks',     to: 'resources#index', :category => 'Q&A book'
   get   '/resources/case-based_textbooks',to: 'resources#index', :category => 'Case-based textbook'
   get   '/resources/websites',            to: 'resources#index', :category => 'Website'
+  get   '/resources/freesites',           to: 'resources#index', :category => 'Freesite'
   
   get    '/feedback',  to: 'static_pages#feedback'
   get    '/resources', to: 'resources#index'
