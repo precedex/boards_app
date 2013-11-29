@@ -1,4 +1,4 @@
-<h1><%=params[:category] %>s</h1>
+<h1></h1>
 <table>
     <% @resources.each do |resource| %>
       <tr class="<%= cycle('list_line_odd', 'list_line_even') %>">
@@ -9,15 +9,12 @@
 			  <dl> 
 				  <a href="<%= resource.link %>">
 				  <dt><%= resource.title %></a></dt>
+				  <dd><%= resource.authors %></dd>
 				  
 			<% unless resource.category == "Website" %>	  
 				  <dd style="font-size: x-small; font-weight: bold">
-					  latest edition: <%= resource.edition %> (<%= resource.year%>)</dd>
-				  <dd style="font-size: x-small; font-style: italic">
-					  category: <%= resource.category %> </dd><br/>
-			<% end %>		  
-					  
-				  <dd><%= resource.authors %></dd><br/>
+					  Edition: <%= resource.edition %> (<%= resource.year%>)</dd></br>
+			<% end %>		    
 				  <dd><%= resource.description %></dd>
 			  </dl>
 		  </td>

@@ -1,5 +1,5 @@
 BoardsApp::Application.routes.draw do
-  
+
   root  'static_pages#welcome'
   
   get   '/resources/review_textbooks',    to: 'resources#index', :category => 'Review textbook'
@@ -8,14 +8,19 @@ BoardsApp::Application.routes.draw do
   get   '/resources/pediatric_textbooks', to: 'resources#index', :category => 'Pediatric textbook'
   get   '/resources/qanda_textbooks',     to: 'resources#index', :category => 'Q&A book'
   get   '/resources/case-based_textbooks',to: 'resources#index', :category => 'Case-based textbook'
-  get   '/resources/websites',            to: 'resources#index', :category => 'Website'
-  get   '/resources/freesites',           to: 'resources#index', :category => 'Freesite'
+  get   '/resources/handbooks',           to: 'resources#index', :category => 'Handbook'
+  
+  get   '/sites/writtenboards',           to: 'sites#index',     :category => 'writtenboards'
+  get   '/sites/oralboards',              to: 'sites#index',     :category => 'oralboards'
+  get   '/sites/societies',               to: 'sites#index',     :category => 'society'
+  get   '/sites/blogs',                   to: 'sites#index',     :category => 'blog'
   
   get    '/feedback',  to: 'static_pages#feedback'
   get    '/resources', to: 'resources#index'
   get    '/search',    to: 'questions#index'
+  get    '/sites',     to: 'sites#index'
   
-  resources :questions, :resources
+  resources :questions, :resources, :sites
   
 
   # The priority is based upon order of creation: first created -> highest priority.
