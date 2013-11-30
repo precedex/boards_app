@@ -16,13 +16,35 @@
 		  <td class="list_description">
 			  <dl> 
 				  <dd style="font-weight: bold"><%= question.stem %></dd> <br/>
-				  <dd><%= question.option_a %></dd><br/>
-				  <dd><%= question.option_b %></dd><br/>
-				  <dd><%= question.option_c %></dd><br/>
-				  <dd><%= question.option_d %></dd><br/>
-				  <dd><%= question.option_e %></dd><br/>
-				  <dd>Reveal Answer</dd>
-
+				  
+			  <form method="post">
+				  	        
+				  <input type = "radio"
+				  		 name = "options"
+						 value = "a">
+				  <%= question.option_a %><br/>
+				  
+				  <input type = "radio"
+				  		 name = "options"
+						 value = "b">
+				  <%= question.option_b %><br/>
+				  
+				  <input type = "radio"
+				  		 name = "options"
+						 value = "c">
+				  <%= question.option_c %><br/>
+				  
+				  <input type = "radio"
+				  		 name = "options"
+						 value = "d">
+				 <%= question.option_d %><br/>
+				  
+				  <input type = "radio"
+				  		 name = "options"
+						 value = "e">
+				 <%= question.option_e %><br/>
+				  
+		  	  </form>
 			  </dl>
 		  </td>
 		  
