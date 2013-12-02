@@ -8,6 +8,15 @@ class QuestionsController < ApplicationController
   #  @questions = Question.all
   end
 
+  def check_answer(id=1)
+    @question = Question.find(id)
+    if params[:response] == @question.answer
+      @outcome = 'correct'
+    else 
+      @outcome = 'incorrect'
+    end  
+  end
+
   # GET /questions/1
   # GET /questions/1.json
   def show

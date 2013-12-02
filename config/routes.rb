@@ -15,10 +15,11 @@ BoardsApp::Application.routes.draw do
   get   '/sites/societies',               to: 'sites#index',     :category => 'society'
   get   '/sites/blogs',                   to: 'sites#index',     :category => 'blog'
   
-  get    '/feedback',  to: 'static_pages#feedback'
-  get    '/resources', to: 'resources#index'
-  get    '/search',    to: 'questions#index'
-  get    '/sites',     to: 'sites#index'
+  get    '/feedback',                     to: 'static_pages#feedback'
+  get    '/resources',                    to: 'resources#index'
+  get    '/search',                       to: 'static_pages#search'
+  get    '/sites',                        to: 'sites#index'
+  get    '/check_answer',                 to: 'questions#check_answer'
   
   resources :questions, :resources, :sites
   

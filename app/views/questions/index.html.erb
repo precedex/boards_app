@@ -1,50 +1,21 @@
-<h1>Questions</h1>
-
-<%= form_tag questions_path, :method => 'get' do %>
-<p>
-	<%= text_field_tag :search, params[:search] %>
-	<%= submit_tag "Search Question Stems", :name => nil %>
-</p>
-<% end %>
 <p>
 	There are <%= @questions.length %> questions that match your search.
 </p>
-
 <table>
     <% @questions.each do |question| %>
       <tr class="<%= cycle('list_line_odd', 'list_line_even') %>">
 		  <td class="list_description">
 			  <dl> 
-				  <dd style="font-weight: bold"><%= question.stem %></dd> <br/>
+				  <dt style="font-weight: bold"><%= question.stem %></dt> <br/>
 				  
-			  <form method="post">
-				  	        
-				  <input type = "radio"
-				  		 name = "options"
-						 value = "a">
-				  <%= question.option_a %><br/>
+				  <dd><%= form_tag "/check_answer(#{question.id})", :method => 'get' do%>
+			  		<%= text_field_tag :response, params[:response], :maxlength => 1  %>
+			  		<%= submit_tag "Check Answer", :name => nil %>
+			  	<% end %>
 				  
-				  <input type = "radio"
-				  		 name = "options"
-						 value = "b">
-				  <%= question.option_b %><br/>
 				  
-				  <input type = "radio"
-				  		 name = "options"
-						 value = "c">
-				  <%= question.option_c %><br/>
-				  
-				  <input type = "radio"
-				  		 name = "options"
-						 value = "d">
-				 <%= question.option_d %><br/>
-				  
-				  <input type = "radio"
-				  		 name = "options"
-						 value = "e">
-				 <%= question.option_e %><br/>
-				  
-		  	  </form>
+				  </dd>
+
 			  </dl>
 		  </td>
 		  

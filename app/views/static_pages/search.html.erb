@@ -2,3 +2,9 @@
 	<p>
 		Would you like to search question stems, answer choices, or both?
 	</p>
+
+	<%= form_tag "/questions", :method => 'get' do %>
+		<%= text_field_tag :search, params[:search] %>
+		<%= submit_tag "Search Question Stems", :name => nil %>
+
+	<% end %>
