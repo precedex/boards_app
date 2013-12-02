@@ -19,7 +19,7 @@ BoardsApp::Application.routes.draw do
   get    '/resources',                    to: 'resources#index'
   get    '/search',                       to: 'static_pages#search'
   get    '/sites',                        to: 'sites#index'
-  get    '/check_answer',                 to: 'questions#check_answer'
+  get    '/check_answer/:id',             to: 'questions#check_answer'
   
   resources :questions, :resources, :sites
   
