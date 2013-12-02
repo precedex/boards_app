@@ -6,18 +6,17 @@
       <tr class="<%= cycle('list_line_odd', 'list_line_even') %>">
 		  <td class="list_description">
 			  <h4> <%= question.stem %></h4>
-			  <ul>
-				  <li><%= question.option_a%></li>
-				  <li><%= question.option_b%></li>
-				  <li><%= question.option_c%></li>
-				  <li><%= question.option_d%></li>
-				  <li><%= question.option_e%></li>
-			  </ul>
-				  
-				  <dd><%= form_tag "/check_answer/#{question.id}", :method => 'get' do%>
-			  		<%= text_field_tag :response, params[:response], :maxlength => 1  %>
-			  		<%= submit_tag "Check Answer", :name => nil %>
-			  	<% end %>
+			  
+				      <%= form_tag "/check_answer/#{question.id}", :method => 'get' do%>
+				  <ol>
+					  <li><%= radio_button_tag "response", "a" %> <%= question.option_a%></li>
+					  <li><%= radio_button_tag "response", "b" %> <%= question.option_b%></li>
+					  <li><%= radio_button_tag "response", "c" %> <%= question.option_c%></li>
+					  <li><%= radio_button_tag "response", "d" %> <%= question.option_d%></li>
+					  <li><%= radio_button_tag "response", "e" %> <%= question.option_e%></li>		 
+				  </ol>
+				   <p> <%= submit_tag "Check Answer" %></p>
+					  <% end %>
 				  
 				<% if flash[:notice] %>
 				<div class = "notice"><%= flash[:notice] %></div>
