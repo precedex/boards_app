@@ -19,10 +19,10 @@
 			  		<%= submit_tag "Check Answer", :name => nil %>
 			  	<% end %>
 				  
-				  
-				  </dd>
-
-			  </dl>
+				<% if flash[:notice] %>
+				<div class = "notice"><%= flash[:notice] %></div>
+				<% end %></dd>
+		
 		  </td>
 		  
 		  <td class="list_actions">
