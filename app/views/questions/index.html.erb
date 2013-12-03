@@ -3,19 +3,18 @@
 </p>
 <table>
     <% @questions.each do |question| %>
-      <tr class="<%= cycle('list_line_odd', 'list_line_even') %>">
 		  <td class="list_description">
-			  <h4> <%= question.stem %></h4>
-				  <ol>
-					  <li><%= question.option_a%></li>
-					  <li><%= question.option_b%></li>
-					  <li><%= question.option_c%></li>
-					  <li><%= question.option_d%></li>
-					  <li><%= question.option_e%></li>		 
-				  </ol>		
-				   <p><a href="#" class="btn btn-default" data-toggle="tooltip" 					data-placement="right" data-trigger="hover click" 
+			  <dt> <%= question.stem %></dt></br>
+			
+					  <dd><%= question.option_a%></dd>
+					  <dd><%= question.option_b%></dd>
+					  <dd><%= question.option_c%></dd>
+					  <dd><%= question.option_d%></dd>
+					  <dd><%= question.option_e%></dd><br/>		 
+			
+				   <p><a href="#" class="btn btn-info" data-toggle="tooltip" 					data-placement="right" data-trigger="hover click" 
 				   title= "<%= question.answer.upcase %>">
-				   Check answer</a></p>		   
+				   Reveal answer</a></p>		   
 		  </td>
 		  
 		  <td class="list_actions">
@@ -32,5 +31,5 @@
 
 <!-- javascript -->
 	<script type = "text/javascript">
-	$('.btn-default').tooltip();
+	$('.btn-info').tooltip();
 	</script>
