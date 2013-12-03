@@ -6,22 +6,16 @@
       <tr class="<%= cycle('list_line_odd', 'list_line_even') %>">
 		  <td class="list_description">
 			  <h4> <%= question.stem %></h4>
-			  
-				      <%= form_tag "/check_answer/#{question.id}", :method => 'get' do%>
 				  <ol>
-					  <li><%= radio_button_tag "response", "a" %> <%= question.option_a%></li>
-					  <li><%= radio_button_tag "response", "b" %> <%= question.option_b%></li>
-					  <li><%= radio_button_tag "response", "c" %> <%= question.option_c%></li>
-					  <li><%= radio_button_tag "response", "d" %> <%= question.option_d%></li>
-					  <li><%= radio_button_tag "response", "e" %> <%= question.option_e%></li>		 
-				  </ol>
-				   <p> <%= submit_tag "Check Answer" %></p>
-					  <% end %>
-				  
-				<% if flash[:notice] %>
-				<div class = "notice"><%= flash[:notice] %></div>
-				<% end %></dd>
-		
+					  <li><%= question.option_a%></li>
+					  <li><%= question.option_b%></li>
+					  <li><%= question.option_c%></li>
+					  <li><%= question.option_d%></li>
+					  <li><%= question.option_e%></li>		 
+				  </ol>		
+				   <p><a href="#" class="btn btn-default" data-toggle="tooltip" 					data-placement="right" data-trigger="hover click" 
+				   title= "<%= question.answer.upcase %>">
+				   Check answer</a></p>		   
 		  </td>
 		  
 		  <td class="list_actions">
@@ -35,3 +29,8 @@
     <br />
 
 <%= link_to 'New Question', new_question_path %>
+
+<!-- javascript -->
+	<script type = "text/javascript">
+	$('.btn-default').tooltip();
+	</script>

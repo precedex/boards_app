@@ -5,18 +5,6 @@ class QuestionsController < ApplicationController
     @questions = Question.search(params[:search])
   end
 
-  def check_answer
-    @question = Question.find(params[:id])
-    if params[:response] == @question.answer
-      @outcome = 'correct'
-      flash[:notice] = "That is Correct."
-    else 
-      @outcome = 'incorrect'
-      flash[:notice] = "Sorry, Incorrect."
-    end  
-    redirect_to action: 'index'
-  end
-
   def show
   end
 
