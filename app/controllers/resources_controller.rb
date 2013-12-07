@@ -6,7 +6,7 @@ class ResourcesController < ApplicationController
       params[:category] = "All resource"
       @resources = Resource.all.order(:title)
     else 
-      @resources = Resource.where("category = ?", params[:category]).order(:title)
+      @resources = Resource.where("category = ?", params[:category]).order("lower(title)")
     end
   end
   
