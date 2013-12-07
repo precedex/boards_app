@@ -1,6 +1,7 @@
 .sites {
 	table {
 		border-collapse: collapse;
+		width: 100%;
 	}
 	
 	table tr td {
@@ -8,27 +9,19 @@
 		vertical-align:top;
 	}
 	
-	.list_image {
-		width:  60 px;
-		height: 70 px;
+	tr {
+		border-bottom: silver 1px solid;
 	}
 	
-	.list_description {
-		width: 100%;
+	dt {
+		font-family: "Georgia", Times, serif;
+		font-size: large;
+	}
 		
-		dl {
-			margin: 0;
-		}
-		
-		dt {
-			color: #C44161;
-			font-weight: normal;
-			font-size: large;
-		}
-		
-		dd {
-			margin: 0;
-		}
+	dd {
+		font-family: "Georgia", Times, serif;
+		font-size: small;
+		font-weight: bold;
 	}
 	
 	.list_actions {
@@ -37,12 +30,4 @@
 		padding-left: 1em;
 	}
 
-	.list_line_even {
-		background: #c3c3c3;
-	}
-	
-	.list_line_odd {
-		background: #b1d5c0;
-	}
 }
-

@@ -9,11 +9,14 @@ BoardsApp::Application.routes.draw do
   get   '/resources/qanda_textbooks',     to: 'resources#index', :category => 'Q&A book'
   get   '/resources/case-based_textbooks',to: 'resources#index', :category => 'Case-based textbook'
   get   '/resources/handbooks',           to: 'resources#index', :category => 'Handbook'
+  get   '/resources/oralboards',          to: 'resources#index', :category => 'oralboards'
   
   get   '/sites/writtenboards',           to: 'sites#index',     :category => 'writtenboards'
   get   '/sites/oralboards',              to: 'sites#index',     :category => 'oralboards'
   get   '/sites/societies',               to: 'sites#index',     :category => 'society'
   get   '/sites/blogs',                   to: 'sites#index',     :category => 'blog'
+  get   '/sites/education',               to: 'sites#index',     :category => 'education'
+  get   '/sites/journals',                to: 'sites#index',     :category => 'journal'
   
   get    '/feedback',                     to: 'static_pages#feedback'
   get    '/resources',                    to: 'resources#index'

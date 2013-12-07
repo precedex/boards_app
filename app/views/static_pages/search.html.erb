@@ -1,10 +1,19 @@
 	<h1>Search</h1>
 	<p>
-		Would you like to search question stems, answer choices, or both?
+		All questions copyright the American Board of Anesthesiology and can be downloaded direclty from their
+		<a href= "http://www.theaba.org/Home/examinations_certifications"> website.</a>
 	</p>
 
 	<%= form_tag "/questions", :method => 'get' do %>
 		<%= text_field_tag :search, params[:search] %>
-		<%= submit_tag "Search Question Stems", :name => nil %>
+		<%= submit_tag "Search Questions", :name => nil %>
 
-	<% end %>
+	<% end %><br/>
+
+	<h3> Other resources for multiple-choice questions:</h3>
+	<ul>
+<li><a href= "http://www.openanesthesia.org/OpenAnesthesia.org:Review_Question_of_the_Day"> Open Anesthesia Question of the Day.</a></li>
+
+</ul>
+		
+		

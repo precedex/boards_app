@@ -6,7 +6,7 @@ class SitesController < ApplicationController
       params[:category] = "All site"
       @sites = Site.all.order(:title)
     else 
-      @sites = Site.where("category = ?", params[:category]).order(:title)
+      @sites = Site.where("category = ?", params[:category]).order("lower(title)")
     end
   end
 

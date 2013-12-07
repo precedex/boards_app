@@ -37,14 +37,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	font-size: 3em;
+	font-family: "Georgia";
+	font-size: 6em;
 	letter-spacing: -2px;
 	margin-bottom: 30px;
 	text-align: center;
 }
 
 h2 {
-	font-size: 1.2em;
+	font-size: 1.4em;
 	letter-spacing: -1px;
 	margin-bottom: 30px;
 	text-align: center;
@@ -59,23 +60,6 @@ p {
 	padding-top: 9px;
 	font-weight: bold;
 	line-height: 1;
-}
-/* header */
-
-#logo {
-	float: left;
-	margin-right: 10px;
-	font-size: 1.7em;
-	color: white;
-	text-transform: uppercase;
-	letter-spacing: -1px;
-	padding-top: 9px;
-	font-weight: bold;
-	line-height: 1;
-	&:hover {
-	color: white;
-	text-decoration: none;
-	}
 }
 
 /* footer */

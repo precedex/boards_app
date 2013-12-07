@@ -1,23 +1,15 @@
 <h1></h1>
 <table>
     <% @resources.each do |resource| %>
-      <tr class="<%= cycle('list_line_odd', 'list_line_even') %>">
-		  <td>
-			  <%= image_tag(resource.image_url, class: 'list_image') %>
-		  </td>
-		  <td class="list_description">
-			  <dl> 
-				  <a href="<%= resource.link %>">
-				  <dt><%= resource.title %></a></dt>
-				  <dd><%= resource.authors %></dd>
-				  
-			<% unless resource.category == "Website" %>	  
-				  <dd style="font-size: x-small; font-weight: bold">
-					  Edition: <%= resource.edition %> (<%= resource.year%>)</dd></br>
-			<% end %>		    
-				  <dd><%= resource.description %></dd>
-			  </dl>
-		  </td>
+	<tr><td>
+			  <%= image_tag(resource.image_url) %>
+		  </td><td class = "list_description">
+				  <dt><a href="<%= resource.link %>">
+				  <%= resource.title %></a></dt>
+				  <dd><%= resource.authors %></dd> 
+				  <dd>Edition <%= resource.edition %> (<%= resource.year%>)</dd>
+				  <dd><%= resource.description %></dd>	  
+			  </td>
 		  
 		  <td class="list_actions">
         	  <%= link_to 'Show', resource %><br/>
@@ -27,6 +19,6 @@
 	  </tr>
     <% end %>
     </table>
-    <br />
+ 
 
 <%= link_to 'New Resource', new_resource_path %>
