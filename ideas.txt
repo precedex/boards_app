@@ -1,6 +1,4 @@
 ideas.txt
 
-change layout for index.html to something more like a grid, with thumnails?
-Need search questions button functionality
-Reveal questions button,
-Radio marks for questions
+random questions search button 
+"other resources for multipl-choice questions" formatting
