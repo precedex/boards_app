@@ -19,6 +19,7 @@ BoardsApp::Application.routes.draw do
   get   '/sites/journals',                to: 'sites#index',     :category => 'journal'
   
   get    '/feedback',                     to: 'static_pages#feedback'
+  get    '/about',                        to: 'static_pages#about'
   get    '/resources',                    to: 'resources#index'
   get    '/search',                       to: 'static_pages#search'
   get    '/sites',                        to: 'sites#index'

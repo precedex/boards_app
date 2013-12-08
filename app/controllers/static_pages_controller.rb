@@ -8,6 +8,9 @@ class StaticPagesController < ApplicationController
   def resources
   end
   
+  def about
+  end
+  
   def search
   end
   
