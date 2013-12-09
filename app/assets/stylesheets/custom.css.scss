@@ -6,6 +6,7 @@
   left: 0;
   z-index: 1000;
   display: none;
+  font-size: 0.8em;
   float: left;
   min-width: 160px;
   padding: 5px 0;
@@ -56,6 +57,10 @@ textarea {
 
 .navbar-brand{
 	font-size: 2em;
+}
+
+.navbar-nav.nav-justified > li{
+    float:none;
 }
 
 /* typography */
