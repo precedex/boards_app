@@ -4,14 +4,19 @@
 
 	<%= form_tag "/questions", :method => 'get' do %>
 		<%= text_field_tag :search, params[:search] %>
-		<%= submit_tag "Search Questions", :name => nil %>
+<button type="submit" class="btn btn-info">Search the Questions!</button>
 
 	<% end %><br/>
 
+<div class = "smaller">
 	<p> Other sites for multiple-choice questions:</p>
-	<ul><li>
+	<ul>
+		<li>
 <a href= "http://www.openanesthesia.org/OpenAnesthesia.org:Review_Question_of_the_Day"> Open Anesthesia Question of the Day.</a>
+
 </li></ul>
+</div>
+
 
 
 		

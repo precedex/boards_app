@@ -44,6 +44,20 @@ textarea {
 	}
 }
 
+.smaller {
+	p {
+	font-size: 1.5em;
+	font-style: italic;
+    }
+	li {
+	font-size: 0.8em;
+	}
+}
+
+.navbar-brand{
+	font-size: 2em;
+}
+
 /* typography */
 
 h1, h2, h3, h4, h5, h6 {
@@ -59,7 +73,7 @@ h1 {
 }
 
 h2 {
-	font-size: 1.4em;
+	font-size: 1.8em;
 	letter-spacing: -1px;
 	margin-bottom: 30px;
 	text-align: center;
@@ -101,10 +115,11 @@ footer {
 		}
 }
 small {
-	float: left;
+	float: right;
+	font-size: 1.2em;
 }
 ul {
-	float: right;
+	float: left;
 	list-style: none;
 	li {
 	float: left;
