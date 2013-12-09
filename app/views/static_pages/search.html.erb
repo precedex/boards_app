@@ -1,23 +1,16 @@
-<p>All questions &copy; 1990-1996 by the Joint Council on In-Training Examinations, American Board of Anesthesiology/American Society of Anesthesiologists and can be downloaded directly from their
-		<a href= "http://www.theaba.org/Home/examinations_certifications"> website.</a>
+</br><p>All questions &copy; 1990-1996 by the Joint Council on In-Training Examinations, American Board of Anesthesiology/American Society of Anesthesiologists and can be downloaded directly from their
+		<a href= "http://www.theaba.org/Home/examinations_certifications"> website.</a><p></p>
 </p>
-
+<div class ="center">
 	<%= form_tag "/questions", :method => 'get' do %>
-		<%= text_field_tag :search, params[:search] %>
-<button type="submit" class="btn btn-info">Search the Questions!</button>
-
-	<% end %><br/>
-
-<div class = "smaller">
-	<p> Other sites for multiple-choice questions:</p>
-	<ul>
-		<li>
-<a href= "http://www.openanesthesia.org/OpenAnesthesia.org:Review_Question_of_the_Day"> Open Anesthesia Question of the Day.</a>
-
-</li></ul>
+	<%= text_field_tag :search, params[:search], {placeholder: 'Search', size: 50} %>
+<button type="submit" class="btn btn-info btn-lg">Search the Questions!</button>
 </div>
 
 
+	<% end %><br/>
 
-		
+
+
+
 		
