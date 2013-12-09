@@ -114,9 +114,15 @@ footer {
 	border-top: 1px solid $gray-light;
 	color: $gray-light;
 	
+	a {
+	  color: gray;
+	  &:visited {
+	    color: gray;
+	  }}
+	
 small {
 	float: right;
-	font-size: 1.2em;
+	font-size: 1.4em;
 }
 ul {
 	float: left;
