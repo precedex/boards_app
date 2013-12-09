@@ -113,12 +113,7 @@ footer {
 	padding-top: 5px;
 	border-top: 1px solid $gray-light;
 	color: $gray-light;
-	a {
-		color: $gray;
-		&:hover {
-			color: $gray-darker;
-		}
-}
+	
 small {
 	float: right;
 	font-size: 1.2em;
