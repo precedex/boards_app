@@ -1,27 +1,25 @@
 .sites {
 	table {
 		border-collapse: collapse;
-		width: 100%;
-	}
-	
-	table tr td {
-		padding: 10px;
-		vertical-align:top;
 	}
 	
 	tr {
-		border-bottom: silver 1px solid;
+		border: none
+	}
+	
+	td {
+		padding: 2px;	
 	}
 	
 	dt {
-		font-family: "Georgia", Times, serif;
-		font-size: large;
+		font-family: "Georgia";
+		font-size: 18px;
 	}
 		
 	dd {
-		font-family: "Georgia", Times, serif;
+		font-family: "Helvetica";
 		font-size: small;
-		font-weight: bold;
+		font-weight: bolder;
 	}
 		
 	.list_actions {
