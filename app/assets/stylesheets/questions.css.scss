@@ -12,22 +12,14 @@
 		border-bottom: silver 1px solid;
 	}
 	
-	.list_description {
-		width: 100%;
-		
-		
-		dt {
-			font-family: "Georgia", Times, serif;
-			font-size: large;
+	dt {
+		font-size: 1.6em;
 		}
 		
-		dd {
-			font-family: "Georgia", Times, serif;
-			font-size: medium;
-			font-weight: normal;
-			text-indent: 50px;
+	dd {
+		font-size: 1.4em;
+		text-indent: 50px;
 		}
-	}
 	
 	.list_actions {
 		font-size: x-small;

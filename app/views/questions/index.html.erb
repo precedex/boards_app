@@ -1,3 +1,4 @@
+<div class="questions">
 <p>
 	There are <%= @questions.length %> questions that match your search.
 </p>
@@ -10,11 +11,11 @@
 					  <dd><%= question.option_b%></dd>
 					  <dd><%= question.option_c%></dd>
 					  <dd><%= question.option_d%></dd>
-					  <dd><%= question.option_e%></dd><br/>		 
+					  <dd><%= question.option_e%></dd> </br>
 			
-				   <p><a href="#" class="btn btn-info" data-toggle="tooltip" 					data-placement="right" data-trigger="hover click" 
+				   <a href="#" class="btn btn-info" data-toggle="tooltip" 					data-placement="right" data-trigger="hover click" 
 				   title= "<%= question.answer.upcase %>">
-				   Reveal answer</a></p>		   
+				   Reveal answer</a>		   
 		  </td>
 		  <!--
 		  <td class="list_actions">
@@ -33,3 +34,4 @@
 	<script type = "text/javascript">
 	$('.btn-info').tooltip();
 	</script>
+</div>
