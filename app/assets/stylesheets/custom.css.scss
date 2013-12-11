@@ -1,5 +1,82 @@
 @import "bootstrap";
 
+/* mixins, variables, etc. */
+
+/* universal */
+
+html {
+	overflow-y: scroll;
+}
+
+body {
+	padding-top: 0px; 				        /* whitespace above the navigation bar */
+	background-color: PaleGoldenRod;		/* background */
+	font-size: 100%;
+}
+
+section {
+	overflow: auto;
+}
+
+textarea {									/* not sure what this does */
+	resize: vertical;
+	min-width: 100%;
+}
+
+/* typography */
+
+p, ol, ul, td, h1, h2, h3 {
+	font-family: "Georgia", serif;
+	list-style: none;
+}
+
+p {
+	font-size: 2em;
+	line-height: 1.3em;
+	letter-spacing: -1px;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	font-weight: normal;
+}
+
+h1 {
+	font-family: "Belleza", "Georgia", serif;
+	font-size: 12em;
+	letter-spacing: -2px;
+	padding-top: 30px;
+	text-align: center;
+}
+
+h2 {
+	font-size: 2.5em;
+	letter-spacing: -1px;
+	text-align: center;
+	padding-bottom: 30px;
+	color: gray; 
+}
+
+a {
+  color: red;
+  &:visited {
+    color: red;
+  }
+  &:hover {
+    color: black;
+	text-decoration: none;
+  }
+}
+
+
+/* Header */
+
+header {
+	font-size: 2em;
+}
+
+.navbar-nav.nav-justified > li{
+    float:none;
+}
+
 .dropdown-menu {
   position: absolute;
   top: 100%;
@@ -15,96 +92,7 @@
   background-color: silver;
 }
 
-/* mixins, variables, etc. */
 
-$grayMediumLight: #eaeaea;
-
-/* universal */
-
-html {
-	overflow-y: scroll;
-}
-
-body {
-	padding-top: 0px;
-}
-
-section {
-	overflow: auto;
-}
-
-textarea {
-	resize: vertical;
-	min-width: 100%;
-}
-
-.center {
-	text-align: center;
-	h1 {
-	margin-bottom: 10px;
-	}
-}
-
-.smaller {
-	p {
-	font-size: 1.5em;
-	font-style: italic;
-    }
-	li {
-	font-size: 0.8em;
-	}
-}
-
-.navbar-brand{
-	font-size: 2em;
-}
-
-.navbar-nav.nav-justified > li{
-    float:none;
-}
-
-/* typography */
-
-h1, h2, h3, h4, h5, h6 {
-	line-height: 1;
-}
-
-h1 {
-	font-family: "Georgia";
-	font-size: 6em;
-	letter-spacing: -2px;
-	margin-bottom: 30px;
-	text-align: center;
-}
-
-h2 {
-	font-size: 1.8em;
-	letter-spacing: -1px;
-	margin-bottom: 30px;
-	text-align: center;
-	font-weight: normal;
-	color: $gray-light; 
-}
-
-h3 {
-	font-family: "Georgia";
-	font-size: 3em;
-	font-style: italic;
-	font-weight: bold;
-	color: red;
-	
-}
-
-
-p {
-	font-family: "Georgia";
-	font-size: 1.1em;
-	line-height: 1.7em;
-	letter-spacing: -1px;
-	padding-top: 9px;
-	font-weight: bold;
-	line-height: 1;
-}
 
 /* footer */
 
@@ -115,21 +103,26 @@ footer {
 	color: $gray-light;
 	
 	a {
-	  color: gray;
+	  color: $gray-light;
 	  &:visited {
-	    color: gray;
+	    color: $gray-light;
 	  }}
 	
-small {
-	float: right;
-	font-size: 1.4em;
-}
-ul {
-	float: left;
-	list-style: none;
+    p {
+	   font-family: "Helvetica";
+	   float: right;
+	   font-size: 1.7em;
+	   padding-top: 4px;
+      }
+	
+    ul {	
+		font-family: "Helvetica";
+	    float: left;
+       }
+	
 	li {
-	float: left;
-	margin-left: 10px;
-	}
-}
+		font-size: 2em;
+	    float: left;
+	    margin-left: 10px;
+	   }
 }

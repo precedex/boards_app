@@ -1,38 +1,22 @@
 .sites {
-	table {
-		border-collapse: collapse;
+	
+	h1 {
+		font-family: "Belleza", "Georgia", serif;
+		font-size: 6em;
+		letter-spacing: -1px;
+		padding-top: 10px;
+		padding-bottom: 10px;
 	}
 	
-	tr {
-		border: none
+	ul {
+		font-size: 2em;
+		text-align: center;
 	}
 	
-	td {
-		padding: 2px;	
-	}
 	
-	dt {
-		font-family: "Georgia";
-		font-size: 18px;
-	}
-		
-	dd {
-		font-family: "Helvetica";
-		font-size: small;
-		font-weight: bolder;
-	}
-		
 	.list_actions {
 		font-size: x-small;
 		text-align: right;
 		padding-left: 1em;
 	}
-	
-	.boards_prep {
-		p{font-size: 1.2em}
-		ul{font-size: 1.2em;
-		   list-style: disc}
-	}
-	
-
 }
