@@ -26,7 +26,7 @@ textarea {									/* not sure what this does */
 /* typography */
 
 p, ol, ul, td, h1, h2, h3 {
-	font-family: "Georgia", serif;
+	font-family: "Constantia", "Lucida Bright", "Lucidabright", "Luida Serif", "Lucida", "DejaVu Serif", "Georgia", serif;
 	list-style: none;
 }
 
@@ -77,6 +77,13 @@ header {
     float:none;
 }
 
+.navbar-inverse .navbar-nav > li > a {
+    color: white;
+	&:hover {
+		color: yellow;
+	}
+}
+
 .dropdown-menu {
   position: absolute;
   top: 100%;
@@ -106,7 +113,10 @@ footer {
 	  color: $gray-light;
 	  &:visited {
 	    color: $gray-light;
-	  }}
+	  }
+	  &:hover {
+	    color: black;
+  }}
 	
     p {
 	   font-family: "Helvetica";
