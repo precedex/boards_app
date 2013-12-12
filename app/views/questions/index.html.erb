@@ -4,9 +4,8 @@
 </p>
 <table>
 	<tr>
-    <% @questions.each do |question| %>
-		  <td class="list_description">
-			  
+		  <td>
+			      <% @questions.each do |question| %>
 			  <dt> <%= question.stem %></dt></br>
 			
 					  <dd><%= question.option_a %></dd>
@@ -15,7 +14,8 @@
 					  <dd><%= question.option_d %></dd>
 					  <dd><%= question.option_e %></dd> </br>
 			
-				   <a href="#" class="btn btn-info" data-toggle="tooltip" 					data-placement="right" data-trigger="hover click" 
+				   <a href="#" class="btn btn-info" data-toggle="tooltip" 					
+				   data-placement="right" data-trigger="hover click" 
 				   title= "<%= question.answer.upcase %>">
 				   Reveal answer</a>		   
 		  </td>
@@ -26,8 +26,9 @@
         	  <%= link_to 'Destroy', question, method: :delete, data: { confirm: 'Are you sure?' } %>
       	  </td>
 			  -->
-	  </tr>
-    <% end %>
+			   <% end %>	   
+    </tr>
+	
     </table>
     <br />
 	<!--
@@ -38,4 +39,5 @@
 	<script type = "text/javascript">
 	$('.btn-info').tooltip();
 	</script>
+	
 </div>

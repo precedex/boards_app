@@ -2,8 +2,9 @@ class QuestionsController < ApplicationController
   before_action :set_question, only: [:show, :edit, :update, :destroy]
 
   def index
-    @questions = Question.searchstems(params[:search])
-    #@questions = Question.searchchoices(params[:search])
+    @questions_stems   = Question.searchstems(params[:search])
+    @questions_choices = Question.searchchoices(params[:search])
+    @questions = @questions_stems + @questions_choices
   end
 
   def show
