@@ -5,30 +5,31 @@
 <table>
     <% @questions.each do |question| %>
 		  <td class="list_description">
+			  
 			  <dt> <%= question.stem %></dt></br>
 			
-					  <dd><%= question.option_a%></dd>
-					  <dd><%= question.option_b%></dd>
-					  <dd><%= question.option_c%></dd>
-					  <dd><%= question.option_d%></dd>
-					  <dd><%= question.option_e%></dd> </br>
+					  <dd><%= question.option_a %></dd>
+					  <dd><%= question.option_b %></dd>
+					  <dd><%= question.option_c %></dd>
+					  <dd><%= question.option_d %></dd>
+					  <dd><%= question.option_e %></dd> </br>
 			
 				   <a href="#" class="btn btn-info" data-toggle="tooltip" 					data-placement="right" data-trigger="hover click" 
 				   title= "<%= question.answer.upcase %>">
 				   Reveal answer</a>		   
 		  </td>
-		  <!--
+		  
 		  <td class="list_actions">
         	  <%= link_to 'Show', question %><br/>
         	  <%= link_to 'Edit', edit_question_path(question) %><br/>
         	  <%= link_to 'Destroy', question, method: :delete, data: { confirm: 'Are you sure?' } %>
-      	  </td>-->
+      	  </td>
 	  </tr>
     <% end %>
     </table>
     <br />
-	<!--
-<%= link_to 'New Question', new_question_path %>-->
+	
+<%= link_to 'New Question', new_question_path %>
 
 <!-- javascript -->
 	<script type = "text/javascript">

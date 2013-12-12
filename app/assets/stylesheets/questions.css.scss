@@ -36,6 +36,17 @@
 		text-align: right;
 		padding-left: 1em;
 	}
+	
+	a {
+	  color: white;
+	  &:visited {
+	    color: white;
+	  }
+	  &:hover {
+	    color: black;
+		text-decoration: none;
+	  }
+	}
 
 
 }

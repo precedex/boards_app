@@ -1,44 +1,46 @@
 <p id="notice"><%= notice %></p>
 
-<p>
+<ul style = "font-size: 2em">
+<li>
   <strong>Stem:</strong>
   <%= @question.stem %>
-</p>
+</li>
 
-<p>
+<li>
   <strong>Option A:</strong>
   <%= @question.option_a %>
-</p>
+</li>
 
-<p>
+<li>
   <strong>Option B:</strong>
   <%= @question.option_b %>
-</p>
+</li>
 
-<p>
+<li>
   <strong>Option C:</strong>
   <%= @question.option_c %>
-</p>
+</li>
 
-<p>
+<li>
   <strong>Option D:</strong>
   <%= @question.option_d %>
-</p>
+</li>
 
-<p>
+<li>
   <strong>Option E:</strong>
   <%= @question.option_e %>
-</p>
+</li>
 
-<p>
+<li>
   <strong>Answer:</strong>
   <%= @question.answer %>
-</p>
+</li>
 
-<p>
+<li>
   <strong>Topic:</strong>
   <%= @question.topic %>
-</p>
+</li>
+</ul></style>
 
 <%= link_to 'Edit', edit_question_path(@question) %> |
 <%= link_to 'Back', questions_path %>

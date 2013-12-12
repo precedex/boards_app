@@ -6,7 +6,7 @@ class Question < ActiveRecord::Base
                       stem LIKE ? OR
                       stem LIKE ?', 
                       "%#{search}%","%#{search.downcase}%","%#{search.capitalize}%")
- else
+    else
       Question.all
     end
   end  
@@ -27,5 +27,4 @@ class Question < ActiveRecord::Base
       Question.all
     end
   end  
-  
 end
