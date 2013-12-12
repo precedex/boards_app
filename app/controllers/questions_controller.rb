@@ -16,6 +16,7 @@ class QuestionsController < ApplicationController
     end
 
     @questions = @questions_stems + @questions_choices
+    @questions = @questions.shuffle
 
   end
 

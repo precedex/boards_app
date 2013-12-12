@@ -2,35 +2,36 @@
 <p>
 	<%= @questions.length %> questions match your search.
 </p>
-<table>
-	<tr>
-		  <td>
-			      <% @questions.each do |question| %>
-			  <dt> <%= question.stem %></dt></br>
-			
-					  <dd><%= question.option_a %></dd>
-					  <dd><%= question.option_b %></dd>
-					  <dd><%= question.option_c %></dd>
-					  <dd><%= question.option_d %></dd>
-					  <dd><%= question.option_e %></dd> </br>
-			
-				   <a href="#" class="btn btn-info" data-toggle="tooltip" 					
-				   data-placement="right" data-trigger="hover click" 
-				   title= "<%= question.answer.upcase %>">
-				   Reveal answer</a>		   
-		  </td>
-		  <!--
-		  <td class="list_actions">
-        	  <%= link_to 'Show', question %><br/>
-        	  <%= link_to 'Edit', edit_question_path(question) %><br/>
-        	  <%= link_to 'Destroy', question, method: :delete, data: { confirm: 'Are you sure?' } %>
-      	  </td>
-			  -->
-			   <% end %>	   
-    </tr>
+
+<% @questions.each do |question| %>
+  <ul>			  
+    <li> <%= question.stem %></li>
 	
-    </table>
-    <br />
+    <div class = "choices">	
+		<li><%= question.option_a %></li>
+		<li><%= question.option_b %></li>
+		<li><%= question.option_c %></li>
+		<li><%= question.option_d %></li>
+		<li><%= question.option_e %></li>
+	</div>
+</ul>
+			
+<div class = "center">
+		<a href="#" class="btn btn-info" data-toggle="tooltip" 					
+		data-placement="left" data-trigger="hover click" 
+		title= "<%= question.answer.upcase %>">
+		Reveal answer</a>	
+	</div>
+<!--		
+	<div class ="list_actions">
+   <%= link_to 'Show', question %>
+   <%= link_to 'Edit', edit_question_path(question) %>
+   <%= link_to 'Destroy', question, method: :delete, data: { confirm: 'Are you sure?' } %> 
+    </div>
+-->
+			<% end %>  
+		  
+
 	<!--
 		<%= link_to 'New Question', new_question_path %>
 -->

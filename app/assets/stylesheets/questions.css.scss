@@ -2,46 +2,53 @@
 	p {
 		font-size: 2.5em;
 		text-align: center;
-		padding: 30px;
+		padding-top: 30px;
 		color: red;
 	}
 	
-	table {
-		border-collapse: collapse;		
-	}
-	
-	table tr td {
-		padding: 10px;
-		vertical-align:top;
-	}
-	
-	tr {
-		border-bottom: silver 1px solid;
-	}
-	
-	dt {
-		font-family: "Georgia";
-		font-weight: 600;
+	li{
 		font-size: 2em;
-		}
+		padding-bottom: 1.2em;
+		padding-top: 1.6em;
+	}
+	
+	
+	.choices {
+		li{
+		font-size: 1.6em;
+		text-indent: 3em;
+		padding-bottom: 0.4em;
+		padding-top: 0;
+	}
 		
-	dd {
-		font-family: "Georgia";
-		font-size: 1.8em;
-		text-indent: 0px;
-		text-align: justify;
-		}
+	}
 	
 	.list_actions {
-		font-size: x-small;
-		text-align: right;
-		padding-left: 1em;
+		font-size: small;
+		text-align: left;
+		color: black;
+		
+		a {
+		  color: red;
+		  &:visited {
+		    color: red;
+		  }
+		  &:hover {
+		    color: black;
+			text-decoration: none;
+		  }
+	}}
+	
+	.center{
+		text-align: center;
+		padding-bottom: 3em;
+		border-bottom: 1px solid silver;
 	}
 	
 	a {
 	  color: white;
 	  &:visited {
-	    color: white;
+	    color: whiter;
 	  }
 	  &:hover {
 	    color: black;
