@@ -2,9 +2,21 @@ class QuestionsController < ApplicationController
   before_action :set_question, only: [:show, :edit, :update, :destroy]
 
   def index
-    @questions_stems   = Question.searchstems(params[:search])
-    @questions_choices = Question.searchchoices(params[:search])
+    
+    if params[:stems_checkbox] == '1'
+      @questions_stems   = Question.searchstems(params[:search])
+    else
+      @questions_stems   = []
+    end
+    
+    if params[:choices_checkbox] == '1'
+      @questions_choices = Question.searchchoices(params[:search])
+    else
+      @questions_choices   = []
+    end
+
     @questions = @questions_stems + @questions_choices
+
   end
 
   def show
