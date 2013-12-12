@@ -3,6 +3,7 @@ class QuestionsController < ApplicationController
 
   def index
     @questions = Question.searchstems(params[:search])
+    #@questions = Question.searchchoices(params[:search])
   end
 
   def show
