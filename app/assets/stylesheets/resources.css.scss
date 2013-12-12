@@ -16,14 +16,17 @@
 		width: 100%;
 		
 		dt {
-			font-family: "Georgia", Times, serif;
-			font-size: large;
+			font-family: "Cambria",                     "Hoefler Text",
+			             "Nimbus Roman No9 L Regular",   Times, 
+						 "Times New Roman",              serif;
+			font-size: 2.2em;
+			font-weight: 600;
 		}
 		
 		dd {
-			font-family: "Georgia", Times, serif;
-			font-size: small;
-			font-weight: bold;
+			font-family: "Helvetica", Times, serif;
+			font-size: 1.5em;
+			font-weight: normal;
 		}
 	}
 	

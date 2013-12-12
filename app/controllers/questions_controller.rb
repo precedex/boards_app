@@ -2,7 +2,7 @@ class QuestionsController < ApplicationController
   before_action :set_question, only: [:show, :edit, :update, :destroy]
 
   def index
-    @questions = Question.search(params[:search])
+    @questions = Question.searchstems(params[:search])
   end
 
   def show

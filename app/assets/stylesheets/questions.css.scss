@@ -1,4 +1,8 @@
 .questions {
+	p {
+		font-size: 3em;
+	}
+	
 	table {
 		border-collapse: collapse;		
 	}
@@ -13,11 +17,14 @@
 	}
 	
 	dt {
+		font-family: Verdana;
+		font-weight: normal;
 		font-size: 1.6em;
 		}
 		
 	dd {
-		font-size: 1.4em;
+		font-family: "Times New Roman";
+		font-size: 1.8em;
 		text-indent: 50px;
 		}
 	
