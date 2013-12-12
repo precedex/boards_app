@@ -1,6 +1,9 @@
 .questions {
 	p {
-		font-size: 3em;
+		font-size: 2.5em;
+		text-align: center;
+		padding: 30px;
+		color: red;
 	}
 	
 	table {
@@ -17,13 +20,13 @@
 	}
 	
 	dt {
-		font-family: Verdana;
-		font-weight: normal;
-		font-size: 1.6em;
+		font-family: "Georgia";
+		font-weight: 600;
+		font-size: 2em;
 		}
 		
 	dd {
-		font-family: "Times New Roman";
+		font-family: "Georgia";
 		font-size: 1.8em;
 		text-indent: 50px;
 		}
