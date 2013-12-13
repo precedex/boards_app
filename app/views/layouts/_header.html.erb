@@ -3,8 +3,17 @@
 
   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     <ul class="nav navbar-nav nav-justified">
-	  <li style= "font-size: 1.5em; letter-spacing: 4px"><a href="/">HUB</a></li></style>
-      <li class="dropdown">
+		
+	  <li style= "font-size: 1.5em; letter-spacing: 4px" class="<%= 'active' if current_page?("/") %>">
+		  <a href="/">HUB</a></li></style>
+      <li class="dropdown <%= 'active' if current_page?("/resources/handbooks") ||
+	  									  current_page?("/resources/reference_textbooks") ||
+										  current_page?("/resources/concise_textbooks") ||
+										  current_page?("/resources/review_textbooks") ||
+										  current_page?("/resources/pediatric_textbooks") ||
+										  current_page?("/resources/cardiac_textbooks") ||
+										  current_page?("/resources") ||
+										  current_page?("/resources/case-based_textbooks") %>">
         <a href="#" data-toggle="dropdown">Books <b class="caret"></b></a>
         <ul class="dropdown-menu">
           <li><a href="/resources/reference_textbooks">  Reference   </a></li>
@@ -20,7 +29,10 @@
         </ul>
 	  </li>
 	  
-	  <li class ="dropdown">
+	  <li class ="dropdown <%= 'active' if current_page?("/sites/writtenboards") ||
+	  									  current_page?("/resources/qanda_textbooks") ||
+										  current_page?("/sites/oralboards") ||
+										  current_page?("/resources/oralboards") %>">
         	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Exams <b class="caret"></b></a>
 			
         <ul class="dropdown-menu">
@@ -32,11 +44,22 @@
 		</ul>  
       </li>
 	  
-	    <li><a href="/search">						 Questions		      </a></li>
-		<li><a href="/sites/education">     		 Education     		  </a></li>
-		<li><a href="/sites/journals">     		     Journals     		  </a></li>
+	    <li class="<%= 'active' if current_page?("/search") ||
+		                           current_page?("/questions") ||
+								   current_page?("/questions/random") %>">
+			<a href="/search">						 Questions		      </a></li> 
+			
+		<li class="<%= 'active' if current_page?("/sites/education") %>">
+			<a href="/sites/education">     		 Education     		  </a></li>
+			
+		<li class="<%= 'active' if current_page?("/sites/journals") %>">
+			<a href="/sites/journals">     		     Journals     		  </a></li>
 		
-  	    <li class ="dropdown">
+  	    <li class ="dropdown <%= 'active' if current_page?("/sites/societies/us") ||
+	  									     current_page?("/sites/societies/state") ||
+										     current_page?("/sites/societies/intl") ||
+											 current_page?("/sites/societies/crna") ||
+										     current_page?("/sites/societies/pain") %>">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Societies <b class="caret"></b></a>
 		    <ul class="dropdown-menu">
               <li><a href="/sites/societies/us"> 		 American      </a></li>
@@ -47,7 +70,8 @@
   		</ul>  
         </li>
 		
-		<li><a href="/sites/blogs">					 Blogs				  </a></li>
+		<li class="<%= 'active' if current_page?("/sites/blogs") %>">
+			<a href="/sites/blogs">					 Blogs				  </a></li>
       </ul>
 	
   </div><!-- /.navbar-collapse -->
