@@ -1,35 +1,39 @@
-<p id="notice"><%= notice %></p>
+<div class = "sites">
 
-<p>
-  <strong>Title:</strong>
-  <%= @site.title %>
-</p>
+	<p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Category:</strong>
-  <%= @site.category %>
-</p>
+	<p>
+	  <strong>Title:</strong>
+	  <%= @site.title %>
+	</p>
 
-<p>
-  <strong>Authors:</strong>
-  <%= @site.authors %>
-</p>
+	<p>
+	  <strong>Category:</strong>
+	  <%= @site.category %>
+	</p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @site.description %>
-</p>
+	<p>
+	  <strong>Authors:</strong>
+	  <%= @site.authors %>
+	</p>
 
-<p>
-  <strong>Pricing:</strong>
-  <%= @site.pricing %>
-</p>
+	<p>
+	  <strong>Description:</strong>
+	  <%= @site.description %>
+	</p>
 
-<p>
-  <strong>Link:</strong>
-  <%= @site.link %>
-</p>
+	<p>
+	  <strong>Pricing:</strong>
+	  <%= @site.pricing %>
+	</p>
 
-<%= link_to 'Edit', edit_site_path(@site) %> |
-<%= link_to 'Back', sites_path %> |
-<%= link_to 'New Site', new_site_path %>
+	<p>
+	  <strong>Link:</strong>
+	  <%= @site.link %>
+	</p>
+
+	<%= link_to 'Edit', edit_site_path(@site) %> |
+	<%= link_to 'Back', sites_path %> |
+	<%= link_to 'New Site', new_site_path %>
+	
+</div>

@@ -17,7 +17,10 @@ class QuestionsController < ApplicationController
 
     @questions = @questions_stems + @questions_choices
     @questions = @questions.shuffle.uniq
-
+  end
+  
+  def random
+    @questions = Question.random_ten
   end
 
   def show

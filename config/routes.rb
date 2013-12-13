@@ -23,7 +23,8 @@ BoardsApp::Application.routes.draw do
   get   '/sites/societies/intl',          to: 'sites#index',     :category => 'society-intl'
   get   '/sites/societies/pain',          to: 'sites#index',     :category => 'society-pain'
   get   '/sites/societies/crna',          to: 'sites#index',     :category => 'society-crna'
-
+  
+  get    '/questions/random',             to: 'questions#random'
   get    '/feedback',                     to: 'static_pages#feedback'
   get    '/about',                        to: 'static_pages#about'
   get    '/resources',                    to: 'resources#index'

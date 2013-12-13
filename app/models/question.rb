@@ -27,4 +27,10 @@ class Question < ActiveRecord::Base
       Question.all
     end
   end  
+  
+  def self.random_ten
+    Question.all.sample(10)
+  end
+  
+  
 end

@@ -1,4 +1,6 @@
 ideas.txt
 
 random questions search button 
-"other resources for multipl-choice questions" formatting
+Drug reference
+Crisis REFERENCE sites
+active state yellow in navbar

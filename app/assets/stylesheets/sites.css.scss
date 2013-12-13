@@ -13,10 +13,26 @@
 		text-align: center;
 	}
 	
+	p {
+		padding-top: 0;
+		padding-bottom: 0;
+		font-size: 2em;
+	}
 	
 	.list_actions {
-		font-size: x-small;
-		text-align: right;
-		padding-left: 1em;
+		a{
+			font-size: 0.3em;
+			color: black;
+
+		}
+	}
+	
+	.new_site {
+		a{
+			font-size: 2em;
+			color: black;
+			font-weight: bold;
+			text-align: right;
+		}
 	}
 }
