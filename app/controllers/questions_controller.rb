@@ -3,20 +3,20 @@ class QuestionsController < ApplicationController
 
   def index
     
-    if params[:stems_checkbox] == '1'
-      @questions_stems   = Question.searchstems(params[:search])
-    else
-      @questions_stems   = []
-    end
+      if params[:stems_checkbox] == '1'
+        @questions_stems   = Question.searchstems(params[:search])
+      else
+        @questions_stems   = []
+      end
     
-    if params[:choices_checkbox] == '1'
-      @questions_choices = Question.searchchoices(params[:search])
-    else
-      @questions_choices   = []
-    end
+      if params[:choices_checkbox] == '1'
+        @questions_choices = Question.searchchoices(params[:search])
+      else
+        @questions_choices   = []
+      end
 
-    @questions = @questions_stems + @questions_choices
-    @questions = @questions.shuffle.uniq
+      @questions = @questions_stems + @questions_choices
+      @questions = @questions.shuffle.uniq
   end
   
   def random

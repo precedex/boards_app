@@ -1,6 +1,8 @@
 ideas.txt
 
-random questions search button 
+ 
 Drug reference
 Crisis REFERENCE sites
-active state yellow in navbar
+
+sites databases descriptions?
+facebook - dtr

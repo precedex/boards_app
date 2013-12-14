@@ -2,7 +2,7 @@
 <table>
     <% @resources.each do |resource| %>
 	<tr><td>
-			  <%= image_tag(resource.image_url) %>
+			<a href="<%= resource.link %>">  <%= image_tag(resource.image_url) %></a>
 		  </td><td class = "list_description">
 				  <dt><a href="<%= resource.link %>">
 				  <%= resource.title %></a></dt>
@@ -10,12 +10,13 @@
 				  <dd>Edition <%= resource.edition %> (<%= resource.year%>)</dd>
 				  <dd><%= resource.description %></dd>	  
 			  </td>
-			  <!--
+		<!--	  
 		  <td class="list_actions">
         	  <%= link_to 'Show', resource %><br/>
         	  <%= link_to 'Edit', edit_resource_path(resource) %><br/>
         	  <%= link_to 'Destroy', resource, method: :delete, data: { confirm: 'Are you sure?' } %>
-      	  </td> -->
+      	  </td> 
+			-->
 	  </tr>
     <% end %>
     </table>

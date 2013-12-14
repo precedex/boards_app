@@ -35,4 +35,29 @@
 			text-align: right;
 		}
 	}
+	
+	.orals{
+	a{
+		font-size: 1em;
+		text-align: left;
+	}
+		
+	ul{
+		font-size: 1.6em;
+		text-align: left;
+		list-style: disc;
+	}
+	p{
+		text-align: center;
+		padding-top: 4em;
+	}
+	
+	#main {
+	float: left; width: 60%; margin: 0 5%;
+	}
+	
+	#extras {
+	float: left; width: 25%; margin: 0 5% 0 0;
+	}
+	}			
 }

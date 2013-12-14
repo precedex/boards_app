@@ -16,9 +16,9 @@
 	</div>
 </ul>
 			
-	<div class = "center">
+	<div class = "left">
 			<a href="#" class="btn btn-info" data-toggle="tooltip" 					
-			data-placement="left" data-trigger="hover click" 
+			data-placement="right" data-trigger="hover click" 
 			title= "<%= question.answer.upcase %>">
 			Reveal answer</a>	
 	</div>
@@ -28,7 +28,8 @@
    <%= link_to 'Edit', edit_question_path(question) %>
    <%= link_to 'Destroy', question, method: :delete, data: { confirm: 'Are you sure?' } %> 
     </div>
--->
+		-->
+	
 			<% end %>  
 
 	<!--
