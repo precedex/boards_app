@@ -12,6 +12,12 @@
 		border-bottom: silver 1px solid;
 	}
 	
+	p {
+		padding-top: 0;
+		padding-bottom: 0;
+		font-size: 2em;
+	}
+	
 	.list_description {
 		width: 100%;
 		
@@ -27,6 +33,11 @@
 			font-family: "Helvetica", Times, serif;
 			font-size: 1.5em;
 			font-weight: normal;
+		}
+		
+		dd.bold {
+			font-weight: bold;
+			font-size: 1.3em;
 		}
 	}
 	

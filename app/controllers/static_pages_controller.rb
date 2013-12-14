@@ -14,4 +14,7 @@ class StaticPagesController < ApplicationController
   def search
   end
   
+  def tools
+  end
+  
 end

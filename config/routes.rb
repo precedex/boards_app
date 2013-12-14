@@ -7,6 +7,7 @@ BoardsApp::Application.routes.draw do
   get   '/resources/reference_textbooks', to: 'resources#index', :category => 'Reference textbook'
   get   '/resources/pediatric_textbooks', to: 'resources#index', :category => 'Pediatric textbook'
   get   '/resources/cardiac_textbooks',   to: 'resources#index', :category => 'Cardiac textbook'
+  get   '/resources/ob_textbooks',        to: 'resources#index', :category => 'OB textbook'
   get   '/resources/qanda_textbooks',     to: 'resources#index', :category => 'Q&A book'
   get   '/resources/case-based_textbooks',to: 'resources#index', :category => 'Case-based textbook'
   get   '/resources/handbooks',           to: 'resources#index', :category => 'Handbook'
@@ -26,6 +27,7 @@ BoardsApp::Application.routes.draw do
   
   get    '/questions/random',             to: 'questions#random'
   get    '/feedback',                     to: 'static_pages#feedback'
+  get    '/tools',                        to: 'static_pages#tools'
   get    '/about',                        to: 'static_pages#about'
   get    '/resources',                    to: 'resources#index'
   get    '/search',                       to: 'static_pages#search'
