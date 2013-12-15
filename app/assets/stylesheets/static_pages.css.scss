@@ -8,8 +8,21 @@
 
 .tools{
 	text-align: center;
-	ul{
-		padding-top: 2em;
-		font-size: 2em;
+	dl{
+	  text-align: left;
+	  font-size: 2em;
+
+	}
+	
+	dt{
+		font-weight: normal;
+	}
+	
+	dd{
+		font-size: 0.8em;
+		font-weight: bold;
+		font-style: italic;
+		text-indent: 1em;
 	}
 }
+
