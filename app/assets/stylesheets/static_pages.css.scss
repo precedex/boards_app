@@ -2,27 +2,50 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.center {
+.center{
 	text-align: center;
 }
 
-.tools{
-	text-align: center;
+.tools{	
+	h1 {
+		font-family: "Belleza", "Georgia", serif;
+		font-size: 5.5em;
+		letter-spacing: -1px;
+		padding-top: 10px;
+		padding-bottom: 30px;
+	}
+	
 	dl{
 	  text-align: left;
 	  font-size: 2em;
-
 	}
 	
 	dt{
+		font-size: 1.6em;
 		font-weight: normal;
+		display: list-item;
+		list-style: square;
 	}
 	
 	dd{
-		font-size: 0.8em;
+		font-size: 1.1em;
 		font-weight: bold;
 		font-style: italic;
 		text-indent: 1em;
 	}
+	
+	#left_column{
+		float: left;
+		width: 40%;
+		margin: 0 0 0 10%;
+	}
+	
+	#right_column{
+		float: left;
+		width: 40%;
+		margin: 0 5%;
+	}
+	
+	
 }
 
