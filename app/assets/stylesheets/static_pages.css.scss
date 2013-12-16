@@ -16,34 +16,32 @@
 	}
 	
 	dl{
-	  text-align: left;
+	  text-align: center;
 	  font-size: 2em;
 	}
 	
 	dt{
 		font-size: 1.3em;
 		font-weight: normal;
-		display: list-item;
-		list-style: circle;
 	}
 	
 	dd{
 		font-size: 1em;
 		font-weight: bold;
 		font-style: italic;
-		text-indent: 1em;
+		
 	}
 	
 	#left_column{
 		float: left;
-		width: 45%;
-		margin: 0 0 20% 5%;
+		width: 50%;
+		margin: 0 0 20% 0%;
 	}
 	
 	#right_column{
 		float: left;
-		width: 40%;
-		margin: 0 0 20% 10%
+		width: 50%;
+		margin: 0 0% 20% 0
 	}
 	
 	
