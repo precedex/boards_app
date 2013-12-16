@@ -21,14 +21,14 @@
 	}
 	
 	dt{
-		font-size: 1.6em;
+		font-size: 1.3em;
 		font-weight: normal;
 		display: list-item;
-		list-style: square;
+		list-style: circle;
 	}
 	
 	dd{
-		font-size: 1.1em;
+		font-size: 1em;
 		font-weight: bold;
 		font-style: italic;
 		text-indent: 1em;
@@ -37,13 +37,13 @@
 	#left_column{
 		float: left;
 		width: 40%;
-		margin: 0 0 0 10%;
+		margin: 0 0 20% 10%;
 	}
 	
 	#right_column{
 		float: left;
 		width: 40%;
-		margin: 0 5%;
+		margin: 0 0 20% 10%
 	}
 	
 	
