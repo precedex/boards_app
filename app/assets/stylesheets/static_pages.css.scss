@@ -16,21 +16,28 @@
 	}
 	
 	dl{
-	  text-align: center;
+	  text-align: left;
 	  font-size: 2em;
 	}
 	
 	dt{
 		font-family: Georgia;
-		font-size: 1.3em;
+		font-size: 1.4em;
 		font-weight: bold;
+		text-indent: 30%;
 		text-decoration: underline;
 	}
 	
 	dd{
 		font-family: helvetica;
-		font-size: 1em;
+		font-size: 1.1em;
 		font-weight: normal;
+		text-align: left;  
+		text-indent: 33%;
+		display:list-item;
+		list-style-type: disc;
+		list-style-position:inside
+		;
 		
 	}
 	
