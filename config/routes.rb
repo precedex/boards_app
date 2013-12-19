@@ -14,8 +14,6 @@ BoardsApp::Application.routes.draw do
   get   '/resources/oralboards',          to: 'resources#index', :category => 'oralboards'
   get   '/resources/exambooks',           to: 'resources#index', :category => 'exambooks'
   
-  get   '/sites/writtenboards',           to: 'sites#index',     :category => 'writtenboards'
-  get   '/sites/oralboards',              to: 'sites#index',     :category => 'oralboards'
   get   '/sites/blogs',                   to: 'sites#index',     :category => 'blog'
   get   '/sites/education',               to: 'sites#index',     :category => 'education'
   get   '/sites/journals',                to: 'sites#index',     :category => 'journal'
@@ -31,7 +29,9 @@ BoardsApp::Application.routes.draw do
   get    '/tools',                        to: 'static_pages#tools'
   get    '/about',                        to: 'static_pages#about'
   get    '/resources',                    to: 'resources#index'
-  get    '/search',                       to: 'static_pages#search'
+  get    '/sites/writtenboards',          to: 'static_pages#writtens'
+  get    '/sites/oralboards',             to: 'static_pages#orals'
+  
   get    '/sites',                        to: 'sites#index'
   get    '/orals',                        to: 'static_pages#orals'
   get    '/check_answer/:id',             to: 'questions#check_answer'

@@ -5,7 +5,7 @@
 		font-size: 5.5em;
 		letter-spacing: -1px;
 		padding-top: 10px;
-		padding-bottom: 10px;
+		padding-bottom: 40px;
 	}
 	
 	ul {
@@ -17,7 +17,15 @@
 		padding-top: 0;
 		padding-bottom: 0;
 		font-size: 2em;
+		display: list-item;
+		list-style: circle;
 	}
+	
+	table {
+	    margin-left:auto; 
+	    margin-right:auto;
+	  }
+	
 	
 	.list_actions {
 		a{
@@ -36,7 +44,7 @@
 		}
 	}
 	
-	.orals{
+	.exams{
 	a{
 		font-size: 1em;
 		text-align: left;
@@ -44,11 +52,8 @@
 		
 	ul{
 		font-size: 1.6em;
-		text-align: center;
-	}
-	p{
-		text-align: center;
-		padding-top: 1.2em;
+		text-align: left;
+		list-style: disc;
 	}
 	}			
 }

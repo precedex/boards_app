@@ -11,6 +11,14 @@
 	<% if params[:category] == "society-pain"%><h1> Regional Anesthesia & Pain Societies </h1><% end %>
 	<% if params[:category] == "society-crna"%><h1> Nurse Anesthesia Societies </h1><% end %>
 
+	<% if params[:category] == "oralboards" %>
+	<%= render 'orals' %>
+	<% end %>
+	
+	<% if params[:category] == "writtenboards" %>
+	<%= render 'writtens' %>
+	<% end %>
+
 <ul>
 	  <% @sites.each do |site| %>
 	  <li><a href="<%= site.link %>"><%= site.title %></a></li>
@@ -32,12 +40,6 @@
 		-->
 </ul>
 
-	<% if params[:category] == "oralboards" %>
-	<%= render 'orals' %>
-	<% end %>
-	
-	<% if params[:category] == "writtenboards" %>
-	<%= render 'writtens' %>
-	<% end %>
+
 
 </div>
