@@ -19,13 +19,13 @@
         <ul class="dropdown-menu">
           <li><a href="/resources/reference_textbooks">  Reference   </a></li>
           <li><a href="/resources/concise_textbooks">    Concise     </a></li>
+		  <li><a href="/resources/case-based_textbooks"> Case-based  </a></li>
           <li><a href="/resources/review_textbooks">     Review      </a></li>
+		  <li><a href="/resources/exambooks"> 			 Exam Prep   </a></li> 
 		  <li><a href="/resources/pediatric_textbooks">  Pediatric   </a></li>
 		  <li><a href="/resources/cardiac_textbooks">    Cardiac     </a></li>
 		  <li><a href="/resources/ob_textbooks">    	 OB          </a></li>
-		  <li><a href="/resources/case-based_textbooks"> Case-based  </a></li>
 		  <li><a href="/resources/handbooks"> 			 Handbooks   </a></li>  
-	
           <li class="divider"></li>
 		  <li><a href="/resources"> 			 		 All books   </a></li> 
         </ul>
@@ -38,18 +38,10 @@
         	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Exams <b class="caret"></b></a>
 			
         <ul class="dropdown-menu">
-            <li><a href="/sites/writtenboards"> 		 Writtens: Prep 	  </a></li>
-			<li><a href="/resources/qanda_textbooks">    Writtens: Q&A Books  </a></li>
-			
-            <li><a href="/sites/oralboards">   			 Orals: Prep    	  </a></li>
-		    <li><a href="/resources/oralboards"> 		 Orals: Books 		  </a></li>
+            <li><a href="/sites/writtenboards"> 		 Writtens 	  </a></li>
+            <li><a href="/sites/oralboards">   			 Orals    	  </a></li>
+  		  <!--	<li><a href="/sites/pedsboards">   			 Pediatric    </a></li> -->
 		</ul>  
-      </li>
-	  
-	    <li class="<%= 'active' if current_page?("/search") ||
-		                           current_page?("/questions") ||
-								   current_page?("/questions/random") %>">
-			<a href="/search">						 ITE Questions		      </a></li> 
 			
 		<li class="<%= 'active' if current_page?("/sites/education") %>">
 			<a href="/sites/education">     		 Education     		  </a></li>

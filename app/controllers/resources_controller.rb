@@ -5,6 +5,8 @@ class ResourcesController < ApplicationController
     if params[:category].nil?
       params[:category] = "All resource"
       @resources = Resource.all.order(:title)
+    elsif params[:category] = "exambooks"
+      @resources = Resource.where("category = ? OR category = ?", 'Q&A book', 'oralboards').order("lower(title)")
     else 
       @resources = Resource.where("category = ?", params[:category]).order("lower(title)")
     end
