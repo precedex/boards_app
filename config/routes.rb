@@ -12,7 +12,6 @@ BoardsApp::Application.routes.draw do
   get   '/resources/case-based_textbooks',to: 'resources#index', :category => 'Case-based textbook'
   get   '/resources/handbooks',           to: 'resources#index', :category => 'Handbook'
   get   '/resources/oralboards',          to: 'resources#index', :category => 'oralboards'
-  get   '/resources/exambooks',           to: 'resources#index', :category => 'exambooks'
   
   get   '/sites/blogs',                   to: 'sites#index',     :category => 'blog'
   get   '/sites/education',               to: 'sites#index',     :category => 'education'

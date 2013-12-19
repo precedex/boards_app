@@ -2,11 +2,10 @@
 	<h1> Written Board Resources </h1>
 	
 	<p>The ABA has publicly released the <a href= "http://www.theaba.org/Home/examinations_certifications">
-	   1990-1996 In-training Examinations. </a> While some of the test subject material is no longer actively tested (e.g halothane, enflurane, Mapleson circuits), the underlying concepts are largely unchanged. Certain material on ACLS algorithms is no longer accurate and you should refer to the <a href= '/tools'>2010 algorithms. </a>
+	   1990-1996 In-training Examinations. </a> While some of the test subject material is no longer actively tested (e.g halothane, enflurane, Mapleson circuits), the underlying concepts are largely unchanged. Certain material on ACLS algorithms is no longer accurate and you should refer to the <a href= '/tools'>2010 algorithms.</a> K-type questions have been elminated and are not included here.</p>
+	   <p style = "padding-top: 1.6em; list-style: none" ></p>
 	    	
-<table>
-	<tr>
-		<td>	
+
 			<div class="center">
 				<form accept-charset="UTF-8"
 				      action = "/questions" 
@@ -16,20 +15,22 @@
 
 				  <div class="checkbox">
 						Stems          <%= check_box_tag 'stems_checkbox',   '1', true %></br>
-						Options <%= check_box_tag 'choices_checkbox', '1', true %> 
+						Answer Choices 	   <%= check_box_tag 'choices_checkbox', '1', true %> 
 				  </div>
 		  
 				  <div class="form-group">
 				    <input type="search" name= "search" class="input-large" id= "search" placeholder="Search">
 				  </div> 
-				  <br/><br/>
+			</div>
+				  
+<table>
+	<tr>
+		<td>		  
 				  <button type="submit" class="btn btn-danger btn-lg">Search the Questions</button> 
 		       </form>
-		   </div>
-		
-	     </td>
+	    </td>
 		 
-		 <td>	
+		<td>	
 			<form action = "/questions/random" 
 				  method = "get"
 				  id = "random"
@@ -55,6 +56,7 @@
 	</p>
 	
 	<p>Question & Answer <a href = '/resources/qanda_textbooks'>books</a></p>
+	<p>Board review <a href = '/resources/review_textbooks'>books</a></p>
 
 	<p style="text-decoration:underline">Written board study strategy has been extensively discussed at 
 		<a href="http://forums.studentdoctor.net/forums/anesthesiology.45/">
@@ -82,7 +84,7 @@
 		  Best Review Courses for Written Board??? (11/07)</a></li>
 	</ul></br>
 	<p style="text-decoration:underline"> Written board commercial prep courses:</p></style>
-	<p style = "font-size: 1.5em; font-style: italic; text-indent: 1em"> I don't have any experience with these products and do not endorse any particular product </p></style>
+	<p style = "font-size: 1.5em; font-style: italic; text-indent: 1em; list-style: none"> I don't have any experience with these products and do not endorse any particular product </p></style>
 	
 		<ul>
 		  <li><a href='http://www.anesthesia-review.com'>
