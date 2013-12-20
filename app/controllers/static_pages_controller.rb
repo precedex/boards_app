@@ -17,4 +17,8 @@ class StaticPagesController < ApplicationController
   def tools
   end
   
+  def secret
+  end
+  
+  
 end
