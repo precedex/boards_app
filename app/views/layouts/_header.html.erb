@@ -13,6 +13,8 @@
 										  current_page?("/resources/pediatric_textbooks") ||
 										  current_page?("/resources/cardiac_textbooks") ||
 										  current_page?("/resources/ob_textbooks") ||
+										  current_page?("/resources/qanda_textbooks") ||
+										  current_page?("/resources/oralboards") ||
 										  current_page?("/resources") ||
 										  current_page?("/resources/case-based_textbooks") %>">
         <a href="#" data-toggle="dropdown">Books <b class="caret"></b></a>
@@ -34,9 +36,7 @@
 	  </li>
 	  
 	  <li class ="dropdown <%= 'active' if current_page?("/sites/writtenboards") ||
-	  									  current_page?("/resources/qanda_textbooks") ||
-										  current_page?("/sites/oralboards") ||
-										  current_page?("/resources/oralboards") %>">
+										   current_page?("/sites/oralboards") %>">
         	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Exams <b class="caret"></b></a>
 			
         <ul class="dropdown-menu">
