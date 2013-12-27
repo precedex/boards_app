@@ -24,8 +24,7 @@
 
   </script>
   
-  <script>
-  
+  <script type="text/javascript">
   if (typeof jQuery != 'undefined') {
     jQuery(document).ready(function($) {
       var filetypes = /\.(zip|exe|dmg|pdf|doc.*|xls.*|ppt.*|mp3|txt|rar|wma|mov|avi|wmv|flv|wav)$/i;
@@ -53,17 +52,23 @@
             elEv.loc = baseHref + href;
           }
           else if (href.match(/^https?\:/i) && !isThisDomain) {
-            elEv.category = "links";
+            elEv.category = "external";
             elEv.action = "click";
             elEv.label = href.replace(/^https?\:\/\//i, '');
             elEv.non_i = true;
             elEv.loc = href;
           }
+          else if (href.match(/^tel\:/i)) {
+            elEv.category = "telephone";
+            elEv.action = "click";
+            elEv.label = href.replace(/^tel\:/i, '');
+            elEv.loc = href;
+          }
           else track = false;
  
-          if (track) {
-            ga('send', 'event', elEv.category.toLowerCase(), elEv.action.toLowerCase(), elEv.label.toLowerCase(), elEv.value, elEv.non_i);
-          if ( el.attr('target') == undefined || el.attr('target').toLowerCase() != '_blank') {
+          if (track) {		
+			ga('send', 'event', elEv.category.toLowerCase(), elEv.action.toLowerCase(), elEv.label.toLowerCase(), elEv.value, elEv.non_i);	
+            if ( el.attr('target') == undefined || el.attr('target').toLowerCase() != '_blank') {
               setTimeout(function() { location.href = elEv.loc; }, 400);
               return false;
         }
@@ -72,7 +77,6 @@
       });
     });
   }
-  
   </script>
   
 </head>
