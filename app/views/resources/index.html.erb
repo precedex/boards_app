@@ -2,7 +2,7 @@
 <table>
     <% @resources.each do |resource| %>
 	<tr><td>
-			<a href="<%= resource.link %>">  <%= image_tag(resource.image_url) %></a>
+			<a href="<%= resource.link %>" target="_blank">>  <%= image_tag(resource.image_url) %></a>
 		  </td><td class = "list_description">
 				  <dt><a href="<%= resource.link %>" target="_blank">
 				  <%= resource.title %></a></dt>
