@@ -1,6 +1,9 @@
 <div class = "sites">
 	
-	<% if params[:category] == "education"%><h1> Anesthesiology Education </h1><% end %>
+	<% if params[:category] == "education"%><h1> Misc. Anesthesiology Education </h1><% end %>
+	<% if params[:category] == "education-regional"%><h1> Regional Anesthesia </h1><% end %>
+	<% if params[:category] == "education-video"%><h1> Anesthesia Videos </h1><% end %>
+	<% if params[:category] == "education-simulation"%><h1> Anesthesia Simulation </h1><% end %>
 	<% if params[:category] == "writtenboards"%><h1> Written Board Resources </h1><% end %>
 	<% if params[:category] == "oralboards"%><h1> Oral Board Resources </h1><% end %>
 	<% if params[:category] == "journal"%><h1> Anesthesiology Journals </h1><% end %>
@@ -29,7 +32,8 @@
         <%= link_to 'Edit', edit_site_path(site) %>
         <%= link_to 'Destroy', site, method: :delete, data: { confirm: 'Are you sure?' } %>
       </div>
-  -->
+		  -->
+	 
 
     <% end %>
 

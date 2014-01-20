@@ -14,7 +14,12 @@ BoardsApp::Application.routes.draw do
   get   '/resources/oralboards',          to: 'resources#index', :category => 'oralboards'
   
   get   '/sites/blogs',                   to: 'sites#index',     :category => 'blog'
+  
   get   '/sites/education',               to: 'sites#index',     :category => 'education'
+  get   '/sites/education/regional',      to: 'sites#index',     :category => 'education-regional'
+  get   '/sites/education/video',         to: 'sites#index',     :category => 'education-video'
+  get   '/sites/education/simulation',    to: 'sites#index',     :category => 'education-simulation'
+  
   get   '/sites/journals',                to: 'sites#index',     :category => 'journal'
   
   get   '/sites/societies/us',            to: 'sites#index',     :category => 'society-us'

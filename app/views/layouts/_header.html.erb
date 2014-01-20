@@ -45,9 +45,16 @@
   		  <!--	<li><a href="/sites/pedsboards">   			 Pediatric    </a></li> -->
 		</ul>  
 			
-		<li class="<%= 'active' if current_page?("/sites/education") %>">
-			<a href="/sites/education">     		 Education     		  </a></li>
+		<li class="dropdown <%= 'active' if current_page?("/sites/education") %>">
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown">Education <b class="caret"></b></a>
 			
+	        <ul class="dropdown-menu">
+	            <li><a href="/sites/education/regional"> 	 Regional Anesthesia 	  </a></li>
+				<li><a href="/sites/education/video"> 	 	 Videos 	 			  </a></li>	
+				<li><a href="/sites/education/simulation"> 	 Simulation 	 		  </a></li>	
+	            <li><a href="/sites/education">   			 Miscellaneous    	      </a></li>
+			</ul> 
+					
 		<li class="<%= 'active' if current_page?("/sites/journals") %>">
 			<a href="/sites/journals">     		     Journals     		  </a></li>
 		
