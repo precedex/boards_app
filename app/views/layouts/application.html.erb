@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title> Anesthesia Hub</title>
+  <title> Anesthesia Hub - <%= yield(:title) || "The central resource for anesthesiology on the web." %></title>
   <%= stylesheet_link_tag    "application", media: "all", 
   											"data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>

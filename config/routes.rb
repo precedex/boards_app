@@ -8,7 +8,6 @@ BoardsApp::Application.routes.draw do
   get   '/resources/pediatric_textbooks', to: 'resources#index', :category => 'Pediatric textbook'
   get   '/resources/cardiac_textbooks',   to: 'resources#index', :category => 'Cardiac textbook'
   get   '/resources/ob_textbooks',        to: 'resources#index', :category => 'OB textbook'
-  get   '/resources/qanda_textbooks',     to: 'resources#index', :category => 'Q&A book'
   get   '/resources/case-based_textbooks',to: 'resources#index', :category => 'Case-based textbook'
   get   '/resources/handbooks',           to: 'resources#index', :category => 'Handbook'
   get   '/resources/oralboards',          to: 'resources#index', :category => 'oralboards'

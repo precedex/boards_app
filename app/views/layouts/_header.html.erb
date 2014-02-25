@@ -1,11 +1,28 @@
 <header>
-<nav class="navbar-inverse navbar-static-top" role="navigation">
+
+	<nav class="navbar navbar-inverse" role="navigation">
+	  <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	    </div>
+
+
+
 
   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     <ul class="nav navbar-nav nav-justified">
 		
 	  <li style= "font-family: 'belleza'; font-size: 1.5em; letter-spacing: 4px" class="<%= 'active' if current_page?("/") %>">
 		  <a href="/">HUB</a></li></style>
+		  
+  	  <li class="<%= 'active' if current_page?("/tools?") %>">
+  			<a href="/tools?">					 Tools				  </a></li>
       <li class="dropdown <%= 'active' if current_page?("/resources/handbooks") ||
 	  									  current_page?("/resources/reference_textbooks") ||
 										  current_page?("/resources/concise_textbooks") ||
@@ -27,8 +44,7 @@
 		  <li><a href="/resources/ob_textbooks">    	 OB          </a></li>
 		  <li><a href="/resources/handbooks"> 			 Handbooks   </a></li>  
 		  <li class="divider"></li>
-		  <li><a href="/resources/review_textbooks">     Board Review </a></li>
-		  <li><a href="/resources/qanda_textbooks">      Q & A        </a></li>
+		  <li><a href="/resources/review_textbooks">     Written Board </a></li>
 		  <li><a href="/resources/oralboards">    	     Oral Board   </a></li>
           <li class="divider"></li>
 		  <li><a href="/resources"> 			 		 All books   </a></li> 
@@ -78,6 +94,7 @@
       </ul>
 	
   </div><!-- /.navbar-collapse -->
+  </div><!-- .container-fluid -->
 </nav>
 </header>
 	

@@ -1,18 +1,16 @@
 <div class = "sites">
 	
-	<% if params[:category] == "education"%><h1> Misc. Anesthesiology Education </h1><% end %>
-	<% if params[:category] == "education-regional"%><h1> Regional Anesthesia </h1><% end %>
-	<% if params[:category] == "education-video"%><h1> Anesthesia Videos </h1><% end %>
-	<% if params[:category] == "education-simulation"%><h1> Anesthesia Simulation </h1><% end %>
-	<% if params[:category] == "writtenboards"%><h1> Written Board Resources </h1><% end %>
-	<% if params[:category] == "oralboards"%><h1> Oral Board Resources </h1><% end %>
-	<% if params[:category] == "journal"%><h1> Anesthesiology Journals </h1><% end %>
-	<% if params[:category] == "blog"%><h1> Anesthesiology Blogs </h1><% end %>
-	<% if params[:category] == "society-us"%><h1> US Anesthesiology Societies </h1><% end %>
-	<% if params[:category] == "society-state"%><h1> State Anesthesiology Societies </h1><% end %>
-	<% if params[:category] == "society-intl"%><h1> Intl. Anesthesiology Societies </h1><% end %>
-	<% if params[:category] == "society-pain"%><h1> Regional Anesthesia & Pain Societies </h1><% end %>
-	<% if params[:category] == "society-crna"%><h1> Nurse Anesthesia Societies </h1><% end %>
+	<% if params[:category] == "education"%> <% title "Miscellaneous" %> <% end %>
+	<% if params[:category] == "education-regional"%> <% title "Regional Anesthesia" %> <% end %>
+	<% if params[:category] == "education-video"%> <% title "Videos" %> <% end %>
+	<% if params[:category] == "education-simulation"%> <% title "Simulation" %> <% end %>
+	<% if params[:category] == "journal"%> <% title "Journals" %> <% end %>
+	<% if params[:category] == "blog"%> <% title "Blogs" %> <% end %>
+	<% if params[:category] == "society-us"%> <% title "US Anesthesiology Societies" %> <% end %>
+	<% if params[:category] == "society-state"%> <% title "State Anesthesiology Societies" %> <% end %>
+	<% if params[:category] == "society-intl"%> <% title "Intl. Anesthesiology Societies" %> <% end %>
+	<% if params[:category] == "society-pain"%> <% title "Regional Anesthesia & Pain Societies" %> <% end %>
+	<% if params[:category] == "society-crna"%> <% title "Nurse Anesthesia Societies" %> <% end %>
 
 	<% if params[:category] == "oralboards" %>
 	<%= render 'orals' %>
@@ -21,6 +19,8 @@
 	<% if params[:category] == "writtenboards" %>
 	<%= render 'writtens' %>
 	<% end %>
+
+	<h1><%= yield(:title) %> </h1>
 
 <ul>
 	  <% @sites.each do |site| %>
