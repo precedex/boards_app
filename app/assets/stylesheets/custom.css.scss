@@ -125,7 +125,6 @@ header {
 /* footer */
 
 footer {
-	clear: left;
 	margin-top: 45px;
 	padding-top: 5px;
 	border-top: 1px solid $gray-light;
@@ -138,7 +137,8 @@ footer {
 	  }
 	  &:hover {
 	    color: black;
-  }}
+  	  }
+      }
 	
     p {
 	   font-family: "Helvetica";
@@ -146,15 +146,4 @@ footer {
 	   font-size: 1.7em;
 	   padding-top: 4px;
       }
-	
-    ul {	
-		font-family: "Helvetica";
-	    float: left;
-       }
-	
-	li {
-		font-size: 2em;
-	    float: left;
-	    margin-left: 10px;
-	   }
 }
