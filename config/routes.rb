@@ -35,6 +35,7 @@ BoardsApp::Application.routes.draw do
   get    '/resources',                    to: 'resources#index'
   get    '/sites/writtenboards',          to: 'static_pages#writtens'
   get    '/sites/oralboards',             to: 'static_pages#orals'
+  get    '/sites/pedsboards',             to: 'static_pages#pedsboards'
   
   get    '/sites',                        to: 'sites#index'
   get    '/orals',                        to: 'static_pages#orals'
