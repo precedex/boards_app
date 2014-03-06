@@ -2,12 +2,22 @@ class ResourcesController < ApplicationController
   before_action :set_resource, only: [:show, :edit, :update, :destroy]
   
   def index
-    if params[:category].nil?
-      params[:category] = "All resource"
-      @resources = Resource.all.order(:title)
-    else 
-      @resources = Resource.where("category = ?", params[:category]).order("lower(title)")
-    end
+    #if params[:category].nil?
+     # params[:category] = "All resource"
+     # @resources = Resource.all.order(:title)
+   # else 
+   #   @resources = Resource.where("category = ?", params[:category]).order("lower(title)")
+   # end
+   
+   @resources = if params[:category_id]
+     Category.find(params[:category_id]).resources
+   else
+     Resource.all
+   end
+ end
+ 
+   
+   
   end
   
   def show
