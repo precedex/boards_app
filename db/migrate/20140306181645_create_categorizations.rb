@@ -9,13 +9,13 @@ class CreateCategorizations < ActiveRecord::Migration
       t.belongs_to :category
     end
     
-    remove_column :resource, :category
+    remove_column :resources, :category
   end
 
   def down
     drop_table :categorizations
     drop_table :categories
-    add_column :resource, :category, :string
+    add_column :resources, :category, :string
   end
 end
 
