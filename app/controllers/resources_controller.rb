@@ -9,15 +9,11 @@ class ResourcesController < ApplicationController
    #   @resources = Resource.where("category = ?", params[:category]).order("lower(title)")
    # end
    
-   @resources = if params[:category_id]
-     Category.find(params[:category_id]).resources
-   else
-     Resource.all
-   end
- end
- 
-   
-   
+    @resources = if params[:category_id]
+                 Category.find(params[:category_id]).resources
+                 else
+                  Resource.all
+                 end
   end
   
   def show
