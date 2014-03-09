@@ -1,6 +1,7 @@
 development:
   adapter: postgresql
   database: pg_database_development
+  user: postgres
   pool: 5
   timeout: 5000
 
@@ -10,6 +11,7 @@ development:
 test:
   adapter: postgresql
   database: pg_database_test
+  user: postgres
   pool: 5
   timeout: 5000
 

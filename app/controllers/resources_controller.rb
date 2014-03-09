@@ -1,21 +1,14 @@
 class ResourcesController < ApplicationController
   before_action :set_resource, only: [:show, :edit, :update, :destroy]
-  
+
   def index
-    #if params[:category].nil?
-     # params[:category] = "All resource"
-     # @resources = Resource.all.order(:title)
-   # else 
-   #   @resources = Resource.where("category = ?", params[:category]).order("lower(title)")
-   # end
-   
     @resources = if params[:category_id]
-                 Category.find(params[:category_id]).resources
+                   Category.find(params[:category_id]).resources.by_title
                  else
-                  Resource.all
+                   Resource.by_title
                  end
   end
-  
+
   def show
   end
 
@@ -68,6 +61,6 @@ class ResourcesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def resource_params
-      params.require(:resource).permit(:title, :authors, :edition, :year, :category, :description, :image_url, :link)
+      params.require(:resource).permit(:title, :authors, :edition, :year, :description, :image_url, :link, category_ids: [])
     end
 end

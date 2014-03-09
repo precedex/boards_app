@@ -1,67 +1,60 @@
 <%= form_for(@resource) do |f| %>
-  <% if @resource.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@resource.errors.count, "error") %> prohibited this resource from being saved:</h2>
+   <% if @resource.errors.any? %>
+     <div id="error_explanation">
+       <h2><%= pluralize(@resource.errors.count, "error") %> prohibited this resource from being saved:</h2>
 
-      <ul>
-      <% @resource.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+       <ul>
+       <% @resource.errors.full_messages.each do |msg| %>
+         <li><%= msg %></li>
+       <% end %>
+       </ul>
+     </div>
+   <% end %>
 
-  <div class="field">
-    <%= f.label :title %><br>
-    <%= f.text_area :title %>
-  </div>
-  <div class="field">
-    <%= f.label :authors %><br>
-    <%= f.text_area :authors %>
-  </div>
-  <div class="field">
-    <%= f.label :edition %><br>
-    <%= f.text_field :edition %>
-  </div>
-  <div class="field">
-    <%= f.label :year %><br>
-    <%= f.text_field :year %>
-  </div>
-	 
-  <div class="field">
-	 <%= check_box_tag(:category) %>
-	 <%= label_tag(:category, "Reference") %>
-	 <%= check_box_tag(:category) %>
-	 <%= label_tag(:category, "Concise") %>
-	 <%= check_box_tag(:category) %>
-	 <%= label_tag(:category, "Case-based") %>
-	 <%= check_box_tag(:category) %>
-	 <%= label_tag(:category, "Pediatric") %>
-	 <%= check_box_tag(:category) %>
-	 <%= label_tag(:category, "Cardiac") %>
-	 <%= check_box_tag(:category) %>
-	 <%= label_tag(:category, "OB") %>
-	 <%= check_box_tag(:category) %>
-	 <%= label_tag(:category, "Handbooks") %>
-	 <%= check_box_tag(:category) %>
-	 <%= label_tag(:category, "Written Board") %>
-	 <%= check_box_tag(:category) %>
-	 <%= label_tag(:category, "Oral Board") %>
-  </div> 
-	 
-  <div class="field">
-    <%= f.label :description %><br>
-    <%= f.text_area :description %>
-  </div>
-  <div class="field">
-    <%= f.label :image_url %><br>
-    <%= f.text_field :image_url %>
-  </div>
-  <div class="field">
-    <%= f.label :link %><br>
-    <%= f.text_area :link %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+   <div class="field">
+     <%= f.label :title %>
+     <br/>
+     <%= f.text_field :title %>
+   </div>
+   <div class="field">
+     <%= f.label :authors %>
+     <br/>
+     <%= f.text_field :authors %>
+   </div>
+   <div class="field">
+     <%= f.label :edition %>
+     <br/>
+     <%= f.number_field :edition %>
+   </div>
+   <div class="field">
+     <%= f.label :year %>
+     <br/>
+     <%= f.number_field :year %>
+   </div>
+   <div class="field">
+     <%= f.label :categories %>
+     <%= f.collection_check_boxes :category_ids, Category.all, :id, :name do |b| %>
+       <br/>
+       <%= b.check_box %>
+       <%= b.label %>
+     <% end %>
+   </div>
+   <div class="field">
+     <%= f.label :description %>
+     <br/>
+     <%= f.text_area :description %>
+   </div>
+   <div class="field">
+     <%= f.label :image_url %>
+     <br/>
+     <%= f.url_field :image_url %>
+   </div>
+   <div class="field">
+     <%= f.label :link %>
+     <br/>
+     <%= f.url_field :link %>
+   </div>
+   <div class="actions">
+     <%= f.submit %>
+   </div>
 <% end %>
