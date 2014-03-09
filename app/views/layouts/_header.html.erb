@@ -36,7 +36,8 @@
 										  current_page?("/resources/case-based_textbooks") %>">
         <a href="#" data-toggle="dropdown">Books <b class="caret"></b></a>
         <ul class="dropdown-menu">
-          <li><a href="/resources/reference_textbooks">  Reference   </a></li>
+          <!--<li><a href="/resources/reference_textbooks">  Reference   </a></li>-->
+		  <li><a href="/resources/reference_textbooks">  Reference   </a></li>
           <li><a href="/resources/concise_textbooks">    Concise     </a></li>
 		  <li><a href="/resources/case-based_textbooks"> Case-based  </a></li>
 		  <li><a href="/resources/pediatric_textbooks">  Pediatric   </a></li>
@@ -47,7 +48,8 @@
 		  <li><a href="/resources/review_textbooks">     Written Board </a></li>
 		  <li><a href="/resources/oralboards">    	     Oral Board   </a></li>
           <li class="divider"></li>
-		  <li><a href="/resources"> 			 		 All books   </a></li> 
+		  <!--<li><a href="/resources"> 			     All books   </a></li> -->
+		  <li><%= link_to  'All Books', resources_path	%>	 		 	 </li> 
         </ul>
 	  </li>
 	  

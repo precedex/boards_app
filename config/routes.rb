@@ -41,12 +41,9 @@ BoardsApp::Application.routes.draw do
   get    '/orals',                        to: 'static_pages#orals'
   get    '/check_answer/:id',             to: 'questions#check_answer'
   
-  resources :questions, :sites
+  resources :questions, :sites, :resources
   
   resources :categories, only: [] do
     resources :resources, only: [:index]
   end
-  
-  resources :resources, only: [:index]  
-  
 end

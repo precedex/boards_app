@@ -27,15 +27,26 @@
     <%= f.label :year %><br>
     <%= f.text_field :year %>
   </div>
-  
- <!-- <div class="field">
-    <%= f.label :category %><br>
-    <%= f.text_area :category %>
-  </div> -->
 	 
   <div class="field">
-      <%= f.fields_for "categories[]" do |cat| %><br>
-      <%= cat.check_box :name %>
+	 <%= check_box_tag(:category) %>
+	 <%= label_tag(:category, "Reference") %>
+	 <%= check_box_tag(:category) %>
+	 <%= label_tag(:category, "Concise") %>
+	 <%= check_box_tag(:category) %>
+	 <%= label_tag(:category, "Case-based") %>
+	 <%= check_box_tag(:category) %>
+	 <%= label_tag(:category, "Pediatric") %>
+	 <%= check_box_tag(:category) %>
+	 <%= label_tag(:category, "Cardiac") %>
+	 <%= check_box_tag(:category) %>
+	 <%= label_tag(:category, "OB") %>
+	 <%= check_box_tag(:category) %>
+	 <%= label_tag(:category, "Handbooks") %>
+	 <%= check_box_tag(:category) %>
+	 <%= label_tag(:category, "Written Board") %>
+	 <%= check_box_tag(:category) %>
+	 <%= label_tag(:category, "Oral Board") %>
   </div> 
 	 
   <div class="field">
