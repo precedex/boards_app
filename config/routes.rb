@@ -2,15 +2,15 @@ BoardsApp::Application.routes.draw do
 
   root  'static_pages#welcome'
 
-  get   '/resources/review_textbooks',    to: 'resources#index', :category => 'Review textbook'
-  get   '/resources/concise_textbooks',   to: 'resources#index', :category => 'Concise textbook'
-  get   '/resources/reference_textbooks', to: 'resources#index', :category => 'Reference textbook'
-  get   '/resources/pediatric_textbooks', to: 'resources#index', :category => 'Pediatric textbook'
-  get   '/resources/cardiac_textbooks',   to: 'resources#index', :category => 'Cardiac textbook'
-  get   '/resources/ob_textbooks',        to: 'resources#index', :category => 'OB textbook'
-  get   '/resources/case-based_textbooks',to: 'resources#index', :category => 'Case-based textbook'
-  get   '/resources/handbooks',           to: 'resources#index', :category => 'Handbook'
-  get   '/resources/oralboards',          to: 'resources#index', :category => 'oralboards'
+  # get   '/resources/review_textbooks',    to: 'resources#index', :category => 'Review textbook'
+  # get   '/resources/concise_textbooks',   to: 'resources#index', :category => 'Concise textbook'
+  # get   '/resources/reference_textbooks', to: 'resources#index', :category => 'Reference textbook'
+  # get   '/resources/pediatric_textbooks', to: 'resources#index', :category => 'Pediatric textbook'
+  # get   '/resources/cardiac_textbooks',   to: 'resources#index', :category => 'Cardiac textbook'
+  # get   '/resources/ob_textbooks',        to: 'resources#index', :category => 'OB textbook'
+  # get   '/resources/case-based_textbooks',to: 'resources#index', :category => 'Case-based textbook'
+  # get   '/resources/handbooks',           to: 'resources#index', :category => 'Handbook'
+  # get   '/resources/oralboards',          to: 'resources#index', :category => 'oralboards'
 
   get   '/sites/blogs',                   to: 'sites#index',     :category => 'blog'
 
@@ -32,7 +32,6 @@ BoardsApp::Application.routes.draw do
   get    '/feedback',                     to: 'static_pages#feedback'
   get    '/tools',                        to: 'static_pages#tools'
   get    '/about',                        to: 'static_pages#about'
-  get    '/resources',                    to: 'resources#index'
   get    '/sites/writtenboards',          to: 'static_pages#writtens'
   get    '/sites/oralboards',             to: 'static_pages#orals'
   get    '/sites/pedsboards',             to: 'static_pages#pedsboards'
