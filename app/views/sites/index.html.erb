@@ -1,49 +1,37 @@
 <div class = "sites">
-	
-	<% if params[:category] == "education"%> <% title "Miscellaneous" %> <% end %>
-	<% if params[:category] == "education-regional"%> <% title "Regional Anesthesia" %> <% end %>
-	<% if params[:category] == "education-video"%> <% title "Videos" %> <% end %>
-	<% if params[:category] == "education-simulation"%> <% title "Simulation" %> <% end %>
-	<% if params[:category] == "journal"%> <% title "Journals" %> <% end %>
-	<% if params[:category] == "blog"%> <% title "Blogs" %> <% end %>
-	<% if params[:category] == "society-us"%> <% title "US Anesthesiology Societies" %> <% end %>
-	<% if params[:category] == "society-state"%> <% title "State Anesthesiology Societies" %> <% end %>
-	<% if params[:category] == "society-intl"%> <% title "Intl. Anesthesiology Societies" %> <% end %>
-	<% if params[:category] == "society-pain"%> <% title "Regional Anesthesia & Pain Societies" %> <% end %>
-	<% if params[:category] == "society-crna"%> <% title "Nurse Anesthesia Societies" %> <% end %>
+  <% if params[:category] == "education"%> <% title "Miscellaneous" %> <% end %>
+  <% if params[:category] == "education-regional"%> <% title "Regional Anesthesia" %> <% end %>
+  <% if params[:category] == "education-video"%> <% title "Videos" %> <% end %>
+  <% if params[:category] == "education-simulation"%> <% title "Simulation" %> <% end %>
+  <% if params[:category] == "journal"%> <% title "Journals" %> <% end %>
+  <% if params[:category] == "blog"%> <% title "Blogs" %> <% end %>
+  <% if params[:category] == "society-us"%> <% title "US Anesthesiology Societies" %> <% end %>
+  <% if params[:category] == "society-state"%> <% title "State Anesthesiology Societies" %> <% end %>
+  <% if params[:category] == "society-intl"%> <% title "Intl. Anesthesiology Societies" %> <% end %>
+  <% if params[:category] == "society-pain"%> <% title "Regional Anesthesia & Pain Societies" %> <% end %>
+  <% if params[:category] == "society-crna"%> <% title "Nurse Anesthesia Societies" %> <% end %>
 
-	<% if params[:category] == "oralboards" %>
-	<%= render 'orals' %>
-	<% end %>
-	
-	<% if params[:category] == "writtenboards" %>
-	<%= render 'writtens' %>
-	<% end %>
+  <% if params[:category] == "oralboards" %><%= render 'orals' %><% end %>
+  <% if params[:category] == "writtenboards" %><%= render 'writtens' %><% end %>
 
-	<h1><%= yield(:title) %> </h1>
+  <h1><%= yield(:title) %></h1>
 
-<ul>
-	  <% @sites.each do |site| %>
-	  <li><a href="<%= site.link %>" target="_blank"><%= site.title %></a></li>
+  <ul>
+    <% @sites.each do |site| %>
+      <li><%= external_link_to site.title, site.link %></li>
 
-	  <!--
-	  <div class="list_actions">
+      <!--
+      <div class="list_actions">
         <%= link_to 'Show', site %>
         <%= link_to 'Edit', edit_site_path(site) %>
         <%= link_to 'Destroy', site, method: :delete, data: { confirm: 'Are you sure?' } %>
       </div>
-		  -->
-	 
-
+      -->
     <% end %>
-
-	<!--
-	<div class="new_site">
-<%= link_to 'New Site', new_site_path %> 
+    <!--
+    <div class="new_site">
+      <%= link_to 'New Site', new_site_path %>
     </div>
-		-->
-</ul>
-
-
-
+    -->
+  </ul>
 </div>
