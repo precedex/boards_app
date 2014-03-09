@@ -1,105 +1,76 @@
 <header>
+  <nav class="navbar navbar-inverse" role="navigation">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
 
-	<nav class="navbar navbar-inverse" role="navigation">
-	  <div class="container-fluid">
-	    <!-- Brand and toggle get grouped for better mobile display -->
-	    <div class="navbar-header">
-	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-	        <span class="sr-only">Toggle navigation</span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	      </button>
-	    </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav nav-justified">
 
+          <li style= "font-family: 'belleza'; font-size: 1.5em; letter-spacing: 4px" class="<%= 'active' if current_page?("/") %>">
+          <a href="/">HUB</a></li></style>
 
+          <li class="<%= 'active' if current_page?("/tools?") %>">
+          <a href="/tools?">           Tools          </a></li>
+          <li class="dropdown <%= 'active' if current_page?("/resources/handbooks") || current_page?("/resources/reference_textbooks") || current_page?("/resources/concise_textbooks") || current_page?("/resources/review_textbooks") || current_page?("/resources/pediatric_textbooks") || current_page?("/resources/cardiac_textbooks") || current_page?("/resources/ob_textbooks") || current_page?("/resources/qanda_textbooks") || current_page?("/resources/oralboards") || current_page?("/resources") || current_page?("/resources/case-based_textbooks") %>">
+          <a href="#" data-toggle="dropdown">Books <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="/resources/reference_textbooks">  Reference   </a></li>
+            <li><a href="/resources/concise_textbooks">    Concise     </a></li>
+            <li><a href="/resources/case-based_textbooks"> Case-based  </a></li>
+            <li><a href="/resources/pediatric_textbooks">  Pediatric   </a></li>
+            <li><a href="/resources/cardiac_textbooks">    Cardiac     </a></li>
+            <li><a href="/resources/ob_textbooks">       OB          </a></li>
+            <li><a href="/resources/handbooks">        Handbooks   </a></li>
+            <li class="divider"></li>
+            <li><a href="/resources/review_textbooks">     Written Board </a></li>
+            <li><a href="/resources/oralboards">           Oral Board   </a></li>
+            <li class="divider"></li>
+            <li><a href="/resources">            All books   </a></li>
+          </ul>
+          </li>
 
+          <li class ="dropdown <%= 'active' if current_page?("/sites/writtenboards") || current_page?("/sites/oralboards") %>">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Exams <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="/sites/writtenboards">      Writtens     </a></li>
+            <li><a href="/sites/oralboards">         Orals        </a></li>
+            <li><a href="/sites/pedsboards">         Pediatric    </a></li>
+          </ul>
 
-  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-    <ul class="nav navbar-nav nav-justified">
-		
-	  <li style= "font-family: 'belleza'; font-size: 1.5em; letter-spacing: 4px" class="<%= 'active' if current_page?("/") %>">
-		  <a href="/">HUB</a></li></style>
-		  
-  	  <li class="<%= 'active' if current_page?("/tools?") %>">
-  			<a href="/tools?">					 Tools				  </a></li>
-      <li class="dropdown <%= 'active' if current_page?("/resources/handbooks") ||
-	  									  current_page?("/resources/reference_textbooks") ||
-										  current_page?("/resources/concise_textbooks") ||
-										  current_page?("/resources/review_textbooks") ||
-										  current_page?("/resources/pediatric_textbooks") ||
-										  current_page?("/resources/cardiac_textbooks") ||
-										  current_page?("/resources/ob_textbooks") ||
-										  current_page?("/resources/qanda_textbooks") ||
-										  current_page?("/resources/oralboards") ||
-										  current_page?("/resources") ||
-										  current_page?("/resources/case-based_textbooks") %>">
-        <a href="#" data-toggle="dropdown">Books <b class="caret"></b></a>
-        <ul class="dropdown-menu">
-          <!--<li><a href="/resources/reference_textbooks">  Reference   </a></li>-->
-		  <li><a href="/resources/reference_textbooks">  Reference   </a></li>
-          <li><a href="/resources/concise_textbooks">    Concise     </a></li>
-		  <li><a href="/resources/case-based_textbooks"> Case-based  </a></li>
-		  <li><a href="/resources/pediatric_textbooks">  Pediatric   </a></li>
-		  <li><a href="/resources/cardiac_textbooks">    Cardiac     </a></li>
-		  <li><a href="/resources/ob_textbooks">    	 OB          </a></li>
-		  <li><a href="/resources/handbooks"> 			 Handbooks   </a></li>  
-		  <li class="divider"></li>
-		  <li><a href="/resources/review_textbooks">     Written Board </a></li>
-		  <li><a href="/resources/oralboards">    	     Oral Board   </a></li>
-          <li class="divider"></li>
-		  <!--<li><a href="/resources"> 			     All books   </a></li> -->
-		  <li><%= link_to  'All Books', resources_path	%>	 		 	 </li> 
-        </ul>
-	  </li>
-	  
-	  <li class ="dropdown <%= 'active' if current_page?("/sites/writtenboards") ||
-										   current_page?("/sites/oralboards") %>">
-        	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Exams <b class="caret"></b></a>
-			
-        <ul class="dropdown-menu">
-            <li><a href="/sites/writtenboards"> 		 Writtens 	  </a></li>
-            <li><a href="/sites/oralboards">   			 Orals    	  </a></li>
-  		    <li><a href="/sites/pedsboards">   			 Pediatric    </a></li>
-		</ul>  
-			
-		<li class="dropdown <%= 'active' if current_page?("/sites/education") %>">
-			<a href="#" class="dropdown-toggle" data-toggle="dropdown">Education <b class="caret"></b></a>
-			
-	        <ul class="dropdown-menu">
-	            <li><a href="/sites/education/regional"> 	 Regional Anesthesia 	  </a></li>
-				<li><a href="/sites/education/video"> 	 	 Videos 	 			  </a></li>	
-				<li><a href="/sites/education/simulation"> 	 Simulation 	 		  </a></li>	
-	            <li><a href="/sites/education">   			 Miscellaneous    	      </a></li>
-			</ul> 
-					
-		<li class="<%= 'active' if current_page?("/sites/journals") %>">
-			<a href="/sites/journals">     		     Journals     		  </a></li>
-		
-  	    <li class ="dropdown <%= 'active' if current_page?("/sites/societies/us") ||
-	  									     current_page?("/sites/societies/state") ||
-										     current_page?("/sites/societies/intl") ||
-											 current_page?("/sites/societies/crna") ||
-										     current_page?("/sites/societies/pain") %>">
+          <li class="dropdown <%= 'active' if current_page?("/sites/education") %>">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Education <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="/sites/education/regional">   Regional Anesthesia    </a></li>
+            <li><a href="/sites/education/video">      Videos           </a></li>
+            <li><a href="/sites/education/simulation">   Simulation         </a></li>
+            <li><a href="/sites/education">          Miscellaneous            </a></li>
+          </ul>
+
+          <li class="<%= 'active' if current_page?("/sites/journals") %>">
+          <a href="/sites/journals">             Journals           </a></li>
+          <li class ="dropdown <%= 'active' if current_page?("/sites/societies/us") || current_page?("/sites/societies/state") || current_page?("/sites/societies/intl") || current_page?("/sites/societies/crna") || current_page?("/sites/societies/pain") %>">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Societies <b class="caret"></b></a>
-		    <ul class="dropdown-menu">
-              <li><a href="/sites/societies/us"> 		 American      </a></li>
-  			  <li><a href="/sites/societies/state">      State         </a></li>
-              <li><a href="/sites/societies/intl">   	 International </a></li>
-  		      <li><a href="/sites/societies/pain"> 		 Regional/Pain </a></li>
-			  <li><a href="/sites/societies/crna">       CRNA		   </a></li>
-  		</ul>  
-        </li>
-		
-		<li class="<%= 'active' if current_page?("/sites/blogs") %>">
-			<a href="/sites/blogs">					 Blogs				  </a></li>
-      </ul>
-	
-  </div><!-- /.navbar-collapse -->
-  </div><!-- .container-fluid -->
-</nav>
+          <ul class="dropdown-menu">
+            <li><a href="/sites/societies/us">     American      </a></li>
+            <li><a href="/sites/societies/state">      State         </a></li>
+            <li><a href="/sites/societies/intl">     International </a></li>
+            <li><a href="/sites/societies/pain">     Regional/Pain </a></li>
+            <li><a href="/sites/societies/crna">       CRNA      </a></li>
+          </ul>
+          </li>
+
+          <li class="<%= 'active' if current_page?("/sites/blogs") %>">
+          <a href="/sites/blogs">          Blogs          </a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 </header>
-	
-	
-	
-	
