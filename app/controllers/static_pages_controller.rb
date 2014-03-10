@@ -20,11 +20,40 @@ class StaticPagesController < ApplicationController
   def secret
   end
 
+  def writtens
+    @old_aba_exams = ["1990-1996 In-training Examinations", "http://www.theaba.org/Home/examinations_certifications"]
+    @aba_training_programs = ["here", "http://www.theaba.org/Home/TrainingPrograms"]
+    @open_anesthesia_keywords = ["Open Anesthesia", "http://www.openanesthesia.org/OpenAnesthesia.org:KeywordBrowser"]
+    @study_strategy = [
+      ["ITE 2014 (2/14)",                                  "http://forums.studentdoctor.net/threads/ite-2014.1056691/"],
+      ["Hall vs M5 Review Questions (12/13)",              "http://forums.studentdoctor.net/threads/hall-vs-m5-review-questions.1045795/"],
+      ["Question: best written board review (3/13)",       "http://forums.studentdoctor.net/threads/question-best-written-board-review.994017/"],
+      ["Written board materials (12/11)",                  "http://forums.studentdoctor.net/threads/written-board-materials.876006/"],
+      ["ABA Writtens Study Tips (10/10)",                  "http://forums.studentdoctor.net/threads/aba-writtens-study-tips.771032/"],
+      ["Help for ABA Written Boards (3/10)",               "http://forums.studentdoctor.net/threads/help-for-aba-written-boards.712423/"],
+      ["Review Courses for Writtens (3/09)",               "http://forums.studentdoctor.net/threads/review-courses-for-writtens.622094/"],
+      ["Written board prep (1/09)",                        "http://forums.studentdoctor.net/threads/written-board-prep.594054/"],
+      ["Written Exam results are in! (9/08)",              "http://forums.studentdoctor.net/threads/written-exam-results-are-in.565074/"],
+      ["Best Review Courses for Written Board??? (11/07)", "http://forums.studentdoctor.net/threads/best-review-courses-for-written-board.467298/"],
+    ]
+
+    @commercial_courses = [
+      ["10th Hour Anesthesia Review",                    "http://www.anesthesia-review.com"],
+      ["Anesthesia Prep",                                "http://www.anesthesiaprep.com"],
+      ["Anesthesia Exam",                                "http://www.anesthesiaexam.com"],
+      ["Beyond Anesthesia",                              "http://beyondanesthesia.com"],
+      ["Core Concepts Anesthesia Review",                "http://www.ccanesthesiareview.com/QOD/QOD.asp"],
+      ["Dr. Jensen Anesthesiology & Pain Board P.R.E.P", "http://www.anesthesiologyboards.com"],
+      ["Gas Questions",                                  "https://www.gasquestions.com"],
+      ["M5 Board Review",                                "http://m5boardreview.com"],
+      ["The Pass Machine",                               "http://www.thepassmachine.com/anesthesiology-certification-exam-prep-course.html"],
+    ]
+  end
+
   def orals
     @aba_archive = ["ABA", 'http://theaba.docstream.com/videos/archive/?page=1']
     @exam_hints_pdf = ["PDF", 'http://anesthesiaboardhints.homestead.com/HintsfortheAnesthesiologyBoardExaminationRev1.6.pdf']
     @the_anesthesia_consultant = ["The Anesthesia Consultant", 'http://theanesthesiaconsultant.com/2013/08/22/advice-for-passing-the-oral-board-exams-in-anesthesiology/']
-    @the_student_doctor_network = [view_context.image_tag("SDN2.jpg"), "http://forums.studentdoctor.net/forums/anesthesiology.45/"]
 
     @study_strategy = [
       ["Which Anesthesia Oral Board Review Course? (1/14)",                   "http://forums.studentdoctor.net/threads/which-anesthesia-oral-board-review-course.1052755/"],
