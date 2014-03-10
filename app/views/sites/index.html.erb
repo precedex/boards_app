@@ -1,16 +1,5 @@
 <div class = "sites">
-  <% if params[:category] == "education"%> <% title "Miscellaneous" %> <% end %>
-  <% if params[:category] == "education-regional"%> <% title "Regional Anesthesia" %> <% end %>
-  <% if params[:category] == "education-video"%> <% title "Videos" %> <% end %>
-  <% if params[:category] == "education-simulation"%> <% title "Simulation" %> <% end %>
-  <% if params[:category] == "journal"%> <% title "Journals" %> <% end %>
-  <% if params[:category] == "blog"%> <% title "Blogs" %> <% end %>
-  <% if params[:category] == "society-us"%> <% title "US Anesthesiology Societies" %> <% end %>
-  <% if params[:category] == "society-state"%> <% title "State Anesthesiology Societies" %> <% end %>
-  <% if params[:category] == "society-intl"%> <% title "Intl. Anesthesiology Societies" %> <% end %>
-  <% if params[:category] == "society-pain"%> <% title "Regional Anesthesia & Pain Societies" %> <% end %>
-  <% if params[:category] == "society-crna"%> <% title "Nurse Anesthesia Societies" %> <% end %>
-
+  <% title site_category_title(params[:category]) %>
   <h1><%= yield(:title) %></h1>
 
   <ul>
