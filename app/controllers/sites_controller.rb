@@ -4,9 +4,9 @@ class SitesController < ApplicationController
   def index
     if params[:category].nil?
       params[:category] = "All site"
-      @sites = Site.all.order(:title)
-    else 
-      @sites = Site.where("category = ?", params[:category]).order("lower(title)")
+      @sites = Site.by_title
+    else
+      @sites = Site.where(category: params[:category]).by_title
     end
   end
 
