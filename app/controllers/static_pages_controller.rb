@@ -58,4 +58,9 @@ class StaticPagesController < ApplicationController
       ["Ultimate Board Prep",                          "http://www.ultimateboardprep.com"]
     ]
   end
+
+  def pedsboards
+    @peds_exam_content = "http://www.theaba.org/pdf/PAContentOutline.pdf"
+    @peds_exam_questions = "http://www.theaba.org/pdf/PASampleQuestions.pdf"
+  end
 end
