@@ -1,18 +1,16 @@
 <footer class="footer">
-	
-		<p style = "float: left; margin-left: 2em"> 
-			<%= link_to "About",       about_path    %> 
-			&nbsp; | &nbsp;
-		    <%= link_to "Feedback",    feedback_path %>
-	   </p></style>
 
-		<p>
-			&copy; 2013-2014 David Moss, MD
-		</p>
-	   
- 	   <div class = "center">
- 	     <a href="http://www.studentdoctor.net/partners/site-partners/" target="_blank">  <%= image_tag("SDN.jpg") %></a>
-       </div>
-   
+  <p style = "float: left; margin-left: 2em">
+  <%= link_to "About", about_path %>
+  &nbsp; | &nbsp;
+  <%= link_to "Feedback", feedback_path %>
+  </p>
+
+  <p> &copy; 2013-2014 David Moss, MD </p>
+
+  <div class = "center">
+    <%= external_link_to image_tag("SDN.jpg"), "http://www.studentdoctor.net/partners/site-partners/"  %>
+  </div>
+
 </footer>
-			
+

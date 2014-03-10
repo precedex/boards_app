@@ -2,88 +2,47 @@
 
 <div class = "sites" >
 
-	<h1> <%= yield(:title) %> </h1>
+  <h1> <%= yield(:title) %> </h1>
 
-<div class = "exams">
-	
-	<p>The oral board exam tests your ability to organize your thoughts quickly and communicate them efficiently. You are being evaluated on your ability to formulate and articulate your thoughts clearly. This is a very different skill than that required to excel on the written exam. The single best way to prepare for the exam is to simulate the exam experience with a seasoned examiner. You must get used to the pace of the exam and thinking on your feet.</p>
-	<p>7-part video overview to the oral boards available from the 
-		<a href='http://theaba.docstream.com/videos/archive/?page=1' target="_blank">ABA</a>
-	</p>
-	
-	<p>Oral board review <a href = '/resources/oralboards'>books</a></p>
+  <div class = "exams">
 
-	<p>Hints for mastering the ABA Anesthesiology Boards:
-		<a href='http://anesthesiaboardhints.homestead.com/HintsfortheAnesthesiologyBoardExaminationRev1.6.pdf' target="_blank"> PDF</a>
-	</p>
-	
-	<p>Advice from <a href='http://theanesthesiaconsultant.com/2013/08/22/advice-for-passing-the-oral-board-exams-in-anesthesiology/' target="_blank"> The Anesthesia Consultant</a>, Richard Novak
-	</p>
+    <p>
+    The oral board exam tests your ability to organize your thoughts quickly
+    and communicate them efficiently. You are being evaluated on your ability
+    to formulate and articulate your thoughts clearly. This is a very different
+    skill than that required to excel on the written exam. The single best way
+    to prepare for the exam is to simulate the exam experience with a seasoned
+    examiner. You must get used to the pace of the exam and thinking on your
+    feet.
+    </p>
+    <p>
+    7-part video overview to the oral boards available from the
+    <%= external_link_to *@aba_archive %>
+    </p>
 
-	<p>Oral board study strategy has been extensively discussed at 
-		<a href="http://forums.studentdoctor.net/forums/anesthesiology.45/" target="_blank">
-		<%= image_tag("SDN2.jpg") %></a>
-	</p>
-	
-	<ul>
-  	  <li><a href="http://forums.studentdoctor.net/threads/which-anesthesia-oral-board-review-course.1052755/" target="_blank">
-  		  Which Anesthesia Oral Board Review Course? (1/14)</a></li>
-	  <li><a href="http://forums.studentdoctor.net/threads/2014-oral-boards-study-plan.1048582/" target="_blank">
-	  	  2014 Oral Boards Study Plan (1/14)</a></li>
-	  <li><a href="http://forums.studentdoctor.net/threads/oral-board-studying-tips.1004846/" target="_blank">
-		  Oral Board Studying Tips (5/13)</a></li>
-	  <li><a href="http://forums.studentdoctor.net/threads/oral-boards-the-ho-course.973389/" target="_blank">
-		  Oral Boards: the Ho Course (12/12)</a></li>
-	  <li><a href="http://forums.studentdoctor.net/threads/oral-boards-for-dummies.960908/" target="_blank">
-		  Oral Boards for Dummies (10/12)</a></li>
-	  <li><a href="http://forums.studentdoctor.net/threads/just-took-oral-board-exam-holy-amp.954763/" target="_blank">
-		  Just took oral board exam: Holy ... (10/12)</a></li>
-	  <li><a href="http://forums.studentdoctor.net/threads/oral-board-course-which-one-here-are-some-tips.952284/" target="_blank">
-		  Oral Board Course- Which One? (9/12)</a></li>
-	  <li><a href="http://forums.studentdoctor.net/threads/fall-orals.942088/" target="_blank">
-		  Fall Orals (8/12)</a></li>
-	  <li><a href="http://forums.studentdoctor.net/threads/i-failed-the-oral-boards-again.914746/" target="_blank">
-		  I failed the oral boards again (5/12)</a></li>	  
-	  <li><a href="http://forums.studentdoctor.net/threads/april-aba-oral-exam.897213/" target="_blank">
-		  April ABA Oral Exam (3/12)</a></li>	   	  
-	  <li><a href="http://forums.studentdoctor.net/threads/oral-board-prep-course.883011/" target="_blank">
-		  Oral Board Prep Course (1/12)</a></li>	  
-	  <li><a href="http://forums.studentdoctor.net/threads/just-oral-boards.868158/" target="_blank">
-		  Just Oral Boards (11/11)</a></li>		  
-	  <li><a href="http://forums.studentdoctor.net/threads/oral-boards-self-study-vs-review-course.863807/" target="_blank">
-		 Oral Boards: Self-Study vs Review Course (10/11)</a></li>
-	  <li><a href="http://forums.studentdoctor.net/threads/oral-advice.863646/" target="_blank">
-	   	 Oral advice (10/11)</a></li>
-	  <li><a href="http://forums.studentdoctor.net/threads/oral-board-book.863401/" target="_blank">
-	   	 Oral Board Book (10/11)</a></li>
-	  <li><a href="http://forums.studentdoctor.net/threads/best-oral-boards-resource-not-going-to-a-session.842324/" target="_blank">
-	   	 Best Oral Boards Resource - not going to a session (7/11)</a></li>
-	  <li><a href="http://forums.studentdoctor.net/threads/my-oral-board-experience.822916/" target="_blank">
-	   	 My Oral Board Experience (5/11)</a></li>
-	  <li><a href="http://forums.studentdoctor.net/threads/what-is-the-best-way-to-study-for-the-anesthesia-oral-boards.821337/" target="_blank">
-	     What is the best way to study for the anesthesia oral boards (5/11)</a></li>
-	</ul></br>
-	<p style="text-decoration:underline"> Oral board commercial prep courses:</p></style>
-	<p style = "font-size: 1.5em; font-style: italic; text-indent: 1em; list-style: none"> I don't have any experience with these products and do not endorse any particular product </p></style>
-	
-		<ul>
-	
-		  <li><a href="https://boardstifflive.com" target="_blank">
-			    Board Stiff Live</a></li>	  
-		  <li><a href='http://www.anesthesiologyboards.com/oral/' target="_blank">
-	  			Dr. Jensen Best Medicine for Oral Boards</li>		
-		  <li><a href="http://www.gadsdenjones.com" target="_blank">GadsenJones 
-			  	Anesthesiology Oral Board Review</a></li>	  
-		  <li><a href="http://www.justoralboards.com" target="_blank">
-		        Just Oral Boards</a></li>
-	      <li><a href="http://www.nailtheboards.com" target="_blank">
-			    Nail the Boards</a></li>	  
-	      <li><a href="http://www.anconsultants.com" target="_blank">
-			    Michael Ho: The Essential Oral Board Review</a></li>
-	      <li><a href="http://www.osler.org/main/ane.html" target="_blank">
-			    The Osler Institute</a></li>	
-	      <li><a href="http://www.ultimateboardprep.com" target="_blank">
-			    Ultimate Board Prep</a></li>
-		</ul></br>
-</div>
+    <p>Oral board review <a href='/resources/oralboards'>books</a></p>
+
+    <p>
+    Hints for mastering the ABA Anesthesiology Boards: <%= external_link_to *@exam_hints_pdf %>
+    </p>
+
+    <p>
+    Advice from <%= external_link_to *@the_anesthesia_consultant %>, Richard Novak
+    </p>
+
+    <p>
+    Oral board study strategy has been extensively discussed at
+    <%= external_link_to *@the_student_doctor_network %>
+    </p>
+    <%= site_list @study_strategy %></br>
+
+    <p style="text-decoration:underline">
+    Oral board commercial prep courses:
+    </p>
+    <p style = "font-size: 1.5em; font-style: italic; text-indent: 1em; list-style: none">
+    I don't have any experience with these products and do not endorse any
+    particular product
+    </p>
+    <%= site_list @commercial_courses %></br>
+  </div>
 </div>
