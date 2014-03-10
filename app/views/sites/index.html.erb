@@ -11,9 +11,6 @@
   <% if params[:category] == "society-pain"%> <% title "Regional Anesthesia & Pain Societies" %> <% end %>
   <% if params[:category] == "society-crna"%> <% title "Nurse Anesthesia Societies" %> <% end %>
 
-  <% if params[:category] == "oralboards" %><%= render 'orals' %><% end %>
-  <% if params[:category] == "writtenboards" %><%= render 'writtens' %><% end %>
-
   <h1><%= yield(:title) %></h1>
 
   <ul>
