@@ -2,16 +2,6 @@ BoardsApp::Application.routes.draw do
 
   root  'static_pages#welcome'
 
-  # get   '/resources/review_textbooks',    to: 'resources#index', :category => 'Review textbook'
-  # get   '/resources/concise_textbooks',   to: 'resources#index', :category => 'Concise textbook'
-  # get   '/resources/reference_textbooks', to: 'resources#index', :category => 'Reference textbook'
-  # get   '/resources/pediatric_textbooks', to: 'resources#index', :category => 'Pediatric textbook'
-  # get   '/resources/cardiac_textbooks',   to: 'resources#index', :category => 'Cardiac textbook'
-  # get   '/resources/ob_textbooks',        to: 'resources#index', :category => 'OB textbook'
-  # get   '/resources/case-based_textbooks',to: 'resources#index', :category => 'Case-based textbook'
-  # get   '/resources/handbooks',           to: 'resources#index', :category => 'Handbook'
-  # get   '/resources/oralboards',          to: 'resources#index', :category => 'oralboards'
-
   get   '/sites/blogs',                   to: 'sites#index',     :category => 'blog'
 
   get   '/sites/education',               to: 'sites#index',     :category => 'education'

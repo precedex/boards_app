@@ -19,19 +19,28 @@
 
           <li class="<%= 'active' if current_page?("/tools?") %>">
           <a href="/tools?">           Tools          </a></li>
-          <li class="dropdown <%= 'active' if current_page?("/resources/handbooks") || current_page?("/resources/reference_textbooks") || current_page?("/resources/concise_textbooks") || current_page?("/resources/review_textbooks") || current_page?("/resources/pediatric_textbooks") || current_page?("/resources/cardiac_textbooks") || current_page?("/resources/ob_textbooks") || current_page?("/resources/qanda_textbooks") || current_page?("/resources/oralboards") || current_page?("/resources") || current_page?("/resources/case-based_textbooks") %>">
+          <li class="dropdown <%= 'active' if current_page?("/categories/1/resources") ||
+                                              current_page?("/categories/2/resources") ||
+                                              current_page?("/categories/3/resources") ||
+                                              current_page?("/categories/4/resources") ||
+                                              current_page?("/categories/5/resources") ||
+                                              current_page?("/categories/6/resources") ||
+                                              current_page?("/categories/7/resources") ||
+                                              current_page?("/categories/8/resources") ||
+                                              current_page?("/categories/9/resources") ||
+                                              current_page?("/resources") %>">
           <a href="#" data-toggle="dropdown">Books <b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li><a href="/resources/reference_textbooks">  Reference   </a></li>
-            <li><a href="/resources/concise_textbooks">    Concise     </a></li>
-            <li><a href="/resources/case-based_textbooks"> Case-based  </a></li>
-            <li><a href="/resources/pediatric_textbooks">  Pediatric   </a></li>
-            <li><a href="/resources/cardiac_textbooks">    Cardiac     </a></li>
-            <li><a href="/resources/ob_textbooks">       OB          </a></li>
-            <li><a href="/resources/handbooks">        Handbooks   </a></li>
+            <li><a href="/categories/1/resources">         Reference   </a></li>
+            <li><a href="/categories/2/resources">         Concise     </a></li>
+            <li><a href="/categories/3/resources">         Case-based  </a></li>
+            <li><a href="/categories/4/resources">         Pediatric   </a></li>
+            <li><a href="/categories/5/resources">         Cardiac     </a></li>
+            <li><a href="/categories/6/resources">         OB          </a></li>
+            <li><a href="/categories/7/resources">         Handbooks   </a></li>
             <li class="divider"></li>
-            <li><a href="/resources/review_textbooks">     Written Board </a></li>
-            <li><a href="/resources/oralboards">           Oral Board   </a></li>
+            <li><a href="/categories/8/resources">         Written Board </a></li>
+            <li><a href="/categories/9/resources">         Oral Board   </a></li>
             <li class="divider"></li>
             <li><a href="/resources">            All books   </a></li>
           </ul>
