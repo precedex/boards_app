@@ -1,112 +1,98 @@
 <% title "Written Boards" %>
-<div class = "sites">
-	<h1> <%= yield(:title) %> </h1>
-	
-	<p>The ABA has publicly released the <a href= "http://www.theaba.org/Home/examinations_certifications" target="_blank">
-	   1990-1996 In-training Examinations. </a> While some of the test subject material is no longer actively tested (e.g halothane, enflurane, Mapleson circuits), the underlying concepts are largely unchanged. Certain material on ACLS algorithms is no longer accurate and you should refer to the <a href= '/tools'>2010 algorithms.</a> K-type questions have been elminated and are not included here.</p>
-	   <p style = "padding-top: 1.6em; list-style: none" ></p>
-	    	
+<div class="sites">
+  <h1> <%= yield(:title) %> </h1>
 
-			<div class="center">
-				<form accept-charset="UTF-8"
-				      action = "/questions" 
-					  method = "get"
-					  name = "commit"
-				      class = "form-inline">
+  <p>The ABA has publicly released the <a href= "http://www.theaba.org/Home/examinations_certifications" target="_blank">
+    1990-1996 In-training Examinations. </a> While some of the test subject material is no longer actively tested (e.g halothane, enflurane, Mapleson circuits), the underlying concepts are largely unchanged. Certain material on ACLS algorithms is no longer accurate and you should refer to the <a href= '/tools'>2010 algorithms.</a> K-type questions have been elminated and are not included here.</p>
+  <p style="padding-top: 1.6em; list-style: none" ></p>
 
-				  <div class="checkbox">
-						Stems          <%= check_box_tag 'stems_checkbox',   '1', true %></br>
-						Answer Choices 	   <%= check_box_tag 'choices_checkbox', '1', true %> 
-				  </div>
-		  
-				  <div class="form-group">
-				    <input type="search" name= "search" class="input-large" id= "search" placeholder="Search">
-				  </div> 
-			</div>
-				  
-<table>
-	<tr>
-		<td>		  
-				  <button type="submit" class="btn btn-danger btn-lg">Search the Questions</button> 
-		       </form>
-	    </td>
-		 
-		<td>	
-			<form action = "/questions/random" 
-				  method = "get"
-				  id = "random"
-				  name = "random_button">
-			  <button type="submit" class="btn btn-primary btn-lg" >10 Random Questions</button>
-		    </form>
-		 </td>
-     </tr>
-</table>	  
-        
-<p style = "text-align: center; font-size: 1.5em; list-style: none">&copy; Joint Council on In-Training Examinations, American Board of Anesthesiology, American Society of Anesthesiologists</p></br></br>
 
-<div class = "exams">
+  <div class="center">
+    <form accept-charset="UTF-8" action="/questions" method="get" name="commit" class="form-inline">
+      <div class="row">
+        <div class="checkbox">
+          Stems          <%= check_box_tag 'stems_checkbox',   '1', true %><br/>
+          Answer Choices     <%= check_box_tag 'choices_checkbox', '1', true %>
+        </div>
 
-	<p>For information about the new staged exams, see
-		<a href="http://www.theaba.org/Home/TrainingPrograms" target="_blank">
-		here</a>
-	</p>
-	
-	<p>An extensive list of keywords can be found at
-		<a href="http://www.openanesthesia.org/OpenAnesthesia.org:KeywordBrowser" target="_blank">
-		Open Anesthesia</a>
-	</p>
-	
-	<p>Board review <a href = '/resources/review_textbooks'>books</a></p>
+        <div class="form-group">
+          <input type="search" name="search" class="input-large" id="search" placeholder="Search">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <button type="submit" style="margin:1em" class="btn btn-danger btn-lg">Search the Questions</button>
+          <%= link_to "10 Random Questions", "/questions/random", class: "btn btn-primary btn-lg" %>
+        </div>
+      </div>
+    </form>
+  </div>
 
-	<p>Written board study strategy has been extensively discussed at 
-		<a href="http://forums.studentdoctor.net/forums/anesthesiology.45/" target="_blank">
-		<%= image_tag("SDN2.jpg") %></a>
-	</p>
-	
-	<ul>
-  	  <li><a href='http://forums.studentdoctor.net/threads/ite-2014.1056691/' target="_blank">
-  			ITE 2014 (2/14)	
-	  <li><a href='http://forums.studentdoctor.net/threads/hall-vs-m5-review-questions.1045795/' target="_blank">
-			Hall vs M5 Review Questions (12/13)	
-	  <li><a href="http://forums.studentdoctor.net/threads/question-best-written-board-review.994017/" target="_blank">
-		  Question: best written board review (3/13)</a></li>	  
-	  <li><a href="http://forums.studentdoctor.net/threads/written-board-materials.876006/" target="_blank">
-		  Written board materials (12/11)</a></li>	  
-	  <li><a href="http://forums.studentdoctor.net/threads/aba-writtens-study-tips.771032/" target="_blank">
-		  ABA Writtens Study Tips (10/10)</a></li>
+  <p style="text-align: center; font-size: 1.5em; list-style: none">&copy; Joint Council on In-Training Examinations, American Board of Anesthesiology, American Society of Anesthesiologists</p></br></br>
+
+  <div class="exams">
+
+    <p>For information about the new staged exams, see
+    <a href="http://www.theaba.org/Home/TrainingPrograms" target="_blank">
+      here</a>
+    </p>
+
+    <p>An extensive list of keywords can be found at
+    <a href="http://www.openanesthesia.org/OpenAnesthesia.org:KeywordBrowser" target="_blank">
+      Open Anesthesia</a>
+    </p>
+
+    <p>Board review <a href='/resources/review_textbooks'>books</a></p>
+
+    <p>Written board study strategy has been extensively discussed at
+    <a href="http://forums.studentdoctor.net/forums/anesthesiology.45/" target="_blank">
+      <%= image_tag("SDN2.jpg") %></a>
+    </p>
+
+    <ul>
+      <li><a href='http://forums.studentdoctor.net/threads/ite-2014.1056691/' target="_blank">
+        ITE 2014 (2/14)</a></li>
+      <li><a href='http://forums.studentdoctor.net/threads/hall-vs-m5-review-questions.1045795/' target="_blank">
+        Hall vs M5 Review Questions (12/13)</a></li>
+      <li><a href="http://forums.studentdoctor.net/threads/question-best-written-board-review.994017/" target="_blank">
+        Question: best written board review (3/13)</a></li>
+      <li><a href="http://forums.studentdoctor.net/threads/written-board-materials.876006/" target="_blank">
+        Written board materials (12/11)</a></li>
+      <li><a href="http://forums.studentdoctor.net/threads/aba-writtens-study-tips.771032/" target="_blank">
+        ABA Writtens Study Tips (10/10)</a></li>
       <li><a href="http://forums.studentdoctor.net/threads/help-for-aba-written-boards.712423/" target="_blank">
-		  Help for ABA Written Boards (3/10)</a></li>	  
+        Help for ABA Written Boards (3/10)</a></li>
       <li><a href="http://forums.studentdoctor.net/threads/review-courses-for-writtens.622094/" target="_blank">
-		  Review Courses for Writtens (3/09)</a></li>
+        Review Courses for Writtens (3/09)</a></li>
       <li><a href="http://forums.studentdoctor.net/threads/written-board-prep.594054/" target="_blank">
-		  Written board prep (1/09)</a></li>	
+        Written board prep (1/09)</a></li>
       <li><a href="http://forums.studentdoctor.net/threads/written-exam-results-are-in.565074/" target="_blank">
-		  Written Exam results are in! (9/08)</a></li>
-	  <li><a href="http://forums.studentdoctor.net/threads/best-review-courses-for-written-board.467298/" target="_blank">
-		  Best Review Courses for Written Board??? (11/07)</a></li>
-	</ul></br>
-	<p style="text-decoration:underline"> Written board commercial prep courses:</p>
-	<p style = "font-size: 1.5em; font-style: italic; text-indent: 1em; list-style: none"> I don't have any experience with these products and do not endorse any particular product </p>
-	
-		<ul>
-		  <li><a href='http://www.anesthesia-review.com' target="_blank">
-				10th Hour Anesthesia Review	
-		  <li><a href="http://www.anesthesiaprep.com" target="_blank">
-			    Anesthesia Prep</a></li>	  
-		  <li><a href="http://www.anesthesiaexam.com" target="_blank">
-			    Anesthesia Exam</a></li>	  
-		  <li><a href="http://beyondanesthesia.com" target="_blank">
-		        Beyond Anesthesia</a></li>
-	      <li><a href="http://www.ccanesthesiareview.com/QOD/QOD.asp" target="_blank">
-			    Core Concepts Anesthesia Review</a></li>	  
-	      <li><a href="http://www.anesthesiologyboards.com" target="_blank">
-			    Dr. Jensen Anesthesiology & Pain Board P.R.E.P</a></li>
-	      <li><a href="https://www.gasquestions.com" target="_blank">
-			    Gas Questions</a></li>	
-	      <li><a href="http://m5boardreview.com" target="_blank">
-			    M5 Board Review</a></li>
-	  	  <li><a href="http://www.thepassmachine.com/anesthesiology-certification-exam-prep-course.html" target="_blank">
-	  			The Pass Machine</a></li>
-		</ul></br>
-	</div>
+        Written Exam results are in! (9/08)</a></li>
+      <li><a href="http://forums.studentdoctor.net/threads/best-review-courses-for-written-board.467298/" target="_blank">
+        Best Review Courses for Written Board??? (11/07)</a></li>
+    </ul></br>
+    <p style="text-decoration:underline"> Written board commercial prep courses:</p>
+    <p style="font-size: 1.5em; font-style: italic; text-indent: 1em; list-style: none"> I don't have any experience with these products and do not endorse any particular product </p>
+
+    <ul>
+      <li><a href='http://www.anesthesia-review.com' target="_blank">
+        10th Hour Anesthesia Review</a></li>
+      <li><a href="http://www.anesthesiaprep.com" target="_blank">
+        Anesthesia Prep</a></li>
+      <li><a href="http://www.anesthesiaexam.com" target="_blank">
+        Anesthesia Exam</a></li>
+      <li><a href="http://beyondanesthesia.com" target="_blank">
+        Beyond Anesthesia</a></li>
+      <li><a href="http://www.ccanesthesiareview.com/QOD/QOD.asp" target="_blank">
+        Core Concepts Anesthesia Review</a></li>
+      <li><a href="http://www.anesthesiologyboards.com" target="_blank">
+        Dr. Jensen Anesthesiology & Pain Board P.R.E.P</a></li>
+      <li><a href="https://www.gasquestions.com" target="_blank">
+        Gas Questions</a></li>
+      <li><a href="http://m5boardreview.com" target="_blank">
+        M5 Board Review</a></li>
+      <li><a href="http://www.thepassmachine.com/anesthesiology-certification-exam-prep-course.html" target="_blank">
+        The Pass Machine</a></li>
+    </ul></br>
+  </div>
 </div>
