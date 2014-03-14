@@ -2,6 +2,7 @@
 .sites
   %h1
     = yield(:title)
+
   %p
     The ABA has publicly released the #{external_link_to *@old_aba_exams}.
     While some of the test subject material is no longer actively tested (e.g
@@ -14,9 +15,12 @@
     .row
       .col-md-6.col-md-offset-3
         .checkbox
-          Stems          #{check_box_tag 'stems_checkbox',   '1', true}
-          %br/
-          Answer Choices     #{check_box_tag 'choices_checkbox', '1', true}
+          %div
+            Stems
+            = check_box_tag 'stems_checkbox', '1', true
+          %div
+            Answer Choices
+            = check_box_tag 'choices_checkbox', '1', true
         .form-group
           %input#search.input-large{name: "search", placeholder: "Search", type: "search"}/
     .row
@@ -28,6 +32,7 @@
     Anesthesiology, American Society of Anesthesiologists
   %br/
   %br/
+
   .exams
     %p
       For information about the new staged exams, see
