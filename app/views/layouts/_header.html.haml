@@ -12,8 +12,8 @@
         %ul.nav.navbar-nav.nav-justified
           %li{class: "#{'active' if current_page?("/")}", style: "font-family: 'belleza'; font-size: 1.5em; letter-spacing: 4px"}
             %a{href: "/"} HUB
-          %li{class: "#{'active' if current_page?("/tools?")}"}
-            %a{href: "/tools?"} Tools
+          %li{class: "#{'active' if current_page?("/tools")}"}
+            %a{href: "/tools"} Tools
           %li.dropdown{class: "#{'active' if current_page?("/categories/1/resources") || current_page?("/categories/2/resources") || current_page?("/categories/3/resources") || current_page?("/categories/4/resources") || current_page?("/categories/5/resources") || current_page?("/categories/6/resources") || current_page?("/categories/7/resources") || current_page?("/categories/8/resources") || current_page?("/categories/9/resources") || current_page?("/resources")}"}
             %a{"data-toggle" => "dropdown", href: "#"}
               Books
