@@ -20,4 +20,34 @@ module SitesHelper
   def site_category_title(category)
     CATEGORY_TITLES[category]
   end
+
+  def active_if(test)
+    "active" if test
+  end
+
+  def on_books_path?
+    current_page?("/categories/1/resources") ||
+    current_page?("/categories/2/resources") ||
+    current_page?("/categories/3/resources") ||
+    current_page?("/categories/4/resources") ||
+    current_page?("/categories/5/resources") ||
+    current_page?("/categories/6/resources") ||
+    current_page?("/categories/7/resources") ||
+    current_page?("/categories/8/resources") ||
+    current_page?("/categories/9/resources") ||
+    current_page?("/resources")
+  end
+
+  def on_exams_path?
+    current_page?("/sites/writtenboards") ||
+    current_page?("/sites/oralboards")
+  end
+
+  def on_societies_path?
+    current_page?("/sites/societies/us") ||
+    current_page?("/sites/societies/state") ||
+    current_page?("/sites/societies/intl") ||
+    current_page?("/sites/societies/crna") ||
+    current_page?("/sites/societies/pain")
+  end
 end
