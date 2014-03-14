@@ -17,7 +17,7 @@
 
 <p>
   <strong>Categories:</strong>
-  <%= category_labels @resource.categories %>
+  <%= render partial: "category", collection: @resource.categories %>
 </p>
 
 <p>

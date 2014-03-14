@@ -12,11 +12,11 @@
         <%= external_link_to resource.title, resource.link %>
         </dt>
         <dd><%= resource.authors %></dd>
-        <dd><%= category_labels resource.categories %></dd>
+        <dd><%= render partial: "category", collection: resource.categories %></dd>
         <dd span class="bold">Edition <%= resource.edition %> (<%= resource.year%>)</dd></br>
         <dd style = "font-size: 1.2em"><%= resource.description %></dd>
       </td>
-      
+
       <!--
       <td class="list_actions">
             <%= link_to 'Show', resource %><br/>
