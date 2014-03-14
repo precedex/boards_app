@@ -1,0 +1,52 @@
+- title "Written Boards"
+.sites
+  %h1
+    = yield(:title)
+  %p
+    The ABA has publicly released the #{external_link_to *@old_aba_exams}.
+    While some of the test subject material is no longer actively tested (e.g
+    halothane, enflurane, Mapleson circuits), the underlying concepts are largely
+    unchanged. Certain material on ACLS algorithms is no longer accurate and you
+    should refer to the #{link_to "2010 algorithms", tools_path}. K-type
+    questions have been elminated and are not included here.
+  %br/
+  %form.form-inline{"accept-charset" => "UTF-8", action: "/questions", method: "get", name: "commit"}
+    .row
+      .col-md-6.col-md-offset-3
+        .checkbox
+          Stems          #{check_box_tag 'stems_checkbox',   '1', true}
+          %br/
+          Answer Choices     #{check_box_tag 'choices_checkbox', '1', true}
+        .form-group
+          %input#search.input-large{name: "search", placeholder: "Search", type: "search"}/
+    .row
+      .col-md-6.col-md-offset-3
+        %button.btn.btn-danger.btn-lg{style: "margin:1em", type: "submit"} Search the Questions
+        = link_to "10 Random Questions", "/questions/random", class: "btn btn-primary btn-lg"
+  %p{style: "text-align: center; font-size: 1.5em; list-style: none"}
+    \© Joint Council on In-Training Examinations, American Board of
+    Anesthesiology, American Society of Anesthesiologists
+  %br/
+  %br/
+  .exams
+    %p
+      For information about the new staged exams, see
+      = external_link_to *@aba_training_programs
+    %p
+      An extensive list of keywords can be found at
+      = external_link_to *@open_anesthesia_keywords
+    %p
+      Board review
+      = link_to "books", resource_path(id: 8)
+
+    %p
+      Written board study strategy has been extensively discussed at
+      = link_to_sdn_forum
+    %ul= render partial: 'site', collection: @study_strategy
+    %br/
+
+    %p{style: "text-decoration:underline"} Written board commercial prep courses:
+    %p{style: "font-size: 1.5em; font-style: italic; text-indent: 1em; list-style: none"}
+      I don't have any experience with these products and do not endorse any
+      particular product
+    %ul= render partial: 'site', collection: @commercial_courses

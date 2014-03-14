@@ -1,0 +1,37 @@
+- title "Oral Boards"
+
+.sites
+  %h1= yield(:title)
+  .exams
+    %p
+      The oral board exam tests your ability to organize your thoughts quickly
+      and communicate them efficiently. You are being evaluated on your ability
+      to formulate and articulate your thoughts clearly. This is a very different
+      skill than that required to excel on the written exam. The single best way
+      to prepare for the exam is to simulate the exam experience with a seasoned
+      examiner. You must get used to the pace of the exam and thinking on your
+      feet.
+    %p
+      7-part video overview to the oral boards available from the
+      = external_link_to *@aba_archive
+    %p
+      Oral board review
+      = link_to "books", resource_path(id: 9)
+    %p
+      Hints for mastering the ABA Anesthesiology Boards:
+      = external_link_to *@exam_hints_pdf
+    %p
+      Advice from #{external_link_to *@the_anesthesia_consultant}, Richard Novak
+
+    %p
+      Oral board study strategy has been extensively discussed at
+      = link_to_sdn_forum
+    %ul= render partial: 'site', collection: @study_strategy
+    %br/
+
+    %p{style: "text-decoration:underline"}
+      Oral board commercial prep courses:
+    %p{style: "font-size: 1.5em; font-style: italic; text-indent: 1em; list-style: none"}
+      I don't have any experience with these products and do not endorse any
+      particular product
+    %ul= render partial: 'site', collection: @commercial_courses
