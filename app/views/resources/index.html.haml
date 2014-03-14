@@ -1,0 +1,23 @@
+- title "Books"
+
+.resources
+  %table
+    - @resources.each do |resource|
+      %tr
+        %td
+          = external_link_to image_tag(resource.image_url), resource.link
+        %td.list_description
+          %dt= external_link_to resource.title, resource.link
+          %dd= resource.authors
+          %dd= render partial: "category", collection: resource.categories
+          %dd.bold
+            Edition #{resource.edition} (#{resource.year})
+          %dd{style: "font-size: 1.2em"}= resource.description
+        %td.list_actions
+          -# link_to 'Show', resource
+          %br
+          -# link_to 'Edit', edit_resource_path(resource)
+          %br
+          -# link_to 'Destroy', resource, method: :delete, data: { confirm: 'Are you sure?' }
+
+-# link_to 'New Resource', new_resource_path

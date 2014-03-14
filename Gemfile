@@ -4,6 +4,7 @@ ruby '2.0.0'
 gem 'rails', '4.0.1'
 gem 'bootstrap-sass'
 gem 'pg', '~>0.17.0'
+gem 'haml'
 
 group :development, :test do
   gem 'rspec-rails', '2.13.1'
