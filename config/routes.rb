@@ -35,4 +35,14 @@ BoardsApp::Application.routes.draw do
   resources :categories, only: [] do
     resources :resources, only: [:index]
   end
+
+  get   '/resources/reference_textbooks', to: redirect("/categories/1/resources")
+  get   '/resources/concise_textbooks',   to: redirect("/categories/2/resources")
+  get   '/resources/case-based_textbooks',to: redirect("/categories/3/resources")
+  get   '/resources/pediatric_textbooks', to: redirect("/categories/4/resources")
+  get   '/resources/cardiac_textbooks',   to: redirect("/categories/5/resources")
+  get   '/resources/ob_textbooks',        to: redirect("/categories/6/resources")
+  get   '/resources/handbooks',           to: redirect("/categories/7/resources")
+  get   '/resources/review_textbooks',    to: redirect("/categories/8/resources")
+  get   '/resources/oralboards',          to: redirect("/categories/9/resources")
 end
