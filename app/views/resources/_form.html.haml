@@ -1,0 +1,38 @@
+= form_for(@resource) do |f|
+  = old_style_error_div @resource
+  .field
+    = f.label :title
+    %br/
+    = f.text_field :title
+  .field
+    = f.label :authors
+    %br/
+    = f.text_field :authors
+  .field
+    = f.label :edition
+    %br/
+    = f.number_field :edition
+  .field
+    = f.label :year
+    %br/
+    = f.number_field :year
+  .field
+    = f.label :categories
+    = f.collection_check_boxes :category_ids, Category.all, :id, :name do |b|
+      %br/
+      = b.check_box
+      = b.label
+  .field
+    = f.label :description
+    %br/
+    = f.text_area :description
+  .field
+    = f.label :image_url
+    %br/
+    = f.url_field :image_url
+  .field
+    = f.label :link
+    %br/
+    = f.url_field :link
+  .actions
+    = f.submit
