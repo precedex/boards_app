@@ -34,7 +34,9 @@
     Oral board study strategy has been extensively discussed at
     <%= link_to_sdn_forum %>
     </p>
-    <%= site_list @study_strategy %></br>
+    <ul>
+      <%= render partial: 'site', collection: @study_strategy %>
+    </ul><br/>
 
     <p style="text-decoration:underline">
     Oral board commercial prep courses:
@@ -43,6 +45,8 @@
     I don't have any experience with these products and do not endorse any
     particular product
     </p>
-    <%= site_list @commercial_courses %></br>
+    <ul>
+      <%= render partial: 'site', collection: @commercial_courses %>
+    </ul><br/>
   </div>
 </div>
