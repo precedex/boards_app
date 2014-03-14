@@ -1,0 +1,86 @@
+%header
+  %nav.navbar.navbar-inverse{role: "navigation"}
+    .container-fluid
+      / Brand and toggle get grouped for better mobile display
+      .navbar-header
+        %button.navbar-toggle{"data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", type: "button"}
+          %span.sr-only Toggle navigation
+          %span.icon-bar
+          %span.icon-bar
+          %span.icon-bar
+      #bs-example-navbar-collapse-1.collapse.navbar-collapse
+        %ul.nav.navbar-nav.nav-justified
+          %li{class: "#{'active' if current_page?("/")}", style: "font-family: 'belleza'; font-size: 1.5em; letter-spacing: 4px"}
+            %a{href: "/"} HUB
+          %li{class: "#{'active' if current_page?("/tools?")}"}
+            %a{href: "/tools?"} Tools
+          %li.dropdown{class: "#{'active' if current_page?("/categories/1/resources") || current_page?("/categories/2/resources") || current_page?("/categories/3/resources") || current_page?("/categories/4/resources") || current_page?("/categories/5/resources") || current_page?("/categories/6/resources") || current_page?("/categories/7/resources") || current_page?("/categories/8/resources") || current_page?("/categories/9/resources") || current_page?("/resources")}"}
+            %a{"data-toggle" => "dropdown", href: "#"}
+              Books
+              %b.caret
+            %ul.dropdown-menu
+              %li
+                %a{href: "/categories/1/resources"} Reference
+              %li
+                %a{href: "/categories/2/resources"} Concise
+              %li
+                %a{href: "/categories/3/resources"} Case-based
+              %li
+                %a{href: "/categories/4/resources"} Pediatric
+              %li
+                %a{href: "/categories/5/resources"} Cardiac
+              %li
+                %a{href: "/categories/6/resources"} OB
+              %li
+                %a{href: "/categories/7/resources"} Handbooks
+              %li.divider
+              %li
+                %a{href: "/categories/8/resources"} Written Board
+              %li
+                %a{href: "/categories/9/resources"} Oral Board
+              %li.divider
+              %li
+                %a{href: "/resources"} All books
+          %li.dropdown{class: "#{'active' if current_page?("/sites/writtenboards") || current_page?("/sites/oralboards")}"}
+            %a.dropdown-toggle{"data-toggle" => "dropdown", href: "#"}
+              Exams
+              %b.caret
+            %ul.dropdown-menu
+              %li
+                %a{href: "/sites/writtenboards"} Writtens
+              %li
+                %a{href: "/sites/oralboards"} Orals
+              %li
+                %a{href: "/sites/pedsboards"} Pediatric
+          %li.dropdown{class: "#{'active' if current_page?("/sites/education")}"}
+            %a.dropdown-toggle{"data-toggle" => "dropdown", href: "#"}
+              Education
+              %b.caret
+            %ul.dropdown-menu
+              %li
+                %a{href: "/sites/education/regional"} Regional Anesthesia
+              %li
+                %a{href: "/sites/education/video"} Videos
+              %li
+                %a{href: "/sites/education/simulation"} Simulation
+              %li
+                %a{href: "/sites/education"} Miscellaneous
+          %li{class: "#{'active' if current_page?("/sites/journals")}"}
+            %a{href: "/sites/journals"} Journals
+          %li.dropdown{class: "#{'active' if current_page?("/sites/societies/us") || current_page?("/sites/societies/state") || current_page?("/sites/societies/intl") || current_page?("/sites/societies/crna") || current_page?("/sites/societies/pain")}"}
+            %a.dropdown-toggle{"data-toggle" => "dropdown", href: "#"}
+              Societies
+              %b.caret
+            %ul.dropdown-menu
+              %li
+                %a{href: "/sites/societies/us"} American
+              %li
+                %a{href: "/sites/societies/state"} State
+              %li
+                %a{href: "/sites/societies/intl"} International
+              %li
+                %a{href: "/sites/societies/pain"} Regional/Pain
+              %li
+                %a{href: "/sites/societies/crna"} CRNA
+          %li{class: "#{'active' if current_page?("/sites/blogs")}"}
+            %a{href: "/sites/blogs"} Blogs
