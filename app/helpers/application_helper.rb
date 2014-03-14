@@ -3,8 +3,13 @@ module ApplicationHelper
     content_for(:title) { page_title }
   end
 
-  def external_link_to(name = nil, options = nil, html_options = nil)
-    link_to(name, options, (html_options || {}).merge(target: "_blank"))
+  def external_link_to(name = nil, options = nil, html_options = nil, &block)
+    if block_given?
+      options = (options || {}).merge(target: "_blank")
+    else
+      html_options = (html_options || {}).merge(target: "_blank")
+    end
+    link_to(name, options, html_options, &block)
   end
 
   def old_style_error_div(model)

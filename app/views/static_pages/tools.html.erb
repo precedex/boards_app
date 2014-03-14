@@ -4,33 +4,33 @@
   <dl><p></p>
     <div id = "left_column">
       <dt id="BLS"> BLS Algorithm</dt>
-      <%= tool_definitions @bls_algos %>
+      <%= render partial: "tool", collection: @bls_algos %>
       <br/>
 
       <dt id="ACLS"> ACLS algorithms</dt>
-      <%= tool_definitions @acls_algos %>
+      <%= render partial: "tool", collection: @acls_algos %>
       <br/>
 
       <dt id="PALS"> PALS algorithms</dt>
-      <%= tool_definitions @pals_algos %>
+      <%= render partial: "tool", collection: @pals_algos %>
       <br/>
 
       <dt id="Critical"> Critical Events </dt>
-      <%= tool_definitions @critical_events %>
+      <%= render partial: "tool", collection: @critical_events %>
       <br/>
     </div>
 
     <div id = "right_column">
       <dt id="CV"> Guidelines</dt>
-      <%= tool_definitions @guidelines %>
+      <%= render partial: "tool", collection: @guidelines %>
       <br/>
 
       <dt id="Dosing"> Drug dosing</dt>
-      <%= tool_definitions @drug_dosing %>
+      <%= render partial: "tool", collection: @drug_dosing %>
       <br/>
 
       <dt id="Calc"> Clinical calculators</dt>
-      <%= tool_definitions @calculators %>
+      <%= render partial: "tool", collection: @calculators %>
       <br/>
 
       <!--    <dt id="Block"> Regional block videos</dt>
@@ -38,7 +38,7 @@
       </br> -->
 
       <dt id="Procedure"> Procedure videos</dt>
-      <%= tool_definitions @procedure_videos %>
+      <%= render partial: "tool", collection: @procedure_videos %>
     </dl>
   </div>
 </div>
