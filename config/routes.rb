@@ -17,6 +17,13 @@ BoardsApp::Application.routes.draw do
   # home page
   root  'static_pages#welcome'
 
+  # books
+  resources :resources
+
+  resources :categories, only: [] do
+    resources :resources, only: [:index]
+  end
+
   # blogs
   get   '/sites/blogs',                   to: 'sites#index',     :category => 'blog'
 
@@ -44,17 +51,16 @@ BoardsApp::Application.routes.draw do
   get    '/sites/oralboards',             to: 'static_pages#orals'
   get    '/sites/pedsboards',             to: 'static_pages#pedsboards'
 
+  get    '/questions/random',             to: 'questions#random'
+  get    '/check_answer/:id',             to: 'questions#check_answer'
+
+  resources :questions
+
+  # sites
+  resources :sites
+
   # footer
   get    '/secret',                       to: 'static_pages#secret'
   get    '/feedback',                     to: 'static_pages#feedback'
   get    '/about',                        to: 'static_pages#about'
-
-  get    '/questions/random',             to: 'questions#random'
-  get    '/check_answer/:id',             to: 'questions#check_answer'
-
-  resources :questions, :sites, :resources
-
-  resources :categories, only: [] do
-    resources :resources, only: [:index]
-  end
 end
