@@ -12,11 +12,16 @@ BoardsApp::Application.routes.draw do
   get   '/resources/review_textbooks',    to: redirect("/categories/8/resources")
   get   '/resources/oralboards',          to: redirect("/categories/9/resources")
 
-  get    '/sites/writtenboards',          to: redirect("/boards/written")
-  get    '/sites/oralboards',             to: redirect("/boards/oral")
-  get    '/sites/pedsboards',             to: redirect("/boards/ped")
+  get   '/sites/writtenboards',           to: redirect("/boards/written")
+  get   '/sites/oralboards',              to: redirect("/boards/oral")
+  get   '/sites/pedsboards',              to: redirect("/boards/ped")
 
-  get    '/orals',                        to: redirect("/boards/oral")
+  get   '/sites/education',               to: redirect("courses")
+  get   '/sites/education/regional',      to: redirect("courses/regional")
+  get   '/sites/education/video',         to: redirect("courses/video")
+  get   '/sites/education/simulation',    to: redirect("courses/simulation")
+
+  get   '/orals',                         to: redirect("/boards/oral")
 
   # home page
   root  'static_pages#welcome'
@@ -47,10 +52,7 @@ BoardsApp::Application.routes.draw do
   get   '/sites/blogs',                   to: 'sites#index',     :category => 'blog'
 
   # education
-  get   '/sites/education',               to: 'sites#index',     :category => 'education'
-  get   '/sites/education/regional',      to: 'sites#index',     :category => 'education-regional'
-  get   '/sites/education/video',         to: 'sites#index',     :category => 'education-video'
-  get   '/sites/education/simulation',    to: 'sites#index',     :category => 'education-simulation'
+  resources :courses, only: [:show, :index]
 
   # journals
   get   '/sites/journals',                to: 'sites#index',     :category => 'journal'

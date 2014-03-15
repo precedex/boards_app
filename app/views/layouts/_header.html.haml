@@ -48,14 +48,10 @@
               Education
               %b.caret
             %ul.dropdown-menu
-              %li
-                %a{href: "/sites/education/regional"} Regional Anesthesia
-              %li
-                %a{href: "/sites/education/video"} Videos
-              %li
-                %a{href: "/sites/education/simulation"} Simulation
-              %li
-                %a{href: "/sites/education"} Miscellaneous
+              %li= link_to "Regional Anesthesia", course_path("regional")
+              %li= link_to "Videos",              course_path("video")
+              %li= link_to "Simulation",          course_path("simulation")
+              %li= link_to "Miscellaneous",       courses_path
 
           %li{class: ("active" if current_page?("/sites/journals"))}
             %a{href: "/sites/journals"} Journals
