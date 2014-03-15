@@ -35,7 +35,7 @@
               %li= link_to "All books",     resources_path
 
           %li.dropdown{class: ("active" if on_exams_path?)}
-            %a.dropdown-toggle{"data-toggle" => "dropdown", href: "#"}
+            %a{"data-toggle" => "dropdown", href: "#"}
               Exams
               %b.caret
             %ul.dropdown-menu
@@ -44,7 +44,7 @@
               %li= link_to "Pediatric", sites_pedsboards_path
 
           %li.dropdown{class: ("active" if on_education_path?)}
-            %a.dropdown-toggle{"data-toggle" => "dropdown", href: "#"}
+            %a{"data-toggle" => "dropdown", href: "#"}
               Education
               %b.caret
             %ul.dropdown-menu
@@ -57,7 +57,7 @@
             = link_to "Journals", sites_journals_path
 
           %li.dropdown{class: ("active" if on_societies_path?)}
-            %a.dropdown-toggle{"data-toggle" => "dropdown", href: "#"}
+            %a{"data-toggle" => "dropdown", href: "#"}
               Societies
               %b.caret
             %ul.dropdown-menu
