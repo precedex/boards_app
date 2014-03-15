@@ -36,7 +36,8 @@ module SitesHelper
 
   def on_exams_path?
     current_page?("/sites/writtenboards") ||
-    current_page?("/sites/oralboards")
+    current_page?("/sites/oralboards") ||
+    current_page?("/sites/pedsboards")
   end
 
   def on_education_path?
