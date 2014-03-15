@@ -8,6 +8,9 @@ class StaticPagesController < ApplicationController
   def about
   end
 
+  def secret
+  end
+
   def tools
     @bls_algos = [
       ["Simplified Adult BLS ", "http://crashingpatient.com/wp-content/images/acls/basic.jpg"]
@@ -68,9 +71,6 @@ class StaticPagesController < ApplicationController
       ["Awake Intubation",              "http://medicine.yale.edu/anesthesiology/education/media/procedures.aspx#1-163756"],
       ["Intubation Techinques",         "http://vam.anest.ufl.edu/airwaydevice/index.html"]
     ]
-  end
-
-  def secret
   end
 
   def writtens
