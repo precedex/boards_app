@@ -5,13 +5,7 @@ class StaticPagesController < ApplicationController
   def feedback
   end
 
-  def resources
-  end
-
   def about
-  end
-
-  def search
   end
 
   def tools
