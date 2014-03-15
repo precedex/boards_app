@@ -43,6 +43,9 @@ BoardsApp::Application.routes.draw do
   get   '/sites/societies/pain',          to: 'sites#index',     :category => 'society-pain'
   get   '/sites/societies/crna',          to: 'sites#index',     :category => 'society-crna'
 
+  # sites
+  resources :sites
+
   # tools
   get    '/tools',                        to: 'static_pages#tools'
 
@@ -55,9 +58,6 @@ BoardsApp::Application.routes.draw do
   get    '/check_answer/:id',             to: 'questions#check_answer'
 
   resources :questions
-
-  # sites
-  resources :sites
 
   # footer
   get    '/secret',                       to: 'static_pages#secret'
