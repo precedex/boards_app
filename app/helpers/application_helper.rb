@@ -52,10 +52,10 @@ module ApplicationHelper
   end
 
   def on_societies_path?
-    current_page?("/sites/societies/us") ||
-    current_page?("/sites/societies/state") ||
-    current_page?("/sites/societies/intl") ||
-    current_page?("/sites/societies/crna") ||
-    current_page?("/sites/societies/pain")
+    current_page?(society_path("us")) ||
+    current_page?(society_path("state")) ||
+    current_page?(society_path("intl")) ||
+    current_page?(society_path("crna")) ||
+    current_page?(society_path("pain"))
   end
 end

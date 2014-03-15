@@ -15,13 +15,16 @@ BoardsApp::Application.routes.draw do
   get   '/sites/writtenboards',           to: redirect("/boards/written")
   get   '/sites/oralboards',              to: redirect("/boards/oral")
   get   '/sites/pedsboards',              to: redirect("/boards/ped")
-
-  get   '/sites/education',               to: redirect("courses")
-  get   '/sites/education/regional',      to: redirect("courses/regional")
-  get   '/sites/education/video',         to: redirect("courses/video")
-  get   '/sites/education/simulation',    to: redirect("courses/simulation")
-
   get   '/orals',                         to: redirect("/boards/oral")
+
+  get   '/sites/education',               to: redirect("/courses")
+  get   '/sites/education/:subcategory',  to: redirect("/courses/%{subcategory}")
+
+  get   '/sites/societies/:subcategory',  to: redirect("/societies/%{subcategory}")
+
+  get   '/sites/blogs',                   to: redirect("/blogs")
+
+  get   '/sites/journals',                to: redirect("/journals")
 
   # home page
   root  'static_pages#welcome'
@@ -49,20 +52,16 @@ BoardsApp::Application.routes.draw do
   end
 
   # blogs
-  get   '/sites/blogs',                   to: 'sites#index',     :category => 'blog'
+  resources :blogs, only: [:index]
 
   # education
   resources :courses, only: [:show, :index]
 
   # journals
-  get   '/sites/journals',                to: 'sites#index',     :category => 'journal'
+  resources :journals, only: [:index]
 
   # societies
-  get   '/sites/societies/us',            to: 'sites#index',     :category => 'society-us'
-  get   '/sites/societies/state',         to: 'sites#index',     :category => 'society-state'
-  get   '/sites/societies/intl',          to: 'sites#index',     :category => 'society-intl'
-  get   '/sites/societies/pain',          to: 'sites#index',     :category => 'society-pain'
-  get   '/sites/societies/crna',          to: 'sites#index',     :category => 'society-crna'
+  resources :societies, only: [:show]
 
   # sites
   resources :sites

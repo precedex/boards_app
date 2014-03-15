@@ -53,24 +53,19 @@
               %li= link_to "Simulation",          course_path("simulation")
               %li= link_to "Miscellaneous",       courses_path
 
-          %li{class: ("active" if current_page?("/sites/journals"))}
-            %a{href: "/sites/journals"} Journals
+          %li{class: ("active" if current_page?(journals_path))}
+            = link_to "Journals", journals_path
 
           %li.dropdown{class: ("active" if on_societies_path?)}
             %a.dropdown-toggle{"data-toggle" => "dropdown", href: "#"}
               Societies
               %b.caret
             %ul.dropdown-menu
-              %li
-                %a{href: "/sites/societies/us"} American
-              %li
-                %a{href: "/sites/societies/state"} State
-              %li
-                %a{href: "/sites/societies/intl"} International
-              %li
-                %a{href: "/sites/societies/pain"} Regional/Pain
-              %li
-                %a{href: "/sites/societies/crna"} CRNA
+              %li= link_to "American",      society_path("us")
+              %li= link_to "State",         society_path("state")
+              %li= link_to "International", society_path("intl")
+              %li= link_to "Regional/Pain", society_path("pain")
+              %li= link_to "CRNA",          society_path("crna")
 
-          %li{class: ("active" if current_page?("/sites/blogs"))}
-            %a{href: "/sites/blogs"} Blogs
+          %li{class: ("active" if current_page?(blogs_path))}
+            = link_to "Blogs", blogs_path
