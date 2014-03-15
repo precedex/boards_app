@@ -35,23 +35,23 @@ module SitesHelper
   end
 
   def on_exams_path?
-    current_page?("/sites/writtenboards") ||
-    current_page?("/sites/oralboards") ||
-    current_page?("/sites/pedsboards")
+    current_page?(sites_writtenboards_path) ||
+    current_page?(sites_oralboards_path) ||
+    current_page?(sites_pedsboards_path)
   end
 
   def on_education_path?
-    current_page?("/sites/education/regional") ||
-    current_page?("/sites/education/video") ||
-    current_page?("/sites/education/simulation") ||
-    current_page?("/sites/education")
+    current_page?(sites_education_regional_path) ||
+    current_page?(sites_education_video_path) ||
+    current_page?(sites_education_simulation_path) ||
+    current_page?(sites_education_path)
   end
 
   def on_societies_path?
-    current_page?("/sites/societies/us") ||
-    current_page?("/sites/societies/state") ||
-    current_page?("/sites/societies/intl") ||
-    current_page?("/sites/societies/crna") ||
-    current_page?("/sites/societies/pain")
+    current_page?(sites_societies_us_path) ||
+    current_page?(sites_societies_state_path) ||
+    current_page?(sites_societies_intl_path) ||
+    current_page?(sites_societies_crna_path) ||
+    current_page?(sites_societies_pain_path)
   end
 end
