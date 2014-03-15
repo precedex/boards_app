@@ -66,7 +66,7 @@ BoardsApp::Application.routes.draw do
   resources :sites
 
   # tools
-  get    '/tools',                        to: 'static_pages#tools'
+  resources :tools, only: [:index]
 
   # footer
   get    '/secret',                       to: 'static_pages#secret'

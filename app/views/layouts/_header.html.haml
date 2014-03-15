@@ -10,11 +10,11 @@
           %span.icon-bar
       #bs-example-navbar-collapse-1.collapse.navbar-collapse
         %ul.nav.navbar-nav.nav-justified
-          %li{class: ("active" if current_page?("/")), style: "font-family: 'belleza'; font-size: 1.5em; letter-spacing: 4px"}
-            %a{href: "/"} HUB
+          %li{class: ("active" if current_page?(root_path)), style: "font-family: 'belleza'; font-size: 1.5em; letter-spacing: 4px"}
+            = link_to "HUB", root_path
 
-          %li{class: ("active" if current_page?("/tools"))}
-            %a{href: "/tools"} Tools
+          %li{class: ("active" if current_page?(tools_path))}
+            = link_to "Tools", tools_path
 
           %li.dropdown{class: ("active" if on_books_path?)}
             %a{"data-toggle" => "dropdown", href: "#"}
