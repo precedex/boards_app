@@ -24,4 +24,38 @@ module ApplicationHelper
                 content_tag(:h2, summary) + content_tag(:ul, error_items),
                 id: "error_explanation")
   end
+
+  def on_books_path?
+    current_page?(category_resources_path(1)) ||
+    current_page?(category_resources_path(2)) ||
+    current_page?(category_resources_path(3)) ||
+    current_page?(category_resources_path(4)) ||
+    current_page?(category_resources_path(5)) ||
+    current_page?(category_resources_path(6)) ||
+    current_page?(category_resources_path(7)) ||
+    current_page?(category_resources_path(8)) ||
+    current_page?(category_resources_path(9)) ||
+    current_page?(resources_path)
+  end
+
+  def on_exams_path?
+    current_page?(written_boards_path) ||
+    current_page?(oral_boards_path) ||
+    current_page?(ped_boards_path)
+  end
+
+  def on_education_path?
+    current_page?("/sites/education/regional") ||
+    current_page?("/sites/education/video") ||
+    current_page?("/sites/education/simulation") ||
+    current_page?("/sites/education")
+  end
+
+  def on_societies_path?
+    current_page?("/sites/societies/us") ||
+    current_page?("/sites/societies/state") ||
+    current_page?("/sites/societies/intl") ||
+    current_page?("/sites/societies/crna") ||
+    current_page?("/sites/societies/pain")
+  end
 end
