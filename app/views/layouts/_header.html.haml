@@ -22,27 +22,27 @@
               %b.caret
             %ul.dropdown-menu
               %li
-                %a{href: "/categories/1/resources"} Reference
+                %a{href: category_resources_path(1)} Reference
               %li
-                %a{href: "/categories/2/resources"} Concise
+                %a{href: category_resources_path(2)} Concise
               %li
-                %a{href: "/categories/3/resources"} Case-based
+                %a{href: category_resources_path(3)} Case-based
               %li
-                %a{href: "/categories/4/resources"} Pediatric
+                %a{href: category_resources_path(4)} Pediatric
               %li
-                %a{href: "/categories/5/resources"} Cardiac
+                %a{href: category_resources_path(5)} Cardiac
               %li
-                %a{href: "/categories/6/resources"} OB
+                %a{href: category_resources_path(6)} OB
               %li
-                %a{href: "/categories/7/resources"} Handbooks
+                %a{href: category_resources_path(7)} Handbooks
               %li.divider
               %li
-                %a{href: "/categories/8/resources"} Written Board
+                %a{href: category_resources_path(8)} Written Board
               %li
-                %a{href: "/categories/9/resources"} Oral Board
+                %a{href: category_resources_path(9)} Oral Board
               %li.divider
               %li
-                %a{href: "/resources"} All books
+                %a{href: resources_path} All books
 
           %li.dropdown{class: ("active" if on_exams_path?)}
             %a.dropdown-toggle{"data-toggle" => "dropdown", href: "#"}

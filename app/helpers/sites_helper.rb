@@ -22,16 +22,16 @@ module SitesHelper
   end
 
   def on_books_path?
-    current_page?("/categories/1/resources") ||
-    current_page?("/categories/2/resources") ||
-    current_page?("/categories/3/resources") ||
-    current_page?("/categories/4/resources") ||
-    current_page?("/categories/5/resources") ||
-    current_page?("/categories/6/resources") ||
-    current_page?("/categories/7/resources") ||
-    current_page?("/categories/8/resources") ||
-    current_page?("/categories/9/resources") ||
-    current_page?("/resources")
+    current_page?(category_resources_path(1)) ||
+    current_page?(category_resources_path(2)) ||
+    current_page?(category_resources_path(3)) ||
+    current_page?(category_resources_path(4)) ||
+    current_page?(category_resources_path(5)) ||
+    current_page?(category_resources_path(6)) ||
+    current_page?(category_resources_path(7)) ||
+    current_page?(category_resources_path(8)) ||
+    current_page?(category_resources_path(9)) ||
+    current_page?(resources_path)
   end
 
   def on_exams_path?
