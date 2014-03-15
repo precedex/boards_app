@@ -39,12 +39,9 @@
               Exams
               %b.caret
             %ul.dropdown-menu
-              %li
-                %a{href: "/sites/writtenboards"} Writtens
-              %li
-                %a{href: "/sites/oralboards"} Orals
-              %li
-                %a{href: "/sites/pedsboards"} Pediatric
+              %li= link_to "Writens",   written_boards_path
+              %li= link_to "Orals",     oral_boards_path
+              %li= link_to "Pediatric", ped_boards_path
 
           %li.dropdown{class: ("active" if on_education_path?)}
             %a.dropdown-toggle{"data-toggle" => "dropdown", href: "#"}

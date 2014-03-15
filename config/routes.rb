@@ -12,7 +12,11 @@ BoardsApp::Application.routes.draw do
   get   '/resources/review_textbooks',    to: redirect("/categories/8/resources")
   get   '/resources/oralboards',          to: redirect("/categories/9/resources")
 
-  get    '/orals',                        to: redirect("/sites/oralboards")
+  get    '/sites/writtenboards',          to: redirect("/boards/written")
+  get    '/sites/oralboards',             to: redirect("/boards/oral")
+  get    '/sites/pedsboards',             to: redirect("/boards/ped")
+
+  get    '/orals',                        to: redirect("/boards/oral")
 
   # home page
   root  'static_pages#welcome'
@@ -25,14 +29,19 @@ BoardsApp::Application.routes.draw do
   end
 
   # exams
-  get    '/sites/writtenboards',          to: 'static_pages#writtens'
-  get    '/sites/oralboards',             to: 'static_pages#orals'
-  get    '/sites/pedsboards',             to: 'static_pages#pedsboards'
+  resources :boards, only: [] do
+    collection do
+      get "written"
+      get "oral"
+      get "ped"
+    end
+  end
 
-  get    '/questions/random',             to: 'questions#random'
   get    '/check_answer/:id',             to: 'questions#check_answer'
 
-  resources :questions
+  resources :questions do
+    get "random", on: :collection
+  end
 
   # blogs
   get   '/sites/blogs',                   to: 'sites#index',     :category => 'blog'
