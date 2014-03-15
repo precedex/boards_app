@@ -21,10 +21,6 @@ module SitesHelper
     CATEGORY_TITLES[category]
   end
 
-  def active_if(test)
-    "active" if test
-  end
-
   def on_books_path?
     current_page?("/categories/1/resources") ||
     current_page?("/categories/2/resources") ||
@@ -41,6 +37,13 @@ module SitesHelper
   def on_exams_path?
     current_page?("/sites/writtenboards") ||
     current_page?("/sites/oralboards")
+  end
+
+  def on_education_path?
+    current_page?("/sites/education/regional") ||
+    current_page?("/sites/education/video") ||
+    current_page?("/sites/education/simulation") ||
+    current_page?("/sites/education")
   end
 
   def on_societies_path?

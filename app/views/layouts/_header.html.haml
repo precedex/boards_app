@@ -10,13 +10,13 @@
           %span.icon-bar
       #bs-example-navbar-collapse-1.collapse.navbar-collapse
         %ul.nav.navbar-nav.nav-justified
-          %li{class: active_if(current_page?("/")), style: "font-family: 'belleza'; font-size: 1.5em; letter-spacing: 4px"}
+          %li{class: ("active" if current_page?("/")), style: "font-family: 'belleza'; font-size: 1.5em; letter-spacing: 4px"}
             %a{href: "/"} HUB
 
-          %li{class: active_if(current_page?("/tools"))}
+          %li{class: ("active" if current_page?("/tools"))}
             %a{href: "/tools"} Tools
 
-          %li.dropdown{class: active_if(on_books_path?)}
+          %li.dropdown{class: ("active" if on_books_path?)}
             %a{"data-toggle" => "dropdown", href: "#"}
               Books
               %b.caret
@@ -44,7 +44,7 @@
               %li
                 %a{href: "/resources"} All books
 
-          %li.dropdown{class: active_if(on_exams_path?)}
+          %li.dropdown{class: ("active" if on_exams_path?)}
             %a.dropdown-toggle{"data-toggle" => "dropdown", href: "#"}
               Exams
               %b.caret
@@ -56,7 +56,7 @@
               %li
                 %a{href: "/sites/pedsboards"} Pediatric
 
-          %li.dropdown{class: active_if(current_page?("/sites/education"))}
+          %li.dropdown{class: ("active" if on_education_path?)}
             %a.dropdown-toggle{"data-toggle" => "dropdown", href: "#"}
               Education
               %b.caret
@@ -70,10 +70,10 @@
               %li
                 %a{href: "/sites/education"} Miscellaneous
 
-          %li{class: active_if(current_page?("/sites/journals"))}
+          %li{class: ("active" if current_page?("/sites/journals"))}
             %a{href: "/sites/journals"} Journals
 
-          %li.dropdown{class: active_if(on_societies_path?)}
+          %li.dropdown{class: ("active" if on_societies_path?)}
             %a.dropdown-toggle{"data-toggle" => "dropdown", href: "#"}
               Societies
               %b.caret
@@ -89,5 +89,5 @@
               %li
                 %a{href: "/sites/societies/crna"} CRNA
 
-          %li{class: active_if(current_page?("/sites/blogs"))}
+          %li{class: ("active" if current_page?("/sites/blogs"))}
             %a{href: "/sites/blogs"} Blogs
