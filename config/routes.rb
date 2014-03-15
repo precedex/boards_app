@@ -24,6 +24,16 @@ BoardsApp::Application.routes.draw do
     resources :resources, only: [:index]
   end
 
+  # exams
+  get    '/sites/writtenboards',          to: 'static_pages#writtens'
+  get    '/sites/oralboards',             to: 'static_pages#orals'
+  get    '/sites/pedsboards',             to: 'static_pages#pedsboards'
+
+  get    '/questions/random',             to: 'questions#random'
+  get    '/check_answer/:id',             to: 'questions#check_answer'
+
+  resources :questions
+
   # blogs
   get   '/sites/blogs',                   to: 'sites#index',     :category => 'blog'
 
@@ -48,16 +58,6 @@ BoardsApp::Application.routes.draw do
 
   # tools
   get    '/tools',                        to: 'static_pages#tools'
-
-  # exams
-  get    '/sites/writtenboards',          to: 'static_pages#writtens'
-  get    '/sites/oralboards',             to: 'static_pages#orals'
-  get    '/sites/pedsboards',             to: 'static_pages#pedsboards'
-
-  get    '/questions/random',             to: 'questions#random'
-  get    '/check_answer/:id',             to: 'questions#check_answer'
-
-  resources :questions
 
   # footer
   get    '/secret',                       to: 'static_pages#secret'
