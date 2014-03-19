@@ -4,7 +4,7 @@ class CreateMovies < ActiveRecord::Migration
       t.string :primary
       t.string :secondary
       t.string :tertiary
-      t.string :title
+      t.string :source
       t.string :author
       t.string :link
       t.timestamps
