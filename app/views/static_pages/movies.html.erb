@@ -3,8 +3,8 @@
   <h1> <%= yield(:title) %> </h1>
 </div>
 
-<div class="panel-group" id="accordion"> <!-- start master accordion, will include arterial, central, PNB, etc...--> 
-  <div class="panel panel-default"> 
+<div class="panel-group" id="accordion"> <!-- start master accordion, will include arterial, central, PNB, etc...-->  
+  <div class="panel panel-default">     
     
     <div class="panel-heading"> <!-- arterial lines accordion-->
       <h4 class="panel-title">
@@ -71,21 +71,245 @@
             </div> <!-- end art-rad div-->
           </div> <!-- end art-rad panel-default-->
         </div> <!-- end art-rad accordion -->
+        
+        <div class="panel-group" id="accordion-art-brachial"> <!-- brachial accordion -->
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a href='#art-brachial' class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-art-brachial">
+                  Brachial
+                </a>
+              </h4>
+            </div>
+            
+            <div id="art-brachial" class="panel-collapse collapse">
+              <div class="panel-body">
+           
+                <div class="panel-group" id="accordion-art-brachial-us"> <!-- ultrasound-guided accordion -->
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a href='#art-brachial-us' class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-art-brachial-us">
+                          Ultrasound-guided
+                        </a>
+                      </h4>
+                    </div>
+                    
+                    <div id="art-brachial-us" class="panel-collapse collapse">
+                      <div class="panel-body">
+                        Movie 1 | Movie 2
+                      </div>
+                    </div>  
+                     
+                  </div>
+                </div>
+                
+                <div class="panel-group" id="accordion-art-brachial-non-us"> <!-- non ultrasound-guided accordion -->
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a href='#art-brachial-non-us' class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-art-brachial-non-us">
+                          Non Ultrasound-guided
+                        </a>
+                      </h4>
+                    </div>
+                    
+                    <div id="art-brachial-non-us" class="panel-collapse collapse">
+                      <div class="panel-body">
+                        Movie 1 | Movie 2
+                      </div>        
+                    </div>  
+                                  
+                  </div> <!-- end art-rad-non-US panel-default -->
+                </div> <!-- end art-rad-non-US panel-group -->
+              </div> <!-- end art-rad panel-body -->
+            </div> <!-- end art-rad div-->
+          </div> <!-- end art-rad panel-default-->
+        </div> <!-- end art-rad accordion -->     
+        
       </div> <!-- end art body -->
     </div> <!-- end art accordion -->
   
-  <div class="panel panel-default">
-    <div class="panel-heading">
+  
+  
+    <div class="panel-heading"> <!-- central lines accordion-->
       <h4 class="panel-title">
-        <a href='#peripheral' class="accordion-toggle" data-toggle="collapse" data-parent="#accordion">
-          Peripheral Nerve Blocks
+        <a href='#central' class="accordion-toggle" data-toggle="collapse" data-parent="#accordion">
+          Central lines
         </a>
       </h4>
     </div>
-    <div id="peripheral" class="panel-collapse collapse">
+  
+    <div id="central" class="panel-collapse collapse"> 
       <div class="panel-body">
-        Peripheral nerve blocks videos.
-      </div>
-    </div>
+     
+        <div class="panel-group" id="accordion-cent-ij"> <!-- ijial accordion -->
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a href='#cent-ij' class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-cent-ij">
+                  Internal Jugular
+                </a>
+              </h4>
+            </div>
+          
+            <div id="cent-ij" class="panel-collapse collapse">
+              <div class="panel-body">
+         
+                <div class="panel-group" id="accordion-cent-ij-us"> <!-- ultrasound-guided accordion -->
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a href='#cent-ij-us' class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-cent-ij-us">
+                          Ultrasound-guided
+                        </a>
+                      </h4>
+                    </div>
+                  
+                    <div id="cent-ij-us" class="panel-collapse collapse">
+                      <div class="panel-body">
+                        Movie 1 | Movie 2
+                      </div>
+                    </div>  
+                   
+                  </div>
+                </div>
+              
+                <div class="panel-group" id="accordion-cent-ij-non-us"> <!-- non ultrasound-guided accordion -->
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a href='#cent-ij-non-us' class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-cent-ij-non-us">
+                          Non Ultrasound-guided
+                        </a>
+                      </h4>
+                    </div>
+                  
+                    <div id="cent-ij-non-us" class="panel-collapse collapse">
+                      <div class="panel-body">
+                        Movie 1 | Movie 2
+                      </div>        
+                    </div>  
+                                
+                  </div> <!-- end cent-ij-non-US panel-default -->
+                </div> <!-- end cent-ij-non-US panel-group -->
+              </div> <!-- end cent-ij panel-body -->
+            </div> <!-- end cent-ij div-->
+          </div> <!-- end cent-ij panel-default-->
+        </div> <!-- end cent-ij accordion -->
+      
+        <div class="panel-group" id="accordion-cent-subclav"> <!-- subclavial accordion -->
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a href='#cent-subclav' class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-cent-subclav">
+                  Subclavian
+                </a>
+              </h4>
+            </div>
+          
+            <div id="cent-subclav" class="panel-collapse collapse">
+              <div class="panel-body">
+         
+                <div class="panel-group" id="accordion-cent-subclav-us"> <!-- ultrasound-guided accordion -->
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a href='#cent-subclav-us' class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-cent-subclav-us">
+                          Ultrasound-guided
+                        </a>
+                      </h4>
+                    </div>
+                  
+                    <div id="cent-subclav-us" class="panel-collapse collapse">
+                      <div class="panel-body">
+                        Movie 1 | Movie 2
+                      </div>
+                    </div>  
+                   
+                  </div>
+                </div>
+              
+                <div class="panel-group" id="accordion-cent-subclav-non-us"> <!-- non ultrasound-guided accordion -->
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a href='#cent-subclav-non-us' class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-cent-subclav-non-us">
+                          Non Ultrasound-guided
+                        </a>
+                      </h4>
+                    </div>
+                  
+                    <div id="cent-subclav-non-us" class="panel-collapse collapse">
+                      <div class="panel-body">
+                        Movie 1 | Movie 2
+                      </div>        
+                    </div>  
+                                
+                  </div> <!-- end cent-subclav-non-US panel-default -->
+                </div> <!-- end cent-subclav-non-US panel-group -->
+              </div> <!-- end cent-subclav panel-body -->
+            </div> <!-- end cent-subclav div-->
+          </div> <!-- end cent-subclav panel-default-->
+        </div> <!-- end cent-subclav accordion -->     
+        
+        
+        <div class="panel-group" id="accordion-cent-fem"> <!-- femoral accordion -->
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a href='#cent-fem' class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-cent-fem">
+                  Femoral
+                </a>
+              </h4>
+            </div>
+          
+            <div id="cent-fem" class="panel-collapse collapse">
+              <div class="panel-body">
+         
+                <div class="panel-group" id="accordion-cent-fem-us"> <!-- ultrasound-guided accordion -->
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a href='#cent-fem-us' class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-cent-fem-us">
+                          Ultrasound-guided
+                        </a>
+                      </h4>
+                    </div>
+                  
+                    <div id="cent-fem-us" class="panel-collapse collapse">
+                      <div class="panel-body">
+                        Movie 1 | Movie 2
+                      </div>
+                    </div>  
+                   
+                  </div>
+                </div>
+              
+                <div class="panel-group" id="accordion-cent-fem-non-us"> <!-- non ultrasound-guided accordion -->
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a href='#cent-fem-non-us' class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-cent-fem-non-us">
+                          Non Ultrasound-guided
+                        </a>
+                      </h4>
+                    </div>
+                  
+                    <div id="cent-fem-non-us" class="panel-collapse collapse">
+                      <div class="panel-body">
+                        Movie 1 | Movie 2
+                      </div>        
+                    </div>  
+                                
+                  </div> <!-- end cent-fem-non-US panel-default -->
+                </div> <!-- end cent-fem-non-US panel-group -->
+              </div> <!-- end cent-fem panel-body -->
+            </div> <!-- end cent-fem div-->
+          </div> <!-- end cent-fem panel-default-->
+        </div> <!-- end cent-fem accordion -->   
+      </div> <!-- end cent body -->
+    </div> <!-- end cent accordion -->
+  
   </div>
 </div><!-- end accordion -->
