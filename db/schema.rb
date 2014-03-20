@@ -25,17 +25,6 @@ ActiveRecord::Schema.define(version: 20140318004307) do
     t.integer "category_id"
   end
 
-  create_table "movies", force: true do |t|
-    t.string   "primary"
-    t.string   "secondary"
-    t.string   "tertiary"
-    t.string   "source"
-    t.string   "author"
-    t.string   "link"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "questions", force: true do |t|
     t.text     "stem"
     t.string   "answer"

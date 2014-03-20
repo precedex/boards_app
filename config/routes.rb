@@ -43,9 +43,6 @@ BoardsApp::Application.routes.draw do
   get   '/sites/education/video',         to: 'sites#index',     :category => 'education-video'
   get   '/sites/education/simulation',    to: 'sites#index',     :category => 'education-simulation'
   
-  # movies
-  get   '/movies',                        to: 'movies#index'
-
   # journals
   get   '/sites/journals',                to: 'sites#index',     :category => 'journal'
 
