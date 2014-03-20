@@ -58,6 +58,9 @@ BoardsApp::Application.routes.draw do
 
   # tools
   get    '/tools',                        to: 'static_pages#tools'
+  
+  # movies
+  get    '/movies',                        to: 'static_pages#movies'
 
   # footer
   get    '/secret',                       to: 'static_pages#secret'

@@ -1,0 +1,51 @@
+<% title "Movies" %>
+<div class = "sites">
+  <h1> <%= yield(:title) %> </h1>
+</div>
+
+<div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a href='#arterial' class="accordion-toggle" data-toggle="collapse" data-parent="#accordion">
+          Arterial lines
+        </a>
+      </h4>
+    </div>
+    <div id="arterial" class="panel-collapse collapse in">
+      <div class="panel-body">
+        Arterial catheter videos.
+      </div>
+    </div>
+  </div> <!--panel panel-default -->
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a href='#central' class="accordion-toggle" data-toggle="collapse" data-parent="#accordion">
+          Central lines
+        </a>
+      </h4>
+    </div>
+    <div id="central" class="panel-collapse collapse">
+      <div class="panel-body">
+        Central venous catheter videos.
+      </div>
+    </div>
+  </div>
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a href='#peripheral' class="accordion-toggle" data-toggle="collapse" data-parent="#accordion">
+          Peripheral Nerve Blocks
+        </a>
+      </h4>
+    </div>
+    <div id="peripheral" class="panel-collapse collapse">
+      <div class="panel-body">
+        Peripheral nerve blocks videos.
+      </div>
+    </div>
+  </div>
+</div><!-- end accordion -->
