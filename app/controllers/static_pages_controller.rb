@@ -145,4 +145,46 @@ class StaticPagesController < ApplicationController
     @peds_exam_content = "http://www.theaba.org/pdf/PAContentOutline.pdf"
     @peds_exam_questions = "http://www.theaba.org/pdf/PASampleQuestions.pdf"
   end
+  
+  def movies
+    @art_rad_us = [
+      ["UCSF",                                                                "http://youtu.be/YOxyssqqYNE"],   
+      ["Sonosite",                                                            "http://youtu.be/uHfeyAYiWOc"] 
+    ]
+    @art_rad_non_us = [
+      ["NEJM",                                                                "http://youtu.be/8hK04ai17-k"],   
+      ["Kaiser Permanente",                                                   "http://youtu.be/6--8J4iqGEY"],
+      ["Arrow Catheter",                                                      "http://youtu.be/ug2JIsk8494"],
+      ["Yale Media Lab",                                                      "http://medicine.yale.edu/anesthesiology/education/media/procedures.aspx#1-178321"],
+      ["marhaba2000",                                                         "http://youtu.be/qv54USEYNzw"]
+    ]
+    @art_brach_us = [
+    ]
+    @art_brach_non_us = [
+      ["Dr. Gallagher's Neighborhood",                                        "http://youtu.be/fRUHD6WJraU"]   
+    ] 
+    @cent_ij_us = [
+      ["NEJM",                                                                "http://youtu.be/HE5QhsPRaPU"],   
+      ["Mount Sinai Hospital",                                                "http://youtu.be/coEpM7IBzsM"], 
+      ["Sonosite / Columbia, Part 1",                                         "http://youtu.be/_RHRy64jQ6s"], 
+      ["Sonosite / Columbia, Part 2",                                         "http://youtu.be/zV3hw_QbgK4"], 
+      ["Sonosite / Cedars-Sinai",                                             "http://youtu.be/21w4kuD0_gA"] 
+    ]
+    @cent_ij_non_us = [
+      ["MedicineUpToDate",                                                    "http://youtu.be/tf11gOpmmTo"]   
+    ]
+    @cent_subclav_us = [
+      ["Sonosite",                                                            "http://youtu.be/IBmbc1ak5fY"]   
+    ]
+    @cent_subclav_non_us = [
+      ["Ashton Moh",                                                          "http://youtu.be/p-yUMu63TMQ"]   
+    ]
+    @cent_fem_us = [
+      ["Sonosite",                                                            "http://youtu.be/gNvbxeoUMlc"]   
+    ]
+    @cent_fem_non_us = [
+      ["Medicine UpToDate",                                                   "http://youtu.be/ybCpeb2E0dU"]   
+    ]
+       
+  end
 end
