@@ -3,36 +3,76 @@
   <h1> <%= yield(:title) %> </h1>
 </div>
 
-<div class="panel-group" id="accordion">
-  <div class="panel panel-default">
-    <div class="panel-heading">
+<div class="panel-group" id="accordion"> <!-- start master accordion, will include arterial, central, PNB, etc...--> 
+  <div class="panel panel-default"> 
+    
+    <div class="panel-heading"> <!-- arterial lines accordion-->
       <h4 class="panel-title">
         <a href='#arterial' class="accordion-toggle" data-toggle="collapse" data-parent="#accordion">
           Arterial lines
         </a>
       </h4>
     </div>
-    <div id="arterial" class="panel-collapse collapse in">
+    
+    <div id="arterial" class="panel-collapse collapse"> 
       <div class="panel-body">
-        Arterial catheter videos.
-      </div>
-    </div>
-  </div> <!--panel panel-default -->
-  
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a href='#central' class="accordion-toggle" data-toggle="collapse" data-parent="#accordion">
-          Central lines
-        </a>
-      </h4>
-    </div>
-    <div id="central" class="panel-collapse collapse">
-      <div class="panel-body">
-        Central venous catheter videos.
-      </div>
-    </div>
-  </div>
+       
+        <div class="panel-group" id="accordion-art-rad"> <!-- radial accordion -->
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a href='#art-rad' class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-art-rad">
+                  Radial
+                </a>
+              </h4>
+            </div>
+            
+            <div id="art-rad" class="panel-collapse collapse">
+              <div class="panel-body">
+           
+                <div class="panel-group" id="accordion-art-rad-us"> <!-- ultrasound-guided accordion -->
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a href='#art-rad-us' class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-art-rad-us">
+                          Ultrasound-guided
+                        </a>
+                      </h4>
+                    </div>
+                    
+                    <div id="art-rad-us" class="panel-collapse collapse">
+                      <div class="panel-body">
+                        Movie 1 | Movie 2
+                      </div>
+                    </div>  
+                     
+                  </div>
+                </div>
+                
+                <div class="panel-group" id="accordion-art-rad-non-us"> <!-- non ultrasound-guided accordion -->
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a href='#art-rad-non-us' class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-art-rad-non-us">
+                          Non Ultrasound-guided
+                        </a>
+                      </h4>
+                    </div>
+                    
+                    <div id="art-rad-non-us" class="panel-collapse collapse">
+                      <div class="panel-body">
+                        Movie 1 | Movie 2
+                      </div>        
+                    </div>  
+                                  
+                  </div> <!-- end art-rad-non-US panel-default -->
+                </div> <!-- end art-rad-non-US panel-group -->
+              </div> <!-- end art-rad panel-body -->
+            </div> <!-- end art-rad div-->
+          </div> <!-- end art-rad panel-default-->
+        </div> <!-- end art-rad accordion -->
+      </div> <!-- end art body -->
+    </div> <!-- end art accordion -->
   
   <div class="panel panel-default">
     <div class="panel-heading">
