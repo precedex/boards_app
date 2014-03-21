@@ -186,10 +186,45 @@ class StaticPagesController < ApplicationController
       ["Medicine UpToDate",                                                   "http://youtu.be/ybCpeb2E0dU"]   
     ]
     @interscalene = [
-      ["Sonosite",                                                            "http://youtu.be/Dg9BJ-32yLc"]   
+      ["NYSORA",                                                              "http://youtu.be/Zke6938Y1k4"],
+      ["Sonosite (David Auyong)",                                             "http://youtu.be/Dg9BJ-32yLc"],
+      ['Sonosite 3D',                                                         "http://youtu.be/wAABZF1aSO8"],
+      ['RACSI',                                                               "http://youtu.be/cUYsFNL9g2M"],
+      ["SSRA (Theresa Bowling)",                                              "http://youtu.be/OhFs-batCSY"]   
     ]
     @supraclavicular = [
-      ["Sonosite",                                                            "http://youtu.be/ztOIvfjsB-U"]   
+      ["NYSORA",                                                              "http://youtu.be/UmG-bgEQQ4E"],
+      ["Sonosite (David Auyong)",                                             "http://youtu.be/ztOIvfjsB-U"],
+      ["Sonosite 3D",                                                         "http://youtu.be/9vW1uo7mKDc"],
+      ["RACSI",                                                               "http://youtu.be/FeQfAlJkPk8"],
+      ["Stuart Grant",                                                        "http://youtu.be/oRUlnmQrWJ0"],
+      ["SSRA (Theresa Bowling)",                                              "http://youtu.be/FgH5RWkhD0g"]   
+    ]
+    @infraclavicular = [
+      ["Sonosite (David Auyong)",                                             "http://youtu.be/hRyDtXrfYqc"],
+      ["RASCI",                                                               "http://youtu.be/HtDEYcxtE5w"],
+      ["SSRA (Theresa Bowling)",                                              "http://youtu.be/Z9woYkyJl_U"]   
+    ]
+    @axillary = [
+      ["NYSORA",                                                              "http://youtu.be/DdbtAClkBAs"],
+      ["Sonosite (David Auyong)",                                             "http://youtu.be/GaH-CO6OrV0"],
+      ['Sonosite 3D',                                                         "http://youtu.be/3utZmyOXrYg"],
+      ['RACSI',                                                               "http://youtu.be/3iVjzo13w9g"]  
+    ]
+    @femoral = [
+      ["NYSORA",                                                              "http://youtu.be/1mkHrVxdGNg"],
+      ["Sonosite (David Auyong)",                                             "http://youtu.be/5ht_N8j2KL8"],
+      ["Sonosite 3D",                                                         "http://youtu.be/pCkjioc-EmQ"],
+      ["Stuart Grant",                                                        "http://youtu.be/wxQKdrPw2tA"],
+      ["SSRA (Steven Finkel)",                                                "http://youtu.be/DwtvZ0tC9ng"]   
+    ]
+    @sciatic = [
+      ["NYSORA (Popliteal)",                                                  "http://youtu.be/gH1BS54EYjU"],
+      ["UCSF",                                                                "http://youtu.be/CTJJdISVc24"],
+      ["Sonosite (David Auyong) (Popliteal)",                                 "http://youtu.be/kzhSiQBPE7s"],
+      ["Sonosite (David Auyong) (Subgluteal)",                                "http://youtu.be/rl8rZOEMveE"],
+      ["SSRA (Steven Finkel) (Anterior)",                                     "http://youtu.be/h14Ee2yAmUU"],
+      ["SSRA (Steven Finkel) (Popliteal)",                                    "http://youtu.be/qYM2sft8R2I"]   
     ]
   
   end
