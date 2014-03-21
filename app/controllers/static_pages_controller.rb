@@ -185,6 +185,12 @@ class StaticPagesController < ApplicationController
     @cent_fem_non_us = [
       ["Medicine UpToDate",                                                   "http://youtu.be/ybCpeb2E0dU"]   
     ]
-       
+    @interscalene = [
+      ["Sonosite",                                                            "http://youtu.be/Dg9BJ-32yLc"]   
+    ]
+    @supraclavicular = [
+      ["Sonosite",                                                            "http://youtu.be/ztOIvfjsB-U"]   
+    ]
+  
   end
 end

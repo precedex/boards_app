@@ -138,9 +138,11 @@
         
         </div> <!-- end art body -->
       </div> <!-- end art accordion -->
+    </div>
+  </div>
   
-  
-  
+  <div class="panel-group" id="accordion"> 
+    <div class="panel panel-info">
       <div class="panel-heading"> <!-- central lines accordion-->
         <h3 class="panel-title">
           <a href='#central' class="accordion-toggle" data-toggle="collapse" data-parent="#accordion">
@@ -152,7 +154,7 @@
       <div id="central" class="panel-collapse collapse"> 
         <div class="panel-body">
      
-          <div class="panel-group" id="accordion-cent-ij"> <!-- ijial accordion -->
+          <div class="panel-group" id="accordion-cent-ij"> <!-- ij accordion -->
             <div class="panel panel-info">
               <div class="panel-heading">
                 <h4 class="panel-title">
@@ -211,7 +213,7 @@
             </div> <!-- end cent-ij panel-info-->
           </div> <!-- end cent-ij accordion -->
       
-          <div class="panel-group" id="accordion-cent-subclav"> <!-- subclavial accordion -->
+          <div class="panel-group" id="accordion-cent-subclav"> <!-- subclavian accordion -->
             <div class="panel panel-info">
               <div class="panel-heading">
                 <h4 class="panel-title">
@@ -269,8 +271,7 @@
               </div> <!-- end cent-subclav div-->
             </div> <!-- end cent-subclav panel-info-->
           </div> <!-- end cent-subclav accordion -->     
-        
-        
+    
           <div class="panel-group" id="accordion-cent-fem"> <!-- femoral accordion -->
             <div class="panel panel-info">
               <div class="panel-heading">
@@ -321,8 +322,7 @@
                           <a href="<%= movie[1] %>" target = "_blank" class="btn btn-primary" role="button"><%= movie[0] %></a>
                           <% end %>
                         </div>        
-                      </div>  
-                                
+                      </div>                            
                     </div> <!-- end cent-fem-non-US panel-info -->
                   </div> <!-- end cent-fem-non-US panel-group -->
                 </div> <!-- end cent-fem panel-body -->
@@ -331,7 +331,68 @@
           </div> <!-- end cent-fem accordion -->   
         </div> <!-- end cent body -->
       </div> <!-- end cent accordion -->
-  
     </div>
-  </div><!-- end accordion -->
+  </div>
+  
+  <div class="panel-group" id="accordion">   
+    <div class="panel panel-info">
+      <div class="panel-heading"> <!-- PNB accordion-->
+        <h3 class="panel-title">
+          <a href='#pnb' class="accordion-toggle" data-toggle="collapse" data-parent="#accordion">
+            Peripheral Nerve Blocks
+          </a>
+        </h3>
+      </div>
+  
+  
+      <div id="pnb" class="panel-collapse collapse"> 
+        <div class="panel-body">
+     
+          <div class="panel-group" id="accordion-interscalene"> <!-- Interscalene accordion -->
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a href='#interscalene' class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-interscalene">
+                    Interscalene
+                  </a>
+                </h4>
+              </div>
+
+                <div id="interscalene" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <% @interscalene.each do |movie| %> 
+                    <a href="<%= movie[1] %>" target = "_blank" class="btn btn-primary" role="button"><%= movie[0] %></a>
+                    <% end %>
+                  </div>
+                </div>  
+                     
+            </div>
+          </div>
+
+          <div class="panel-group" id="accordion-supraclavicular"> <!-- Supraclavicular accordion -->
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a href='#supraclavicular' class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-supraclavicular">
+                    Supraclavicular
+                  </a>
+                </h4>
+              </div>
+
+                <div id="supraclavicular" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <% @supraclavicular.each do |movie| %> 
+                    <a href="<%= movie[1] %>" target = "_blank" class="btn btn-primary" role="button"><%= movie[0] %></a>
+                    <% end %>
+                  </div>
+                </div>  
+                     
+            </div>
+          </div>
+          
+          
+        </div>
+      </div>  
+    </div>
+  </div>
 </div>
