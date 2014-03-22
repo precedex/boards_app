@@ -7,12 +7,14 @@
         %td
           = external_link_to image_tag(resource.image_url), resource.link
         %td.list_description
-          %dd= render partial: "category", collection: resource.categories
           %dt= external_link_to resource.title, resource.link
           %dd= resource.authors
           %dd.bold
             Edition #{resource.edition} (#{resource.year})
           %dd{style: "font-size: 1.2em"}= resource.description
+        %td.list_description
+          %dd= render partial: "category", collection: resource.categories  
+          
         -# %td.list_actions
           -# = link_to 'Show', resource
           -# %br
