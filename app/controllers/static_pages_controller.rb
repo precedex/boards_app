@@ -227,10 +227,12 @@ class StaticPagesController < ApplicationController
       ["SSRA - Anterior - Steven Finkel",                                     "http://youtu.be/h14Ee2yAmUU"]
     ]
     @spinal = [
-      ["Sonosite",                                                            "http://youtu.be/gNvbxeoUMlc"]   
+      ["Procedural Checklist - Stanford",                                     "http://youtu.be/eblMcptvcAo"],
+      ["Obstetric Spinal",                                                    "http://youtu.be/JC0ljF1TRuQ"]   
     ]
     @epidural = [
-      ["Medicine UpToDate",                                                   "http://youtu.be/ybCpeb2E0dU"] 
+      ["Braun Perifix",                                                       "http://youtu.be/Ttm0p8MJRWA"],
+      ["10 Tips to Optimize Technique - Lecture - Lawrence Tsen",             "http://youtu.be/_BqxQW4Uyh4"] 
     ]
   end
 end
