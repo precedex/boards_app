@@ -420,10 +420,59 @@
                 </div>
               </div>        
             </div>
-            
-            
-            
-            
+          </div>
+        </div>
+      </div>  
+    </div>       
+          
+    <div class="panel panel-info"> 
+      <div class="panel-heading"> 
+        <h3 class="panel-title">
+          <a href='#neuraxial' class="accordion-toggle" data-toggle="collapse" data-parent="#accordion">
+            Neuraxial Blocks
+          </a>
+        </h3>
+      </div>
+
+      <div id="neuraxial" class="panel-collapse collapse"> 
+        <div class="panel-body">
+          <div class="panel-group" id="accordion-neuraxial">
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a href='#spinal' class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-neuraxial">
+                    Spinal
+                  </a>
+                </h4>
+              </div>
+
+              <div id="spinal" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <% @spinal.each do |movie| %> 
+                  <a href="<%= movie[1] %>" target = "_blank" class="btn btn-primary btn-block" role="button"><%= movie[0] %></a>
+                  <% end %>
+                </div>
+              </div>         
+            </div>
+
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a href='#epidural' class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-neuraxial">
+                    Epidural
+                  </a>
+                </h4>
+              </div>
+
+              <div id="epidural" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <% @epidural.each do |movie| %> 
+                  <a href="<%= movie[1] %>" target = "_blank" class="btn btn-primary btn-block" role="button"><%= movie[0] %></a>
+                  <% end %>
+                </div>
+              </div>        
+            </div>
+             
           </div>
         </div>
       </div>  
