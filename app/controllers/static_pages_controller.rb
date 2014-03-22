@@ -61,16 +61,16 @@ class StaticPagesController < ApplicationController
       ["Steroid Equivalence Converter",  "http://www.medcalc.com/steroid.html"],
     ]
 
-    @procedure_videos = [
-      ["US-Guided CVC Placement",       "http://www.youtube.com/watch?v=coEpM7IBzsM"],
-      ["US-Guided CVC Placement",       "http://www.youtube.com/watch?v=HE5QhsPRaPU", :nejm],
-      ["Arterial Line Placement",       "http://www.youtube.com/watch?v=8hK04ai17-k", :nejm],
-      ["Cardiac Anesthesia Procedures", "http://anesthesia.stonybrook.edu/online-education#"],
-      ["Lumbar Puncture",               "http://www.youtube.com/watch?v=QzRBJNiyCzQ", :nejm],
-      ["Spinal Anesthesia",             "http://youtu.be/eblMcptvcAo"],
-      ["Awake Intubation",              "http://medicine.yale.edu/anesthesiology/education/media/procedures.aspx#1-163756"],
-      ["Intubation Techinques",         "http://vam.anest.ufl.edu/airwaydevice/index.html"]
-    ]
+  #  @procedure_videos = [
+  #    ["US-Guided CVC Placement",       "http://www.youtube.com/watch?v=coEpM7IBzsM"],
+  #    ["US-Guided CVC Placement",       "http://www.youtube.com/watch?v=HE5QhsPRaPU", :nejm],
+  #    ["Arterial Line Placement",       "http://www.youtube.com/watch?v=8hK04ai17-k", :nejm],
+  #    ["Cardiac Anesthesia Procedures", "http://anesthesia.stonybrook.edu/online-education#"],
+  #    ["Lumbar Puncture",               "http://www.youtube.com/watch?v=QzRBJNiyCzQ", :nejm],
+  #    ["Spinal Anesthesia",             "http://youtu.be/eblMcptvcAo"],
+   #   ["Awake Intubation",              "http://medicine.yale.edu/anesthesiology/education/media/procedures.aspx#1-163756"],
+   #   ["Intubation Techinques",         "http://vam.anest.ufl.edu/airwaydevice/index.html"]
+   # ]
   end
 
   def writtens
@@ -220,11 +220,12 @@ class StaticPagesController < ApplicationController
     ]
     @sciatic = [
       ["NYSORA (Popliteal)",                                                  "http://youtu.be/gH1BS54EYjU"],
-      ["UCSF",                                                                "http://youtu.be/CTJJdISVc24"],
+      ["UCSF (Popliteal)",                                                    "http://youtu.be/CTJJdISVc24"],
+      ["SSRA (Steven Finkel) (Popliteal)",                                    "http://youtu.be/qYM2sft8R2I"],  
       ["Sonosite (David Auyong) (Popliteal)",                                 "http://youtu.be/kzhSiQBPE7s"],
       ["Sonosite (David Auyong) (Subgluteal)",                                "http://youtu.be/rl8rZOEMveE"],
-      ["SSRA (Steven Finkel) (Anterior)",                                     "http://youtu.be/h14Ee2yAmUU"],
-      ["SSRA (Steven Finkel) (Popliteal)",                                    "http://youtu.be/qYM2sft8R2I"]   
+      ["SSRA (Steven Finkel) (Anterior)",                                     "http://youtu.be/h14Ee2yAmUU"]
+       
     ]
   
   end

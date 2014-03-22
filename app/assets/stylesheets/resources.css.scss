@@ -1,4 +1,18 @@
 .resources {
+  
+	.btn {
+		font-family: "Belleza";
+		font-size: 1.3em;
+    float: right;
+    
+  a {
+    color: white;
+    &:visited {
+      color: white;
+    }
+  }
+}
+  
 	table {
 		border-collapse: collapse;
 	}
