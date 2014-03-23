@@ -420,6 +420,42 @@
                 </div>
               </div>        
             </div>
+            
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a href='#abdominal' class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-pnb">
+                    Abdominal
+                  </a>
+                </h4>
+              </div>
+
+              <div id="abdominal" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <% @abdominal.each do |movie| %> 
+                  <a href="<%= movie[1] %>" target = "_blank" class="btn btn-primary btn-block" role="button"><%= movie[0] %></a>
+                  <% end %>
+                </div>
+              </div>        
+            </div>
+            
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a href='#pediatric' class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-pnb">
+                    Pediatric
+                  </a>
+                </h4>
+              </div>
+
+              <div id="pediatric" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <% @pediatric_block.each do |movie| %> 
+                  <a href="<%= movie[1] %>" target = "_blank" class="btn btn-primary btn-block" role="button"><%= movie[0] %></a>
+                  <% end %>
+                </div>
+              </div>        
+            </div>
           </div>
         </div>
       </div>  

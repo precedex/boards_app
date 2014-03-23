@@ -12,11 +12,11 @@
     display:inline-block;
 }
 
-.tools{	
-  
-  a{
+a.btn {
+  font-weight: bold;
+}
 
-  }
+.tools{	
 	
 	dl{
 	  text-align: left;
@@ -62,7 +62,7 @@
 	
 	.btn-lg {
 		font-family: Helvetica;
-		font-size: 1.2em;
+		font-size: 1em;
 	}  
 }
 

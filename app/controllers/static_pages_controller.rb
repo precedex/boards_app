@@ -174,7 +174,8 @@ class StaticPagesController < ApplicationController
       ["MedicineUpToDate",                                                    "http://youtu.be/tf11gOpmmTo"]   
     ]
     @cent_subclav_us = [
-      ["Sonosite",                                                            "http://youtu.be/IBmbc1ak5fY"]   
+      ["Sonosite",                                                            "http://youtu.be/IBmbc1ak5fY"],
+      ["Sonosite - Supraclavicular Approach",                                 "http://youtu.be/I3Jqbxa1_Ts"]          
     ]
     @cent_subclav_non_us = [
       ["Ashton Moh",                                                          "http://youtu.be/p-yUMu63TMQ"]   
@@ -189,27 +190,27 @@ class StaticPagesController < ApplicationController
       ["NYSORA",                                                              "http://youtu.be/Zke6938Y1k4"],
       ["Sonosite - David Auyong",                                             "http://youtu.be/Dg9BJ-32yLc"],
       ['Sonosite 3D',                                                         "http://youtu.be/wAABZF1aSO8"],
-      ['RACSI',                                                               "http://youtu.be/cUYsFNL9g2M"],
+      ['RACSI - Robert Raw',                                                  "http://youtu.be/cUYsFNL9g2M"],
       ["SSRA - Theresa Bowling",                                              "http://youtu.be/OhFs-batCSY"]   
     ]
     @supraclavicular = [
       ["NYSORA",                                                              "http://youtu.be/UmG-bgEQQ4E"],
       ["Sonosite - David Auyong",                                             "http://youtu.be/ztOIvfjsB-U"],
       ["Sonosite 3D",                                                         "http://youtu.be/9vW1uo7mKDc"],
-      ["RACSI",                                                               "http://youtu.be/FeQfAlJkPk8"],
+      ["RACSI - Robert Raw",                                                               "http://youtu.be/FeQfAlJkPk8"],
       ["Stuart Grant",                                                        "http://youtu.be/oRUlnmQrWJ0"],
       ["SSRA - Theresa Bowling",                                              "http://youtu.be/FgH5RWkhD0g"]   
     ]
     @infraclavicular = [
       ["Sonosite - David Auyong",                                             "http://youtu.be/hRyDtXrfYqc"],
-      ["RASCI",                                                               "http://youtu.be/HtDEYcxtE5w"],
+      ["RASCI - Robert Raw",                                                  "http://youtu.be/HtDEYcxtE5w"],
       ["SSRA - Theresa Bowling",                                              "http://youtu.be/Z9woYkyJl_U"]   
     ]
     @axillary = [
       ["NYSORA",                                                              "http://youtu.be/DdbtAClkBAs"],
       ["Sonosite - David Auyong",                                             "http://youtu.be/GaH-CO6OrV0"],
       ['Sonosite 3D',                                                         "http://youtu.be/3utZmyOXrYg"],
-      ['RACSI',                                                               "http://youtu.be/3iVjzo13w9g"]  
+      ['RACSI - Robert Raw',                                                  "http://youtu.be/3iVjzo13w9g"]  
     ]
     @femoral = [
       ["NYSORA",                                                              "http://youtu.be/1mkHrVxdGNg"],
@@ -226,6 +227,20 @@ class StaticPagesController < ApplicationController
       ["Sonosite - Subgluteal - David Auyong",                                "http://youtu.be/rl8rZOEMveE"],
       ["SSRA - Anterior - Steven Finkel",                                     "http://youtu.be/h14Ee2yAmUU"]
     ]
+    
+    @abdominal = [
+      ["Sonosite 3D - Ilioinguinal / Iliohypogastric",                        "http://youtu.be/uurxBFRT_EE"],
+      ["Sonosite - Ilioinguinal / Iliohypogastric - David Auyong",            "http://youtu.be/6E3ynIn6Ud4"],
+      ["SSRA - TAP Block - Theresa Bowling",                                  "http://youtu.be/9iXkZ8KG2X4"],
+      ["Pajunk - TAP Block",                                                  "http://youtu.be/CzMDdrPbLEM"],
+      ["TAP Block - Brian Sites",                                             "http://youtu.be/9TIHDn7uBZI"]
+    ]
+    
+    @pediatric_block = [  
+      ["Pediatric TAP Block",                                                 "http://youtu.be/XfRLiny_D8E"],
+      ["Pediatric2",                                                          "#"]
+    ]
+    
     @spinal = [
       ["Procedural Checklist - Stanford",                                     "http://youtu.be/eblMcptvcAo"],
       ["Obstetric Spinal",                                                    "http://youtu.be/JC0ljF1TRuQ"]   
