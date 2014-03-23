@@ -190,6 +190,7 @@ class StaticPagesController < ApplicationController
       ["NYSORA",                                                              "http://youtu.be/Zke6938Y1k4"],
       ["Sonosite - David Auyong",                                             "http://youtu.be/Dg9BJ-32yLc"],
       ['Sonosite 3D',                                                         "http://youtu.be/wAABZF1aSO8"],
+      ['Samsung',                                                             "http://youtu.be/3IvQqrLDfHU"],
       ['RACSI - Robert Raw',                                                  "http://youtu.be/cUYsFNL9g2M"],
       ["SSRA - Theresa Bowling",                                              "http://youtu.be/OhFs-batCSY"]   
     ]
@@ -197,7 +198,7 @@ class StaticPagesController < ApplicationController
       ["NYSORA",                                                              "http://youtu.be/UmG-bgEQQ4E"],
       ["Sonosite - David Auyong",                                             "http://youtu.be/ztOIvfjsB-U"],
       ["Sonosite 3D",                                                         "http://youtu.be/9vW1uo7mKDc"],
-      ["RACSI - Robert Raw",                                                               "http://youtu.be/FeQfAlJkPk8"],
+      ["RACSI - Robert Raw",                                                  "http://youtu.be/FeQfAlJkPk8"],
       ["Stuart Grant",                                                        "http://youtu.be/oRUlnmQrWJ0"],
       ["SSRA - Theresa Bowling",                                              "http://youtu.be/FgH5RWkhD0g"]   
     ]
@@ -210,6 +211,7 @@ class StaticPagesController < ApplicationController
       ["NYSORA",                                                              "http://youtu.be/DdbtAClkBAs"],
       ["Sonosite - David Auyong",                                             "http://youtu.be/GaH-CO6OrV0"],
       ['Sonosite 3D',                                                         "http://youtu.be/3utZmyOXrYg"],
+      ['Samsung',                                                             "http://youtu.be/_03WDU7a7fs"],
       ['RACSI - Robert Raw',                                                  "http://youtu.be/3iVjzo13w9g"]  
     ]
     @femoral = [
@@ -221,10 +223,13 @@ class StaticPagesController < ApplicationController
     ]
     @sciatic = [
       ["NYSORA - Popliteal",                                                  "http://youtu.be/gH1BS54EYjU"],
+      ["Samsung - Popliteal",                                                 'http://youtu.be/PX2XTLOKQL0'],
       ["UCSF - Popliteal",                                                    "http://youtu.be/CTJJdISVc24"],
       ["SSRA - Popliteal - Steven Finkel",                                    "http://youtu.be/qYM2sft8R2I"],  
       ["Sonosite - Popliteal - David Auyong",                                 "http://youtu.be/kzhSiQBPE7s"],
+      ["Samsung - Subgluteal",                                                "http://youtu.be/Vh2msgOrHYo"],
       ["Sonosite - Subgluteal - David Auyong",                                "http://youtu.be/rl8rZOEMveE"],
+      ["Samsung - Anterior",                                                  "http://youtu.be/2MOsXoRWO3s"],
       ["SSRA - Anterior - Steven Finkel",                                     "http://youtu.be/h14Ee2yAmUU"]
     ]
     
@@ -237,8 +242,7 @@ class StaticPagesController < ApplicationController
     ]
     
     @pediatric_block = [  
-      ["Pediatric TAP Block",                                                 "http://youtu.be/XfRLiny_D8E"],
-      ["Pediatric2",                                                          "#"]
+      ["Pediatric TAP Block",                                                 "http://youtu.be/XfRLiny_D8E"]
     ]
     
     @spinal = [
