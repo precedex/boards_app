@@ -49,9 +49,11 @@ class StaticPagesController < ApplicationController
     ]
 
     @drug_dosing = [
-      ["PALS Drugs",               "PALS_Drugs.jpg"],
-      ["Periop Antibiotic Dosing", "http://www.ashp.org/DocLibrary/BestPractices/TGSurgery.aspx"],
-      ["PONV Prophylaxis",         "PONV.jpg"],
+      ["PALS Drugs",                  "PALS_Drugs.jpg"],
+      ["Peds Anesthesia Drugs",       "http://www.morpheusanesthesia.com/Pediatric_Anesthesia_Drug_Update_ANSE07_PedAnesthERWM.pdf"],
+      ["Peds Anesthesia Pocket Ref",  "http://pedianesthesia.ucsf.edu/pdf_pedirefcard.pdf"],
+      ["Periop Antibiotic Dosing",    "http://www.ashp.org/DocLibrary/BestPractices/TGSurgery.aspx"],
+      ["PONV Prophylaxis",            "PONV.jpg"],
     ]
 
     @calculators = [

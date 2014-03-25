@@ -13,7 +13,7 @@
   %br/
   %form.form-inline{"accept-charset" => "UTF-8", action: "/questions", method: "get", name: "commit"}
     .row
-      .col-md-6.col-md-offset-3
+      .center
         .checkbox
           %div
             Stems
@@ -24,9 +24,12 @@
         .form-group
           %input#search.input-large{name: "search", placeholder: "Search", type: "search"}/
     .row
-      .col-md-6.col-md-offset-3
-        %button.btn.btn-danger.btn-lg{style: "margin:1em", type: "submit"} Search the Questions
+      %br/
+    .row
+      .center
+        %button.btn.btn-danger.btn-lg{type: "submit"} Search the Questions
         = link_to "10 Random Questions", "/questions/random", class: "btn btn-primary btn-lg"
+  %br/
   %p{style: "text-align: center; font-size: 1.5em; list-style: none"}
     \© Joint Council on In-Training Examinations, American Board of
     Anesthesiology, American Society of Anesthesiologists
@@ -50,7 +53,8 @@
     %ul= render partial: 'site', collection: @study_strategy
     %br/
 
-    %p{style: "text-decoration:underline"} Written board commercial prep courses:
+    %p
+      Written board commercial prep courses:
     %p{style: "font-size: 1.5em; font-style: italic; text-indent: 1em; list-style: none"}
       I don't have any experience with these products and do not endorse any
       particular product
