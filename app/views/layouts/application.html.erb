@@ -2,7 +2,11 @@
 <html>
 
 <head>
-  <meta http-equiv="X-UA-Compatible" content="IE=8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.js"></script>
+    <![endif]-->
   <title> Anesthesia Hub - <%= yield(:title) || "The central resource for anesthesiology on the web." %></title>
   <%= stylesheet_link_tag    "application", media: "all", 
   											"data-turbolinks-track" => true %>
@@ -47,6 +51,7 @@
 		<%= render 'layouts/footer' %>
 		<% end %>
 	</div>
+  
 </body>
 
 </html>
