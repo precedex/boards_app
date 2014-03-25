@@ -188,6 +188,24 @@
                         </div>        
                       </div>                
                     </div> 
+                    
+                    <div class="panel panel-info">
+                      <div class="panel-heading">
+                        <h5 class="panel-title">
+                          <a href='#swan' class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-cent-ij">
+                            Swan-Ganz PA Catheter
+                          </a>
+                        </h5>
+                      </div>
+                  
+                      <div id="swan" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <% @swan.each do |movie| %> 
+                          <a href="<%= movie[1] %>" target = "_blank" class="btn btn-primary btn-block" role="button"><%= movie[0] %></a>
+                          <% end %>
+                        </div>
+                      </div>   
+                    </div>
                   </div> 
                 </div> 
               </div> 
@@ -508,6 +526,24 @@
                 </div>
               </div>        
             </div>
+             
+             <div class="panel panel-info">
+               <div class="panel-heading">
+                 <h4 class="panel-title">
+                   <a href='#paravertebral' class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-neuraxial">
+                     Paravertebral
+                   </a>
+                 </h4>
+               </div>
+
+               <div id="paravertebral" class="panel-collapse collapse">
+                 <div class="panel-body">
+                   <% @paravertebral.each do |movie| %> 
+                   <a href="<%= movie[1] %>" target = "_blank" class="btn btn-primary btn-block" role="button"><%= movie[0] %></a>
+                   <% end %>
+                 </div>
+               </div>        
+             </div> 
              
           </div>
         </div>

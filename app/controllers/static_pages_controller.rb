@@ -151,13 +151,13 @@ class StaticPagesController < ApplicationController
   def movies
     @art_rad_us = [
       ["UCSF",                                                                "http://youtu.be/YOxyssqqYNE"],   
-      ["Sonosite",                                                            "http://youtu.be/uHfeyAYiWOc"] 
+      ["Sonosite 3D",                                                         "http://youtu.be/uHfeyAYiWOc"] 
     ]
     @art_rad_non_us = [
       ["NEJM",                                                                "http://youtu.be/8hK04ai17-k"],   
-      ["Kaiser Permanente",                                                   "http://youtu.be/6--8J4iqGEY"],
+      ["Kaiser Permanente - Barry Bloom",                                     "http://youtu.be/6--8J4iqGEY"],
       ["Arrow Catheter",                                                      "http://youtu.be/ug2JIsk8494"],
-      ["Yale Media Lab",                                                      "http://medicine.yale.edu/anesthesiology/education/media/procedures.aspx#1-178321"],
+      ["Yale Media Lab - Viji Kurup",                                         "http://medicine.yale.edu/anesthesiology/education/media/procedures.aspx#1-178321"],
       ["marhaba2000",                                                         "http://youtu.be/qv54USEYNzw"]
     ]
     @art_brach_us = [
@@ -167,23 +167,26 @@ class StaticPagesController < ApplicationController
     ] 
     @cent_ij_us = [
       ["NEJM",                                                                "http://youtu.be/HE5QhsPRaPU"],   
-      ["Mount Sinai Hospital",                                                "http://youtu.be/coEpM7IBzsM"], 
-      ["Sonosite / Columbia, Part 1",                                         "http://youtu.be/_RHRy64jQ6s"], 
-      ["Sonosite / Columbia, Part 2",                                         "http://youtu.be/zV3hw_QbgK4"], 
-      ["Sonosite / Cedars-Sinai",                                             "http://youtu.be/21w4kuD0_gA"] 
+      ["Mount Sinai Hospital - David Reich",                                  "http://youtu.be/coEpM7IBzsM"], 
+      ["Sonosite, Part 1 - Phil Perera",                                      "http://youtu.be/_RHRy64jQ6s"], 
+      ["Sonosite, Part 2 - Phil Perera",                                      "http://youtu.be/zV3hw_QbgK4"], 
+      ["Sonosite, Cedars-Sinai - Diku Mandavia",                              "http://youtu.be/21w4kuD0_gA"] 
     ]
     @cent_ij_non_us = [
       ["MedicineUpToDate",                                                    "http://youtu.be/tf11gOpmmTo"]   
+    ] 
+    @swan = [
+      ["Kaiser Permanente - Barry Bloom",                                     "http://youtu.be/HdlCH_h_Hao"]
     ]
     @cent_subclav_us = [
-      ["Sonosite",                                                            "http://youtu.be/IBmbc1ak5fY"],
-      ["Sonosite - Supraclavicular Approach",                                 "http://youtu.be/I3Jqbxa1_Ts"]          
+      ["Sonosite 3D",                                                         "http://youtu.be/IBmbc1ak5fY"],
+      ["Sonosite - Supraclavicular Approach - Phil Perera",                   "http://youtu.be/I3Jqbxa1_Ts"]          
     ]
     @cent_subclav_non_us = [
       ["Ashton Moh",                                                          "http://youtu.be/p-yUMu63TMQ"]   
     ]
     @cent_fem_us = [
-      ["Sonosite",                                                            "http://youtu.be/gNvbxeoUMlc"]   
+      ["Sonosite 3D",                                                         "http://youtu.be/gNvbxeoUMlc"]   
     ]
     @cent_fem_non_us = [
       ["Medicine UpToDate",                                                   "http://youtu.be/ybCpeb2E0dU"]   
@@ -240,7 +243,8 @@ class StaticPagesController < ApplicationController
       ["Sonosite - Ilioinguinal / Iliohypogastric - David Auyong",            "http://youtu.be/6E3ynIn6Ud4"],
       ["SSRA - TAP Block - Theresa Bowling",                                  "http://youtu.be/9iXkZ8KG2X4"],
       ["Pajunk - TAP Block",                                                  "http://youtu.be/CzMDdrPbLEM"],
-      ["TAP Block - Brian Sites",                                             "http://youtu.be/9TIHDn7uBZI"]
+      ["TAP Block - Brian Sites",                                             "http://youtu.be/9TIHDn7uBZI"],
+      ["SSRA - Fascia Iliaca Block - Steven Finkel",                          "http://youtu.be/2rCiAbtLmZ8"]
     ]
     
     @pediatric_block = [  
@@ -254,6 +258,9 @@ class StaticPagesController < ApplicationController
     @epidural = [
       ["Braun Perifix",                                                       "http://youtu.be/Ttm0p8MJRWA"],
       ["10 Tips to Optimize Technique - Lecture - Lawrence Tsen",             "http://youtu.be/_BqxQW4Uyh4"] 
+    ]
+    @paravertebral = [
+      ["SSRA - US-guided - Theresa Bowling",                                  "http://youtu.be/l97p0mbOv1E"]
     ]
   end
 end
