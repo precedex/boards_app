@@ -163,7 +163,7 @@ class StaticPagesController < ApplicationController
     @art_brach_us = [
     ]
     @art_brach_non_us = [
-      ["Dr. Gallagher's Neighborhood",                                        "http://youtu.be/fRUHD6WJraU"]   
+      ["Chris Gallagher",                                                     "http://youtu.be/fRUHD6WJraU"]   
     ] 
     @cent_ij_us = [
       ["NEJM",                                                                "http://youtu.be/HE5QhsPRaPU"],   
@@ -176,7 +176,8 @@ class StaticPagesController < ApplicationController
       ["MedicineUpToDate",                                                    "http://youtu.be/tf11gOpmmTo"]   
     ] 
     @swan = [
-      ["Kaiser Permanente - Barry Bloom",                                     "http://youtu.be/HdlCH_h_Hao"]
+      ["Kaiser Permanente - Barry Bloom",                                     "http://youtu.be/HdlCH_h_Hao"],
+      ["Chris Gallagher",                                                     "http://youtu.be/FzvWfuAEfwo"]
     ]
     @cent_subclav_us = [
       ["Sonosite 3D",                                                         "http://youtu.be/IBmbc1ak5fY"],
