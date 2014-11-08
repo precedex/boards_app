@@ -1,0 +1,795 @@
+
+The test dose of local anesthetic administered through an epidural needle or catheter should be sufficient to produce
+(A) bradycardia
+(B) seizure activity
+(C) hypotension
+(D) segmental analgesia
+(E) spinal anesthesia
+
+The most important anesthetic consideration in Pierre Robin syndrome is
+(A) anterior tilt of the larynx
+(B) hyperplasia of the internal surface of the maxilla
+(C) mandibular hypoplasia
+(D) hypertrophy of the epiglottis
+(E) tracheomalacia
+
+A 70-kg, 22-year-old man who is unconscious after a closed head injury is to undergo emergency splenectomy. He is anesthetized with thiopental, given pancuronium for paralysis, and started on nitrous oxide and oxygen 50% each with controlled ventilation (tidal volume 700 ml, rate 10/min). Pulse is 70 bpm, blood pressure is 160/100 mmHg, Pa02 is 65 mmHg, PaC02 is 45 mmHg, and pH is 7.30. In adjusting the ventilator at this time, which of the following is most appropriate?
+(A) Add 10 cmH20 positive end-expiratory pressure (PEEP), increase respiratory rate to 14/min
+(B) Add sufficient PEEP to increase Pa02 to 80 mmHg
+(C) Add 10 cmH20 PEEP, increase Fl02 to 1.0
+(D) Increase tidal volume to 1000 ml, increase Fi02 to 1.0
+(E) Increase tidal volume to 1200 ml, decrease respiratory rate to 8/min
+
+A patient who is scheduled for a gastrectomy had abnormal liver function tests for four days following a prior cholecystectomy. In your consultation note, you should
+(A) recommend enflurane anesthesia since abnormal postoperative liver function tests are unlikely with this drug
+(B) recommend subarachnoid anesthesia since changes in hepatic blood flow would be less than with general anesthesia
+(C) indicate that abnormal liver function tests are likely to follow this operation regardless of the anesthetic drugs used
+(D) require preoperative screening for hepatitis B antigen and antibodies
+(E) recommend avoiding halothane since it is more likely to produce hepatitis in patients who had previous upper abdominal surgery
+
+Spontaneously breathing enflurane at 1 MAC causes increased
+(A) airway resistance
+(B) diaphragm function
+(C) carbon dioxide production
+(D) intercostal muscle function
+(E) physiologic dead space
+
+Which of the following statements concerning use of a Bain circuit is true?
+(A) Fresh gas flow can be as low as the patient's minute ventilation
+(B) Heat conservation is better than with a circle system
+(C) Lower flows can be used with controlled ventilation than with spontaneous ventilation
+(D) Lower fresh gas flows can be used than with a Jackson-Rees system
+(E) The concentration of inspired vapors can be changed rapidly
+
+A 32-year-old man who is addicted to opioids complains of pain in the PACU one hour after fixation of a mandibular fracture. He has received intravenous morphine 30 mg during the past hour. The most appropriate management is
+(A) continued intravenous administration of morphine until the pain resolves
+(B) intravenous administration of nalbuphine in 5-mg increments until the pain resolves
+(C) intramuscular administration of hydroxyzine 75 mg
+(D) evaluation for entrapment of the mandibular nerve
+(E) evaluation for drug-seeking behavior
+
+Which of the following spirometric tests is most likely to be accurate in a patient with severe pain?
+(A) Forced expiratory volume in one second
+(B) Peak expiratory flow rate
+(C) Maximum midexpiratory flow
+(D) Maximum breathing capacity
+(E) Negative inspiratory pressure
+
+In the PACU after resection of an occipital astrocytoma, a patient has a urine output greater than 300 ml/hr, serum osmolality of 310 mOsm/L, and a hematocrit of 40% (equal to the preoperative value). Intraoperative blood loss was estimated to be 750 ml; furosemide and mannitol were administered during the procedure. The most appropriate next step is
+(A) restriction of free water
+(B) administration of 0.9% saline solution
+(C) administration of desmopressin
+(D) administration of dexamethasone
+(E) CT scan of the brain
+
+Metoclopramide acts to
+(A) block dopamine receptors
+(B) decrease gastric acid production
+(C) decrease lower esophageal sphincter tone
+(D) delay gastric emptying
+(E) facilitate central cholinergic stimulation
+
+An obese, 35-year-old man had an episode of coughing followed by vomiting during induction of anesthesia for arthroscopy of the left knee. Intense wheezing developed bilaterally over five minutes. PaOz is 60 mmHg, PaC02 is 42 mmHg, and pH is 7.35. Optimal management following intubation of the trachea includes
+(A) mechanical ventilation with positive end-expiratory pressure (PEEP), cancellation of surgery, and transfer to the intensive care unit
+(B) saline lavage and continuation of surgery using halothane anesthesia
+(C) cancellation of surgery and administration of corticosteroids and antibiotics
+(D) thorough suctioning and proceeding with halothane anesthesia
+(E) cancellation of surgery, vigorous mechanical ventilation, thorough suctioning, and administration of aminophylline
+
+A 20-year-old woman with poorly controlled diabetes mellitus is scheduled for urgent drainage of an abdominal abscess. She received an initial dose of regular insulin 10 units followed by regular insulin 5 units/hr for the past five hours. Laboratory studies show serum sodium concentration 128 mEq/L, potassium 5.4 mEq/L, chloride 80 mEq/L, and glucose 750 mg/dl. The most appropriate perioperative management is
+(A) addition of subcutaneous NPH insulin
+(B) administration of sodium bicarbonate to correct metabolic acidosis
+(C) administration of normal saline solution to correct the presumed hypovolemia
+(D) administration of furosemide to correct hyponatremia
+(E) infusion of 5% dextrose in 0.2% saline solution to prevent hypoglycemia
+
+A 15-kg, 3-year-old child is anesthetized for an inguinal hernia repair with halothane and nitrous oxide. The trachea is intubated after administration of succinylcholine 30 mg. At the conclusion of the 45-minute procedure, the child is not breathing; a peripheral nerve twitch monitor indicates no response to a train-of-four stimulus. Further investigation is most likely to show
+(A) abnormal response to nondepolarizing muscle relaxants
+(B) a low dibucaine number
+(C) a low plasma cholinesterase concentration
+(D) an underlying myopathy
+(E) a positive halothane-caffeine contracture test
+
+Maternal hyperventilation will result in
+(A) increased umbilical blood flow
+(B) decreased affinity of maternal hemoglobin for oxygen
+(C) decreased maternal and fetal cardiac output
+(D) increased placental transfer of oxygen
+(E) increased fetal cerebral blood flow
+
+Measurement of blood pressure with a Doppler device involves
+(A) reflection of ultrasound waves off blood elements
+(B) detection of oscillations in cuff pressure
+(C) amplification of Korotkoff sounds with a miniature microphone
+(D) transillumination with a near infrared light
+(E) detection of variations in blood vessel diameter
+
+The vapor pressure of a volatile anesthetic depends on
+(A) temperature only
+(B) ambient pressure only
+(C) temperature and ambient pressure
+(D) pressure and volume of the system
+(E) none of the above
+
+An anesthetized patient in the sitting position has a mean arterial pressure of 80 mmHg measured with a transducer placed at the level of the heart. Mean cerebral arterial pressure 20 cm above the transducer is
+(A) 100 mmHg
+(B) 80 mmHg
+(C) 65 mmHg
+(D) 60 mmHg
+(E) 50 mmHg
+
+Succinylcholine can be administered safely to a patient with
+(A) amyotrophic lateral sclerosis
+(B) cerebral palsy
+(C) a pelvic crush injury sustained two weeks ago
+(D) a 20% body surface area burn sustained 10 days ago
+(E) hemiparesis one month after a cerebrovascular accident
+
+A patient receiving propranolol and nifedipine is scheduled for elective coronary artery bypass surgery. During induction with fentanyl and oxygen, heart rate decreases from 52 to 36 bpm and blood pressure decreases from 130/85 to 80/50 mmHg. Administration of atropine 2 mg intravenously has no effect. The most appropriate treatment at this time is administration of
+(A) epinephrine
+(B) pancuronium
+(C) naloxone
+(D) phenylephrine
+(E) calcium chloride
+
+Which of the following statements concerning absorption of carbon dioxide by soda lime in an anesthetic circuit is correct?
+(A) A warm canister indicates reserve absorption capability
+(B) Fresh soda lime includes calcium carbonate
+(C) Intergranular volume of the canister should exceed the patient's tidal volume
+(D) The color indicator is methylene blue
+(E) The reaction removes water
+
+Which of the following statements concerning use of temperature-corrected blood gas measurement (pH-stat) during hypothermic cardiopulmonary bypass is true?
+(A) Blood gas analysis is performed at the patient's temperature
+(B) Carbon dioxide should not be added to the bypass circuit
+(C) The carbon dioxide content of the patient's blood is greater than it would be without temperature correction
+(D) The incidence of postoperative neurologic deficits is increased compared with the alpha-stat method
+(E) The patient's temperature should be maintained above 25°C
+
+Compared with labetalol for induction of hypotension, nitroprusside is associated with
+(A) greater cerebral vasodilation
+(B) greater dependence on hepatic metabolism
+(C) less activation of the renin-angiotensin system
+(D) less intrapulmonary shunt
+(E) less venodilation
+
+A woman has weakness of the right quadriceps and a decreased knee jerk reflex on the right one day after forceps delivery under epidural anesthesia. The most likely cause is
+(A) epidural hematoma
+(B) intrapelvic nerve trauma
+(C) lithotomy positioning
+(D) reaction to the preservative in the anesthetic solution
+(E) trauma from the epidural needle
+
+A bilateral superior laryngeal nerve block performed to facilitate fiberoptic intubation will provide anesthesia of the
+(A) base of the tongue
+(B) larynx above the vocal cords
+(C) superior surface of the epiglottis
+(D) tonsillar pillars
+(E) upper trachea
+
+To eliminate involuntary expulsive effort with contraction in the second stage of labor, a nerve block must include at least
+(A) T6-T12
+(B) T4-S5
+(C) T8-L2
+(D) L1-S2
+(E) S2-S4
+
+Ventricular arrhythmias may be transiently worsened by the administration of
+(A) verapamil
+(B) bretylium
+(C) procainamide
+(D) phenytoin
+(E) propranolol
+
+A 26-year-old woman is hospitalized in early labor at 38 weeks' gestation. Vaginal bleeding occurred prior to admission. Systemic blood pressure remains 140/80 mmHg during intravenous infusion of fluids. Which of the following factors would contraindicate epidural anesthesia for labor at this time?
+(A) Early fetal heart rate decelerations
+(B) Hematocrit of 29%
+(C) Blood pressure of 110/75 mmHg when sitting
+(D) Platelet count of 100,000/mm3
+(E) Increased respiratory rate
+
+Bupivacaine 30 ml injected into the inguinal perivascular space will usually block the
+(A) femoral, lateral femoral cutaneous, and obturator nerves
+(B) ilioinguinal, femoral, and sciatic nerves
+(C) femoral, sciatic, and obturator nerves
+(D) ilioinguinal, iliohypogastric, and pudendal nerves
+(E) sciatic, femoral, and posterior femoral cutaneous nerves
+
+A patient is undergoing exploration of a stab wound to the left side of the neck. On awake laryngoscopy, the left vocal cord is in midposition and the right vocal cord is abducted during inspiration. The most likely cause of these findings is trauma to which of the following structures on the left?
+(A) C7-8 nerve root
+(B) Stellate ganglion
+(C) Glossopharyngeal nerve
+(D) Superior laryngeal nerve
+(E) Vagus nerve
+
+Compared with epidural administration of hydrophilic opioids, epidural administration of lipophilic opioids is associated with
+(A) earlier onset of pruritus
+(B) greater motor block when combined with local anesthetics
+(C) higher incidence of delayed respiratory depression
+(D) lesser sensitivity to reversal of analgesia by naloxone
+(E) slower onset of analgesia
+
+Which of the following is the most likely beneficial effect of hyperbaric oxygen therapy in a 24-year-old scuba diver with decompression sickness?
+(A) Decreased production of carbon dioxide
+(B) Decreased size of gas bubbles
+(C) Increased functional residual capacity
+(D) Reversal of membrane pressure effects
+(E) Shift of the oxyhemoglobin dissociation curve to the left
+
+Cerebral blood flow is decreased by
+(A) chronic respiratory acidosis
+(B) hypoxia
+(C) hypoglycemia
+(D) polycythemia
+(E) the postictal state
+
+Which of the following statements concerning diabetes mellitus in pregnancy is true?
+(A) Beta-mimetic tocolytics cause maternal hypoglycemia
+(B) Epidural anesthesia produces hyperglycemia
+(C) Fetal insulin secretion is suppressed
+(D) Maternal insulin does not cross the placenta
+(E) Maternal insulin resistance develops abruptly after delivery
+
+A 5-year-old child is brought to the emergency department in considerable respiratory distress. He is sitting leaning forward and drooling. He was well until four hours ago, when temperature increased to 38.9°C and he complained of a sore throat. The most appropriate initial management is to
+(A) administer nebulized racemic epinephrine
+(B) gently examine the airway with a tongue blade
+(C) obtain a lateral radiograph of the neck
+(D) perform a rapid induction-intubation sequence
+(E) perform inhalation induction without cricoid pressure
+
+Five minutes after a stellate ganglion block is performed, a patient becomes restless, then apneic. The most likely cause is
+(A) paratracheal hematoma
+(B) phrenic nerve block
+(C) recurrent laryngeal nerve block
+(D) subarachnoid injection
+(E) vertebral artery injection
+
+The mortality rate of patients given drug A is 12% (8 of 66) and the mortality rate of patients given drug B is 15% (10 of 66). Which of the following tests is most appropriate to compare these mortality rates?
+(A) ?-Test for paired data
+(B) r-Test for unpaired data
+(C) Wilcoxon rank test
+(D) Chi-square test
+(E) Analysis of covariance
+
+Which of the following is the most likely effect of infrarenal cross clamping of the aorta without pharmacologic manipu-
+(A) Decreased cardiac output
+(B) Decreased pulmonary artery occlusion pressure
+(C) Increased left ventricular stroke volume
+(D) Increased renal blood flow
+(E) Improved myocardial oxygen supply-demand ratio
+
+During Harrington rod instrumentation for scoliosis, monitoring somatosensory evoked potentials
+(A) is unreliable if halothane is used
+(B) eliminates the need for a wake-up test
+(C) accurately assesses proprioceptive integrity
+(D) accurately assesses motor function integrity
+(E) is unreliable if nondepolarizing muscle relaxants are used
+lation?
+
+A previously healthy 26-year-old man sustains massive soft tissue injury in a motor vehicle accident. He appears to be well for 48 hours after initial resuscitation, then develops marked tachypnea. Arterial blood gas analysis would be most likely to show which of the following values? (pH, PaCO2, PaO2, FiO2)
+(A) 7.53	60	75	.21
+(B) 7.12	25	110	.30
+(C) 7.09	60	90	.40
+(D) 7.53	25	55	.80
+(E) 7.28	40	195	.80
+
+When performed with identical doses, which of the following types of regional block is associated with the highest plasma concentration of the drug?
+(A) Brachial plexus
+(B) Caudal
+(C) Intercostal
+(D) Subcutaneous infiltration
+(E) Thoracic epidural
+
+During carotid endarterectomy, blood pressure suddenly decreases from 140/90 to 80/50 mmHg. The EKG shows a heart rate of 42 bpm, with normal sinus rhythm and occasional premature ventricular contractions. The most appropriate therapy is intravenous administration of
+(A) atropine
+(B) epinephrine
+(C) isoproterenol
+(D) lidocaine
+(E) phenylephrine
+
+An otherwise healthy 42-year-old woman is referred for management of pain associated with adenocarcinoma of the breast and metastasis to the anterior body of L3. She perceives the pain as moderate and currently takes no pain medication. Her oncologist estimates her life expectancy to be 18 months. The most appropriate initial management is
+(A) a benzodiazepine as needed and at bedtime
+(B) an oxycodone preparation as needed and a tricyclic antidepressant at bedtime
+(C) intravenous patient-controlled analgesia
+(D) morphine infusion via an implanted epidural catheter
+(E) parenteral meperidine
+
+A patient has fever and chills in the recovery room following an abdominal hysterectomy that required the intraoperative administration of whole blood 1 unit. A blood sample drawn in the recovery room shows no free hemoglobin. Subsequently, packed red blood cells 1 unit and fresh frozen plasma 1 unit are administered, and the fever and chills recur. The most likely cause of the fever and chills is
+(A) an allergic-type transfusion reaction
+(B) a hemolytic transfusion reaction to untested antibodies
+(C) bacterial contamination of blood
+(D) a reaction to leukocytes contained in the plasma
+(E) the presence of cold agglutinins in the patient
+
+Which of the following is characteristic of low back pain associated with myofascial pain syndrome but not of pain associated with a herniated lumbar disk?
+(A) Loss of reflexes in the lower extremities
+(B) Pain along the distribution of nerve roots
+(C) Responsiveness to epidural corticosteroids
+(D) Sensitivity to injection at trigger points
+(E) Trophic alteration in the sympathetic nervous system
+
+Alveolar stability at varying lung volumes is maintained by
+(A) constant surface tension
+(B) increased surface tension at low lung volume
+(C) decreased surface tension at high lung volume
+(D) decreased surface tension at low lung volume
+(E) none of the above
+
+In calculating the fluid requirements for a newborn undergoing repair of an omphalocele, the third-space loss should be replaced by
+(A) 0.9% saline solution
+(B) 2.5% dextrose in 0.45% saline solution
+(C) 5% dextrose in lactated Ringer's solution
+(D) 5% dextrose in water
+(E) 5% dextrose in 0.25% saline solution
+
+A patient with hypokalemic familial periodic paralysis develops weakness of skeletal muscles at the end of an emergency appendectomy under spinal anesthesia. If the weakness is a result of the familial periodic paralysis, which of the following statements is true?
+(A) Bicarbonate therapy is indicated
+(B) Cardiac dysrhythmias are unlikely
+(C) Initial treatment is intravenous edrophonium
+(D) Potassium infusion is contraindicated
+(E) The paralysis spares the diaphragm
+
+Which of the following statements concerning the use of epidural opioids during labor is true?
+(A) Fentanyl decreases the concentration of epidural bupivacaine required for satisfactory analgesia
+(B) Fentanyl is an effective analgesic for the second stage of labor
+(C) Sufentanil is an unsatisfactory analgesic for labor
+(D) The addition of epinephrine to morphine prolongs the duration of analgesia
+(E) The duration of analgesia with fentanyl is six to ten hours
+
+Which of the following is the most likely cause of postural headache following spinal anesthesia?
+(A) Meningeal traction
+(B) Parasympathetic (vagal) block
+(C) Sympathetic block-induced hypotension
+(D) Transtentorial cerebral herniation
+(E) Vasopressin-induced vasoconstriction
+
+Brain death following prolonged barbiturate coma is best confirmed by
+(A) electroencephalography
+(B) cerebral angiography
+(C) neurologic examination
+(D) physostigmine trial
+(E) measurement of cortical evoked potentials
+
+Which of the following is a characteristic of VVI pacemakers?
+(A) They are inhibited by the R wave
+(B) They are triggered by the P wave
+(C) They are more likely to precipitate ventricular fibrillation than fixed-rate pacemakers
+(D) They are unaffected by unipolar electrocautery
+(E) They sense both atrial and ventricular depolarization
+
+A 70-kg patient experiences pain on incision of a thigh abscess. The area around the abscess had been infiltrated with 30 ml of 1% lidocaine in 1:200,000 epinephrine. The local anesthetic was most likely ineffective because of
+(A) acidosis at the site of the injection
+(B) epinephrine-induced limitation of drug diffusion
+(C) insufficient dose
+(D) low ionization of lidocaine
+(E) protein binding of lidocaine
+
+With acute carbon monoxide poisoning
+(A) P50 is decreased
+(B) Pa02 is decreased
+(C) arterial oxygen saturation is increased
+(D) oxygen-carrying capacity of blood is normal
+(E) 2,3-diphosphoglycerate concentration in erythrocytes is increased
+
+During controlled ventilation, which of the following will cause an increase in end-tidal carbon dioxide tension with a normal waveform on the capnograph?
+(A) Bronchospasm
+(B) Rapid blood loss
+(C) Ventricular fibrillation
+(D) Endobronchial migration of the endotracheal tube
+(E) Release of a thigh tourniquet
+
+A healthy 30-year-old woman is undergoing laparoscopy with carbon dioxide insufflation under nitrous oxide 50% in oxygen, isoflurane 0.5%, fentanyl 150 u.g, and controlled ventilation. During the first 15 minutes of the procedure, blood pressure decreases 30%. The most likely cause is
+(A) anesthetic overdose
+(B) compression of the vena cava
+(C) gas embolization
+(D) hypercarbia
+(E) hypoxemia
+
+After an uncomplicated cesarean delivery, a full-term neonate has intermittent cyanosis. Diaphragmatic effort is vigorous and respiratory distress is relieved while crying. The most likely diagnosis is
+(A) amniotic fluid aspiration
+(B) choanal atresia
+(C) diaphragmatic hernia
+(D) tetralogy of Fallot
+(E) tracheoesophageal fistula
+
+An infant with congenital lobar emphysema is scheduled for thoracotomy. Which of the following should be included in the anesthetic management of this infant?
+(A) Helium-oxygen inspired gas mixture
+(B) Nitrous oxide administration
+(C) Positive pressure ventilation
+(D) Prophylactic placement of a chest tube
+(E) Spontaneous ventilation until the chest is opened
+
+Long-term use of cimetidine is associated with
+(A) delayed emergence after thiopental induction
+(B) increased hypotension after morphine
+(C) increased risk for isoflurane-induced nephrotoxicity
+(D) prolonged action of succinylcholine
+(E) prolonged sedation with diazepam
+
+The most common clinical viral infection following homologous blood transfusion is caused by
+(A) cytomegalovirus
+(B) Epstein-Barr virus
+(C) hepatitis B virus
+(D) human immunodeficiency virus
+(E) non-A, non-B hepatitis virus
+
+The risk for airway fire during laser resection of a tracheal tumor is decreased by use of
+(A) a C02 laser rather than a YAG laser
+(B) an inspired helium concentration greater than 60%
+(C) an inspired nitrous oxide concentration greater than 60%
+(D) a polyvinylchloride endotracheal tube
+(E) halothane in the inspired mixture
+
+During induction of anesthesia in a 70-year-old man with aortic stenosis, the blood pressure decreases from 140/ 80 to 70/45 mmHg as the cardiac rhythm changes from normal sinus at 70 bpm to junctional at 120 bpm. The most appropriate initial therapy would be
+(A) cardioversion
+(B) esmolol
+(C) fluid bolus
+(D) phenylephrine
+(E) verapamil
+
+Immediately after a retrobulbar block for cataract surgery, the eye grossly protrudes and the patient has the sensation of pressure in the eye. The most appropriate initial intervention is
+(A) hyperventilation
+(B) surgical drainage of a hematoma
+(C) manual compression of the globe
+(D) administration of atropine intravenously
+(E) administration of mannitol intravenously
+
+A healthy 10-kg child is flushed and restless after premedication with meperidine 15 mg and scopolamine 0.2 mg intramuscularly. His skin is warm and dry; temperature is 38°C, pulse is 130 bpm, and blood pressure is 90/60 mmHg. The most likely cause is
+(A) dehydration
+(B) idiosyncratic reaction to meperidine
+(C) malignant hyperthermia
+(D) neuroleptic malignant syndrome
+(E) scopolamine
+
+Intrabiliary pressure will be increased to the greatest extent by intravenous administration of
+(A) atropine
+(B) glucagon
+(C) naloxone
+(D) fentanyl
+(E) butorphanol
+
+Which of the following is the most reliable indicator of antagonism of nondepolarizing neuromuscular block sufficient for airway protection?
+(A) Clinically assessed ulnar nerve train-of-four ratio of 0.75
+(B) Peak negative pressure of 25 cmH20
+(C) End-tidal PC02 of 40 mmHg during spontaneous ventilation
+(D) Sustained head lift for 5 seconds
+(E) Vital capacity of 15 ml/kg
+
+Physiologically, coronary blood flow relates most directly to
+(A) cardiac work
+(B) systolic blood pressure
+(C) myocardial oxygen consumption
+(D) heart rate
+(E) mean arterial pressure
+
+The best indication that a patient is ready for discharge from an outpatient facility after spinal anesthesia is return of
+(A) pinprick sensation to the S4-5 dermatome
+(B) micturition
+(C) plantar flexion
+(D) proprioception of the big toe
+(E) knee extension
+
+A 50-year-old man with an 80 pack-year history of cigarette smoking has a forced expiratory volume in one second of 1.5 L and a forced vital capacity of 3.5 L. Which of the following statements concerning intraoperative anesthetic management is true?
+(A) An I:E ratio of 1:1 will improve carbon dioxide removal more than an I:E ratio of 1:2.5
+(B) Antagonism of neuromuscular block will most likely trigger acute bronchospasm
+(C) Functional residual capacity will increase during an acute exacerbation of bronchospasm
+(D) Induction with ketamine will increase airway resistance
+(E) Nitrous oxide is contraindicated
+
+An infant becomes cyanotic and hypotensive after ventilatory pressures increase to 45 cmH20 during closure of the abdominal wall at the end of a gastroschisis repair. The most appropriate next step is to
+(A) administer a muscle relaxant
+(B) administer 5% dextrose in lactated Ringer's solution 10 ml/kg
+(C) change the endotracheal tube
+(D) ask the surgeon to insert a chest tube
+(E) ask the surgeon to reopen the abdomen
+
+A 3.3-kg neonate is brought to the operating room for repair of a left diaphragmatic hernia. A 3-mm endotracheal tube is placed to a depth of 9 cm. Initial arterial blood gas values from a right radial catheter while spontaneously breathing oxygen 50% are Pa02 82 mmHg, PaC02 41 mmHg, pH 7.33, and base excess -5. After reduction of the hernia (during closure of the abdomen), vigorous attempts to expand the atelectatic lung are unsuccessful. The infant rapidly becomes very dusky, heart rate is 60 bpm, breath sounds are distant and squeaky bilaterally, and pulmonary compliance is decreased. Which of the following should be done first?
+(A) Obtain a radiograph of the chest
+(B) Place a chest tube on the left side
+(C) Place a chest tube on the right side
+(D) Withdraw the endotracheal tube 1 cm and suction
+(E) Reopen the abdomen
+
+Cardiac output measured by thermodilution with a pulmonary artery catheter most accurately reflects systemic blood flow in a patient with
+(A) aortic regurgitation
+(B) atrial septal defect
+(C) patent ductus arteriosus
+(D) tricuspid insufficiency
+(E) ventricular septal defect
+
+During general anesthesia using a modern anesthesia machine, a patient's spontaneous ventilation is manually assisted with a fresh gas flow of 5 L/min. A sudden malfunction of the pressure-relief (pop-off) valve of the circle absorption system occurs, and the valve cannot be opened. The most appropriate next step is to
+(A) change to a smaller reservoir bag
+(B) increase total fresh gas flow
+(C) open the scavenger valve
+(D) control ventilation manually
+(E) switch to mechanical ventilatory mode
+
+After brachial plexus block via an axillary approach, a patient has sensation on the dorsum of the second and third digits and is able to extend the distal phalanx of the thumb. To block the unaffected nerve, anesthetic should be injected at which of the following sites?
+(A) 2 Cm lateral to the biceps tendon at the level of the elbow
+(B) At the radial border of the palmaris longus tendon
+(C) Between the medial epicondyle and the olecranon
+(D) Between the radial artery and the styloid process
+(E) Just medial to the brachial artery at the elbow
+
+Which of the following vaporizer filling errors is most likely to result in inadvertent anesthetic overdose?
+(A) Enflurane in a halothane vaporizer
+(B) Enflurane in an isoflurane vaporizer
+(C) Halothane in an enflurane vaporizer
+(D) Halothane in an isoflurane vaporizer
+(E) Isoflurane in an enflurane vaporizer
+
+Which of the following antihypertensive drugs is most likely to cause bradycardia?
+(A) Captopril
+(B) Clonidine
+(C) Hydralazine
+(D) Nifedipine
+(E) Phenoxybenzamine
+
+The EEG begins to flatten during carotid endarterectomy when regional cerebral blood flow (in ml/min/100 g brain) decreases to
+(A) 55
+(B) 45
+(C) 30
+(D) 20
+(E) 10
+
+In a patient with a history of grand mal seizures, which of the following is most useful in distinguishing a seizure from normal anesthetic emergence?
+(A) Mydriasis
+(B) Myoclonic activity
+(C) Nystagmus
+(D) Positive Babinski sign
+(E) None of the above
+
+Compared with lidocaine, bupivacaine is more likely to cause dysrhythmias because it
+(A) enhances potassium-hydrogen ion exchange
+(B) is less soluble in lipids
+(C) produces more prolonged block of sodium channels
+(D) sensitizes the myocardium to catecholamines
+(E) sustains calcium channels open
+
+A successful celiac plexus block can be expected to
+(A) block parasympathetic fibers to the adrenal medulla
+(B) block sympathetic fibers to the sigmoid colon
+(C) block somatic fibers to the pancreas
+(D) enhance peristalsis
+(E) inhibit ejaculation
+
+Which of the following must be considered during perioperative management of a patient on long-term lithium therapy?
+(A) Intravenous fluids should include sodium
+(B) Therapy should be discontinued for 14 days prior to anesthesia
+(C) The requirement for succinylcholine is increased
+(D) The requirement for volatile anesthetics is increased
+(E) Urine output should be maintained with furosemide
+
+A 4-year-old child has just undergone a one-hour tonsillectomy with a volatile anesthetic, nitrous oxide, and oxygen. Which of the following will result in the most rapid emergence?
+(A) Decreased PaC02
+(B) Increased cardiac output
+(C) Increased fresh gas flow
+(D) Increased solubility of the volatile agent
+(E) Presence of a ventricular septal defect
+
+Compared with an induction dose of thiopental (4 mg/kg), an induction dose of propofol (2.5 mg/kg) produces
+(A) better maintenance of cerebral perfusion pressure
+(B) greater inhibition of glucocorticoid production
+(C) higher incidence of myoclonus
+(D) less severe hypotension
+(E) less severe respiratory depression
+
+Which of the following laboratory studies is most reliable in differentiating prerenal azotemia from acute tubular necrosis?
+(A) Creatinine clearance
+(B) Fractional excretion of sodium
+(C) Urine/plasma urea ratio
+(D) Urine sodium content
+(E) Urine specific gravity
+
+A 5-month-old infant with tetralogy of Fallot is scheduled for elective inguinal herniorrhaphy. Which of the following would require the operation to be postponed?
+(A) Current propranolol therapy
+(B) Hematocrit of 65%
+(C) History of "tet spells"
+(D) Patent ductus arteriosus
+(E) Room air oxygen saturation of 82%
+
+A moderately obese 38-year-old woman is using patient-controlled morphine analgesia one day after open cholecystectomy. While breathing room air, oxygen saturation is 85%, Pa02 is 48 mmHg, PaC02 is 42 mmHg, and pH is 7.36. In addition to administration of oxygen, the most effective management is to
+(A) decrease the dosage of opioids
+(B) change to epidural morphine
+(C) administer an inhaled bronchodilator
+(D) initiate 4 cm of nasal continuous positive airway pressure
+(E) initiate incentive spirometry therapy
+
+Which of the following statements is true concerning administration of 70% nitrous oxide to a patient with an unrecognized pneumothorax?
+(A) Expansion of the pneumothorax by nitrous oxide occurs at a greater rate than expansion of bowel gas
+(B) Expansion of the pneumothorax by nitrous oxide occurs at a linear rate
+(C) The maximum expansion of a closed space occurs within 15 minutes
+(D) The maximum concentration of nitrous oxide achievable within the pneumothorax is 35%
+(E) The maximum increase in a closed gas-containing space is 100%
+
+Which of the following is the best method of pacing to improve cardiac output in a patient with third-degree heart
+(A) VOO
+(B) AOO
+(C) VVI
+(D) DVI
+(E) Transcutaneous
+block?
+
+A 27-year-old man with chronic renal failure is to undergo revision of an arteriovenous graft. He insists on general anesthesia. Hemodialysis was completed two hours ago, and serum potassium concentration is now 5 mEq/L. Which of the following statements concerning anesthetic management of this patient is true?
+(A) Enflurane is contraindicated
+(B) Succinylcholine is contraindicated
+(C) Neostigmine will be required in larger than usual dosage
+(D) The duration of action of atracurium will be prolonged
+(E) The duration of action of propofol will be unchanged
+
+Compared with dopamine, dobutamine
+(A) is more useful in patients taking monoamine oxidase inhibitors because it depends on the release of norepi-
+nephrine for its effect
+(B) is more useful in patients in right heart failure because it does not increase pulmonary vascular resistance
+(C) has no positive chronotropic response
+(D) induces diuresis without increasing cardiac output
+(E) in doses greater than 10 jug/kg/min increases systemic vascular resistance more than similar doses of dop-
+amine
+
+A patient with moderate hypothyroidism and unstable angina requires urgent coronary artery bypass grafting. Which of the following is most appropriate before proceeding with the operation?
+(A) Initiation of epinephrine infusion
+(B) Intramuscular administration of a barbiturate
+(C) Intravenous administration of triiodothyronine (T3)
+(D) Intravenous administration of thyroxine (T4)
+(E) Treatment of myocardial ischemia
+
+A 48-year-old woman underwent a posterior fossa craniotomy in the sitting position. Monitoring included precordial Doppler, arterial blood pressure, central venous pressure (CVP), and urine output. Furosemide was used intraopera-tively for cerebral decompression, and the operation was uneventful. In the recovery room, she was awake with stable vital signs when the CVP suddenly increased from 6 to 25 mmHg without any change in blood pressure. Shortly thereafter, premature ventricular contractions are noted. After administering lidocaine 1 mg/kg intravenously, the most appropriate action is to
+(A) position the patient head down, right side up and aspirate the CVP catheter
+(B) withdraw the CVP catheter 5 cm
+(C) infuse potassium chloride rapidly
+(D) administer furosemide
+(E) ask the neurosurgeon to reevaluate the patient immediately
+
+Failure to block the musculocutaneous nerve adequately during the axillary approach to brachial plexus block will result in inadequate anesthesia of the
+(A) thumb and index finger
+(B) dorsum of the wrist
+(C) lateral aspect of the forearm
+(D) lateral aspect of the elbow
+(E) medial aspect of the upper arm
+
+After inflation of both the tracheal and endobronchial cuffs of a left-sided double-lumen tube, the following are noted on auscultation of the chest: Left lumen clamped --> Breath sounds absent bilaterally; Right lumen clamped --> Breath sounds present on left only; Both lumens open --> Breath sounds present on left only. The most appropriate action is to
+(A) decrease the endobronchial cuff volume
+(B) decrease the tracheal cuff volume
+(C) reinsert the tube, rotating it 180 degrees to the right
+(D) suction both lumens
+(E) withdraw the tube slightly and repeat the auscultory maneuvers
+
+Ketamine decreases
+(A) bronchomotor tone
+(B) intracranial pressure
+(C) intraocular pressure
+(D) salivation
+(E) seizure threshold
+
+Maternal hyperventilation to a PaC02 of 20 mmHg during labor can result in
+(A) decreased fetal trapping of local anesthetics
+(B) fetal metabolic acidosis
+(C) fetal respiratory acidosis
+(D) increased oxygen release at the placenta
+(E) uterine vasodilation
+
+A 40-year-old woman is undergoing a posterior fossa craniotomy in the sitting position for clipping of a basilar artery aneurysm. Nitroprusside is being used to maintain mean arterial pressure at 50 mmHg, measured at head level. During dissection, over the course of one minute, the mean blood pressure decreases to 30 mmHg. Simultaneously, end-tidal carbon dioxide and pulmonary artery pressures decrease and heart rate increases. The most likely cause of these changes is
+(A) progressive hypoxemia
+(B) nitroprusside bolus
+(C) junctional rhythm
+(D) brain stem manipulation
+(E) venous air embolism
+
+An anesthetized, paralyzed patient is placed in the lateral position and mechanically ventilated. End-tidal PC02 is 34 mmHg and PaC02 is 43 mmHg. This gradient
+(A) increases during spontaneous breathing
+(B) indicates increased dead space ventilation
+(C) is caused by increased intrapulmonary shunt
+(D) reflects inhibition of hypoxic pulmonary vasoconstriction
+(E) results from increased cardiac output
+
+A patient suddenly makes a respiratory effort during craniotomy for clipping of a cerebral aneurysm in a 15-degree head-up position with controlled ventilation. The most likely cause is
+(A) air embolism
+(B) cerebral hypoxia
+(C) direct stimulation of the respiratory center
+(D) intraventricular hemorrhage
+(E) stimulation of the motor cortex
+
+During an operation with cardiopulmonary bypass using a bubble oxygenator, the risk for systemic gas embolization increases when
+(A) a filter greater than 20 microns is used in the arterial infusion tubing
+(B) gas flow to the oxygenator is decreased below 3 L/min
+(C) the operation is a mitral valve replacement
+(D) the blood level in the oxygenator reservoir exceeds 1 liter
+(E) ventricular fibrillation occurs
+
+Which of the following attenuates the most common cardiovascular side effect of protamine administration?
+(A) Pretreatment with a diuretic
+(B) Pretreatment with a prostaglandin inhibitor
+(C) Pretreatment with a pulmonary vasodilator
+(D) Injection via the distal lumen of the pulmonary artery catheter
+(E) Slow peripheral intravenous injection
+
+Prilocaine is NOT recommended for obstetric regional anesthesia because it
+(A) causes fetal methemoglobinemia
+(B) has a very short duration of action
+(C) is not metabolized by the newborn
+(D) is the most toxic of the amide local anesthetics
+(E) produces a longer motor block than sensory block
+
+Infants with untreated pyloric stenosis are at increased risk for each of the following EXCEPT
+(A) congenital heart disease
+(B) dehydration
+(C) hypokalemia
+(D) increased gastric acidity
+(E) metabolic alkalosis
+
+A sensory level of T2 is achieved after administration of spinal anesthesia. Which of the following lung volumes is LEAST likely to be affected?
+(A) Expiratory reserve volume
+(B) Inspiratory reserve volume
+(C) Inspiratory capacity
+(D) Tidal volume
+(E) Vital capacity
+
+Which of the following is the LEAST likely cause of a prolonged prothrombin time?
+(A) Chronic warfarin therapy
+(B) Disseminated intravascular coagulation
+(C) Hemophilia A
+(D) Systemic heparinization
+(E) Vitamin K deficiency
+
+Each of the following affects the induction dose of thiopental EXCEPT
+(A) acute ethanol intoxication
+(B) chronic use of barbiturates
+(C) intravascular volume
+(D) rate of hepatic extraction of thiopental
+(E) serum albumin concentration
+
+Fresh frozen plasma is indicated in each of the following situations EXCEPT
+(A) after rapid transfusion of 1.5 L CPD-stored red blood cells
+(B) antithrombin III deficiency
+(C) replacement of factor VIII
+(D) reversal of warfarin effect
+(E) thrombotic thrombocytopenic purpura
+
+A subarachnoid block to a sensory level of the second thoracic dermatome is associated with each of the following EXCEPT
+(A) total sympathetic block
+(B) decreased gastrointestinal smooth muscle tone
+(C) bradycardia
+(D) relaxation of gastrointestinal sphincters
+(E) decreased renal blood flow
+
+Each of the following is an adverse effect of intranasal administration of cocaine prior to nasotracheal intubation EXCEPT
+(A) complete heart block
+(B) hypertension
+(C) myocardial ischemia
+(D) seizures
+(E) ventricular tachycardia
+
+Each of the following improves coagulation in patients with uremia EXCEPT
+(A) conjugated estrogens
+(B) desmopressin
+(C) dialysis
+(D) epsilon-aminocaproic acid
+(E) platelet transfusion
+
+Each of the following is an adverse effect of ritodrine used for suppression of labor EXCEPT
+(A) dysrhythmias
+(B) hyperglycemia
+(C) hyperkalemia
+(D) hypotension
+(E) pulmonary edema
+
+Positive end-expiratory pressure is effective for treatment of hypoxia resulting from each of the following EXCEPT
+(A) cardiogenic pulmonary edema
+(B) intraoperative Trendelenburg position
+(C) lateral position during total hip replacement
+(D) lung contusion
+(E) status asthmaticus
+
+Each of the following is associated with an increased alveolar-arterial oxygen tension difference EXCEPT
+(A) advanced age
+(B) atelectasis
+(C) decreased cardiac output
+(D) decreased Fl02
+(E) right-to-left intracardiac shunt
+
+Each of the following statements concerning norepinephrine is true EXCEPT:
+(A) Extraneuronal uptake is important in the termination of its activity
+(B) It is formed from dopamine
+(C) Its release is facilitated by ephedrine
+(D) Its uptake is affected by cocaine
+(E) It has minimal beta2-adrenergic activity

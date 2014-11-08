@@ -1,0 +1,48 @@
+= form_for(@question) do |f|
+  = old_style_error_div @question
+  .field
+    = f.label :stem
+    %br/
+    = f.text_area :stem
+  .field
+    = f.label :option_a
+    %br/
+    = f.text_area :option_a
+  .field
+    = f.label :option_b
+    %br/
+    = f.text_area :option_b
+  .field
+    = f.label :option_c
+    %br/
+    = f.text_area :option_c
+  .field
+    = f.label :option_d
+    %br/
+    = f.text_area :option_d
+  .field
+    = f.label :option_e
+    %br/
+    = f.text_area :option_e
+  .field
+    = f.label :answer
+    %br/
+    = f.text_field :answer
+  .field
+    = f.label :image
+    %br/
+    = f.text_field :image
+  .field
+    = f.label :exam
+    %br/
+    = f.radio_button :exam, "BASIC"
+    BASIC
+    \#{f.radio_button :exam, "ADVANCED"} ADVANCED
+  .field
+    = f.label :topics
+    = f.collection_check_boxes :topic_ids, Topic.all, :id, :name do |b|
+      %br/
+      = b.check_box
+      = b.label
+  .actions
+    = f.submit

@@ -1,0 +1,99 @@
+// Place all the styles related to the StaticPages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.center{
+	text-align: center;
+}
+
+.divider{
+    width:6em;
+    height:auto;
+    display:inline-block;
+}
+
+a.btn {
+  font-weight: bold;
+}
+
+.btn-lg {
+  font-size: 2em;
+}
+
+.tools{	
+	
+	dl{
+	  text-align: left;
+	  font-size: 2em;
+	}
+	
+	dt{
+		font-family: Georgia;
+		font-size: 1.4em;
+		font-weight: bold;
+		text-decoration: underline;
+		padding-bottom: 0.4em;
+	}
+	
+	dd{
+		font-family: helvetica;
+		font-size: 1em;
+		font-weight: bold;
+		text-align: left;  
+		display:list-item;
+		list-style-type: disc;
+		list-style-position:inside;
+		padding-bottom: 0.7em;	
+	}
+	
+	#left_column{
+		float: left;
+		width: 50%;
+		margin: 0 0 20% 0%;
+	}
+	
+	#right_column{
+		float: left;
+		width: 50%;
+		margin: 0 0% 20% 0;
+	}
+	
+	.dropdown-menu {
+	  font-size: 1.67em;
+	  padding: 5px;
+	  background-color: silver;
+	}
+	
+	.btn-lg {
+		font-family: Helvetica;
+		font-size: 1em;
+	}  
+}
+
+.movies{
+  
+  .panel-heading .accordion-toggle:after {
+      /* symbol for "opening" panels */
+      font-family: 'Glyphicons Halflings';  /* essential for enabling glyphicon */
+      content: "\e114";    /* adjust as needed, taken from bootstrap.css */
+      float: right;        /* adjust as needed */
+      color: grey;         /* adjust as needed */
+  }
+  .panel-heading .accordion-toggle.collapsed:after {
+      /* symbol for "collapsed" panels */
+      content: "\e080";    /* adjust as needed, taken from bootstrap.css */
+  }
+  
+  h3{
+    font-family: helvetica;
+    font-size: 3em;
+  }
+  
+  h4{
+    font-size: 2.2em;
+  }
+  
+}
+
+
+

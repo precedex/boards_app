@@ -1,0 +1,31 @@
+%p#notice= notice
+
+.resources
+  %p
+    %strong Title:
+    = @resource.title
+  %p
+    %strong Edition:
+    = @resource.edition
+  %p
+    %strong Year:
+    = @resource.year
+  %p
+    %strong Categories:
+    = render partial: "category", collection: @resource.categories
+  %p
+    %strong Authors:
+    = @resource.authors
+  %p
+    %strong Description:
+    = @resource.description
+  %p
+    %strong Image url:
+    = @resource.image_url
+  %p
+    %strong Link:
+    = @resource.link
+
+= link_to 'Edit', edit_resource_path(@resource)
+|
+= link_to 'Back', resources_path

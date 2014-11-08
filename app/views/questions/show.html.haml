@@ -1,0 +1,37 @@
+%p#notice= notice
+
+.resources
+  %p
+    %strong Stem:
+    = @question.stem
+  %p
+    %strong Option A:
+    = @question.option_a
+  %p
+    %strong Option B:
+    = @question.option_b
+  %p
+    %strong Option C:
+    = @question.option_c
+  %p
+    %strong Option D:
+    = @question.option_d
+  %p
+    %strong Option E:
+    = @question.option_e
+  %p
+    %strong Answer:
+    = @question.answer
+  %p
+    %strong Image:
+    = @question.image
+  %p
+    %strong Exam:
+    = @question.exam   
+  %p
+    %strong Topics:
+    = render partial: "topic", collection: @question.topics
+      
+= link_to 'Edit', edit_question_path(@question)
+|
+\#{link_to 'Back', questions_path}

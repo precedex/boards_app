@@ -1,0 +1,7 @@
+could not connect to server: No such file or directory Is the server running locally and accepting connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+
+is server running : ps auxw | grep post
+
+pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start
+
+to start manually.

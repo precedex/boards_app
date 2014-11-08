@@ -1,0 +1,100 @@
+.sites {
+  
+  .btn {
+    font-family: "Georgia", serif;
+		font-size: 1.6em;
+    text-align: center;
+    width: 300px;
+    height: 160px;
+    border: 2px solid black;
+    white-space: normal; 
+    display: table-cell;
+  }
+  
+  .btn img {
+    max-height: 130px;
+  }
+  
+  a.btn {
+    color: red; 
+    font-weight: normal;
+  }
+  
+  .myButton {
+    .btn{
+      width: 30%;
+      height: 20%;
+      color: white;
+      border: none;
+      display: inline;
+    }
+  }
+	
+	h1 {
+		font-family: "Belleza", "Georgia", serif;
+		font-size: 5.5em;
+		letter-spacing: -1px;
+		padding-top: 10px;
+		padding-bottom: 40px;
+	}
+	
+	ul {
+		font-size: 2em;
+    text-align: center;
+    width: 97%;
+	}
+  
+	
+	p {
+		padding-top: 0;
+		padding-bottom: 0;
+		font-size: 2em;
+		display: list-item;
+		list-style: circle;
+	}
+	
+	table {
+	    margin-left:auto; 
+	    margin-right:auto;
+	  }
+	  
+	  td{
+		  padding: 3em;
+	  }
+	
+	
+	.list_actions {
+		a{
+			font-size: 0.3em;
+			color: black;
+
+		}
+	}
+	
+	.new_site {
+		a{
+			font-size: 2em;
+			color: black;
+			font-weight: bold;
+			text-align: right;
+		}
+	}
+	
+	.exams{
+
+		img{
+			vertical-align: -7px;
+		}
+		
+	a{
+		font-size: 1em;
+		text-align: left;
+	}
+		
+	ul{
+		font-size: 1.6em;
+		text-align: left;
+		list-style: disc;
+	}
+	}			
+}

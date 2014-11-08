@@ -1,0 +1,34 @@
+<div class = "sites">
+
+  <p id="notice"><%= notice %></p>
+
+  <p>
+  <strong>Title:</strong>
+  <%= @site.title %>
+  </p>
+
+  <p>
+  <strong>Category:</strong>
+  <%= @site.category %>
+  </p>
+
+  <p>
+  <strong>Image:</strong>
+  <%= image_tag @site.image %>
+  </p>
+
+  <p>
+  <strong>Description:</strong>
+  <%= @site.description %>
+  </p>
+
+  <p>
+  <strong>Link:</strong>
+  <%= external_link_to @site.link, @site.link %>
+  </p>
+
+  <%= link_to 'Edit', edit_site_path(@site) %> |
+  <%= link_to 'Back', sites_path %> |
+  <%= link_to 'New Site', new_site_path %>
+
+</div>

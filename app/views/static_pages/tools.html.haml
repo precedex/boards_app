@@ -1,0 +1,35 @@
+- title "Tools"
+.tools
+  %dl
+    #left_column
+      %dt#BLS BLS Algorithm
+      = render partial: "tool", collection: @bls_algos
+      %br/
+
+      %dt#ACLS ACLS algorithms
+      = render partial: "tool", collection: @acls_algos
+      %br/
+
+      %dt#PALS PALS algorithms
+      = render partial: "tool", collection: @pals_algos
+      %br/
+
+      %dt#Critical Critical Events
+      = render partial: "tool", collection: @critical_events
+      %br/
+
+    #right_column
+      %dt#CV Guidelines
+      = render partial: "tool", collection: @guidelines
+      %br/
+
+      %dt#Dosing Drug dosing
+      = render partial: "tool", collection: @drug_dosing
+      %br/
+
+      %dt#Calc Clinical calculators
+      = render partial: "tool", collection: @calculators
+      %br/
+
+      %a.btn.btn-primary.btn-lg{href: "/movies", role: "button"} Procedure Movies
+ 
