@@ -41,7 +41,7 @@ class StaticPagesController < ApplicationController
     ]
 
     @guidelines = [
-      ["ACC/AHA 2007 Preop Testing", "http://circ.ahajournals.org/content/116/17/1971.full.pdf"],
+      ["ACC/AHA 2014 Preop Testing", "http://circ.ahajournals.org/content/early/2014/07/31/CIR.0000000000000106.full.pdf"],
       ["Endocarditis Prophylaxis",   "endocarditis.jpg"],
       ["ASRA Neuraxial Anticoags",   "https://kr.ihc.com/ext/Dcmnt?ncid=520499512&tfrm=default"],
       ["ASA Guidelines",             "http://www.asahq.org/For-Members/Standards-Guidelines-and-Statements.aspx"],
