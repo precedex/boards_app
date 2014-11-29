@@ -2,15 +2,11 @@
 .tools
   %dl
     #left_column
-      %dt#BLS BLS Algorithm
-      = render partial: "tool", collection: @bls_algos
-      %br/
-
-      %dt#ACLS ACLS algorithms
+      %dt#ACLS BLS / ACLS
       = render partial: "tool", collection: @acls_algos
       %br/
 
-      %dt#PALS PALS algorithms
+      %dt#PALS PALS
       = render partial: "tool", collection: @pals_algos
       %br/
 
@@ -19,17 +15,15 @@
       %br/
 
     #right_column
+      %dt#Calc Clinical Calculators
+      = render partial: "tool", collection: @calculators
+      %br/
+	  
       %dt#CV Guidelines
       = render partial: "tool", collection: @guidelines
       %br/
 
-      %dt#Dosing Drug dosing
+      %dt#Dosing Drugs
       = render partial: "tool", collection: @drug_dosing
       %br/
-
-      %dt#Calc Clinical calculators
-      = render partial: "tool", collection: @calculators
-      %br/
-
-      %a.btn.btn-primary.btn-lg{href: "/movies", role: "button"} Procedure Movies
  

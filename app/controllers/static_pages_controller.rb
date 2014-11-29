@@ -12,11 +12,9 @@ class StaticPagesController < ApplicationController
   end
 
   def tools
-    @bls_algos = [
-      ["Simplified Adult BLS ", "http://crashingpatient.com/wp-content/images/acls/basic.jpg"]
-    ]
-
+ 
     @acls_algos = [
+      ["Simplified Adult BLS ", "http://crashingpatient.com/wp-content/images/acls/basic.jpg"],
       ["Cardiac Arrest Cycle",        "http://circ.ahajournals.org/content/122/18_suppl_3/S729/F2.large.jpg"],
       ["Cardiac Arrest",              "http://circ.ahajournals.org/content/122/18_suppl_3/S729/F1.large.jpg"],
       ["Bradycardia (with pulse)",    "http://circ.ahajournals.org/content/122/18_suppl_3/S729/F3.large.jpg"],
@@ -32,6 +30,8 @@ class StaticPagesController < ApplicationController
       ["Bradycardia (with pulse)", "http://circ.ahajournals.org/content/122/18_suppl_3/S876/F2.large.jpg"],
       ["Tachycardia (with pulse)", "http://circ.ahajournals.org/content/122/18_suppl_3/S876/F3.large.jpg"],
       ["Newborn Resuscitation",    "http://circ.ahajournals.org/content/122/18_suppl_3/S909/F1.large.jpg"],
+      ["Pediatric Endotracheal Tube Size",  "http://www.mdcalc.com/endotracheal-tube-ett-size-for-pediatrics/"],
+      ["Apgar Score",              "http://www.mdcalc.com/apgar-score/"]
     ]
 
     @critical_events = [
@@ -48,6 +48,8 @@ class StaticPagesController < ApplicationController
     ]
 
     @drug_dosing = [
+      ["Narcotic Equivalence Converter", "http://medcalc.com/narcotics.html"],
+      ["Steroid Equivalence Converter",  "http://www.medcalc.com/steroid.html"],
       ["PALS Drugs",                  "PALS_Drugs.jpg"],
       ["Peds Anesthesia Drugs",       "http://www.morpheusanesthesia.com/Pediatric_Anesthesia_Drug_Update_ANSE07_PedAnesthERWM.pdf"],
       ["Peds Anesthesia Pocket Ref",  "http://pedianesthesia.ucsf.edu/pdf_pedirefcard.pdf"],
@@ -56,10 +58,20 @@ class StaticPagesController < ApplicationController
     ]
 
     @calculators = [
+      ["Arterial Blood Gas Analyzer",    "http://www.mdcalc.com/arterial-blood-gas-abg-analyzer/"],
+      ["Surgical Apgar Score",           "http://www.mdcalc.com/surgical-apgar-score-sas-post-operative-risk/"],
+      ["MELD Score",                     "http://www.mdcalc.com/meld-score-model-for-end-stage-liver-disease-12-and-older/"],
+      ["Child-Pugh Score",               "http://www.mdcalc.com/child-pugh-score-for-cirrhosis-mortality/"],
+      ["Revised Cardiac Risk Index(RCRI)",     "http://www.mdcalc.com/revised-cardiac-risk-index-for-pre-operative-risk/"],
+      ["Injury Severity Score (ISS)",    "http://www.mdcalc.com/injury-severity-score-iss/"],
       ["Allowable Blood Loss",           "http://easycalculation.com/medical/allowable-blood-loss.php"],
-      ["BMI / BSA",                      "http://www.medcalc.com/body.html"],
-      ["Narcotic Equivalence Converter", "http://medcalc.com/narcotics.html"],
-      ["Steroid Equivalence Converter",  "http://www.medcalc.com/steroid.html"],
+      ["Parkland Formula",               "http://www.mdcalc.com/parkland-formula-for-burns/"],
+      ["Glascow Coma Scale",             "http://www.mdcalc.com/glasgow-coma-scale-score/"],
+      ["APACHE II",                      "http://www.mdcalc.com/apache-ii-score-for-icu-mortality/"],
+      ["BMI / BSA",                      "http://www.mdcalc.com/bmi-and-body-surface-area-bsa/"],
+      ["Ideal Body Weight",              "http://www.mdcalc.com/ideal-body-weight/"],
+      ["A-a Gradient",                   "http://www.mdcalc.com/a-a-o2-gradient/"],
+      ["Cockgroft-Gault CrCl",           "http://www.mdcalc.com/creatinine-clearance-cockcroft-gault-equation/"]
     ]
   end
 
@@ -104,6 +116,7 @@ class StaticPagesController < ApplicationController
     @the_anesthesia_consultant = ["The Anesthesia Consultant", 'http://theanesthesiaconsultant.com/2013/08/22/advice-for-passing-the-oral-board-exams-in-anesthesiology/']
 
     @study_strategy = [
+      ["It's Time to Boycott Michael Ho's Course (11/14)",                    "http://forums.studentdoctor.net/threads/its-time-to-boycott-michael-hos-course.1108105/"],
       ["Oral Boards (8/14)",                                                  "http://forums.studentdoctor.net/threads/oral-boards.1093932/"],
       ["Just Oral Boards? (7/14)",                                            "http://forums.studentdoctor.net/threads/just-oral-boards.1082494/"],
       ["Orals 2014 'Official' Thread (4/14)",                                 "http://forums.studentdoctor.net/threads/orals-2014-official-thread.1065348/"],
@@ -125,6 +138,7 @@ class StaticPagesController < ApplicationController
       ["Best Oral Boards Resource - not going to a session (7/11)",           "http://forums.studentdoctor.net/threads/best-oral-boards-resource-not-going-to-a-session.842324/"],
       ["My Oral Board Experience (5/11)",                                     "http://forums.studentdoctor.net/threads/my-oral-board-experience.822916/"],
       ["What is the best way to study for the anesthesia oral boards (5/11)", "http://forums.studentdoctor.net/threads/what-is-the-best-way-to-study-for-the-anesthesia-oral-boards.821337/"],
+      ["Anesthesia Oral Board Prep (10/06)",                                  "http://forums.studentdoctor.net/threads/anesthesia-oral-board-prep.331489/"]
     ]
 
     @commercial_courses = [

@@ -28,20 +28,20 @@ a.btn {
 	}
 	
 	dt{
-		font-family: Georgia;
-		font-size: 1.4em;
+		font-family: Cambria;
+		text-align: center;
+		font-size: 1.8em;
 		font-weight: bold;
-		text-decoration: underline;
 		padding-bottom: 0.4em;
 	}
 	
 	dd{
-		font-family: helvetica;
+		font-family: Cambria;
 		font-size: 1em;
 		font-weight: bold;
-		text-align: left;  
+		text-align: center;  
 		display:list-item;
-		list-style-type: disc;
+		list-style-type: none;
 		list-style-position:inside;
 		padding-bottom: 0.7em;	
 	}
@@ -67,6 +67,8 @@ a.btn {
 	.btn-lg {
 		font-family: Helvetica;
 		font-size: 1em;
+		text-align: center;
+		
 	}  
 }
 
