@@ -74,25 +74,48 @@ a.btn {
 
 .movies{
   
+  .btn-primary {
+	  font-family: Avenir;
+	}
+  
+  .panel {
+	  border-color: black;
+	  border-width: 0.2em;
+  }
+  
+  .panel-heading{
+	  background-color: white;
+	  color: black;
+	}
+  
   .panel-heading .accordion-toggle:after {
       /* symbol for "opening" panels */
       font-family: 'Glyphicons Halflings';  /* essential for enabling glyphicon */
-      content: "\e45";    /* adjust as needed, taken from bootstrap.css */
+      content: "+";    /* adjust as needed, taken from bootstrap.css */
       float: right;        /* adjust as needed */
       color: grey;         /* adjust as needed */
   }
   .panel-heading .accordion-toggle.collapsed:after {
       /* symbol for "collapsed" panels */
-      content: "\e50";    /* adjust as needed, taken from bootstrap.css */
+      content: "-";    /* adjust as needed, taken from bootstrap.css */
   }
   
   h3{
-    font-family: helvetica;
+    font-family: Avenir;
     font-size: 3em;
+	font-weight: normal;
   }
   
   h4{
-    font-size: 2.2em;
+     font-family: Avenir;
+     font-size: 2.2em;
+  	 font-weight: normal;
+  }
+  
+  h5{
+     font-family: Avenir;
+     font-size: 1.8em;
+  	 font-weight: normal;
   }
   
 }
