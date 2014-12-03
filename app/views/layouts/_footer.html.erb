@@ -1,19 +1,24 @@
 <footer class="footer">
-
-  <p style = "float: left; margin-left: 2em">
-  <%= link_to "About", about_path %>
-  &nbsp; | &nbsp;
-  <%= link_to "Feedback", feedback_path %>
-  </p>
-
-  <p> &copy; 2013-2014 David Moss, MD <br><span style="float:right"> 
-	  <%= image_tag("Twitter.png")%> <%= link_to "@anesthesiahub", "https://twitter.com/anesthesiahub" %> </span></p>
   
 <!--
   <div class = "center">
     <%= external_link_to image_tag("SDN.jpg"), "http://www.studentdoctor.net/partners/site-partners/"  %>
   </div>
 -->
+  
+  
+  <table>
+	<TABLE WIDTH="100%">
+    <tr>
+      <td> <p style = "float: left; margin-left: 2em">
+  		<%= link_to "About", about_path %>
+  	  	&nbsp; | &nbsp;
+  	  	<%= link_to "Feedback", feedback_path %></td>
+  
+      <td> <p><%= image_tag("Twitter.png")%> <%= link_to "@anesthesiahub", "https://twitter.com/anesthesiahub" %></p></td>
+	  <td> <p> &copy; 2013-2014 David Moss, MD </p></td>
+    </tr>
+  </table>
   
 </footer>
 
