@@ -2,7 +2,7 @@ Can check heroku database name:
   heroku pg:info
 
 Reset database:
-  heroku pg:reset HEROKU_POSTGRESQL_MAROON
+  heroku pg:reset HEROKU_POSTGRESQL_MAROON --confirm anesthesiahub
   
 Push database:
   heroku pg:push pg_database_development HEROKU_POSTGRESQL_MAROON

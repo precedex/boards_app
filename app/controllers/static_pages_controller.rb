@@ -36,6 +36,7 @@ class StaticPagesController < ApplicationController
 
     @critical_events = [
       ["Pediatric Critical Events",  "http://www.pedsanesthesia.org/newnews/Critical_Event_Checklists.pdf?201310291500"],
+      ["Laryngospasm",               "http://www.maskinduction.com/uploads/3/1/6/4/31643965/laryngospasm_management_algorithm.pdf"],
       ["Difficult Airway Algorithm", "Airway.jpg"],
       ["Anaphylaxis",                "Anaphylaxis.jpg"]
     ]
@@ -45,6 +46,7 @@ class StaticPagesController < ApplicationController
       ["Endocarditis Prophylaxis",   "endocarditis.jpg"],
       ["ASRA Neuraxial Anticoags",   "https://kr.ihc.com/ext/Dcmnt?ncid=520499512&tfrm=default"],
       ["ASA Guidelines",             "http://www.asahq.org/For-Members/Standards-Guidelines-and-Statements.aspx"],
+      ["Sedation and Anesthesia in GI Endoscopy", "http://www.asge.org/uploadedFiles/Publications_and_Products/Practice_Guidelines/Sedation%20and%20Anesthesia%20in%20GI%20Endoscopy%202008.pdf"]
     ]
 
     @drug_dosing = [

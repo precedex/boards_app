@@ -47,6 +47,7 @@ BoardsApp::Application.routes.draw do
   get   '/sites/education/airway',        to: 'sites#index',     :category => 'education-airway'
   get   '/sites/education/video',         to: 'sites#index',     :category => 'education-video'
   get   '/sites/education/simulation',    to: 'sites#index',     :category => 'education-simulation'
+  get   '/calendar',                      to: 'static_pages#calendar'
   
   # journals
   get   '/sites/journals',                to: 'sites#index',     :category => 'journal'
@@ -65,7 +66,7 @@ BoardsApp::Application.routes.draw do
   get    '/tools',                        to: 'static_pages#tools'
   
   # movies
-  get    '/movies',                        to: 'static_pages#movies'
+  get    '/movies',                       to: 'static_pages#movies'
 
   # footer
   get    '/secret',                       to: 'static_pages#secret'
