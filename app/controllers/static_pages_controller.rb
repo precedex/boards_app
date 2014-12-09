@@ -232,6 +232,7 @@ class StaticPagesController < ApplicationController
     ]
     @supraclavicular = [
       ["NYSORA",                                                              "https://youtu.be/UmG-bgEQQ4E"],
+      ["LSORA",                                                               "https://youtu.be/by28CWp-H-o"],
       ['Analogic - Brian Pollard',                                            "https://youtu.be/JD5MYRhjsWU"],
       ["Sonosite - David Auyong",                                             "https://youtu.be/ztOIvfjsB-U"],
       ["Sonosite 3D",                                                         "https://youtu.be/9vW1uo7mKDc"],
@@ -264,11 +265,12 @@ class StaticPagesController < ApplicationController
       ["Yale Media Lab - Saphenous Block",                                    "http://medicine.yale.edu/anesthesiology/media/videos.aspx#6-194021"],
       ["Stuart Grant",                                                        "https://youtu.be/wxQKdrPw2tA"],
       ["SSRA - Steven Finkel",                                                "https://youtu.be/DwtvZ0tC9ng"],
-      ["Analogic - Brandon Winchester - Adductor Canal Catheter",             "http://youtu.be/4WFerLClu9s"],
-      ["AMSURA - Adductor Canal",                                             "http://youtu.be/o9zzqILu0Dk"]   
+      ["Analogic - Brandon Winchester - Adductor Canal Catheter",             "https://youtu.be/4WFerLClu9s"],
+      ["AMSURA - Adductor Canal",                                             "https://youtu.be/o9zzqILu0Dk"]   
     ]
     @sciatic = [
       ["NYSORA - Popliteal",                                                  "https://youtu.be/gH1BS54EYjU"],
+      ["LSORA - Popliteal",                                                   "https://youtu.be/b2q1sRVa9cM"],
       ["Yale Media Lab - Popliteal",                                          "http://medicine.yale.edu/anesthesiology/media/videos.aspx#6-194041"],
       ["Samsung - Popliteal",                                                 'https://youtu.be/PX2XTLOKQL0'],
       ["Analogic - Brian Pollard",                                            'https://youtu.be/6UFrD69QuCs'],
