@@ -68,6 +68,22 @@
   </p><br/><br/>
 
   <div class="exams">
+      <p>
+      The ABA has released data from the 2014 exams: 
+      <%= external_link_to *@aba_exam_summary %>
+      </p>
+	  <p>
+	  Curves plotted below assume normally distributed test scores. I have no inside information on the score distribution.
+      </p>  
+		  
+	  
+	  <div class='center'>
+	   <%= image_tag("ABA14Normals.png") %><br>
+	   <%= image_tag("ABA14ITEtoWE.png") %>&nbsp&nbsp&nbsp&nbsp
+	   <%= image_tag("ABA14ITEtoBASIC.png") %><p></p>
+	   <%= image_tag("ABA14Success.png") %>
+      </div>
+	   
     <p>
     For information about the new staged exams, see
     <%= external_link_to *@aba_training_programs %>

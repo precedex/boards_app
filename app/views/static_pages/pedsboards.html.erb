@@ -16,20 +16,19 @@
     <li> Clinical practice must include neonates and children less than 2 </li>
   </ul>
 
-  <p> In addition, you must pass the pediatric anesthesiology examination. </p>
+  <p> In addition, you must pass the pediatric anesthesiology examination: </p>
+  <div class='center'>
+   <%= image_tag("ABA14Pedi.png") %>
+  </div>
+ <br></br>
   <p>
   The ABA has posted the <%= external_link_to "content outline", @peds_exam_content %>
   and <%= external_link_to "sample questions", @peds_exam_questions %>.
   </p>
-  <p>Released <%= external_link_to "Pediatric Anesthesia questions", topic_questions_path(6) %> from the ADVANCED written exam.</p>
+  <p><%= external_link_to "Pediatric Anesthesia questions", topic_questions_path(6) %> from the 1990-1996 ITEs.</p>
   
   <div class="exams">
-  <p>
-  Useful Pediatric Anesthesiology resources
-  </p>
-  <ul>
-    <%= render partial: 'site', collection: @pedsanesresources %>
-  </ul>
+
   <p>
   Pediatric board study strategy has been discussed at
   <%= link_to_sdn_forum %>
