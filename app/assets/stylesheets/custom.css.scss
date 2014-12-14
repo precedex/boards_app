@@ -39,23 +39,6 @@ p {
   font-weight: lighter;
 }
 
-h1 {
-  font-family: "Belleza", "Georgia", serif;
-  font-size: 12em;
-  letter-spacing: -2px;
-  padding-top: 30px;
-  text-align: center;
-}
-
-h2 {
-  font-family: Avenir, Georgia;
-  font-size: 3em;
-  letter-spacing: -1px;
-  text-align: center;
-  padding-bottom: 30px;
-  color: DarkSlateGray;
-}
-
 a {
   color: red;
   &:visited {
@@ -66,6 +49,8 @@ a {
     text-decoration: none;
   }
 }
+
+
 a.btn {
   color: white;
   &:visited {
@@ -79,22 +64,19 @@ a.btn {
 .checkbox{
   font-family: "Helvetica", sans-serif;
   font-size: 1.8em;
-  font-weight: bold;
   text-align: right;
   padding-right: 1em;
 }
 
 .shufflebox{
-  font-size: 1em;
   padding-left: 1em;
 }
-
 
 
 input[class=input-large] {
   width: 100%;
   padding: 6px 7px;
-  font-family: Georgia;
+  font-family: Arial;
   font-size: 2em;
   border-radius: 8px;
 }
@@ -102,7 +84,10 @@ input[class=input-large] {
 /* Header */
 
 header {
-  font-size: 2.3em;
+  ul{
+  	font-size: 2.3em;
+  	font-style: normal;
+  }
 }
 
 .navbar-nav.nav-justified > li{
@@ -120,10 +105,10 @@ header {
 .navbar-inverse .navbar-nav .active > a {
   color: yellow;
   background: 0;
-&:hover {
+  &:hover {
   background: 0;
   color: yellow;
-}
+  }
 }
 
 .dropdown-menu {

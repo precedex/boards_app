@@ -2,27 +2,79 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.center{
-	text-align: center;
-	
-	p {
-		list-style: none;
-	}
+ul {
+	font-size: 1.5em;
+	list-style: circle;
+	font-style: italic;
+	font-weight: lighter;
 }
 
-.divider{
+.welcome{
+  
+  text-align: center;
+  list-style: none;
+  
+  h1 {
+    font-family: "Belleza", "Georgia", serif;
+    font-size: 12em;
+    letter-spacing: -2px;
+    padding-top: 30px;
+  }
+
+  h2 {
+    font-family: Avenir, Georgia;
+    font-weight: lighter;
+    font-size: 3em;
+    letter-spacing: -1px;
+    padding-bottom: 30px;
+    color: Gray;
+  }
+  
+  .divider{
     width:6em;
     height:auto;
     display:inline-block;
+  }
+
+  .btn-lg {
+    font-family: Avenir;
+    font-size: 2.5em;
+    font-weight: lighter;
+  }
 }
 
-a.btn {
-  font-weight: normal;
+.calendar{
+  text-align: center;
 }
 
-.btn-lg {
-  font-family: Avenir;
-  font-size: 2.5em;
+.exams{
+	p {
+		padding-top: 0;
+		padding-bottom: 0;
+		font-size: 2em;
+		display: list-item;
+		list-style: disc;
+	}
+}
+
+.graphics{
+  text-align: center;
+
+  .btn-lg {
+    font-family: Avenir;
+    font-variant: small-caps;
+    width: 30%;
+    height: 20%;
+    color: white;
+    border: none;
+    display: inline;
+  }
+  
+  p {
+    text-align: center; 
+    font-size: 1.5em; 
+    list-style: none
+  }
 }
 
 .tools{	
@@ -105,22 +157,21 @@ a.btn {
       content: "-";    /* adjust as needed, taken from bootstrap.css */
   }
   
-  h3{
+  h3, h4, h5{
     font-family: Avenir;
+    font-weight: normal;
+  }
+  
+  h3{
     font-size: 3em;
-	font-weight: normal;
   }
   
   h4{
-     font-family: Avenir;
      font-size: 2.2em;
-  	 font-weight: normal;
   }
   
   h5{
-     font-family: Avenir;
      font-size: 1.8em;
-  	 font-weight: normal;
   }
   
 }

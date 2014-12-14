@@ -1,12 +1,9 @@
-<p> Anesthesia Hub was created by David Moss, MD. David is a pediatric anesthesiologist at 
-	
-	<a href="https://www.tuftsmedicalcenter.org">Tufts Medical Center</a>
-	
-	and 
-	
-	<a href="https://www.floatinghospital.org">Floating Hospital for Children</a>
-	
-	in Boston, Massachusetts. He is board-certified in anesthesiology and 
-	pediatric anesthesiology. Anesthesia Hub was developed using Ruby on Rails with Bootstrap.
+<% title "About" %>
 
+<p> 
+  Anesthesia Hub was created by <%= external_link_to *@david_moss %>.
+  David is a pediatric anesthesiologist at <%= external_link_to *@tufts_medical %>
+	and <%= external_link_to *@floating %> in Boston, Massachusetts. 
+  He is board-certified in anesthesiology and pediatric anesthesiology. 
+  Anesthesia Hub was developed using Ruby on Rails with Bootstrap.
 </p>

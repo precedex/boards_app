@@ -1,17 +1,20 @@
 <% title "Written Boards" %>
+
 <div class="sites">
   <h1> <%= yield(:title) %> <br>
   <span style="font-size: 0.5em"> part 1  / BASIC and ADVANCED exams </span></h1>
+</div>
+
+<div class='exams'>
+  <p>
+    The ABA has significantly changed the board certification process. Traditionally 
+    there was a part 1 written exam taken after residency graduation and a part 2 oral exam taken 
+    after passing part 1. Residents graduating after June 30, 2016 will take the new staged exams:
+    BASIC (in July of CA-2 year), and ADVANCED (after graduating). 
+  </p>
 
   <p>
-  The ABA has significantly changed the board certification process. Traditionally 
-  there was a part 1 written exam taken after residency graduation and a part 2 oral exam taken 
-  after passing part 1. Residents graduating after 6/30/16 (current CA-2s) will take the new staged exams:
-  BASIC (in July of CA-2 year), and ADVANCED (after graduating). 
-  </p>
-  
-  <p>
-  The BASIC/ADVANCED exam <%= external_link_to *@aba_content_outline %>.
+    The BASIC/ADVANCED exam <%= external_link_to *@aba_content_outline %>.
   </p>
 
   <p>
@@ -23,25 +26,28 @@
   questions have been elminated and are not included here.
   </p>
 
-  <br/>
-
-  <form accept-charset="UTF-8" action="/questions" method="get" name="commit" class="form-inline">
-    <div class="center">
+  <div class="graphics">
+    <form accept-charset="UTF-8" action="/questions" method="get" name="commit" class="form-inline">
+      
       <div class="row">   
         <div class="checkbox">
           Stems              <%= check_box_tag 'stems_checkbox',   '1', true %><br/>
           Answer Choices     <%= check_box_tag 'choices_checkbox', '1', true %>
         </div>
+      
         <div class="form-group">
           <input type="search" name="search" class="input-large" id="search" placeholder="Search">
         </div>
+      
         <div class="checkbox">
           <div class="shufflebox">
             <%= check_box_tag 'shuffle_checkbox', '1', true %> Shuffle
           </div>
         </div>
       </div>
-        <br></br>
+    
+        <br><br>
+      
       <div class="row"> 
         <select class="form-control" name="exam" id="exam">
           <option value="4">BASIC & ADVANCED</option>
@@ -49,7 +55,7 @@
           <option value="2">ADVANCED</option>
           <option value="3">Uncategorized</option>
         </select>
-  
+
         <select class="form-control" name="topic_id" id="topic_id">
           <option value="11">All Topics</option>
           <option value="1">Equipment & Physics</option>
@@ -64,59 +70,56 @@
           <option value="10">Regional & Pain</option>
         </select> 
       </div>    
-      
+    
       <div class="row">
-        <div class="myButton">
         <button type="submit" style="margin:1em" class="btn btn-danger btn-lg">Search the Questions</button>
         <%= link_to "10 Random Questions", "/questions/random", class: "btn btn-primary btn-lg" %>
-        </div>
       </div>
-    </div>
-  </form>
-
-  <p style="text-align: center; font-size: 1.5em; list-style: none">
-  &copy; Joint Council on In-Training Examinations, American Board of
-  Anesthesiology, American Society of Anesthesiologists
-  </p><br/><br/>
-
-  <div class="exams">
-      <p>
-      The ABA has released data from the 2014 exams: 
-      <%= external_link_to *@aba_exam_summary %>
-      </p>
-	  <p>
-	  Curves plotted below assume normally distributed test scores. I have no inside information on the score distribution.
-      </p>  
-		  
-	  
-	  <div class='center'>
-	   <%= image_tag("ABA14Normals.png") %><br>
-	   <%= image_tag("ABA14ITEtoWE.png") %>&nbsp
-	   <%= image_tag("ABA14ITEtoBASIC.png") %><p></p>
-	   <%= image_tag("ABA14Success.png") %>
-      </div><br></br>
-
-    <p>An extensive list of keywords can be found at
-    <%= external_link_to *@open_anesthesia_keywords %>
-    </p>
-
-    <p>Board review <a href='/resources/review_textbooks'>books</a></p>
-
+    </form>
+  
     <p>
-    Discussion threads at
-    <%= link_to_sdn_forum %>
+      &copy; Joint Council on In-Training Examinations, American Board of
+      Anesthesiology, American Society of Anesthesiologists
     </p>
-    <ul>
-      <%= render partial: 'site', collection: @study_strategy %>
-    </ul><br/>
+    <br><br>
+  </div>
 
-    <p> Written board commercial prep courses:</p>
-    <p style="font-size: 1.5em; font-style: italic; text-indent: 1em; list-style: none">
+  <p>
+    The ABA has released data from the 2014 exams: <%= external_link_to *@aba_exam_summary %>
+  </p>
+  <p>
+    Curves plotted below assume normally distributed test scores. I have no inside information on the score distribution.
+  </p>  
+		    
+  <div class='graphics'>
+    <%= image_tag("ABA14Normals.png") %>
+    <br>
+    <%= image_tag("ABA14ITEtoWE.png") %>&nbsp
+    <%= image_tag("ABA14ITEtoBASIC.png") %>
+    <br></br>
+    <%= image_tag("ABA14Success.png") %>
+  </div>
+  <br>
+  <p>
+    An extensive list of keywords can be found at <%= external_link_to *@open_anesthesia_keywords %>
+  </p>
+  <p>
+    Board review <a href='/resources/review_textbooks'>books</a>
+  </p>
+
+  <p>
+  Discussion threads at <%= link_to_sdn_forum %>
+  </p>
+  <ul>
+    <%= render partial: 'site', collection: @study_strategy %>
+  </ul>
+    <br>
+  <p> Written board commercial prep courses:</p>
+  <p style="font-size: 1.5em; font-style: italic; text-indent: 1em; list-style: none">
     I don't have any experience with these products and do not endorse any
     particular product
-    </p>
-    <ul>
-      <%= render partial: 'site', collection: @commercial_courses %>
-    </ul><br/>
-  </div>
+  </p>
+  <ul>
+    <%= render partial: 'site', collection: @commercial_courses %>
+  </ul>
 </div>
