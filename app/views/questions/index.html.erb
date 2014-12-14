@@ -6,7 +6,7 @@
   </p>
   
   <% @questions.each do |question| %>
-    <div class="resources">
+    <div class="resources" style="font-size:1.3em;padding-top:1.5em">
       <% unless question.exam.nil? %>
         <button class="btn btn-danger" type="button">
           <%= question.exam  %>
