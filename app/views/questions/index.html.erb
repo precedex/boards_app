@@ -1,66 +1,46 @@
 <% title "Questions" %>
+
 <div class="questions">
-  <p>
-    <%= @questions.length %>
-    questions match your search.
-  </p>
+  <h1>
+    <%= @questions.length %> questions match your search.
+  </h1>
   
   <% @questions.each do |question| %>
-    <div class="resources" style="font-size:1.3em;padding-top:1.5em">
-      <% unless question.exam.nil? %>
-        <button class="btn btn-danger" type="button">
-          <%= question.exam  %>
-        </button>
-        <%= render partial: "topic", collection: question.topics  %>
-      <% end %>
-    </div>
+    <% if question.exam %>
+      <button class="btn btn-danger" type="button"> <%= question.exam  %> </button>
+      <%= render partial: "topic", collection: question.topics  %>
+    <% end %>
+
+    <p> <%= question.stem %> </p>
+    
+  	<% unless question.image.blank? %>
+      <div class="graphics"> <%= image_tag(question.image) %> </div>
+    <% end %>
+
     <ul>
-      <li>
-        <%= question.stem %>
-      </li>
+      <li> <%= question.option_a %> </li>
+      <li> <%= question.option_b %> </li>
+      <li> <%= question.option_c %> </li>
+      <li> <%= question.option_d %> </li>
+      <li> <%= question.option_e %> </li>
     </ul>
     
-	<% unless question.image.blank? %>
-      <div class="image">
-        <%= image_tag(question.image) %>
-      </div>
-    <% end %>
-	
-    <div class="choices">
-      <ul>
-        <li>
-          <%= question.option_a %>
-        </li>
-        <li>
-          <%= question.option_b %>
-        </li>
-        <li>
-          <%= question.option_c %>
-        </li>
-        <li>
-          <%= question.option_d %>
-        </li>
-        <li>
-          <%= question.option_e %>
-        </li>
-      </ul>
-    </div>
-	
-    <div class="left">
-      <a class="btn btn-info" data-placement="right" data-toggle="tooltip" data-trigger="hover click" href="#" title="<%= question.answer.upcase %>">
-        Reveal answer  
-      </a>
-    </div>
-	
-<!--	
-    <div class = "list_actions">
+    <!--
+    <div class="list_actions">
       <%= link_to 'Show', question %>
       <%= external_link_to 'Edit', edit_question_path(question) %>
       <%= external_link_to 'Destroy', question, method: :delete, data: { confirm: 'Are you sure?' } %>
-      <br>
-      <%= external_link_to 'New Question', new_question_path %>
+      <%= external_link_to 'New', new_question_path %>
     </div>
--->	
+    -->
+      
+    <br>
+    
+    <a class="btn btn-info" data-placement="right" data-toggle="tooltip" data-trigger="hover click" href="#"      title="<%= question.answer.upcase %>"> Reveal answer  
+    </a>
+    <br><br>
+    <hr>
+  	
   <% end %>
 
   <script>

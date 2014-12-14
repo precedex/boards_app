@@ -50,13 +50,17 @@ a {
   }
 }
 
-
-a.btn {
-  color: white;
-  &:visited {
-    color: white;
+.list_actions {
+	a{
+		font-size: 1.3em;
+		color: red;
+    font-weight: lighter;
+    &:hover {
+    color: black;
+    text-decoration: none;
+    }
   }
-}
+}		
 
 
 /* Search Forms */
