@@ -1,6 +1,18 @@
 <% title "Written Boards" %>
 <div class="sites">
-  <h1> <%= yield(:title) %> </h1>
+  <h1> <%= yield(:title) %> <br>
+  <span style="font-size: 0.5em"> part 1  / BASIC and ADVANCED exams </span></h1>
+
+  <p>
+  The ABA has significantly changed the board certification process. Traditionally 
+  there was a part 1 written exam taken after residency graduation and a part 2 oral exam taken 
+  after passing part 1. Residents graduating after 6/30/16 (current CA-2s) will take the new staged exams:
+  BASIC (in July of CA-2 year), and ADVANCED (after graduating). 
+  </p>
+  
+  <p>
+  The BASIC/ADVANCED exam <%= external_link_to *@aba_content_outline %>.
+  </p>
 
   <p>
   The ABA has publicly released the <%= external_link_to *@old_aba_exams %>.
@@ -82,12 +94,7 @@
 	   <%= image_tag("ABA14ITEtoWE.png") %>&nbsp
 	   <%= image_tag("ABA14ITEtoBASIC.png") %><p></p>
 	   <%= image_tag("ABA14Success.png") %>
-      </div>
-	   
-    <p>
-    For information about the new staged exams, see
-    <%= external_link_to *@aba_training_programs %>
-    </p>
+      </div><br></br>
 
     <p>An extensive list of keywords can be found at
     <%= external_link_to *@open_anesthesia_keywords %>
@@ -96,14 +103,14 @@
     <p>Board review <a href='/resources/review_textbooks'>books</a></p>
 
     <p>
-    Written board study strategy has been extensively discussed at
+    Discussion threads at
     <%= link_to_sdn_forum %>
     </p>
     <ul>
       <%= render partial: 'site', collection: @study_strategy %>
     </ul><br/>
 
-    <p style="text-decoration:underline"> Written board commercial prep courses:</p>
+    <p> Written board commercial prep courses:</p>
     <p style="font-size: 1.5em; font-style: italic; text-indent: 1em; list-style: none">
     I don't have any experience with these products and do not endorse any
     particular product

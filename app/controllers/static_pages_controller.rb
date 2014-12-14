@@ -80,6 +80,7 @@ class StaticPagesController < ApplicationController
   def writtens
     @old_aba_exams = ["1990-1996 In-training Examinations", "http://www.theaba.org/Home/examinations_certifications"]
     @aba_training_programs = ["here", "http://www.theaba.org/Home/TrainingPrograms"]
+    @aba_content_outline = ["content outline", "http://www.theaba.org/pdf/Basic-and-Advanced-ContentOutline.pdf"]
     @aba_exam_summary = ["2014 Exam Summary (PDF)", "http://www.theaba.org/pdf/SAAA-Exams-Report.pdf"]
     @open_anesthesia_keywords = ["Open Anesthesia", "http://www.openanesthesia.org/OpenAnesthesia.org:KeywordBrowser"]
     @study_strategy = [
@@ -103,7 +104,7 @@ class StaticPagesController < ApplicationController
 
     @commercial_courses = [
       ["10th Hour Anesthesia Review",                    "http://www.anesthesia-review.com"],
-      ["Anesthesia Prep",                                "http://www.anesthesiaprep.com"],
+      ["True Learn Anesthesiology",                      "http://www.truelearn.com/anesthesiology/"],
       ["Anesthesia Exam",                                "http://www.anesthesiaexam.com"],
       ["Beyond Anesthesia",                              "http://beyondanesthesia.com"],
       ["Core Concepts Anesthesia Review",                "http://www.ccanesthesiareview.com/QOD/QOD.asp"],
@@ -117,6 +118,7 @@ class StaticPagesController < ApplicationController
   def orals
     @aba_archive = ["ABA", 'http://theaba.docstream.com/videos/archive/?page=1']
     @exam_hints_pdf = ["PDF", 'http://anesthesiaboardhints.homestead.com/HintsfortheAnesthesiologyBoardExaminationRev1.6.pdf']
+    @aba_training_programs = ["here", "http://www.theaba.org/Home/TrainingPrograms"]
     @the_anesthesia_consultant = ["The Anesthesia Consultant", 'http://theanesthesiaconsultant.com/2013/08/22/advice-for-passing-the-oral-board-exams-in-anesthesiology/']
 
     @study_strategy = [

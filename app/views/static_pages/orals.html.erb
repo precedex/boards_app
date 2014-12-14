@@ -1,9 +1,14 @@
 <% title "Oral Boards" %>
 <div class="sites">
-  <h1>
-    <%= yield(:title) %>
-  </h1>
+  <h1> <%= yield(:title) %> <br>
+  <span style="font-size: 0.5em"> part 2  / ORAL and OSCE exams </span></h1>
   <div class="exams">
+	  
+    <p>
+	  The part 2 exam will be replaced by the APPLIED exam in 2017, with both oral and OSCE components. 
+	  For more information about the new certification process, see 
+	  <%= external_link_to *@aba_training_programs %>.
+   </p>
     <p>
       The oral board exam tests your ability to organize your thoughts quickly
       and communicate them efficiently. You are being evaluated on your ability
@@ -33,14 +38,14 @@
       Advice from <%= external_link_to *@the_anesthesia_consultant %>, Richard Novak
     </p>
     <p>
-      Oral board study strategy has been extensively discussed at
+      Discussion threads at
       <%= link_to_sdn_forum %>
     </p>
     <ul>
       <%= render partial: 'site', collection: @study_strategy %>
     </ul>
     <br/>
-    <p style="text-decoration:underline">
+    <p>
       Oral board commercial prep courses:
     </p>
     <p style="font-size: 1.5em; font-style: italic; text-indent: 1em; list-style: none">
