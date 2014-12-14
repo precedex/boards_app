@@ -1,4 +1,5 @@
 <% title "Books" %>
+
 <div class="resources">
   <table>
     <% @resources.each do |resource| %>
@@ -6,7 +7,8 @@
         <td>
           <%= external_link_to image_tag(resource.image_url), resource.link %>
         </td>
-        <td class="list_description">
+        
+        <td>
           <dt>
             <%= external_link_to resource.title, resource.link %>
           </dt>
@@ -16,25 +18,26 @@
           <dd class="bold">
             Edition <%= "#{resource.edition} (#{resource.year})" %>
           </dd>
-          <dd style="font-weight: lighter; font-size: 1.2em">
+          <dd class="description">
             <%= resource.description %>
           </dd>
         </td>
-        <td class="list_description">
+        
+        <td>
           <dd>
             <%= render partial: "category", collection: resource.categories   %>
           </dd>
         </td>
 
-<!--
-		<td class = "list_actions">
+        <!--
+		    <td class = "list_actions">
           <%= external_link_to 'Show', resource %>
           <%= external_link_to 'Edit', edit_resource_path(resource) %>
           <%= external_link_to 'Destroy', resource, method: :delete, data: { confirm: 'Are you sure?' } %>
           <br>
           <%= external_link_to 'New', new_resource_path %>
-		</td>
--->
+		    </td>
+        -->
 	 
       </tr>
     <% end %>

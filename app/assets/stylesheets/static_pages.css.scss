@@ -9,8 +9,7 @@ ul {
 	font-weight: lighter;
 }
 
-.welcome{
-  
+.welcome{ 
   text-align: center;
   list-style: none;
   
@@ -79,12 +78,8 @@ ul {
 }
 
 .tools{	
-	
-	dl{
-	  text-align: left;
-	  font-size: 2em;
-	}
-	
+	font-size: 2em;
+
 	dt{
 		font-family: Cambria;
 		text-align: center;
@@ -94,14 +89,12 @@ ul {
 	}
 	
 	dd{
-		font-family: Cambria;
+		font-family: Helvetica;
 		font-size: 1em;
-		font-weight: bold;
+    letter-spacing: -1px;
+		font-weight: lighter;
 		text-align: center;  
-		display:list-item;
-		list-style-type: none;
-		list-style-position:inside;
-		padding-bottom: 0.7em;	
+		padding-bottom: 0.5em;	
 	}
 	
 	#left_column{
@@ -114,24 +107,10 @@ ul {
 		float: left;
 		width: 50%;
 		margin: 0 0% 20% 0;
-	}
-	
-	.dropdown-menu {
-	  font-size: 1.67em;
-	  padding: 5px;
-	  background-color: silver;
-	}
-	
-	.btn-lg {
-		font-family: Helvetica;
-		font-size: 1em;
-		text-align: center;
-		
-	}  
+	}	
 }
 
 .movies{
-  
   .btn-primary {
 	  font-family: Avenir;
 	}
@@ -174,7 +153,6 @@ ul {
   h5{
      font-size: 1.8em;
   }
-  
 }
 
 

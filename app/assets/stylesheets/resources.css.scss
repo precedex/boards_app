@@ -1,20 +1,20 @@
 .resources {
   
 	.btn {
-		font-family:  "Yanone Kaffeesatz", sans-serif;
+		font-family:  "Avenir", sans-serif;
 		padding: 5px;
 		font-weight: 300;
-		font-size: 1.4em;
+		font-size: 1.1em;
         float: right;
 		margin: 1px;
     
-  a {
-    color: white;
-    &:visited {
+    a {
       color: white;
+      &:visited {
+        color: white;
+      }
     }
   }
-}
   
 	table {
 		border-collapse: collapse;
@@ -29,40 +29,35 @@
 		border-bottom: silver 1px solid;
 	}
 	
-	p {
-		padding-top: 0;
-		padding-bottom: 0;
-		font-size: 2em;
+	dt {
+		font-family: "Helvetica";
+    letter-spacing: -1px;
+		font-size: 2.2em;
+		font-weight: lighter;
 	}
 	
-	.list_description {
-		width: 100%;
-		
-		dt {
-			font-family: "Cambria",                     "Hoefler Text",
-			             "Nimbus Roman No9 L Regular",   Times, 
-						 "Times New Roman",              serif;
-			font-size: 2.2em;
-			font-weight: 600;
-		}
-		
-		dd {
-			font-family: "Helvetica", Times, serif;
-			font-size: 1.5em;
-			font-weight: normal;
-		}
-		
-		dd.bold {
-			font-weight: bold;
-			font-size: 1.3em;
-			padding-bottom: 10px;
-		}
-	}
-	
-	.list_actions {
+	dd {
+		font-family: "Helvetica";
 		font-size: 1.5em;
-		text-align: right;
-		padding-left: 1em;
+		font-weight: lighter;
+	}
+	
+	dd.bold {
+		font-weight: bold;
+		font-size: 1.2em;
+		padding-bottom: 10px;
+	}
+  
+	dd.description {
+    font-family: Helvetica;
+		font-weight: lighter;
+		font-size: 1.3em;
+		padding-bottom: 10px;
 	}
 
+  .list_actions {
+  	font-size: 1em;
+  	text-align: right;
+  	padding-left: 1em;
+  }
 }
