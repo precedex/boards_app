@@ -111,6 +111,18 @@ ul {
 }
 
 .movies{
+  
+  a {
+    color: black;
+    &:visited {
+      color: black;
+    }
+    &:hover {
+      color: black;
+      text-decoration: none;
+    }
+  }
+  
   .btn-primary {
 	  font-family: Avenir;
 	}
