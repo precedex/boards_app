@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  padding-top: 0px;                 /* whitespace above the navigation bar */
+  padding-top: 0px;           /* whitespace above the navigation bar */
   background-color: White;    /* background */
   font-size: 100%;
 }
@@ -50,6 +50,26 @@ a {
   }
 }
 
+/* Buttons */
+.btn {
+  font-family: Avenir, sans-serif;
+  &:hover {
+  color: black;
+  }
+  a{
+    color: white;
+    &:hover {
+    color: black;
+    } 
+  } 
+}
+
+a.btn{
+  color: white;
+}
+
+/* List Actions */
+
 .list_actions {
 	a{
 		font-size: 1.3em;
@@ -61,7 +81,6 @@ a {
     }
   }
 }		
-
 
 /* Search Forms */
 
@@ -149,5 +168,5 @@ footer {
    float: right;
    font-size: 1.9em;
    padding-top: 4px;
-    }
+  }
 }
