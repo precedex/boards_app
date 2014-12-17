@@ -1,0 +1,37 @@
+<% title "10 Random Questions" %>
+<div class="questions"> 
+  <h1><%= yield(:title) %></h1>
+  
+  <% @questions.each do |question| %>
+    <% if question.exam %>
+      <button class="btn btn-danger" type="button"> <%= question.exam  %> </button>
+      <%= render partial: "topic", collection: question.topics  %>
+    <% end %>
+
+    <p> <%= question.stem %> </p>
+    
+  	<% unless question.image.blank? %>
+      <div class="graphics"> <%= image_tag(question.image) %> </div>
+    <% end %>
+
+    <ul>
+      <li> <%= question.option_a %> </li>
+      <li> <%= question.option_b %> </li>
+      <li> <%= question.option_c %> </li>
+      <li> <%= question.option_d %> </li>
+      <li> <%= question.option_e %> </li>
+    </ul>
+    
+    <br>
+    
+    <a class="btn btn-info" data-placement="right" data-toggle="tooltip" data-trigger="hover click" href="#"      title="<%= question.answer.upcase %>"> Reveal answer  
+    </a>
+    <br><br>
+    <hr>
+  	
+  <% end %>
+
+  <script>
+    $('.btn-info').tooltip();
+  </script>
+</div>
