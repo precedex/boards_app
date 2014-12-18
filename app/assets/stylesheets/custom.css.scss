@@ -41,9 +41,7 @@ p {
 
 a {
   color: red;
-  &:visited {
-    color: red;
-  }
+  &:visited {color: red;}
   &:hover {
     color: black;
     text-decoration: none;
@@ -53,14 +51,10 @@ a {
 /* Buttons */
 .btn {
   font-family: Avenir, sans-serif;
-  &:hover {
-  color: black;
-  }
+  &:hover {color: black;}
   a{
     color: white;
-    &:hover {
-    color: black;
-    } 
+    &:hover {color: black;} 
   } 
 }
 
@@ -73,12 +67,7 @@ a.btn{
 .list_actions {
 	a{
 		font-size: 1.3em;
-		color: red;
-    font-weight: lighter;
-    &:hover {
-    color: black;
-    text-decoration: none;
-    }
+    font-weight: lighter;   
   }
 }		
 

@@ -153,7 +153,7 @@ class StaticPagesController < ApplicationController
 
     @commercial_courses = [
       ["Board Stiff Live",                             "https://boardstifflive.com"],
-      ["Dr. Jensen Best Medicine for Oral Boards",     "http://www.anesthesiologyboards.com/oral/"],
+      ["Dr. Jensen Essential Oral Board P.R.E.P.",     "http://www.boardprep.com"],
       ["GadsenJones Anesthesiology Oral Board Review", "http://www.gadsdenjones.com"],
       ["Just Oral Boards",                             "http://www.justoralboards.com"],
       ["AceMedBoard",                                  "http://www.acemedboard.com"],

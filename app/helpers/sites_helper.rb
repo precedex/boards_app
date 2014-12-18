@@ -14,6 +14,7 @@ module SitesHelper
     "society-us" => "US Anesthesiology Societies",
     "society-state" => "State Anesthesiology Societies",
     "society-intl" => "Intl. Anesthesiology Societies",
+    "society-pedi" => "Pediatric Anesthesiology Societies",
     "society-pain" => "Regional Anesthesia & Pain Societies",
     "society-crna" => "Nurse Anesthesia Societies"
   }

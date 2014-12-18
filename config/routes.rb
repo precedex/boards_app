@@ -56,6 +56,7 @@ BoardsApp::Application.routes.draw do
   get   '/sites/societies/us',            to: 'sites#index',     :category => 'society-us'
   get   '/sites/societies/state',         to: 'sites#index',     :category => 'society-state'
   get   '/sites/societies/intl',          to: 'sites#index',     :category => 'society-intl'
+  get   '/sites/societies/pedi',          to: 'sites#index',     :category => 'society-pedi'
   get   '/sites/societies/pain',          to: 'sites#index',     :category => 'society-pain'
   get   '/sites/societies/crna',          to: 'sites#index',     :category => 'society-crna'
 

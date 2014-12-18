@@ -55,9 +55,6 @@
               %li= link_to "Simulation",          sites_education_simulation_path
               %li= link_to "Miscellaneous",       sites_education_path
 
-          %li{class: ("active" if current_page?(sites_journals_path))}
-            = link_to "Journals", sites_journals_path
-
           %li.dropdown{class: ("active" if on_societies_path?)}
             %a{"data-toggle" => "dropdown", href: "#"}
               Societies
@@ -66,8 +63,12 @@
               %li= link_to "American",      sites_societies_us_path
               %li= link_to "State",         sites_societies_state_path
               %li= link_to "International", sites_societies_intl_path
+              %li= link_to "Pediatric",     sites_societies_pedi_path
               %li= link_to "Regional/Pain", sites_societies_pain_path
               %li= link_to "CRNA",          sites_societies_crna_path
+              
+          %li{class: ("active" if current_page?(sites_journals_path))}
+            = link_to "Journals", sites_journals_path
 
           %li{class: ("active" if current_page?(sites_blogs_path))}
             = link_to "Blogs", sites_blogs_path
