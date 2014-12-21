@@ -144,12 +144,8 @@ footer {
 
   a {
     color: $gray-light;
-    &:visited {
-      color: $gray-light;
-    }
-    &:hover {
-      color: black;
-    }
+    &:visited {color: $gray-light;}
+    &:hover {color: black;}
   }
 
   p {
