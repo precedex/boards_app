@@ -1,3 +1,38 @@
 // Place all the styles related to the Lectures controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+  table.pretty {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .pretty th {
+    font-variant: small-caps;
+    font-size: 2em;
+    a{color:black;}
+  }
+  
+  .pretty th .current {
+    padding-right: 30px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+  }
+  
+  .pretty th .asc {
+    background-image: url(/assets/up_arrow.gif);
+  }
+  
+  .pretty th .desc {
+    background-image: url(/assets/down_arrow.gif);
+  }
+  
+  .pretty td{
+    font-size: 1.5em;
+    padding: 5px;
+  }
+  
+	.pretty tr {
+		border-bottom: silver 1px solid;
+	}
