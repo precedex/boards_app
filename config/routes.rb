@@ -1,5 +1,5 @@
 BoardsApp::Application.routes.draw do
-
+  
   # Deprecated routes
   # At the top, because they might otherwise match a real route
   get   '/resources/reference_textbooks', to: redirect("/categories/1/resources")
@@ -48,6 +48,13 @@ BoardsApp::Application.routes.draw do
   get   '/sites/education/video',         to: 'sites#index',     :category => 'education-video'
   get   '/sites/education/simulation',    to: 'sites#index',     :category => 'education-simulation'
   get   '/calendar',                      to: 'static_pages#calendar'
+  
+  # lectures
+  get "lectures/index",                   to: 'lectures#index'
+  get "lectures/import"
+  resources :lectures do
+    collection { post :import }
+  end
   
   # journals
   get   '/sites/journals',                to: 'sites#index',     :category => 'journal'

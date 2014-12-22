@@ -1,0 +1,40 @@
+<% title "Lectures" %>
+<div class = "sites">
+  <h1> <%= yield(:title) %> </h1>
+</div>
+<div class='lectures'>
+  <table>
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Speaker</th>
+        <th>Title</th>
+        <th>Institution</th>
+        <th>Date</th>
+        <th>Topic</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @lectures.each do |lecture| %>
+        <tr>
+          <td><%= lecture.id %></td>
+          <td><%= lecture.speaker %></td>
+          <td><%= external_link_to lecture.title, lecture.link %></td>
+          <td><%= lecture.institution %></td>
+          <td><%= lecture.date %></td>
+          <td><%= lecture.topic %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div> 
+  
+<!--  
+<div>
+  <h3>Import a CSV File</h3>
+    <%= form_tag import_lectures_path, multipart: true do %>
+      <%= file_field_tag :file %>
+      <%= submit_tag "Import CSV" %>
+    <% end %>
+</div>
+  -->

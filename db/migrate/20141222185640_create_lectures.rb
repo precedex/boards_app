@@ -1,0 +1,14 @@
+class CreateLectures < ActiveRecord::Migration
+  def change
+    create_table :lectures do |t|
+      t.string :speaker
+      t.string :title
+      t.string :institution
+      t.date :date
+      t.string :link
+      t.string :topic
+
+      t.timestamps
+    end
+  end
+end
