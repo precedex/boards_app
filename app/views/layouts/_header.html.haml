@@ -49,11 +49,11 @@
               %b.caret
             %ul.dropdown-menu
               %li= link_to "Calendar",   		  '/calendar'
-              %li= link_to "Regional", 			  sites_education_regional_path
-              %li= link_to "Airway", 			  sites_education_airway_path
+              %li= link_to "Regional", 			  '/regional'
+              %li= link_to "Airway", 			    '/airway'
               %li= link_to "Movies",    		  '/movies'
-              %li= link_to "Simulation",          sites_education_simulation_path
-              %li= link_to "Miscellaneous",       sites_education_path
+              %li= link_to "Simulation",      sites_education_simulation_path
+              %li= link_to "Miscellaneous",   sites_education_path
 
           %li.dropdown{class: ("active" if on_societies_path?)}
             %a{"data-toggle" => "dropdown", href: "#"}

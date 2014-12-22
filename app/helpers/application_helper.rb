@@ -45,8 +45,10 @@ module ApplicationHelper
   end
 
   def on_education_path?
-    current_page?(sites_education_regional_path) ||
-    current_page?(sites_education_video_path) ||
+    current_page?(calendar_path) ||
+    current_page?(regional_path) ||
+    current_page?(airway_path) ||
+    current_page?(movies_path) ||
     current_page?(sites_education_simulation_path) ||
     current_page?(sites_education_path)
   end

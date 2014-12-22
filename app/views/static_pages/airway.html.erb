@@ -1,0 +1,161 @@
+<% title "Airway Management" %>
+<div class = "sites">
+  <h1> <%= yield(:title) %> </h1>
+</div>
+
+<div class="movies">
+  <div class="panel-group" id="accordion"> 
+    <div class="panel panel-info"> 
+      <div class="panel-heading"> 
+        <h3 class="panel-title">
+          <a href='#airway' class="accordion-toggle" data-toggle="collapse" data-parent="#accordion">
+            Airway Management Videos
+          </a>
+        </h3>
+      </div>
+  
+      <div id="airway" class="panel-collapse collapse"> 
+        <div class="panel-body">
+          <div class="panel-group" id="accordion-airway">
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a href='#intubation-adult' class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-airway">
+                    Endotracheal Intubation (adult)
+                  </a>
+                </h4>
+              </div>
+
+              <div id="intubation-adult" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <% @intubation_adult.each do |movie| %> 
+                  <a href="<%= movie[1] %>" target = "_blank" class="btn btn-primary btn-block" role="button"><%= movie[0] %></a>
+                  <% end %>
+                </div>
+              </div>         
+            </div>
+            
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a href='#intubation-pediatric' class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-airway">
+                    Endotracheal Intubation (pediatric)
+                  </a>
+                </h4>
+              </div>
+
+              <div id="intubation-pediatric" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <% @intubation_pediatric.each do |movie| %> 
+                  <a href="<%= movie[1] %>" target = "_blank" class="btn btn-primary btn-block" role="button"><%= movie[0] %></a>
+                  <% end %>
+                </div>
+              </div>        
+            </div>
+            
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a href='#olv' class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-airway">
+                    One Lung Ventilation
+                  </a>
+                </h4>
+              </div>
+
+              <div id="olv" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <% @olv.each do |movie| %> 
+                  <a href="<%= movie[1] %>" target = "_blank" class="btn btn-primary btn-block" role="button"><%= movie[0] %></a>
+                  <% end %>
+                </div>
+              </div>        
+            </div>
+            
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a href='#mask' class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-airway">
+                    Mask Ventilation
+                  </a>
+                </h4>
+              </div>
+
+              <div id="mask" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <% @mask.each do |movie| %> 
+                  <a href="<%= movie[1] %>" target = "_blank" class="btn btn-primary btn-block" role="button"><%= movie[0] %></a>
+                  <% end %>
+                </div>
+              </div>        
+            </div>
+            
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a href='#advanced' class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-airway">
+                    Advanced Techniques
+                  </a>
+                </h4>
+              </div>
+
+              <div id="advanced" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <% @advanced_airway.each do |movie| %> 
+                  <a href="<%= movie[1] %>" target = "_blank" class="btn btn-primary btn-block" role="button"><%= movie[0] %></a>
+                  <% end %>
+                </div>
+              </div>        
+            </div>
+            
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a href='#cric' class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-airway">
+                    Cricothyroidotomy
+                  </a>
+                </h4>
+              </div>
+
+              <div id="cric" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <% @cric.each do |movie| %> 
+                  <a href="<%= movie[1] %>" target = "_blank" class="btn btn-primary btn-block" role="button"><%= movie[0] %></a>
+                  <% end %>
+                </div>
+              </div>        
+            </div> 
+          </div>        
+        </div>    
+      </div>
+    </div>
+  </div>  
+</div>
+
+<div class = "sites">
+  <% @sites = Site.where(category: "education-airway").by_title %>
+  <% @sites.in_groups_of(4, false).each do |group| %>
+    <div class='row'>
+      <% group.each do |site| %>
+        <div class='col-xs-3'>
+          <a class="btn btn-default btn-lg" role="button" href="<%= site.link %>" target='_blank'>
+            <% if site.image %>
+            <%= image_tag(site.image, width: "100%") %>
+            <% else %>
+            <%= site.title %>
+            <% end %>   
+          </a>
+         <!--
+          <div class = "list_actions">
+             <%= link_to 'New', new_site_path %>
+             <%= link_to 'Show', site %>
+             <%= link_to 'Edit', edit_site_path(site) %>
+             <%= link_to 'Destroy', site, method: :delete, data: { confirm: 'Are you sure?' } %>
+           </div>
+          -->
+           
+            <br>
+        </div>
+      <% end %>
+    </div>
+  <% end %>
+</div>

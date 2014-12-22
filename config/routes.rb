@@ -43,8 +43,8 @@ BoardsApp::Application.routes.draw do
 
   # education
   get   '/sites/education',               to: 'sites#index',     :category => 'education'
-  get   '/sites/education/regional',      to: 'sites#index',     :category => 'education-regional'
-  get   '/sites/education/airway',        to: 'sites#index',     :category => 'education-airway'
+  get   '/regional',                      to: 'static_pages#regional'
+  get   '/airway',                        to: 'static_pages#airway'
   get   '/sites/education/video',         to: 'sites#index',     :category => 'education-video'
   get   '/sites/education/simulation',    to: 'sites#index',     :category => 'education-simulation'
   get   '/calendar',                      to: 'static_pages#calendar'
