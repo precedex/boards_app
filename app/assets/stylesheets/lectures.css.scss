@@ -14,7 +14,7 @@
   }
   
   .pretty th .current {
-    font-size: 1.1em;
+    font-size: 1.2em;
     padding-right: 30px;
     background-repeat: no-repeat;
     background-position: right center;
@@ -22,11 +22,11 @@
   }
   
   .pretty th .asc {
-    background-image: url(/assets/up_arrow.gif);
+    background-image: asset_url('up_arrow.gif');
   }
   
   .pretty th .desc {
-    background-image: url(/assets/down_arrow.gif);
+    background-image: asset_url('down_arrow.gif');
   }
   
   .pretty td{
