@@ -21,7 +21,7 @@
           <td><%= lecture.speaker %></td>
           <td><%= external_link_to lecture.title, lecture.link %></td>
      <!-- <td><%= lecture.institution %></td> -->
-          <td><%= lecture.date %></td>
+          <td><%= lecture.date.strftime("%_m/%-d/%y") if lecture.date %></td>
           <td><%= lecture.topic %></td>
         </tr>
       <% end %>
