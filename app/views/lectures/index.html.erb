@@ -3,6 +3,16 @@
   <h1> <%= yield(:title) %> </h1>
 </div>
 
+<div class="graphics">
+  <form accept-charset="UTF-8" action="/lectures" method="get" name="commit" class="form-inline">
+    <div class="form-group">
+    <input type="search" name="search" class="input-large" id="search" placeholder="Search">
+    </div>
+     <button type="submit" style="margin:1em" class="btn btn-primary ">Search the Lectures</button>
+     <%= link_to "All Lectures", "/lectures", class: "btn btn-danger " %>
+  </form>
+</div>
+
   <table class="pretty">
     <thead>
       <tr>

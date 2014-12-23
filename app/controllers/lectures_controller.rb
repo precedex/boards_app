@@ -1,7 +1,7 @@
 class LecturesController < ApplicationController
   helper_method :sort_column, :sort_direction
   def index
-    @lectures = Lecture.order(sort_column + " " + sort_direction)
+    @lectures = Lecture.search(params[:search]).order(sort_column + " " + sort_direction)  
   end
 
   def import

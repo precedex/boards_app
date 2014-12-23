@@ -13,4 +13,15 @@ class Lecture < ActiveRecord::Base
       end # end if !lecture.nil?
     end # end CSV.foreach
   end # end self.import(file)
+  
+  LECTURE_LIKE = 'title ILIKE :search OR speaker ILIKE :search'
+  
+  def self.search(search)
+    if search
+      Lecture.where(LECTURE_LIKE, search: "%#{search.downcase}%")
+    else
+      Lecture.all
+    end
+  end
+  
 end
