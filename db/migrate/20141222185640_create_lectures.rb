@@ -4,10 +4,9 @@ class CreateLectures < ActiveRecord::Migration
       t.string :speaker
       t.string :title
       t.string :institution
-      t.string :date
+      t.date   :date
       t.string :link
       t.string :topic
-
       t.timestamps
     end
   end

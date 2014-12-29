@@ -21,7 +21,7 @@
         <th><%= sortable  "speaker" %></th>
         <th><%= sortable  "title" %></th>
    <!-- <th><%= sortable  "Institution" %></th> -->
-    <th><%= sortable  "date" %></th> 
+        <th><%= sortable  "date" %></th> 
         <th><%= sortable  "topic" %></th>
       </tr>         
     </thead>
@@ -32,7 +32,7 @@
           <td><%= lecture.speaker %></td>
           <td><%= external_link_to lecture.title, lecture.link %></td>
      <!-- <td><%= lecture.institution %></td> -->
-          <td><%= lecture.date if lecture.date %></td>
+          <td><%= lecture.date.strftime("%_m/%-d/%y") if lecture.date %></td> 
           <td><%= lecture.topic %></td>
         </tr>
       <% end %>
