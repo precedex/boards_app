@@ -29,7 +29,7 @@ ActiveRecord::Schema.define(version: 20141222185640) do
     t.string   "speaker"
     t.string   "title"
     t.string   "institution"
-    t.date     "date"
+    t.string   "date"
     t.string   "link"
     t.string   "topic"
     t.datetime "created_at"
