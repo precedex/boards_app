@@ -1,0 +1,2 @@
+\c pg_database_development
+copy (select * from questions) to '/users/davidmoss/Desktop/testquestions.csv' with csv header;
