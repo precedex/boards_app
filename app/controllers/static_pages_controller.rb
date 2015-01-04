@@ -120,7 +120,7 @@ class StaticPagesController < ApplicationController
   end
 
   def orals
-    @aba_archive = ["ABA", 'http://theaba.docstream.com/videos/archive/?page=1']
+    @aba_archive = ["ABA", 'http://www.theaba.org/Home/Videos']
     @exam_hints_pdf = ["PDF", 'http://anesthesiaboardhints.homestead.com/HintsfortheAnesthesiologyBoardExaminationRev1.6.pdf']
     @aba_training_programs = ["here", "http://www.theaba.org/Home/TrainingPrograms"]
     @the_anesthesia_consultant = ["The Anesthesia Consultant", 'http://theanesthesiaconsultant.com/2013/08/22/advice-for-passing-the-oral-board-exams-in-anesthesiology/']

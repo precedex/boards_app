@@ -8,7 +8,7 @@
     <div class="form-group">
     <input type="search" name="search" class="input-large" id="search" placeholder="Search">
     </div>
-     <button type="submit" style="margin:1em" class="btn btn-primary ">Search the Lectures</button>
+     <button type="submit" style="margin:1em" class="btn btn-primary ">Search <%= @lectures.length%> Lectures</button>
      <%= link_to "All Lectures", "/lectures", class: "btn btn-danger " %>
   </form>
 </div>
