@@ -81,6 +81,25 @@ class StaticPagesController < ApplicationController
     ]
   end
 
+  def calculator
+      @asa =     params[:asa_checkbox] 
+      @surgery = params[:surgery_checkbox] 
+      @resp =    params[:resp_checkbox]
+      @smoking = params[:smoking_checkbox]
+      @nmd =     params[:nmd_checkbox]
+      @weight =  params[:weight_checkbox]
+      @bmi =     params[:bmi_checkbox]
+      @ga =      params[:ga_checkbox]
+      @length =  params[:length_checkbox]
+      @age =     params[:age_radio]
+      @adls =    params[:adls_radio]
+      
+      @score = @asa.to_i + @surgery.to_i + @resp.to_i + 
+               @smoking.to_i + @nmd.to_i + @weight.to_i +
+               @bmi.to_i + @ga.to_i + @length.to_i +
+               @age.to_i + @adls.to_i
+  end
+
   def writtens
     @old_aba_exams = ["1990-1996 In-training Examinations", "http://www.theaba.org/Home/examinations_certifications"]
     @aba_training_programs = ["here", "http://www.theaba.org/Home/TrainingPrograms"]

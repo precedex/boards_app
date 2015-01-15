@@ -1,0 +1,39 @@
+<% title "Risk Stratification"%>
+
+<div class = "tmccalc">
+  <h2> Risk Stratification Score for Postoperative Pneumonia </h2><br/>
+  <form action="/calculator" method="get" name="commit" class="form-inline">
+     <%= check_box_tag 'asa_checkbox',   '2'  %>    ASA > 3<br/>
+     <%= check_box_tag 'surgery_checkbox', '2' %>   Upper abdominal, chest, neuro or airway surgery<br/>
+     <%= check_box_tag 'resp_checkbox', '2' %>      COPD, pulmonary HTN, OSA or severe asthma<br/>
+     <%= check_box_tag 'smoking_checkbox', '1' %>   Smoking<br/>
+     <%= check_box_tag 'nmd_checkbox', '1' %>       Impaired sensorium, neuromuscular disease or swallowing difficulty<br/>
+     <%= check_box_tag 'weight_checkbox', '1' %>    Unintentional weight loss > 10%<br/>
+     <%= check_box_tag 'bmi_checkbox', '1' %>       BMI < 22<br/>
+     <%= check_box_tag 'ga_checkbox', '2' %>        General anesthesia <br/>
+     <%= check_box_tag 'length_checkbox', '1' %>    Surgery > 2 hours<br/>
+  
+     <%= radio_button_tag 'age_radio', '0', true %> Age < 65 &nbsp &nbsp &nbsp&nbsp
+     <%= radio_button_tag 'age_radio', '1' %> Age 65-80 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+     <%= radio_button_tag 'age_radio', '2' %> Age > 80
+     <br/>
+  
+     <%= radio_button_tag 'adls_radio', '0', true %> Independent &nbsp
+     <%= radio_button_tag 'adls_radio', '1' %> Partially Dependent &nbsp&nbsp
+     <%= radio_button_tag 'adls_radio', '2' %> Dependent  
+
+     <br/><br/>
+     <button type="submit" class="btn btn-danger btn-lg">Get Score</button>
+  </form>
+
+<h2> Risk Score: <%= @score %> <h2> 
+
+<% if @score <7 %>
+  <h2 style = "color:green">  Green   </h2>
+<% elsif @score >= 12 %>
+  <h2 style = "color:red">    Red     </h2>
+<% else %>
+  <h2 style = "color:yellow"> Yellow  </h2>
+<% end %>  
+
+</div>

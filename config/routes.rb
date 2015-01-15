@@ -73,6 +73,9 @@ BoardsApp::Application.routes.draw do
   # tools
   get    '/tools',                        to: 'static_pages#tools'
   
+  # calculator
+  get    '/calculator',                   to: 'static_pages#calculator'
+  
   # movies
   get    '/movies',                       to: 'static_pages#movies'
 
