@@ -94,10 +94,10 @@ class StaticPagesController < ApplicationController
       @age =     params[:age_radio]
       @adls =    params[:adls_radio]
       
-      @score = @asa.to_i + @surgery.to_i + @resp.to_i + 
-               @smoking.to_i + @nmd.to_i + @weight.to_i +
-               @bmi.to_i + @ga.to_i + @length.to_i +
-               @age.to_i + @adls.to_i
+      @score = @asa.to_i +     @surgery.to_i + @resp.to_i + 
+               @smoking.to_i + @nmd.to_i +     @weight.to_i +
+               @bmi.to_i +     @ga.to_i +      @length.to_i +
+               @age.to_i +     @adls.to_i     
   end
 
   def writtens
