@@ -107,6 +107,7 @@ class StaticPagesController < ApplicationController
     @aba_exam_summary = ["2014 Exam Summary (PDF)", "http://www.theaba.org/pdf/SAAA-Exams-Report.pdf"]
     @open_anesthesia_keywords = ["Open Anesthesia", "http://www.openanesthesia.org/OpenAnesthesia.org:KeywordBrowser"]
     @study_strategy = [
+      ["Anesthesia Q Bank (1/15)",                         "http://forums.studentdoctor.net/threads/anesthesia-q-bank.1115732/"],
       ["ABA Basic Exam (11/14)",                           "http://forums.studentdoctor.net/threads/aba-basic-exam.1106106/"],
       ["Best Review Book for Written Boards (9/14)",       "http://forums.studentdoctor.net/threads/best-review-book-for-written-boards.1098134/"],
       ["Boards (7/14)",                                    "http://forums.studentdoctor.net/threads/boards.1088912/"],
@@ -340,6 +341,7 @@ class StaticPagesController < ApplicationController
       ["10 Tips to Optimize Technique - Lecture - Lawrence Tsen",             "https://youtu.be/_BqxQW4Uyh4"] 
     ]
     @paravertebral = [
+      ["LSORA",                                                               "http://youtu.be/vSbhqR5oIAs"],
       ["SSRA - US-guided - Theresa Bowling",                                  "https://youtu.be/l97p0mbOv1E"]
     ]
     @intubation_adult = [
@@ -519,6 +521,7 @@ class StaticPagesController < ApplicationController
       ["10 Tips to Optimize Technique - Lecture - Lawrence Tsen",             "https://youtu.be/_BqxQW4Uyh4"] 
     ]
     @paravertebral = [
+      ["LSORA",                                                               "http://youtu.be/vSbhqR5oIAs"],
       ["SSRA - US-guided - Theresa Bowling",                                  "https://youtu.be/l97p0mbOv1E"]
     ]
   end

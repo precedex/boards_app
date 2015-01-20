@@ -50,7 +50,7 @@ a {
 
 /* Buttons */
 .btn {
-  font-family: Avenir, sans-serif;
+  font-family: Avenir, Tahoma;
   &:hover {color: black;}
   a{
     color: white;
@@ -107,7 +107,7 @@ header {
 }
 
 .navbar-inverse .navbar-nav > li > a {
-	font-family: Avenir;
+	font-family: Avenir, Tahoma;
     color: white;
   &:hover {
     color: yellow;
@@ -124,7 +124,7 @@ header {
 }
 
 .dropdown-menu {
-  font-family: Avenir;
+  font-family: Avenir, Tahoma;
   font-size: 0.8em;
   padding: 5px;
   background-color: silver;
