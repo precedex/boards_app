@@ -368,6 +368,7 @@ class StaticPagesController < ApplicationController
       ["LMA Use - Chris Gallagher",                                           "http://youtu.be/-oXa-f5qkGY"]  
     ]
     @advanced_airway = [
+      ["Flexible Fiberoptic Scope",                                           "http://www.airwayelearning.com/awel/videos/videos.aspx?Action=1&NewsId=2300&PID=64893"],
       ["Awake Fiberoptic - Yale Media Lab",                                   "http://medicine.yale.edu/anesthesiology/media/videos.aspx#6-163756"],
       ["Awake Fiberoptic / Transtracheal Block - Michael Bailin",             "https://youtu.be/bDRTzmuwMnQ"],
       ["Fiberoptic intubation tips - Chris Gallagher",                        "http://youtu.be/-Ehjj06HReE"],
@@ -375,6 +376,7 @@ class StaticPagesController < ApplicationController
       ["Glidescope demo",                                                     "https://youtu.be/Kt2VweVmNwY"],
       ["Glidescope demo - HospitalProcdures.org",                             "https://youtu.be/4VAMBj2kc2Y"],
       ["Bougie guided intubation",                                            "https://youtu.be/E7Lo1JD2Brk"],
+      ["Retrograde intubation - Katie Normand",                               "http://www.airwayelearning.com/awel/videos/videos.aspx?Action=1&NewsId=1860&PID=64893"],
       ["Retrograde intubation",                                               "https://youtu.be/JYMwy1-MwMU"]     
     ]
     @cric = [
@@ -410,6 +412,7 @@ class StaticPagesController < ApplicationController
       ["LMA Use - Chris Gallagher",                                           "http://youtu.be/-oXa-f5qkGY"]  
     ]
     @advanced_airway = [
+      ["Flexible Fiberoptic Scope",                                           "http://www.airwayelearning.com/awel/videos/videos.aspx?Action=1&NewsId=2300&PID=64893"],
       ["Awake Fiberoptic - Yale Media Lab",                                   "http://medicine.yale.edu/anesthesiology/media/videos.aspx#6-163756"],
       ["Awake Fiberoptic / Transtracheal Block - Michael Bailin",             "https://youtu.be/bDRTzmuwMnQ"],
       ["Fiberoptic intubation tips - Chris Gallagher",                        "http://youtu.be/-Ehjj06HReE"],
@@ -417,6 +420,7 @@ class StaticPagesController < ApplicationController
       ["Glidescope demo",                                                     "https://youtu.be/Kt2VweVmNwY"],
       ["Glidescope demo - HospitalProcdures.org",                             "https://youtu.be/4VAMBj2kc2Y"],
       ["Bougie guided intubation",                                            "https://youtu.be/E7Lo1JD2Brk"],
+      ["Retrograde intubation - Katie Normand",                               "http://www.airwayelearning.com/awel/videos/videos.aspx?Action=1&NewsId=1860&PID=64893"],
       ["Retrograde intubation",                                               "https://youtu.be/JYMwy1-MwMU"]     
     ]
     @cric = [

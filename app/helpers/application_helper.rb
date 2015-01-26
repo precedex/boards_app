@@ -49,7 +49,6 @@ module ApplicationHelper
     current_page?(regional_path) ||
     current_page?(airway_path) ||
     current_page?(movies_path) ||
-    current_page?(sites_education_simulation_path) ||
     current_page?(sites_education_path)
   end
 
