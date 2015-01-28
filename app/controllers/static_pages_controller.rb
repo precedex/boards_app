@@ -205,6 +205,17 @@ class StaticPagesController < ApplicationController
     ]
   end
   
+  def echoboards
+    @nbe = "http://www.echoboards.org"
+    @basic = "http://www.echoboards.org/content/basic-pte®"
+    @advanced = "http://www.echoboards.org/content/advanced-pteexam®"
+    @fellowships = "http://www.scahq.org/FellowshipCareerOpportunities/AdultCardiothoracicAnesthesiologyFellowships/AccreditedFellowshipPrograms.aspx"
+    @basicpte = "http://www.echoboards.org/sites/default/files/2010_Basic_PTEeXAM_Content_Outline.pdf"
+    @advancedpte = "http://www.echoboards.org/sites/default/files/Advanced_PTE_Content_Outline_0.pdf"
+    @cvsites = "http://www.anesthesiahub.com/cardiac"
+    
+  end
+  
   def movies
     @art_rad_us = [
       ["UCSF",                                                                "https://youtu.be/YOxyssqqYNE"],   

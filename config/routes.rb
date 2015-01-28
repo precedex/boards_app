@@ -28,6 +28,7 @@ BoardsApp::Application.routes.draw do
   get    '/sites/writtenboards',          to: 'static_pages#writtens'
   get    '/sites/oralboards',             to: 'static_pages#orals'
   get    '/sites/pedsboards',             to: 'static_pages#pedsboards'
+  get    '/sites/echoboards',             to: 'static_pages#echoboards'
 
   get    '/questions/random',             to: 'questions#random'
   get    '/check_answer/:id',             to: 'questions#check_answer'
