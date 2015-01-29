@@ -212,7 +212,7 @@ class StaticPagesController < ApplicationController
     @fellowships = "http://www.scahq.org/FellowshipCareerOpportunities/AdultCardiothoracicAnesthesiologyFellowships/AccreditedFellowshipPrograms.aspx"
     @basicpte = "http://www.echoboards.org/sites/default/files/2010_Basic_PTEeXAM_Content_Outline.pdf"
     @advancedpte = "http://www.echoboards.org/sites/default/files/Advanced_PTE_Content_Outline_0.pdf"
-    @cvsites = "http://www.anesthesiahub.com/cardiac"
+    @pie = "http://pie.med.utoronto.ca/TEE/"
     @study_strategy = [
       ["Anyone taking the Basic TEE boards (7/14)",                           "http://forums.studentdoctor.net/threads/any-one-taking-the-basic-tee-boards.1082996/#post-15417881"],
       ["Advanced PTEeXAM (7/12)",                                             "http://forums.studentdoctor.net/threads/advanced-pteexam-echo-boards.930568/#post-14384680"],
