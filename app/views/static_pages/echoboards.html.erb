@@ -5,7 +5,7 @@
 
 <div class="exams">  
   <p>
-    Certification in Basic and Advanced Perioperative Transesophageal Echocardiography (PTEeXAM) is offered through the 
+    Certification in Basic and Advanced Perioperative Transesophageal Echocardiography is offered through the 
     <%= external_link_to "National Board of Echocardiography", @nbe %>. 
   </p>
 
@@ -24,4 +24,23 @@
   </ul>
   
   <!--<p>  Useful websites for education in <%= external_link_to "cardiac anesthesiology", @cvsites %>. </p> -->
+  
+  <p>
+    Discussion threads at <%= link_to_sdn_forum %>
+  </p>
+  <ul>
+    <%= render partial: 'site', collection: @study_strategy %>
+  </ul><br/>
+  <p> 
+    Echo board commercial prep courses:
+  </p>
+  <p style="font-size: 1.5em; font-style: italic; text-indent: 1em; list-style: none">
+  I don't have any experience with these products and do not endorse any
+  particular product
+  </p>
+  <ul>
+    <%= render partial: 'site', collection: @commercial_courses %>
+  </ul><br/>
+  
+  
 </div>
