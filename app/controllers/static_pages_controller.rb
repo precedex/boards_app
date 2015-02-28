@@ -225,6 +225,21 @@ class StaticPagesController < ApplicationController
     ]
   end
   
+  def crnaboards
+    @nbcrna = "http://www.nbcrna.com/Pages/default.aspx"
+    @aana = "http://www.aana.com/Pages/default.aspx"
+    @absnc = "http://www.nursingcertification.org/accreditation.html"
+    @abns = "http://www.nursingcertification.org"
+    @handbook = "http://www.nbcrna.com/certification/SiteAssets/Pages/Program-Administration/2015%20NCE%20Handbook.pdf"
+    @nurse_anes = "http://www.nurse-anesthesia.org"
+    
+    @commercial_courses = [
+      ["Valley Anesthesia",                                                         "http://www.valleyanesthesia.com"],
+      ["Core Concepts Anesthesia Review",                                           "http://www.ccanesthesiareview.com"],
+      ["CRNABoardPrep.com",                                                         "http://www.crnaboardprep.com"]
+    ]
+  end
+  
   def movies
     @art_rad_us = [
       ["UCSF",                                                                "https://youtu.be/YOxyssqqYNE"],   
