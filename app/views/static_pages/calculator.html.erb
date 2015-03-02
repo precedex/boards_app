@@ -1,50 +1,50 @@
 <% title "Risk Stratification"%>
 
 <div class = "tmccalc">
-  <h2> Risk Stratification Score for Postoperative Pneumonia </h2><br/>
+  <h2> Risk Stratification Score for Postoperative Pneumonia </h2> <br/>
   
-  <form action="/calculator" method="get" name="commit" class="form-inline">
-     <%= check_box_tag 'asa_checkbox',    '2', (params[:asa_checkbox] == '2')     %>    ASA > 3<br/><h2></h2>
-     <%= check_box_tag 'surgery_checkbox','2', (params[:surgery_checkbox] == '2') %>    Upper abdominal, chest, neuro or airway surgery<br/><h2></h2>
-     <%= check_box_tag 'resp_checkbox',   '2', (params[:resp_checkbox] == '2')    %>    COPD, pulmonary HTN, OSA or severe asthma<br/><h2></h2>
-     <%= check_box_tag 'smoking_checkbox','1', (params[:smoking_checkbox] == '1') %>    Smoking<br/><h2></h2>
-     <%= check_box_tag 'nmd_checkbox',    '1', (params[:nmd_checkbox] == '1')     %>    Impaired sensorium, neuromuscular disease or swallowing difficulty<br/><h2></h2>
-     <%= check_box_tag 'weight_checkbox', '1', (params[:weight_checkbox] == '1')  %>    Unintentional weight loss > 10%<br/><h2></h2>
-     <%= check_box_tag 'bmi_checkbox',    '1', (params[:bmi_checkbox] == '1')     %>    BMI < 22<br/><h2></h2>
-     <%= check_box_tag 'ga_checkbox',     '2', (params[:ga_checkbox] == '2')      %>    General anesthesia <br/><h2></h2>
-     <%= check_box_tag 'length_checkbox', '1', (params[:length_checkbox] == '1')  %>    Surgery > 2 hours<br/><h2></h2>
+  <%= form_tag('/calculator', method: :get) %>  
   
-     <table style="width:100%">
-       <tr>
-         <td><%= radio_button_tag 'age_radio', '0',    (params[:age_radio] != '0')        %>    Age < 65</td>
-         <td><%= radio_button_tag 'age_radio', '1',    (params[:age_radio] == '1')        %>    Age 65-80</td>
-         <td><%= radio_button_tag 'age_radio', '2',    (params[:age_radio] == '2')        %>    Age > 80</td>
-       </tr>
-       <tr>
-         <td><%= radio_button_tag 'adls_radio', '0',   (params[:adls_radio] != '0')       %>    Independent</td>
-         <td><%= radio_button_tag 'adls_radio', '1',   (params[:adls_radio] == '1')       %>    Partially Dependent</td>
-         <td><%= radio_button_tag 'adls_radio', '2',   (params[:adls_radio] == '2')       %>    Dependent </td>
-       </tr>
-       <tr>
-         <td><%= radio_button_tag 'surgery_radio', '0',   (params[:surgery_radio] != '0')       %>    Elective</td>
-         <td><%= radio_button_tag 'surgery_radio', '1',   (params[:surgery_radio] == '1')       %>    Urgent</td>
-         <td><%= radio_button_tag 'surgery_radio', '2',   (params[:surgery_radio] == '2')       %>    Emergent</td>
-       </tr> 
-     </table>
-  <br/>
+  <table style="width:100%">
+    <tr><label><%= check_box_tag 'asa_checkbox',    '2', (params[:asa_checkbox] == '2')     %>    ASA > 3 </label></tr><br>
+    <tr><label><%= check_box_tag 'surgery_checkbox','2', (params[:surgery_checkbox] == '2') %>    Upper abdominal, chest, neuro or airway surgery</label></tr><br>
+    <tr><label><%= check_box_tag 'resp_checkbox',   '2', (params[:resp_checkbox] == '2')    %>    COPD, pulmonary HTN, OSA or severe asthma</label></tr><br>
+    <tr><label><%= check_box_tag 'smoking_checkbox','1', (params[:smoking_checkbox] == '1') %>    Smoking</label></tr><br>
+    <tr><label><%= check_box_tag 'nmd_checkbox',    '1', (params[:nmd_checkbox] == '1')     %>    Impaired sensorium, neuromuscular disease or swallowing difficulty</label></tr><br>
+    <tr><label><%= check_box_tag 'weight_checkbox', '1', (params[:weight_checkbox] == '1')  %>    Unintentional weight loss > 10%</label></tr><br>
+    <tr><label><%= check_box_tag 'bmi_checkbox',    '1', (params[:bmi_checkbox] == '1')     %>    BMI < 22</label></tr><br>
+    <tr><label><%= check_box_tag 'ga_checkbox',     '2', (params[:ga_checkbox] == '2')      %>    General anesthesia</label></tr><br>
+    <tr><label><%= check_box_tag 'length_checkbox', '1', (params[:length_checkbox] == '1')  %>    Surgery > 2 hours</label></tr><br>
+    <tr>
+      <td><label><%= radio_button_tag 'age_radio', '0',    (params[:age_radio] != '0')        %>    Age < 65</label></td>
+      <td><label><%= radio_button_tag 'age_radio', '1',    (params[:age_radio] == '1')        %>    Age 65-80</label></td>
+      <td><label><%= radio_button_tag 'age_radio', '2',    (params[:age_radio] == '2')        %>    Age > 80</label></td>
+    </tr>
+    <tr>
+      <td><label><%= radio_button_tag 'adls_radio', '0',   (params[:adls_radio] != '0')       %>    Independent</label></td>
+      <td><label><%= radio_button_tag 'adls_radio', '1',   (params[:adls_radio] == '1')       %>    Partially Dependent</label></td>
+      <td><label><%= radio_button_tag 'adls_radio', '2',   (params[:adls_radio] == '2')       %>    Dependent </label></td>
+    </tr>
+    <tr>
+      <td><label><%= radio_button_tag 'surgery_radio', '0',   (params[:surgery_radio] != '0')       %>    Elective</label></td>
+      <td><label><%= radio_button_tag 'surgery_radio', '1',   (params[:surgery_radio] == '1')       %>    Urgent</label></td>
+      <td><label><%= radio_button_tag 'surgery_radio', '2',   (params[:surgery_radio] == '2')       %>    Emergent</label></td>
+    </tr> 
+  </table>
 
-    <button type="submit" class="btn btn-danger btn-lg">Get Score</button>
-      </form><h3></h3>
-  
-      <%= link_to "Reset", "/calculator", class: "btn btn-primary" %>
-  
-      <h2> Risk Score: <%= @score %> <h2> 
+  <h3></h3>
+  <button type="submit" class="btn btn-danger btn-lg">Get Score</button>
+  <h3></h3>
 
-      <% if @score < 8 %>
-        <h2 style = "color:green">  Green </h2>
-      <% elsif @score > 12 %>
-        <h2 style = "color:red">    Red   </h2>
-      <% else %>
-        <h2 style = "color:yellow"> Yellow </h2>
-      <% end %>  
+    <%= link_to "Reset", "/calculator", class: "btn btn-primary" %>
+
+    <h2> Risk Score: <%= @score %> <h2> 
+
+    <% if @score < 8 %>
+      <h2 style = "color:green">  Green </h2>
+    <% elsif @score > 12 %>
+      <h2 style = "color:red">    Red   </h2>
+    <% else %>
+      <h2 style = "color:yellow"> Yellow </h2>
+    <% end %>  
 </div>
