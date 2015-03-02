@@ -14,28 +14,37 @@
      <%= check_box_tag 'ga_checkbox',     '2', (params[:ga_checkbox] == '2')      %>    General anesthesia <br/><h2></h2>
      <%= check_box_tag 'length_checkbox', '1', (params[:length_checkbox] == '1')  %>    Surgery > 2 hours<br/><h2></h2>
   
-     <%= radio_button_tag 'age_radio', '0',    (params[:age_radio] == '0')        %>    Age < 65 &nbsp&nbsp&nbsp &nbsp &nbsp
-     <%= radio_button_tag 'age_radio', '1',    (params[:age_radio] == '1')        %>    Age 65-80 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-     <%= radio_button_tag 'age_radio', '2',    (params[:age_radio] == '2')        %>    Age > 80
-     <br/><h2></h2>
-  
-     <%= radio_button_tag 'adls_radio', '0',   (params[:adls_radio] == '0')       %>    Independent &nbsp
-     <%= radio_button_tag 'adls_radio', '1',   (params[:adls_radio] == '1')       %>    Partially Dependent &nbsp&nbsp
-     <%= radio_button_tag 'adls_radio', '2',   (params[:adls_radio] == '2')       %>    Dependent  
+     <table style="width:100%">
+       <tr>
+         <td><%= radio_button_tag 'age_radio', '0',    (params[:age_radio] != '0')        %>    Age < 65</td>
+         <td><%= radio_button_tag 'age_radio', '1',    (params[:age_radio] == '1')        %>    Age 65-80</td>
+         <td><%= radio_button_tag 'age_radio', '2',    (params[:age_radio] == '2')        %>    Age > 80</td>
+       </tr>
+       <tr>
+         <td><%= radio_button_tag 'adls_radio', '0',   (params[:adls_radio] != '0')       %>    Independent</td>
+         <td><%= radio_button_tag 'adls_radio', '1',   (params[:adls_radio] == '1')       %>    Partially Dependent</td>
+         <td><%= radio_button_tag 'adls_radio', '2',   (params[:adls_radio] == '2')       %>    Dependent </td>
+       </tr>
+       <tr>
+         <td><%= radio_button_tag 'surgery_radio', '0',   (params[:surgery_radio] != '0')       %>    Elective</td>
+         <td><%= radio_button_tag 'surgery_radio', '1',   (params[:surgery_radio] == '1')       %>    Urgent</td>
+         <td><%= radio_button_tag 'surgery_radio', '2',   (params[:surgery_radio] == '2')       %>    Emergent</td>
+       </tr> 
+     </table>
+  <br/>
 
-     <br/><br/>
-     <button type="submit" class="btn btn-danger btn-lg">Get Score</button>
-  </form><h3></h3>
+    <button type="submit" class="btn btn-danger btn-lg">Get Score</button>
+      </form><h3></h3>
   
-  <%= link_to "Reset", "/calculator", class: "btn btn-primary" %>
+      <%= link_to "Reset", "/calculator", class: "btn btn-primary" %>
   
-  <h2> Risk Score: <%= @score %> <h2> 
+      <h2> Risk Score: <%= @score %> <h2> 
 
-  <% if @score <7 %>
-    <h2 style = "color:green">  Green </h2>
-  <% elsif @score >= 12 %>
-    <h2 style = "color:red">    Red   </h2>
-  <% else %>
-    <h2 style = "color:yellow"> Yellow </h2>
-  <% end %>  
+      <% if @score < 8 %>
+        <h2 style = "color:green">  Green </h2>
+      <% elsif @score > 12 %>
+        <h2 style = "color:red">    Red   </h2>
+      <% else %>
+        <h2 style = "color:yellow"> Yellow </h2>
+      <% end %>  
 </div>

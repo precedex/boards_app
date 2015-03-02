@@ -44,6 +44,14 @@ class StaticPagesController < ApplicationController
       ["Difficult Airway Algorithm", "Airway.jpg"],
       ["Anaphylaxis",                "Anaphylaxis.jpg"]
     ]
+    
+    @anatomy = [
+      ["Bronchoscopy",               "http://www.bronchoscopy.org/downloads/posters/StepByStepPoster.pdf"],
+      ["Brachial Plexus",            "http://en.wikipedia.org/wiki/Brachial_plexus#mediaviewer/File:Brachial_Plexus_Logical_Schematic.svg"],
+      ["Lumbar Plexus",              "http://en.wikipedia.org/wiki/Lumbar_plexus#mediaviewer/File:Lumbar_plexus.svg"],
+      ["Vertebral Body",             "http://en.wikipedia.org/wiki/Vertebral_column#mediaviewer/File:718_Vertebra.jpg"]
+      
+    ]
 
     @guidelines = [
       ["ACC/AHA 2014 Preop Testing", "http://circ.ahajournals.org/content/early/2014/07/31/CIR.0000000000000106.full.pdf"],
@@ -94,11 +102,12 @@ class StaticPagesController < ApplicationController
       @length =  params[:length_checkbox]
       @age =     params[:age_radio]
       @adls =    params[:adls_radio]
+      @surgurg = params[:surgery_radio]
       
       @score = @asa.to_i +     @surgery.to_i + @resp.to_i + 
                @smoking.to_i + @nmd.to_i +     @weight.to_i +
                @bmi.to_i +     @ga.to_i +      @length.to_i +
-               @age.to_i +     @adls.to_i     
+               @age.to_i +     @adls.to_i +    @surgurg.to_i    
   end
 
   def writtens
