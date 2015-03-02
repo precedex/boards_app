@@ -1,0 +1,27 @@
+<% title "Tools" %>
+<div class="tools">
+  <dl>
+    <div id="left_column">
+      <dt id="ACLS">BLS / ACLS</dt>
+      <%= render partial: "tool", collection: @acls_algos %>
+      <br/>
+      <dt id="PALS">PALS</dt>
+      <%= render partial: "tool", collection: @pals_algos %>
+      <br/>
+      <dt id="Critical">Critical Events</dt>
+      <%= render partial: "tool", collection: @critical_events %>
+      <br/>
+    </div>
+    <div id="right_column">
+      <dt id="Calc">Clinical Calculators</dt>
+      <%= render partial: "tool", collection: @calculators %>
+      <br/>
+      <dt id="CV">Guidelines</dt>
+      <%= render partial: "tool", collection: @guidelines %>
+      <br/>
+      <dt id="Dosing">Drugs</dt>
+      <%= render partial: "tool", collection: @drug_dosing %>
+      <br/>
+    </div>
+  </dl>
+</div>
