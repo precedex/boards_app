@@ -47,7 +47,7 @@ class StaticPagesController < ApplicationController
     
     @anatomy = [
       ["Bronchoscopy",               "http://www.bronchoscopy.org/downloads/posters/StepByStepPoster.pdf"],
-      ["Brachial Plexus",            "http://en.wikipedia.org/wiki/Brachial_plexus#mediaviewer/File:Brachial_Plexus_Logical_Schematic.svg"],
+      ["Brachial Plexus",            "http://anatomyandart.com/blog/wp-content/uploads/2009/08/brachial_plexus11.jpg"],
       ["Lumbar Plexus",              "http://en.wikipedia.org/wiki/Lumbar_plexus#mediaviewer/File:Lumbar_plexus.svg"],
       ["Vertebral Body",             "http://en.wikipedia.org/wiki/Vertebral_column#mediaviewer/File:718_Vertebra.jpg"]
       
@@ -57,6 +57,7 @@ class StaticPagesController < ApplicationController
       ["ACC/AHA 2014 Preop Testing", "http://circ.ahajournals.org/content/early/2014/07/31/CIR.0000000000000106.full.pdf"],
       ["SCA Clinical Practice & Guidelines", "http://www.scahq.org/ClinicalPracticeGuidelines/Guidelines.aspx"],
       ["Endocarditis Prophylaxis",   "endocarditis.jpg"],
+      ["Difficult Airway Society",    "http://www.das.uk.com/guidelines"],
       ["ASRA Neuraxial Anticoags",   "https://kr.ihc.com/ext/Dcmnt?ncid=520499512&tfrm=default"],
       ["ASA Guidelines",             "http://www.asahq.org/For-Members/Standards-Guidelines-and-Statements.aspx"],
       ["Sedation and Anesthesia in GI Endoscopy", "http://www.asge.org/uploadedFiles/Publications_and_Products/Practice_Guidelines/Sedation%20and%20Anesthesia%20in%20GI%20Endoscopy%202008.pdf"]
@@ -223,6 +224,8 @@ class StaticPagesController < ApplicationController
     @basicpte = "http://www.echoboards.org/sites/default/files/2010_Basic_PTEeXAM_Content_Outline.pdf"
     @advancedpte = "http://www.echoboards.org/sites/default/files/Advanced_PTE_Content_Outline_0.pdf"
     @pie = "http://pie.med.utoronto.ca/TEE/"
+    @yale = "http://www.yale.edu/imaging/echo_atlas/contents/"
+    @canada = "http://csecho.ca/resources/"
     @study_strategy = [
       ["Anyone taking the Basic TEE boards (7/14)",                           "http://forums.studentdoctor.net/threads/any-one-taking-the-basic-tee-boards.1082996/#post-15417881"],
       ["Advanced PTEeXAM (7/12)",                                             "http://forums.studentdoctor.net/threads/advanced-pteexam-echo-boards.930568/#post-14384680"],
