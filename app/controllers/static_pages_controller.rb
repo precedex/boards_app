@@ -118,6 +118,7 @@ class StaticPagesController < ApplicationController
     @aba_exam_summary = ["2014 Exam Summary (PDF)", "http://www.theaba.org/pdf/SAAA-Exams-Report.pdf"]
     @open_anesthesia_keywords = ["Open Anesthesia", "http://www.openanesthesia.org/OpenAnesthesia.org:KeywordBrowser"]
     @study_strategy = [
+      ["2015 In Training Exam (2/15)",                     "http://forums.studentdoctor.net/threads/2015-in-training-exam.1122186/"],
       ["Anesthesia Q Bank (1/15)",                         "http://forums.studentdoctor.net/threads/anesthesia-q-bank.1115732/"],
       ["ABA Basic Exam (11/14)",                           "http://forums.studentdoctor.net/threads/aba-basic-exam.1106106/"],
       ["Best Review Book for Written Boards (9/14)",       "http://forums.studentdoctor.net/threads/best-review-book-for-written-boards.1098134/"],
@@ -153,10 +154,12 @@ class StaticPagesController < ApplicationController
   def orals
     @aba_archive = ["ABA", 'http://www.theaba.org/Home/Videos']
     @exam_hints_pdf = ["PDF", 'http://anesthesiaboardhints.homestead.com/HintsfortheAnesthesiologyBoardExaminationRev1.6.pdf']
+    @lovich = ["PowerPoint", "http://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=12&ved=0CCIQFjABOAo&url=http%3A%2F%2Fwww.anesthesiawiki.net%2Fmetrohealthanesthesia%2FMHAnes%2Fpresentations%2FthingsIDoForResidents.ppt&ei=kX74VOmUCcyngwSwvIGQDQ&usg=AFQjCNF6NWli0liUyXURDbK7D6NdGjFDjw&sig2=I8OKZ5k2zW1YpuYiMobSIA&bvm=bv.87519884,d.eXY"]
     @aba_training_programs = ["here", "http://www.theaba.org/Home/TrainingPrograms"]
     @the_anesthesia_consultant = ["The Anesthesia Consultant", 'http://theanesthesiaconsultant.com/2013/08/22/advice-for-passing-the-oral-board-exams-in-anesthesiology/']
 
     @study_strategy = [
+      ["Oral Boards 2014 (2/15)",                                             "http://forums.studentdoctor.net/threads/oral-boards-2015.1121495/"],
       ["It's Time to Boycott Michael Ho's Course (11/14)",                    "http://forums.studentdoctor.net/threads/its-time-to-boycott-michael-hos-course.1108105/"],
       ["Oral Boards (8/14)",                                                  "http://forums.studentdoctor.net/threads/oral-boards.1093932/"],
       ["Just Oral Boards? (7/14)",                                            "http://forums.studentdoctor.net/threads/just-oral-boards.1082494/"],
