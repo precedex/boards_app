@@ -67,7 +67,7 @@ class StaticPagesController < ApplicationController
       ["Narcotic Equivalence Converter", "http://medcalc.com/narcotics.html"],
       ["Steroid Equivalence Converter",  "http://www.medcalc.com/steroid.html"],
       ["PALS Drugs",                  "PALS_Drugs.jpg"],
-      ["Peds Anesthesia Drugs",       "http://www.morpheusanesthesia.com/Pediatric_Anesthesia_Drug_Update_ANSE07_PedAnesthERWM.pdf"],
+      ["Peds Anesthesia Drugs",       "http://anesthesia.stonybrook.edu/teaching/peds-drug-dosages"],
       ["Peds Anesthesia Pocket Ref",  "http://pedianesthesia.ucsf.edu/pdf_pedirefcard.pdf"],
       ["Periop Antibiotic Dosing",    "http://www.ashp.org/DocLibrary/BestPractices/TGSurgery.aspx"],
       ["PONV Prophylaxis",            "PONV.jpg"],
