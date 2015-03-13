@@ -2,8 +2,8 @@ state,program,website
 AL,U. Alabama,https://www.uab.edu/medicine/anesthesiology/
 AZ,U. Arizona,http://anesth.medicine.arizona.edu
 AZ,Mayo Clinic AZ,http://www.mayo.edu/msgme/residencies-fellowships/anesthesiology
-AR,U. Arkansas,http://anesthesiology.uams.edu/uamsanesthresidents
-CA,LA County-Harbor-UCLA,http://www.anesharborucla.org
+AR,U. Arkansas,http://anesthesiology.uams.edu
+CA,Harbor/UCLA,http://www.anesharborucla.org
 CA,Naval Medical Center San Diego,http://www.med.navy.mil/sites/nmcsd/staff/pages/anesthesiologyresidencyprogramarp.aspx
 CA,UC Davis,http://www.ucdmc.ucdavis.edu/anesthesiology
 CA,UC Irvine,http://www.anesthesiology.uci.edu/
@@ -11,11 +11,11 @@ CA,Loma Linda,http://www.lluanesthesia.com/
 CA,USC,http://keck.usc.edu/anesthesia
 CA,Cedars-Sinai,http://cedars-sinai.edu/Education/Graduate-Medical-Education/Residency-Programs/Anesthesiology/index.aspx
 CA,UCLA,http://www.anes.ucla.edu/
-CA,UCSD,http://anes-som.ucsd.edu/index.htm
+CA,UCSD,http://anesthesia.ucsd.edu/Pages/default.aspx
 CA,UCSF,http://anesthesia.ucsf.edu/extranet/home/default.php
 CA,Stanford,http://med.stanford.edu/anesthesia/
-CO,U. Colorado,http://www.ucdenver.edu/academics/colleges/medicalschool/departments/
-CT,Yale,http://anesthesia.yale.edu/
+CO,U. Colorado,http://www.ucdenver.edu/academics/colleges/medicalschool/departments/Anesthesiology/Pages/Anesthesiology.aspx
+CT,Yale,http://medicine.yale.edu/anesthesiology/
 CT,U. Connecticut,http://gme.uchc.edu/programs/anesthesiology/
 DC,Georgetown,http://anesthesiology.georgetown.edu/
 DC,George Washington,http://www.gwumc.edu/smhs/anesthesiology/
@@ -29,7 +29,7 @@ GA,Medical College of GA,http://www.gru.edu/mcg/anes/
 GA,Emory,http://www.anesthesiology.emory.edu/
 IL,U. Illinois,http://chicago.medicine.uic.edu/departments___programs/departments/anesthesiology/
 IL,U. Chicago,http://anesthesia.uchicago.edu/
-IL,Loyola,http://www.stritch.luc.edu/depts/anesth/index.htm
+IL,Loyola,http://www.stritch.luc.edu/anesthesiology/
 IL,Cook County,http://www.cookcountyhhs.org/medical-clinicalservices/anesthesiology/education-research/
 IL,Advocate Illinois Masonic,http://www.advocatehealth.com/immc-anesthesiology-residency
 IL,Northwestern,http://www.feinberg.northwestern.edu/sites/anesthesiology/
@@ -47,7 +47,7 @@ LA,LSU,http://www.medschool.lsuhsc.edu/anesthesiology/residency.aspx
 ME,Maine Medical,http://www.mmc.org/mmc_anesres.cfm?id=1262
 MD,U. Maryland,http://medschool.umaryland.edu/anesthesiology/
 MD,Johns Hopkins,http://www.hopkinsmedicine.org/anesthesiology
-MA,Beth Israel Deaconess,http://bidmc.org/MedicalEducation/GraduateMedicalEducation.aspx
+MA,Beth Israel Deaconess,http://www.bidmc.org/Centers-and-Departments/Departments/Anesthesia-Critical-Care-and-Pain-Medicine.aspx
 MA,Babystate Medical,http://www.baystatehealth.com/anesresidency
 MA,Boston U.,http://www.bmc.org/anesthesia/
 MA,Tufts,https://www.tuftsmedicalcenter.org/patient-care-services/Departments-and-Services/Anesthesiology/Overview.aspx
@@ -56,7 +56,7 @@ MA,St. Elizabeth's,http://www.steward.org/Medical-Professional-Education/St-Eliz
 MA,MGH,http://www.massgeneral.org/anesthesia/
 MA,U. Mass,http://www.umassmed.edu/anes
 MI,Wayne State,http://anesthesiology.med.wayne.edu/
-MI,William Beaumont,https://www.meded.beaumont.edu/anesthesiology-residency
+MI,William Beaumont,https://meded.beaumont.edu/anesthesiology-residency
 MI,U. Michigan,http://www.med.umich.edu/anes/
 MI,Henry Ford,http://www.henryford.com/body_program.cfm?id=37257
 MI,Detroit Medical,http://www.med.wayne.edu/anesthesiology/residency.htm
@@ -65,19 +65,19 @@ MN,U. Minnesota,http://www.med.umn.edu/anesthesiology/
 MI,U. Mississippi,http://anesthesiology.umc.edu/
 MO,U. Missouri Columbia,http://som.missouri.edu/Anest/
 MO,Washington University,http://www.anest.wustl.edu/
-MO,U. Missouri Kansas City,http://www.med.umkc.edu/residency/anesthesiology
+MO,U. Missouri Kansas City,http://med.umkc.edu/anesthesiology/
 MO,St. Louis Univeristy,http://anesthesia.slu.edu/
 NE,U. Nebraska,http://www.unmc.edu/anesthesia
 NH,Dartmouth,http://gme.dartmouth-hitchcock.org/anesthesiology
 NJ,Cooper Medical,http://www.cooperhealth.org/content/GME_Anesthesiology.htm
-NJ,St. Barnabus,http://www.barnabashealth.org/education/sbmc/anesthesia/index.html
+NJ,St. Barnabus,http://www.barnabashealth.org/Medical-Education/Saint-Barnabas-Medical-Center/Anesthesiology.aspx
 NJ,Rutgers New Jersey Medical School,http://njms.rutgers.edu/departments/anesthesiology/index.cfm
 NJ,St. Joseph's,http://www.stjosephsanesthesia.com/
 NJ,Rutgers Robert Wood Johnson,http://rwjms.rutgers.edu/departments_institutes/anesthesiology/residency/index.html
 NM,U. New Mexico,http://anesthesiology.unm.edu/
 NY,Long Island Jewish,https://www.northshorelij.com/research-and-education/graduate-medical-education/residency-anesthesiology-north-shore-lij-health-system
 NY,Maimonides,http://www.maimonidesmed.org/MedicalEducation/AnesthesiologyResidency.aspx
-NY,New York Methodist,http://www.nym.org/education/residencies/anesth/anesth.html
+NY,New York Methodist,http://www.nym.org/For-Health-Professionals/Medical-Residency-Programs/Anesthesiology-Residency-Program.aspx
 NY,Columbia,http://www.cumc.columbia.edu/dept/anesthesiology/
 NY,St. Luke's Roosevelt,http://www.slranesthesiology.com/
 NY,U. Rochester,https://www.urmc.rochester.edu/anesthesiology.aspx
@@ -99,26 +99,25 @@ OH,U. Cincinnati,http://www.anesth.uc.edu/
 OH,Case Western,http://www.uhhospitals.org/case/services/anesthesiology-and-perioperative-medicine/medical-education/anesthesiology-residency
 OH,U. Toledo,http://www.utoledo.edu/med/depts/anesthesiology/residency/edu.html
 OH,Case Western (MetroHealth),http://www.metrohealth.org/anesthesiology/anesthesiology-residency-training-program
-OH,Cleveland Clinic,http://clevelandclinic.org/anesthesia/residency
+OH,Cleveland Clinic,http://my.clevelandclinic.org/services/anesthesiology
 OK,U. Oklahoma,http://www.oumedicine.com/anesthesiology
 OR,Oregon Health & Science,http://www.ohsu.edu/anesth
 PA,Geisinger Health,http://www.geisinger.edu/residencies/anesthesia/
 PA,Penn State,http://www.pennstatehershey.org/anesthesia
-PA,Drexel,http://www.drexelmed.edu/Home/ResidenciesandFellowships/ResidencyPrograms/
-PA,U. Pennsylvania,http://www.uphs.upenn.edu/dripps/
-PA,Thomas Jefferson,http://www.jefferson.edu/jmc/anesthesiology/
+PA,Drexel,http://www.drexelmed.edu/Home/ResidenciesandFellowships/ResidencyPrograms/Anesthesiology.aspx
+PA,Thomas Jefferson,http://www.jefferson.edu/university/jmc/departments/anesthesiology.html
 PA,UPMC,http://www.anes.upmc.edu/
 PA,Temple University,http://www.temple.edu/anes
-PA,Allegheny General Hospital - Western Pennsylvania,http://www.wpahs.org/residency/anesthesia/index.html
-PR,U. Puerto Rico,http://w3srv3.md.rcm.upr.edu/anesthesiology/
+PA,Allegheny General Hospital - Western Pennsylvania,https://www.ahn.org/education/graduate-medical-education/residencies/anesthesiology-residency
+PR,U. Puerto Rico,http://md.rcm.upr.edu/anesthesiology/
 SC,Medical U. South Carolina,http://www.musc.edu/anesthesia
 TN,U. Tennessee,http://gsm.utmck.edu/anesthesiology/main.htm
 TN,Vanderbilt,http://www.vandydreamteam.com/
 TX,UT Medical Branch,http://www.anesthesia.utmb.edu/
-TX,Texas Tech,http://www.ttuhsc.edu/som/anesthesiology/residency/default.aspx
+TX,Texas Tech,http://www.ttuhsc.edu/som/anesthesiology/
 TX,San Antonio Uniformed Services ,http://www.gprmc.amedd.army.mil/
 TX,UT Southwestern,http://www.utswanesthesia.org/
-TX,UT San Antonio,http://www.anesthesia.uthscsa.edu/
+TX,UT San Antonio,http://www.bamc.amedd.army.mil/saushec/gme/residency/anesthesiology/
 TX,Texas A&M,http://gme-anesthesia.sw.org/
 TX,Baylor,http://www.bcm.edu/anesthesiology/
 TX,UT Houston,http://www.uth.tmc.edu/anes/
