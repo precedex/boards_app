@@ -57,6 +57,13 @@ BoardsApp::Application.routes.draw do
     collection { post :import }
   end
   
+  # residencies
+  get "residencies/index",                   to: 'residencies#index'
+  get "residencies/import"
+  resources :residencies do
+    collection { post :import }
+  end
+  
   # journals
   get   '/sites/journals',                to: 'sites#index',     :category => 'journal'
 
