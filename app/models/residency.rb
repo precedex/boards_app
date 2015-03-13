@@ -13,14 +13,4 @@ class Residency < ActiveRecord::Base
       end # end if !residency.nil?
     end # end CSV.foreach
   end # end self.import(file)
-  
-  RESIDENCY_LIKE = 'program ILIKE :search'
-  
-  def self.search(search)
-    if search
-      Residency.where(RESIDENCY_LIKE, search: "%#{search.downcase}%")
-    else
-      Residency.all
-    end
-  end
 end

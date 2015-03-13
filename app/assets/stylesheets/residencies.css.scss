@@ -2,40 +2,26 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-  table.pretty {
+  table.pretty_b {
     border-collapse: collapse;
-    width: 100%;
     text-align: center;
+    width: 50%;
+    margin-left:auto; 
+    margin-right:auto;
   }
   
-  .pretty th {
+  .pretty_b th {
     font-variant: small-caps;
     font-size: 2em;
     a{color:black;}
     text-align: center;
   }
   
-  .pretty th .current {
-    font-size: 1.2em;
-    padding-right: 30px;
-    background-repeat: no-repeat;
-    background-position: right center;
-    background-size: contain;
-  }
-  
-  .pretty th .asc {
-    background-image: asset_url('up_arrow.gif');
-  }
-  
-  .pretty th .desc {
-    background-image: asset_url('down_arrow.gif');
-  }
-  
-  .pretty td{
+  .pretty_b td{
     font-size: 1.4em;
     padding: 5px;
   }
   
-	.pretty tr {
+	.pretty_b tr {
 		border-bottom: silver 1px solid;
 	}
