@@ -1,7 +1,8 @@
 class ResidenciesController < ApplicationController
   helper_method :sort_column, :sort_direction
   def index
-    @residencies = Residency.search(params[:search]).order(sort_column + " " + sort_direction)
+    #@residencies = Residency.all.order(sort_column + " " + sort_direction)
+    @residencies = Residency.all
   end
 
   def import
