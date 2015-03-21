@@ -4,7 +4,7 @@ class ResourcesController < ApplicationController
 
   def index
     @resources = if params[:category_id]
-                   Category.find(params[:category_id]).resources.by_title
+                   Category.friendly.find(params[:category_id]).resources.by_title
                  else
                    Resource.by_title
                  end

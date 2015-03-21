@@ -6,6 +6,7 @@ gem 'bootstrap-sass'
 gem 'nokogiri', '1.6.3.1'
 gem 'pg', '~>0.17.0'
 gem 'haml'
+gem 'friendly_id'
 
 group :development, :test do
   gem 'rspec-rails', '2.13.1'
