@@ -13,4 +13,8 @@ class Residency < ActiveRecord::Base
       end # end if !residency.nil?
     end # end CSV.foreach
   end # end self.import(file)
+  
+  def self.by_state
+    order("lower(state)")
+  end
 end

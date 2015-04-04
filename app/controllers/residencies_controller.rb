@@ -1,6 +1,6 @@
 class ResidenciesController < ApplicationController
   def index
-    @residencies = Residency.all
+    @residencies = Residency.all.by_state
   end
 
   def import

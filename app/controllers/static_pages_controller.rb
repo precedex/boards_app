@@ -145,7 +145,6 @@ class StaticPagesController < ApplicationController
     ]
 
     @commercial_courses = [
-      ["10th Hour Anesthesia Review",                    "http://www.anesthesia-review.com"],
       ["True Learn Anesthesiology",                      "http://www.truelearn.com/anesthesiology/"],
       ["Anesthesia Exam",                                "http://www.anesthesiaexam.com"],
       ["Beyond Anesthesia",                              "http://beyondanesthesia.com"],
@@ -256,6 +255,8 @@ class StaticPagesController < ApplicationController
     
     @commercial_courses = [
       ["Valley Anesthesia",                                                         "http://www.valleyanesthesia.com"],
+      ["Prodigy Anesthesia",                                                        "http://www.prodigyanesthesia.net"],
+      ["Apex Anesthesia Review",                                                    "http://www.apexanesthesia.com"],
       ["Core Concepts Anesthesia Review",                                           "http://www.ccanesthesiareview.com"],
       ["CRNABoardPrep.com",                                                         "http://www.crnaboardprep.com"]
     ]
