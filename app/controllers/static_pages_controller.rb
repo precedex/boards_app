@@ -112,9 +112,13 @@ class StaticPagesController < ApplicationController
   end
 
   def writtens
-    @old_aba_exams = ["1990-1996 In-training Examinations", "http://www.theaba.org/Home/examinations_certifications"]
+    @basic = ["BASIC", "http://www.theaba.org/Exams/BASIC-(Staged-Exam)/About-BASIC-(Staged-Exam)"]
+    @advanced = ["ADVANCED", "http://www.theaba.org/Exams/ADVANCED-(Staged-Exam)/About-ADVANCED-(Staged-Exam)"]
+    @part1 = ["Part 1", "http://www.theaba.org/Exams/Traditional-Part-1/About-Traditional-Part-1"]
+    @part2 = ["Part 2", "http://www.theaba.org/Exams/Traditional-Part-2/About-Traditional-Part-2"]
+    @old_aba_exams = ["1990-1996 In-training Examinations", "http://www.theaba.org/TRAINING-PROGRAMS/In-training-Exam/Previous-Exams"]
     @aba_training_programs = ["here", "http://www.theaba.org/Home/TrainingPrograms"]
-    @aba_content_outline = ["content outline", "http://www.theaba.org/pdf/Basic-and-Advanced-ContentOutline.pdf"]
+    @aba_content_outline = ["content outline", "http://www.theaba.org/PDFs/BASIC-Exam/Basic-and-Advanced-ContentOutline"]
     @aba_exam_summary = ["2014 Exam Summary (PDF)", "http://www.theaba.org/pdf/SAAA-Exams-Report.pdf"]
     @open_anesthesia_keywords = ["Open Anesthesia", "http://www.openanesthesia.org/OpenAnesthesia.org:KeywordBrowser"]
     @study_strategy = [
@@ -146,6 +150,7 @@ class StaticPagesController < ApplicationController
 
     @commercial_courses = [
       ["True Learn Anesthesiology",                      "http://www.truelearn.com/anesthesiology/"],
+      ["AQB - anesthesiaQbank",                          "http://anesthesiaqbank.com"],
       ["Anesthesia Exam",                                "http://www.anesthesiaexam.com"],
       ["Beyond Anesthesia",                              "http://beyondanesthesia.com"],
       ["Core Concepts Anesthesia Review",                "http://www.ccanesthesiareview.com/QOD/QOD.asp"],
@@ -157,7 +162,8 @@ class StaticPagesController < ApplicationController
   end
 
   def orals
-    @aba_archive = ["ABA", 'http://www.theaba.org/Home/Videos']
+    @applied = ["APPLIED", "http://www.theaba.org/Exams/APPLIED-(Staged-Exam)/About-APPLIED-(Staged-Exam)"]
+    @aba_archive = ["ABA", 'http://www.theaba.org/TRAINING-PROGRAMS/Traditional-Part-2/Traditional-Part-2-Videos']
     @exam_hints_pdf = ["PDF", 'http://anesthesiaboardhints.homestead.com/HintsfortheAnesthesiologyBoardExaminationRev1.6.pdf']
     @lovich = ["PowerPoint", "http://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=12&ved=0CCIQFjABOAo&url=http%3A%2F%2Fwww.anesthesiawiki.net%2Fmetrohealthanesthesia%2FMHAnes%2Fpresentations%2FthingsIDoForResidents.ppt&ei=kX74VOmUCcyngwSwvIGQDQ&usg=AFQjCNF6NWli0liUyXURDbK7D6NdGjFDjw&sig2=I8OKZ5k2zW1YpuYiMobSIA&bvm=bv.87519884,d.eXY"]
     @aba_training_programs = ["here", "http://www.theaba.org/Home/TrainingPrograms"]
@@ -204,8 +210,9 @@ class StaticPagesController < ApplicationController
   end
 
   def pedsboards
-    @peds_exam_content = "http://www.theaba.org/pdf/PAContentOutline.pdf"
-    @peds_exam_questions = "http://www.theaba.org/pdf/PASampleQuestions.pdf"
+    @peds_cert = ["certification", "http://www.theaba.org/Exams/Pediatric-Anesthesiology/Pediatric-Anesthesiology"]
+    @peds_exam_content = "http://www.theaba.org/PDFs/Pediatrics-Anesthesiology/PAContentOutline"
+    @peds_exam_questions = "http://www.theaba.org/PDFs/Pediatrics-Anesthesiology/PASampleQuestions"
     @study_strategy = [
       ["Pediatric Anesthesia Study Books (7/14)",                            "http://forums.studentdoctor.net/threads/pediatric-anesthesia-study-books.1089468/"],
       ["Pediatric Anesthesia Boards (4/14)",                                 "http://forums.studentdoctor.net/threads/pediatric-anesthesia-boards.1065636/"],

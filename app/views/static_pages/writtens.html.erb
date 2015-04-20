@@ -8,9 +8,8 @@
 <div class='exams'>
   <p>
     The ABA has significantly changed the board certification process. Traditionally 
-    there was a part 1 written exam taken after residency graduation and a part 2 oral exam taken 
-    after passing part 1. Residents graduating after June 30, 2016 will take the new staged exams:
-    BASIC (in July of CA-2 year), and ADVANCED (after graduating). 
+    there was a <%= external_link_to *@part1 %> written exam taken after residency graduation and a <%= external_link_to *@part2 %> oral exam taken after passing part 1.          Residents graduating after June 30, 2016 will take the new staged exams:
+    <%= external_link_to *@basic %> (in July of CA-2 year), and <%= external_link_to *@advanced %> (after graduating). 
   </p>
 
   <p>
@@ -83,10 +82,10 @@
     </p>
     <br><br>
   </div>
-
+<!--
   <p>
-    The ABA has released data from the 2014 exams: <%= external_link_to *@aba_exam_summary %>
-  </p>
+     The ABA has released data from the 2014 exams: <%= external_link_to *@aba_exam_summary %>
+  </p> -->
   <p>
     Curves plotted below assume normally distributed test scores. I have no inside information on the score distribution.
   </p>  
