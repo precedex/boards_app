@@ -7,26 +7,26 @@
 
 <div class="exams">
   <p>
-    The part 2 exam will be replaced by the <%= external_link_to *@applied %> exam in 2017, with both oral and         OSCE components.
+    The <%= external_link_to *@part2 %> exam will be replaced by the <%= external_link_to *@applied %> exam in 2017, with both oral and OSCE components.
   </p>
 
   <p>
-    The oral board exam tests your ability to organize your thoughts quickly
-    and communicate them efficiently. You are being evaluated on your ability
-    to formulate and articulate your thoughts clearly. This is a very different
-    skill than that required to excel on the written exam. The single best way
-    to prepare for the exam is to simulate the exam experience with a seasoned
-    examiner. You must get used to the pace of the exam and thinking on your
-    feet.
+    The part 2 / Applied exam is offered 9 weeks of the year (previously 2) at the ABA assessment center in Raleigh, NC.
   </p>
-
+  
   <div class='graphics'>
-  <%= image_tag("ABA14OralSuccess.png") %>
+  <%= image_tag("Part2Results.png") %>
+  <%= image_tag("OralDates.png") %>
   </div>
 
   <br>
   <p>
-    Video overview of the oral boards available from the <%= external_link_to *@aba_archive %>
+    <u>What to Expect: The ABA Part 2 Examination</u> and <u>ABA Part 2 Examination Orientation</u>  
+    <%= external_link_to *@aba_videos %> from the ABA.
+  </p>
+  <p>
+    <u>Mastering the Part 2 Examination</u> and <u>Improper Candidate Behavior</u>   
+    <%= external_link_to *@aba_archive %> from the ABA.
   </p>
   <p>
     Oral board review <%= external_link_to "books", category_resources_path("Oral Board") %>

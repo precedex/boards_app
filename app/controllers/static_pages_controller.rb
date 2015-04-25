@@ -140,8 +140,10 @@ class StaticPagesController < ApplicationController
   end
 
   def orals
+    @part2 = ["part 2", "http://www.theaba.org/Exams/Traditional-Part-2/About-Traditional-Part-2"]
     @applied = ["APPLIED", "http://www.theaba.org/Exams/APPLIED-(Staged-Exam)/About-APPLIED-(Staged-Exam)"]
-    @aba_archive = ["ABA", 'http://www.theaba.org/TRAINING-PROGRAMS/Traditional-Part-2/Traditional-Part-2-Videos']
+    @aba_archive = ["videos", 'http://www.theaba.org/TRAINING-PROGRAMS/Traditional-Part-2/Traditional-Part-2-Videos']
+    @aba_videos = ["videos", 'http://www.theaba.org/ABOUT/Videos']
     @exam_hints_pdf = ["PDF", 'http://anesthesiaboardhints.homestead.com/HintsfortheAnesthesiologyBoardExaminationRev1.6.pdf']
     @lovich = ["PowerPoint", "http://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=12&ved=0CCIQFjABOAo&url=http%3A%2F%2Fwww.anesthesiawiki.net%2Fmetrohealthanesthesia%2FMHAnes%2Fpresentations%2FthingsIDoForResidents.ppt&ei=kX74VOmUCcyngwSwvIGQDQ&usg=AFQjCNF6NWli0liUyXURDbK7D6NdGjFDjw&sig2=I8OKZ5k2zW1YpuYiMobSIA&bvm=bv.87519884,d.eXY"]
     @aba_training_programs = ["here", "http://www.theaba.org/Home/TrainingPrograms"]
