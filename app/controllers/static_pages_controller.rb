@@ -16,7 +16,6 @@ class StaticPagesController < ApplicationController
   end
 
   def tools
- 
     @acls_algos = [
       ["Simplified Adult BLS ",       "http://crashingpatient.com/wp-content/images/acls/basic.jpg"],
       ["Cardiac Arrest Cycle",        "http://circ.ahajournals.org/content/122/18_suppl_3/S729/F2.large.jpg"],
@@ -50,7 +49,6 @@ class StaticPagesController < ApplicationController
       ["Brachial Plexus",            "http://anatomyandart.com/blog/wp-content/uploads/2009/08/brachial_plexus11.jpg"],
       ["Lumbar Plexus",              "http://en.wikipedia.org/wiki/Lumbar_plexus#mediaviewer/File:Lumbar_plexus.svg"],
       ["Vertebral Body",             "http://en.wikipedia.org/wiki/Vertebral_column#mediaviewer/File:718_Vertebra.jpg"]
-      
     ]
 
     @guidelines = [
@@ -89,26 +87,6 @@ class StaticPagesController < ApplicationController
       ["A-a Gradient",                   "http://www.mdcalc.com/a-a-o2-gradient/"],
       ["Cockgroft-Gault CrCl",           "http://www.mdcalc.com/creatinine-clearance-cockcroft-gault-equation/"]
     ]
-  end
-
-  def calculator
-      @asa =     params[:asa_checkbox] 
-      @surgery = params[:surgery_checkbox] 
-      @resp =    params[:resp_checkbox]
-      @smoking = params[:smoking_checkbox]
-      @nmd =     params[:nmd_checkbox]
-      @weight =  params[:weight_checkbox]
-      @bmi =     params[:bmi_checkbox]
-      @ga =      params[:ga_checkbox]
-      @length =  params[:length_checkbox]
-      @age =     params[:age_radio]
-      @adls =    params[:adls_radio]
-      @surgurg = params[:surgery_radio]
-      
-      @score = @asa.to_i +     @surgery.to_i + @resp.to_i + 
-               @smoking.to_i + @nmd.to_i +     @weight.to_i +
-               @bmi.to_i +     @ga.to_i +      @length.to_i +
-               @age.to_i +     @adls.to_i +    @surgurg.to_i    
   end
 
   def writtens
@@ -269,328 +247,23 @@ class StaticPagesController < ApplicationController
     ]
   end
   
-  def movies
-    @art_rad_us = [
-      ["UCSF",                                                                "https://youtu.be/YOxyssqqYNE"],   
-      ["Sonosite 3D",                                                         "https://youtu.be/uHfeyAYiWOc"] 
-    ]
-    @art_rad_non_us = [
-      ["NEJM",                                                                "https://youtu.be/8hK04ai17-k"],   
-      ["Kaiser Permanente - Barry Bloom",                                     "https://youtu.be/6--8J4iqGEY"],
-      ["Arrow Catheter",                                                      "https://youtu.be/ug2JIsk8494"],
-      ["Yale Media Lab - Viji Kurup",                                         "http://medicine.yale.edu/anesthesiology/media/videos.aspx#6-178321"],
-      ["marhaba2000",                                                         "https://youtu.be/qv54USEYNzw"]
-    ]
-    @art_brach_us = [
-    ]
-    @art_brach_non_us = [
-      ["Dr. Gallagher's Neighborhood",                                        "https://youtu.be/fRUHD6WJraU"]   
-    ] 
-    @cent_ij_us = [
-      ["NEJM",                                                                "https://youtu.be/HE5QhsPRaPU"],   
-      ["Mount Sinai Hospital - David Reich",                                  "https://youtu.be/coEpM7IBzsM"], 
-      ["Sonosite, Part 1 - Phil Perera",                                      "https://youtu.be/_RHRy64jQ6s"], 
-      ["Sonosite, Part 2 - Phil Perera",                                      "https://youtu.be/zV3hw_QbgK4"], 
-      ["Sonosite, Cedars-Sinai - Diku Mandavia",                              "https://youtu.be/21w4kuD0_gA"] 
-    ]
-    @cent_ij_non_us = [
-      ["MedicineUpToDate",                                                    "https://youtu.be/tf11gOpmmTo"]   
-    ] 
-    @swan = [
-      ["Kaiser Permanente - Barry Bloom",                                     "https://youtu.be/HdlCH_h_Hao"]
-    ]
-    @cent_subclav_us = [
-      ["Sonosite 3D",                                                         "https://youtu.be/IBmbc1ak5fY"],
-      ["Sonosite - Supraclavicular Approach - Phil Perera",                   "https://youtu.be/I3Jqbxa1_Ts"]          
-    ]
-    @cent_subclav_non_us = [
-      ["Ashton Moh",                                                          "https://youtu.be/p-yUMu63TMQ"]   
-    ]
-    @cent_fem_us = [
-      ["Sonosite 3D",                                                         "https://youtu.be/gNvbxeoUMlc"]   
-    ]
-    @cent_fem_non_us = [
-      ["Medicine UpToDate",                                                   "https://youtu.be/ybCpeb2E0dU"]   
-    ]
-    @interscalene = [
-      ["NYSORA",                                                              "https://youtu.be/Zke6938Y1k4"],
-      ["Sonosite - David Auyong",                                             "https://youtu.be/Dg9BJ-32yLc"],
-      ['Sonosite 3D',                                                         "https://youtu.be/wAABZF1aSO8"],
-      ['Yale Media Lab',                                                      "https://medicine.yale.edu/anesthesiology/media/videos.aspx#6-194040"],
-      ['Analogic - Brian Pollard',                                            'https://youtu.be/6HhKpLEdGWY'],
-      ['Samsung',                                                             "https://youtu.be/3IvQqrLDfHU"],
-      ['RACSI - Robert Raw',                                                  "https://youtu.be/cUYsFNL9g2M"],
-      ["SSRA - Theresa Bowling",                                              "https://youtu.be/OhFs-batCSY"]   
-    ]
-    @supraclavicular = [
-      ["NYSORA",                                                              "https://youtu.be/UmG-bgEQQ4E"],
-      ["LSORA",                                                               "https://youtu.be/by28CWp-H-o"],
-      ['Analogic - Brian Pollard',                                            "https://youtu.be/JD5MYRhjsWU"],
-      ["Sonosite - David Auyong",                                             "https://youtu.be/ztOIvfjsB-U"],
-      ["Sonosite 3D",                                                         "https://youtu.be/9vW1uo7mKDc"],
-      ["Yale Media Lab",                                                      "http://medicine.yale.edu/anesthesiology/media/videos.aspx#6-194043"],
-      ["RACSI - Robert Raw",                                                  "https://youtu.be/FeQfAlJkPk8"],
-      ["Stuart Grant",                                                        "https://youtu.be/oRUlnmQrWJ0"],
-      ["SSRA - Theresa Bowling",                                              "https://youtu.be/FgH5RWkhD0g"]   
-    ]
-    @infraclavicular = [
-      ["Sonosite - David Auyong",                                             "https://youtu.be/hRyDtXrfYqc"],
-      ['Analogic - Brandon Winchester (Catheter)',                            'https://youtu.be/GL6q61r_oU8'],
-      ["Yale Media Lab",                                                      "http://medicine.yale.edu/anesthesiology/media/videos.aspx#6-194039"],
-      ["RASCI - Robert Raw",                                                  "https://youtu.be/HtDEYcxtE5w"],
-      ["SSRA - Theresa Bowling",                                              "https://youtu.be/Z9woYkyJl_U"]   
-    ]
-    @axillary = [
-      ["NYSORA",                                                              "https://youtu.be/DdbtAClkBAs"],
-      ["Sonosite - David Auyong",                                             "https://youtu.be/GaH-CO6OrV0"],
-      ['Sonosite 3D',                                                         "https://youtu.be/3utZmyOXrYg"],
-      ["Yale Media Lab",                                                      "http://medicine.yale.edu/anesthesiology/media/videos.aspx#6-194036"],
-      ['Samsung',                                                             "https://youtu.be/_03WDU7a7fs"],
-      ['RACSI - Robert Raw',                                                  "https://youtu.be/3iVjzo13w9g"]  
-    ]
-    @femoral = [
-      ["NYSORA",                                                              "https://youtu.be/1mkHrVxdGNg"],
-      ["Sonosite - David Auyong",                                             "https://youtu.be/5ht_N8j2KL8"],
-      ["Sonosite 3D",                                                         "https://youtu.be/pCkjioc-EmQ"],
-      ['Analogic - Brian Pollard',                                            "https://youtu.be/KINbrLTI7PI"],
-      ["Yale Media Lab",                                                      "http://medicine.yale.edu/anesthesiology/media/videos.aspx#6-194038"],
-      ["Yale Media Lab - Saphenous Block",                                    "http://medicine.yale.edu/anesthesiology/media/videos.aspx#6-194021"],
-      ["Stuart Grant",                                                        "https://youtu.be/wxQKdrPw2tA"],
-      ["SSRA - Steven Finkel",                                                "https://youtu.be/DwtvZ0tC9ng"],
-      ["Analogic - Brandon Winchester - Adductor Canal Catheter",             "https://youtu.be/4WFerLClu9s"],
-      ["AMSURA - Adductor Canal",                                             "https://youtu.be/o9zzqILu0Dk"]   
-    ]
-    @sciatic = [
-      ["NYSORA - Popliteal",                                                  "https://youtu.be/gH1BS54EYjU"],
-      ["LSORA - Popliteal",                                                   "https://youtu.be/b2q1sRVa9cM"],
-      ["Yale Media Lab - Popliteal",                                          "http://medicine.yale.edu/anesthesiology/media/videos.aspx#6-194041"],
-      ["Samsung - Popliteal",                                                 'https://youtu.be/PX2XTLOKQL0'],
-      ["Analogic - Brian Pollard",                                            'https://youtu.be/6UFrD69QuCs'],
-      ["UCSF - Popliteal",                                                    "https://youtu.be/CTJJdISVc24"],
-      ["SSRA - Popliteal - Steven Finkel",                                    "https://youtu.be/qYM2sft8R2I"],  
-      ["Sonosite - Popliteal - David Auyong",                                 "https://youtu.be/kzhSiQBPE7s"],
-      ["Yale Media Lab - Subgluteal",                                         "http://medicine.yale.edu/anesthesiology/media/videos.aspx#6-194042"],
-      ["Samsung - Subgluteal",                                                "https://youtu.be/Vh2msgOrHYo"],
-      ["Sonosite - Subgluteal - David Auyong",                                "https://youtu.be/rl8rZOEMveE"],
-      ["Samsung - Anterior",                                                  "https://youtu.be/2MOsXoRWO3s"],
-      ["SSRA - Anterior - Steven Finkel",                                     "https://youtu.be/h14Ee2yAmUU"]
-    ]
-    
-    @lumbar_plexus = [
-      ["Manoj Karmakar",                                                      "http://usra.ca/view_video.php?videoid=124"] 
-    ]
-    
-    @abdominal = [
-      ["Sonosite 3D - Ilioinguinal / Iliohypogastric",                        "https://youtu.be/uurxBFRT_EE"],
-      ["Sonosite - Ilioinguinal / Iliohypogastric - David Auyong",            "https://youtu.be/6E3ynIn6Ud4"],
-      ["SSRA - TAP Block - Theresa Bowling",                                  "https://youtu.be/9iXkZ8KG2X4"],
-      ["Analogic - TAP Block - Brandon Winchester",                           "https://youtu.be/Ou1aft6ClM8"],
-      ["Pajunk - TAP Block",                                                  "https://youtu.be/CzMDdrPbLEM"],
-      ["TAP Block - Brian Sites",                                             "https://youtu.be/9TIHDn7uBZI"],
-      ["SSRA - Fascia Iliaca Block - Steven Finkel",                          "https://youtu.be/2rCiAbtLmZ8"],
-      ["David Provenzano - Ilioinguinal/Iliohypogastric/TAP lecture",         "http://usra.ca/view_video.php?videoid=166"]
-    ]
-    
-    @pediatric_block = [  
-      ["Pediatric TAP Block",                                                 "https://youtu.be/XfRLiny_D8E"]
-    ]
-    
-    @spinal = [
-      ["Procedural Checklist - Stanford",                                     "https://youtu.be/eblMcptvcAo"],
-      ["Obstetric Spinal",                                                    "https://youtu.be/JC0ljF1TRuQ"],
-      ["Hal DeVera (Shriner's) - Ultrasound-guided 3 year-old",               "http://usra.ca/view_video.php?videoid=153"]   
-    ]
-    @epidural = [
-      ["Braun Perifix",                                                       "https://youtu.be/Ttm0p8MJRWA"],
-      ["10 Tips to Optimize Technique - Lecture - Lawrence Tsen",             "https://youtu.be/_BqxQW4Uyh4"] 
-    ]
-    @paravertebral = [
-      ["LSORA",                                                               "http://youtu.be/vSbhqR5oIAs"],
-      ["SSRA - US-guided - Theresa Bowling",                                  "https://youtu.be/l97p0mbOv1E"]
-    ]
-    @intubation_adult = [
-      ["Orotracheal Intubation Part I - NEJM",                                "https://youtu.be/8SS_AhR-DUw"],
-      ["Orotracheal Intubation Part II- NEJM",                                "https://youtu.be/t_8lNoaP6Oo"],
-      ["Intubation on Mannequin - Chris Gallagher",                           "http://youtu.be/ZJtFb7lGPic"],
-      ["Basic Principles of Direct Laryngoscopy",                             "https://youtu.be/ooiw6zpCJbI"],
-      ["FoundationSkills.net animation",                                      "https://youtu.be/0VGiBwyfuNI"],
-      ["Direct Laryngoscopy",                                                 "https://youtu.be/tjR_-Wq4pns"],
-      ["Endotracheal Intubation",                                             "https://youtu.be/5J3J38se3TQ"],
-      ["Mannequin demo - Keith Littlewood",                                   "https://youtu.be/-c3DxFEGaL4"]
-    ]
-    @intubation_pediatric = [
-      ["Pediatric Glidescope Intubation",                                     "https://youtu.be/166GYtQd2Z4"],
-      ["Neonatal Intubation",                                                 "https://youtu.be/23ArsJyJzvg"]     
-    ]
-    @olv = [
-      ["Double-Lumen Tube Part I",                                            "https://youtu.be/w1cgx2AVC6k"],
-      ["Double-Lumen Tube Part II",                                           "https://youtu.be/JZkOiy4PXxg"],
-      ["Bronchial Blocker",                                                   "https://youtu.be/mlS35eUUxqA"]  
-    ]
-    @mask = [
-      ["Mask Ventilation - Chris Gallagher",                                  "http://youtu.be/1goz1l28kUQ"],
-      ["LMA Use - Chris Gallagher",                                           "http://youtu.be/-oXa-f5qkGY"]  
-    ]
-    @advanced_airway = [
-      ["Flexible Fiberoptic Scope",                                           "http://www.airwayelearning.com/awel/videos/videos.aspx?Action=1&NewsId=2300&PID=64893"],
-      ["Awake Fiberoptic - Yale Media Lab",                                   "http://medicine.yale.edu/anesthesiology/media/videos.aspx#6-163756"],
-      ["Awake Fiberoptic / Transtracheal Block - Michael Bailin",             "https://youtu.be/bDRTzmuwMnQ"],
-      ["Fiberoptic intubation tips - Chris Gallagher",                        "http://youtu.be/-Ehjj06HReE"],
-      ["Video Laryngoscopy - Chris Gallagher",                                "http://youtu.be/I1k_z8kGwt4"],
-      ["Glidescope demo",                                                     "https://youtu.be/Kt2VweVmNwY"],
-      ["Glidescope demo - HospitalProcdures.org",                             "https://youtu.be/4VAMBj2kc2Y"],
-      ["Bougie guided intubation",                                            "https://youtu.be/E7Lo1JD2Brk"],
-      ["Retrograde intubation - Katie Normand",                               "http://www.airwayelearning.com/awel/videos/videos.aspx?Action=1&NewsId=1860&PID=64893"],
-      ["Retrograde intubation",                                               "https://youtu.be/JYMwy1-MwMU"]     
-    ]
-    @cric = [
-      ["Percutaneous Cricothyrotomy tutorial - Chris Gallagher",              "http://youtu.be/1DBHhvWIPCk"],
-      ["Surgical Cricothyrotomy Animation",                                   "https://youtu.be/dvWy9NXiZZI"],
-      ["Surgical Cricothyroidotomy - UCSD - Dennis Kim",                      "https://youtu.be/Kg14kdIycDE"],
-      ["Needle Cricothyrotomy",                                               "https://youtu.be/aPiQA2XKkcs"]  
-    ]
-  end
-  
-  def airway
-    @intubation_adult = [
-      ["Orotracheal Intubation Part I - NEJM",                                "https://youtu.be/8SS_AhR-DUw"],
-      ["Orotracheal Intubation Part II- NEJM",                                "https://youtu.be/t_8lNoaP6Oo"],
-      ["Intubation on Mannequin - Chris Gallagher",                           "http://youtu.be/ZJtFb7lGPic"],
-      ["Basic Principles of Direct Laryngoscopy",                             "https://youtu.be/ooiw6zpCJbI"],
-      ["FoundationSkills.net animation",                                      "https://youtu.be/0VGiBwyfuNI"],
-      ["Direct Laryngoscopy",                                                 "https://youtu.be/tjR_-Wq4pns"],
-      ["Endotracheal Intubation",                                             "https://youtu.be/5J3J38se3TQ"],
-      ["Mannequin demo - Keith Littlewood",                                   "https://youtu.be/-c3DxFEGaL4"]
-    ]
-    @intubation_pediatric = [
-      ["Pediatric Glidescope Intubation",                                     "https://youtu.be/166GYtQd2Z4"],
-      ["Neonatal Intubation",                                                 "https://youtu.be/23ArsJyJzvg"]     
-    ]
-    @olv = [
-      ["Double-Lumen Tube Part I",                                            "https://youtu.be/w1cgx2AVC6k"],
-      ["Double-Lumen Tube Part II",                                           "https://youtu.be/JZkOiy4PXxg"],
-      ["Bronchial Blocker",                                                   "https://youtu.be/mlS35eUUxqA"]  
-    ]
-    @mask = [
-      ["Mask Ventilation - Chris Gallagher",                                  "http://youtu.be/1goz1l28kUQ"],
-      ["LMA Use - Chris Gallagher",                                           "http://youtu.be/-oXa-f5qkGY"]  
-    ]
-    @advanced_airway = [
-      ["Flexible Fiberoptic Scope",                                           "http://www.airwayelearning.com/awel/videos/videos.aspx?Action=1&NewsId=2300&PID=64893"],
-      ["Awake Fiberoptic - Yale Media Lab",                                   "http://medicine.yale.edu/anesthesiology/media/videos.aspx#6-163756"],
-      ["Awake Fiberoptic / Transtracheal Block - Michael Bailin",             "https://youtu.be/bDRTzmuwMnQ"],
-      ["Fiberoptic intubation tips - Chris Gallagher",                        "http://youtu.be/-Ehjj06HReE"],
-      ["Video Laryngoscopy - Chris Gallagher",                                "http://youtu.be/I1k_z8kGwt4"],
-      ["Glidescope demo",                                                     "https://youtu.be/Kt2VweVmNwY"],
-      ["Glidescope demo - HospitalProcdures.org",                             "https://youtu.be/4VAMBj2kc2Y"],
-      ["Bougie guided intubation",                                            "https://youtu.be/E7Lo1JD2Brk"],
-      ["Retrograde intubation - Katie Normand",                               "http://www.airwayelearning.com/awel/videos/videos.aspx?Action=1&NewsId=1860&PID=64893"],
-      ["Retrograde intubation",                                               "https://youtu.be/JYMwy1-MwMU"]     
-    ]
-    @cric = [
-      ["Percutaneous Cricothyrotomy tutorial - Chris Gallagher",              "http://youtu.be/1DBHhvWIPCk"],
-      ["Surgical Cricothyrotomy Animation",                                   "https://youtu.be/dvWy9NXiZZI"],
-      ["Surgical Cricothyroidotomy - UCSD - Dennis Kim",                      "https://youtu.be/Kg14kdIycDE"],
-      ["Needle Cricothyrotomy",                                               "https://youtu.be/aPiQA2XKkcs"]  
-    ]
-  end
-  
-  def regional
-    @interscalene = [
-      ["NYSORA",                                                              "https://youtu.be/Zke6938Y1k4"],
-      ["Sonosite - David Auyong",                                             "https://youtu.be/Dg9BJ-32yLc"],
-      ['Sonosite 3D',                                                         "https://youtu.be/wAABZF1aSO8"],
-      ['Yale Media Lab',                                                      "https://medicine.yale.edu/anesthesiology/media/videos.aspx#6-194040"],
-      ['Analogic - Brian Pollard',                                            'https://youtu.be/6HhKpLEdGWY'],
-      ['Samsung',                                                             "https://youtu.be/3IvQqrLDfHU"],
-      ['RACSI - Robert Raw',                                                  "https://youtu.be/cUYsFNL9g2M"],
-      ["SSRA - Theresa Bowling",                                              "https://youtu.be/OhFs-batCSY"]   
-    ]
-    @supraclavicular = [
-      ["NYSORA",                                                              "https://youtu.be/UmG-bgEQQ4E"],
-      ["LSORA",                                                               "https://youtu.be/by28CWp-H-o"],
-      ['Analogic - Brian Pollard',                                            "https://youtu.be/JD5MYRhjsWU"],
-      ["Sonosite - David Auyong",                                             "https://youtu.be/ztOIvfjsB-U"],
-      ["Sonosite 3D",                                                         "https://youtu.be/9vW1uo7mKDc"],
-      ["Yale Media Lab",                                                      "http://medicine.yale.edu/anesthesiology/media/videos.aspx#6-194043"],
-      ["RACSI - Robert Raw",                                                  "https://youtu.be/FeQfAlJkPk8"],
-      ["Stuart Grant",                                                        "https://youtu.be/oRUlnmQrWJ0"],
-      ["SSRA - Theresa Bowling",                                              "https://youtu.be/FgH5RWkhD0g"]   
-    ]
-    @infraclavicular = [
-      ["Sonosite - David Auyong",                                             "https://youtu.be/hRyDtXrfYqc"],
-      ['Analogic - Brandon Winchester (Catheter)',                            'https://youtu.be/GL6q61r_oU8'],
-      ["Yale Media Lab",                                                      "http://medicine.yale.edu/anesthesiology/media/videos.aspx#6-194039"],
-      ["RASCI - Robert Raw",                                                  "https://youtu.be/HtDEYcxtE5w"],
-      ["SSRA - Theresa Bowling",                                              "https://youtu.be/Z9woYkyJl_U"]   
-    ]
-    @axillary = [
-      ["NYSORA",                                                              "https://youtu.be/DdbtAClkBAs"],
-      ["Sonosite - David Auyong",                                             "https://youtu.be/GaH-CO6OrV0"],
-      ['Sonosite 3D',                                                         "https://youtu.be/3utZmyOXrYg"],
-      ["Yale Media Lab",                                                      "http://medicine.yale.edu/anesthesiology/media/videos.aspx#6-194036"],
-      ['Samsung',                                                             "https://youtu.be/_03WDU7a7fs"],
-      ['RACSI - Robert Raw',                                                  "https://youtu.be/3iVjzo13w9g"]  
-    ]
-    @femoral = [
-      ["NYSORA",                                                              "https://youtu.be/1mkHrVxdGNg"],
-      ["Sonosite - David Auyong",                                             "https://youtu.be/5ht_N8j2KL8"],
-      ["Sonosite 3D",                                                         "https://youtu.be/pCkjioc-EmQ"],
-      ['Analogic - Brian Pollard',                                            "https://youtu.be/KINbrLTI7PI"],
-      ["Yale Media Lab",                                                      "http://medicine.yale.edu/anesthesiology/media/videos.aspx#6-194038"],
-      ["Yale Media Lab - Saphenous Block",                                    "http://medicine.yale.edu/anesthesiology/media/videos.aspx#6-194021"],
-      ["Stuart Grant",                                                        "https://youtu.be/wxQKdrPw2tA"],
-      ["SSRA - Steven Finkel",                                                "https://youtu.be/DwtvZ0tC9ng"],
-      ["Analogic - Brandon Winchester - Adductor Canal Catheter",             "https://youtu.be/4WFerLClu9s"],
-      ["AMSURA - Adductor Canal",                                             "https://youtu.be/o9zzqILu0Dk"]   
-    ]
-    @sciatic = [
-      ["NYSORA - Popliteal",                                                  "https://youtu.be/gH1BS54EYjU"],
-      ["LSORA - Popliteal",                                                   "https://youtu.be/b2q1sRVa9cM"],
-      ["Yale Media Lab - Popliteal",                                          "http://medicine.yale.edu/anesthesiology/media/videos.aspx#6-194041"],
-      ["Samsung - Popliteal",                                                 'https://youtu.be/PX2XTLOKQL0'],
-      ["Analogic - Brian Pollard",                                            'https://youtu.be/6UFrD69QuCs'],
-      ["UCSF - Popliteal",                                                    "https://youtu.be/CTJJdISVc24"],
-      ["SSRA - Popliteal - Steven Finkel",                                    "https://youtu.be/qYM2sft8R2I"],  
-      ["Sonosite - Popliteal - David Auyong",                                 "https://youtu.be/kzhSiQBPE7s"],
-      ["Yale Media Lab - Subgluteal",                                         "http://medicine.yale.edu/anesthesiology/media/videos.aspx#6-194042"],
-      ["Samsung - Subgluteal",                                                "https://youtu.be/Vh2msgOrHYo"],
-      ["Sonosite - Subgluteal - David Auyong",                                "https://youtu.be/rl8rZOEMveE"],
-      ["Samsung - Anterior",                                                  "https://youtu.be/2MOsXoRWO3s"],
-      ["SSRA - Anterior - Steven Finkel",                                     "https://youtu.be/h14Ee2yAmUU"]
-    ]
-    
-    @lumbar_plexus = [
-      ["Manoj Karmakar",                                                      "http://usra.ca/view_video.php?videoid=124"] 
-    ]
-    
-    @abdominal = [
-      ["Sonosite 3D - Ilioinguinal / Iliohypogastric",                        "https://youtu.be/uurxBFRT_EE"],
-      ["Sonosite - Ilioinguinal / Iliohypogastric - David Auyong",            "https://youtu.be/6E3ynIn6Ud4"],
-      ["SSRA - TAP Block - Theresa Bowling",                                  "https://youtu.be/9iXkZ8KG2X4"],
-      ["Analogic - TAP Block - Brandon Winchester",                           "https://youtu.be/Ou1aft6ClM8"],
-      ["Pajunk - TAP Block",                                                  "https://youtu.be/CzMDdrPbLEM"],
-      ["TAP Block - Brian Sites",                                             "https://youtu.be/9TIHDn7uBZI"],
-      ["SSRA - Fascia Iliaca Block - Steven Finkel",                          "https://youtu.be/2rCiAbtLmZ8"],
-      ["David Provenzano - Ilioinguinal/Iliohypogastric/TAP lecture",         "http://usra.ca/view_video.php?videoid=166"]
-    ]
-    
-    @pediatric_block = [  
-      ["Pediatric TAP Block",                                                 "https://youtu.be/XfRLiny_D8E"]
-    ]
-    
-    @spinal = [
-      ["Procedural Checklist - Stanford",                                     "https://youtu.be/eblMcptvcAo"],
-      ["Obstetric Spinal",                                                    "https://youtu.be/JC0ljF1TRuQ"],
-      ["Hal DeVera (Shriner's) - Ultrasound-guided 3 year-old",               "http://usra.ca/view_video.php?videoid=153"]   
-    ]
-    @epidural = [
-      ["Braun Perifix",                                                       "https://youtu.be/Ttm0p8MJRWA"],
-      ["10 Tips to Optimize Technique - Lecture - Lawrence Tsen",             "https://youtu.be/_BqxQW4Uyh4"] 
-    ]
-    @paravertebral = [
-      ["LSORA",                                                               "http://youtu.be/vSbhqR5oIAs"],
-      ["SSRA - US-guided - Theresa Bowling",                                  "https://youtu.be/l97p0mbOv1E"]
-    ]
+  def calculator
+      @asa =     params[:asa_checkbox] 
+      @surgery = params[:surgery_checkbox] 
+      @resp =    params[:resp_checkbox]
+      @smoking = params[:smoking_checkbox]
+      @nmd =     params[:nmd_checkbox]
+      @weight =  params[:weight_checkbox]
+      @bmi =     params[:bmi_checkbox]
+      @ga =      params[:ga_checkbox]
+      @length =  params[:length_checkbox]
+      @age =     params[:age_radio]
+      @adls =    params[:adls_radio]
+      @surgurg = params[:surgery_radio]
+      
+      @score = @asa.to_i +     @surgery.to_i + @resp.to_i + 
+               @smoking.to_i + @nmd.to_i +     @weight.to_i +
+               @bmi.to_i +     @ga.to_i +      @length.to_i +
+               @age.to_i +     @adls.to_i +    @surgurg.to_i    
   end
 end

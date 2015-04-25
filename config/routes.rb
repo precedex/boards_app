@@ -1,21 +1,10 @@
 BoardsApp::Application.routes.draw do
   
-  # Deprecated routes
-  # At the top, because they might otherwise match a real route
-  get   '/resources/reference_textbooks', to: redirect("/categories/1/resources")
-  get   '/resources/concise_textbooks',   to: redirect("/categories/2/resources")
-  get   '/resources/case-based_textbooks',to: redirect("/categories/3/resources")
-  get   '/resources/pediatric_textbooks', to: redirect("/categories/4/resources")
-  get   '/resources/cardiac_textbooks',   to: redirect("/categories/5/resources")
-  get   '/resources/ob_textbooks',        to: redirect("/categories/6/resources")
-  get   '/resources/handbooks',           to: redirect("/categories/7/resources")
-  get   '/resources/review_textbooks',    to: redirect("/categories/8/resources")
-  get   '/resources/oralboards',          to: redirect("/categories/9/resources")
-
-  get    '/orals',                        to: redirect("/sites/oralboards")
-
   # home page
   root  'static_pages#welcome'
+
+  # tools
+  get    '/tools',                        to: 'static_pages#tools'
 
   # books
   resources :resources
@@ -40,32 +29,32 @@ BoardsApp::Application.routes.draw do
     resources :questions, only: [:index]
   end
 
-  # blogs
-  get   '/sites/blogs',                   to: 'sites#index',     :category => 'blog'
 
   # education
-  get   '/sites/education',               to: 'sites#index',     :category => 'education'
-  get   '/regional',                      to: 'static_pages#regional'
-  get   '/airway',                        to: 'static_pages#airway'
-  get   '/sites/education/video',         to: 'sites#index',     :category => 'education-video'
-  get   '/calendar',                      to: 'static_pages#calendar'
-  
-  # lectures
-  get "lectures/index",                   to: 'lectures#index'
-  get "lectures/import"
-  resources :lectures do
-    collection { post :import }
-  end
-  
-  # residencies
-  get "residencies/index",                   to: 'residencies#index'
-  get "residencies/import"
+  get   'residencies/index',              to: 'residencies#index'
+  get   'residencies/import'
   resources :residencies do
     collection { post :import }
   end
   
-  # journals
-  get   '/sites/journals',                to: 'sites#index',     :category => 'journal'
+  get   '/calendar',                      to: 'static_pages#calendar'
+  
+  get   'lectures/index',                 to: 'lectures#index'
+  get   'lectures/import'
+  resources :lectures do
+    collection { post :import }
+  end
+  
+  get   '/regional',                      to: 'movies#regional'
+  get   '/airway',                        to: 'movies#airway'
+  get   '/movies',                        to: 'movies#index'
+  get   'movies/import'
+  resources :movies do
+    collection { post :import }
+  end
+  
+  get   '/sites/education',               to: 'sites#index',     :category => 'education'
+  get   '/sites/education/video',         to: 'sites#index',     :category => 'education-video'
 
   # societies
   get   '/sites/societies/us',            to: 'sites#index',     :category => 'society-us'
@@ -75,17 +64,17 @@ BoardsApp::Application.routes.draw do
   get   '/sites/societies/pain',          to: 'sites#index',     :category => 'society-pain'
   get   '/sites/societies/crna',          to: 'sites#index',     :category => 'society-crna'
 
+  # journals
+  get   '/sites/journals',                to: 'sites#index',     :category => 'journal'
+  
+  # blogs
+  get   '/sites/blogs',                   to: 'sites#index',     :category => 'blog'
+
   # sites
   resources :sites
-
-  # tools
-  get    '/tools',                        to: 'static_pages#tools'
   
   # calculator
   get    '/calculator',                   to: 'static_pages#calculator'
-  
-  # movies
-  get    '/movies',                       to: 'static_pages#movies'
 
   # footer
   get    '/secret',                       to: 'static_pages#secret'

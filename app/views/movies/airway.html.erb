@@ -29,7 +29,7 @@
               <div id="intubation-adult" class="panel-collapse collapse">
                 <div class="panel-body">
                   <% @intubation_adult.each do |movie| %> 
-                  <a href="<%= movie[1] %>" target = "_blank" class="btn btn-primary btn-block" role="button"><%= movie[0] %></a>
+                  <a href="<%= movie.url %>" target = "_blank" class="btn btn-primary btn-block" role="button"><%= movie.title %></a>
                   <% end %>
                 </div>
               </div>         
@@ -47,7 +47,7 @@
               <div id="intubation-pediatric" class="panel-collapse collapse">
                 <div class="panel-body">
                   <% @intubation_pediatric.each do |movie| %> 
-                  <a href="<%= movie[1] %>" target = "_blank" class="btn btn-primary btn-block" role="button"><%= movie[0] %></a>
+                  <a href="<%= movie.url %>" target = "_blank" class="btn btn-primary btn-block" role="button"><%= movie.title %></a>
                   <% end %>
                 </div>
               </div>        
@@ -65,7 +65,7 @@
               <div id="olv" class="panel-collapse collapse">
                 <div class="panel-body">
                   <% @olv.each do |movie| %> 
-                  <a href="<%= movie[1] %>" target = "_blank" class="btn btn-primary btn-block" role="button"><%= movie[0] %></a>
+                  <a href="<%= movie.url %>" target = "_blank" class="btn btn-primary btn-block" role="button"><%= movie.title %></a>
                   <% end %>
                 </div>
               </div>        
@@ -83,7 +83,7 @@
               <div id="mask" class="panel-collapse collapse">
                 <div class="panel-body">
                   <% @mask.each do |movie| %> 
-                  <a href="<%= movie[1] %>" target = "_blank" class="btn btn-primary btn-block" role="button"><%= movie[0] %></a>
+                  <a href="<%= movie.url %>" target = "_blank" class="btn btn-primary btn-block" role="button"><%= movie.title %></a>
                   <% end %>
                 </div>
               </div>        
@@ -101,7 +101,7 @@
               <div id="advanced" class="panel-collapse collapse">
                 <div class="panel-body">
                   <% @advanced_airway.each do |movie| %> 
-                  <a href="<%= movie[1] %>" target = "_blank" class="btn btn-primary btn-block" role="button"><%= movie[0] %></a>
+                  <a href="<%= movie.url %>" target = "_blank" class="btn btn-primary btn-block" role="button"><%= movie.title %></a>
                   <% end %>
                 </div>
               </div>        
@@ -119,7 +119,7 @@
               <div id="cric" class="panel-collapse collapse">
                 <div class="panel-body">
                   <% @cric.each do |movie| %> 
-                  <a href="<%= movie[1] %>" target = "_blank" class="btn btn-primary btn-block" role="button"><%= movie[0] %></a>
+                  <a href="<%= movie.url %>" target = "_blank" class="btn btn-primary btn-block" role="button"><%= movie.title %></a>
                   <% end %>
                 </div>
               </div>        

@@ -1,0 +1,65 @@
+<% title "MOCA" %>
+<div class = "sites">
+  <h1> <%= yield(:title) %> </h1>
+</div>
+
+<div class="exams">  
+  <p>
+    The <%= external_link_to "American Board of Anesthesiology", @aba %> 
+    (ABA), has recently updated its process for maintenance of certification. MOCA 2.0, as it is now called, modifies the requirements in the following way (to the best of my understanding). Please refer to the 
+    <%= external_link_to " MOCA 2.0 FAQ", @moca2 %>.
+  </p>
+
+  <p>
+   Part 1: Professionalism and Professional Standing
+  </p>
+  <p>
+   Part 2: Lifelong Learning and Self-Assessment
+  </p>
+  <p>
+   Part 3: Assessment of Knowledge, Judgment and Skills
+  </p>
+  <p>
+   Part 4: Improvement in Medical Practice
+  </p>
+  <p>
+    The NCE is a variable-length computerized adaptive test. There are a minimum of 100 and a maximum of 170 questions which include 30 non-graded test questions. Candidates will receive a preliminary pass/fail report when they complete the exam. The content outline, exam information and sample questions can be found in the
+    <%= external_link_to "2015 NCE Handbook", @handbook %>.
+  </p>
+
+  <p> Clinical requirements for students enrolled after January 1, 2015: </p>
+  
+  <div class='graphics'>
+   <%= image_tag("CRNAreq.png") %>
+  </div>
+  
+  <div class='graphics'>
+   <%= image_tag("NCE.jpg") %>
+  </div>
+  
+  <p> The following books may be useful for exam preparation: </p>
+  
+  <div class='graphics'>
+   <%= external_link_to image_tag("Burns.jpg"), "http://www.amazon.com/Certification-Review-Nurse-Anesthesia-Shari/dp/0071827668" %>
+   <%= external_link_to image_tag("CRNAcert.jpg"), "http://www.amazon.com/Certification-Review-Kelly-Wiltse-Nicely/dp/1449670482" %>
+   <%= external_link_to image_tag("CRNACards.jpg"), "http://www.amazon.com/CRNA-Exam-Flashcard-Study-System/dp/1609715284" %>
+   <%= external_link_to image_tag("CRNAPocket.jpg"), "http://www.amazon.com/Nurse-Anesthesia-Pocket-Guide-Clinicians/dp/0763773026" %>
+   <%= external_link_to image_tag("Nagelhout.jpg"), "http://www.amazon.com/Nurse-Anesthesia-5e-Nagelhout/dp/1455706124" %>  
+  </div>
+  <br/>
+  <p>
+    Discussion threads at <%= external_link_to "Nurse-Anesthesia.org", @nurse_anes %>
+  </p>
+
+  <p> 
+    Nurse Anesthesia board commercial prep courses:
+  </p>
+  <p style="font-size: 1.5em; font-style: italic; text-indent: 1em; list-style: none">
+  I don't have any experience with these products and do not endorse any
+  particular product
+  </p>
+  <ul>
+    <%= render partial: 'site', collection: @commercial_courses %>
+  </ul><br/>
+</div>
+

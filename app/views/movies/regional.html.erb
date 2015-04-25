@@ -29,7 +29,7 @@
               <div id="interscalene" class="panel-collapse collapse">
                 <div class="panel-body">
                   <% @interscalene.each do |movie| %> 
-                  <a href="<%= movie[1] %>" target = "_blank" class="btn btn-primary btn-block" role="button"><%= movie[0] %></a>
+                  <a href="<%= movie.url %>" target = "_blank" class="btn btn-primary btn-block" role="button"><%= movie.title %></a>
                   <% end %>
                 </div>
               </div>         
@@ -47,7 +47,7 @@
               <div id="supraclavicular" class="panel-collapse collapse">
                 <div class="panel-body">
                   <% @supraclavicular.each do |movie| %> 
-                  <a href="<%= movie[1] %>" target = "_blank" class="btn btn-primary btn-block" role="button"><%= movie[0] %></a>
+                  <a href="<%= movie.url %>" target = "_blank" class="btn btn-primary btn-block" role="button"><%= movie.title %></a>
                   <% end %>
                 </div>
               </div>        
@@ -65,7 +65,7 @@
               <div id="infraclavicular" class="panel-collapse collapse">
                 <div class="panel-body">
                   <% @infraclavicular.each do |movie| %> 
-                  <a href="<%= movie[1] %>" target = "_blank" class="btn btn-primary btn-block" role="button"><%= movie[0] %></a>
+                  <a href="<%= movie.url %>" target = "_blank" class="btn btn-primary btn-block" role="button"><%= movie.title %></a>
                   <% end %>
                 </div>
               </div>        
@@ -83,7 +83,7 @@
               <div id="axillary" class="panel-collapse collapse">
                 <div class="panel-body">
                   <% @axillary.each do |movie| %> 
-                  <a href="<%= movie[1] %>" target = "_blank" class="btn btn-primary btn-block" role="button"><%= movie[0] %></a>
+                  <a href="<%= movie.url %>" target = "_blank" class="btn btn-primary btn-block" role="button"><%= movie.title %></a>
                   <% end %>
                 </div>
               </div>        
@@ -101,7 +101,7 @@
               <div id="femoral" class="panel-collapse collapse">
                 <div class="panel-body">
                   <% @femoral.each do |movie| %> 
-                  <a href="<%= movie[1] %>" target = "_blank" class="btn btn-primary btn-block" role="button"><%= movie[0] %></a>
+                  <a href="<%= movie.url %>" target = "_blank" class="btn btn-primary btn-block" role="button"><%= movie.title %></a>
                   <% end %>
                 </div>
               </div>        
@@ -119,7 +119,7 @@
               <div id="sciatic" class="panel-collapse collapse">
                 <div class="panel-body">
                   <% @sciatic.each do |movie| %> 
-                  <a href="<%= movie[1] %>" target = "_blank" class="btn btn-primary btn-block" role="button"><%= movie[0] %></a>
+                  <a href="<%= movie.url %>" target = "_blank" class="btn btn-primary btn-block" role="button"><%= movie.title %></a>
                   <% end %>
                 </div>
               </div>        
@@ -137,7 +137,7 @@
               <div id="lumbar_plexus" class="panel-collapse collapse">
                 <div class="panel-body">
                   <% @lumbar_plexus.each do |movie| %> 
-                  <a href="<%= movie[1] %>" target = "_blank" class="btn btn-primary btn-block" role="button"><%= movie[0] %></a>
+                  <a href="<%= movie.url %>" target = "_blank" class="btn btn-primary btn-block" role="button"><%= movie.title %></a>
                   <% end %>
                 </div>
               </div>        
@@ -155,7 +155,7 @@
               <div id="abdominal" class="panel-collapse collapse">
                 <div class="panel-body">
                   <% @abdominal.each do |movie| %> 
-                  <a href="<%= movie[1] %>" target = "_blank" class="btn btn-primary btn-block" role="button"><%= movie[0] %></a>
+                  <a href="<%= movie.url %>" target = "_blank" class="btn btn-primary btn-block" role="button"><%= movie.title %></a>
                   <% end %>
                 </div>
               </div>        
@@ -173,7 +173,7 @@
               <div id="pediatric" class="panel-collapse collapse">
                 <div class="panel-body">
                   <% @pediatric_block.each do |movie| %> 
-                  <a href="<%= movie[1] %>" target = "_blank" class="btn btn-primary btn-block" role="button"><%= movie[0] %></a>
+                  <a href="<%= movie.url %>" target = "_blank" class="btn btn-primary btn-block" role="button"><%= movie.title %></a>
                   <% end %>
                 </div>
               </div>        
@@ -207,7 +207,7 @@
               <div id="spinal" class="panel-collapse collapse">
                 <div class="panel-body">
                   <% @spinal.each do |movie| %> 
-                  <a href="<%= movie[1] %>" target = "_blank" class="btn btn-primary btn-block" role="button"><%= movie[0] %></a>
+                  <a href="<%= movie.url %>" target = "_blank" class="btn btn-primary btn-block" role="button"><%= movie.title %></a>
                   <% end %>
                 </div>
               </div>         
@@ -225,7 +225,7 @@
               <div id="epidural" class="panel-collapse collapse">
                 <div class="panel-body">
                   <% @epidural.each do |movie| %> 
-                  <a href="<%= movie[1] %>" target = "_blank" class="btn btn-primary btn-block" role="button"><%= movie[0] %></a>
+                  <a href="<%= movie.url %>" target = "_blank" class="btn btn-primary btn-block" role="button"><%= movie.title %></a>
                   <% end %>
                 </div>
               </div>        
@@ -243,7 +243,7 @@
                <div id="paravertebral" class="panel-collapse collapse">
                  <div class="panel-body">
                    <% @paravertebral.each do |movie| %> 
-                   <a href="<%= movie[1] %>" target = "_blank" class="btn btn-primary btn-block" role="button"><%= movie[0] %></a>
+                   <a href="<%= movie.url %>" target = "_blank" class="btn btn-primary btn-block" role="button"><%= movie.title %></a>
                    <% end %>
                  </div>
                </div>        
