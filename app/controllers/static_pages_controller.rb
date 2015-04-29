@@ -193,6 +193,7 @@ class StaticPagesController < ApplicationController
 
   def pedsboards
     @peds_cert = ["certification", "http://www.theaba.org/Exams/Pediatric-Anesthesiology/Pediatric-Anesthesiology"]
+    @pedsfellowships = "https://www.acgme.org/ads/Public/Reports/ReportRun?ReportId=1&CurrentYear=2014&SpecialtyId=4&IncludePreAccreditation=false"
     @peds_exam_content = "http://www.theaba.org/PDFs/Pediatrics-Anesthesiology/PAContentOutline"
     @peds_exam_questions = "http://www.theaba.org/PDFs/Pediatrics-Anesthesiology/PASampleQuestions"
     @study_strategy = [

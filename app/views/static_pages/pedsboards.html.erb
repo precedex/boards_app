@@ -5,9 +5,9 @@
 
 <div class="exams">  
   <p>
-    Pediatric anesthesiology <%= external_link_to *@peds_cert%> requires having completed a one-year
-    fellowship in pediatric anesthesia or, if you completed residency before July
-    2012, meeting grandfathering criteria:
+    Pediatric anesthesiology <%= external_link_to *@peds_cert%> requires completion of an ACGME-approved one-year
+    <%= external_link_to "pediatric anesthesia fellowship", @pedsfellowships%>.<br>
+    The following grandfathering criteria may substitute for that requirement for graduates prior to July 2012, but will be eliminated after 2015:
   </p>
 
   <ul>
@@ -18,7 +18,7 @@
     <li> Clinical practice must include neonates and children less than 2 </li>
   </ul>
 
-  <p> In addition, you must pass the pediatric anesthesiology examination: </p>
+  <p> In addition, one must pass the pediatric anesthesiology examination: </p>
   
   <div class='graphics'>
    <%= image_tag("ABA14Pedi.png") %>
