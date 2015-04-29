@@ -19,6 +19,7 @@ BoardsApp::Application.routes.draw do
   get    '/sites/pedsboards',             to: 'static_pages#pedsboards'
   get    '/sites/echoboards',             to: 'static_pages#echoboards'
   get    '/sites/crnaboards',             to: 'static_pages#crnaboards'
+  get    'sites/moca',                    to: 'static_pages#moca'
 
   get    '/questions/random',             to: 'questions#random'
   get    '/check_answer/:id',             to: 'questions#check_answer'

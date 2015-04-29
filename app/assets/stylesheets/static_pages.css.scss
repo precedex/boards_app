@@ -61,6 +61,21 @@ ul {
 	}
 }
 
+.moca{
+  table {
+    width: 100%; 
+    table-layout: fixed;
+    text-align: center;
+    border: 1px solid black;
+    font-size: 1.8em;
+  } 
+  th, td{
+    text-align: center;
+    border: 1px solid;
+    padding: 10px;
+  }
+}
+
 .graphics{
   text-align: center;
 

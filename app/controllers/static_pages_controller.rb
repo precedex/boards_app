@@ -76,7 +76,7 @@ class StaticPagesController < ApplicationController
       ["Surgical Apgar Score",           "http://www.mdcalc.com/surgical-apgar-score-sas-post-operative-risk/"],
       ["MELD Score",                     "http://www.mdcalc.com/meld-score-model-for-end-stage-liver-disease-12-and-older/"],
       ["Child-Pugh Score",               "http://www.mdcalc.com/child-pugh-score-for-cirrhosis-mortality/"],
-      ["Revised Cardiac Risk Index(RCRI)",     "http://www.mdcalc.com/revised-cardiac-risk-index-for-pre-operative-risk/"],
+      ["Gupta Perioperative Cardiac Risk", "http://www.qxmd.com/calculate-online/cardiology/gupta-perioperative-cardiac-risk"],
       ["Injury Severity Score (ISS)",    "http://www.mdcalc.com/injury-severity-score-iss/"],
       ["Allowable Blood Loss",           "http://easycalculation.com/medical/allowable-blood-loss.php"],
       ["Parkland Formula",               "http://www.mdcalc.com/parkland-formula-for-burns/"],
@@ -84,6 +84,7 @@ class StaticPagesController < ApplicationController
       ["APACHE II",                      "http://www.mdcalc.com/apache-ii-score-for-icu-mortality/"],
       ["BMI / BSA",                      "http://www.mdcalc.com/bmi-and-body-surface-area-bsa/"],
       ["Ideal Body Weight",              "http://www.mdcalc.com/ideal-body-weight/"],
+      ["STOPBang (OSA)",                 "http://www.stopbang.ca/screen.php"],
       ["A-a Gradient",                   "http://www.mdcalc.com/a-a-o2-gradient/"],
       ["Cockgroft-Gault CrCl",           "http://www.mdcalc.com/creatinine-clearance-cockcroft-gault-equation/"]
     ]
@@ -100,6 +101,7 @@ class StaticPagesController < ApplicationController
     @aba_exam_summary = ["2014 Exam Summary (PDF)", "http://www.theaba.org/pdf/SAAA-Exams-Report.pdf"]
     @open_anesthesia_keywords = ["Open Anesthesia", "http://www.openanesthesia.org/OpenAnesthesia.org:KeywordBrowser"]
     @study_strategy = [
+      ["ABA Basic Exam 2015 (4/15)",                       "http://forums.studentdoctor.net/threads/aba-basic-exam-2015.1132719/#post-16429945"],
       ["How to kill basic science/ite exams? (2/15)",      "http://forums.studentdoctor.net/threads/how-to-kill-basic-science-ite-exams.1123216/"],
       ["2015 In Training Exam (2/15)",                     "http://forums.studentdoctor.net/threads/2015-in-training-exam.1122186/"],
       ["Trulearn ITE question bank, predicted score (1/15)?", "http://forums.studentdoctor.net/threads/trulearn-ite-question-bank-predicted-score.1117676/#post-16349673"],
@@ -216,6 +218,7 @@ class StaticPagesController < ApplicationController
     @basic = "http://www.echoboards.org/content/basic-pte®"
     @advanced = "http://www.echoboards.org/content/advanced-pteexam®"
     @fellowships = "http://www.scahq.org/FellowshipCareerOpportunities/AdultCardiothoracicAnesthesiologyFellowships/AccreditedFellowshipPrograms.aspx"
+    @basictee = "http://www.asecho.org/wordpress/wp-content/uploads/2013/05/Basic-Perioperative-TEE-Exam.pdf"
     @basicpte = "http://www.echoboards.org/sites/default/files/2010_Basic_PTEeXAM_Content_Outline.pdf"
     @advancedpte = "http://www.echoboards.org/sites/default/files/Advanced_PTE_Content_Outline_0.pdf"
     @pie = "http://pie.med.utoronto.ca/TEE/"
@@ -248,6 +251,13 @@ class StaticPagesController < ApplicationController
       ["CRNABoardPrep.com",                                                         "http://www.crnaboardprep.com"]
     ]
   end
+  
+  def moca
+    @aba = "http://www.theaba.org/MOCA/About-MOCA"
+    @abms = "http://www.abms.org"
+    @moca2 = "http://www.theaba.org/PDFs/MOCA/MOCA-2-0-FAQs"
+  end
+  
   
   def calculator
       @asa =     params[:asa_checkbox] 
