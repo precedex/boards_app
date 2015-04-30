@@ -256,7 +256,21 @@ class StaticPagesController < ApplicationController
   def moca
     @aba = "http://www.theaba.org/MOCA/About-MOCA"
     @abms = "http://www.abms.org"
+    @moca = "http://www.theaba.org/MOCA/About-MOCA"
     @moca2 = "http://www.theaba.org/PDFs/MOCA/MOCA-2-0-FAQs"
+    @sim = "http://education.asahq.org/sim/endorsed"
+    @ppai = "http://education.asahq.org/PPAI"
+    @study_strategy = [
+      ["moca 2.0 (4/15)",                                                                   "http://forums.studentdoctor.net/threads/moca-2-0.1132521"],
+      ["Petition the ABA to Change MOCA (2/15)",                                            "http://forums.studentdoctor.net/threads/petition-the-aba-to-change-moca.1119629/"],
+      ["Moca (11/14)",                                                                      "http://forums.studentdoctor.net/threads/moca.1108095/"],
+      ["Just PASSED!!! MOCA 2014 (2/14)",                                                   "http://forums.studentdoctor.net/threads/just-passed-moca-2014.1055820/"],
+      ["MOCA/CME (11/13)",                                                                  "http://forums.studentdoctor.net/threads/moca-cme.1041454/"]  
+    ]
+    @commercial_courses = [
+      ["Best Medicine for MOCA (Jensen)",                                            "http://anesthesiologyboards.com/moca-recert/index.asp"],
+      ["The Pass Machine",                                                           "http://www.thepassmachine.com/courses/anesthesiology/moca-exam/introduction"]
+    ]
   end
   
   

@@ -6,7 +6,7 @@
 <div class="exams">  
   <p>
     The <%= external_link_to "American Board of Anesthesiology", @aba %> 
-    (ABA), under the auspices of the <%= external_link_to "American Board of Medical Specialties", @abms %>  (ABMS), is in the process of changing its requirements for maintenance of certification (MOC). MOCA 2.0 will begin as a 'pilot' program with automatic enrollment for all diplomates whose certification expires in 2016 or later. As of January 1, 2016, the four principal components of MOC will be modified as below. See the <%= external_link_to " MOCA 2.0 FAQ", @moca2 %> for more information. 
+    (ABA), under the auspices of the <%= external_link_to "American Board of Medical Specialties", @abms %>  (ABMS), is in the process of changing its requirements for <%= external_link_to "maintenance of certification", @moca %> (MOC). MOCA 2.0 will begin as a 'pilot' program with automatic enrollment for all diplomates whose certification expires in 2016 or later. Those whose certification expires in 2015 or earlier most meet the traditional MOCA requirements. As of January 1, 2016, the four principal components of MOC will be modified as below. See the <%= external_link_to " MOCA 2.0 FAQ", @moca2 %> for more information. 
   </p>
   <br>
 </div>
@@ -17,21 +17,56 @@
       <th> MOCA 2.0 </th>
     </tr>
     <tr>
-      <td>this is the text entry for where part 1a would go and were gonna mke it long now relaly long liek long enough to see whats going on with this piece of shit css like pretending i'm a real web developper which clearly i'm not </td>
-      <td>Part 1b </td>
+      <td><u>Professional Standing</u>
+        <dd> Most hold an active, unrestricted license in at least one jursidiction of US or Canada. </dd>
+      </td>
+      <td><u>Professionalism and Professional Standing (PPS) </u>
+        <dd> Most hold an active, unrestricted license in at least one jursidiction of US or Canada. </dd>
+      </td>
     </tr>
     <tr>
-      <td>Part 2a </td>
-      <td>Part 2b </td>
+      <td><u>Lifelong Learning and Self-Assessment (LLSA)</u>
+        <dd> 250 Category 1 CME credits, no more than 60 per year. At least 90 credits of ABA-approved Self-Assessment CME. At least 20 credits of ABA-approved Patient Safety CME </dd>
+       </td>
+      <td><u>Lifelong Learning and Self-Assessment (LLS)</u>
+        <dd> 250 Category 1 CME credits, no more than 60 per year. At least 90 credits of ABA-approved Self-Assessment CME. At least 20 credits of ABA-approved Patient Safety CME </dd>
+      </td>
     </tr>
     <tr>
-      <td>Part 3a </td>
-      <td>Part 3b </td>
+      <td><u>Cognitive Examination (CE)</u>
+        <dd> 200 question four-hour computer-based multiple-choice exam. May only be completed in years 7 through 10 of the MOCA cycle.</dd>
+        </td>
+      <td><u>Assessment of Knowledge, Judgment, and Skills (KJS)</u>
+      <dd> Complete 30 MOCA Minute questions per calendar quarter. Multiple-choice questions are emailed out weekly. Questions are chosen from topics where a majority of takers answered incorrectly. Once a question is opened you have one minute to answer. Immediate feedback with references is provided. 
+      </td>
     </tr>
     <tr>
-      <td>Part 4a </td>
-      <td>Part 4b </td>
+      <td><u>Practice Performance Assessment and Improvement (PPAI)</u>
+        <dd> Completion of a case evaluation (quality improvement project) and <%= external_link_to "simulation course", @sim %>. One activity must be completed between years 1-5, the other between years 6-10. In lieu of the case evaluation, one can complete a module in <%= external_link_to "practice performance assessment and improvement", @ppai %>.</dd>
+        </td>
+      <td><u>Improvement in Medical Practice (IMP)</u>
+        <dd> Simulation is no longer required. There will be a point system that will weight activites based on the effort associated with completing them.</dd>
+      </td>
     </tr>
   </table>  
+</div>
+<br><br>
+<div class="exams">
+  <p>
+    Discussion threads at <%= link_to_sdn_forum %>
+  </p>
+  <ul>
+    <%= render partial: 'site', collection: @study_strategy %>
+  </ul><br/>
+  <p> 
+    MOCA commercial prep courses:
+  </p>
+  <p style="font-size: 1.5em; font-style: italic; text-indent: 1em; list-style: none">
+  I don't have any experience with these products and do not endorse any
+  particular product
+  </p>
+  <ul>
+    <%= render partial: 'site', collection: @commercial_courses %>
+  </ul><br/>
 </div>
 
