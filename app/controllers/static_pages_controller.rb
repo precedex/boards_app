@@ -260,6 +260,7 @@ class StaticPagesController < ApplicationController
     @moca2 = "http://www.theaba.org/PDFs/MOCA/MOCA-2-0-FAQs"
     @sim = "http://education.asahq.org/sim/endorsed"
     @ppai = "http://education.asahq.org/PPAI"
+    @cme = "http://www.theaba.org/PDFs/MOCA/ABA-Approved-CME"
     @study_strategy = [
       ["moca 2.0 (4/15)",                                                                   "http://forums.studentdoctor.net/threads/moca-2-0.1132521"],
       ["Petition the ABA to Change MOCA (2/15)",                                            "http://forums.studentdoctor.net/threads/petition-the-aba-to-change-moca.1119629/"],
