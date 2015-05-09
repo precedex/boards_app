@@ -82,10 +82,6 @@
     </p>
     <br><br>
   </div>
-<!--
-  <p>
-     The ABA has released data from the 2014 exams: <%= external_link_to *@aba_exam_summary %>
-  </p> -->
   <p>
     Curves plotted below assume normally distributed test scores.
   </p>  
@@ -101,6 +97,9 @@
   <br>
   <p>
     An extensive list of keywords can be found at <%= external_link_to *@open_anesthesia_keywords %>
+  </p>
+  <p>
+    Anesthesia math review <%= external_link_to "Problem Set", @mathps %> and <%= external_link_to "Solutions", @mathsol %>
   </p>
   <p>
     Board review <%= external_link_to "books", category_resources_path("Written Board") %>
