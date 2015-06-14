@@ -38,10 +38,11 @@ class StaticPagesController < ApplicationController
     ]
 
     @critical_events = [
-      ["Pediatric Critical Events",  "http://www.pedsanesthesia.org/newnews/Critical_Event_Checklists.pdf?201310291500"],
-      ["Laryngospasm",               "http://www.maskinduction.com/uploads/3/1/6/4/31643965/laryngospasm_management_algorithm.pdf"],
       ["Difficult Airway Algorithm", "Airway.jpg"],
-      ["Anaphylaxis",                "Anaphylaxis.jpg"]
+      ["Anaphylaxis",                "Anaphylaxis.jpg"],
+      ["Local Anesthetic Toxity (ASRA)",  "https://www.asra.com/content/documents/checklist-for-local-anesthetic-toxicity-treatment-1-18-12.pdf"],
+      ["Pediatric Critical Events",  "http://www.pedsanesthesia.org/newnews/Critical_Event_Checklists.pdf?201310291500"],
+      ["Laryngospasm",               "http://www.maskinduction.com/uploads/3/1/6/4/31643965/laryngospasm_management_algorithm.pdf"]   
     ]
     
     @anatomy = [
