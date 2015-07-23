@@ -11,6 +11,7 @@ class MoviesController < ApplicationController
     @cent_subclav_non_us =  Movie.where(group: "cent_subclav_non_us")
     @cent_fem_us =          Movie.where(group: "cent_fem_us")
     @cent_fem_non_us =      Movie.where(group: "cent_fem_non_us")
+    @io =                   Movie.where(group: "io")
     @interscalene =         Movie.where(group: "interscalene")
     @supraclavicular =      Movie.where(group: "supraclavicular") 
     @infraclavicular =      Movie.where(group: "infraclavicular")
@@ -24,6 +25,8 @@ class MoviesController < ApplicationController
     @epidural =             Movie.where(group: "epidural")
     @paravertebral =        Movie.where(group: "paravertebral")
     @intubation_adult =     Movie.where(group: "intubation_adult") 
+    @fiberoptic =           Movie.where(group: "fiberoptic") 
+    @intubation_video =     Movie.where(group: "intubation_video") 
     @intubation_pediatric = Movie.where(group: "intubation_pediatric")      
     @olv =                  Movie.where(group: "olv") 
     @mask =                 Movie.where(group: "mask")
@@ -48,6 +51,8 @@ class MoviesController < ApplicationController
   
   def airway  
     @intubation_adult =     Movie.where(group: "intubation_adult") 
+    @fiberoptic =           Movie.where(group: "fiberoptic") 
+    @intubation_video =     Movie.where(group: "intubation_video") 
     @intubation_pediatric = Movie.where(group: "intubation_pediatric")      
     @olv =                  Movie.where(group: "olv") 
     @mask =                 Movie.where(group: "mask")

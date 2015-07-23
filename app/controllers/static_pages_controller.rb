@@ -150,7 +150,7 @@ class StaticPagesController < ApplicationController
     @aba_archive = ["videos", 'http://www.theaba.org/TRAINING-PROGRAMS/Traditional-Part-2/Traditional-Part-2-Videos']
     @aba_videos = ["videos", 'http://www.theaba.org/ABOUT/Videos']
     @exam_hints_pdf = ["PDF", 'http://anesthesiaboardhints.homestead.com/HintsfortheAnesthesiologyBoardExaminationRev1.6.pdf']
-    @lovich = ["PowerPoint", "http://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=12&ved=0CCIQFjABOAo&url=http%3A%2F%2Fwww.anesthesiawiki.net%2Fmetrohealthanesthesia%2FMHAnes%2Fpresentations%2FthingsIDoForResidents.ppt&ei=kX74VOmUCcyngwSwvIGQDQ&usg=AFQjCNF6NWli0liUyXURDbK7D6NdGjFDjw&sig2=I8OKZ5k2zW1YpuYiMobSIA&bvm=bv.87519884,d.eXY"]
+    @lovich = ["PowerPoint", "http://www.powershow.com/view/3c317a-MzI1Z/The_Things_I_Do_For_the_Residents_May_8_2008_Jessica_powerpoint_ppt_presentation"]
     @aba_training_programs = ["here", "http://www.theaba.org/Home/TrainingPrograms"]
     @the_anesthesia_consultant = ["The Anesthesia Consultant", 'http://theanesthesiaconsultant.com/2013/08/22/advice-for-passing-the-oral-board-exams-in-anesthesiology/']
 
@@ -196,7 +196,8 @@ class StaticPagesController < ApplicationController
 
   def pedsboards
     @peds_cert = ["certification", "http://www.theaba.org/Exams/Pediatric-Anesthesiology/Pediatric-Anesthesiology"]
-    @pedsfellowships = "https://www.acgme.org/ads/Public/Reports/ReportRun?ReportId=1&CurrentYear=2014&SpecialtyId=4&IncludePreAccreditation=false"
+    @pedsfellowships = "http://www.pedsanesthesia.org/fellowships/"
+    @wfsa = "http://www.wfsahq.org/resources/update-in-anaesthesia"
     @peds_exam_content = "http://www.theaba.org/PDFs/Pediatrics-Anesthesiology/PAContentOutline"
     @peds_exam_questions = "http://www.theaba.org/PDFs/Pediatrics-Anesthesiology/PASampleQuestions"
     @study_strategy = [
@@ -226,6 +227,7 @@ class StaticPagesController < ApplicationController
     @basicpte = "http://www.echoboards.org/sites/default/files/2010_Basic_PTEeXAM_Content_Outline.pdf"
     @advancedpte = "http://www.echoboards.org/sites/default/files/Advanced_PTE_Content_Outline_0.pdf"
     @pie = "http://pie.med.utoronto.ca/TEE/"
+    @opentee = "http://www.openanesthesia.org/basic-course-in-tee/"
     @yale = "http://www.yale.edu/imaging/echo_atlas/contents/"
     @canada = "http://csecho.ca/resources/"
     @study_strategy = [
