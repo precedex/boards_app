@@ -5,6 +5,7 @@ module SitesHelper
 
   CATEGORY_TITLES = {
     "education" => "Miscellaneous",
+    "icu" => "ICU",
     "education-regional" => "Regional Anesthesia",
     "education-airway" => "Airway Management",
     "education-video" => "Videos",
