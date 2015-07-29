@@ -7,7 +7,12 @@
   
   <% @questions.each do |question| %>
     <% if question.exam %>
-      <button class="btn btn-danger" type="button"> <%= question.exam  %> </button>
+      <!-- <button class="btn btn-danger" type="button"> <%= question.exam  %> </button> -->
+      <% if question.exam == "BASIC"%>
+      <%=   link_to question.exam,  "questions?stems_checkbox=1&choices_checkbox=1&search=&shuffle_checkbox=1&exam=1&topic_id=11", class: "btn btn-danger" %>
+      <% else %>
+      <%=   link_to question.exam, "questions?stems_checkbox=1&choices_checkbox=1&search=&shuffle_checkbox=1&exam=2&topic_id=11", class: "btn btn-danger" %>
+      <% end %>
       <%= render partial: "topic", collection: question.topics  %>
     <% end %>
 
