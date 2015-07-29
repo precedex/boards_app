@@ -55,6 +55,7 @@ BoardsApp::Application.routes.draw do
   end
   
   get   '/sites/education',               to: 'sites#index',     :category => 'education'
+  get   '/sites/icu',                     to: 'sites#index',     :category => 'icu'
   get   '/sites/education/video',         to: 'sites#index',     :category => 'education-video'
 
   # societies

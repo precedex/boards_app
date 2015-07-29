@@ -104,6 +104,7 @@ class StaticPagesController < ApplicationController
     @mathps = "/AnesthesiaMath-PS.pdf"
     @mathsol = "/AnesthesiaMath-S.pdf"
     @study_strategy = [
+      ["TrueLearn Question Bank (4/15)",                   "http://forums.studentdoctor.net/threads/truelearn-question-bank.1130074/"],
       ["ABA Basic Exam 2015 (4/15)",                       "http://forums.studentdoctor.net/threads/aba-basic-exam-2015.1132719/#post-16429945"],
       ["How to kill basic science/ite exams? (2/15)",      "http://forums.studentdoctor.net/threads/how-to-kill-basic-science-ite-exams.1123216/"],
       ["2015 In Training Exam (2/15)",                     "http://forums.studentdoctor.net/threads/2015-in-training-exam.1122186/"],
