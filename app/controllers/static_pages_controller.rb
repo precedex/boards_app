@@ -157,6 +157,7 @@ class StaticPagesController < ApplicationController
     @the_anesthesia_consultant = ["The Anesthesia Consultant", 'http://theanesthesiaconsultant.com/2013/08/22/advice-for-passing-the-oral-board-exams-in-anesthesiology/']
 
     @study_strategy = [
+      ["Oral board answers that are relatively unrealistic? (8/15)",          "http://forums.studentdoctor.net/threads/oral-board-answers-that-are-relatively-unrealistic.1155448/"],
       ["Just Oral Boards.com (7/15)",                                         "http://forums.studentdoctor.net/threads/just-oral-boards-com.1154301/"],
       ["Oral Boards 2015 (2/15)",                                             "http://forums.studentdoctor.net/threads/oral-boards-2015.1121495/"],
       ["It's Time to Boycott Michael Ho's Course (11/14)",                    "http://forums.studentdoctor.net/threads/its-time-to-boycott-michael-hos-course.1108105/"],
@@ -301,5 +302,14 @@ class StaticPagesController < ApplicationController
                @smoking.to_i + @nmd.to_i +     @weight.to_i +
                @bmi.to_i +     @ga.to_i +      @length.to_i +
                @age.to_i +     @adls.to_i +    @surgurg.to_i    
+  end
+  
+  def ponv
+      @gender  = params[:gender_checkbox] 
+      @smoke   = params[:smoke_checkbox] 
+      @history = params[:history_checkbox]
+      @opioids = params[:opioids_checkbox]
+     
+      @score = @gender.to_i + @smoke.to_i + @history.to_i + @opioids.to_i    
   end
 end

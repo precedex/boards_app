@@ -145,6 +145,49 @@ ul {
   }
 }
 
+.tmcponv { 
+  h1 {
+  font-weight: normal;
+  font-family: Tahoma;
+  text-align: center;
+  font-size: 2.5em;
+  }
+  h2 {
+  font-weight: bold;
+  font-family: Tahoma;
+  text-align: left;
+  font-size: 2em;
+  }
+  h3 {
+  font-weight: normal;
+  font-family: Georgia;
+  text-align: center;
+  font-size: 1.5em;
+  }
+  #apfel {
+  font-weight: bold;
+  font-family: Tahoma;
+  padding-left: 100px;
+  font-size: 2em;
+  }
+  #score {
+  font-weight: bold;
+  font-family: Tahoma;
+  padding-left: 154px;
+  font-size: 2em;
+  }  
+  label {
+    font-size: 1.8em;
+    font-weight: normal;
+    text-indent: 50px;
+    padding-bottom: 0.7em;
+  }
+}
+
+.indent {
+  margin-left: 40px;
+}
+
 .movies{ 
   .panel {
 	  border-color: black;

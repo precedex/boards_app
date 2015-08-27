@@ -1,0 +1,58 @@
+<% title "PONV"%>
+
+<div class = "tmcponv">
+  <h1> Consensus Guidelines for the Management of PONV <br/></h1>
+  <h3> Adapted from TJ Gan et al. Anesthesia & Analgesia 2014;118(1):85-113 </h3> <br/><br/>
+  
+  <h2> Identify Patients' Risk for PONV  </h2> <br/><br/>
+  
+  <%= form_tag('/ponv', method: :get) %>  
+  
+  <table style="width:100%">
+    <tr><label><%= check_box_tag 'gender_checkbox',    '1', (params[:gender_checkbox]  == '1') %>    Female Gender </label></tr><br>
+    <tr><label><%= check_box_tag 'smoke_checkbox',     '1', (params[:smoke_checkbox]   == '1') %>    Non-Smoker</label></tr><br>
+    <tr><label><%= check_box_tag 'history_checkbox',   '1', (params[:history_checkbox] == '1') %>    History of PONV</label></tr><br>
+    <tr><label><%= check_box_tag 'opioids_checkbox',   '1', (params[:opioids_checkbox] == '1') %>    Postoperative Opioids</label></tr><br>
+  </table>
+  
+  <button type="submit" class="btn btn-danger btn-lg">Get Score</button> 
+  <span id="apfel"> Apfel Simplified Risk Score: <%= @score %></span>
+ 
+  <br></br>
+
+    <%= link_to "Reset", "/ponv", class: "btn btn-primary" %>
+
+<span id="score">
+    <% if @score == 0 %>
+      PONV Risk = 10% (low)
+    <% elsif @score == 1 %>
+      PONV Risk = 20% (low)
+    <% elsif @score == 2 %>
+      PONV Risk = 40% (moderate)
+    <% elsif @score == 3 %>
+      PONV Risk = 60% (moderate)
+    <% else %>
+      PONV Risk = 80% (high)
+    <% end %>
+</span>
+    
+<hr></hr>
+  <h2>Reduce Baseline Risk Factors for PONV </h2>
+  <div class = "indent"> <%= image_tag("Guideline2.png", width:"50%") %> </div>
+  
+<hr></hr>
+
+  <h2>
+   <% if @score == 0 || @score == 1%>
+     Prophylaxis not indicated
+   <% elsif @score == 2 || @score == 3%>
+     Administer Prophylaxis Using 1 - 2 Interventions
+     <div class = "indent"> <%= image_tag("Guideline3.png", width:"80%") %> </div>
+   <% else %>
+     Adminster Prophylaxis With Combination (&ge;2) Interventions / Multimodal Therapy
+     <div class = "indent"> <%= image_tag("Guideline3.png", width:"80%") %> </div> 
+   <% end %>
+  </h2>  
+    
+             
+</div>

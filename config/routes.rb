@@ -77,6 +77,9 @@ BoardsApp::Application.routes.draw do
   
   # calculator
   get    '/calculator',                   to: 'static_pages#calculator'
+  
+  #ponv
+  get    '/ponv',                         to: 'static_pages#ponv'
 
   # footer
   get    '/secret',                       to: 'static_pages#secret'
