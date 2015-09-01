@@ -1,6 +1,15 @@
-<% title "Residencies" %>
+<% title "U.S. Residencies" %>
 <div class = "sites">
   <h1> <%= yield(:title) %> </h1>
+
+<p>  The Accreditation Council for Graduate Medical Education 
+  (<%= external_link_to "ACGME", @acgme %>) 
+  is a private, non-profit organization that reviews and accredits graduate medical education programs in the United    States. The <%= external_link_to "ACGME Anesthesiology", @acgmeanes %> 
+  site details the <%= external_link_to "program requirements", @res %> for anesthesiology residency. The      
+  <%= external_link_to "Anesthesiology Milestone Project", @milestone %> 
+  was developed in conjunction with the 
+  <%= external_link_to "ABA", @aba %> 
+  and provides a new framework for resident physician evaluation. </p>
 </div>
 
   <table class="pretty_b">
