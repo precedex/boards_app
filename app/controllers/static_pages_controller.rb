@@ -283,6 +283,23 @@ class StaticPagesController < ApplicationController
     ]
   end
   
+  def ms
+    @articles = [
+      ["Karen Sibert - What No One Tells You About Anesthesiology",                 
+        "http://apennedpoint.com/medical-students-what-no-one-tells-you-about-anesthesiology/"],
+      ["Richard Novak - What Personal Characteristics are Essential to Becoming a Successful Anesthesiologist?",
+        "http://theanesthesiaconsultant.com/2015/07/17/on-becoming-an-anesthesiologist-what-personal-characteristics-are-essential-to-become-a-successful-anesthesiologist/"],
+      ["Colin JL McCartney - Why I Chose to Become an Anaesthetist", 
+        "http://www.colinjlmccartney.com/medical-blog/why-i-chose-to-become-an-anaesthetist"],
+      ["Andy Orin - What I do as an Anesthesiologist", 
+        "http://lifehacker.com/career-spotlight-what-i-do-as-an-anesthesiologist-1716010008"]
+    ]
+    
+    @ua= ["Understanding Anesthesia", "http://www.understandinganesthesiology.com"]
+    @sea = ["SEA", "http://www.seahq.net"]
+    @seams = ["Medical Student Guide to Anesthesiology", "http://www.seahq.net/images/sea_msg.pdf"]
+    
+  end
   
   def calculator
       @asa =     params[:asa_checkbox] 

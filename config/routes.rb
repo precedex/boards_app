@@ -45,7 +45,7 @@ BoardsApp::Application.routes.draw do
   resources :lectures do
     collection { post :import }
   end
-  
+  get   '/ms',                            to: 'static_pages#ms'
   get   '/regional',                      to: 'movies#regional'
   get   '/airway',                        to: 'movies#airway'
   get   '/movies',                        to: 'movies#index'
