@@ -135,6 +135,7 @@ class StaticPagesController < ApplicationController
 
     @commercial_courses = [
       ["True Learn Anesthesiology",                      "http://www.truelearn.com/anesthesiology/"],
+      ["Michael Ho: The Essential Written Board Review", "http://anconsultants.com/anesthesiology-written-board-review/"],
       ["AQB - anesthesiaQbank",                          "http://anesthesiaqbank.com"],
       ["Anesthesia Exam",                                "http://www.anesthesiaexam.com"],
       ["Beyond Anesthesia",                              "http://beyondanesthesia.com"],
@@ -187,12 +188,12 @@ class StaticPagesController < ApplicationController
 
     @commercial_courses = [
       ["Board Stiff Live",                             "https://boardstifflive.com"],
+      ["Michael Ho: The Essential Oral Board Review",  "http://anconsultants.com/anesthesiology-oral-board-review/"],
       ["Dr. Jensen Essential Oral Board P.R.E.P.",     "http://www.boardprep.com"],
       ["GadsenJones Anesthesiology Oral Board Review", "http://www.gadsdenjones.com"],
       ["Just Oral Boards",                             "http://www.justoralboards.com"],
       ["AceMedBoard",                                  "http://www.acemedboard.com"],
       ["Nail the Boards",                              "http://www.nailtheboards.com"],
-      ["Michael Ho: The Essential Oral Board Review",  "http://www.anconsultants.com"],
       ["The Osler Institute",                          "http://www.osler.org/main/ane.html"],
       ["Ultimate Board Prep",                          "http://www.ultimateboardprep.com"]
     ]
@@ -269,6 +270,7 @@ class StaticPagesController < ApplicationController
     @moca2 = "http://www.theaba.org/PDFs/MOCA/MOCA-2-0-FAQs"
     @sim = "http://education.asahq.org/sim/endorsed"
     @ppai = "http://education.asahq.org/PPAI"
+    @activities = "http://www.theaba.org/PDFs/MOCA/MOCA-2-0-Part-4-Requirements"
     @cme = "http://www.theaba.org/PDFs/MOCA/ABA-Approved-CME"
     @study_strategy = [
       ["moca 2.0 (4/15)",                                                                   "http://forums.studentdoctor.net/threads/moca-2-0.1132521"],
