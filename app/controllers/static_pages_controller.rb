@@ -273,6 +273,7 @@ class StaticPagesController < ApplicationController
     @activities = "http://www.theaba.org/PDFs/MOCA/MOCA-2-0-Part-4-Requirements"
     @cme = "http://www.theaba.org/PDFs/MOCA/ABA-Approved-CME"
     @study_strategy = [
+      ["More MOCA 2.0 Info (9/15)",                                                         "http://forums.studentdoctor.net/threads/more-moca-2-0-info.1158892/"],
       ["moca 2.0 (4/15)",                                                                   "http://forums.studentdoctor.net/threads/moca-2-0.1132521"],
       ["Petition the ABA to Change MOCA (2/15)",                                            "http://forums.studentdoctor.net/threads/petition-the-aba-to-change-moca.1119629/"],
       ["Moca (11/14)",                                                                      "http://forums.studentdoctor.net/threads/moca.1108095/"],
