@@ -105,6 +105,7 @@ class StaticPagesController < ApplicationController
     @mathps = "/AnesthesiaMath-PS.pdf"
     @mathsol = "/AnesthesiaMath-S.pdf"
     @study_strategy = [
+      ["ABA exam - written (7/15)",                        "http://forums.studentdoctor.net/threads/aba-exam-written.1153111/#post-16913580"],
       ["TrueLearn Question Bank (4/15)",                   "http://forums.studentdoctor.net/threads/truelearn-question-bank.1130074/"],
       ["ABA Basic Exam 2015 (4/15)",                       "http://forums.studentdoctor.net/threads/aba-basic-exam-2015.1132719/#post-16429945"],
       ["How to kill basic science/ite exams? (2/15)",      "http://forums.studentdoctor.net/threads/how-to-kill-basic-science-ite-exams.1123216/"],
@@ -202,6 +203,7 @@ class StaticPagesController < ApplicationController
   def pedsboards
     @peds_cert = ["certification", "http://www.theaba.org/Exams/Pediatric-Anesthesiology/Pediatric-Anesthesiology"]
     @pedsfellowships = "http://www.pedsanesthesia.org/fellowships/"
+    @nrmp = "http://www.nrmp.org/wp-content/uploads/2013/08/National-Resident-Matching-Program-NRMP-Results-and-Data-SMS-2014-Final.pdf"
     @wfsa = "http://www.wfsahq.org/resources/update-in-anaesthesia"
     @peds_exam_content = "http://www.theaba.org/PDFs/Pediatrics-Anesthesiology/PAContentOutline"
     @peds_exam_questions = "http://www.theaba.org/PDFs/Pediatrics-Anesthesiology/PASampleQuestions"
@@ -236,6 +238,7 @@ class StaticPagesController < ApplicationController
     @yale = "http://www.yale.edu/imaging/echo_atlas/contents/"
     @canada = "http://csecho.ca/resources/"
     @study_strategy = [
+      ["Advanced PTE Exam 2015 Stats (9/15)",                                 "http://forums.studentdoctor.net/threads/advanced-pte-exam-2015-stats.1158310/"],
       ["Anyone taking the Basic TEE boards (7/14)",                           "http://forums.studentdoctor.net/threads/any-one-taking-the-basic-tee-boards.1082996/#post-15417881"],
       ["Advanced PTEeXAM (7/12)",                                             "http://forums.studentdoctor.net/threads/advanced-pteexam-echo-boards.930568/#post-14384680"],
       ["PTEeXAM Results 2012 (8/12)",                                         "http://forums.studentdoctor.net/threads/pteexam-results-2012.943494/#post-13008682"]
