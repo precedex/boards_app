@@ -13,6 +13,13 @@ BoardsApp::Application.routes.draw do
     resources :resources, only: [:index]
   end
 
+  # providers
+  get   'providers/index',                 to: 'providers#index'
+  get   'providers/import'
+  resources :providers do
+    collection { post :import }
+  end
+
   # exams
   get    '/sites/writtenboards',          to: 'static_pages#writtens'
   get    '/sites/oralboards',             to: 'static_pages#orals'

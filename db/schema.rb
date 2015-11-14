@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150729021743) do
+ActiveRecord::Schema.define(version: 20151114221907) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -40,6 +40,29 @@ ActiveRecord::Schema.define(version: 20150729021743) do
     t.string   "group"
     t.string   "title"
     t.string   "url"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "providers", force: true do |t|
+    t.string   "npi"
+    t.string   "first"
+    t.string   "last"
+    t.string   "middle"
+    t.string   "ms"
+    t.string   "grad"
+    t.string   "primary"
+    t.string   "secondary"
+    t.string   "name_lgl"
+    t.string   "name_common"
+    t.string   "size"
+    t.string   "city"
+    t.string   "state"
+    t.string   "aff1"
+    t.string   "aff2"
+    t.string   "aff3"
+    t.string   "aff4"
+    t.string   "aff5"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

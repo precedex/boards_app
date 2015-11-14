@@ -1,0 +1,39 @@
+<% title "U.S. Anesthesia Providers" %>
+<div class = "sites">
+  <h1> <%= yield(:title) %> </h1>
+
+<p>  Medicare.gov </p>
+</div>
+
+  <table class="pretty_b">
+    <thead>
+      <tr>
+        <th>NPI</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Middle Name</th>
+        <th>Medical School</th>
+        <th>Grad Year</th>
+        <th>Primary Specialty</th>
+        <th>Secondary Specialties</th>
+        <th>Organization Legal Name</th>
+        <th>Organization Common Name</th>
+        <th>Organization Size</th>
+      </tr>         
+    </thead>
+    <tbody>
+        <tr>
+          <td>hi</td>
+          <td>bud</td>
+        </tr>
+    </tbody>
+  </table>
+
+
+<div>
+  <h2 style = "font-size: 2em">Import a CSV File</h2>
+    <%= form_tag import_providers_path, multipart: true do %>
+    <%= file_field_tag :file %>
+    <%= submit_tag "Import CSV" %>
+    <% end %>
+</div>

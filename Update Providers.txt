@@ -1,0 +1,4 @@
+Clear provider database for reimport
+
+rake db:migrate:down VERSION=20151114221907
+rake db:migrate:up VERSION=20151114221907
