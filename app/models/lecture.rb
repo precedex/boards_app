@@ -23,5 +23,4 @@ class Lecture < ActiveRecord::Base
       Lecture.all
     end
   end
-  
 end

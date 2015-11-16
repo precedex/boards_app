@@ -2,8 +2,8 @@ class AddProviderDb < ActiveRecord::Migration
   def change
     create_table :providers do |t|
       t.string :npi
-      t.string :first
       t.string :last
+      t.string :first
       t.string :middle
       t.string :ms
       t.string :grad
@@ -19,6 +19,7 @@ class AddProviderDb < ActiveRecord::Migration
       t.string :aff3
       t.string :aff4
       t.string :aff5
+      t.string :aba
       t.timestamps
     end
   end

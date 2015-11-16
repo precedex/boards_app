@@ -1,35 +1,56 @@
-<% title "U.S. Anesthesia Providers" %>
+<% title "U.S. Anesthesiologists" %>
 <div class = "sites">
   <h1> <%= yield(:title) %> </h1>
-
-<p>  Medicare.gov </p>
+  <p> US Anesthesiologists are publicly listed in the <%= external_link_to "Physican Compare datasets", @datasets %> at 
+    <%= external_link_to "Data.Medicare.gov", @medicare %> </p>
 </div>
 
-  <table class="pretty_b">
+<div class="graphics">
+  <form accept-charset="UTF-8" action="/providers" method="get" name="commit" class="form-inline">
+    <div class="form-group">
+    <input type="search" name="search" class="input-large" id="search" placeholder="Search">
+    </div>
+     <button type="submit" style="margin:1em" class="btn btn-primary ">Search Anesthesiologists</button>
+     <%= link_to "List all Anesthesiologists", "/providers", class: "btn btn-danger " %>
+  </form>
+</div>
+<br>
+
+<div class = "providers">
+  <h1>
+    <% if @providers.length == 1%>
+    1 anesthesiologist matches your search
+    <% else %>
+    <%= @providers.length %> anesthesiologists match your search.
+    <% end %>
+  </h1>
+
+  <table>
     <thead>
       <tr>
-        <th>NPI</th>
-        <th>First Name</th>
-        <th>Last Name</th>
-        <th>Middle Name</th>
-        <th>Medical School</th>
-        <th>Grad Year</th>
-        <th>Primary Specialty</th>
-        <th>Secondary Specialties</th>
-        <th>Organization Legal Name</th>
-        <th>Organization Common Name</th>
-        <th>Organization Size</th>
+        <th><%= sortable "last", "Name" %></th>
+        <th>Location</th>
+        <th><%= sortable "name_lgl", "Employer" %></th>
+        <th><%= sortable "aff1", "Hospitals" %></th>
+        <th> </th>
       </tr>         
     </thead>
     <tbody>
+       <% @providers.each do |provider| %>
         <tr>
-          <td>hi</td>
-          <td>bud</td>
+          <td><%= "#{provider.last}, #{provider.first} #{provider.middle}"  %></td>
+          <td><%= "#{provider.city}, #{provider.state}" %></td>
+          <td><%= "#{provider.name_lgl}" %><br><%="#{provider.name_common}" %></td>
+          <td><%= "#{provider.aff3}" %><br><%= "#{provider.aff1}" %><br><%= "#{provider.aff2}" %><br><%= "#{provider.aff4} #{provider.aff5}" %></td>
+          <td style = "padding-left: 0em; text-align: center"> <%=external_link_to image_tag("abaorbit.png"), provider.aba%> </td>
         </tr>
+      <% end %>  
     </tbody>
   </table>
 
+</div>
 
+<!--
 <div>
   <h2 style = "font-size: 2em">Import a CSV File</h2>
     <%= form_tag import_providers_path, multipart: true do %>
@@ -37,3 +58,4 @@
     <%= submit_tag "Import CSV" %>
     <% end %>
 </div>
+-->

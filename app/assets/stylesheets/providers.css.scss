@@ -1,0 +1,43 @@
+.providers {
+  
+	table {
+    border-collapse: collapse;
+    width: 100%;
+	}
+	  
+	th{
+    font-variant: small-caps;
+    font-size: 1.5em;
+    a{color:black;}
+    padding-left: 0.5em;
+    
+    .current {
+      font-size: 1.2em;
+      padding-right: 30px;
+      background-repeat: no-repeat;
+      background-position: right center;
+      background-size: contain;
+    }
+
+    .asc {
+      background-image: asset_url('up_arrow.gif');
+    }
+
+    .desc {
+      background-image: asset_url('down_arrow.gif');
+    }  
+	}
+  
+  td { 
+    font-size: 1em;
+    border: 1px solid black;
+    padding-left: 10px;
+  }
+  
+	h1 {
+		font-size: 2.1em;
+		text-align: center;
+		padding: 10px;
+		color: red;
+	}
+}

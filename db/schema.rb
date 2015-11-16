@@ -46,8 +46,8 @@ ActiveRecord::Schema.define(version: 20151114221907) do
 
   create_table "providers", force: true do |t|
     t.string   "npi"
-    t.string   "first"
     t.string   "last"
+    t.string   "first"
     t.string   "middle"
     t.string   "ms"
     t.string   "grad"
@@ -63,6 +63,7 @@ ActiveRecord::Schema.define(version: 20151114221907) do
     t.string   "aff3"
     t.string   "aff4"
     t.string   "aff5"
+    t.string   "aba"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
