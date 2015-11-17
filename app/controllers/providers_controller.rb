@@ -13,15 +13,13 @@ class ProvidersController < ApplicationController
     Provider.import(params[:file])
     redirect_to providers_path
   end
-end
 
-private
+  def sort_column
+    Provider.column_names.include?(params[:sort]) ? params[:sort] : "last"
+  end
 
-def sort_column
-  Provider.column_names.include?(params[:sort]) ? params[:sort] : "last"
+  def sort_direction
+    %w[asc desc].include?(params[:direction]) ? params[:direction] : "asc"
+  end
+   
 end
-
-def sort_direction
-  %w[asc desc].include?(params[:direction]) ? params[:direction] : "asc"
-end
- 
