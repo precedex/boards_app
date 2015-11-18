@@ -2,7 +2,7 @@ class LecturesController < ApplicationController
   helper_method :sort_column, :sort_direction
   def index
     @lectures = Lecture.search(params[:search])
-    @lectures = @lectures.sort_by(&:"#{sort_column}")
+    @lectures = @lectures.sort_by(&:"#{sort_column}") unless "#{sort_column}" == "date"
     @lectures = @lectures.reverse if sort_direction == 'desc'
   end
 
