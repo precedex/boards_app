@@ -40,8 +40,24 @@
         <tr>
           <td><%= "#{provider.last}, #{provider.first} #{provider.middle}"  %></td>
           <td><%= "#{provider.city}, #{provider.state}" %></td>
-          <td><%= "#{provider.name_lgl}" %><br><%="#{provider.name_common}" %></td>
-          <td><%= "#{provider.aff3}" %><br><%= "#{provider.aff1}" %><br><%= "#{provider.aff2}" %><br><%= "#{provider.aff4} #{provider.aff5}" %></td>
+          <td><%= "#{provider.name_lgl}" %>
+              <% if provider.name_common %>
+                <br><%="#{provider.name_common}" %>
+              <% end %></td>
+          <td><%= "#{provider.aff1}" %>
+              <% if provider.aff2 %>
+                <br><%="#{provider.aff2}" %>
+              <% end %>
+              <% if provider.aff3 %>
+                <br><%="#{provider.aff3}" %>
+              <% end %>
+              <% if provider.aff4 %>
+                <br><%="#{provider.aff4}" %>
+              <% end %>
+              <% if provider.aff5 %>
+                <br><%="#{provider.aff5}" %>
+              <% end %>
+          </td>
           <td style = "padding-left: 0em; text-align: center"> <%=external_link_to image_tag("abaorbit.png"), provider.aba%> </td>
         </tr>
       <% end %>  
