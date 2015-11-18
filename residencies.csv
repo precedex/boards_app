@@ -18,7 +18,7 @@ CO,U. Colorado,http://www.ucdenver.edu/academics/colleges/medicalschool/departme
 CT,Yale,http://medicine.yale.edu/anesthesiology/
 CT,U. Connecticut,http://gme.uchc.edu/programs/anesthesiology/
 DC,Georgetown,http://anesthesiology.georgetown.edu/
-DC,George Washington,http://www.gwumc.edu/smhs/anesthesiology/
+DC,George Washington,http://smhs.gwu.edu/anesthesiology/
 DC,National Capital Consortium,http://www.usuhs.edu/gme/
 FL,Mount Sinai,http://www.msmc.com/education/anesthesiology
 FL,U. Florida Jacksonville,http://hscj.ufl.edu/anesthesiology/residency/
@@ -40,7 +40,7 @@ KA,U. Kansas,http://www.kumc.edu/anes
 KA,U. Kansas (Wichita),http://wichita.kumc.edu/anesthesiology.html
 KY,U. Kentucky,http://www.wildcatanesthesia.com/
 KY,U. Louisville,http://louisville.edu/medschool/anesthesiology/
-LA,LSU Shreveport,http://www.lsuhscshreveport.edu/Anesthesiology/AnesthesiologyHome.aspx
+LA,LSU Shreveport,http://myhsc.lsuhscshreveport.edu/Anesthesiology/AnesthesiologyHome.aspx
 LA,Ochsner Clinic,https://academics.ochsner.org/gmepro.aspx?id=7844
 LA,Tulane,http://www.tulaneanesthesiology.com/web/
 LA,LSU,http://www.medschool.lsuhsc.edu/anesthesiology/residency.aspx
@@ -63,7 +63,7 @@ MI,Detroit Medical,http://www.med.wayne.edu/anesthesiology/residency.htm
 MN,Mayo Clinic,http://www.mayo.edu/msgme/residencies-fellowships/anesthesiology/anesthesiology-residency-minnesota
 MN,U. Minnesota,http://www.med.umn.edu/anesthesiology/
 MI,U. Mississippi,http://anesthesiology.umc.edu/
-MO,U. Missouri Columbia,http://som.missouri.edu/Anest/
+MO,U. Missouri Columbia,http://medicine.missouri.edu/anest/residency-program.html
 MO,Washington University,http://www.anest.wustl.edu/
 MO,U. Missouri Kansas City,http://med.umkc.edu/anesthesiology/
 MO,St. Louis Univeristy,http://anesthesia.slu.edu/
@@ -84,7 +84,7 @@ NY,U. Rochester,https://www.urmc.rochester.edu/anesthesiology.aspx
 NY,U. Buffalo,http://www.smbs.buffalo.edu/anest/index.php
 NY,Cornell,http://www.cornellanesthesia.org/
 NY,Mount Sinai,http://www.mssm.edu/departments-and-institutes/anesthesiology
-NY,New York Medical College,http://nymc.edu/depthome/anesth/index.asp
+NY,New York Medical College,https://www.nymc.edu/depthome/anesth/index.asp
 NY,NYU,http://www.med.nyu.edu/anes
 NY,SUNY Brooklyn,http://www.downstate.edu/anesthesiology/
 NY,SUNY Upstate,http://www.upstate.edu/anesthesiology/
@@ -128,6 +128,6 @@ VA,Virginia Commonwealth University,http://www.anesthesiology.vcu.edu/
 VA,Naval Medical Center Portsmouth,http://www.med.navy.mil/sites/NMCP2/Pages/Default.aspx
 VA,Virginia Mason,https://www.virginiamason.org/AnesthesiologyResidency
 WA,U. Washington,http://depts.washington.edu/anesth/
-WV,West Virginia University,http://www.hsc.wvu.edu/som/anesth/
+WV,West Virginia University,http://medicine.hsc.wvu.edu/anesth/
 WI,U. Wisconsin,http://www.anesthesia.wisc.edu/
 WI,Medical College of Wisconsin,http://www.mcw.edu/anesthesiology

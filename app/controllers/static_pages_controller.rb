@@ -58,7 +58,7 @@ class StaticPagesController < ApplicationController
       ["Endocarditis Prophylaxis",   "endocarditis.jpg"],
       ["Difficult Airway Society",    "http://www.das.uk.com/guidelines"],
       ["ASRA Neuraxial Anticoags",   "https://kr.ihc.com/ext/Dcmnt?ncid=520499512&tfrm=default"],
-      ["ASA Guidelines",             "http://www.asahq.org/For-Members/Standards-Guidelines-and-Statements.aspx"],
+      ["ASA Guidelines",             "http://www.asahq.org/quality-and-practice-management/standards-and-guidelines"],
       ["Sedation and Anesthesia in GI Endoscopy", "http://www.asge.org/uploadedFiles/Publications_and_Products/Practice_Guidelines/Sedation%20and%20Anesthesia%20in%20GI%20Endoscopy%202008.pdf"]
     ]
 
@@ -235,7 +235,7 @@ class StaticPagesController < ApplicationController
     @advancedpte = "http://www.echoboards.org/sites/default/files/Advanced_PTE_Content_Outline_0.pdf"
     @pie = "http://pie.med.utoronto.ca/TEE/"
     @opentee = "http://www.openanesthesia.org/basic-course-in-tee/"
-    @yale = "http://www.yale.edu/imaging/echo_atlas/contents/"
+    @ase = "http://asecho.org"
     @canada = "http://csecho.ca/resources/"
     @study_strategy = [
       ["Advanced PTE Exam 2015 Stats (9/15)",                                 "http://forums.studentdoctor.net/threads/advanced-pte-exam-2015-stats.1158310/"],
