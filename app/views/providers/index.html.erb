@@ -5,18 +5,27 @@
     <%= external_link_to "Data.Medicare.gov", @medicare %> </p>
 </div>
 
-<div class="graphics">
-  <form accept-charset="UTF-8" action="/providers" method="get" name="commit" class="form-inline">
-    <div class="form-group">
-    <input type="search" name="search" class="input-large" id="search" placeholder="Search">
-    </div>
-     <button type="submit" style="margin:1em" class="btn btn-primary ">Search Anesthesiologists</button>
-     <%= link_to "List all Anesthesiologists", "/providers", class: "btn btn-danger " %>
-  </form>
-</div>
-<br>
-
 <div class = "providers">
+  
+  <%= form_tag(providers_path, :method => "get", :class => "form-horizontal") do %>
+   
+    <%= label_tag "last", "Last Name: "%>
+      <%= text_field_tag :last, params[:last], placeholder: "Last Name", :class => "input-medium" %>
+    <%= label_tag "hospital", "Hospital: "%>
+      <%= text_field_tag :hospital, params[:hospital], placeholder: "Hospital", :class => "input-medium" %>
+      <br>
+    <%= label_tag "employer", "Employer: "%>
+      <%= text_field_tag :employer, params[:employer], placeholder: "Employer", :class => "input-medium" %>
+    <%= label_tag "state", "State: "%>
+      <%= text_field_tag :state, params[:state], placeholder: "State", :class => "input-medium" %>
+    
+<br>
+    <%= submit_tag "Search Anesthesiologists", :name => nil, :class => "btn btn-primary", :style => "margin:1em" %>
+    
+    <%= link_to "List all Anesthesiologists", "/providers", class: "btn btn-danger " %>
+   
+  <% end %>
+
   <h1>
     <% if @providers.length == 1%>
     1 anesthesiologist matches your search
@@ -30,8 +39,8 @@
       <tr>
         <th><%= sortable "last", "Name" %></th>
         <th>Location</th>
-        <th><%= sortable "name_lgl", "Employer" %></th>
         <th><%= sortable "aff1", "Hospitals" %></th>
+        <th><%= sortable "name_lgl", "Employer" %></th>
         <th> </th>
       </tr>         
     </thead>
@@ -40,25 +49,18 @@
         <tr>
           <td><%= "#{provider.last}, #{provider.first} #{provider.middle}"  %></td>
           <td><%= "#{provider.city}, #{provider.state}" %></td>
-          <td><%= "#{provider.name_lgl}" %>
-              <% if provider.name_common %>
-                <br><%="#{provider.name_common}" %>
-              <% end %></td>
-          <td><%= "#{provider.aff1}" %>
-              <% if provider.aff2 %>
-                <br><%="#{provider.aff2}" %>
-              <% end %>
-              <% if provider.aff3 %>
-                <br><%="#{provider.aff3}" %>
-              <% end %>
-              <% if provider.aff4 %>
-                <br><%="#{provider.aff4}" %>
-              <% end %>
-              <% if provider.aff5 %>
-                <br><%="#{provider.aff5}" %>
-              <% end %>
+          <td><div><%= "#{provider.aff1}" %></div>
+              <div><%= "#{provider.aff2}" %></div>
+              <div><%= "#{provider.aff3}" %></div>
+              <div><%= "#{provider.aff4}" %></div>
+              <div><%= "#{provider.aff5}" %></div>
           </td>
-          <td style = "padding-left: 0em; text-align: center"> <%=external_link_to image_tag("abaorbit.png"), provider.aba%> </td>
+          <td><div><%= "#{provider.name_lgl}" %></div>
+              <div><%= "#{provider.name_common}" %></div>
+          </td>
+              
+          
+          <td style = "text-align: center"> <%=external_link_to image_tag("abaorbit.png"), provider.aba%> </td>
         </tr>
       <% end %>  
     </tbody>

@@ -14,13 +14,10 @@ class Provider < ActiveRecord::Base
     end # end CSV.foreach
   end # end self.import(file)
   
-  PROVIDER_LIKE = 'last ILIKE :search'
   
-  def self.search(search)
-    if search
-      Provider.where(PROVIDER_LIKE, search: "%#{search.downcase}%")
-    else
-      Provider.find(10,20,30,40,50,60)
-    end
-  end
+  scope :lname, -> (last) { where("last ILIKE ?", "#{last}%")}
+  scope :hospital, -> (hospital) { where("aff1 ILIKE ?", "#{hospital}%")}
+  scope :employer, -> (employer) { where("name_lgl ILIKE ?", "#{employer}%")}
+  scope :state, -> (state) { where("state ILIKE ?", "#{state}%")}
+  
 end

@@ -29,27 +29,23 @@ module ApplicationHelper
     title ||= column.titleize
     css_class = column == sort_column ? "current #{sort_direction}" : nil
     direction = column == sort_column && sort_direction == 'asc' ? 'desc' : 'asc'
-    search = params[:search]
-    link_to title, {:sort => column, :direction => direction, :search => search}, {:class => css_class} 
+    link_to title, {:sort => column, :direction => direction, 
+                    :last => params[:last], :hospital => params[:hospital],
+                    :employer => params[:employer], :state => params[:state]}, 
+                   {:class => css_class} 
   end
 
   def on_books_path?
-    current_page?(category_resources_path(1)) ||
-    current_page?(category_resources_path(2)) ||
-    current_page?(category_resources_path(3)) ||
-    current_page?(category_resources_path(4)) ||
-    current_page?(category_resources_path(5)) ||
-    current_page?(category_resources_path(6)) ||
-    current_page?(category_resources_path(7)) ||
-    current_page?(category_resources_path(8)) ||
-    current_page?(category_resources_path(9)) ||
-    current_page?(resources_path)
+    current_page?(:controller => 'resources')
   end
 
   def on_exams_path?
     current_page?(sites_writtenboards_path) ||
     current_page?(sites_oralboards_path) ||
-    current_page?(sites_pedsboards_path)
+    current_page?(sites_pedsboards_path) ||
+    current_page?(sites_crnaboards_path) ||
+    current_page?(sites_echoboards_path) ||
+    current_page?(sites_moca_path)
   end
 
   def on_education_path?
@@ -57,7 +53,11 @@ module ApplicationHelper
     current_page?(regional_path) ||
     current_page?(airway_path) ||
     current_page?(movies_path) ||
-    current_page?(sites_education_path)
+    current_page?(sites_education_path) ||
+    current_page?(lectures_path) ||
+    current_page?(residencies_path) ||
+    current_page?(ms_path) ||
+    current_page?(sites_icu_path)
   end
 
   def on_societies_path?
@@ -65,6 +65,7 @@ module ApplicationHelper
     current_page?(sites_societies_state_path) ||
     current_page?(sites_societies_intl_path) ||
     current_page?(sites_societies_crna_path) ||
-    current_page?(sites_societies_pain_path)
+    current_page?(sites_societies_pain_path) ||
+    current_page?(sites_societies_pedi_path)
   end
 end
