@@ -1,13 +1,13 @@
 <% title "U.S. Anesthesiologists" %>
 <div class = "sites">
   <h1> <%= yield(:title) %> </h1>
-  <p> US Anesthesiologists are publicly listed in the <%= external_link_to "Physican Compare datasets", @datasets %> at 
-    <%= external_link_to "Data.Medicare.gov", @medicare %> </p>
-</div>
+</div>  
 
 <div class = "providers">
-  
-  <%= form_tag(providers_path, :method => "get", :class => "form-horizontal") do %>
+  <p> US Anesthesiologists are publicly listed in the <%= external_link_to "Physican Compare datasets", @datasets %> at 
+    <%= external_link_to "data.medicare.gov", @medicare %> </p>
+ 
+    <%= form_tag(providers_path, :method => "get", :class => "form-horizontal") do %>
    
     <%= label_tag "last", "Last Name: "%>
       <%= text_field_tag :last, params[:last], placeholder: "Last Name", :class => "input-medium" %>
@@ -17,28 +17,28 @@
     <%= label_tag "employer", "Employer: "%>
       <%= text_field_tag :employer, params[:employer], placeholder: "Employer", :class => "input-medium" %>
     <%= label_tag "state", "State: "%>
-      <%= text_field_tag :state, params[:state], placeholder: "State", :class => "input-medium" %>
+      <%= select_tag :state, options_for_select(us_states) %>
     
 <br>
     <%= submit_tag "Search Anesthesiologists", :name => nil, :class => "btn btn-primary", :style => "margin:1em" %>
-    
-    <%= link_to "List all Anesthesiologists", "/providers", class: "btn btn-danger " %>
    
   <% end %>
 
   <h1>
     <% if @providers.length == 1%>
-    1 anesthesiologist matches your search
+      1 anesthesiologist matches your search
+    <% elsif @providers.length == 0%>
     <% else %>
-    <%= @providers.length %> anesthesiologists match your search.
+      <%= @providers.length %> anesthesiologists match your search.
     <% end %>
   </h1>
 
+  <% unless @providers.length == 0%>
   <table>
     <thead>
       <tr>
         <th><%= sortable "last", "Name" %></th>
-        <th>Location</th>
+        <th><%= sortable "city", "Location" %></th>
         <th><%= sortable "aff1", "Hospitals" %></th>
         <th><%= sortable "name_lgl", "Employer" %></th>
         <th> </th>
@@ -65,6 +65,7 @@
       <% end %>  
     </tbody>
   </table>
+  <% end %>
 
 </div>
 

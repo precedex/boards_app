@@ -22,11 +22,11 @@
   }
   
   .pretty th .asc {
-    background-image: asset_url('up_arrow.gif');
+    background-image: asset_url('down_arrow.gif');
   }
   
   .pretty th .desc {
-    background-image: asset_url('down_arrow.gif');
+    background-image: asset_url('up_arrow.gif');
   }
   
   .pretty td{

@@ -20,11 +20,11 @@
     }
 
     .asc {
-      background-image: asset_url('up_arrow.gif');
+      background-image: asset_url('down_arrow.gif');
     }
 
     .desc {
-      background-image: asset_url('down_arrow.gif');
+      background-image: asset_url('up_arrow.gif');
     }  
 	}
   
@@ -41,6 +41,10 @@
 		padding: 10px;
 		color: red;
 	}
+  
+  p {
+    text-align: center;
+  }
   
   form {
     text-align: center;
