@@ -31,7 +31,8 @@ module ApplicationHelper
     direction = column == sort_column && sort_direction == 'asc' ? 'desc' : 'asc'
     link_to title, {:sort => column, :direction => direction, 
                     :last => params[:last], :hospital => params[:hospital],
-                    :employer => params[:employer], :state => params[:state]}, 
+                    :employer => params[:employer], :state => params[:state],
+                    :provider_type => params[:provider_type]},
                    {:class => css_class} 
   end
 
