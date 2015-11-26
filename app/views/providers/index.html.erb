@@ -9,45 +9,62 @@
  
     <%= form_tag(providers_path, :method => "get", :class => "form-horizontal") do %>
    
-    <%= label_tag "last", "Last Name: "%>
-      <%= text_field_tag :last, params[:last], placeholder: "Last Name", :class => "input-medium" %>
-    <%= label_tag "hospital", "Hospital: "%>
-      <%= text_field_tag :hospital, params[:hospital], placeholder: "Hospital", :class => "input-medium" %>
-      <br>
-    <%= label_tag "employer", "Employer: "%>
-      <%= text_field_tag :employer, params[:employer], placeholder: "Employer", :class => "input-medium" %>
-    <%= label_tag "state", "State: "%>
-      <%= select_tag :state, options_for_select(us_states) %>
+    <table class = "provsearch" align= "center">
+      <tr> 
+        <td>
+        <%= label_tag "last", "Last Name: "%>
+        <%= text_field_tag :last, params[:last], placeholder: "Last Name", :class => "input-medium" %>
+        </td>
+        <td style="text-align:left">
+        <%= label_tag "hospital", "Hospital: "%>
+        <%= text_field_tag :hospital, params[:hospital], placeholder: "Hospital", :class => "input-medium" %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+        <%= label_tag "employer", "Employer: "%>
+        <%= text_field_tag :employer, params[:employer], placeholder: "Employer", :class => "input-medium" %>
+        </td>
+        <td style="text-align:left">
+        <%= label_tag "state", "State: "%>
+        <%= select_tag :state, options_for_select(us_states) %>
+        </td>
+      </tr>
+    </table>
     <%= hidden_field_tag "provider_type", "md"  %>
-    
-<br>
     <%= submit_tag "Search Anesthesiologists", :name => nil, :class => "btn btn-primary", :style => "margin:1em" %>
-   
-  <% end %>
+    <% end %>
   
-<br>
-<hr width=75% align=center>
-<br>
+  <hr width=75% align=center>
+  <br>
   
     <%= form_tag(providers_path, :method => "get", :class => "form-horizontal") do %>
    
-    <%= label_tag "last", "Last Name: "%>
-      <%= text_field_tag :last, params[:last], placeholder: "Last Name", :class => "input-medium" %>
-    <%= label_tag "hospital", "Hospital: "%>
-      <%= text_field_tag :hospital, params[:hospital], placeholder: "Hospital", :class => "input-medium" %>
-      <br>
-    <%= label_tag "employer", "Employer: "%>
-      <%= text_field_tag :employer, params[:employer], placeholder: "Employer", :class => "input-medium" %>
-    <%= label_tag "state", "State: "%>
-      <%= select_tag :state, options_for_select(us_states) %>
+    <table class = "provsearch" align= "center">
+      <tr> 
+        <td>
+        <%= label_tag "last", "Last Name: "%>
+        <%= text_field_tag :last, params[:last], placeholder: "Last Name", :class => "input-medium" %>
+        </td>
+        <td style="text-align:left">
+        <%= label_tag "hospital", "Hospital: "%>
+        <%= text_field_tag :hospital, params[:hospital], placeholder: "Hospital", :class => "input-medium" %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+        <%= label_tag "employer", "Employer: "%>
+        <%= text_field_tag :employer, params[:employer], placeholder: "Employer", :class => "input-medium" %>
+        </td>
+        <td style="text-align:left">
+        <%= label_tag "state", "State: "%>
+        <%= select_tag :state, options_for_select(us_states) %>
+        </td>
+      </tr>
+    </table>
     <%= hidden_field_tag "provider_type", "crna"  %>
-    
-<br>
-
-
     <%= submit_tag "Search CRNAs", :name => nil, :class => "btn btn-warning", :style => "margin:1em" %>
-   
-  <% end %>
+    <% end %>
 
   <h1>
     <% if @providers.length == 1 && params[:provider_type] == "md"%>
