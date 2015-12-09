@@ -60,7 +60,8 @@ BoardsApp::Application.routes.draw do
   resources :movies do
     collection { post :import }
   end
-  
+  get   '/sites/education/pediatric',     to: 'sites#index',     :category => 'education-pediatric'
+  get   '/sites/education/cardiac',       to: 'sites#index',     :category => 'education-cardiac'
   get   '/sites/education',               to: 'sites#index',     :category => 'education'
   get   '/sites/icu',                     to: 'sites#index',     :category => 'icu'
   get   '/sites/education/video',         to: 'sites#index',     :category => 'education-video'
@@ -71,6 +72,7 @@ BoardsApp::Application.routes.draw do
   get   '/sites/societies/intl',          to: 'sites#index',     :category => 'society-intl'
   get   '/sites/societies/pedi',          to: 'sites#index',     :category => 'society-pedi'
   get   '/sites/societies/pain',          to: 'sites#index',     :category => 'society-pain'
+  get   '/sites/societies/history',       to: 'sites#index',     :category => 'society-history'
   get   '/sites/societies/crna',          to: 'sites#index',     :category => 'society-crna'
 
   # journals

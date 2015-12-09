@@ -86,7 +86,7 @@ class StaticPagesController < ApplicationController
       ["APACHE II",                      "http://www.mdcalc.com/apache-ii-score-for-icu-mortality/"],
       ["BMI / BSA",                      "http://www.mdcalc.com/bmi-and-body-surface-area-bsa/"],
       ["Ideal Body Weight",              "http://www.mdcalc.com/ideal-body-weight/"],
-      ["STOPBang (OSA)",                 "http://www.stopbang.ca/screen.php"],
+      ["STOPBang (OSA)",                 "http://www.stopbang.ca/screening.php"],
       ["A-a Gradient",                   "http://www.mdcalc.com/a-a-o2-gradient/"],
       ["Cockgroft-Gault CrCl",           "http://www.mdcalc.com/creatinine-clearance-cockcroft-gault-equation/"]
     ]
@@ -135,6 +135,7 @@ class StaticPagesController < ApplicationController
     ]
 
     @commercial_courses = [
+      ["Open Anesthesiology Self-Study Qbank",           "https://www.openanesthesia.org/members/join/#qbank-only"],
       ["True Learn Anesthesiology",                      "http://www.truelearn.com/anesthesiology/"],
       ["Michael Ho: The Essential Written Board Review", "http://anconsultants.com/anesthesiology-written-board-review/"],
       ["AQB - anesthesiaQbank",                          "http://anesthesiaqbank.com"],

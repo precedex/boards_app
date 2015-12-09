@@ -1,4 +1,4 @@
-# Anesthesia Question Generator application
+# Anesthesia Hub
 
-This is the application for the anesthesia question generator
+This is the source code for http://www.anesthesiahub.com
 by David Moss, MD.

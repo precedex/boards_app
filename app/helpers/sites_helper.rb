@@ -7,6 +7,8 @@ module SitesHelper
     "education" => "Miscellaneous",
     "icu" => "ICU",
     "education-regional" => "Regional Anesthesia",
+    "education-pediatric" => "Pediatric Anesthesia",
+    "education-cardiac" => "Cardiac Anesthesia",
     "education-airway" => "Airway Management",
     "education-video" => "Videos",
     "education-simulation" => "Simulation",
@@ -17,6 +19,7 @@ module SitesHelper
     "society-intl" => "Intl. Anesthesiology Societies",
     "society-pedi" => "Pediatric Anesthesiology Societies",
     "society-pain" => "Regional Anesthesia & Pain Societies",
+    "society-history" => "History of Anesthesia",
     "society-crna" => "Nurse Anesthesia Societies"
   }
 
