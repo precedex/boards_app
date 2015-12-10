@@ -50,15 +50,17 @@ module ApplicationHelper
   end
 
   def on_education_path?
-    current_page?(calendar_path) ||
-    current_page?(regional_path) ||
-    current_page?(airway_path) ||
-    current_page?(movies_path) ||
-    current_page?(sites_education_path) ||
-    current_page?(lectures_path) ||
     current_page?(residencies_path) ||
     current_page?(ms_path) ||
-    current_page?(sites_icu_path)
+    current_page?(calendar_path) ||
+    current_page?(lectures_path) ||
+    current_page?(regional_path) ||
+    current_page?(sites_education_pediatric_path) ||
+    current_page?(sites_education_cardiac_path) ||
+    current_page?(airway_path) ||
+    current_page?(sites_icu_path) ||
+    current_page?(movies_path) ||
+    current_page?(sites_education_path)
   end
 
   def on_societies_path?

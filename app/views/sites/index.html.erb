@@ -2,31 +2,5 @@
   <% title site_category_title(params[:category]) %>
   <h1><%= yield(:title) %></h1>
 
-  <% @sites.in_groups_of(4, false).each do |group| %> 
-    <div class='row'>   
-      <% group.each do |site| %>
-        <div class='col-xs-3'>  
-          <a class="btn btn-default btn-lg" role="button" href="<%= site.link %>" target='_blank'>
-            <% if site.image %>
-              <%= image_tag(site.image, width: "100%") %>
-            <% else %>
-              <%= site.title %>
-            <% end %>   
-          </a>
-          <h4><%= site.description %></h4>
-
-          <!--
-          <div class = "list_actions">
-             <%= link_to 'New', new_site_path %>
-             <%= link_to 'Show', site %>
-             <%= link_to 'Edit', edit_site_path(site) %>
-             <%= link_to 'Destroy', site, method: :delete, data: { confirm: 'Are you sure?' } %>
-          </div>
-          -->
-          
-        <br>
-        </div>
-      <% end %>
-    </div>
-  <% end %>
+   <%= render 'layouts/sites' %>
 </div>
