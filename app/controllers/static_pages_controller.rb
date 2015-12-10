@@ -86,7 +86,7 @@ class StaticPagesController < ApplicationController
       ["APACHE II",                      "http://www.mdcalc.com/apache-ii-score-for-icu-mortality/"],
       ["BMI / BSA",                      "http://www.mdcalc.com/bmi-and-body-surface-area-bsa/"],
       ["Ideal Body Weight",              "http://www.mdcalc.com/ideal-body-weight/"],
-      ["STOPBang (OSA)",                 "http://www.stopbang.ca/screening.php"],
+      ["STOPBang (OSA)",                 "http://www.stopbang.ca/osa/screening.php"],
       ["A-a Gradient",                   "http://www.mdcalc.com/a-a-o2-gradient/"],
       ["Cockgroft-Gault CrCl",           "http://www.mdcalc.com/creatinine-clearance-cockcroft-gault-equation/"]
     ]
@@ -303,6 +303,7 @@ class StaticPagesController < ApplicationController
     ]
     
     @ua= ["Understanding Anesthesia", "http://www.understandinganesthesiology.com"]
+    @rca = ["Royal College of Anaesthetists Guide for Novice Trainees", "http://www.e-lfh.org.uk/e-learning-sessions/rcoa-novice/home.html"]
     @sea = ["SEA", "http://www.seahq.net"]
     @seams = ["Medical Student Guide to Anesthesiology", "http://www.seahq.net/images/sea_msg.pdf"]
     
