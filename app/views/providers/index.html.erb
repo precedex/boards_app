@@ -4,7 +4,7 @@
 </div>  
 
 <div class = "providers">
-  <p> Anesthesiologists and CRNAs are publicly listed in the <%= external_link_to "Physican Compare datasets", @datasets %> at 
+  <p> Anesthesiologists, CRNAs, and AAs are publicly listed in the <br><%= external_link_to "Physican Compare datasets", @datasets %> at 
     <%= external_link_to "data.medicare.gov", @medicare %> </p>
  
     <%= form_tag(providers_path, :method => "get", :class => "form-horizontal") do %>
@@ -65,16 +65,51 @@
     <%= hidden_field_tag "provider_type", "crna"  %>
     <%= submit_tag "Search CRNAs", :name => nil, :class => "btn btn-warning", :style => "margin:1em" %>
     <% end %>
+    
+    <hr width=75% align=center>
+    <br>
+  
+      <%= form_tag(providers_path, :method => "get", :class => "form-horizontal") do %>
+   
+      <table class = "provsearch" align= "center">
+        <tr> 
+          <td>
+          <%= label_tag "last", "Last Name: "%>
+          <%= text_field_tag :last, params[:last], placeholder: "Last Name", :class => "input-medium" %>
+          </td>
+          <td style="text-align:left">
+          <%= label_tag "hospital", "Hospital: "%>
+          <%= text_field_tag :hospital, params[:hospital], placeholder: "Hospital", :class => "input-medium" %>
+          </td>
+        </tr>
+        <tr>
+          <td>
+          <%= label_tag "employer", "Employer: "%>
+          <%= text_field_tag :employer, params[:employer], placeholder: "Employer", :class => "input-medium" %>
+          </td>
+          <td style="text-align:left">
+          <%= label_tag "state", "State: "%>
+          <%= select_tag :state, options_for_select(us_states) %>
+          </td>
+        </tr>
+      </table>
+      <%= hidden_field_tag "provider_type", "aa"  %>
+      <%= submit_tag "Search AAs", :name => nil, :class => "btn btn-success", :style => "margin:1em" %>
+      <% end %>
 
   <h1>
     <% if @providers.length == 1 && params[:provider_type] == "md"%>
       1 anesthesiologist matches your search
     <% elsif @providers.length == 1 && params[:provider_type] == "crna"%>
       1 CRNA matches your search
+    <% elsif @providers.length == 1 && params[:provider_type] == "aa"%>
+      1 AA matches your search  
     <% elsif params[:provider_type] == "md"%>
       <%= @providers.length %> anesthesiologists match your search.
     <% elsif params[:provider_type] == "crna"%>
       <%= @providers.length %> CRNAs match your search.    
+    <% elsif params[:provider_type] == "aa"%>
+      <%= @providers.length %> AAs match your search.
     <% else %>
     <% end %>
   </h1>

@@ -67,9 +67,10 @@ module ApplicationHelper
     current_page?(sites_societies_us_path) ||
     current_page?(sites_societies_state_path) ||
     current_page?(sites_societies_intl_path) ||
-    current_page?(sites_societies_crna_path) ||
-    current_page?(sites_societies_pain_path) ||
     current_page?(sites_societies_pedi_path)
+    current_page?(sites_societies_pain_path) ||
+    current_page?(sites_societies_history_path) ||
+    current_page?(sites_societies_crna_path)
   end
   
   def us_states
