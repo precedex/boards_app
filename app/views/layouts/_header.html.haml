@@ -58,12 +58,12 @@
               %li= link_to "Calendar",   		  '/calendar'
               %li= link_to "Lectures",   		  '/lectures'
               %li= link_to "Regional", 			  '/regional'
-              %li= link_to "Pediatric", 			sites_education_pediatric_path
-              %li= link_to "Cardiac", 			  sites_education_cardiac_path
+              %li= link_to "Pediatric", 			sites_pediatric_path
+              %li= link_to "Cardiac", 			  sites_cardiac_path
               %li= link_to "Airway", 			    '/airway'
               %li= link_to "ICU", 			      sites_icu_path
               %li= link_to "Movies",    		  '/movies'
-              %li= link_to "Miscellaneous",   sites_education_path
+              %li= link_to "Miscellaneous",   sites_miscellaneous_path
 
           %li.dropdown{class: ("active" if on_societies_path?)}
             %a{"data-toggle" => "dropdown", href: "#"}

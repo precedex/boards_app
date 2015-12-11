@@ -55,12 +55,12 @@ module ApplicationHelper
     current_page?(calendar_path) ||
     current_page?(lectures_path) ||
     current_page?(regional_path) ||
-    current_page?(sites_education_pediatric_path) ||
-    current_page?(sites_education_cardiac_path) ||
+    current_page?(sites_pediatric_path) ||
+    current_page?(sites_cardiac_path) ||
     current_page?(airway_path) ||
     current_page?(sites_icu_path) ||
     current_page?(movies_path) ||
-    current_page?(sites_education_path)
+    current_page?(sites_miscellaneous_path)
   end
 
   def on_societies_path?

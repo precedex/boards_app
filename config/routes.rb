@@ -60,11 +60,10 @@ BoardsApp::Application.routes.draw do
   resources :movies do
     collection { post :import }
   end
-  get   '/sites/education/pediatric',     to: 'sites#index',     :category => 'education-pediatric'
-  get   '/sites/education/cardiac',       to: 'sites#index',     :category => 'education-cardiac'
-  get   '/sites/education',               to: 'sites#index',     :category => 'education'
+  get   '/sites/pediatric',               to: 'sites#index',     :category => 'education-pediatric'
+  get   '/sites/cardiac',                 to: 'sites#index',     :category => 'education-cardiac'
+  get   '/sites/miscellaneous',           to: 'sites#index',     :category => 'education'
   get   '/sites/icu',                     to: 'sites#index',     :category => 'icu'
-  get   '/sites/education/video',         to: 'sites#index',     :category => 'education-video'
 
   # societies
   get   '/sites/societies/us',            to: 'sites#index',     :category => 'society-us'
