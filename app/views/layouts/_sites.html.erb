@@ -2,14 +2,21 @@
   <div class='row'>   
     <% group.each do |site| %>
       <div class='col-xs-3'>  
-        <a class="btn btn-default btn-lg" role="button" href="<%= site.link %>" target='_blank'>
-          <% unless site.image.blank? %>
-            <%= image_tag(site.image, width: "100%") %>
-          <% else %>
-            <%= site.title %>
-          <% end %>   
+        
+        <% if site.rec == '1'%>
+          <a class="btn btn-default btn-rec" role="button" href="<%= site.link %>" target='_blank'> 
+        <% else %>
+          <a class="btn btn-default" role="button" href="<%= site.link %>" target='_blank'> 
+        <% end %>    
+          
+        <% unless site.image.blank? %>
+          <%= image_tag(site.image, width: "100%") %>
+        <% else %>
+          <%= site.title %>
+        <% end %>   
         </a>
         <h4><%= site.description %></h4>
+            
 <!--
         <div class = "list_actions">
            <%= link_to 'New', new_site_path %>

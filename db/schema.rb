@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151114221907) do
+ActiveRecord::Schema.define(version: 20151211153806) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -111,6 +111,7 @@ ActiveRecord::Schema.define(version: 20151114221907) do
     t.datetime "updated_at"
     t.string   "authors"
     t.string   "image"
+    t.string   "rec"
   end
 
   create_table "topicalizations", force: true do |t|

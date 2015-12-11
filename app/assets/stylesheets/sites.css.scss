@@ -29,8 +29,12 @@
       }
     width: 300px;
     height: 140px;
-    border: 2px solid black;
+    border: solid 1px DarkBlue;
     display: table-cell;
+  }
+  
+  .btn-rec{
+    border: double 5px OrangeRed;
   }
   
   .btn img {
