@@ -19,6 +19,7 @@ module SitesHelper
     "society-intl" => "Intl. Anesthesiology Societies",
     "society-pedi" => "Pediatric Anesthesiology Societies",
     "society-pain" => "Regional Anesthesia & Pain Societies",
+    "society-quality" => "Quality & Safety",
     "society-history" => "History of Anesthesia",
     "society-crna" => "Nurse Anesthesia Societies"
   }

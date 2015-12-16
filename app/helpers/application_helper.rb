@@ -69,6 +69,7 @@ module ApplicationHelper
     current_page?(sites_societies_intl_path) ||
     current_page?(sites_societies_pedi_path) ||
     current_page?(sites_societies_pain_path) ||
+    current_page?(sites_societies_quality_path) ||
     current_page?(sites_societies_history_path) ||
     current_page?(sites_societies_crna_path)
   end
