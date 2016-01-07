@@ -54,6 +54,8 @@ class StaticPagesController < ApplicationController
 
     @guidelines = [
       ["ACC/AHA 2014 Preop Testing", "http://circ.ahajournals.org/content/early/2014/07/31/CIR.0000000000000106.full.pdf"],
+      ["ASA Consensus Statement on ICDs/Pacemakers", "http://www.hrsonline.org/content/download/1432/20125/file/2011-HRS_ASA%20Perioperative%20Management.pdf"],
+      ["Machine Checkout Recommendations", "https://www.asahq.org/~/media/sites/asahq/files/public/resources/clinical-resources/finalcheckoutdesignguidelines.pdf"],
       ["SCA Clinical Practice & Guidelines", "http://www.scahq.org/ClinicalPracticeGuidelines/Guidelines.aspx"],
       ["Endocarditis Prophylaxis",   "endocarditis.jpg"],
       ["Difficult Airway Society",    "http://www.das.uk.com/guidelines"],
@@ -100,6 +102,7 @@ class StaticPagesController < ApplicationController
     @old_aba_exams = ["1990-1996 In-training Examinations", "http://www.theaba.org/TRAINING-PROGRAMS/In-training-Exam/Previous-Exams"]
     @aba_training_programs = ["here", "http://www.theaba.org/Home/TrainingPrograms"]
     @aba_content_outline = ["content outline", "http://www.theaba.org/PDFs/BASIC-Exam/Basic-and-Advanced-ContentOutline"]
+    @gaps = ["Gaps in Knowledge", "http://www.theaba.org/PDFs/ITE-Exam/ITE-Gaps-in-Knowledge-Report.pdf"]
     @aba_exam_summary = ["2014 Exam Summary (PDF)", "http://www.theaba.org/pdf/SAAA-Exams-Report.pdf"]
     @open_anesthesia_keywords = ["Open Anesthesia", "http://www.openanesthesia.org/OpenAnesthesia.org:KeywordBrowser"]
     @mathps = "/AnesthesiaMath-PS.pdf"
