@@ -198,7 +198,6 @@ class StaticPagesController < ApplicationController
       ["GadsenJones Anesthesiology Oral Board Review", "http://www.gadsdenjones.com"],
       ["Just Oral Boards",                             "http://www.justoralboards.com"],
       ["AceMedBoard",                                  "http://www.acemedboard.com"],
-      ["Nail the Boards",                              "http://www.nailtheboards.com"],
       ["The Osler Institute",                          "http://www.osler.org/main/ane.html"],
       ["Ultimate Board Prep",                          "http://www.ultimateboardprep.com"]
     ]
