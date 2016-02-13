@@ -332,6 +332,7 @@ class StaticPagesController < ApplicationController
   end
   
   def delirium
+      @del =     params[:del_checkbox].to_i
       @age =     params[:age_radio]
       @sense =   params[:sense_radio]
       @adl =     params[:adl_radio]
