@@ -331,6 +331,16 @@ class StaticPagesController < ApplicationController
                @age.to_i +     @adls.to_i +    @surgurg.to_i    
   end
   
+  def delirium
+      @age =     params[:age_radio]
+      @sense =   params[:sense_radio]
+      @adl =     params[:adl_radio]
+      @cog =     params[:cog_radio]
+      @sa =      params[:sa_radio]
+      
+      @score = @age.to_i + @sense.to_i + @adl.to_i + @cog.to_i + @sa.to_i
+  end
+  
   def ponv
       @gender  = params[:gender_checkbox] 
       @smoke   = params[:smoke_checkbox] 

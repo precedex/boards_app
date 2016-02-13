@@ -89,6 +89,9 @@ BoardsApp::Application.routes.draw do
   
   #ponv
   get    '/ponv',                         to: 'static_pages#ponv'
+  
+  #delifirum
+  get   '/delirium',                      to: 'static_pages#delirium'
 
   # footer
   get    '/secret',                       to: 'static_pages#secret'

@@ -1,0 +1,52 @@
+<% title "DEAR score"%>
+
+<div class = "tmccalc">
+  <h2> Modified Delirium Elderly At-Risk (DEAR) Score </h2> <br/><br/>
+  
+  <%= form_tag('/delirium', method: :get) %>  
+  
+  <table style="width:100%">
+    <tr>
+      <td><label><%= radio_button_tag 'age_radio', '1',   (params[:age_radio] == '1')       %>    Age &ge; 80</label></td>
+      <td><label><%= radio_button_tag 'age_radio', '0',   (params[:age_radio] != '1')       %>    Age &lt; 80</label></td>
+    </tr>
+    <tr>
+      <td><label><%= radio_button_tag 'sense_radio', '1',   (params[:sense_radio] == '1')       %>    Have <em>either</em> hearing aid <br> <em>or</em> very poor vision</label></td>
+      <td><label><%= radio_button_tag 'sense_radio', '0',   (params[:sense_radio] != '1')       %>    Have <em>neither</em> hearing aids <br> <em>nor</em> very poor vision</label></td> 
+    </tr>                                                            
+    <tr>
+      <td><label><%= radio_button_tag 'adl_radio', '1',   (params[:adl_radio] == '1')       %>    Impairment* in <em>any</em> ADL</label></td>
+      <td><label><%= radio_button_tag 'adl_radio', '0',   (params[:adl_radio] != '1')       %>    Independent in <em>all</em> ADLs</label></td> 
+    </tr>
+    <tr>
+      <td><label><%= radio_button_tag 'cog_radio', '1',   (params[:cog_radio] == '1')       %>    Previous post-op delirium <br> <em>or</em> 6-IS &le; 3</label></td>
+      <td><label><%= radio_button_tag 'cog_radio', '0',   (params[:cog_radio] != '1')       %>    No previous post-op delirium <br> <em>and</em> 6-IS > 3</label></td> 
+    </tr>
+    <tr>
+      <td><label><%= radio_button_tag 'sa_radio', '1',   (params[:sa_radio] == '1')       %>    > 3 drinks/week alcohol <br> <em>or</em> > 3x/week benzodiazepines <br> <em>or</em> daily opiate use</label></td>
+      <td><label><%= radio_button_tag 'sa_radio', '0',   (params[:sa_radio] != '1')       %>    &le; 3 drinks/week alcohol <br> <em>and</em> &le; 3x/week benzodiazepines <br> <em>and PRN</em> or no opiate use</label></td> 
+    </tr>
+    <tr> <td> </td> </tr>
+    
+  </table>
+
+  <h3></h3>
+  <button type="submit" class="btn btn-danger btn-lg">Get Score</button>
+  <h3></h3>
+
+    <%= link_to "Reset", "/delirium", class: "btn btn-primary" %>
+
+    <h2> Risk Score: <%= @score %> <h2> 
+
+    <% if @score < 2%>
+      <h2 style = "color:green"> Low Risk </h2>
+    <% else %>
+      <h2 style = "color:red"> High Risk </h2>
+    <% end %>  
+  <hr>  
+  <br>  
+  <p> <strong>ADLs:</strong> Do you need assistance with Bathing? Dressing? Toileting? Grooming? Feeding? *not secondary to joint disease for which patient is having surgery.</p> 
+  <p> <strong>6-Item Screener (6-IS):</strong> 3-item recall (e.g. apple, table, penny) <em>and</em><br> 3-item temporal orientation (day of week, month, year).</p>
+  <p> <strong>Previous post-op delirium:</strong> Did you ever experience confusion or hallucinations or behavior which was unusual for you following a surgery?</p>
+</div>
+
