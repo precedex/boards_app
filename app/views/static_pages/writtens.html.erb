@@ -7,10 +7,24 @@
 
 <div class='exams'>
   <p>
-    The ABA has recently changed the board certification process. Instead of a 
-    <%= external_link_to *@part1 %> written exam taken after residency graduation and a <%= external_link_to *@part2 %> oral exam taken after passing part 1, residents graduating after June 30, 2016 will take the new staged exams:
-    <%= external_link_to *@basic %> (in July of CA-2 year), and <%= external_link_to *@advanced %> (after graduating). 
-    The in-training exam (ITE) will be administered February 18 - 22, 2016.
+    The ABA has phased out the traditional <%= external_link_to *@part1 %> written exam. 
+    Residents graduating after June 30, 2016 now take the <%= external_link_to *@staged %>.
+  </p>
+  
+  <p>
+    Median pass rate for first time takers of the Part 1 exam (2009-2015) was 88% 
+  </p>
+  
+  <p>  
+    The <%= external_link_to *@basic %> exam is offered twice a year: June and November. To be eligible for the June exam, one must have completed 6 months of CA-1 training by March 31. 
+  </p>
+  
+  <div class='graphics'>
+      <%= image_tag("BasicStats.png") %>
+  </div>
+  <br>
+  <p>
+    The first <%= external_link_to *@advanced %> exam will be administered in July 2016. Starting in 2017, it will be offered twice a year: January and July. To be eligible for the July exam, one must have completed 6 months of CA-3 training by March 31. 
   </p>
 
   <p>
@@ -18,16 +32,16 @@
   </p>
   
   <p>
+    <%= external_link_to *@basicq %> and <%= external_link_to *@advancedq %> sample questions.
+  </p>
+  
+  <p>
     2013 - 2015 <%= external_link_to *@gaps %> reports.
   </p>
 
   <p>
-  The ABA has publicly released the <%= external_link_to *@old_aba_exams %>.
-  While some of the test subject material is no longer actively tested (e.g
-  halothane, enflurane, Mapleson circuits), the underlying concepts are largely
-  unchanged. Certain material on ACLS algorithms is no longer accurate and you
-  should refer to the <%= link_to "2010 algorithms", tools_path %>. K-type
-  questions have been elminated and are not included here.
+  The released <%= external_link_to *@old_aba_exams %>, categorized into BASIC/ADVANCED may be searched below.
+  K-type questions have been eliminated. 
   </p>
 
   <div class="graphics">
@@ -86,43 +100,39 @@
       Anesthesiology, American Society of Anesthesiologists
     </p>
     <br><br>
-  </div>
-  <p>
-    Curves plotted below assume normally distributed test scores.
-  </p>  
-		    
-  <div class='graphics'>
-    <%= image_tag("ABA14Normals.png") %>
-    <br>
-    <%= image_tag("ABA14ITEtoWE.png") %>&nbsp
-    <%= image_tag("ABA14ITEtoBASIC.png") %>
-    <br></br>
-    <%= image_tag("ABA14Success.png") %>
-  </div>
-  <br>
+  </div>  
+
   <p>
     An extensive list of keywords can be found at <%= external_link_to *@open_anesthesia_keywords %>
   </p>
+  
   <p>
     Anesthesia math review <%= external_link_to "Problem Set", @mathps %> and <%= external_link_to "Solutions", @mathsol %>
   </p>
+  
   <p>
     Board review <%= external_link_to "books", category_resources_path("Written Board") %>
   </p>
 
   <p>
-  Discussion threads at <%= link_to_sdn_forum %>
+  Discussion threads at <%= link_to_sdn_forum %> 
   </p>
+  
   <ul>
     <%= render partial: 'site', collection: @study_strategy %>
   </ul>
-    <br>
+  
+  <br>
+    
   <p> Written board commercial prep courses:</p>
-  <p style="font-size: 1.5em; font-style: italic; text-indent: 1em; list-style: none">
+  
+  <p class="disclaimer">
     I don't have any experience with these products and do not endorse any
     particular product
   </p>
+  
   <ul>
     <%= render partial: 'site', collection: @commercial_courses %>
   </ul>
+  
 </div>

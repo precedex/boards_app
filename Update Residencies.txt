@@ -1,4 +1,4 @@
-Clear lecture database for reimport
+Clear residency database for reimport
 
 rake db:migrate:down VERSION=20150313015958
 rake db:migrate:up VERSION=20150313015958

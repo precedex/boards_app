@@ -2,63 +2,80 @@
 
 <div class="sites">
   <h1> <%= yield(:title) %> <br>
-  <span style="font-size: 0.5em"> part 2  / APPLIED exam </span></h1>
+  <span style="font-size: 0.5em"> part 2  / APPLIED exam </span></h1> 
+  <!-- css -->
 </div>
 
 <div class="exams">
   <p>
-    The <%= external_link_to *@part2 %> exam will be replaced by the <%= external_link_to *@applied %> exam in 2017, with both oral and OSCE components.
+    The <%= external_link_to *@part2 %> exam will be replaced by the <%= external_link_to *@applied %> exam in 2017, with two components: a Standardized Oral Examination (SOE) and an Objective Structured Clinical Examination (OSCE).
+  </p>
+
+  <p>
+    The OSCE component has been postponed indefinitely. 
   </p>
   
   <p>
-    In October 2015 The ABA announced the OSCE component has has been postponed and will not be ready in 2017. 
+    Median pass rate for first time takers (2009-2015) is 86% 
   </p>
   
   <p>
-    The part 2 / Applied exam is offered 9 weeks of the year (previously 2) at the ABA assessment center in Raleigh, NC.
+    The APPLIED exam is offered 9 weeks a year at the ABA assessment center in Raleigh, NC:
   </p>
-  
+
   <div class='graphics'>
     <%= image_tag("OralDates.png") %>
-    <%= image_tag("Part2Results.png") %>
   </div>
-
+  
   <br>
+  
+  <p>
+    <u>Successful Candidate Behavior</u> and <u>Improper Candidate Behavior</u>   
+    <%= external_link_to *@aba_archive %> from the ABA.
+  </p>
+  
   <p>
     <u>What to Expect: The ABA Part 2 Examination</u> and <u>ABA Part 2 Examination Orientation</u>  
     <%= external_link_to *@aba_videos %> from the ABA.
   </p>
-  <p>
-    <u>Mastering the Part 2 Examination</u> and <u>Improper Candidate Behavior</u>   
-    <%= external_link_to *@aba_archive %> from the ABA.
-  </p>
+  
   <p>
     Oral board review <%= external_link_to "books", category_resources_path("Oral Board") %>
   </p>
+  
   <p>
-    Hints for mastering the ABA Anesthesiology Boards: <%= external_link_to *@exam_hints_pdf %>
+    John Doyle's <%= external_link_to *@exam_hints_pdf %> (2015)
   </p>
+  
   <p>
     Excellent overview and <%= external_link_to *@lovich %> by Jessica Lovich-Sapola
   </p>
+  
   <p>
     Advice from <%= external_link_to *@the_anesthesia_consultant %>, Richard Novak
   </p>
+  
   <p>
     Discussion threads at <%= link_to_sdn_forum %>
   </p>
+  
   <ul>
     <%= render partial: 'site', collection: @study_strategy %>
   </ul>
+  
   <br>
+  
   <p>
     Oral board commercial prep courses:
   </p>
-  <p style="font-size: 1.5em; font-style: italic; text-indent: 1em; list-style: none">
+  
+  <p class="disclaimer">
     I don't have any experience with these products and do not endorse any
     particular product
   </p>
+  
   <ul>
     <%= render partial: 'site', collection: @commercial_courses %>
   </ul>
+  
 </div>

@@ -59,6 +59,18 @@ ul {
 		display: list-item;
 		list-style: disc;
 	}
+  
+  p.disclaimer {
+    font-style: italic;
+    font-size: 1.5em;
+    text-indent: 1em;
+    list-style: none;
+  }
+  
+  img {
+    vertical-align: -2px;
+  }
+  
 }
 
 .moca{
