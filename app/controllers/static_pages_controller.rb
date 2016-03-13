@@ -321,6 +321,30 @@ class StaticPagesController < ApplicationController
   end
   
   def informatics
+    @tjc = "http://www.jointcommission.org"
+    @tjcwiki = "https://en.wikipedia.org/wiki/Joint_Commission"
+    @hippa = "http://www.hhs.gov/hipaa/"
+    @hippwiki = "https://en.wikipedia.org/wiki/Health_Insurance_Portability_and_Accountability_Act"
+    @ahrq = "http://www.ahrq.gov"
+    @ahrqwiki = "https://en.wikipedia.org/wiki/Agency_for_Healthcare_Research_and_Quality"
+    @hhs = "http://www.hhs.gov"
+    @hhswiki = "https://en.wikipedia.org/wiki/United_States_Department_of_Health_and_Human_Services"
+    @cms = "https://www.cms.gov"
+    @cmswiki = "https://en.wikipedia.org/wiki/Centers_for_Medicare_and_Medicaid_Services"
+    @cdc = "http://www.cdc.gov"
+    @cdcwiki = "https://en.wikipedia.org/wiki/Centers_for_Disease_Control_and_Prevention"
+    @oecd = "http://www.oecd.org"
+    @oecdwiki = "https://en.wikipedia.org/wiki/Organisation_for_Economic_Co-operation_and_Development"
+    @onc = "https://www.healthit.gov"
+    @oncwiki = "https://en.wikipedia.org/wiki/Office_of_the_National_Coordinator_for_Health_Information_Technology"
+    @fda = "http://www.fda.gov"
+    @fdawiki = "https://en.wikipedia.org/wiki/Food_and_Drug_Administration"
+    @atsdr = "http://www.atsdr.cdc.gov"
+    @atsdrwiki = "https://en.wikipedia.org/wiki/Agency_for_Toxic_Substances_and_Disease_Registry"
+    @who = "www.who.int/"
+    @whowiki = "https://en.wikipedia.org/wiki/World_Health_Organization"  
+    @nndss = "http://wwwn.cdc.gov/nndss/"
+    
   end
   
   def calculator
