@@ -320,6 +320,9 @@ class StaticPagesController < ApplicationController
     
   end
   
+  def informatics
+  end
+  
   def calculator
       @asa =     params[:asa_checkbox] 
       @surgery = params[:surgery_checkbox] 

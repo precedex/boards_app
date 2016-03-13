@@ -84,6 +84,9 @@ BoardsApp::Application.routes.draw do
   # sites
   resources :sites
   
+  # informatics
+  get '/informatics',                     to: 'static_pages#informatics'
+  
   # calculator
   get    '/calculator',                   to: 'static_pages#calculator'
   

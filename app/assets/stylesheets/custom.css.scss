@@ -25,9 +25,18 @@ textarea {                  /* not sure what this does */
 
 /* typography */
 
-p, ol, ul, td, h1, h2, h3 {
+p, ol, ul, td, h2, h3 {
   font-family: "Helvetica", sans-serif;
   list-style: none;
+}
+
+h1 {
+	font-family: "Yanone Kaffeesatz", sans-serif;
+  text-align: center;
+	font-size: 7em;
+	letter-spacing: 0.5px;
+	font-weight: 300;
+	padding-bottom: 40px;
 }
 
 p {
