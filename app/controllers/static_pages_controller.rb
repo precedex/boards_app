@@ -341,7 +341,7 @@ class StaticPagesController < ApplicationController
     @fdawiki = "https://en.wikipedia.org/wiki/Food_and_Drug_Administration"
     @atsdr = "http://www.atsdr.cdc.gov"
     @atsdrwiki = "https://en.wikipedia.org/wiki/Agency_for_Toxic_Substances_and_Disease_Registry"
-    @who = "www.who.int/"
+    @who = "http://www.who.int/"
     @whowiki = "https://en.wikipedia.org/wiki/World_Health_Organization"  
     @nndss = "http://wwwn.cdc.gov/nndss/"
     

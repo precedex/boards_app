@@ -75,7 +75,11 @@ ul {
 .informatics{
   li{
     list-style:none;
+    font-style:normal;
+    font-size: 1em;
   }
+  li li {font-size: 60%}
+  strong {color: purple}
 }
 
 .moca{

@@ -89,6 +89,7 @@ BoardsApp::Application.routes.draw do
   
   # calculator
   get    '/calculator',                   to: 'static_pages#calculator'
+  get    '/t4p',                          to: 'static_pages#calculator'
   
   #ponv
   get    '/ponv',                         to: 'static_pages#ponv'
