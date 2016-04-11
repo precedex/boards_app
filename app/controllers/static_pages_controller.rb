@@ -78,6 +78,7 @@ class StaticPagesController < ApplicationController
       ["Arterial Blood Gas Analyzer",    "http://www.mdcalc.com/arterial-blood-gas-abg-analyzer/"],
       ["Society of Thoracic Surgeons Cardiac Surgery Risk", "http://riskcalc.sts.org/stswebriskcalc/#/calculate"],
       ["Gupta Perioperative Cardiac Risk", "http://www.qxmd.com/calculate-online/cardiology/gupta-perioperative-cardiac-risk"],
+      ["NSQIP Surgical Risk Calculator", "http://riskcalculator.facs.org"],
       ["Surgical Apgar Score",           "http://www.mdcalc.com/surgical-apgar-score-sas-post-operative-risk/"],
       ["MELD Score",                     "http://www.mdcalc.com/meld-score-model-for-end-stage-liver-disease-12-and-older/"],
       ["Child-Pugh Score",               "http://www.mdcalc.com/child-pugh-score-for-cirrhosis-mortality/"],
@@ -111,6 +112,7 @@ class StaticPagesController < ApplicationController
     @mathps = "/AnesthesiaMath-PS.pdf"
     @mathsol = "/AnesthesiaMath-S.pdf"
     @study_strategy = [
+      ["ITE 2016 (4/16)",                                  "http://forums.studentdoctor.net/threads/ite-2016.1191823/"],
       ["ABA exam part 1 advice (2/16)",                    "http://forums.studentdoctor.net/threads/aba-exam-part-1-advice.1182799/"],
       ["M5 Correlation to ITEs (1/16)",                    "http://forums.studentdoctor.net/threads/m5-correlation-to-ites.1180566/"],
       ["Qbank structure -- trying to decide which to buy. (1/16)", "http://forums.studentdoctor.net/threads/qbank-structure-trying-to-decide-which-to-buy.1176863/"],
@@ -171,6 +173,8 @@ class StaticPagesController < ApplicationController
     @the_anesthesia_consultant = ["The Anesthesia Consultant", 'http://theanesthesiaconsultant.com/2013/08/22/advice-for-passing-the-oral-board-exams-in-anesthesiology/']
 
     @study_strategy = [
+      ["ABA oral boards and 10 min stem reading session (3/16)",              "http://forums.studentdoctor.net/threads/aba-oral-boards-and-10-min-stem-reading-session.1189411/"],
+      ["2016 oral boards (3/16)",                                             "http://forums.studentdoctor.net/threads/2016-oral-boards.1187918/"],
       ["oral board prep advice (1/16)",                                       "http://forums.studentdoctor.net/threads/oral-board-prep-advice.1180670/"],
       ["Oral board answers that are relatively unrealistic? (8/15)",          "http://forums.studentdoctor.net/threads/oral-board-answers-that-are-relatively-unrealistic.1155448/"],
       ["Just Oral Boards.com (7/15)",                                         "http://forums.studentdoctor.net/threads/just-oral-boards-com.1154301/"],
@@ -288,6 +292,7 @@ class StaticPagesController < ApplicationController
     @activities = "http://www.theaba.org/PDFs/MOCA/MOCA-2-0-Part-4-Requirements"
     @cme = "http://www.theaba.org/PDFs/MOCA/ABA-Approved-CME"
     @study_strategy = [
+      ["MOCA 2.0 Deadline - Participate or NOT??? (3/16)",                                  "http://forums.studentdoctor.net/threads/moca-2-0-deadline-participate-or-not.1190644/"],
       ["More MOCA 2.0 Info (9/15)",                                                         "http://forums.studentdoctor.net/threads/more-moca-2-0-info.1158892/"],
       ["moca 2.0 (4/15)",                                                                   "http://forums.studentdoctor.net/threads/moca-2-0.1132521"],
       ["Petition the ABA to Change MOCA (2/15)",                                            "http://forums.studentdoctor.net/threads/petition-the-aba-to-change-moca.1119629/"],
@@ -317,33 +322,6 @@ class StaticPagesController < ApplicationController
     @rca = ["Royal College of Anaesthetists Guide for Novice Trainees", "http://www.e-lfh.org.uk/e-learning-sessions/rcoa-novice/home.html"]
     @sea = ["SEA", "http://www.seahq.net"]
     @seams = ["Medical Student Guide to Anesthesiology", "http://www.seahq.net/images/sea_msg.pdf"]
-    
-  end
-  
-  def informatics
-    @tjc = "http://www.jointcommission.org"
-    @tjcwiki = "https://en.wikipedia.org/wiki/Joint_Commission"
-    @hippa = "http://www.hhs.gov/hipaa/"
-    @hippwiki = "https://en.wikipedia.org/wiki/Health_Insurance_Portability_and_Accountability_Act"
-    @ahrq = "http://www.ahrq.gov"
-    @ahrqwiki = "https://en.wikipedia.org/wiki/Agency_for_Healthcare_Research_and_Quality"
-    @hhs = "http://www.hhs.gov"
-    @hhswiki = "https://en.wikipedia.org/wiki/United_States_Department_of_Health_and_Human_Services"
-    @cms = "https://www.cms.gov"
-    @cmswiki = "https://en.wikipedia.org/wiki/Centers_for_Medicare_and_Medicaid_Services"
-    @cdc = "http://www.cdc.gov"
-    @cdcwiki = "https://en.wikipedia.org/wiki/Centers_for_Disease_Control_and_Prevention"
-    @oecd = "http://www.oecd.org"
-    @oecdwiki = "https://en.wikipedia.org/wiki/Organisation_for_Economic_Co-operation_and_Development"
-    @onc = "https://www.healthit.gov"
-    @oncwiki = "https://en.wikipedia.org/wiki/Office_of_the_National_Coordinator_for_Health_Information_Technology"
-    @fda = "http://www.fda.gov"
-    @fdawiki = "https://en.wikipedia.org/wiki/Food_and_Drug_Administration"
-    @atsdr = "http://www.atsdr.cdc.gov"
-    @atsdrwiki = "https://en.wikipedia.org/wiki/Agency_for_Toxic_Substances_and_Disease_Registry"
-    @who = "http://www.who.int/"
-    @whowiki = "https://en.wikipedia.org/wiki/World_Health_Organization"  
-    @nndss = "http://wwwn.cdc.gov/nndss/"
     
   end
   
