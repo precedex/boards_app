@@ -1,58 +1,62 @@
 <% title "PONV"%>
 
 <div class = "tmcponv">
-  <h1> Consensus Guidelines for the Management of PONV <br/></h1>
-  <h3> Adapted from TJ Gan et al. Anesthesia & Analgesia 2014;118(1):85-113 </h3> <br/><br/>
+  <h1> Consensus Guidelines for the Management of PONV </h1>
+  <h2> Adapted from <%= external_link_to "TJ Gan et al. Anesthesia & Analgesia 2014;118(1):85-113", @gan %> </h2>
   
-  <h2> Identify Patients' Risk for PONV  </h2> <br/><br/>
-  
-  <%= form_tag('/ponv', method: :get) %>  
-  
-  <table style="width:100%">
-    <tr><label><%= check_box_tag 'gender_checkbox',    '1', (params[:gender_checkbox]  == '1') %>    Female Gender </label></tr><br>
-    <tr><label><%= check_box_tag 'smoke_checkbox',     '1', (params[:smoke_checkbox]   == '1') %>    Non-Smoker</label></tr><br>
-    <tr><label><%= check_box_tag 'history_checkbox',   '1', (params[:history_checkbox] == '1') %>    History of PONV</label></tr><br>
-    <tr><label><%= check_box_tag 'opioids_checkbox',   '1', (params[:opioids_checkbox] == '1') %>    Postoperative Opioids</label></tr><br>
-  </table>
-  
-  <button type="submit" class="btn btn-danger btn-lg">Get Score</button> 
-  <span id="apfel"> Apfel Simplified Risk Score: <%= @score %></span>
- 
-  <br></br>
+  <div class = "boxed">    
+    <%= form_tag('/ponv', method: :get) %>  
+    
+    <h1>
+      <%= check_box_tag 'gender_checkbox',    '1', (params[:gender_checkbox]  == '1') %>    Female Gender <br>
+      <%= check_box_tag 'smoke_checkbox',     '1', (params[:smoke_checkbox]   == '1') %>    Non-Smoker<br>
+      <%= check_box_tag 'history_checkbox',   '1', (params[:history_checkbox] == '1') %>    History of PONV<br>
+      <%= check_box_tag 'opioids_checkbox',   '1', (params[:opioids_checkbox] == '1') %>    Postoperative Opioids</h1>
 
-    <%= link_to "Reset", "/ponv", class: "btn btn-primary" %>
+    <h4>
+      <button type="submit" class="btn btn-danger btn-lg">Get Score</button> 
+      Apfel Simplified Risk Score: <strong><%= @score %></strong>
+    </h4>
+    
+    <h4>
+      <%= link_to "Reset", "/ponv", class: "btn btn-primary btn-lg" %>
+    
+      <% if @score == 0 %>
+        PONV Risk = 10% 
+      <% elsif @score == 1 %>
+        PONV Risk = 20% 
+      <% elsif @score == 2 %>
+        PONV Risk = 40% 
+      <% elsif @score == 3 %>
+        PONV Risk = 60% 
+      <% else %>
+        PONV Risk = 80% 
+      <% end %>
+    <h4>  
+  </div>  
+      
+  <hr>
+    <%= image_tag("Guideline2b.png", width:"50%") %>
+  <hr>
 
-<span id="score">
-    <% if @score == 0 %>
-      PONV Risk = 10% (low)
-    <% elsif @score == 1 %>
-      PONV Risk = 20% (low)
-    <% elsif @score == 2 %>
-      PONV Risk = 40% (moderate)
-    <% elsif @score == 3 %>
-      PONV Risk = 60% (moderate)
+  <h1>
+    <% if @score == 0 || @score == 1%>
+      Low Risk: Prophylaxis may not be indicated
+      <p><%= image_tag("Guideline3b.png", width:"80%") %></p>
+      <p><%= image_tag("Guideline4L.png", width:"80%") %></p>
+    <% elsif @score == 2 || @score == 3%>
+      Moderate Risk: Administer Prophylaxis Using 1 - 2 Interventions
+      <p><%= image_tag("Guideline3b.png", width:"80%") %></p>
+      <p><%= image_tag("Guideline4M.png", width:"80%") %></p>
     <% else %>
-      PONV Risk = 80% (high)
+      High Risk: Adminster Prophylaxis With Combination (&ge;2) Interventions / Multimodal Therapy
+      <p><%= image_tag("Guideline3b.png", width:"80%") %> </p>
+      <p><%= image_tag("Guideline4H.png", width:"80%") %></p>
     <% end %>
-</span>
-    
-<hr></hr>
-  <h2>Reduce Baseline Risk Factors for PONV </h2>
-  <div class = "indent"> <%= image_tag("Guideline2.png", width:"50%") %> </div>
-  
-<hr></hr>
-
-  <h2>
-   <% if @score == 0 || @score == 1%>
-     Prophylaxis not indicated
-   <% elsif @score == 2 || @score == 3%>
-     Administer Prophylaxis Using 1 - 2 Interventions
-     <div class = "indent"> <%= image_tag("Guideline3.png", width:"80%") %> </div>
-   <% else %>
-     Adminster Prophylaxis With Combination (&ge;2) Interventions / Multimodal Therapy
-     <div class = "indent"> <%= image_tag("Guideline3.png", width:"80%") %> </div> 
-   <% end %>
-  </h2>  
-    
-             
+  </h1>  
+    <h1>If prophylaxis fails use antiemetic from different class than prophylactic drug.</h1>
+    <h1>Readminister only if >6 hours after PACU.</h1>
+    <h1>Do not readminister dexamethasone or scopoloamine.</h1>
+   
+                  
 </div>

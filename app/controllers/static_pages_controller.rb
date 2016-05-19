@@ -112,6 +112,7 @@ class StaticPagesController < ApplicationController
     @mathps = "/AnesthesiaMath-PS.pdf"
     @mathsol = "/AnesthesiaMath-S.pdf"
     @study_strategy = [
+      ["ABA BASIC STUDY TIPS (4/16)",                      "http://forums.studentdoctor.net/threads/aba-basic-study-tips.1193899/"],
       ["ITE 2016 (4/16)",                                  "http://forums.studentdoctor.net/threads/ite-2016.1191823/"],
       ["ABA exam part 1 advice (2/16)",                    "http://forums.studentdoctor.net/threads/aba-exam-part-1-advice.1182799/"],
       ["M5 Correlation to ITEs (1/16)",                    "http://forums.studentdoctor.net/threads/m5-correlation-to-ites.1180566/"],
@@ -359,6 +360,8 @@ class StaticPagesController < ApplicationController
   end
   
   def ponv
+      @gan = "http://pdfs.journals.lww.com/anesthesia-analgesia/2014/01000/Consensus_Guidelines_for_the_Management_of.13.pdf?token=method|ExpireAbsolute;source|Journals;ttl|1463677047643;payload|mY8D3u1TCCsNvP5E421JYK6N6XICDamxByyYpaNzk7FKjTaa1Yz22MivkHZqjGP4kdS2v0J76WGAnHACH69s21Csk0OpQi3YbjEMdSoz2UhVybFqQxA7lKwSUlA502zQZr96TQRwhVlocEp/sJ586aVbcBFlltKNKo+tbuMfL73hiPqJliudqs17cHeLcLbV/CqjlP3IO0jGHlHQtJWcICDdAyGJMnpi6RlbEJaRheGeh5z5uvqz3FLHgPKVXJzdOHIHwDOSay4QvwGGy628k23O72qKHd/ADQ0uUe6KHXsGSlzVXn4NIKCs8Au6cLGw;hash|K/Zuqzx8YngzbYNnk3VQKQ=="
+      
       @gender  = params[:gender_checkbox] 
       @smoke   = params[:smoke_checkbox] 
       @history = params[:history_checkbox]
