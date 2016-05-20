@@ -8,10 +8,11 @@
     <%= form_tag('/ponv', method: :get) %>  
     
     <h1>
-      <%= check_box_tag 'gender_checkbox',    '1', (params[:gender_checkbox]  == '1') %>    Female Gender <br>
-      <%= check_box_tag 'smoke_checkbox',     '1', (params[:smoke_checkbox]   == '1') %>    Non-Smoker<br>
-      <%= check_box_tag 'history_checkbox',   '1', (params[:history_checkbox] == '1') %>    History of PONV<br>
-      <%= check_box_tag 'opioids_checkbox',   '1', (params[:opioids_checkbox] == '1') %>    Postoperative Opioids</h1>
+      <label><%= check_box_tag 'gender_checkbox',    '1', (params[:gender_checkbox]  == '1') %>    Female Gender </label><br> 
+      <label><%= check_box_tag 'smoke_checkbox',     '1', (params[:smoke_checkbox]   == '1') %>    Non-Smoker     </label><br>
+      <label><%= check_box_tag 'history_checkbox',   '1', (params[:history_checkbox] == '1') %>    History of PONV</label><br>
+      <label><%= check_box_tag 'opioids_checkbox',   '1', (params[:opioids_checkbox] == '1') %>    Postoperative Opioids</label>
+    </h1>
 
     <h4>
       <button type="submit" class="btn btn-danger btn-lg">Get Score</button> 
