@@ -1,12 +1,13 @@
 <% title "DEAR score"%>
 
-<div class = "tmccalc">
-  <h2> Modified Delirium Elderly At-Risk (DEAR) Score </h2> <br/><br/>
+<div class = "tmcponv">
+  <h1> Modified Delirium Elderly At-Risk (DEAR) Score </h1>
+  <div class = "boxed">
   
   <%= form_tag('/delirium', method: :get) %>  
   
-  <table style="width:100%">
-    <tr><label><%= check_box_tag 'del_checkbox', '1', (params[:del_checkbox] == '1')     %>    Current diagnosis of delirium </label></tr><br>
+  <table style="font-size: 1.4em; width:100%">
+    <tr><label style= 'font-size: 1.4em'><%= check_box_tag 'del_checkbox', '1', (params[:del_checkbox] == '1')     %>    Current diagnosis of delirium </label></tr><br>
     <tr>
       <td><label><%= radio_button_tag 'age_radio', '1',   (params[:age_radio] == '1')       %>    Age &ge; 80</label></td>
       <td><label><%= radio_button_tag 'age_radio', '0',   (params[:age_radio] != '1')       %>    Age &lt; 80</label></td>
@@ -31,21 +32,23 @@
     
   </table>
 
-  <h3></h3>
-  <button type="submit" class="btn btn-danger btn-lg">Get Score</button>
-  <h3></h3>
+  <h4>
+    <button type="submit" class="btn btn-danger btn-lg">Get Score</button>
+  </h4>
 
     <%= link_to "Reset", "/delirium", class: "btn btn-primary" %>
 
-    <h2> Risk Score: <%= @score %> <h2> 
+    <h4> Risk Score: <%= @score %> </h4> 
 
     <% if @score < 2  && @del != 1%>
-      <h2 style = "color:green"> Low Risk </h2>
+      <h4 style = "color:green"> Low Risk </h2>
     <% else %>
-      <h2 style = "color:red"> High Risk </h2>
+      <h4 style = "color:red"> High Risk </h2>
     <% end %>  
-  <hr>  
-  <br>  
+    
+  </div>
+    
+  <hr>   
   <p> <strong>ADLs:</strong> Do you need assistance with Bathing? Dressing? Toileting? Grooming? Feeding? <br>
     *not secondary to joint disease for which patient is having surgery.</p> 
   <p> <strong>6-Item Screener (6-IS):</strong> 3-item recall (e.g. apple, table, penny) <em>and</em><br> 3-item temporal orientation (day of week, month, year).</p>

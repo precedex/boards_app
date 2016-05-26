@@ -151,25 +151,6 @@ ul {
 	}	
 }
 
-.tmccalc { 
-  h2 {
-  font-weight: bold;
-  font-family: Arial;
-  text-align: center;
-  font-size: 2em;
-  }
-  
-  label {
-    font-size: 1.8em;
-    font-weight: normal;
-    padding-bottom: 0.7em;
-  }
-  p {
-    padding-top: 0px;
-    padding-bottom: 0px;
-  }
-}
-
 .tmcponv { 
   text-align: center;
   font-family: Tahoma;
@@ -187,16 +168,19 @@ ul {
   padding-bottom: 2em;
   }
   h3 {
-  font-weight: bold;
-  font-size: 1.7em;
-  }
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  text-align: left;
+  font-weight: normal;
+  font-size: 2.3em;
+  padding-bottom: 5px;
+  line-height: 1.2;
+    }
   .boxed {
-  width: 50%;
+  width: 70%;
   border: 3px solid lightskyblue;
   border-radius: 25px;
   padding: 5px;
   margin: auto;
-
   }
   label {
     font-size: 1.1em;
