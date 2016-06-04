@@ -28,6 +28,12 @@ BoardsApp::Application.routes.draw do
   get    '/sites/crnaboards',             to: 'static_pages#crnaboards'
   get    'sites/moca',                    to: 'static_pages#moca'
 
+  get   'informatics/index',              to: 'informatics#index'
+  get   'informatics/import'
+  resources :informatics do
+    collection { post :import }
+  end
+
   get    '/questions/random',             to: 'questions#random'
   get    '/check_answer/:id',             to: 'questions#check_answer'
 

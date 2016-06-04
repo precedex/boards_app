@@ -1,0 +1,56 @@
+<% title "Clinical Informatics Exam Glossary" %>
+<div class = "sites">
+  <h1> <%= yield(:title) %> </h1>
+</div>
+
+<div class="graphics">
+  <form accept-charset="UTF-8" action="/informatics" method="get" name="commit" class="form-inline">
+    <div class="form-group">
+    <input type="search" name="search" class="input-large" id="search" placeholder="Search">
+    </div>
+     <button type="submit" style="margin:1em" class="btn btn-primary ">Search Informatics</button>
+     <%= link_to "List all Informatics", "/informatics", class: "btn btn-danger " %>
+  </form>
+</div>
+<br>
+
+<div class = "providers">
+  <h1>
+    <% if @informatics.length == 1%>
+    1 informatic term matches your search
+    <% else %>
+    <%= @informatics.length %> informatics terms match your search.
+    <% end %>
+  </h1>
+</div>
+  
+  <table class="pretty">
+    <thead>
+      <tr>
+        <th><%= sortable  "section" %></th>
+        <th><%= sortable  "topic" %></th>
+        <th><%= sortable  "acronym" %></th> 
+        <th><%= sortable  "information" %></th>
+      </tr>         
+    </thead>
+    <tbody>
+      <% @informatics.each do |informatic| %>
+        <tr>
+          <td><%= informatic.section %></td>
+          <td><%= informatic.topic %></td>
+          <td><%= informatic.acronym %></td> 
+          <td><%= informatic.information %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+<!--
+<div>
+  <h2 style = "font-size: 2em">Import a CSV File</h2>
+    <%= form_tag import_informatics_path, multipart: true do %>
+      <%= file_field_tag :file %>
+      <%= submit_tag "Import CSV" %>
+    <% end %>
+</div>
+-->
