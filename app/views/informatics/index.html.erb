@@ -37,7 +37,7 @@
       <% @informatics.each do |informatic| %>
         <tr>
           <td><%= informatic.section %></td>
-          <td><%= informatic.topic %></td>
+          <td><%= link_to informatic.topic, "http://www.google.com/search?q=#{informatic.topic}"  %></td>
           <td><%= informatic.acronym %></td> 
           <td><%= informatic.information %></td>
         </tr>
