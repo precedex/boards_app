@@ -1,13 +1,12 @@
 <% title "DEAR score"%>
 
 <div class = "tmcponv">
-  <h1> Modified Delirium Elderly At-Risk (DEAR) Score </h1>
-  <div class = "boxed">
+  <h1> Modified Delirium Elderly At-Risk (DEAR) Score </h1><br>
+
   
   <%= form_tag('/delirium', method: :get) %>  
-  
+  <p style = 'text-align:center'><%= check_box_tag 'del_checkbox', '1', (params[:del_checkbox] == '1')     %>  Current diagnosis of delirium</p>
   <table style="font-size: 1.4em; width:100%">
-    <tr><label style= 'font-size: 1.4em'><%= check_box_tag 'del_checkbox', '1', (params[:del_checkbox] == '1')     %>    Current diagnosis of delirium </label></tr><br>
     <tr>
       <td><label><%= radio_button_tag 'age_radio', '1',   (params[:age_radio] == '1')       %>    Age &ge; 80</label></td>
       <td><label><%= radio_button_tag 'age_radio', '0',   (params[:age_radio] != '1')       %>    Age &lt; 80</label></td>
@@ -29,21 +28,17 @@
       <td><label><%= radio_button_tag 'sa_radio', '0',   (params[:sa_radio] != '1')       %>    &le; 3 drinks/week alcohol <br> <em>and</em> &le; 3x/week benzodiazepines <br> <em>and PRN</em> or no opiate use</label></td> 
     </tr>
     <tr> <td> </td> </tr>
-    
   </table>
 
-  <h4>
-    <button type="submit" class="btn btn-danger btn-lg">Get Score</button>
-  </h4>
+ <%= button_tag 'Get Score', class:'btn btn-danger btn-lg'%><br/><br/>
+ <%= link_to "Reset", "/delirium", class: "btn btn-primary" %>
 
-    <%= link_to "Reset", "/delirium", class: "btn btn-primary" %>
-
-    <h4> Risk Score: <%= @score %> </h4> 
+    <h1> Risk Score: <%= @score %> </h1> 
 
     <% if @score < 2  && @del != 1%>
-      <h4 style = "color:green"> Low Risk </h2>
+      <h1 style = "color:green"> Low Risk </h1>
     <% else %>
-      <h4 style = "color:red"> High Risk </h2>
+      <h1 style = "color:red"> High Risk </h1>
     <% end %>  
     
   </div>

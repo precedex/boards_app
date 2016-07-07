@@ -28,6 +28,7 @@ GEM
     arel (4.0.2)
     bootstrap-sass (3.2.0.2)
       sass (~> 3.2)
+    bootstrap-switch-rails (3.0.2)
     builder (3.1.4)
     capybara (2.1.0)
       mime-types (>= 1.16)
@@ -151,6 +152,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootstrap-sass
+  bootstrap-switch-rails (~> 3.0.0)
   capybara (~> 2.1.0)
   coffee-rails (~> 4.0.1)
   friendly_id
@@ -167,3 +169,9 @@ DEPENDENCIES
   selenium-webdriver (~> 2.35.1)
   turbolinks (~> 1.1.1)
   uglifier (~> 2.1.1)
+
+RUBY VERSION
+   ruby 2.0.0p648
+
+BUNDLED WITH
+   1.12.5

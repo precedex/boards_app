@@ -116,6 +116,13 @@ ul {
     font-size: 1.5em; 
     list-style: none
   }
+  h1 {
+    font-size: 2.9em;
+    padding-bottom: 7px;
+  }
+  img{
+    padding-top: 10px;
+  }
 }
 
 .tools{	
@@ -152,40 +159,46 @@ ul {
 }
 
 .tmcponv { 
-  text-align: center;
-  font-family: Tahoma;
   
   h1 {
-  font-weight: normal;
-  font-size: 2.8em;
-  padding-bottom: 5px;
+  font-size: 3.5em;
+  padding-bottom: 2px;
   line-height: 1.2;
   }
   h2 {
-  font-weight: normal;
+  text-align: center;
   font-family: Georgia;
   font-size: 1.4em;
   padding-bottom: 2em;
   }
-  h3 {
-  font-family: "Yanone Kaffeesatz", sans-serif;
-  text-align: left;
-  font-weight: normal;
-  font-size: 2.3em;
-  padding-bottom: 5px;
-  line-height: 1.2;
-    }
-  .boxed {
-  width: 70%;
-  border: 3px solid lightskyblue;
-  border-radius: 25px;
-  padding: 5px;
-  margin: auto;
+  
+  p {
+    text-align: right;
+    font-size: 2em;
+    line-height: 1.1em;
+    letter-spacing: -1px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right:10px;
+    font-weight: lighter;
   }
-  label {
+  
+  label{
+    font-weight: lighter;
+    padding-bottom: 10px;
     font-size: 1.1em;
-    padding-bottom: 0.6em;
   }
+  
+	#left_column{
+		float: left;
+		width: 50%;
+		margin: 0% 0% 10% 0%;
+	}
+	
+	#right_column{
+		float: left;
+		width: 50%;
+	}	
 }
 
 .indent {

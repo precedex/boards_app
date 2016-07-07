@@ -3,6 +3,7 @@ ruby '2.0.0'
 
 gem 'rails', '4.0.1'
 gem 'bootstrap-sass'
+gem 'bootstrap-switch-rails', '~> 3.0.0'
 gem 'nokogiri', '1.6.3.1'
 gem 'pg', '~>0.17.0'
 gem 'haml'
