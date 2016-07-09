@@ -2,22 +2,13 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-ul {
-	font-size: 1.5em;
-	list-style: circle;
-	font-style: italic;
-	font-weight: lighter;
-}
-
 .welcome{ 
   text-align: center;
-  list-style: none;
   
   h1 {
     font-family: "Belleza", "Georgia", serif;
     font-size: 12em;
     letter-spacing: -2px;
-    padding-top: 30px;
   }
 
   h2 {
@@ -41,6 +32,12 @@ ul {
   }
 }
 
+.center{
+  text-align: center;
+  img{
+  padding: 5px;}
+}
+
 .calendar{
   text-align: center;
 }
@@ -53,9 +50,7 @@ ul {
 
 .exams{
 	p {
-		padding-top: 0;
-		padding-bottom: 0;
-		font-size: 2em;
+		padding: 0;
 		display: list-item;
 		list-style: disc;
 	}
@@ -67,8 +62,13 @@ ul {
     list-style: none;
   }
   
+  ul {
+  	font-size: 1.5em;
+  	list-style: circle;
+  }
+  
   img {
-    vertical-align: -2px;
+    vertical-align: -2px; 
   }
 }
 
@@ -100,105 +100,35 @@ ul {
   }
 }
 
-.graphics{
-  text-align: center;
-
-  .btn-lg {
-    font-variant: small-caps;
-    width: 30%;
-    height: 20%;
-    border: none;
-    display: inline;
-  }
-  
-  p {
-    text-align: center; 
-    font-size: 1.5em; 
-    list-style: none
-  }
-  h1 {
-    font-size: 2.9em;
-    padding-bottom: 7px;
-  }
-  img{
-    padding-top: 10px;
-  }
-}
-
 .tools{	
-	font-size: 2em;
-
-	dt{
-		font-family: Cambria;
-		text-align: center;
-		font-size: 1.8em;
-		font-weight: bold;
-		padding-bottom: 0.4em;
-	}
-	
-	dd{
-		font-family: Helvetica;
-		font-size: 1em;
-    letter-spacing: -1px;
-		font-weight: lighter;
-		text-align: center;  
-		padding-bottom: 0.5em;	
-	}
-	
-	#left_column{
-		float: left;
-		width: 50%;
-		margin: 0 0 20% 0%;
-	}
-	
-	#right_column{
-		float: left;
-		width: 50%;
-		margin: 0 0% 20% 0;
-	}	
+  h1{
+    font-size: 4.5em;
+    padding-bottom: 10px;
+  }
+  ul{
+    font-size: 1.7em;
+  }
 }
 
-.tmcponv { 
+.cds { 
   
   h1 {
   font-size: 3.5em;
   padding-bottom: 2px;
-  line-height: 1.2;
   }
   h2 {
   text-align: center;
-  font-family: Georgia;
   font-size: 1.4em;
   padding-bottom: 2em;
   }
-  
-  p {
-    text-align: right;
-    font-size: 2em;
-    line-height: 1.1em;
-    letter-spacing: -1px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-right:10px;
-    font-weight: lighter;
+  p{
+    padding:0;
   }
-  
   label{
-    font-weight: lighter;
-    padding-bottom: 10px;
-    font-size: 1.1em;
+    font-size:2em;
+    font-weight:lighter;
+    letter-spacing: -1px;
   }
-  
-	#left_column{
-		float: left;
-		width: 50%;
-		margin: 0% 0% 10% 0%;
-	}
-	
-	#right_column{
-		float: left;
-		width: 50%;
-	}	
 }
 
 .indent {

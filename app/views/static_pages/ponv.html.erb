@@ -1,60 +1,52 @@
 <% title "PONV"%>
 
-<div class = "tmcponv">
+<div class = "cds">
   <h1> Consensus Guidelines for the Management of PONV </h1>
   <h2> Adapted from <%= external_link_to "TJ Gan et al. Anesthesia & Analgesia 2014;118(1):85-113", @gan %> </h2>
   
   <%= form_tag('/ponv', method: :get) %>  
 
-  <div id="left_column">
-    <p>Female Gender<p/>
-    <p>Non-Smoker<p/>
-    <p>History of PONV<p/>
-    <p>Postoperative Opioids<p/>     
-    <%= button_tag 'Get Score', class:'btn btn-danger btn-lg'%><br/><br/>
-    <%= link_to "Reset", "/ponv", class: 'btn btn-primary btn-lg' %> <br>
-  </div>
-   
-  <div id="right_column" 
-    <div class='make-switch'>
-      <%= check_box_tag 'gender_checkbox', '1', (params[:gender_checkbox] == '1') %><br/>
-      <%= check_box_tag 'smoke_checkbox',  '1', (params[:smoke_checkbox] == '1')  %><br/>
-      <%= check_box_tag 'history_checkbox','1', (params[:history_checkbox] == '1')%><br/>
-      <%= check_box_tag 'opioids_checkbox','1', (params[:opioids_checkbox] == '1')%><br/><br/>
-    </div>  
-      <p style="text-align:left"> Apfel Simplified Risk Score: <strong><%= @score %></strong> </p>
-      <p style="text-align:left">
-      <% if @score == 0 %>
-        PONV Risk = 10%</p> 
-      <% elsif @score == 1 %>
-        PONV Risk = 20%</p>  
-      <% elsif @score == 2 %>
-        PONV Risk = 40%</p>  
-      <% elsif @score == 3 %>
-        PONV Risk = 60%</p>  
-      <% else %>
-        PONV Risk = 80%</p>  
-      <% end %>
-  </div>   
-</div>  
 
-<div class = "graphics"> 
+  <p><%= check_box_tag 'gender_checkbox', '1', (params[:gender_checkbox] == '1') %> Female Gender</p>
+  <p><%= check_box_tag 'smoke_checkbox',  '1', (params[:smoke_checkbox] == '1')  %> Non-Smoker</p>
+  <p><%= check_box_tag 'history_checkbox','1', (params[:history_checkbox] == '1')%> History of PONV</p>
+  <p><%= check_box_tag 'opioids_checkbox','1', (params[:opioids_checkbox] == '1')%> Postoperative Opioids</p>
+  <p><%= button_tag 'Get Score', class:'btn btn-danger btn-lg'%> Apfel Simplified Risk Score: <strong><%= @score %></strong> </p>
+  <p><%= link_to "Reset", "/ponv", class: 'btn btn-primary btn-lg' %> 
+  <% if @score == 0 %>
+    PONV Risk = 10%</p> 
+  <% elsif @score == 1 %>
+    PONV Risk = 20%</p>  
+  <% elsif @score == 2 %>
+    PONV Risk = 40%</p>  
+  <% elsif @score == 3 %>
+    PONV Risk = 60%</p>  
+  <% else %>
+    PONV Risk = 80%</p>  
+  <% end %>
+ 
 <hr>
   <% if @score == 0 || @score == 1%>
     <h1>Low Risk: Prophylaxis may not be indicated</h1>
-    <%= image_tag("Guideline2b.png", width:"50%") %>
-    <%= image_tag("Guideline3b.png", width:"80%") %>
-    <%= image_tag("Guideline4L.png", width:"80%") %>
+    <div class="center"> 
+      <%= image_tag("Guideline2b.png", width:"50%") %>
+      <%= image_tag("Guideline3b.png", width:"80%") %>
+      <%= image_tag("Guideline4L.png", width:"80%") %>
+    </div>
   <% elsif @score == 2 || @score == 3%>
     <h1>Moderate Risk: Administer Prophylaxis Using 1 - 2 Interventions</h1>
+    <div class="center">
       <%= image_tag("Guideline2b.png", width:"50%") %>
-    <%= image_tag("Guideline3b.png", width:"80%") %>
-    <%= image_tag("Guideline4M.png", width:"80%") %>
+      <%= image_tag("Guideline3b.png", width:"80%") %>
+      <%= image_tag("Guideline4M.png", width:"80%") %>
+    </div>
   <% else %>
     <h1>High Risk: Adminster Prophylaxis With Combination (&ge;2) Interventions / Multimodal Therapy</h1>
-    <%= image_tag("Guideline2b.png", width:"50%") %>
-    <%= image_tag("Guideline3b.png", width:"80%") %> 
-    <%= image_tag("Guideline4H.png", width:"80%") %>
+    <div class="center">
+      <%= image_tag("Guideline2b.png", width:"50%") %>
+      <%= image_tag("Guideline3b.png", width:"80%") %>
+      <%= image_tag("Guideline4H.png", width:"80%") %>
+    </div>  
   <% end %>
   
   <h1>If prophylaxis fails use antiemetic from different class than prophylactic drug.</h1>

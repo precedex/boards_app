@@ -2,16 +2,16 @@ class StaticPagesController < ApplicationController
   def welcome
   end
 
-  def feedback
-    @feedback =   ["anesthesiahub@gmail.com", "mailto:anesthesiahub@gmail.com"]
-  end
-
   def about
     @david_moss =    ["David Moss, MD",                     "https://www.tuftsmedicalcenter.org/PhysicianDirectory/David-Moss.aspx"]
     @tufts_medical = ["Tufts Medical Center",               "https://www.tuftsmedicalcenter.org"]
     @floating =      ["The Floating Hospital for Children", "https://www.floatinghospital.org"]
   end
 
+  def feedback
+    @feedback =   ["anesthesiahub@gmail.com", "mailto:anesthesiahub@gmail.com"]
+  end
+  
   def secret
   end
 

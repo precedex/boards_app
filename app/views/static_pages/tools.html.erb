@@ -1,34 +1,23 @@
 <% title "Tools" %>
 <div class="tools">
-  <dl>
-    <div id="left_column">
-      <dt id="ACLS">BLS / ACLS</dt>
-      <%= render partial: "tool", collection: @acls_algos %>
-      <br/>
-      <dt id="PALS">PALS</dt>
-      <%= render partial: "tool", collection: @pals_algos %>
-      <br/>
-      <dt id="Critical">Critical Events</dt>
-      <%= render partial: "tool", collection: @critical_events %>
-      <br/>
-      <dt id="Anatomy">Anatomy</dt>
-      <%= render partial: "tool", collection: @anatomy %>
-      <br/>
-      
-      
+  <div class="row">
+    <div class="col-xs-6">
+      <h1> BLS / ACLS </h1>
+      <ul><%= render partial: "tool", collection: @acls_algos %></ul>
+      <h1>PALS</h1>
+      <ul><%= render partial: "tool", collection: @pals_algos %></ul>
+      <h1>Critical Events</h1>
+      <ul><%= render partial: "tool", collection: @critical_events %></ul>
+      <h1>Anatomy</h1>
+      <ul><%= render partial: "tool", collection: @anatomy %></ul>
     </div>
-    <div id="right_column">
-      <dt id="Calc">Clinical Calculators</dt>
-      <%= render partial: "tool", collection: @calculators %>
-      <br/>
-      <dt id="CV">Guidelines</dt>
-      <%= render partial: "tool", collection: @guidelines %>
-      <br/>
-      <dt id="Dosing">Drugs</dt>
-      <%= render partial: "tool", collection: @drug_dosing %>
-      <br/>
-    </div>
-  </dl>
-</div>
-
-
+    <div class="col-xs-6">
+      <h1>Clinical Calculators</h1>
+      <ul><%= render partial: "tool", collection: @calculators %></ul>
+      <h1>Guidelines</h1>
+      <ul><%= render partial: "tool", collection: @guidelines %></ul>
+      <h1>Drugs</h1>
+      <ul><%= render partial: "tool", collection: @drug_dosing %></ul>
+    </div>  
+  </row>  
+</div>  

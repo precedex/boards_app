@@ -1,49 +1,56 @@
 <% title "T4P"%>
 
-<div class = "tmcponv">
+<div class = "cds">
   <h1> Risk Stratification Score for Postoperative Pneumonia </h1>
   
   <%= form_tag('/calculator', method: :get) %>  
 
-    <p>ASA > 3 <%= check_box_tag 'asa_checkbox',    '2', (params[:asa_checkbox] == '2')     %>     </p>
-    <p>Upper abdominal, chest, neuro or airway surgery <%= check_box_tag 'surgery_checkbox','2', (params[:surgery_checkbox] == '2') %>    </p>
-    <p>COPD, pulmonary HTN, OSA or severe asthma <%= check_box_tag 'resp_checkbox',   '2', (params[:resp_checkbox] == '2')    %>    </p>
-    <p>Smoking <%= check_box_tag 'smoking_checkbox','1', (params[:smoking_checkbox] == '1') %>    </p>
-    <p>Impaired sensorium, neuromuscular disease or swallowing difficulty <%= check_box_tag 'nmd_checkbox',    '1', (params[:nmd_checkbox] == '1')     %>    </p>
-    <p>Unintentional weight loss > 10% <%= check_box_tag 'weight_checkbox', '1', (params[:weight_checkbox] == '1')  %>    </p>
-    <p>BMI < 22 <%= check_box_tag 'bmi_checkbox',    '1', (params[:bmi_checkbox] == '1')     %>    </p>
-    <p>General anesthesia <%= check_box_tag 'ga_checkbox',     '2', (params[:ga_checkbox] == '2')      %>    </p>
-    <p>Surgery > 2 hours <%= check_box_tag 'length_checkbox', '1', (params[:length_checkbox] == '1')  %>    </p><br>
-<p>
-    <label><%= radio_button_tag 'age_radio', '0',    (params[:age_radio] != '0')        %>    Age < 65</label>&emsp;&emsp;&emsp;
-    <label><%= radio_button_tag 'age_radio', '1',    (params[:age_radio] == '1')        %>    Age 65-80</label>&emsp;&emsp;&emsp;
-    <label><%= radio_button_tag 'age_radio', '2',    (params[:age_radio] == '2')        %>    Age > 80</label><br>
-    
-    <label><%= radio_button_tag 'adls_radio', '0',   (params[:adls_radio] != '0')       %>    Independent</label>&emsp;&emsp;&emsp;
-    <label><%= radio_button_tag 'adls_radio', '1',   (params[:adls_radio] == '1')       %>    Partially Dependent</label>&emsp;&emsp;&emsp;
-    <label><%= radio_button_tag 'adls_radio', '2',   (params[:adls_radio] == '2')       %>    Dependent </label><br>
-    
-    <label><%= radio_button_tag 'surgery_radio', '0',   (params[:surgery_radio] != '0')       %>    Elective</label>&emsp;&emsp;&emsp;
-    <label><%= radio_button_tag 'surgery_radio', '1',   (params[:surgery_radio] == '1')       %>    Urgent</label>&emsp;&emsp;&emsp;
-    <label><%= radio_button_tag 'surgery_radio', '2',   (params[:surgery_radio] == '2')       %>    Emergent</label><br>
-</p>
+  <p><%= check_box_tag 'asa_checkbox',    '2', (params[:asa_checkbox] == '2')%> ASA > 3</p>
+  <p><%= check_box_tag 'surgery_checkbox','2', (params[:surgery_checkbox] == '2')%> Upper abdominal, chest, neuro or airway surgery</p>
+  <p><%= check_box_tag 'resp_checkbox',   '2', (params[:resp_checkbox] == '2')%> COPD, pulmonary HTN, OSA or severe asthma</p>
+  <p><%= check_box_tag 'smoking_checkbox','1', (params[:smoking_checkbox] == '1') %> Smoking</p>
+  <p><%= check_box_tag 'nmd_checkbox',    '1', (params[:nmd_checkbox] == '1')%> Impaired sensorium, neuromuscular disease or swallowing difficulty</p>
+  <p><%= check_box_tag 'weight_checkbox', '1', (params[:weight_checkbox] == '1')  %> Unintentional weight loss > 10%</p>
+  <p><%= check_box_tag 'bmi_checkbox',    '1', (params[:bmi_checkbox] == '1')     %>  BMI < 22</p>
+  <p><%= check_box_tag 'ga_checkbox',     '2', (params[:ga_checkbox] == '2')      %>  General anesthesia</p>
+  <p><%= check_box_tag 'length_checkbox', '1', (params[:length_checkbox] == '1')  %> Surgery > 2 hours</p><br>
 
-    <%= button_tag 'Get Score', class:'btn btn-danger btn-lg'%><br/><br/>
-    <%= link_to "Reset", "/t4p", class: 'btn btn-primary btn-lg' %> <br>
-    
-    <h1> Risk Score: <%= @score %></h1>
-    
-    <% if @score < 7 %>
-      <h1 style = "color:green">  Green </h1>
-    <% elsif @score > 12 %>
-      <h1 style = "color:red">    Red   </h1>
-    <% else %>
-      <h1 style = "color:gold"> Yellow </h1>
-    <% end %>   
-  </div> 
+  <div class="row">
+    <div class="col-xs-4">
+      <label><%= radio_button_tag 'age_radio', '0',    (params[:age_radio] != '0')        %> Age < 65</label><br>
+      <label><%= radio_button_tag 'adls_radio', '0',   (params[:adls_radio] != '0')       %> Independent</label><br>
+      <label><%= radio_button_tag 'surgery_radio', '0',   (params[:surgery_radio] != '0')       %> Elective</label>
+    </div>
+    <div class="col-xs-4">
+      <label><%= radio_button_tag 'age_radio', '1',    (params[:age_radio] == '1')        %> Age 65-80</label><br>
+      <label><%= radio_button_tag 'adls_radio', '1',   (params[:adls_radio] == '1')       %> Partially Dependent</label><br>
+      <label><%= radio_button_tag 'surgery_radio', '1',   (params[:surgery_radio] == '1')       %>    Urgent</label>
+    </div>          
+    <div class="col-xs-4">         
+      <label><%= radio_button_tag 'age_radio', '2',    (params[:age_radio] == '2')        %> Age > 80</label><br>
+      <label><%= radio_button_tag 'adls_radio', '2',   (params[:adls_radio] == '2')       %> Dependent </label><br>
+      <label><%= radio_button_tag 'surgery_radio', '2',   (params[:surgery_radio] == '2')       %>  Emergent</label>
+    </div>
+  </div>    
+
+  <%= button_tag 'Get Score', class:'btn btn-danger btn-lg'%><br/><br/>
+  <%= link_to "Reset", "/t4p", class: 'btn btn-primary btn-lg' %> <br>
+  
+  <h1> Risk Score: <%= @score %></h1>
+  
+  <% if @score < 7 %>
+    <h1 style = "color:green">  Green </h1>
+  <% elsif @score > 12 %>
+    <h1 style = "color:red">    Red   </h1>
+  <% else %>
+    <h1 style = "color:gold"> Yellow </h1>
+  <% end %>   
+
 </div>
+
 <hr>
-<div class = "graphics">
+
+<div class ="center">
   <% if @score < 7 %>
     <%= image_tag("T4PGreen.png", width:"50%") %>
   <% elsif @score > 12 %>
@@ -51,7 +58,7 @@
   <% else %>
     <%= image_tag("T4PYellow.png", width:"50%") %>
   <% end %>  
-<hr>
+  <hr>
   <%= image_tag("BREATHE.jpg", width:"70%") %>
 </div>
 
