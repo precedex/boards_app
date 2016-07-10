@@ -3,15 +3,22 @@
   <h1> <%= yield(:title) %> </h1>
 </div>
 
-<div class="center">
-  <form accept-charset="UTF-8" action="/informatics" method="get" name="commit" class="form-inline">
+<form accept-charset="UTF-8" action="/informatics" method="get" name="commit" class="form-inline">
+  <div class="center">
     <div class="form-group">
     <input type="search" name="search" class="input-large" id="search" placeholder="Search">
     </div>
      <button type="submit" style="margin:1em" class="btn btn-primary ">Search Informatics</button>
-     <%= link_to "List all Informatics", "/informatics", class: "btn btn-danger " %>
+     <%= link_to "List all Informatics", "/informatics", class: "btn btn-danger " %><br>
+  </div>     
+  <!--
+  <label><%= radio_button_tag 'section_radio', '1',   (params[:section_radio] == '1')       %>    1. Fundamentals</label><br>
+  <label><%= radio_button_tag 'section_radio', '2',   (params[:section_radio] == '2')       %>    2. Clinical Decision Making and Care Process Improvement</label><br>
+  <label><%= radio_button_tag 'section_radio', '3',   (params[:section_radio] == '3')       %>    3. Health Information Systems</label><br>
+  <label><%= radio_button_tag 'section_radio', '4',   (params[:section_radio] == '4')       %>    4. Leading and Managing Change</label>    
+  -->
   </form>
-</div>
+
 <br>
 
 <div class = "providers">
@@ -54,3 +61,4 @@
     <% end %>
 </div>
 -->
+  

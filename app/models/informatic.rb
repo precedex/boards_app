@@ -22,5 +22,5 @@ class Informatic < ActiveRecord::Base
     else
       Informatic.all
     end
-  end
+  end  
 end

@@ -3,7 +3,7 @@ class InformaticsController < ApplicationController
   def index
     @informatics = Informatic.search(params[:search])
     @informatics = @informatics.sort_by(&:"#{sort_column}")
-    @informatics = @informatics.reverse if sort_direction == 'desc'
+    @informatics = @informatics.reverse if sort_direction == 'desc' 
   end
 
   def import
