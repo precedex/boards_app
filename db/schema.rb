@@ -30,6 +30,7 @@ ActiveRecord::Schema.define(version: 20160604191918) do
     t.string "topic"
     t.string "acronym"
     t.text   "information"
+    t.string "unit"
   end
 
   create_table "lectures", force: true do |t|

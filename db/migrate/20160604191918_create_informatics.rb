@@ -5,6 +5,7 @@ class CreateInformatics < ActiveRecord::Migration
       t.string :topic
       t.string :acronym
       t.text :information
+      t.string :unit
     end
   end
 end

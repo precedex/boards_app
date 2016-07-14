@@ -9,16 +9,15 @@
     <input type="search" name="search" class="input-large" id="search" placeholder="Search">
     </div>
      <button type="submit" style="margin:1em" class="btn btn-primary ">Search Informatics</button>
-     <%= link_to "List all Informatics", "/informatics", class: "btn btn-danger " %><br>
-  </div>     
-  <!--
-  <label><%= radio_button_tag 'section_radio', '1',   (params[:section_radio] == '1')       %>    1. Fundamentals</label><br>
-  <label><%= radio_button_tag 'section_radio', '2',   (params[:section_radio] == '2')       %>    2. Clinical Decision Making and Care Process Improvement</label><br>
-  <label><%= radio_button_tag 'section_radio', '3',   (params[:section_radio] == '3')       %>    3. Health Information Systems</label><br>
-  <label><%= radio_button_tag 'section_radio', '4',   (params[:section_radio] == '4')       %>    4. Leading and Managing Change</label>    
-  -->
+     <%= link_to "List all Informatics", "/informatics", class: "btn btn-danger"%><br>
+     
+    
+  <label><%= radio_button_tag 'unit', '1',   (params[:unit] == '1')       %>    1. Fundamentals</label><br>
+  <label><%= radio_button_tag 'unit', '2',   (params[:unit] == '2')       %>    2. Clinical Decision Making and Care Process Improvement</label><br>
+  <label><%= radio_button_tag 'unit', '3',   (params[:unit] == '3')       %>    3. Health Information Systems</label><br>
+  <label><%= radio_button_tag 'unit', '4',   (params[:unit] == '4')       %>    4. Leading and Managing Change</label>    
   </form>
-
+ </div> 
 <br>
 
 <div class = "providers">

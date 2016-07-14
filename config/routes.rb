@@ -33,7 +33,7 @@ BoardsApp::Application.routes.draw do
   resources :informatics do
     collection { post :import }
   end
-
+  
   get    '/questions/random',             to: 'questions#random'
   get    '/check_answer/:id',             to: 'questions#check_answer'
 
