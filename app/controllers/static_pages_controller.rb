@@ -113,6 +113,7 @@ class StaticPagesController < ApplicationController
     @mathps = "/AnesthesiaMath-PS.pdf"
     @mathsol = "/AnesthesiaMath-S.pdf"
     @study_strategy = [
+      ["Studying for ITE (7/16)",                          "http://forums.studentdoctor.net/threads/studying-for-ite.1210873/"],
       ["Basic exam 2016 (6/16)",                           "http://forums.studentdoctor.net/threads/basic-exam-2016.1205018/"],
       ["ABA BASIC STUDY TIPS (4/16)",                      "http://forums.studentdoctor.net/threads/aba-basic-study-tips.1193899/"],
       ["ITE 2016 (4/16)",                                  "http://forums.studentdoctor.net/threads/ite-2016.1191823/"],
@@ -228,11 +229,13 @@ class StaticPagesController < ApplicationController
     @peds_exam_content = "http://www.theaba.org/PDFs/Pediatrics-Anesthesiology/PAContentOutline"
     @peds_exam_questions = "http://www.theaba.org/PDFs/Pediatrics-Anesthesiology/PASampleQuestions"
     @study_strategy = [
+      ["Peds Anesthesia boards prep help. (6/16)",                           "http://forums.studentdoctor.net/threads/peds-anesthesia-boards-prep-help.1208153/"],
       ["Pediatric Anesthesia Study Books (7/14)",                            "http://forums.studentdoctor.net/threads/pediatric-anesthesia-study-books.1089468/"],
       ["Pediatric Anesthesia Boards (4/14)",                                 "http://forums.studentdoctor.net/threads/pediatric-anesthesia-boards.1065636/"],
       ["Pediatric Anesthesia Boards 2013 (9/12)",                            "http://forums.studentdoctor.net/threads/pediatric-anesthesia-board-exam-2013.947808/"]
     ]
     @commercial_courses = [
+      ["AQB - anesthesiaQbank",                                              "http://anesthesiaqbank.com"],
       ["The Pass Machine",                                                   "http://www.thepassmachine.com/pediatric-anesthesiology-certification-exam-prep-course.html"],
       ["PedsAnesthesiaExam.com",                                             "http://www.pedsae.com"],
       ["Dr. Jensen Peds Blue",                                               "http://www.anesthesiologyboards.com/peds/"]     
@@ -273,15 +276,16 @@ class StaticPagesController < ApplicationController
     @nbcrna = "http://www.nbcrna.com/Pages/default.aspx"
     @aana = "http://www.aana.com/Pages/default.aspx"
     @abns = "http://www.nursingcertification.org"
-    @handbook = "http://www.nbcrna.com/certification/SiteAssets/Pages/Program-Administration/2015%20NCE%20Handbook.pdf"
+    @handbook = "http://www.nbcrna.com/certification/SiteAssets/Pages/Program-Administration/NCE_Handbook.pdf"
     @nurse_anes = "http://www.nurse-anesthesia.org"
     
     @commercial_courses = [
+      ["AQB - anesthesiaQbank",                                                     "http://anesthesiaqbank.com"],
       ["Valley Anesthesia",                                                         "http://www.valleyanesthesia.com"],
       ["Prodigy Anesthesia",                                                        "http://www.prodigyanesthesia.net"],
       ["Apex Anesthesia Review",                                                    "http://www.apexanesthesia.com"],
       ["Core Concepts Anesthesia Review",                                           "http://www.ccanesthesiareview.com"],
-      ["CRNABoardPrep.com",                                                         "http://www.crnaboardprep.com"]
+    # ["CRNABoardPrep.com",                                                         "http://www.crnaboardprep.com"]
     ]
   end
   
