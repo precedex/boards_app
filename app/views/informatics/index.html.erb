@@ -10,8 +10,6 @@
     </div>
      <button type="submit" style="margin:1em" class="btn btn-primary ">Search Informatics</button>
      <%= link_to "List all Informatics", "/informatics", class: "btn btn-danger"%><br>
-     
-    
   <label><%= radio_button_tag 'unit', '1',   (params[:unit] == '1')       %>    1. Fundamentals</label><br>
   <label><%= radio_button_tag 'unit', '2',   (params[:unit] == '2')       %>    2. Clinical Decision Making and Care Process Improvement</label><br>
   <label><%= radio_button_tag 'unit', '3',   (params[:unit] == '3')       %>    3. Health Information Systems</label><br>
@@ -43,7 +41,7 @@
       <% @informatics.each do |informatic| %>
         <tr>
           <td><%= informatic.section %></td>
-          <td><%= link_to informatic.topic, "http://www.google.com/search?q=#{informatic.topic}"  %></td>
+          <td><%= external_link_to informatic.topic, "http://www.google.com/search?q=#{informatic.topic}"  %></td>
           <td><%= informatic.acronym %></td> 
           <td><%= informatic.information %></td>
         </tr>

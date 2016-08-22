@@ -17,28 +17,29 @@ class StaticPagesController < ApplicationController
 
   def tools
     @acls_algos = [
-      ["Simplified Adult BLS ",       "http://crashingpatient.com/wp-content/images/acls/basic.jpg"],
-      ["Cardiac Arrest Cycle",        "http://circ.ahajournals.org/content/122/18_suppl_3/S729/F2.large.jpg"],
-      ["Cardiac Arrest",              "http://circ.ahajournals.org/content/122/18_suppl_3/S729/F1.large.jpg"],
-      ["Bradycardia (with pulse)",    "http://circ.ahajournals.org/content/122/18_suppl_3/S729/F3.large.jpg"],
-      ["Tachycardia (with pulse)",    "http://circ.ahajournals.org/content/122/18_suppl_3/S729/F4.large.jpg"],
-      ["Acute Coronary Syndrome",     "http://crashingpatient.com/wp-content/images/acls/acs.jpeg"],
-      ["Stroke",                      "http://crashingpatient.com/wp-content/images/acls/stroke.jpeg"],
+      ["BLS Algorthim",               "https://eccguidelines.heart.org/wp-content/uploads/2015/09/BLS-Adult-Cardiac-Arrest-Algorithm---2015-Update.png"],
+      ["Cardiac Arrest Cycle",        "https://eccguidelines.heart.org/wp-content/uploads/2015/10/2010-Integrated_Updated-Circulation-ACLS-Cardiac-Arrest-Circular-Algorithm.png"],
+      ["Cardiac Arrest Algortihm",    "https://eccguidelines.heart.org/wp-content/uploads/2015/10/ACLS-Cardiac-Arrest-Algorithm.png"],
+      ["5 H's & 5 T's",               "https://eccguidelines.heart.org/index.php/tables/2010-treatable-causes-of-cardiac-arrest-the-hs-and-ts/"],
+      ["Bradycardia (with pulse)",    "https://eccguidelines.heart.org/wp-content/uploads/2015/10/2010-Integrated_Updated-Circulation-ACLS-Bradycardia-Algorithm.png"],
+      ["Tachycardia (with pulse)",    "https://eccguidelines.heart.org/wp-content/uploads/2015/10/2010-Integrated_Updated-Circulation-ACLS-Tachycardia-Algorithm.png"],
+      ["Acute Coronary Syndrome",     "https://eccguidelines.heart.org/wp-content/uploads/2015/10/2010-Integrated_Updated-Circulation-ACLS-Acute-Coronary-Syndromes-Algorithm.png"],
+      ["Suspected Stroke",            "http://crashingpatient.com/wp-content/images/acls/stroke.jpeg"],
+      ["Opioid-associated Emergency", "https://eccguidelines.heart.org/wp-content/uploads/2015/10/BLS-Opioid-Associated-Emergency-Algorithm.png"],
       ["Cardiac Arrest in Pregnancy", "http://crashingpatient.com/wp-content/images/acls/maternal%20card.jpeg"]
     ]
 
     @pals_algos = [
-      ["Pediatric BLS",            "http://circ.ahajournals.org/content/122/18_suppl_3/S862/F3.large.jpg"],
-      ["Pediatric Cardiac Arrest", "http://circ.ahajournals.org/content/122/18_suppl_3/S876/F1.large.jpg"],
-      ["Bradycardia (with pulse)", "http://circ.ahajournals.org/content/122/18_suppl_3/S876/F2.large.jpg"],
-      ["Tachycardia (with pulse)", "http://circ.ahajournals.org/content/122/18_suppl_3/S876/F3.large.jpg"],
-      ["Newborn Resuscitation",    "http://circ.ahajournals.org/content/122/18_suppl_3/S909/F1.large.jpg"],
-      ["Pediatric Endotracheal Tube Size",  "http://www.mdcalc.com/endotracheal-tube-ett-size-for-pediatrics/"],
-      ["Apgar Score",              "http://www.mdcalc.com/apgar-score/"]
+      ["BLS Algorithm (single rescuer)", "https://eccguidelines.heart.org/wp-content/uploads/2015/10/BLS-Pediatric-Cardiac-Arrest-Single-Rescuer-Algorithm.png"],
+      ["BLS Algortihm (2+ rescuers)", "https://eccguidelines.heart.org/wp-content/uploads/2015/10/BLS-Pediatric-Cardiac-Arrest-2-or-More-Rescuers-Algorithm.png"],
+      ["Cardiac Arrest Algorithm", "https://eccguidelines.heart.org/wp-content/uploads/2015/10/PALS-Cardiac-Arrest-Algorithm.png"],
+      ["Bradycardia (with pulse)", "https://eccguidelines.heart.org/wp-content/uploads/2015/10/Pediatric-Bradycardia-With-a-Pulse-and-Poor-Perfusion-Algorithm.png"],
+      ["Tachycardia (with pulse)", "https://eccguidelines.heart.org/wp-content/uploads/2015/09/Pediatric-Tachycardia-With-a-Pulse-and-Poor-Perfusion-Algorithm.png"],
+      ["Neonatal Resuscitation",    "https://eccguidelines.heart.org/wp-content/uploads/2015/10/Neonatal-Resuscitation-Algorithm.png"],
     ]
 
     @critical_events = [
-      ["Difficult Airway Algorithm", "Airway.jpg"],
+      ["Difficult Airway Algorithm (2013)", "Airway.jpg"],
       ["Anaphylaxis",                "Anaphylaxis.jpg"],
       ["Local Anesthetic Toxity (ASRA)",  "https://www.asra.com/content/documents/checklist-for-local-anesthetic-toxicity-treatment-1-18-12.pdf"],
       ["Pediatric Critical Events",  "http://www.pedsanesthesia.org/newnews/Critical_Event_Checklists.pdf?201310291500"],
@@ -67,7 +68,7 @@ class StaticPagesController < ApplicationController
     @drug_dosing = [
       ["Narcotic Equivalence Converter", "http://medcalc.com/narcotics.html"],
       ["Steroid Equivalence Converter",  "http://www.medcalc.com/steroid.html"],
-      ["PALS Drugs",                  "PALS_Drugs.jpg"],
+      ["PALS Drugs",                  "https://eccguidelines.heart.org/index.php/tables/2010-medications-for-pediatric-resuscitation/"],
       ["Peds Anesthesia Drugs",       "http://anesthesia.stonybrook.edu/teaching/peds-drug-dosages"],
       ["Peds Anesthesia Pocket Ref",  "http://pedianesthesia.ucsf.edu/pdf_pedirefcard.pdf"],
       ["Periop Antibiotic Dosing",    "http://www.ashp.org/DocLibrary/BestPractices/TGSurgery.aspx"],
@@ -79,6 +80,7 @@ class StaticPagesController < ApplicationController
       ["Society of Thoracic Surgeons Cardiac Surgery Risk", "http://riskcalc.sts.org/stswebriskcalc/#/calculate"],
       ["Gupta Perioperative Cardiac Risk", "http://www.qxmd.com/calculate-online/cardiology/gupta-perioperative-cardiac-risk"],
       ["NSQIP Surgical Risk Calculator", "http://riskcalculator.facs.org"],
+      ["Apgar Score",                    "http://www.mdcalc.com/apgar-score/"],
       ["Surgical Apgar Score",           "http://www.mdcalc.com/surgical-apgar-score-sas-post-operative-risk/"],
       ["MELD Score",                     "http://www.mdcalc.com/meld-score-model-for-end-stage-liver-disease-12-and-older/"],
       ["Child-Pugh Score",               "http://www.mdcalc.com/child-pugh-score-for-cirrhosis-mortality/"],
@@ -91,7 +93,8 @@ class StaticPagesController < ApplicationController
       ["Ideal Body Weight",              "http://www.mdcalc.com/ideal-body-weight/"],
       ["STOPBang (OSA)",                 "http://www.stopbang.ca/osa/screening.php"],
       ["A-a Gradient",                   "http://www.mdcalc.com/a-a-o2-gradient/"],
-      ["Cockgroft-Gault CrCl",           "http://www.mdcalc.com/creatinine-clearance-cockcroft-gault-equation/"]
+      ["Cockgroft-Gault CrCl",           "http://www.mdcalc.com/creatinine-clearance-cockcroft-gault-equation/"],
+      ["Pediatric Endotracheal Tube Size",  "http://www.mdcalc.com/endotracheal-tube-ett-size-for-pediatrics/"],
     ]
   end
 
