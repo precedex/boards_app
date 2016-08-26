@@ -115,7 +115,10 @@ class StaticPagesController < ApplicationController
     @kentucky_keywords = ["keyword review lecture series", "https://www.youtube.com/playlist?list=PLh0m5d4Yfc8zuGHKyc0UdaUAPqNLUOqnT"]
     @mathps = "/AnesthesiaMath-PS.pdf"
     @mathsol = "/AnesthesiaMath-S.pdf"
+    @frca = "http://www.rcoa.ac.uk/examinations/overview"
+    @nisoa = "http://www.nischoolofanaesthesia-finalfrca.org.uk"
     @study_strategy = [
+      ["Advanced Exam 2016 (8/16)",                        "http://forums.studentdoctor.net/threads/advanced-exam-2016.1214700/"],
       ["Studying for ITE (7/16)",                          "http://forums.studentdoctor.net/threads/studying-for-ite.1210873/"],
       ["Basic exam 2016 (6/16)",                           "http://forums.studentdoctor.net/threads/basic-exam-2016.1205018/"],
       ["ABA BASIC STUDY TIPS (4/16)",                      "http://forums.studentdoctor.net/threads/aba-basic-study-tips.1193899/"],
@@ -212,7 +215,7 @@ class StaticPagesController < ApplicationController
     ]
 
     @commercial_courses = [
-      ["Board Stiff Live",                             "https://boardstifflive.com"],
+      #["Board Stiff Live",                             "https://boardstifflive.com"],
       ["Michael Ho: The Essential Oral Board Review",  "http://anconsultants.com/anesthesiology-oral-board-review/"],
       ["Dr. Jensen Essential Oral Board P.R.E.P.",     "http://www.boardprep.com"],
       ["GadsenJones Anesthesiology Oral Board Review", "http://www.gadsdenjones.com"],
@@ -280,6 +283,7 @@ class StaticPagesController < ApplicationController
     @aana = "http://www.aana.com/Pages/default.aspx"
     @abns = "http://www.nursingcertification.org"
     @handbook = "http://www.nbcrna.com/certification/SiteAssets/Pages/Program-Administration/NCE_Handbook.pdf"
+    @thecrna = "http://thecrna.com"
     @nurse_anes = "http://www.nurse-anesthesia.org"
     
     @commercial_courses = [
