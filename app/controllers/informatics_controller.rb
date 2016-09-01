@@ -1,6 +1,12 @@
 class InformaticsController < ApplicationController
   helper_method :sort_column, :sort_direction
   def index      
+    @headings = Heading.all
+    @subheadings = Subheading.all   
+    @subsubheadings = Subsubheading.all
+    @subsubsubheadings = Subsubsubheading.all
+    
+    
     @informatics = Informatic.search(params[:search])
     
     if params[:unit] == '1'

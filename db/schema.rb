@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160604191918) do
+ActiveRecord::Schema.define(version: 20160901181254) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,6 +23,11 @@ ActiveRecord::Schema.define(version: 20160604191918) do
   create_table "categorizations", force: true do |t|
     t.integer "resource_id"
     t.integer "category_id"
+  end
+
+  create_table "headings", force: true do |t|
+    t.string "code"
+    t.string "heading"
   end
 
   create_table "informatics", force: true do |t|
@@ -121,6 +126,30 @@ ActiveRecord::Schema.define(version: 20160604191918) do
     t.string   "image"
     t.string   "rec"
   end
+
+  create_table "subheadings", force: true do |t|
+    t.integer "heading_id"
+    t.string  "code"
+    t.string  "subheading"
+  end
+
+  add_index "subheadings", ["heading_id"], name: "index_subheadings_on_heading_id", using: :btree
+
+  create_table "subsubheadings", force: true do |t|
+    t.integer "subheading_id"
+    t.string  "code"
+    t.string  "subsubheading"
+  end
+
+  add_index "subsubheadings", ["subheading_id"], name: "index_subsubheadings_on_subheading_id", using: :btree
+
+  create_table "subsubsubheadings", force: true do |t|
+    t.integer "subsubheading_id"
+    t.string  "code"
+    t.string  "subsubsubheading"
+  end
+
+  add_index "subsubsubheadings", ["subsubheading_id"], name: "index_subsubsubheadings_on_subsubheading_id", using: :btree
 
   create_table "topicalizations", force: true do |t|
     t.integer "question_id"
