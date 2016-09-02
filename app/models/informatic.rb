@@ -23,21 +23,10 @@ class Informatic < ActiveRecord::Base
       Informatic.all
     end
   end  
+
   
-  def self.unit1
-      Informatic.where(unit: '1')
-  end
-  
-  def self.unit2
-      Informatic.where(unit: '2')
-  end
-  
-  def self.unit3
-      Informatic.where(unit: '3')
-  end
-  
-  def self.unit4
-      Informatic.where(unit: '4')
+  def self.locate(id)
+    Informatic.where(section: id)
   end
    
 end

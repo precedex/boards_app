@@ -1,0 +1,63 @@
+
+<% @headings.each do |h| %>
+<table>
+  <tr>
+  <% @informatics.locate(h.code).each do |i| %>
+   <td><%= i.topic %></td>
+   <td><%= i.acronym %></td>
+   <td><%= i.information %></td>
+ </tr>
+  <% end %>
+</table>
+  <% @subheadings.heading(h.id).reverse.each do |sh| %>
+    <%= sh.code %>
+    <%= sh.subheading %><br>
+    <table>
+      <tr>
+    <% @informatics.locate(sh.code).each do |i| %>
+   <td><%= i.topic %></td>
+   <td><%= i.acronym %></td>
+   <td><%= i.information %></td>
+ </tr>
+    <% end %>
+   </table>
+    <% @subsubheadings.subheading(sh.id).each do |ssh| %>
+      <%= ssh.code %>
+      <%= ssh.subsubheading %><br>
+      <table>
+        <tr>
+      <% @informatics.locate(ssh.code).each do |i| %>
+        <td><%= i.topic %></td>
+        <td><%= i.acronym %></td>
+        <td><%= i.information %></td>
+      </tr>
+      <% end %> 
+    </table>
+    
+
+     
+      <% @subsubsubheadings.subsubheading(ssh.id).each do |sssh| %>
+<ul class = 'list-group'>
+<li class = 'list-group-item'>        <%= sssh.code %>
+        <%= sssh.subsubsubheading %> </li>
+      </ul>
+
+        <table>
+
+        <% @informatics.locate(sssh.code).each do |i| %>
+                  <tr>
+          <td><%= i.topic %></td>
+          <td><%= i.acronym %></td>
+          <td><%= i.information %></td> 
+        </tr>  
+        <% end %> 
+       
+      </table> 
+   
+     
+      <% end %>
+    <% end %>  
+  <% end %>          
+<% end %>
+ 
+    

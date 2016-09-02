@@ -3,91 +3,33 @@
   <h1> <%= yield(:title) %> </h1>
 </div>
 
+<div class = "informatics">
+  <ul class="nav nav-tabs nav-justified" role="tablist">
+    <li><%= link_to 'Fundamentals', { 'data-toggle' => 'tab', 'section_id' => '1'} %></li>
+    <li><%= link_to 'Decision Making', { 'data-toggle' => 'tab', 'section_id' => '2'} %></li>
+    <li><%= link_to 'HIS', { 'data-toggle' => 'tab', 'section_id' => '3'} %></li>
+    <li><%= link_to 'Leading Change', { 'data-toggle' => 'tab', 'section_id' => '4'} %></li>
+  </ul>
 
-  
-<% @headings.each do |h| %>
-  <%= h.code %>
-  <%= h.heading%><br>
-  <% @subheadings.heading(h.id).reverse.each do |sh| %>
-    <%= sh.code %>
-    <%= sh.subheading%><br>
-    <% @subsubheadings.subheading(sh.id).each do |ssh| %>
-      <%= ssh.code %>
-      <%= ssh.subsubheading%><br>
-      <% @subsubsubheadings.subsubheading(ssh.id).each do |sssh| %>
-        <%= sssh.code %>
-        <%= sssh.subsubsubheading%><br>
-      <% end %>
-    <% end %>  
-  <% end %>          
-<% end %>
-    
-    
-
-  
-<!--
-    <% @subsubheadings.each do |h| %>
-
-          <%= h.code %>
-          <%= h.subsubheading%>
-    <% end %>
-    
-    <% @subsubsubheadings.each do |h| %>
-
-          <%= h.code %>
-          <%= h.subsubsubheading%>
-    <% end %>
--->
-
-<!--
-><form accept-charset="UTF-8" action="/informatics" method="get" name="commit" class="form-inline">
-  <div class="center">
-    <div class="form-group">
-    <input type="search" name="search" class="input-large" id="search" placeholder="Search">
-    </div>
-     <button type="submit" style="margin:1em" class="btn btn-primary ">Search Informatics</button>
-     <%= link_to "List all Informatics", "/informatics", class: "btn btn-danger"%><br>
-  <label><%= radio_button_tag 'unit', '1',   (params[:unit] == '1')       %>    1. Fundamentals</label><br>
-  <label><%= radio_button_tag 'unit', '2',   (params[:unit] == '2')       %>    2. Clinical Decision Making and Care Process Improvement</label><br>
-  <label><%= radio_button_tag 'unit', '3',   (params[:unit] == '3')       %>    3. Health Information Systems</label><br>
-  <label><%= radio_button_tag 'unit', '4',   (params[:unit] == '4')       %>    4. Leading and Managing Change</label>    
-  </form>
- </div> 
-<br>
-
-<div class = "providers">
-  <h1>
-    <% if @informatics.length == 1%>
-    1 informatic term matches your search
-    <% else %>
-    <%= @informatics.length %> informatics terms match your search.
-    <% end %>
-  </h1>
-</div>
-  
-  <table class="pretty">
-    <thead>
-      <tr>
-        <th><%= sortable  "section" %></th>
-        <th><%= sortable  "topic" %></th>
-        <th><%= sortable  "acronym" %></th> 
-        <th><%= sortable  "information" %></th>
-      </tr>         
-    </thead>
+  <table>
     <tbody>
-      <% @informatics.each do |informatic| %>
+      <div class="tab-content">
+      <div id="fund" class="tab-pane fade in active">
+    
+        <% @informatics.each do |i| %>
         <tr>
-          <td><%= informatic.section %></td>
-          <td><%= external_link_to informatic.topic, "http://www.google.com/search?q=#{informatic.topic}"  %></td>
-          <td><%= informatic.acronym %></td> 
-          <td><%= informatic.information %></td>
+          <td><%= i.section %></td>
+          <td><%= i.topic %></td>
+          <td style="text-align:center"><%= i.acronym %></style></td>
+          <td><%= i.information %></td>
         </tr>
-      <% end %>
+        <%end%>
     </tbody>
   </table>
--->
+  
+</div>
 
-
+<!--
 <div>
   <h2 style = "font-size: 2em">Import a CSV File</h2>
     <%= form_tag import_informatics_path, multipart: true do %>
@@ -95,5 +37,5 @@
       <%= submit_tag "Import CSV" %>
     <% end %>
 </div>
-
+-->
   
