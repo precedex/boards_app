@@ -1,20 +1,15 @@
 .informatics{
-  
-  li {
-    font-size: 1.5em;
-    border-style: outset;
-    background: #cce6ff;
-    a{
-      color: black;
-    }
+  li{
+    font-size: 2em;
   }
-  table {
-    width: 100%; 
-  } 
+  table{
+    table-layout: fixed;
+    width: 100%;
+  }
   td{
     font-size: 1.3em;
-    text-align: left;
-    border: 1px solid #d9ccff;
-    padding: 2px;
+    padding: 10px;
+    border: 1px solid #c2c2d6;
   }
+  
 }
