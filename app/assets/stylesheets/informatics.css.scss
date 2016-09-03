@@ -1,7 +1,59 @@
 .informatics{
-  li{
-    font-size: 2em;
+  .tabrow {
+    font-size: 2.2em;
+    font-weight: bolder;
+    font-variant: small-caps;
+    text-align: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    line-height: 36px;
+    position: relative;
   }
+  
+  .tabrow a {
+    color: black;
+    &:visited {color: black;}
+    &:hover {
+      color: yellow;
+      text-decoration: none;
+    }
+  }
+  
+  .tabrow li {
+    margin: 0 5px;
+    padding: 0 10px;
+    border: 1px solid #AAA;
+    background: #99ccff;
+    display: inline-block;
+    position: relative;
+    z-index: 0;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    
+  }
+
+  .tabrow li.selected {
+    background: #FFF;
+    color: #000;
+    z-index: 2;
+    border-bottom-color: #FFF;
+  }
+  
+  .tabrow:before {
+    z-index: 1;
+  }
+
+  .tabrow:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    border-bottom: 1px solid #AAA;
+    z-index: 1;
+  }
+
   table{
     table-layout: fixed;
     width: 100%;

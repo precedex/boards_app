@@ -4,12 +4,12 @@
 </div>
 
 <div class = "informatics">
-  <ul class="nav nav-tabs nav-justified" role="tablist">
-    <li><%= link_to 'Fundamentals', { 'data-toggle' => 'tab', 'section_id' => '1'} %></li>
-    <li><%= link_to 'Decision Making', { 'data-toggle' => 'tab', 'section_id' => '2'} %></li>
-    <li><%= link_to 'HIS', { 'data-toggle' => 'tab', 'section_id' => '3'} %></li>
-    <li><%= link_to 'Leading Change', { 'data-toggle' => 'tab', 'section_id' => '4'} %></li>
-  </ul>
+  <ul class="tabrow">
+    <li class=<%= "selected" if params[:section_id] == '1' %>> <%= link_to 'fundamentals', {'section_id' => '1'} %></li>
+    <li class=<%= "selected" if params[:section_id] == '2' %>> <%= link_to 'decision making', {'section_id' => '2'} %></li>
+    <li class=<%= "selected" if params[:section_id] == '3' %>> <%= link_to 'HIS', {'section_id' => '3'} %></li>
+    <li class=<%= "selected" if params[:section_id] == '4' %>> <%= link_to 'leading change', {'section_id' => '4'} %></li>
+  </ul><br>
   
 <div class="informatics">
   <div class="panel-group" id="accordion">
@@ -26,7 +26,7 @@
  	       <% @informatics = Informatic.where(section: sh.code) %>
  	       <% @informatics.each do |i| %>
           <tr>
-            <td style="width: 20%"><%= i.section %> <%= i.topic %></td>
+            <td style="width: 20%"><%= i.topic %></td>
  	          <td style="width: 10%; text-align:center"><%= i.acronym %></td>
  	          <td style="width: 70%"><%= i.information %></td>
           </tr>
@@ -47,7 +47,7 @@
        	       <% @informatics = Informatic.where(section: ssh.code) %>
        	       <% @informatics.each do |i| %>
                 <tr>
-                  <td style="width: 20%"><%= i.section %> <%= i.topic %></td>
+                  <td style="width: 20%"><%= i.topic %></td>
        	          <td style="width: 10%; text-align:center"><%= i.acronym %></td>
        	          <td style="width: 70%"><%= i.information %></td>
                 </tr>
@@ -68,7 +68,7 @@
              	       <% @informatics = Informatic.where(section: sssh.code) %>
              	       <% @informatics.each do |i| %>
                       <tr>
-                        <td style="width: 20%"><%= i.section %> <%= i.topic %></td>
+                        <td style="width: 20%"><%= i.topic %></td>
              	          <td style="width: 10%; text-align:center"><%= i.acronym %></td>
              	          <td style="width: 70%"><%= i.information %></td>
                       </tr>
