@@ -2,3 +2,6 @@ Clear informatics database for reimport
 
 rake db:migrate:down VERSION=20160604191918
 rake db:migrate:up VERSION=20160604191918
+
+rake db:migrate:down VERSION=20160901181254
+rake db:migrate:up VERSION=20160901181254
