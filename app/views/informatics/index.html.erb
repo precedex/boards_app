@@ -89,7 +89,34 @@
     </div>
     <% end %>
   </div>
-</div>
+  <br>
+
+  <form accept-charset="UTF-8" action="/informatics" method="get" name="commit" class="form-inline">
+    <div class="center">
+      <div class="form-group">
+      <input type="search" name="search" class="input-large" id="search" placeholder="Search">
+      <button type="submit" style="margin:1em" class="btn btn-lg btn-primary ">Search Informatics</button>     
+      </div> 
+    </div>  
+  <br>
+  <%
+  if params[:search]  
+    @informatics = Informatic.search(params[:search])
+  else
+    @informatics = {}
+  end 
+  %>
+  <table>
+  <% @informatics.each do |i| %>
+   <tr>
+     <td style="width: 20%"><%= i.topic %></td>
+     <td style="width: 10%; text-align:center"><%= i.acronym %></td>
+     <td style="width: 70%"><%= i.information %></td>
+   </tr>
+  <% end %>
+  </table>
+</div>  
+
 
 <!--
 <div>
