@@ -2,7 +2,7 @@ class Informatic < ActiveRecord::Base
   require 'csv'
   
   def self.import(file)
-    CSV.foreach(file.path, headers: true, encoding:'iso-8859-1:utf-8') do |row|
+    CSV.foreach(file.path, headers: true) do |row|
       informatic_hash = row.to_hash
       informatic = Informatic.where(id: informatic_hash["id"])
 
