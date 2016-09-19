@@ -35,7 +35,8 @@ class StaticPagesController < ApplicationController
       ["Cardiac Arrest Algorithm", "https://eccguidelines.heart.org/wp-content/uploads/2015/10/PALS-Cardiac-Arrest-Algorithm.png"],
       ["Bradycardia (with pulse)", "https://eccguidelines.heart.org/wp-content/uploads/2015/10/Pediatric-Bradycardia-With-a-Pulse-and-Poor-Perfusion-Algorithm.png"],
       ["Tachycardia (with pulse)", "https://eccguidelines.heart.org/wp-content/uploads/2015/09/Pediatric-Tachycardia-With-a-Pulse-and-Poor-Perfusion-Algorithm.png"],
-      ["Neonatal Resuscitation",    "https://eccguidelines.heart.org/wp-content/uploads/2015/10/Neonatal-Resuscitation-Algorithm.png"],
+      ["Neonatal Resuscitation Summary", "http://www2.aap.org/nrp/docs/NRP%20Guidelines%20Flyer_English_Update.pdf"],
+      ["Neonatal Resuscitation Protocol",    "https://eccguidelines.heart.org/wp-content/uploads/2015/10/Neonatal-Resuscitation-Algorithm.png"]
     ]
 
     @critical_events = [
@@ -267,6 +268,7 @@ class StaticPagesController < ApplicationController
     @ase = "http://asecho.org"
     @canada = "http://csecho.ca/resources/"
     @study_strategy = [
+      ["Basic PTEeXAM 2016 (5/16)",                                           "http://forums.studentdoctor.net/threads/basic-pteexam-2016.1201944/"],
       ["Advanced PTE Exam 2015 Stats (9/15)",                                 "http://forums.studentdoctor.net/threads/advanced-pte-exam-2015-stats.1158310/"],
       ["Anyone taking the Basic TEE boards (7/14)",                           "http://forums.studentdoctor.net/threads/any-one-taking-the-basic-tee-boards.1082996/#post-15417881"],
       ["Advanced PTEeXAM (7/12)",                                             "http://forums.studentdoctor.net/threads/advanced-pteexam-echo-boards.930568/#post-14384680"],
