@@ -337,6 +337,7 @@ class StaticPagesController < ApplicationController
     ]
     
     @ua= ["Understanding Anesthesia", "http://www.understandinganesthesiology.com"]
+    @acm= ["Anesthesia Clerkship Manual", "https://itunes.apple.com/us/book/anesthesia-clerkship-manual/id1151562335?mt=11"]
     @rca = ["Royal College of Anaesthetists Guide for Novice Trainees", "http://www.e-lfh.org.uk/e-learning-sessions/rcoa-novice/home.html"]
     @sea = ["SEA", "http://www.seahq.net"]
     @seams = ["Medical Student Guide to Anesthesiology", "http://www.seahq.net/images/sea_msg.pdf"]

@@ -8,13 +8,9 @@
     <%= render partial: 'site', collection: @articles %>
   </ul>
   
-  <p> A teriffic, free, and well-written introduction to anesthesiology: 
-      <%= external_link_to *@ua %> by Karen Raymer</p> 
-  <p> Interactive and well-produced learning modules on the basics of anesthesia:  
-      <%= external_link_to *@rca %>.</p>    
-      
-      
-  <p> The Society for Education in Anesthesia (<%= external_link_to *@sea %>)
-        <%= external_link_to *@seams %></p>
+  <p> A teriffic, free, and well-written introduction to anesthesiology: <%= external_link_to *@ua %> by Karen Raymer</p>   
+  <p> Free, well-produced textbook from U. Toronto: <%= external_link_to *@acm %> </p>   
+  <p> Interactive and well-produced learning modules on the basics of anesthesia: <%= external_link_to *@rca %>.</p>    
+  <p> The Society for Education in Anesthesia (<%= external_link_to *@sea %>) <%= external_link_to *@seams %></p>
 </div>
 
