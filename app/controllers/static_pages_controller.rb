@@ -114,6 +114,7 @@ class StaticPagesController < ApplicationController
     @aba_exam_summary = ["2014 Exam Summary (PDF)", "http://www.theaba.org/pdf/SAAA-Exams-Report.pdf"]
     @open_anesthesia_keywords = ["Open Anesthesia", "http://www.openanesthesia.org/OpenAnesthesia.org:KeywordBrowser"]
     @kentucky_keywords = ["keyword review lecture series", "https://www.youtube.com/playlist?list=PLh0m5d4Yfc8zuGHKyc0UdaUAPqNLUOqnT"]
+    @quizzes = ["quizzes", "http://www.proprofs.com/quiz-school/search.php?search=anesthesia"]
     @mathps = "/AnesthesiaMath-PS.pdf"
     @mathsol = "/AnesthesiaMath-S.pdf"
     @frca = "http://www.rcoa.ac.uk/examinations/overview"
@@ -333,7 +334,10 @@ class StaticPagesController < ApplicationController
       ["Colin JL McCartney - Why I Chose to Become an Anaesthetist", 
         "http://www.colinjlmccartney.com/medical-blog/why-i-chose-to-become-an-anaesthetist"],
       ["Andy Orin - What I do as an Anesthesiologist", 
-        "http://lifehacker.com/career-spotlight-what-i-do-as-an-anesthesiologist-1716010008"]
+        "http://lifehacker.com/career-spotlight-what-i-do-as-an-anesthesiologist-1716010008"],
+      ["Jeff Steiner - Five Ways to Make Your Audition Rotation in Anesthesia a Success",
+        "http://www.studentdoctor.net/2015/08/five-ways-to-make-your-audition-rotation-in-anesthesia-or-other-specialty-a-success/"]  
+        
     ]
     
     @ua= ["Understanding Anesthesia", "http://www.understandinganesthesiology.com"]
@@ -341,6 +345,7 @@ class StaticPagesController < ApplicationController
     @rca = ["Royal College of Anaesthetists Guide for Novice Trainees", "http://www.e-lfh.org.uk/e-learning-sessions/rcoa-novice/home.html"]
     @sea = ["SEA", "http://www.seahq.net"]
     @seams = ["Medical Student Guide to Anesthesiology", "http://www.seahq.net/images/sea_msg.pdf"]
+    @steiner = ["Getting Into Anesthesiology", "http://www.anesthesiamadeeasy.com/wp-content/uploads/2015/05/Getting-into-Anesthesiology-PDF.pdf"]
     
   end
   
