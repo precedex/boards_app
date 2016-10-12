@@ -18,9 +18,9 @@
   <p><%= link_to "Reset", "/stopbang", class: 'btn btn-primary btn-lg' %> 
     
   <% if @score == 0 || @score == 1 || @score == 2%>
-    OSA Risk = LOW</p> 
+    OSA Risk = <strong>LOW</strong></p> 
   <% elsif @score == 3  || @score == 4%>
-    OSA Risk = INTERMEDIATE </p>  
+    OSA Risk = <strong>INTERMEDIATE</strong> </p>  
   <% else %>
     OSA Risk = <strong>HIGH</strong> </p>  
   <% end %>
