@@ -1,0 +1,28 @@
+<% title "STOPBang Questionnaire"%>
+
+<div class = "cds">
+  <h1> STOPBang Questionnaire </h1>
+  <h2> Adapted from <%= external_link_to "F Chung et al. Chest 2016;149(3):631-638", @chung %> </h2>
+  
+  <%= form_tag('/stopbang', method: :get) %>  
+
+  <p><%= check_box_tag 'snoring_checkbox', '1', (params[:snoring_checkbox] == '1') %> Do you <strong>S</strong>nore loudly?</p>
+  <p><%= check_box_tag 'tired_checkbox',   '1', (params[:tired_checkbox] == '1')  %>  Do you often feel <strong>T</strong>ired during the day?</p>
+  <p><%= check_box_tag 'observed_checkbox','1', (params[:observed_checkbox] == '1')%> Has anyone <strong>O</strong>bserved you stop breathing or choking/gasping during sleep?</p>
+  <p><%= check_box_tag 'pressure_checkbox','1', (params[:pressure_checkbox] == '1')%> Do you have or are you being treated for High Blood <strong>P</strong>ressure?</p>
+  <p><%= check_box_tag 'bmi_checkbox',     '1', (params[:bmi_checkbox] == '1') %>     <strong>B</strong>MI > 35 kg/m<sup>2</sup> ?</p>
+  <p><%= check_box_tag 'age_checkbox',     '1', (params[:age_checkbox] == '1')  %>    <strong>A</strong>ge older than 50?</p>
+  <p><%= check_box_tag 'neck_checkbox',    '1', (params[:neck_checkbox] == '1')%>     <strong>N</strong>eck size large?</p>
+  <p><%= check_box_tag 'gender_checkbox',  '1', (params[:gender_checkbox] == '1')%>   <strong>G</strong>ender = male?</p>
+  <p><%= button_tag 'Get Score', class:'btn btn-danger btn-lg'%> STOP-Bang Score: <strong><%= @score %></strong> </p>
+  <p><%= link_to "Reset", "/stopbang", class: 'btn btn-primary btn-lg' %> 
+    
+  <% if @score == 0 || @score == 1 || @score == 2%>
+    OSA Risk = LOW</p> 
+  <% elsif @score == 3  || @score == 4%>
+    OSA Risk = INTERMEDIATE </p>  
+  <% else %>
+    OSA Risk = <strong>HIGH</strong> </p>  
+  <% end %>
+   
+</div>

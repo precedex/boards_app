@@ -90,15 +90,12 @@ BoardsApp::Application.routes.draw do
   # sites
   resources :sites
   
-  # calculator
+  # calculators
   get    '/calculator',                   to: 'static_pages#calculator'
   get    '/t4p',                          to: 'static_pages#calculator'
-  
-  #ponv
+  get    '/delirium',                     to: 'static_pages#delirium'
   get    '/ponv',                         to: 'static_pages#ponv'
-  
-  #delifirum
-  get   '/delirium',                      to: 'static_pages#delirium'
+  get    '/stopbang',                     to: 'static_pages#stopbang'
 
   # footer
   get    '/secret',                       to: 'static_pages#secret'

@@ -41,6 +41,7 @@ class StaticPagesController < ApplicationController
 
     @critical_events = [
       ["Difficult Airway Algorithm (2013)", "Airway.jpg"],
+      ["Ariadne Labs OR Crisis Checklists", "https://www.ariadnelabs.org/wp-content/uploads/sites/2/2015/08/OR-Crisis-Checklists-package-10-11-13.pdf"],
       ["Anaphylaxis",                "Anaphylaxis.jpg"],
       ["Local Anesthetic Toxity (ASRA)",  "https://www.asra.com/content/documents/checklist-for-local-anesthetic-toxicity-treatment-1-18-12.pdf"],
       ["Pediatric Critical Events",  "http://www.pedsanesthesia.org/newnews/Critical_Event_Checklists.pdf?201310291500"],
@@ -185,6 +186,7 @@ class StaticPagesController < ApplicationController
     @the_anesthesia_consultant = ["The Anesthesia Consultant", 'http://theanesthesiaconsultant.com/2013/08/22/advice-for-passing-the-oral-board-exams-in-anesthesiology/']
 
     @study_strategy = [
+      ["Best oral board course for repeaters? (9/16)",                        "http://forums.studentdoctor.net/threads/best-oral-board-course-for-repeaters.1223328/#post-18171310"],
       ["ABA oral boards and 10 min stem reading session (3/16)",              "http://forums.studentdoctor.net/threads/aba-oral-boards-and-10-min-stem-reading-session.1189411/"],
       ["2016 oral boards (3/16)",                                             "http://forums.studentdoctor.net/threads/2016-oral-boards.1187918/"],
       ["oral board prep advice (1/16)",                                       "http://forums.studentdoctor.net/threads/oral-board-prep-advice.1180670/"],
@@ -350,44 +352,59 @@ class StaticPagesController < ApplicationController
   end
   
   def calculator
-      @asa =     params[:asa_checkbox] 
-      @surgery = params[:surgery_checkbox] 
-      @resp =    params[:resp_checkbox]
-      @smoking = params[:smoking_checkbox]
-      @nmd =     params[:nmd_checkbox]
-      @weight =  params[:weight_checkbox]
-      @bmi =     params[:bmi_checkbox]
-      @ga =      params[:ga_checkbox]
-      @length =  params[:length_checkbox]
-      @age =     params[:age_radio]
-      @adls =    params[:adls_radio]
-      @surgurg = params[:surgery_radio]
-      
-      @score = @asa.to_i +     @surgery.to_i + @resp.to_i + 
-               @smoking.to_i + @nmd.to_i +     @weight.to_i +
-               @bmi.to_i +     @ga.to_i +      @length.to_i +
-               @age.to_i +     @adls.to_i +    @surgurg.to_i    
-  end
+    @asa =     params[:asa_checkbox] 
+    @surgery = params[:surgery_checkbox] 
+    @resp =    params[:resp_checkbox]
+    @smoking = params[:smoking_checkbox]
+    @nmd =     params[:nmd_checkbox]
+    @weight =  params[:weight_checkbox]
+    @bmi =     params[:bmi_checkbox]
+    @ga =      params[:ga_checkbox]
+    @length =  params[:length_checkbox]
+    @age =     params[:age_radio]
+    @adls =    params[:adls_radio]
+    @surgurg = params[:surgery_radio]
+    
+    @score = @asa.to_i +     @surgery.to_i + @resp.to_i + 
+             @smoking.to_i + @nmd.to_i +     @weight.to_i +
+             @bmi.to_i +     @ga.to_i +      @length.to_i +
+             @age.to_i +     @adls.to_i +    @surgurg.to_i    
+  end           
   
   def delirium
-      @del =     params[:del_checkbox].to_i
-      @age =     params[:age_radio]
-      @sense =   params[:sense_radio]
-      @adl =     params[:adl_radio]
-      @cog =     params[:cog_radio]
-      @sa =      params[:sa_radio]
-      
-      @score = @age.to_i + @sense.to_i + @adl.to_i + @cog.to_i + @sa.to_i
+    @del =     params[:del_checkbox].to_i
+    @age =     params[:age_radio]
+    @sense =   params[:sense_radio]
+    @adl =     params[:adl_radio]
+    @cog =     params[:cog_radio]
+    @sa =      params[:sa_radio]
+    
+    @score = @age.to_i + @sense.to_i + @adl.to_i + @cog.to_i + @sa.to_i
   end
   
   def ponv
-      @gan = "http://pdfs.journals.lww.com/anesthesia-analgesia/2014/01000/Consensus_Guidelines_for_the_Management_of.13.pdf?token=method|ExpireAbsolute;source|Journals;ttl|1463677047643;payload|mY8D3u1TCCsNvP5E421JYK6N6XICDamxByyYpaNzk7FKjTaa1Yz22MivkHZqjGP4kdS2v0J76WGAnHACH69s21Csk0OpQi3YbjEMdSoz2UhVybFqQxA7lKwSUlA502zQZr96TQRwhVlocEp/sJ586aVbcBFlltKNKo+tbuMfL73hiPqJliudqs17cHeLcLbV/CqjlP3IO0jGHlHQtJWcICDdAyGJMnpi6RlbEJaRheGeh5z5uvqz3FLHgPKVXJzdOHIHwDOSay4QvwGGy628k23O72qKHd/ADQ0uUe6KHXsGSlzVXn4NIKCs8Au6cLGw;hash|K/Zuqzx8YngzbYNnk3VQKQ=="
-      
-      @gender  = params[:gender_checkbox] 
-      @smoke   = params[:smoke_checkbox] 
-      @history = params[:history_checkbox]
-      @opioids = params[:opioids_checkbox]
+    @gan = "http://pdfs.journals.lww.com/anesthesia-analgesia/2014/01000/Consensus_Guidelines_for_the_Management_of.13.pdf?token=method|ExpireAbsolute;source|Journals;ttl|1463677047643;payload|mY8D3u1TCCsNvP5E421JYK6N6XICDamxByyYpaNzk7FKjTaa1Yz22MivkHZqjGP4kdS2v0J76WGAnHACH69s21Csk0OpQi3YbjEMdSoz2UhVybFqQxA7lKwSUlA502zQZr96TQRwhVlocEp/sJ586aVbcBFlltKNKo+tbuMfL73hiPqJliudqs17cHeLcLbV/CqjlP3IO0jGHlHQtJWcICDdAyGJMnpi6RlbEJaRheGeh5z5uvqz3FLHgPKVXJzdOHIHwDOSay4QvwGGy628k23O72qKHd/ADQ0uUe6KHXsGSlzVXn4NIKCs8Au6cLGw;hash|K/Zuqzx8YngzbYNnk3VQKQ=="
+    
+    @gender  = params[:gender_checkbox] 
+    @smoke   = params[:smoke_checkbox] 
+    @history = params[:history_checkbox]
+    @opioids = params[:opioids_checkbox]
      
-      @score = @gender.to_i + @smoke.to_i + @history.to_i + @opioids.to_i    
+    @score = @gender.to_i + @smoke.to_i + @history.to_i + @opioids.to_i    
+  end
+  
+  def stopbang
+    @chung  = "http://journal.publications.chestnet.org/data/Journals/CHEST/935074/50903.pdf"
+    @snore  = params[:snoring_checkbox] 
+    @tired   = params[:tired_checkbox] 
+    @observed = params[:observed_checkbox]
+    @pressure = params[:pressure_checkbox]
+    @bmi  = params[:bmi_checkbox] 
+    @age   = params[:age_checkbox] 
+    @neck = params[:neck_checkbox]
+    @gender = params[:gender_checkbox]
+     
+    @score = @snore.to_i + @tired.to_i + @observed.to_i + @pressure.to_i +
+             @bmi.to_i + @age.to_i + @neck.to_i + @gender.to_i
   end
 end
