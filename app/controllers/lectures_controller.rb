@@ -12,7 +12,7 @@ class LecturesController < ApplicationController
   end
 
   def sort_column
-    Lecture.column_names.include?(params[:sort]) ? params[:sort] : "speaker"
+    Lecture.column_names.include?(params[:sort]) ? params[:sort] : "date"
   end
   
   def sort_direction

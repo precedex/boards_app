@@ -46,7 +46,8 @@ module ApplicationHelper
     current_page?(sites_pedsboards_path) ||
     current_page?(sites_crnaboards_path) ||
     current_page?(sites_echoboards_path) ||
-    current_page?(sites_moca_path)
+    current_page?(sites_moca_path) ||
+    current_page?(informatics_path)
   end
 
   def on_education_path?
