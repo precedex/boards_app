@@ -115,6 +115,7 @@ class StaticPagesController < ApplicationController
     @aba_exam_summary = ["2014 Exam Summary (PDF)", "http://www.theaba.org/pdf/SAAA-Exams-Report.pdf"]
     @open_anesthesia_keywords = ["Open Anesthesia", "http://www.openanesthesia.org/OpenAnesthesia.org:KeywordBrowser"]
     @kentucky_keywords = ["keyword review lecture series", "https://www.youtube.com/playlist?list=PLh0m5d4Yfc8zuGHKyc0UdaUAPqNLUOqnT"]
+    @accrac = ["ACCRAC", "http://accrac.com"]
     @quizzes = ["quizzes", "http://www.proprofs.com/quiz-school/search.php?search=anesthesia"]
     @mathps = "/AnesthesiaMath-PS.pdf"
     @mathsol = "/AnesthesiaMath-S.pdf"
