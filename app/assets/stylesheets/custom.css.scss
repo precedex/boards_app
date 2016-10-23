@@ -145,6 +145,10 @@ footer {
 
   a {
     color: $gray-light;
+    &:visited {color: $gray-light}    
+    &:hover {
+      color: CornflowerBlue;
+      text-decoration: underline}
   }
 
   p {
