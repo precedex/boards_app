@@ -268,6 +268,7 @@ class StaticPagesController < ApplicationController
     @basicpte = "http://www.echoboards.org/sites/default/files/2010_Basic_PTEeXAM_Content_Outline.pdf"
     @advancedpte = "http://www.echoboards.org/sites/default/files/Advanced_PTE_Content_Outline_0.pdf"
     @pie = "http://pie.med.utoronto.ca/TEE/"
+    @utah = "https://echo.anesthesia.med.utah.edu"
     @opentee = "http://www.openanesthesia.org/basic-course-in-tee/"
     @ase = "http://asecho.org"
     @canada = "http://csecho.ca/resources/"
