@@ -90,7 +90,7 @@ class StaticPagesController < ApplicationController
       ["Allowable Blood Loss",           "http://easycalculation.com/medical/allowable-blood-loss.php"],
       ["Parkland Formula",               "http://www.mdcalc.com/parkland-formula-for-burns/"],
       ["Glascow Coma Scale",             "http://www.mdcalc.com/glasgow-coma-scale-score/"],
-      ["APACHE II",                      "http://www.mdcalc.com/apache-ii-score-for-icu-mortality/"],
+      ["APACHE II",                      "https://www.mdcalc.com/apache-ii-score"],
       ["BMI / BSA",                      "http://www.mdcalc.com/bmi-and-body-surface-area-bsa/"],
       ["Ideal Body Weight",              "http://www.mdcalc.com/ideal-body-weight/"],
       ["STOPBang (OSA)",                 "http://www.stopbang.ca/osa/screening.php"],
@@ -261,12 +261,12 @@ class StaticPagesController < ApplicationController
   
   def echoboards
     @nbe = "http://www.echoboards.org"
-    @basic = "http://www.echoboards.org/content/basic-pte®"
-    @advanced = "http://www.echoboards.org/content/advanced-pteexam®"
+    @basic = "http://echoboards.org/EchoBoards/certs/Basic_PTEeXAM/EchoBoards/Content/Basic_PTEeXAM.aspx"
+    @advanced = "http://echoboards.org/EchoBoards/certs/Advanced_PTEeXAM_/EchoBoards/Content/Advanced_PTEeXAM_.aspx"
     @fellowships = "http://www.scahq.org/FellowshipCareerOpportunities/AdultCardiothoracicAnesthesiologyFellowships/AccreditedFellowshipPrograms.aspx"
     @basictee = "http://www.asecho.org/wordpress/wp-content/uploads/2013/05/Basic-Perioperative-TEE-Exam.pdf"
     @basicpte = "http://www.echoboards.org/sites/default/files/2010_Basic_PTEeXAM_Content_Outline.pdf"
-    @advancedpte = "http://www.echoboards.org/sites/default/files/Advanced_PTE_Content_Outline_0.pdf"
+    @advancedpte = "http://echoboards.org/AsiCommon/Controls/BSA/Downloader.aspx?iDocumentStorageKey=a215472d-0061-4178-99ce-61562dc710e5&iFileTypeCode=PDF&iFileName=CONTENT%20OUTLINE"
     @pie = "http://pie.med.utoronto.ca/TEE/"
     @utah = "https://echo.anesthesia.med.utah.edu"
     @opentee = "http://www.openanesthesia.org/basic-course-in-tee/"
