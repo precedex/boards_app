@@ -111,6 +111,7 @@ class StaticPagesController < ApplicationController
     @old_aba_exams = ["1990-1996 In-training Examinations", "http://www.theaba.org/TRAINING-PROGRAMS/In-training-Exam/Previous-Exams"]
     @aba_training_programs = ["here", "http://www.theaba.org/Home/TrainingPrograms"]
     @aba_content_outline = ["content outline", "http://www.theaba.org/PDFs/BASIC-Exam/Basic-and-Advanced-ContentOutline"]
+    @ace = ["ACE Exam", "http://www.caseanesthesia.com/exercise%20files/Practice%20Questions.htm"]
     @gaps = ["Gaps in Knowledge", "http://www.theaba.org/PDFs/ITE-Exam/ITE-Gaps-in-Knowledge-Report.pdf"]
     @aba_exam_summary = ["2014 Exam Summary (PDF)", "http://www.theaba.org/pdf/SAAA-Exams-Report.pdf"]
     @open_anesthesia_keywords = ["Open Anesthesia", "http://www.openanesthesia.org/OpenAnesthesia.org:KeywordBrowser"]
@@ -122,6 +123,7 @@ class StaticPagesController < ApplicationController
     @frca = "http://www.rcoa.ac.uk/examinations/overview"
     @nisoa = "http://www.nischoolofanaesthesia-finalfrca.org.uk"
     @study_strategy = [
+      ["Advanced Exam (Written Boards) 2017 (3/17)",       "https://forums.studentdoctor.net/threads/advanced-exam-written-boards-2017.1248411/"],
       ["Advanced Exam 2016 (8/16)",                        "http://forums.studentdoctor.net/threads/advanced-exam-2016.1214700/"],
       ["Studying for ITE (7/16)",                          "http://forums.studentdoctor.net/threads/studying-for-ite.1210873/"],
       ["Basic exam 2016 (6/16)",                           "http://forums.studentdoctor.net/threads/basic-exam-2016.1205018/"],
@@ -185,9 +187,11 @@ class StaticPagesController < ApplicationController
     @lovich = ["PowerPoint", "http://www.powershow.com/view/3c317a-MzI1Z/The_Things_I_Do_For_the_Residents_May_8_2008_Jessica_powerpoint_ppt_presentation"]
     @aba_training_programs = ["here", "http://www.theaba.org/Home/TrainingPrograms"]
     @the_anesthesia_consultant = ["The Anesthesia Consultant", 'http://theanesthesiaconsultant.com/2013/08/22/advice-for-passing-the-oral-board-exams-in-anesthesiology/']
+    @accrac34 = ["ACCRAC", "http://accrac.com/episode-34-oral-board-prep-with-drs-tran-and-beaudry/"]
 
     @study_strategy = [
-      ["Best oral board course for repeaters? (9/16)",                        "http://forums.studentdoctor.net/threads/best-oral-board-course-for-repeaters.1223328/#post-18171310"],
+      ["2017 Anesthesiology Oral Boars thread (3/17)",                        "https://forums.studentdoctor.net/threads/2017-anesthesiology-oral-boars-thread.1246001/"],
+      ["Best oral board course for repeaters? (9/16)",                        "http://forums.studentdoctor.net/threads/best-oral-board-course-for-repeaters.1223328/"],
       ["ABA oral boards and 10 min stem reading session (3/16)",              "http://forums.studentdoctor.net/threads/aba-oral-boards-and-10-min-stem-reading-session.1189411/"],
       ["2016 oral boards (3/16)",                                             "http://forums.studentdoctor.net/threads/2016-oral-boards.1187918/"],
       ["oral board prep advice (1/16)",                                       "http://forums.studentdoctor.net/threads/oral-board-prep-advice.1180670/"],
@@ -346,8 +350,10 @@ class StaticPagesController < ApplicationController
         
     ]
     
-    @ua= ["Understanding Anesthesia", "http://www.understandinganesthesiology.com"]
-    @acm= ["Anesthesia Clerkship Manual", "https://itunes.apple.com/us/book/anesthesia-clerkship-manual/id1151562335?mt=11"]
+    @ua = ["Understanding Anesthesia", "http://www.understandinganesthesiology.com"]
+    @propofology = ["Propofology", "http://www.propofology.com"]
+    @lynessbook = ["An Absolute Beginner's Guide to Anaesthetics", "http://www.propofology.com/uploads/7/5/8/3/75831043/the_absolute_beginners_guide_to_anaesthetics_v2.pdf"]
+    @acm = ["Anesthesia Clerkship Manual", "https://itunes.apple.com/us/book/anesthesia-clerkship-manual/id1151562335?mt=11"]
     @rca = ["Royal College of Anaesthetists Guide for Novice Trainees", "http://www.e-lfh.org.uk/e-learning-sessions/rcoa-novice/home.html"]
     @sea = ["SEA", "http://www.seahq.net"]
     @seams = ["Medical Student Guide to Anesthesiology", "http://www.seahq.net/images/sea_msg.pdf"]
