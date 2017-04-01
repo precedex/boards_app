@@ -72,8 +72,8 @@ class StaticPagesController < ApplicationController
       ["Steroid Equivalence Converter",  "http://www.medcalc.com/steroid.html"],
       ["PALS Drugs",                  "https://eccguidelines.heart.org/index.php/tables/2010-medications-for-pediatric-resuscitation/"],
       #["Peds Anesthesia Drugs",       "http://anesthesia.stonybrook.edu/teaching/peds-drug-dosages"],
-      ["Peds Anesthesia Pocket Ref",  "http://pedianesthesia.ucsf.edu/pdf_pedirefcard.pdf"],
-      ["Periop Antibiotic Dosing",    "http://www.ashp.org/DocLibrary/BestPractices/TGSurgery.aspx"],
+      #["Peds Anesthesia Pocket Ref",  "http://pedianesthesia.ucsf.edu/pdf_pedirefcard.pdf"],
+      ["Periop Antibiotic Dosing",    "http://www.ashp.org/surgical-guidelines"],
       ["PONV Prophylaxis",            "PONV.jpg"],
     ]
 
