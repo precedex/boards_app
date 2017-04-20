@@ -123,6 +123,7 @@ class StaticPagesController < ApplicationController
     @frca = "http://www.rcoa.ac.uk/examinations/overview"
     @nisoa = "http://www.nischoolofanaesthesia-finalfrca.org.uk"
     @study_strategy = [
+      ["2017 ABA ITE Results (3/17)",                      "https://forums.studentdoctor.net/threads/2017-aba-ite-results.1249649/"],
       ["Advanced Exam (Written Boards) 2017 (3/17)",       "https://forums.studentdoctor.net/threads/advanced-exam-written-boards-2017.1248411/"],
       ["Advanced Exam 2016 (8/16)",                        "http://forums.studentdoctor.net/threads/advanced-exam-2016.1214700/"],
       ["Studying for ITE (7/16)",                          "http://forums.studentdoctor.net/threads/studying-for-ite.1210873/"],
@@ -164,17 +165,19 @@ class StaticPagesController < ApplicationController
     ]
 
     @commercial_courses = [
-      ["Open Anesthesiology Self-Study Qbank",           "https://www.openanesthesia.org/members/join/#qbank-only"],
-      ["True Learn Anesthesiology",                      "http://www.truelearn.com/anesthesiology/"],
-      ["Michael Ho: The Essential Written Board Review", "http://anconsultants.com/anesthesiology-written-board-review/"],
-      ["AQB - anesthesiaQbank",                          "http://anesthesiaqbank.com"],
       ["Anesthesia Exam",                                "http://www.anesthesiaexam.com"],
+      ["AQB - anesthesiaQbank",                          "http://anesthesiaqbank.com"],
       ["Beyond Anesthesia",                              "http://beyondanesthesia.com"],
+      ["Board Vitals - BASIC",                           "https://www.boardvitals.com/anesthesiology-basic-exam-board-review"],
+      ["Board Vitals - ADVANCED",                        "https://www.boardvitals.com/anesthesiology-advanced-board-review"],
       ["Core Concepts Anesthesia Review",                "http://www.ccanesthesiareview.com/QOD/QOD.asp"],
       ["Dr. Jensen Anesthesiology & Pain Board P.R.E.P", "http://www.anesthesiologyboards.com"],
       ["Gas Questions",                                  "https://www.gasquestions.com"],
       ["M5 Board Review",                                "http://m5boardreview.com"],
+      ["Michael Ho: The Essential Written Board Review", "http://anconsultants.com/anesthesiology-written-board-review/"],
+      ["Open Anesthesiology Self-Study Qbank",           "https://www.openanesthesia.org/members/join/#qbank-only"],
       ["The Pass Machine",                               "http://www.thepassmachine.com/anesthesiology-certification-exam-prep-course.html"],
+      ["True Learn Anesthesiology",                      "http://www.truelearn.com/anesthesiology/"]
     ]
   end
 
