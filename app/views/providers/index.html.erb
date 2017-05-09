@@ -6,7 +6,7 @@
 <div class = "providers">
   <p> Anesthesiologists, CRNAs, and AAs are publicly listed in the <br><%= external_link_to "Physican Compare datasets", @datasets %> at 
     <%= external_link_to "data.medicare.gov", @medicare %> </p>
- 
+
     <%= form_tag(providers_path, :method => "get", :class => "form-horizontal") do %>
    
     <table class = "provsearch" align= "center">
@@ -137,7 +137,6 @@
               <div><%= "#{provider.aff5}" %></div>
           </td>
           <td><div><%= "#{provider.name_lgl}" %></div>
-              <div><%= "#{provider.name_common}" %></div>
           </td> 
           <% if provider.aba %>
           <td style = "text-align: center"> <%=external_link_to image_tag("abaorbit.png"), provider.aba %> </td>
@@ -149,7 +148,8 @@
   <% end %>
 
 </div>
-
+ 
+  <strong> Last update May 9, 2017 </strong>
 <!--
 <div>
   <h2 style = "font-size: 2em">Import a CSV File</h2>
