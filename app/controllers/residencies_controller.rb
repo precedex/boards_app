@@ -4,7 +4,7 @@ class ResidenciesController < ApplicationController
     
     @acgme = "https://www.acgme.org/acgmeweb/"
     @acgmeanes = "https://www.acgme.org/acgmeweb/tabid/128/ProgramandInstitutionalAccreditation/Hospital-BasedSpecialties/Anesthesiology.aspx"
-    @res = "https://www.acgme.org/acgmeweb/Portals/0/PFAssets/ProgramRequirements/040_anesthesiology_2016.pdf"
+    @res = "http://www.acgme.org/Specialties/Program-Requirements-and-FAQs-and-Applications/pfcatid/6/Anesthesiology"
     @milestone = "https://www.acgme.org/acgmeweb/Portals/0/PDFs/Milestones/AnesthesiologyMilestones.pdf"
     @aba = "http://www.theaba.org/"
     

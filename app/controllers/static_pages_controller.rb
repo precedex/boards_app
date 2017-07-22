@@ -35,7 +35,7 @@ class StaticPagesController < ApplicationController
       ["Cardiac Arrest Algorithm", "https://eccguidelines.heart.org/wp-content/uploads/2015/10/PALS-Cardiac-Arrest-Algorithm.png"],
       ["Bradycardia (with pulse)", "https://eccguidelines.heart.org/wp-content/uploads/2015/10/Pediatric-Bradycardia-With-a-Pulse-and-Poor-Perfusion-Algorithm.png"],
       ["Tachycardia (with pulse)", "https://eccguidelines.heart.org/wp-content/uploads/2015/09/Pediatric-Tachycardia-With-a-Pulse-and-Poor-Perfusion-Algorithm.png"],
-      ["Neonatal Resuscitation Summary", "http://www2.aap.org/nrp/docs/NRP%20Guidelines%20Flyer_English_Update.pdf"],
+      ["Neonatal Resuscitation Summary", "https://www.aap.org/en-us/Documents/nrp_guidelines_english.pdf"],
       ["Neonatal Resuscitation Protocol",    "https://eccguidelines.heart.org/wp-content/uploads/2015/10/Neonatal-Resuscitation-Algorithm.png"]
     ]
 
@@ -123,6 +123,9 @@ class StaticPagesController < ApplicationController
     @frca = "http://www.rcoa.ac.uk/examinations/overview"
     @nisoa = "http://www.nischoolofanaesthesia-finalfrca.org.uk"
     @study_strategy = [
+      ["Truelearn for the advanced exam (7/17)",           "https://forums.studentdoctor.net/threads/truelearn-for-the-advanced-exam.1270665/"],
+      ["2017 ABA ITE Results (3/17)",                      "https://forums.studentdoctor.net/threads/2017-aba-ite-results.1249649/"],
+      ["Random topics for ABA Advanced Exam (6/17)",       "https://forums.studentdoctor.net/threads/random-topics-for-aba-advanced-exam.1262568/"],
       ["2017 ABA ITE Results (3/17)",                      "https://forums.studentdoctor.net/threads/2017-aba-ite-results.1249649/"],
       ["Advanced Exam (Written Boards) 2017 (3/17)",       "https://forums.studentdoctor.net/threads/advanced-exam-written-boards-2017.1248411/"],
       ["Advanced Exam 2016 (8/16)",                        "http://forums.studentdoctor.net/threads/advanced-exam-2016.1214700/"],
@@ -193,7 +196,7 @@ class StaticPagesController < ApplicationController
     @accrac34 = ["ACCRAC", "http://accrac.com/episode-34-oral-board-prep-with-drs-tran-and-beaudry/"]
 
     @study_strategy = [
-      ["2017 Anesthesiology Oral Boars thread (3/17)",                        "https://forums.studentdoctor.net/threads/2017-anesthesiology-oral-boars-thread.1246001/"],
+      ["2017 Anesthesiology Oral Boards thread (3/17)",                        "https://forums.studentdoctor.net/threads/2017-anesthesiology-oral-boars-thread.1246001/"],
       ["Best oral board course for repeaters? (9/16)",                        "http://forums.studentdoctor.net/threads/best-oral-board-course-for-repeaters.1223328/"],
       ["ABA oral boards and 10 min stem reading session (3/16)",              "http://forums.studentdoctor.net/threads/aba-oral-boards-and-10-min-stem-reading-session.1189411/"],
       ["2016 oral boards (3/16)",                                             "http://forums.studentdoctor.net/threads/2016-oral-boards.1187918/"],
@@ -232,7 +235,7 @@ class StaticPagesController < ApplicationController
       ["Dr. Jensen Essential Oral Board P.R.E.P.",     "http://www.boardprep.com"],
       ["GadsenJones Anesthesiology Oral Board Review", "http://www.gadsdenjones.com"],
       ["Just Oral Boards",                             "http://www.justoralboards.com"],
-      ["Nail the Boards",                              "http://nailtheboards.com"],
+      #["Nail the Boards",                              "http://nailtheboards.com"],
       ["AceMedBoard",                                  "http://www.acemedboard.com"],
       ["The Osler Institute",                          "http://www.osler.org/main/ane.html"],
       ["Ultimate Board Prep",                          "http://www.ultimateboardprep.com"]
@@ -280,6 +283,8 @@ class StaticPagesController < ApplicationController
     @ase = "http://asecho.org"
     @canada = "http://csecho.ca/resources/"
     @study_strategy = [
+      ["2017 exam of special competence transesophageal echo (7/17)",         "https://forums.studentdoctor.net/threads/2017-exam-of-special-competence-transesophageal-echo.1269908/"],
+      ["Advanced PteExam 2017 (6/17)",                                        "https://forums.studentdoctor.net/threads/advanced-pteexam-2017.1262078/"],
       ["Basic PTEeXAM 2016 (5/16)",                                           "http://forums.studentdoctor.net/threads/basic-pteexam-2016.1201944/"],
       ["Advanced PTE Exam 2015 Stats (9/15)",                                 "http://forums.studentdoctor.net/threads/advanced-pte-exam-2015-stats.1158310/"],
       ["Anyone taking the Basic TEE boards (7/14)",                           "http://forums.studentdoctor.net/threads/any-one-taking-the-basic-tee-boards.1082996/#post-15417881"],
@@ -355,7 +360,7 @@ class StaticPagesController < ApplicationController
     
     @ua = ["Understanding Anesthesia", "http://www.understandinganesthesiology.com"]
     @propofology = ["Propofology", "http://www.propofology.com"]
-    @lynessbook = ["An Absolute Beginner's Guide to Anaesthetics", "http://www.propofology.com/uploads/7/5/8/3/75831043/the_absolute_beginners_guide_to_anaesthetics_v2.pdf"]
+    @lynessbook = ["An Absolute Beginner's Guide to Anaesthetics", "http://www.propofology.com/absolute-beginners-guide-to-anaesthetics.html"]
     @acm = ["Anesthesia Clerkship Manual", "https://itunes.apple.com/us/book/anesthesia-clerkship-manual/id1151562335?mt=11"]
     @rca = ["Royal College of Anaesthetists Guide for Novice Trainees", "http://www.e-lfh.org.uk/e-learning-sessions/rcoa-novice/home.html"]
     @sea = ["SEA", "http://www.seahq.net"]
