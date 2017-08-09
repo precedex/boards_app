@@ -36,7 +36,7 @@
   
 </head>
 
- <%= render 'layouts/header' %>
+ <%= render 'layouts/header' unless @hider%>
  
 <body>
 	<!-- Google Tag Manager -->
@@ -51,7 +51,7 @@
 	
 	<div class="container">	
 		<%= yield %>
-		<%= render 'layouts/footer' %>
+		<%= render 'layouts/footer' unless @hider%>
 	</div>
   
 </body>

@@ -1,6 +1,7 @@
 class JewelsController < ApplicationController
 
   def index
+    @hider = true
     if params[:collection].nil? 
       @jewels = Jewel.all     
     else
