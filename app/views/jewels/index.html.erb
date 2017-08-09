@@ -1,7 +1,17 @@
 <div class = "jewels">
-  <% title jewel_collection_title(params[:collection]) %>
-  <h1><%= yield(:title) %> COLLECTION </h1>
+  <% title jewel_collection_title(params[:collection]) %>  
   
+  <table style="width:100%">
+    <tr>
+      <td style = "padding-left: 60px;"><%= image_tag("DDJ-logo.jpg", size: '200x200') %></td>
+      <td><h1><%= yield(:title) %> collection |</h1></td>
+      <td><h2>Danya Mermelstein, DMD</br> 
+          danya@danyadesign.com </br>
+          danyadesign.com </h2></td> 
+   </tr>
+ </table>
+ <hr>
+
   <% @jewels.in_groups_of(4, false).each do |group| %> 
     <div class='row'>   
       <% group.each do |jewel| %>

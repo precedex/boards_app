@@ -8,6 +8,18 @@
     padding-bottom: 20px;
   }
   
+  h1 {
+    text-align: right;
+  }
+
+  h2 {
+    font-family: "Avenir";
+    font-weight: lighter;
+    font-size: 1.4em;
+    text-align: left;
+    padding-bottom: 25px;
+  }
+  
   a {
     font-family: "Avenir";
     font-size: 1.2em;
@@ -18,9 +30,5 @@
 	table {
 	  margin-left:auto; 
 	  margin-right:auto;
-	}
-	  
-	td{
-		padding: 3em;
 	}
 }
