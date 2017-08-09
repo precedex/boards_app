@@ -38,12 +38,11 @@ ActiveRecord::Schema.define(version: 20170809131214) do
   end
 
   create_table "jewels", force: true do |t|
-    t.string   "ID"
-    t.text     "name"
-    t.string   "collection"
-    t.text     "image"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.string "sku"
+    t.text   "name"
+    t.string "price"
+    t.string "collection"
+    t.text   "image"
   end
 
   create_table "lectures", force: true do |t|

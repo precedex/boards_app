@@ -1,7 +1,5 @@
 class ResidenciesController < ApplicationController
-  def index
-    
-    
+  def index 
     @acgme = "https://www.acgme.org/acgmeweb/"
     @acgmeanes = "https://www.acgme.org/acgmeweb/tabid/128/ProgramandInstitutionalAccreditation/Hospital-BasedSpecialties/Anesthesiology.aspx"
     @res = "http://www.acgme.org/Specialties/Program-Requirements-and-FAQs-and-Applications/pfcatid/6/Anesthesiology"
