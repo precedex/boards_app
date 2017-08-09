@@ -1,0 +1,33 @@
+<div class = "jewels">
+  <% title jewel_collection_title(params[:collection]) %>
+  <h1><%= yield(:title) %> COLLECTION </h1>
+  
+  <% @jewels.in_groups_of(4, false).each do |group| %> 
+    <div class='row'>   
+      <% group.each do |jewel| %>
+        <div class='col-xs-3'>         
+          <%= image_tag(jewel.image, width: "100%") %>
+          <hr></hr>
+          <h4><%= jewel.name %></h4>
+
+<!--
+          <div class = "list_actions">
+             <%= link_to 'New', new_jewel_path %>
+             <%= link_to 'Show', jewel %>
+             <%= link_to 'Edit', edit_jewel_path(jewel) %>
+             <%= link_to 'Destroy', jewel, method: :delete, data: { confirm: 'Are you sure?' } %>
+          </div>  
+-->               
+        </div>
+      <% end %>
+    </div>
+  <% end %>
+  <h1></h1>
+  <div class = "center">
+    <%= link_to 'BAUBLE', jewels_path(:collection => "bauble") %> | 
+    <%= link_to 'CALI', jewels_path(:collection => "cali") %> |
+    <%= link_to 'SURF', jewels_path(:collection => "surf") %> |
+    <%= link_to 'OCEANIA', jewels_path(:collection => "oceania") %> |
+    <%= link_to 'FACETS', jewels_path(:collection => "facets") %>
+  </div>
+</div>

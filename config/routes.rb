@@ -1,5 +1,7 @@
 BoardsApp::Application.routes.draw do
   
+  resources :jewels
+
   # home page
   root  'static_pages#welcome'
 

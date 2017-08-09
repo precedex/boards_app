@@ -1,0 +1,27 @@
+<%= form_for(@jewel) do |f| %>
+  <%= old_style_error_div @jewel %>
+
+  <div class="field">
+    <%= f.label :ID %><br>
+    <%= f.text_field :ID %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_area :name %>
+  </div>
+  <div class="field">
+    <%= f.label :image %><br>
+    <%= f.text_field :image %>
+  </div>  
+  <div class="field">
+    <%= f.label :collection %><br>
+    <%= f.radio_button :collection, 'bauble' %>    BAUBLE <br/>
+    <%= f.radio_button :collection, 'cali' %>      CALI <br/>
+    <%= f.radio_button :collection, 'surf' %>      SURF <br/>
+    <%= f.radio_button :collection, 'oceania' %>   OCEANIA <br/>
+    <%= f.radio_button :collection, 'facets' %>    FACETS <br/>
+  </div>  
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
