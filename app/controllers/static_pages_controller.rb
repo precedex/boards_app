@@ -117,11 +117,13 @@ class StaticPagesController < ApplicationController
     @open_anesthesia_keywords = ["Open Anesthesia", "http://www.openanesthesia.org/OpenAnesthesia.org:KeywordBrowser"]
     @kentucky_keywords = ["keyword review lecture series", "https://www.youtube.com/playlist?list=PLh0m5d4Yfc8zuGHKyc0UdaUAPqNLUOqnT"]
     @accrac = ["ACCRAC", "http://accrac.com"]
+    @steinerarticles = ["articles", "http://www.anesthesiamadeeasy.com/resources"]
     @quizzes = ["quizzes", "http://www.proprofs.com/quiz-school/search.php?search=anesthesia"]
     @mathps = "/AnesthesiaMath-PS.pdf"
     @mathsol = "/AnesthesiaMath-S.pdf"
     @frca = "http://www.rcoa.ac.uk/examinations/overview"
     @nisoa = "http://www.nischoolofanaesthesia-finalfrca.org.uk"
+    @propvideocourse = "  https://vimeo.com/ondemand/propofology"
     @study_strategy = [
       ["Truelearn for the advanced exam (7/17)",           "https://forums.studentdoctor.net/threads/truelearn-for-the-advanced-exam.1270665/"],
       ["2017 ABA ITE Results (3/17)",                      "https://forums.studentdoctor.net/threads/2017-aba-ite-results.1249649/"],
@@ -359,6 +361,7 @@ class StaticPagesController < ApplicationController
     ]
     
     @ua = ["Understanding Anesthesia", "http://www.understandinganesthesiology.com"]
+    @anesthesiamadeeasy = ["Anesthesia Made Easy", "http://anesthesiamadeeasy.com"]
     @propofology = ["Propofology", "http://www.propofology.com"]
     @lynessbook = ["An Absolute Beginner's Guide to Anaesthetics", "http://www.propofology.com/absolute-beginners-guide-to-anaesthetics.html"]
     @acm = ["Anesthesia Clerkship Manual", "https://itunes.apple.com/us/book/anesthesia-clerkship-manual/id1151562335?mt=11"]
