@@ -34,10 +34,6 @@
   </p>
   
   <p>
-    2006 - 2015 archived <%= external_link_to *@ace %> questions
-  </p>
-  
-  <p>
     2013 - 2016 <%= external_link_to *@gaps %> reports
   </p>
 
@@ -145,10 +141,14 @@
   Discussion threads at <%= link_to_sdn_forum %> 
   </p>
   
-  <ul>
-    <%= render partial: 'site', collection: @study_strategy %>
-  </ul>
-  
+  <strong>BASIC</strong>
+    <ul>
+      <%= render partial: 'site', collection: @study_strategy_basic %>
+    </ul>
+  <strong>ADVANCED / PART I</strong>
+    <ul>
+      <%= render partial: 'site', collection: @study_strategy_adv %>
+    </ul>
   <br>
     
   <p> Written board commercial prep courses:</p>
