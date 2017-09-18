@@ -10,7 +10,7 @@
   </p>
   
   <p>  
-    The <%= external_link_to *@basic %> exam is offered twice a year: June and November. To be eligible for the June exam, one must have completed 6 months of CA-1 training by March 31. 
+    The <%= external_link_to *@basic %> exam launched in July 2014 and is offered twice a year in June and November. To be eligible for the June exam, one must have completed 6 months of CA-1 training by March 31. 
   </p>
   
   <div class="center">
@@ -18,7 +18,7 @@
   </div>
   <br>
   <p>
-    The first <%= external_link_to *@advanced %> exam was first administered in July 2016. It is offered twice a year: January and July. To be eligible for the July exam, one must have completed 6 months of CA-3 training by March 31. 
+    The <%= external_link_to *@advanced %> exam launched in July 2016 and is offered twice a year in January and July. To be eligible for the July exam, one must have completed 6 months of CA-3 training by March 31. 
   </p>
 
   <div class="center">
@@ -145,9 +145,17 @@
     <ul>
       <%= render partial: 'site', collection: @study_strategy_basic %>
     </ul>
-  <strong>ADVANCED / PART I</strong>
+  <strong>ADVANCED </strong>
     <ul>
       <%= render partial: 'site', collection: @study_strategy_adv %>
+    </ul>
+  <strong>PART I</strong>
+    <ul>
+      <%= render partial: 'site', collection: @study_strategy_p1 %>
+    </ul>  
+  <strong>ITE</strong>
+    <ul>
+      <%= render partial: 'site', collection: @study_strategy_ite %>
     </ul>
   <br>
     

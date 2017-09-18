@@ -132,33 +132,27 @@ class StaticPagesController < ApplicationController
       ["ABA Basic Exam 2015 (4/15)",                       "http://forums.studentdoctor.net/threads/aba-basic-exam-2015.1132719/"],
       ["How to kill basic science/ite exams? (2/15)",      "http://forums.studentdoctor.net/threads/how-to-kill-basic-science-ite-exams.1123216/"],
       ["ABA Basic Exam (11/14)",                           "http://forums.studentdoctor.net/threads/aba-basic-exam.1106106/"],
-      ["How are YOU studying for the ABA Basic Exam? (6/14)", "http://forums.studentdoctor.net/threads/how-are-you-studying-for-the-aba-basic-exam.1079879/"],
+      ["How are YOU studying for the ABA Basic Exam? (6/14)", "http://forums.studentdoctor.net/threads/how-are-you-studying-for-the-aba-basic-exam.1079879/"]
     ]
     
     @study_strategy_adv = [
       ["ABA Advanced Exam (7/17)",                         "https://forums.studentdoctor.net/threads/aba-advanced-exam.1272098/"],
-      ["Truelearn for the advanced exam (7/17)",           "https://forums.studentdoctor.net/threads/truelearn-for-the-advanced-exam.1270665/"],
-      ["2017 ABA ITE Results (3/17)",                      "https://forums.studentdoctor.net/threads/2017-aba-ite-results.1249649/"],
-      ["Random topics for ABA Advanced Exam (6/17)",       "https://forums.studentdoctor.net/threads/random-topics-for-aba-advanced-exam.1262568/"],
-      ["2017 ABA ITE Results (3/17)",                      "https://forums.studentdoctor.net/threads/2017-aba-ite-results.1249649/"],
+      ["Truelearn for the advanced exam (7/17)",           "https://forums.studentdoctor.net/threads/truelearn-for-the-advanced-exam.1270665/"],      
+      ["Random topics for ABA Advanced Exam (6/17)",       "https://forums.studentdoctor.net/threads/random-topics-for-aba-advanced-exam.1262568/"],  
       ["Advanced Exam (Written Boards) 2017 (3/17)",       "https://forums.studentdoctor.net/threads/advanced-exam-written-boards-2017.1248411/"],
-      ["Advanced Exam 2016 (8/16)",                        "http://forums.studentdoctor.net/threads/advanced-exam-2016.1214700/"],
-      ["Studying for ITE (7/16)",                          "http://forums.studentdoctor.net/threads/studying-for-ite.1210873/"],
-      ["ITE 2016 (4/16)",                                  "http://forums.studentdoctor.net/threads/ite-2016.1191823/"],
+      ["Advanced Exam 2016 (8/16)",                        "http://forums.studentdoctor.net/threads/advanced-exam-2016.1214700/"]
+    ]
+    
+    @study_strategy_p1 = [
       ["ABA exam part 1 advice (2/16)",                    "http://forums.studentdoctor.net/threads/aba-exam-part-1-advice.1182799/"],
-      ["M5 Correlation to ITEs (1/16)",                    "http://forums.studentdoctor.net/threads/m5-correlation-to-ites.1180566/"],
-      ["Qbank structure -- trying to decide which to buy. (1/16)", "http://forums.studentdoctor.net/threads/qbank-structure-trying-to-decide-which-to-buy.1176863/"],
-      ["ITE exam prep for rookies (10/15)",                "http://forums.studentdoctor.net/threads/ite-exam-prep-for-rookies.1164173/"],
+      ["Qbank structure -- trying to decide which to buy. (1/16)", "http://forums.studentdoctor.net/threads/qbank-structure-trying-to-decide-which-to-buy.1176863/"], 
       ["ABA exam - written (7/15)",                        "http://forums.studentdoctor.net/threads/aba-exam-written.1153111/"],
-      ["TrueLearn Question Bank (4/15)",                   "http://forums.studentdoctor.net/threads/truelearn-question-bank.1130074/"],
-      ["2015 In Training Exam (2/15)",                     "http://forums.studentdoctor.net/threads/2015-in-training-exam.1122186/"],
-      ["Trulearn ITE question bank, predicted score (1/15)?", "http://forums.studentdoctor.net/threads/trulearn-ite-question-bank-predicted-score.1117676/"],
+      ["TrueLearn Question Bank (4/15)",                   "http://forums.studentdoctor.net/threads/truelearn-question-bank.1130074/"],    
       ["Anesthesia Q Bank (1/15)",                         "http://forums.studentdoctor.net/threads/anesthesia-q-bank.1115732/"],
       ["Best Review Book for Written Boards (9/14)",       "http://forums.studentdoctor.net/threads/best-review-book-for-written-boards.1098134/"],
       ["Boards (7/14)",                                    "http://forums.studentdoctor.net/threads/boards.1088912/"],
       ["ABA Released Questions (7/14)",                    "http://forums.studentdoctor.net/threads/aba-released-questions.1086157/"],
       ["Jensen board course (3/14)",                       "http://forums.studentdoctor.net/threads/jensen-board-course.1062646/"],
-      ["ITE 2014 (2/14)",                                  "http://forums.studentdoctor.net/threads/ite-2014.1056691/"],
       ["Hall vs M5 Review Questions (12/13)",              "http://forums.studentdoctor.net/threads/hall-vs-m5-review-questions.1045795/"],
       ["Question: best written board review (3/13)",       "http://forums.studentdoctor.net/threads/question-best-written-board-review.994017/"],
       ["Question Bank for the ITE (2/13)",                 "http://forums.studentdoctor.net/threads/question-bank-for-the-ite.981534/"],
@@ -171,7 +165,18 @@ class StaticPagesController < ApplicationController
       ["Review Courses for Writtens (3/09)",               "http://forums.studentdoctor.net/threads/review-courses-for-writtens.622094/"],
       ["Written board prep (1/09)",                        "http://forums.studentdoctor.net/threads/written-board-prep.594054/"],
       ["Written Exam results are in! (9/08)",              "http://forums.studentdoctor.net/threads/written-exam-results-are-in.565074/"],
-      ["Best Review Courses for Written Board??? (11/07)", "http://forums.studentdoctor.net/threads/best-review-courses-for-written-board.467298/"],
+      ["Best Review Courses for Written Board??? (11/07)", "http://forums.studentdoctor.net/threads/best-review-courses-for-written-board.467298/"]
+    ]
+      
+    @study_strategy_ite = [
+      ["2017 ABA ITE Results (3/17)",                      "https://forums.studentdoctor.net/threads/2017-aba-ite-results.1249649/"],
+      ["Studying for ITE (7/16)",                          "http://forums.studentdoctor.net/threads/studying-for-ite.1210873/"],
+      ["ITE 2016 (4/16)",                                  "http://forums.studentdoctor.net/threads/ite-2016.1191823/"],
+      ["M5 Correlation to ITEs (1/16)",                    "http://forums.studentdoctor.net/threads/m5-correlation-to-ites.1180566/"],
+      ["ITE exam prep for rookies (10/15)",                "http://forums.studentdoctor.net/threads/ite-exam-prep-for-rookies.1164173/"],
+      ["2015 In Training Exam (2/15)",                     "http://forums.studentdoctor.net/threads/2015-in-training-exam.1122186/"],
+      ["Trulearn ITE question bank, predicted score (1/15)?", "http://forums.studentdoctor.net/threads/trulearn-ite-question-bank-predicted-score.1117676/"],
+      ["ITE 2014 (2/14)",                                  "http://forums.studentdoctor.net/threads/ite-2014.1056691/"]
     ]
 
     @commercial_courses = [
