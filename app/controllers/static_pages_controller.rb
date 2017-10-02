@@ -1,5 +1,7 @@
 class StaticPagesController < ApplicationController
   def welcome
+    require 'rss'
+    @rss = RSS::Parser.parse(open('http://anesthesiology.pubs.asahq.org/rss/site_157/173.xml').read, false)
   end
 
   def about
@@ -118,6 +120,8 @@ class StaticPagesController < ApplicationController
     @open_anesthesia_keywords = ["Open Anesthesia", "http://www.openanesthesia.org/OpenAnesthesia.org:KeywordBrowser"]
     @kentucky_keywords = ["keyword review lecture series", "https://www.youtube.com/playlist?list=PLh0m5d4Yfc8zuGHKyc0UdaUAPqNLUOqnT"]
     @accrac = ["ACCRAC", "http://accrac.com"]
+    @xi = ["Amanda Xi", "http://blog.amandaxi.com"]
+    @xibasic = ["How to Study for the ITE, BASIC, and anesthesia", "http://blog.amandaxi.com/2017/09/21/study-resources-ite-basic-anesthesia/"]
     @steinerarticles = ["articles", "http://www.anesthesiamadeeasy.com/resources"]
     @quizzes = ["quizzes", "http://www.proprofs.com/quiz-school/search.php?search=anesthesia"]
     @mathps = "/AnesthesiaMath-PS.pdf"
