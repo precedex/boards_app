@@ -128,7 +128,8 @@ class StaticPagesController < ApplicationController
     @mathsol = "/AnesthesiaMath-S.pdf"
     @frca = "http://www.rcoa.ac.uk/examinations/overview"
     @nisoa = "http://www.nischoolofanaesthesia-finalfrca.org.uk"
-    @propvideocourse = "  https://vimeo.com/ondemand/propofology"
+    @propvideocourse = "https://vimeo.com/ondemand/propofology"
+    @sdn = "https://forums.studentdoctor.net/forums/anesthesiology.45/"
     @study_strategy_basic = [
       ["Basic exam 2016 (6/16)",                           "http://forums.studentdoctor.net/threads/basic-exam-2016.1205018/"],
       ["ABA BASIC STUDY TIPS (4/16)",                      "http://forums.studentdoctor.net/threads/aba-basic-study-tips.1193899/"],

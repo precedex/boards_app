@@ -25,6 +25,12 @@ textarea {                  /* not sure what this does */
   min-width: 100%;
 }
 
+img {
+  display: block;
+  margin: auto; 
+  padding-bottom: 20px;
+}
+
 /* typography */
 
 h1 {
@@ -33,7 +39,10 @@ h1 {
 	font-size: 7em;
 	letter-spacing: 0.5px;
 	font-weight: 300;
-	padding-bottom: 40px;
+}
+
+h1.sub {
+  font-size: 3.5em;
 }
 
 p {

@@ -4,11 +4,10 @@
       <p> <%= link_to "About", about_path %> &nbsp; | &nbsp; <%= link_to "Feedback", feedback_path %> </p> 
     </div>
     <div class="col-xs-4">
-      <p> <%= image_tag("Twitter.png")%> <%= external_link_to "@anesthesiahub", "https://twitter.com/anesthesiahub" %> </p>
+      <p> <%= external_link_to image_tag("Twitter.png"), "https://twitter.com/anesthesiahub"%> </p>
     </div>
     <div class="col-xs-4">
       <p> &copy; 2013-2017 <%= link_to "David Moss, MD", about_path %> </p>
     </div>
   </div>  
 </footer>
-

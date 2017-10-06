@@ -1,7 +1,8 @@
 <% title "Oral Boards" %>
 
 <h1> <%= yield(:title) %> <br>
-<span style="font-size: 0.5em"> part 2  / APPLIED exam </span></h1> 
+<h1 class="sub"> part 2  / APPLIED exam </h1>
+<hr>
 
 <div class="exams">
   <p>
@@ -19,10 +20,8 @@
   <p>
     Median pass rate for first time takers (2009-2015) is 86% 
   </p>
-  
-  <div class='center'>
-    <%= image_tag("Part2Results17.png") %>
-  </div>
+
+  <%= image_tag("Part2Results17.png") %>
   
   <p>
     The APPLIED exam is offered 9 weeks a year at the ABA assessment center in Raleigh, NC:
@@ -65,7 +64,7 @@
   </p>
   
   <p>
-    Discussion threads at <%= link_to_sdn_forum %>
+    Discussion threads at <%= external_link_to "Student Doctor Network", @sdn %> 
   </p>
   
   <ul>

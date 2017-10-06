@@ -1,6 +1,7 @@
 <% title "Nurse Anesthesia Certification" %>
 
 <h1> <%= yield(:title) %> </h1>
+<hr>
 
 <div class="exams">  
   <p>
@@ -23,24 +24,33 @@
 
   <p> Clinical requirements for students enrolled after January 1, 2015: </p>
   
-  <div class='center'>
    <%= image_tag("CRNAreq.png") %>
    <%= image_tag("NCE.jpg") %>
-  </div>
   
   <p> The following books may be useful for exam preparation: </p>
   
-  <div class='center'>
-   <%= external_link_to image_tag("Burns.jpg"), "http://www.amazon.com/Certification-Review-Nurse-Anesthesia-Shari/dp/0071827668" %>
-   <%= external_link_to image_tag("CRNAcert.jpg"), "http://www.amazon.com/Certification-Review-Kelly-Wiltse-Nicely/dp/1449670482" %>
-   <%= external_link_to image_tag("CRNACards.jpg"), "http://www.amazon.com/CRNA-Exam-Flashcard-Study-System/dp/1609715284" %>
-   <%= external_link_to image_tag("CRNAPocket.jpg"), "http://www.amazon.com/Nurse-Anesthesia-Pocket-Guide-Clinicians/dp/0763773026" %>
-   <%= external_link_to image_tag("Nagelhout.jpg"), "http://www.amazon.com/Nurse-Anesthesia-5e-Nagelhout/dp/1455706124" %>  
+  <div class='row'>   
+      <div class='col-xs-2'>  
+      <%= external_link_to image_tag("Burns.jpg"), "http://www.amazon.com/Certification-Review-Nurse-Anesthesia-Shari/dp/0071827668" %>
+      </div>
+      <div class='col-xs-2'>
+      <%= external_link_to image_tag("CRNAcert.jpg"), "http://www.amazon.com/Certification-Review-Kelly-Wiltse-Nicely/dp/1449670482" %>
+      </div>
+      <div class='col-xs-2'>
+      <%= external_link_to image_tag("CRNACards.jpg"),"http://www.amazon.com/CRNA-Exam-Flashcard-Study-System/dp/1609715284" %>
+      </div>
+      <div class='col-xs-2'>
+      <%= external_link_to image_tag("CRNAPocket.jpg"), "http://www.amazon.com/Nurse-Anesthesia-Pocket-Guide-Clinicians/dp/0763773026" %>
+      </div>
+      <div class='col-xs-2'>
+      <%= external_link_to image_tag("Nagelhout.jpg"), "http://www.amazon.com/Nurse-Anesthesia-5e-Nagelhout/dp/1455706124" %>  
+      </div>
   </div>
-  <br/>
+
   <p>
     More information available at <%= external_link_to "The CRNA.", @thecrna %>
   </p>
+  
   <p>
     Discussion threads at <%= external_link_to "Nurse-Anesthesia.org", @nurse_anes %>
   </p>
@@ -48,12 +58,15 @@
   <p> 
     Nurse Anesthesia board commercial prep courses:
   </p>
+  
   <p class="disclaimer">
   I don't have any experience with these products and do not endorse any
   particular product
   </p>
+  
   <ul>
     <%= render partial: 'site', collection: @commercial_courses %>
   </ul><br/>
+  
 </div>
 

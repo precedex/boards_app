@@ -1,7 +1,8 @@
 <% title "Written Boards" %>
 
-<h1> <%= yield(:title) %> <br>
-<span style="font-size: 0.5em"> part 1  / BASIC and ADVANCED exams </span></h1>
+<h1> <%= yield(:title) %> </h1>
+<h1 class="sub"> part 1  / BASIC and ADVANCED exams </h1>
+<hr>
 
 <div class='exams'>
   <p>
@@ -13,17 +14,13 @@
     The <%= external_link_to *@basic %> exam launched in July 2014 and is offered twice a year in June and November. To be eligible for the June exam, one must have completed 6 months of CA-1 training by March 31. 
   </p>
   
-  <div class="center">
-      <%= image_tag("BasicStats.png") %>
-  </div>
-  <br>
+  <%= image_tag("BasicStats.png") %>
+
   <p>
     The <%= external_link_to *@advanced %> exam launched in July 2016 and is offered twice a year in January and July. To be eligible for the July exam, one must have completed 6 months of CA-3 training by March 31. 
   </p>
 
-  <div class="center">
-      <%= image_tag("Part1Results.png") %>
-  </div>
+  <%= image_tag("Part1Results.png") %>
 
   <p>
     BASIC/ADVANCED exam <%= external_link_to *@aba_content_outline %>
@@ -142,7 +139,7 @@
   </p>
 
   <p>
-  Discussion threads at <%= link_to_sdn_forum %> 
+  Discussion threads at <%= external_link_to "Student Doctor Network", @sdn %> 
   </p>
   
   <strong>BASIC</strong>
