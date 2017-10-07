@@ -24,7 +24,9 @@ BoardsApp::Application.routes.draw do
   get    '/sites/writtenboards',          to: 'static_pages#writtens'
   get    '/sites/oralboards',             to: 'static_pages#orals'
   get    '/sites/pedsboards',             to: 'static_pages#pedsboards'
+  get    '/sites/painboards',             to: 'static_pages#painboards'
   get    '/sites/echoboards',             to: 'static_pages#echoboards'
+  get    '/sites/icuboards',              to: 'static_pages#icuboards'
   get    '/sites/crnaboards',             to: 'static_pages#crnaboards'
   get    'sites/moca',                    to: 'static_pages#moca'
 

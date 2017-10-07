@@ -266,6 +266,7 @@ class StaticPagesController < ApplicationController
     @nrmp = "http://www.nrmp.org/wp-content/uploads/2013/08/National-Resident-Matching-Program-NRMP-Results-and-Data-SMS-2014-Final.pdf"
     @wfsa = "http://www.wfsahq.org/resources/update-in-anaesthesia"
     @peds_exam_content = "http://www.theaba.org/PDFs/Pediatrics-Anesthesiology/PAContentOutline"
+    @peds_exam_blueprint = "http://www.theaba.org/PDFs/Pediatrics-Anesthesiology/PA-Exam-Blueprint"
     @peds_exam_questions = "http://www.theaba.org/PDFs/Pediatrics-Anesthesiology/PASampleQuestions"
     @study_strategy = [
       ["Peds Anesthesia boards prep help. (6/16)",                           "http://forums.studentdoctor.net/threads/peds-anesthesia-boards-prep-help.1208153/"],
@@ -285,6 +286,22 @@ class StaticPagesController < ApplicationController
       ["Society for Pediatric Anesthesiology",                               "http://www.pedsanesthesia.org"],
       ["Smart Tots",                                                         "http://www.smarttots.org"]     
     ]
+  end
+  
+  def painboards
+    @pain_cert = ["pain medicine examination", "http://www.theaba.org/Exams/Pain-Medicine-Certification/Pain-Medicine-Certification"]
+    @pain_exam_content = "http://www.theaba.org/PDFs/Pain-Medicine/PMContentOutline"
+    @pain_exam_blueprint = "http://www.theaba.org/PDFs/Pain-Medicine/PM-Exam-Blueprint"
+    @pain_exam_questions = "http://www.theaba.org/PDFs/Pain-Medicine/PMExamSampleQuestions"
+  end
+  
+  def icuboards
+    @icu_cert = ["critical care medicine examination", "http://www.theaba.org/Exams/Critical-Care-Medicine-Certification/Critical-Care-Medicine-Certification"]
+    @icu_exam_content = "http://www.theaba.org/PDFs/Critical-Care-Medicine/ContentOutline_CCM"
+    @icu_exam_blueprint = "http://www.theaba.org/PDFs/Critical-Care-Medicine/CCM-Exam-Blueprint"
+    @study_strategy = [
+      ["Review/Study for Anesthesiology Critical Care Exam (5/13)", "https://forums.studentdoctor.net/threads/review-study-for-anesthesiology-critical-care-exam.1007625/"]
+    ]    
   end
   
   def echoboards
@@ -340,7 +357,7 @@ class StaticPagesController < ApplicationController
     @moca = "http://www.theaba.org/MOCA/About-MOCA"
     @moca2 = "http://www.theaba.org/PDFs/MOCA/MOCA-2-0-FAQs"
     @moca3 = "http://www.theaba.org/MOCA/MOCA-Timeline"
-    @mocaminute = "http://cl.s7.exct.net/?qs=dca063e79bc9adbe9e3f31a6381e7fdee5342b191b5c2f305dbe3da31f4ca03a137020c5928a6f85"
+    @mocaminute = "http://www.theaba.org/MOCA/MOCA-Minute"
     @sim = "http://education.asahq.org/sim/endorsed"
     @ppai = "http://education.asahq.org/PPAI"
     @activities = "http://www.theaba.org/PDFs/MOCA/MOCA-2-0-Part-4-Requirements"

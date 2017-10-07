@@ -10,9 +10,7 @@ html {
 }
 
 body {
-  padding-top: 0px;           /* whitespace above the navigation bar */
-  font-size: 100%;
-  font-family: "Helvetica", sans-serif;
+  font: 100% Helvetica, sans-serif;
   font-weight: lighter;
 }
 
@@ -43,6 +41,11 @@ h1 {
 
 h1.sub {
   font-size: 3.5em;
+}
+
+h2 {
+  font-size: 1.8em;
+  font-weight: bold;  
 }
 
 p {
