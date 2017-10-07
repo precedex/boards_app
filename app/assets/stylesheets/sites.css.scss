@@ -1,35 +1,33 @@
 .sites {
-   
-  h4 {
-    font-family: "Helvetica";
-    font-weight: lighter;
-    letter-spacing: -0.5px;
-    font-size: 1.6em;
-    padding-bottom: 20px;
-  }
   
   .btn {
-    font-family: "Helvetica";
-    font-weight: lighter;
+    display: table-cell;
+    white-space: normal;
 		font-size: 2em;
     text-align: center;
-    white-space: normal;
     color: red;
       &:visited {
         color: red;
       }
     width: 300px;
-    height: 140px;
-    border: solid 1px DarkBlue;
-    display: table-cell;
+    height: 160px;
+    border: solid 1px SlateGray;
+    border-radius: 30px;    
   }
   
   .btn-rec{
-    border: ridge 8px Green;
+    border: dotted 4px CornflowerBlue;
+  }
+  
+  .btn-demo{
+    max-height: 50px;
+    max-width: 50px;
+    border-radius: 15px;
   }
   
   .btn img {
-    max-height: 130px;
+    padding: 5px;
+    max-height: 150px;
   }
 	 
 	table {
