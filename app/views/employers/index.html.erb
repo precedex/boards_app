@@ -6,7 +6,8 @@
  
 
 <div class = "providers">
-  <p> Employers of anesthesiologists are publicly listed in the <%= external_link_to "Physican Compare datasets", @datasets %> at <%= external_link_to "data.medicare.gov", @medicare %> </p>
+  <p> Employers of anesthesiologists are publicly listed in the <%= external_link_to "Physican Compare datasets", @datasets %> at <%= external_link_to "data.medicare.gov", @medicare %> <br>
+  Individual results are available by <%= link_to "searching by profesional", providers_path %> </p>
 
     <%= form_tag(employers_path, :method => "get", :class => "form-horizontal") do %>
    
@@ -29,11 +30,11 @@
   <h1>
     <% if @employers.length == 1 %>
       1 employer matches your search.
-    <% else %>
+    <% elsif params[:state] %>
       <%= @employers.length %>  employers match your search.
+    <% else %>  
     <% end %>
   </h1>
-
 
   <% unless @employers.length == 0%>
   <table>
