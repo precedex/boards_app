@@ -8,6 +8,12 @@ class SitesController < ApplicationController
       @sites = Site.by_title
     else
       @sites = Site.where(category: params[:category]).by_title
+      if params[:category] == "blog"
+      @sites1 = Site.where(category: params[:category]).where(rec: "1").by_title 
+      @sites2 = Site.where(category: params[:category]).where(rec: "0").by_title 
+      @sites =@sites1+@sites2
+      
+      end  
     end
   end
 

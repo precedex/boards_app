@@ -125,46 +125,6 @@
   margin-left: 40px;
 }
 
-.movies{ 
-  .panel {
-	  border-color: SlateGray;
-	  border-width: 0.1em;
-  }
-  
-  .panel-heading{
-	  background-color: white;
-	  color: black;
-	}
-  
-  .panel-heading .accordion-toggle:after {
-      /* symbol for "opening" panels */
-      font-family: 'Glyphicons Halflings';  
-      content: "+";    
-      float: right;      
-      color: grey;         
-  }
-  .panel-heading .accordion-toggle.collapsed:after {
-      /* symbol for "collapsed" panels */
-      content: "-";   
-  }
-  
-  h3, h4, h5{
-    font-family: Avenir, Tahoma;
-    font-weight: normal;
-  }
-  
-  h3{
-    font-size: 3em;
-  }
-  
-  h4{
-     font-size: 2.2em;
-  }
-  
-  h5{
-     font-size: 1.8em;
-  }
-}
 
 
 
