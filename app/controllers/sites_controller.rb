@@ -9,9 +9,10 @@ class SitesController < ApplicationController
     else
       @sites = Site.where(category: params[:category]).by_title
       if params[:category] == "blog"
-      @sites1 = Site.where(category: params[:category]).where(rec: "1").by_title 
-      @sites2 = Site.where(category: params[:category]).where(rec: "0").by_title 
-      @sites =@sites1+@sites2
+      @sites1 = Site.where(category: params[:category]).where(rec: "1").by_title
+      @sites2 = Site.where(category: params[:category]).where(rec: "0")
+      @sites3 = Site.where(category: params[:category]).where(rec: nil)
+      @sites = @sites1 + @sites2 + @sites3
       
       end  
     end
