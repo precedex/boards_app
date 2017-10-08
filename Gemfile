@@ -8,6 +8,7 @@ gem 'nokogiri', '1.6.3.1'
 gem 'pg', '~>0.17.0'
 gem 'haml'
 gem 'friendly_id'
+gem 'rake', '10.3.2'
 
 group :development, :test do
   gem 'rspec-rails', '2.13.1'

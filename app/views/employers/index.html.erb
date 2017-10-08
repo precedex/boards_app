@@ -1,0 +1,93 @@
+<% title "U.S. Anesthesia Employers" %>
+<div class = "sites">
+  <h1> <%= yield(:title) %> </h1>
+  <hr>
+</div>  
+ 
+
+<div class = "providers">
+  <p> Employers of anesthesiologists, CRNAs, and AAs are publicly listed in the <%= external_link_to "Physican Compare datasets", @datasets %> at <%= external_link_to "data.medicare.gov", @medicare %> </p>
+
+    <%= form_tag(employers_path, :method => "get", :class => "form-horizontal") do %>
+   
+    <table class = "provsearch" align= "center">
+      <tr>
+        <td>
+          <%= label_tag "employer", "Employer: "%>
+          <%= text_field_tag :name_lgl, params[:name_lgl], placeholder: "Employer", :class => "input-medium" %>
+        </td>
+        <td style="text-align:left">
+          <%= label_tag "state", "State: "%>
+          <%= select_tag :state, options_for_select(us_states) %>
+        </td>
+      </tr>
+    </table>
+    
+    <%= submit_tag "Search Employers", :name => nil, :class => "btn btn-primary", :style => "margin:1em" %>
+    <% end %>
+    
+  <h1>
+    <% if @employers.length == 1 %>
+      1 employer matches your search.
+    <% else %>
+      <%= @employers.length %>  employers match your search.
+    <% end %>
+  </h1>
+
+
+  <% unless @employers.length == 0%>
+  <table>
+    <thead>
+      <tr>
+        <th><%= sortable "name_lgl", "Employer" %></th>
+        <th><%= sortable "n_employees", "#Employees" %></th>
+        <th>Location(s)</th>
+        <th>Hospitals</th>
+      </tr>         
+    </thead>
+    <tbody>
+       <% @employers.each do |employer| %>
+        <tr>
+          <td><%= "#{employer.name_lgl}" %></td>
+          <td style='text-align:center; font-size:1.3em'>
+              <%= link_to "#{employer.n_employees}", 
+              :controller => :providers, :action => :index, :provider_type => "md", :employer =>  "#{employer.name_lgl}"%>
+          </td>
+          <td><%= "#{employer.locations.split(',')[0]} " "#{employer.locations.split(',')[1]}"%>
+            <% if employer.locations.split(',')[2] %>
+            <br><%= "#{employer.locations.split(',')[2]} " "#{employer.locations.split(',')[3]}"%>
+            <% end %>
+            <% if employer.locations.split(',')[4] %>
+            <br><%= "#{employer.locations.split(',')[4]} " "#{employer.locations.split(',')[5]}"%>
+            <% end %>
+            <% if employer.locations.split(',')[6] %>
+            <br><%= "#{employer.locations.split(',')[6]} " "#{employer.locations.split(',')[7]}"%>
+            <% end %>
+            <% if employer.locations.split(',')[8] %>
+            <br><%= "#{employer.locations.split(',')[8]} " "#{employer.locations.split(',')[9]}"%>
+            <% end %>
+            </td>
+          <td><% if employer.hospitals %> 
+                <% employer.hospitals.split(',').each do |hospital| %>
+                <%= hospital %> <br>
+                <% end %> 
+                <% end %></td>
+        </tr>       
+      <% end %>  
+    </tbody>
+  </table>
+  <% end %>
+</div>
+<br>
+  <strong> Last update May 9, 2017 </strong>
+<!--
+<div>
+  <h2 style = "font-size: 2em">Import a CSV File</h2>
+    <%= form_tag import_employers_path, multipart: true do %>
+    <%= file_field_tag :file %>
+    <%= submit_tag "Import CSV" %>
+    <% end %>
+</div>
+-->
+
+

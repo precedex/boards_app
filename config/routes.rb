@@ -20,6 +20,13 @@ BoardsApp::Application.routes.draw do
     collection { post :import }
   end
 
+  # employers
+  get   'employers/index',                 to: 'employers#index'
+  get   'employers/import'
+  resources :employers do
+    collection { post :import }
+  end
+
   # exams
   get    '/sites/writtenboards',          to: 'static_pages#writtens'
   get    '/sites/oralboards',             to: 'static_pages#orals'
