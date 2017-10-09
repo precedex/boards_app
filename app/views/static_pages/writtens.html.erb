@@ -1,42 +1,17 @@
-<% title "Written Boards" %>
+<% title "BASIC and ADVANCED exams" %>
 
 <h1> <%= yield(:title) %> </h1>
-<h1 class="sub"> part 1  / BASIC and ADVANCED exams </h1>
+<h1 class="sub"> part 1  / written boards </h1>
 <hr>
 
 <div class='exams'>
   <p>
     The ABA has phased out the traditional <%= external_link_to *@part1 %> written exam. 
-    Residents now take the <%= external_link_to *@staged %>.
-  </p>
-  
-  <p>  
-    The <%= external_link_to *@basic %> exam launched in July 2014 and is offered twice a year in June and November. To be eligible for the June exam, one must have completed 6 months of CA-1 training by March 31. 
-  </p>
-  
-  <%= image_tag("BasicStats.png") %>
-
-  <p>
-    The <%= external_link_to *@advanced %> exam launched in July 2016 and is offered twice a year in January and July. To be eligible for the July exam, one must have completed 6 months of CA-3 training by March 31. 
-  </p>
-
-  <%= image_tag("Part1Results.png") %>
-
-  <p>
-    BASIC/ADVANCED exam <%= external_link_to *@aba_content_outline %>
+    Residents now take the <%= external_link_to *@staged %> and the annual <%= external_link_to *@ite %>
   </p>
   
   <p>
-    <%= external_link_to *@basicq %> and <%= external_link_to *@advancedq %> sample questions
-  </p>
-  
-  <p>
-    2013 - 2016 <%= external_link_to *@gaps %> reports
-  </p>
-
-  <p>
-  The released <%= external_link_to *@old_aba_exams %>, categorized into BASIC/ADVANCED may be searched below.
-  K-type questions have been eliminated. 
+  The released <%= external_link_to *@old_aba_exams %>, categorized into BASIC/ADVANCED may be searched:
   </p>
 
   <div class="center">
@@ -95,14 +70,41 @@
       Anesthesiology, American Society of Anesthesiologists
     </p>
     <br><br>
-  </div>  
+  </div>
+  
+  <p>  
+    The <%= external_link_to *@basic %> exam launched in July 2014 and is offered twice a year in June and November. To be eligible for the June exam, one must have completed 6 months of CA-1 training by March 31. 
+  </p>
+  
+  <%= image_tag("BasicStats.png") %>
+  <%= image_tag("BASICResults716.png") %>
+
+  <p>
+    The <%= external_link_to *@advanced %> exam launched in July 2016 and is offered twice a year in January and July. To be eligible for the July exam, one must have completed 6 months of CA-3 training by March 31. 
+  </p>
+
+  <%= image_tag("Part1Results.png") %>
+  <%= image_tag("ADVResults716.png") %>
+
+  <p>
+    BASIC exam <%= external_link_to *@contentoutline %>, <%= external_link_to *@basicblueprint %>, and <%= external_link_to *@basicq %>
+  </p>
+  
+  <p>
+    ADVANCED exam <%= external_link_to *@contentoutline %>, <%= external_link_to *@advancedblueprint %>, and <%= external_link_to *@advancedq %>
+  </p>
+  
+  <p>
+    2014 - 2016 <%= external_link_to *@gaps %> reports and keywords explained 
+    (<%= external_link_to *@gap2014 %>, <%= external_link_to *@gap2015 %>, <%= external_link_to *@gap2016 %>) by Randy Schell
+  </p>
 
   <p>
     An extensive list of keywords can be found at <%= external_link_to *@open_anesthesia_keywords %>
   </p>
   
   <p>
-    The University of Kentucky department of anesthesia <%= external_link_to *@kentucky_keywords %>
+    The University of Kentucky department of anesthesia <%= external_link_to *@kentucky_keywords2016 %> and <%= external_link_to *@kentucky_keywords2017 %>
   </p>
   
   <p>

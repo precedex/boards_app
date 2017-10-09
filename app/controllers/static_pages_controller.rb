@@ -104,10 +104,14 @@ class StaticPagesController < ApplicationController
   end
 
   def writtens
+    @ite = ["In-Training Exam", "http://www.theaba.org/TRAINING-PROGRAMS/In-training-Exam/About-the-In-Training-Exam"]
     @basic = ["BASIC", "http://www.theaba.org/Exams/BASIC-(Staged-Exam)/About-BASIC-(Staged-Exam)"]
     @advanced = ["ADVANCED", "http://www.theaba.org/Exams/ADVANCED-(Staged-Exam)/About-ADVANCED-(Staged-Exam)"]
-    @basicq = ["BASIC", "http://www.theaba.org/PDFs/BASIC-Exam/BASIC-Sample-Questions"]
-    @advancedq = ["ADVANCED", "http://www.theaba.org/PDFs/ADVANCED-Exam/ADVANCED-Sample-Questions"]
+    @contentoutline = ["content outline", "http://www.theaba.org/PDFs/BASIC-Exam/Basic-and-Advanced-ContentOutline"]
+    @basicblueprint = ["blueprint", "http://www.theaba.org/PDFs/BASIC-Exam/BASIC-Exam-Blueprint"]
+    @advancedblueprint = ["blueprint", "http://www.theaba.org/PDFs/ADVANCED-Exam/ADVANCED-Exam-Blueprint"]
+    @basicq = ["sample questions", "http://www.theaba.org/PDFs/BASIC-Exam/BASIC-Sample-Questions"]
+    @advancedq = ["sample questions", "http://www.theaba.org/PDFs/ADVANCED-Exam/ADVANCED-Sample-Questions"]
     @part1 = ["Part 1", "http://www.theaba.org/Exams/Traditional-Part-1/About-Traditional-Part-1"]
     @part2 = ["Part 2", "http://www.theaba.org/Exams/Traditional-Part-2/About-Traditional-Part-2"]
     @staged = ["Staged Exams", "http://www.theaba.org/PDFs/BOI/StagedExaminations-BOI"]
@@ -118,7 +122,11 @@ class StaticPagesController < ApplicationController
     @gaps = ["Gaps in Knowledge", "http://www.theaba.org/PDFs/ITE-Exam/ITE-Gaps-in-Knowledge-Report.pdf"]
     @aba_exam_summary = ["2014 Exam Summary (PDF)", "http://www.theaba.org/pdf/SAAA-Exams-Report.pdf"]
     @open_anesthesia_keywords = ["Open Anesthesia", "http://www.openanesthesia.org/OpenAnesthesia.org:KeywordBrowser"]
-    @kentucky_keywords = ["keyword review lecture series", "https://www.youtube.com/playlist?list=PLh0m5d4Yfc8zuGHKyc0UdaUAPqNLUOqnT"]
+    @kentucky_keywords2016 = ["anesthesia keyword review lecture series 2016", "https://www.youtube.com/playlist?list=PLh0m5d4Yfc8zuGHKyc0UdaUAPqNLUOqnT"]
+    @kentucky_keywords2017 = ["2017", "https://www.youtube.com/playlist?list=PLh0m5d4Yfc8y6OtsSUVLRgHv-t4kk5k9e"]
+    @gap2014 = ["2014", "https://youtu.be/OqonxKcSEs4"]
+    @gap2015 = ["2015", "https://youtu.be/qD_ch5_Z3tE"]
+    @gap2016 = ["2016", "https://youtu.be/qecGo1NyUBg"]
     @accrac = ["ACCRAC", "http://accrac.com"]
     @xi = ["Amanda Xi", "http://blog.amandaxi.com"]
     @xibasic = ["How to Study for the ITE, BASIC, and anesthesia", "http://blog.amandaxi.com/2017/09/21/study-resources-ite-basic-anesthesia/"]
@@ -204,6 +212,7 @@ class StaticPagesController < ApplicationController
   def orals
     @part2 = ["part 2", "http://www.theaba.org/Exams/Traditional-Part-2/About-Traditional-Part-2"]
     @applied = ["APPLIED", "http://www.theaba.org/Exams/APPLIED-(Staged-Exam)/About-APPLIED-(Staged-Exam)"]
+    @osce = ["Content Outline", "http://www.theaba.org/PDFs/APPLIED-Exam/APPLIED-OSCE-ContentOutline"]
     @aba_archive = ["videos", 'http://www.theaba.org/TRAINING-PROGRAMS/Traditional-Part-2/Traditional-Part-2-Videos']
     @aba_videos = ["videos", 'http://www.theaba.org/ABOUT/Videos']
     @exam_hints_pdf = ["Hints for Mastering the Orals", 'http://anesthesiaboardhints.homestead.com/HintsfortheAnesthesiologyBoardExaminationRev1.6.pdf']
@@ -263,7 +272,7 @@ class StaticPagesController < ApplicationController
   def pedsboards
     @peds_cert = ["certification", "http://www.theaba.org/Exams/Pediatric-Anesthesiology/Pediatric-Anesthesiology"]
     @pedsfellowships = "http://www.pedsanesthesia.org/fellowships/"
-    @nrmp = "http://www.nrmp.org/wp-content/uploads/2013/08/National-Resident-Matching-Program-NRMP-Results-and-Data-SMS-2014-Final.pdf"
+    @nrmp = "http://www.nrmp.org/fellowship-match-data/"
     @wfsa = "http://www.wfsahq.org/resources/update-in-anaesthesia"
     @peds_exam_content = "http://www.theaba.org/PDFs/Pediatrics-Anesthesiology/PAContentOutline"
     @peds_exam_blueprint = "http://www.theaba.org/PDFs/Pediatrics-Anesthesiology/PA-Exam-Blueprint"
@@ -290,6 +299,7 @@ class StaticPagesController < ApplicationController
   
   def painboards
     @pain_cert = ["pain medicine examination", "http://www.theaba.org/Exams/Pain-Medicine-Certification/Pain-Medicine-Certification"]
+    @nrmp = "http://www.nrmp.org/fellowship-match-data/"
     @pain_exam_content = "http://www.theaba.org/PDFs/Pain-Medicine/PMContentOutline"
     @pain_exam_blueprint = "http://www.theaba.org/PDFs/Pain-Medicine/PM-Exam-Blueprint"
     @pain_exam_questions = "http://www.theaba.org/PDFs/Pain-Medicine/PMExamSampleQuestions"

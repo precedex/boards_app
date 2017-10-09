@@ -6,11 +6,14 @@
 <div class="exams">  
   <p> Pediatric anesthesiology <%= external_link_to *@peds_cert%> requires completion of an ACGME-approved one-year
     <%= external_link_to "pediatric anesthesia fellowship", @pedsfellowships%>.</p>
-  <p> Fellowship match trends (2012-14) are available from the <%= external_link_to "NRMP", @nrmp%>. </p>
+  <p> <%= external_link_to "Fellowship Match Data", @nrmp%> from the NRMP: </p>
+  
+  <%= image_tag("PediFellowMatch2017.png") %> 
     
-  <p> The pediatric anesthesiology examination was first administered in 2013. The 2018 exam will be administered August 11. The success rate on the exams were:</p>
+  <p> The pediatric anesthesiology examination was first administered in 2013. The success rate on the exams were:</p>
   
   <%= image_tag("Peds13-16.png") %>   
+  <p> The 2018 exam will be administered August 11. </p>
   
   <p>
     The ABA has posted the <%= external_link_to "content outline", @peds_exam_content %>,
