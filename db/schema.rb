@@ -30,6 +30,7 @@ ActiveRecord::Schema.define(version: 20171008154723) do
     t.integer  "n_employees"
     t.text     "locations"
     t.text     "hospitals"
+    t.string   "employer_type"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

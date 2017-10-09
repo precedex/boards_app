@@ -17,6 +17,18 @@ class Employer < ActiveRecord::Base
     end
   end
   
+  def self.by_employer_type(employer_type)
+    if employer_type == "md"
+      Employer.where(employer_type: "md")
+    elsif employer_type == "crna"
+      Employer.where(employer_type: "crna")
+    elsif employer_type == "aa"
+      Employer.where(employer_type: "aa")
+    else
+      Employer.all
+    end
+  end
+    
 
   def self.import(file)
     CSV.foreach(file.path, headers: true) do |row|

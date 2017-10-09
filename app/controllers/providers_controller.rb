@@ -10,8 +10,6 @@ class ProvidersController < ApplicationController
       @providers = @providers.hospital(params[:hospital]) if params[:hospital].present?
       @providers = @providers.employer(params[:employer]) if params[:employer].present?
       @providers = @providers.state(params[:state]) if params[:state].present?
-      @providers = @providers.sort_by(&:"#{sort_column}")
-      @providers = @providers.reverse if sort_direction == 'desc'
     elsif params[:provider_type] == "md"
       @providers = Provider.where(nil)
       @providers = @providers.where(primary: "ANESTHESIOLOGY")
@@ -19,8 +17,6 @@ class ProvidersController < ApplicationController
       @providers = @providers.hospital(params[:hospital]) if params[:hospital].present?
       @providers = @providers.employer(params[:employer]) if params[:employer].present?
       @providers = @providers.state(params[:state]) if params[:state].present?
-      @providers = @providers.sort_by(&:"#{sort_column}")
-      @providers = @providers.reverse if sort_direction == 'desc'
     elsif params[:provider_type] == "aa"
       @providers = Provider.where(nil)
       @providers = @providers.where(primary: "ANESTHESIOLOGY ASSISTANT")
@@ -28,12 +24,11 @@ class ProvidersController < ApplicationController
       @providers = @providers.hospital(params[:hospital]) if params[:hospital].present?
       @providers = @providers.employer(params[:employer]) if params[:employer].present?
       @providers = @providers.state(params[:state]) if params[:state].present?
-      @providers = @providers.sort_by(&:"#{sort_column}")
-      @providers = @providers.reverse if sort_direction == 'desc'    
     end
+    @providers = @providers.sort_by(&:"#{sort_column}")
+    @providers = @providers.reverse if sort_direction == 'desc'    
     
     @datasets = "https://data.medicare.gov/data/physician-compare"
-    @medicare = "https://data.medicare.gov"
   end
     
   def import

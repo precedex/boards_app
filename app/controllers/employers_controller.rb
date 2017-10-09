@@ -2,15 +2,14 @@ class EmployersController < ApplicationController
   helper_method :sort_column, :sort_direction
   
   def index
-    
-      @employers_bystate = Employer.by_state(params[:state])
-      @employers_byname = Employer.by_name(params[:name_lgl])
-      @employers = @employers_bystate & @employers_byname
-      @employers = @employers.sort_by(&:"#{sort_column}")
-      @employers = @employers.reverse if sort_direction == 'desc'
+    @employers_by_state =         Employer.by_state(params[:state])
+    @employers_by_name =          Employer.by_name(params[:name_lgl])
+    @employers_by_employer_type = Employer.by_employer_type(params[:employer_type])
+    @employers = @employers_by_state & @employers_by_name & @employers_by_employer_type
+    @employers = @employers.sort_by(&:"#{sort_column}")
+    @employers = @employers.reverse if sort_direction == 'desc'
     
     @datasets = "https://data.medicare.gov/data/physician-compare"
-    @medicare = "https://data.medicare.gov"
   end
     
   def import

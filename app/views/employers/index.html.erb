@@ -7,25 +7,51 @@
 
 <div class = "providers">
   <p> Anesthesia employers are  listed in the <%= external_link_to "physican compare datasets", @datasets %>.<br>
-  You may also <%= link_to "search by profesional", providers_path %>. </p>
+      You may also <%= link_to "search by profesional", providers_path %>. </p>
 
     <%= form_tag(employers_path, :method => "get", :class => "form-horizontal") do %>
-   
-    <table class = "provsearch" align= "center">
-      <tr>
-        <td>
-          <%= label_tag "employer", "Employer: "%>
-          <%= text_field_tag :name_lgl, params[:name_lgl], placeholder: "Employer", :class => "input-medium" %>
-        </td>
-        <td style="text-align:left">
-          <%= label_tag "state", "State: "%>
-          <%= select_tag :state, options_for_select(us_states) %>
-        </td>
-      </tr>
-    </table>
     
-    <%= submit_tag "Search Employers", :name => nil, :class => "btn btn-primary", :style => "margin:1em" %>
+        <%= label_tag "employer", "Employer: "%>
+        <%= text_field_tag :name_lgl, params[:name_lgl], placeholder: "Employer", :class => "input-medium" %>
+              
+        <%= label_tag "state", "State: "%>
+        <%= select_tag :state, options_for_select(us_states) %>
+
+        <%= hidden_field_tag "employer_type", "md"  %>
+        <%= submit_tag "Search MD Employers", :name => nil, :class => "btn btn-primary", :style => "margin:1em" %>
     <% end %>
+    
+  
+    <hr width=75% align=center>
+    <br>
+  
+    <%= form_tag(employers_path, :method => "get", :class => "form-horizontal") do %>
+   
+        <%= label_tag "employer", "Employer: "%>
+        <%= text_field_tag :name_lgl, params[:name_lgl], placeholder: "Employer", :class => "input-medium" %>
+              
+        <%= label_tag "state", "State: "%>
+        <%= select_tag :state, options_for_select(us_states) %>
+
+        <%= hidden_field_tag "employer_type", "crna"  %>
+        <%= submit_tag "Search CRNA Employers", :name => nil, :class => "btn btn-warning", :style => "margin:1em" %>
+    <% end %>
+    
+    <hr width=75% align=center>
+    <br>
+  
+    <%= form_tag(employers_path, :method => "get", :class => "form-horizontal") do %>
+   
+        <%= label_tag "employer", "Employer: "%>
+        <%= text_field_tag :name_lgl, params[:name_lgl], placeholder: "Employer", :class => "input-medium" %>
+              
+        <%= label_tag "state", "State: "%>
+        <%= select_tag :state, options_for_select(us_states) %>
+
+        <%= hidden_field_tag "employer_type", "aa"  %>
+        <%= submit_tag "Search AA Employers", :name => nil, :class => "btn btn-success", :style => "margin:1em" %>
+    <% end %>
+   
     
   <h1>
     <% if @employers.length == 1 %>
@@ -52,7 +78,7 @@
           <td><%= "#{employer.name_lgl}" %></td>
           <td style='text-align:center; font-size:1.3em'>
               <%= link_to "#{employer.n_employees}", 
-              :controller => :providers, :action => :index, :provider_type => "md", :employer =>  "#{employer.name_lgl}"%>
+              :controller => :providers, :action => :index, :provider_type => params[:employer_type], :employer =>  "#{employer.name_lgl}"%>
           </td>
           <td><%= "#{employer.locations.split(',')[0]} " "#{employer.locations.split(',')[1]}"%>
             <% if employer.locations.split(',')[2] %>
@@ -119,7 +145,8 @@
   <% end %>
 </div>
 <br>
-  <strong> Last update May 9, 2017 </strong>
+  <strong> Last update October 9, 2017 </strong>
+
 <!--
 <div>
   <h2 style = "font-size: 2em">Import a CSV File</h2>

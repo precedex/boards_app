@@ -5,6 +5,7 @@ class AddEmployers < ActiveRecord::Migration
       t.integer :n_employees
       t.text :locations 
       t.text :hospitals
+      t.string :employer_type
       t.timestamps
     end
   end
