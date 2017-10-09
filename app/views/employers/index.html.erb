@@ -6,8 +6,8 @@
  
 
 <div class = "providers">
-  <p> Employers of anesthesiologists are publicly listed in the <%= external_link_to "Physican Compare datasets", @datasets %> at <%= external_link_to "data.medicare.gov", @medicare %> <br>
-  Individual results are available by <%= link_to "searching by profesional", providers_path %> </p>
+  <p> Anesthesia employers are  listed in the <%= external_link_to "physican compare datasets", @datasets %>.<br>
+  You may also <%= link_to "search by profesional", providers_path %>. </p>
 
     <%= form_tag(employers_path, :method => "get", :class => "form-horizontal") do %>
    

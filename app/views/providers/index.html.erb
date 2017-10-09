@@ -5,9 +5,8 @@
 </div>  
 
 <div class = "providers">
-  <p> Anesthesiologists, CRNAs, and AAs are publicly listed in the <%= external_link_to "Physican Compare datasets", @datasets %> at 
-    <%= external_link_to "data.medicare.gov", @medicare %> <br>
-      Summary results are available by <%= link_to "searching by employer", employers_path %>  </p>
+  <p> Anesthesia professionals are listed in the <%= external_link_to "physican compare datasets", @datasets %>.<br>
+     You may also <%= link_to "search by employer", employers_path %>.  </p>
 
     <%= form_tag(providers_path, :method => "get", :class => "form-horizontal") do %>
    
@@ -150,7 +149,7 @@
   <% end %>
 
 </div>
- 
+  <br>
   <strong> Last update May 9, 2017 </strong>
 <!--
 <div>
