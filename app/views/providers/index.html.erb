@@ -137,7 +137,8 @@
               <div><%= "#{provider.aff4}" %></div>
               <div><%= "#{provider.aff5}" %></div>
           </td>
-          <td><div><%= "#{provider.name_lgl}" %></div>
+          <td>
+            <%= link_to provider.name_lgl, employers_path(:employer_type => params[:provider_type], :state => "", :name_lgl => provider.name_lgl) %>
           </td> 
           <% if provider.aba %>
           <td style = "text-align: center"> <%=external_link_to image_tag("abaorbit.png"), provider.aba %> </td>

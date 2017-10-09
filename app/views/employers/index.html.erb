@@ -77,8 +77,7 @@
         <tr>
           <td><%= "#{employer.name_lgl}" %></td>
           <td style='text-align:center; font-size:1.3em'>
-              <%= link_to "#{employer.n_employees}", 
-              :controller => :providers, :action => :index, :provider_type => params[:employer_type], :employer =>  "#{employer.name_lgl}"%>
+              <%= link_to employer.n_employees, providers_path(:provider_type => params[:employer_type], :employer =>  employer.name_lgl) %>
           </td>
           <td><%= "#{employer.locations.split(',')[0]} " "#{employer.locations.split(',')[1]}"%>
             <% if employer.locations.split(',')[2] %>
