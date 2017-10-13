@@ -300,9 +300,16 @@ class StaticPagesController < ApplicationController
   def painboards
     @pain_cert = ["pain medicine examination", "http://www.theaba.org/Exams/Pain-Medicine-Certification/Pain-Medicine-Certification"]
     @nrmp = "http://www.nrmp.org/fellowship-match-data/"
+    @abpm = "http://www.abpm.org"
     @pain_exam_content = "http://www.theaba.org/PDFs/Pain-Medicine/PMContentOutline"
     @pain_exam_blueprint = "http://www.theaba.org/PDFs/Pain-Medicine/PM-Exam-Blueprint"
     @pain_exam_questions = "http://www.theaba.org/PDFs/Pain-Medicine/PMExamSampleQuestions"
+    @rosenblum = "https://itunes.apple.com/us/podcast/anesthesiaexam-podcast/id987251541?mt=2"
+    @commercial_courses = [
+      ["Dr. Jensen Pain Course", "https://www.anesthesiologyboards.com/pain/index.asp"],
+      ["The Pass Machine", "https://www.thepassmachine.com/pain-medicine-board-review/"],
+      ["Pain Exam", "https://www.painexam.com"]     
+    ]
   end
   
   def icuboards
