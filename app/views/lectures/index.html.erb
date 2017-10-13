@@ -38,9 +38,8 @@
     <tbody>
       <% @lectures.each do |lecture| %>
         <tr>
-          <td><%= lecture.speaker %></td>
+          <td><%= link_to lecture.speaker, providers_path(:provider_type => "md", :last => lecture.speaker.split(/\s*,\s*/)[0])%></td>
           <td><%= external_link_to lecture.title, lecture.link %></td>
-     <!-- <td><%= lecture.institution %></td> -->
           <td><%= lecture.date.strftime("%_m/%-d/%y") if lecture.date %></td> 
           <td><%= lecture.topic %></td>
         </tr>
