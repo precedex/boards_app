@@ -1,4 +1,4 @@
 Clear movie database for reimport
 
-rake db:migrate:down VERSION=20150425211954
-rake db:migrate:up VERSION=20150425211954
+bundle exec rake db:migrate:down VERSION=20150425211954
+bundle exec rake db:migrate:up VERSION=20150425211954
