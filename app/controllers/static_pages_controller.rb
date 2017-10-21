@@ -118,7 +118,7 @@ class StaticPagesController < ApplicationController
     @old_aba_exams = ["1990-1996 In-training Examinations", "http://www.theaba.org/TRAINING-PROGRAMS/In-training-Exam/Previous-Exams"]
     @aba_training_programs = ["here", "http://www.theaba.org/Home/TrainingPrograms"]
     @aba_content_outline = ["content outline", "http://www.theaba.org/PDFs/BASIC-Exam/Basic-and-Advanced-ContentOutline"]
-    @ace = ["ACE Exam", "http://www.caseanesthesia.com/exercise%20files/Practice%20Questions.htm"]
+    @ace = ["ACE Exam Questions", "http://anesthesia-training.net/misc/ace-tests/"]
     @gaps = ["Gaps in Knowledge", "http://www.theaba.org/PDFs/ITE-Exam/ITE-Gaps-in-Knowledge-Report.pdf"]
     @aba_exam_summary = ["2014 Exam Summary (PDF)", "http://www.theaba.org/pdf/SAAA-Exams-Report.pdf"]
     @open_anesthesia_keywords = ["Open Anesthesia", "http://www.openanesthesia.org/OpenAnesthesia.org:KeywordBrowser"]
@@ -205,7 +205,8 @@ class StaticPagesController < ApplicationController
       ["Michael Ho: The Essential Written Board Review", "http://anconsultants.com/anesthesiology-written-board-review/"],
       ["Open Anesthesiology Self-Study Qbank",           "https://www.openanesthesia.org/members/join/#qbank-only"],
       ["The Pass Machine",                               "http://www.thepassmachine.com/anesthesiology-certification-exam-prep-course.html"],
-      ["True Learn Anesthesiology",                      "http://www.truelearn.com/anesthesiology/"]
+      ["True Learn Anesthesiology",                      "http://www.truelearn.com/anesthesiology/"],
+      ["University of Pittsburgh Board Review",          "https://www.oakstone.com/focused-review-of-anesthesiology"]
     ]
   end
 
@@ -317,6 +318,7 @@ class StaticPagesController < ApplicationController
     @icu_exam_content = "http://www.theaba.org/PDFs/Critical-Care-Medicine/ContentOutline_CCM"
     @icu_exam_blueprint = "http://www.theaba.org/PDFs/Critical-Care-Medicine/CCM-Exam-Blueprint"
     @study_strategy = [
+      ["2017 CCM exam", "https://forums.studentdoctor.net/threads/2017-ccm-exam.1278759/"],
       ["Review/Study for Anesthesiology Critical Care Exam (5/13)", "https://forums.studentdoctor.net/threads/review-study-for-anesthesiology-critical-care-exam.1007625/"]
     ]    
   end
