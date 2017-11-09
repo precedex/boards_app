@@ -114,7 +114,6 @@ BoardsApp::Application.routes.draw do
   get    '/stopbang',                     to: 'static_pages#stopbang'
 
   # footer
-  get    '/secret',                       to: 'static_pages#secret'
   get    '/feedback',                     to: 'static_pages#feedback'
   get    '/about',                        to: 'static_pages#about'
 end

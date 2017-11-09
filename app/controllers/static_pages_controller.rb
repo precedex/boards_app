@@ -66,7 +66,7 @@ class StaticPagesController < ApplicationController
       ["Endocarditis Prophylaxis",   "endocarditis.jpg"],
       ["Difficult Airway Society",    "http://www.das.uk.com/guidelines"],
       ["ASRA Neuraxial Anticoags",   "https://kr.ihc.com/ext/Dcmnt?ncid=520499512&tfrm=default"],
-      ["ASA Guidelines",             "http://www.asahq.org/quality-and-practice-management/standards-and-guidelines"],
+      ["ASA Practice Guidance Resources", "https://www.asahq.org/quality-and-practice-management/asa-practice-guidance-resources"],
       ["Sedation and Anesthesia in GI Endoscopy", "http://www.asge.org/uploadedFiles/Publications_and_Products/Practice_Guidelines/Sedation%20and%20Anesthesia%20in%20GI%20Endoscopy%202008.pdf"]
     ]
 
