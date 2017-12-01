@@ -221,6 +221,7 @@ class StaticPagesController < ApplicationController
     @aba_training_programs = ["here", "http://www.theaba.org/Home/TrainingPrograms"]
     @the_anesthesia_consultant = ["The Anesthesia Consultant", 'http://theanesthesiaconsultant.com/2013/08/22/advice-for-passing-the-oral-board-exams-in-anesthesiology/']
     @accrac34 = ["ACCRAC", "http://accrac.com/episode-34-oral-board-prep-with-drs-tran-and-beaudry/"]
+    @sdn = "https://forums.studentdoctor.net/forums/anesthesiology.45/"
 
     @study_strategy = [
       ["2017 Anesthesiology Oral Boards thread (3/17)",                       "https://forums.studentdoctor.net/threads/2017-anesthesiology-oral-boars-thread.1246001/"],
@@ -261,7 +262,7 @@ class StaticPagesController < ApplicationController
       #["Board Stiff Live",                             "https://boardstifflive.com"],
       ["Michael Ho: The Essential Oral Board Review",  "http://anconsultants.com/anesthesiology-oral-board-review/"],
       ["Dr. Jensen Essential Oral Board P.R.E.P.",     "http://www.boardprep.com"],
-      ["GadsenJones Anesthesiology Oral Board Review", "http://www.gadsdenjones.com"],
+      #["GadsenJones Anesthesiology Oral Board Review", "http://www.gadsdenjones.com"],
       ["Just Oral Boards",                             "http://www.justoralboards.com"],
       #["Nail the Boards",                              "http://nailtheboards.com"],
       ["AceMedBoard",                                  "http://www.acemedboard.com"],
@@ -278,6 +279,7 @@ class StaticPagesController < ApplicationController
     @peds_exam_content = "http://www.theaba.org/PDFs/Pediatrics-Anesthesiology/PAContentOutline"
     @peds_exam_blueprint = "http://www.theaba.org/PDFs/Pediatrics-Anesthesiology/PA-Exam-Blueprint"
     @peds_exam_questions = "http://www.theaba.org/PDFs/Pediatrics-Anesthesiology/PASampleQuestions"
+    @sdn = "https://forums.studentdoctor.net/forums/anesthesiology.45/"
     @study_strategy = [
       ["Peds Anesthesia boards prep help. (6/16)",                           "http://forums.studentdoctor.net/threads/peds-anesthesia-boards-prep-help.1208153/"],
       ["Pediatric Anesthesia Study Books (7/14)",                            "http://forums.studentdoctor.net/threads/pediatric-anesthesia-study-books.1089468/"],
@@ -306,6 +308,7 @@ class StaticPagesController < ApplicationController
     @pain_exam_blueprint = "http://www.theaba.org/PDFs/Pain-Medicine/PM-Exam-Blueprint"
     @pain_exam_questions = "http://www.theaba.org/PDFs/Pain-Medicine/PMExamSampleQuestions"
     @rosenblum = "https://itunes.apple.com/us/podcast/anesthesiaexam-podcast/id987251541?mt=2"
+    @sdn = "https://forums.studentdoctor.net/forums/anesthesiology.45/"
     @commercial_courses = [
       ["Dr. Jensen Pain Course", "https://www.anesthesiologyboards.com/pain/index.asp"],
       ["The Pass Machine", "https://www.thepassmachine.com/pain-medicine-board-review/"],
@@ -317,8 +320,9 @@ class StaticPagesController < ApplicationController
     @icu_cert = ["critical care medicine examination", "http://www.theaba.org/Exams/Critical-Care-Medicine-Certification/Critical-Care-Medicine-Certification"]
     @icu_exam_content = "http://www.theaba.org/PDFs/Critical-Care-Medicine/ContentOutline_CCM"
     @icu_exam_blueprint = "http://www.theaba.org/PDFs/Critical-Care-Medicine/CCM-Exam-Blueprint"
+    @sdn = "https://forums.studentdoctor.net/forums/anesthesiology.45/"
     @study_strategy = [
-      ["2017 CCM exam", "https://forums.studentdoctor.net/threads/2017-ccm-exam.1278759/"],
+      ["2017 CCM exam (9/17)", "https://forums.studentdoctor.net/threads/2017-ccm-exam.1278759/"],
       ["Review/Study for Anesthesiology Critical Care Exam (5/13)", "https://forums.studentdoctor.net/threads/review-study-for-anesthesiology-critical-care-exam.1007625/"]
     ]    
   end
@@ -336,6 +340,7 @@ class StaticPagesController < ApplicationController
     @opentee = "http://www.openanesthesia.org/basic-course-in-tee/"
     @ase = "http://asecho.org"
     @canada = "http://csecho.ca/resources/"
+    @sdn = "https://forums.studentdoctor.net/forums/anesthesiology.45/"
     @study_strategy = [
       ["Advanced PteEam 2017 (6/17)",                                         "https://forums.studentdoctor.net/threads/advanced-pteexam-2017.1262078/"],
       ["2017 exam of special competence transesophageal echo (7/17)",         "https://forums.studentdoctor.net/threads/2017-exam-of-special-competence-transesophageal-echo.1269908/"],
@@ -381,6 +386,7 @@ class StaticPagesController < ApplicationController
     @ppai = "http://education.asahq.org/PPAI"
     @activities = "http://www.theaba.org/PDFs/MOCA/MOCA-2-0-Part-4-Requirements"
     @cme = "http://www.theaba.org/PDFs/MOCA/ABA-Approved-CME"
+    @sdn = "https://forums.studentdoctor.net/forums/anesthesiology.45/"
     @study_strategy = [
       ["MOCA 2.0 Deadline - Participate or NOT??? (3/16)",                                  "http://forums.studentdoctor.net/threads/moca-2-0-deadline-participate-or-not.1190644/"],
       ["More MOCA 2.0 Info (9/15)",                                                         "http://forums.studentdoctor.net/threads/more-moca-2-0-info.1158892/"],
