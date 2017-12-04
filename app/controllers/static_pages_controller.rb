@@ -1,7 +1,5 @@
 class StaticPagesController < ApplicationController
   def welcome
-    require 'rss'
-    @rss = RSS::Parser.parse(open('http://anesthesiology.pubs.asahq.org/rss/site_157/173.xml').read, false)
   end
 
   def about
@@ -182,6 +180,7 @@ class StaticPagesController < ApplicationController
     ]
       
     @study_strategy_ite = [
+      ["Intern Year ITE (11/17)",                          "https://forums.studentdoctor.net/threads/intern-year-ite.1288583/"],
       ["2017 ABA ITE Results (3/17)",                      "https://forums.studentdoctor.net/threads/2017-aba-ite-results.1249649/"],
       ["Studying for ITE (7/16)",                          "http://forums.studentdoctor.net/threads/studying-for-ite.1210873/"],
       ["ITE 2016 (4/16)",                                  "http://forums.studentdoctor.net/threads/ite-2016.1191823/"],
@@ -428,6 +427,7 @@ class StaticPagesController < ApplicationController
     @sea = ["SEA", "http://www.seahq.net"]
     @seams = ["Medical Student Guide to Anesthesiology", "http://www.seahq.net/images/sea_msg.pdf"]
     @steiner = ["Getting Into Anesthesiology", "http://www.anesthesiamadeeasy.com/wp-content/uploads/2015/05/Getting-into-Anesthesiology-PDF.pdf"]
+    @stanford = ["2017 CA-1 Tutorial Textbook", "http://ether.stanford.edu/ca1_new/FINAL%20CA-1%20Tutorial%20Textbook%202017.pdf"]
     
   end
   
