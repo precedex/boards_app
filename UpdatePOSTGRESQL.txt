@@ -7,3 +7,5 @@ Reset database:
 Push database:
   heroku pg:push pg_database_development HEROKU_POSTGRESQL_MAROON
 
+Update.sh:
+  ./Update.sh
