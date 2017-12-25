@@ -129,7 +129,7 @@
     <tbody>
        <% @providers.each do |provider| %>
         <tr>
-          <td><%= "#{provider.last}, #{provider.first} #{provider.middle}"  %></td>
+          <td><%= external_link_to "#{provider.last}, #{provider.first} #{provider.middle}", "http://www.google.com/search?q=#{provider.last}, #{provider.first} #{provider.middle} anesthesiology"%></td>
           <td><%= "#{provider.city}, #{provider.state}" %></td>
           <td><div><%= "#{provider.aff1}" %></div>
               <div><%= "#{provider.aff2}" %></div>
