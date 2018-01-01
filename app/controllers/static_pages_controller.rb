@@ -64,7 +64,7 @@ class StaticPagesController < ApplicationController
       ["Endocarditis Prophylaxis",   "endocarditis.jpg"],
       ["Difficult Airway Society",    "http://www.das.uk.com/guidelines"],
       ["ASRA Neuraxial Anticoags",   "https://kr.ihc.com/ext/Dcmnt?ncid=520499512&tfrm=default"],
-      ["ASA Practice Guidance Resources", "https://www.asahq.org/quality-and-practice-management/asa-practice-guidance-resources"],
+      ["ASA Practice Guidance Resources", "http://www.asahq.org/quality-and-practice-management/standards-guidelines-and-related-resources-search"],
       ["Sedation and Anesthesia in GI Endoscopy", "http://www.asge.org/uploadedFiles/Publications_and_Products/Practice_Guidelines/Sedation%20and%20Anesthesia%20in%20GI%20Endoscopy%202008.pdf"]
     ]
 
@@ -94,7 +94,8 @@ class StaticPagesController < ApplicationController
       ["APACHE II",                      "https://www.mdcalc.com/apache-ii-score"],
       ["BMI / BSA",                      "http://www.mdcalc.com/bmi-and-body-surface-area-bsa/"],
       ["Ideal Body Weight",              "http://www.mdcalc.com/ideal-body-weight/"],
-      ["STOPBang (OSA)",                 "http://www.stopbang.ca/osa/screening.php"],
+      ["STOPBang (OSA)",                 "https://www.mdcalc.com/stop-bang-score-obstructive-sleep-apnea"],
+      ["Modified Mallampati Score",      "https://www.mdcalc.com/modified-mallampati-classification"],
       ["A-a Gradient",                   "http://www.mdcalc.com/a-a-o2-gradient/"],
       ["Cockgroft-Gault CrCl",           "http://www.mdcalc.com/creatinine-clearance-cockcroft-gault-equation/"],
       ["Pediatric Endotracheal Tube Size",  "http://www.mdcalc.com/endotracheal-tube-ett-size-for-pediatrics/"],
