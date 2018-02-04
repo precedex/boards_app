@@ -64,10 +64,10 @@ p {
 }
 
 a {
-  color: red;
-  &:visited {color: red;}
+  color: #FF595A;
+  &:visited {color: #FF595A;}
   &:hover {
-    color: CornflowerBlue;
+    color: #00ADBA;
     text-decoration: underline;
   }
 }

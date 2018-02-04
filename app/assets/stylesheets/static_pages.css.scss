@@ -5,21 +5,6 @@
 .welcome{ 
   text-align: center;
   
-  h1 {
-    font-family: "Belleza", "Georgia", serif;
-    font-size: 12em;
-    letter-spacing: -2px;
-  }
-
-  h2 {
-    font-family: Avenir, Tahoma;
-    font-weight: lighter;
-    font-size: 3em;
-    letter-spacing: -1px;
-    padding-bottom: 30px;
-    color: Gray;
-  }
-  
   .divider{
     width:6em;
     height:auto;
@@ -44,12 +29,6 @@
 
 .calendar{
   text-align: center;
-}
-
-.danya {
-  text-align: center;
-  color: green;
-  font-size: 2em;
 }
 
 .exams{
