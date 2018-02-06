@@ -11,14 +11,14 @@ module SitesHelper
     "education-simulation" => "Simulation",
     "journal" => "Journals",
     "blog" => "Blogs",
-    "society-us" => "US Anesthesiology Societies",
-    "society-state" => "State Anesthesiology Societies",
-    "society-intl" => "Intl. Anesthesiology Societies",
-    "society-pedi" => "Pediatric Anesthesiology Societies",
-    "society-pain" => "Regional Anesthesia & Pain Societies",
+    "society-us" => "American Societies",
+    "society-state" => "State Societies",
+    "society-intl" => "International Societies",
+    "society-pedi" => "Pediatric Societies",
+    "society-pain" => "Regional & Pain Societies",
     "society-quality" => "Quality & Safety",
-    "society-history" => "History of Anesthesia",
-    "society-crna" => "Nurse Anesthesia Societies"
+    "society-history" => "History Societies",
+    "society-crna" => "CRNA Societies"
   }
 
   def site_category_title(category)

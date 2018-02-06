@@ -1,20 +1,18 @@
 <div class = "sites">
   <% title site_category_title(params[:category]) %>
-  <h1><%= yield(:title) %></h1>
+  <%= render 'layouts/subheader' %>
 
   <% if site_category_title(params[:category]) == "Miscellaneous" %>
-  <h1 class='sub'> recommended sites : <button class="btn btn-default btn-rec btn-demo" role="button"> </h1>
+  <h1 class='sub'> recommended : <button class="btn btn-default btn-rec btn-demo" role="button"> </h1>
   <% end %>
   
   <% if site_category_title(params[:category]) == "Pediatric Anesthesia" %>
-  <h1 class='sub'> recommended sites : <button class="btn btn-default btn-rec btn-demo" role="button"> </h1>
+  <h1 class='sub'> recommended : <button class="btn btn-default btn-rec btn-demo" role="button"> </h1>
   <% end %>
   
   <% if site_category_title(params[:category]) == "Blogs"  %>
   <h1 class='sub'> active in 2018 : <button class="btn btn-default btn-rec btn-demo" role="button"> </h1>
   <% end %>
-  
-  <hr>
 
-   <%= render 'layouts/sites' %>
+  <%= render 'layouts/sites' %>
 </div>

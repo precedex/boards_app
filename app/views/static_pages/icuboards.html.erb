@@ -1,7 +1,5 @@
 <% title "Critical Care Boards" %>
-
-<h1> <%= yield(:title) %> </h1>
-<hr>
+<%= render 'layouts/subheader' %>
 
 <div class="exams">  
   <p> Subspecialty certification in Critical Care medicine requires completion of a one-year fellowship and passing of the annual <%= external_link_to *@icu_cert%>.</p>

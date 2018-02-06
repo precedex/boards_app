@@ -1,14 +1,27 @@
 .sites {
   
+  .header img {
+    float: left;
+    height: 250px;
+  }
+  
+  .header h1 {
+    position: relative;
+    top: 50px;
+    padding-bottom: 30px;
+  
+  }
+  
+  hr {
+    margin-top: 120px;
+    width: 100%;
+  }
+  
   .btn {
     display: table-cell;
     white-space: normal;
 		font-size: 2em;
     text-align: center;
-    color: red;
-      &:visited {
-        color: red;
-      }
     width: 300px;
     height: 160px;
     border: solid 1px SlateGray;
@@ -16,7 +29,7 @@
   }
   
   .btn-rec{
-    border: dotted 4px red;
+    border: dotted 4px #FF595A;
   }
   
   .btn-demo{

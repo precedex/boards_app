@@ -1,7 +1,5 @@
 <% title "Pediatric Boards" %>
-
-<h1> <%= yield(:title) %> </h1>
-<hr>
+<%= render 'layouts/subheader' %>
 
 <div class="exams">  
   <p> Pediatric anesthesiology <%= external_link_to *@peds_cert%> requires completion of an ACGME-approved one-year

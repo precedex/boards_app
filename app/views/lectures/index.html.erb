@@ -1,8 +1,5 @@
 <% title "Lectures" %>
-<div class = "sites">
-  <h1> <%= yield(:title) %> </h1>
-  <hr>
-</div>
+<%= render 'layouts/subheader' %>
 
 <div class="center">
   <form accept-charset="UTF-8" action="/lectures" method="get" name="commit" class="form-inline">

@@ -1,0 +1,22 @@
+<div class = "sites">
+  <div class="header">
+    <% if on_societies_path? %>
+      <%= image_tag("CM_Societies.png") %>  
+    <% elsif on_education_path? %>
+      <%= image_tag("CM_Education.png") %>
+    <% elsif on_exams_path? %>
+      <%= image_tag("CM_Exams.png") %>
+    <% elsif on_books_path? %>
+      <%= image_tag("CM_Books.png") %>   
+    <% elsif current_page?(tools_path) %>
+      <%= image_tag("CM_Tools.png") %>
+    <% elsif current_page?(sites_journals_path) %>
+      <%= image_tag("CM_Journals.png") %> 
+    <% elsif current_page?(sites_blogs_path) %>
+      <%= image_tag("CM_Blogs.png") %>
+    <% end %>
+     
+  <h1><%= params[:category_id] %> <%= yield(:title) %></h1>
+  <hr>
+  </div>
+</div>
