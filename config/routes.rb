@@ -99,13 +99,6 @@ BoardsApp::Application.routes.draw do
   # sites
   resources :sites
   
-  # jewels
-  get   'jewels/index',              to: 'jewels#index'
-  get   'jewels/import'
-  resources :jewels do
-    collection { post :import }
-  end
-  
   # calculators
   get    '/calculator',                   to: 'static_pages#calculator'
   get    '/t4p',                          to: 'static_pages#calculator'

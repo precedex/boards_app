@@ -17,6 +17,10 @@
     width: 100%;
   }
   
+  a.btn {
+    color: #FF595A;
+  }
+  
   .btn {
     display: table-cell;
     white-space: normal;
@@ -24,7 +28,7 @@
     text-align: center;
     width: 300px;
     height: 160px;
-    border: solid 1px SlateGray;
+    border: solid 1px #00ADBA;
     border-radius: 30px;    
   }
   

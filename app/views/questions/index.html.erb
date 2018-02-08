@@ -7,15 +7,14 @@
   
   <% @questions.each do |question| %>
     <% if question.exam %>
-      <!-- <button class="btn btn-danger" type="button"> <%= question.exam  %> </button> -->
       <% if question.exam == "BASIC"%>
-      <%=   link_to question.exam,  "questions?stems_checkbox=1&choices_checkbox=1&search=&shuffle_checkbox=1&exam=1&topic_id=11", class: "btn btn-danger" %>
+      <%=   link_to question.exam,  "questions?stems_checkbox=1&choices_checkbox=1&search=&shuffle_checkbox=1&exam=1&topic_id=11", class: "btn button2" %>
       <% else %>
-      <%=   link_to question.exam, "questions?stems_checkbox=1&choices_checkbox=1&search=&shuffle_checkbox=1&exam=2&topic_id=11", class: "btn btn-danger" %>
+      <%=   link_to question.exam, "questions?stems_checkbox=1&choices_checkbox=1&search=&shuffle_checkbox=1&exam=2&topic_id=11", class: "btn button2" %>
       <% end %>
       <%= render partial: "topic", collection: question.topics  %>
     <% end %>
-
+    
     <p> <%= question.stem %> </p>
     
   	<% unless question.image.blank? %>
@@ -42,7 +41,7 @@
       
     <br>
     
-    <a class="btn btn-info" data-placement="right" data-toggle="tooltip" data-trigger="hover click" href="#"      title="<%= question.answer.upcase %>"> Reveal answer  
+    <a class="btn button3" data-placement="right" data-toggle="tooltip" data-trigger="hover click" style="float:left" href="#" title="<%= question.answer.upcase %>"> Reveal answer  
     </a>
     <br><br>
     <hr>
@@ -50,6 +49,6 @@
   <% end %>
 
   <script>
-    $('.btn-info').tooltip();
+    $('.button3').tooltip();
   </script>
 </div>

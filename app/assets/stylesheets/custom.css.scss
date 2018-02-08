@@ -74,6 +74,7 @@ a {
 
 /* Buttons */
 .btn {
+  color: white;
   font-family: Avenir, Tahoma;
   &:hover {color: black;}
   a{
@@ -84,6 +85,18 @@ a {
 
 a.btn{
   color: white;
+}
+
+.button1 {
+  background-color: #00ADBA;
+}
+
+.button2 {
+  background-color: #FF595A;
+}
+
+.button3 {
+  background-color: #878B8C;
 }
 
 /* List Actions */

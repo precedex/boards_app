@@ -224,6 +224,9 @@ class StaticPagesController < ApplicationController
     @sdn = "https://forums.studentdoctor.net/forums/anesthesiology.45/"
 
     @study_strategy = [
+      ["2018 Applied Exam (SOE/OSCE) (2/18)",                                 "https://forums.studentdoctor.net/threads/2018-applied-exam-soe-osce.1297211/"],
+      ["Oral Board Studying Resources (1/18)",                                "https://forums.studentdoctor.net/threads/oral-board-studying-resources.1295928/"],
+      ["Oral Boards Recent Experiences (12/17)",                              "https://forums.studentdoctor.net/threads/oral-boards-recent-experiences.1290362/"],
       ["2017 Anesthesiology Oral Boards thread (3/17)",                       "https://forums.studentdoctor.net/threads/2017-anesthesiology-oral-boars-thread.1246001/"],
       ["Ultimate board prep vs Just oral boards (12/16)",                     "https://forums.studentdoctor.net/threads/ultimate-board-prep-vs-just-oral-boards.1231791/"],
       ["Best oral board course for repeaters? (9/16)",                        "http://forums.studentdoctor.net/threads/best-oral-board-course-for-repeaters.1223328/"],
@@ -342,6 +345,7 @@ class StaticPagesController < ApplicationController
     @canada = "http://csecho.ca/resources/"
     @sdn = "https://forums.studentdoctor.net/forums/anesthesiology.45/"
     @study_strategy = [
+      ["Advanced PTEeXAM Preparation (2/18)",                                 "https://forums.studentdoctor.net/threads/advanced-pteexam-preparation.1296878/"],
       ["Advanced PteEam 2017 (6/17)",                                         "https://forums.studentdoctor.net/threads/advanced-pteexam-2017.1262078/"],
       ["2017 exam of special competence transesophageal echo (7/17)",         "https://forums.studentdoctor.net/threads/2017-exam-of-special-competence-transesophageal-echo.1269908/"],
       ["Advanced PteExam 2017 (6/17)",                                        "https://forums.studentdoctor.net/threads/advanced-pteexam-2017.1262078/"],
@@ -353,7 +357,8 @@ class StaticPagesController < ApplicationController
     ]    
     @commercial_courses = [
       ["PTE Masters",                                                         "http://www.ptemasters.com"],
-      ["e-Echocardiography",                                                  "https://e-echocardiography.com/index.php"]
+      ["e-Echocardiography",                                                  "https://e-echocardiography.com/index.php"],
+      ["Echo Board Study",                                                    "https://www.echoboardstudy.com/"]
     ]
   end
   

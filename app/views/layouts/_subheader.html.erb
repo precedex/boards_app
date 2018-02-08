@@ -16,7 +16,7 @@
       <%= image_tag("CM_Blogs.png") %>
     <% end %>
      
-  <h1><%= params[:category_id] %> <%= yield(:title) %></h1>
+  <h1><%= params[:category_id] %> <%= yield(:title) unless yield(:title) == "Books" %></h1>
   <hr>
   </div>
 </div>

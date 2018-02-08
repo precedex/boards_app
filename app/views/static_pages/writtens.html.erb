@@ -1,10 +1,10 @@
-<% title "BASIC and ADVANCED Exams" %>
+<% title "BASIC & ADVANCED" %>
 <%= render 'layouts/subheader' %>
 
 <div class='exams'>
   <p>
     The ABA has phased out the traditional <%= external_link_to *@part1 %> written exam. 
-    Residents now take the <%= external_link_to *@staged %> and the annual <%= external_link_to *@ite %>
+    Residents now take the <%= external_link_to *@staged %> and the annual <%= external_link_to *@ite %>.
   </p>
   
   <p>
@@ -57,8 +57,8 @@
       </div>    
     
       <div class="row">
-        <button type="submit" style="margin:1em; background-color:#FF595A" class="btn btn-lg btn-danger">Search the Questions</button>
-        <%= link_to "10 Random Questions", "/questions/random", class: "btn btn-lg", style: 'background-color:#00ADBA' %>
+        <button type="submit" style="margin:1em" class="btn btn-lg button1">Search the Questions</button>
+        <%= link_to "10 Random Questions", "/questions/random", class: "btn btn-lg button2"%>
       </div>
     </form>
   

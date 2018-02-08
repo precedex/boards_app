@@ -3,22 +3,22 @@ module SitesHelper
   CATEGORY_TITLES = {
     "education" => "Miscellaneous",
     "icu" => "ICU",
-    "education-regional" => "Regional Anesthesia",
-    "education-pediatric" => "Pediatric Anesthesia",
-    "education-cardiac" => "Cardiac Anesthesia",
-    "education-airway" => "Airway Management",
+    "education-regional" => "Regional",
+    "education-pediatric" => "Pediatric",
+    "education-cardiac" => "Cardiac",
+    "education-airway" => "Airway",
     "education-video" => "Videos",
     "education-simulation" => "Simulation",
     "journal" => "Journals",
     "blog" => "Blogs",
-    "society-us" => "American Societies",
-    "society-state" => "State Societies",
-    "society-intl" => "International Societies",
-    "society-pedi" => "Pediatric Societies",
-    "society-pain" => "Regional & Pain Societies",
+    "society-us" => "American",
+    "society-state" => "State",
+    "society-intl" => "International",
+    "society-pedi" => "Pediatric",
+    "society-pain" => "Regional & Pain",
     "society-quality" => "Quality & Safety",
-    "society-history" => "History Societies",
-    "society-crna" => "CRNA Societies"
+    "society-history" => "History",
+    "society-crna" => "CRNA"
   }
 
   def site_category_title(category)

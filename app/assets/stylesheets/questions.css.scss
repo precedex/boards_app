@@ -7,6 +7,10 @@
 		color: red;
 	}
 	
+  p{
+    padding-top: 3em;
+  }
+  
   ul{
   	font-size: 2em;
   	list-style: none;
@@ -18,10 +22,6 @@
     float: right;
     font-size: 1.5em; 
   }
- 
-  .btn-info{
-    float: left;
-	}
   
   hr {
     border-width: 2px; 
