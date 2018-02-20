@@ -1,0 +1,54 @@
+<div class = "chessfilms">
+
+  <p id="notice"><%= notice %></p>
+
+  <p>
+  <strong>Title:</strong>
+  <%= @chessfilm.title %>
+  </p>
+
+  <p>
+  <strong>Year:</strong>
+  <%= @chessfilm.year %>
+  </p>
+
+  <p>
+  <strong>Time:</strong>
+  <%= @chessfilm.time %>
+  </p>
+  <p>
+    
+  <strong>Director:</strong>
+  <%= @chessfilm.director %>
+  </p>
+  
+  <p>
+  <strong>Image:</strong>
+  <%= image_tag @chessfilm.image %>
+  </p>
+
+  <p>
+  <strong>Description:</strong>
+  <%= @chessfilm.description %>
+  </p>
+
+  <p>
+  <strong>IMDB Link:</strong>
+  <%= external_link_to @chessfilm.imdb_link, @chessfilm.imdb_link %>
+  </p>
+  
+  <p>
+  <strong>Trailer Link:</strong>
+  <%= external_link_to @chessfilm.trailer_link, @chessfilm.trailer_link %>
+  </p>
+  
+  <p>
+  <strong>Full Link:</strong>
+  <%= external_link_to @chessfilm.full_link, @chessfilm.full_link %>
+  </p>
+
+  <%= link_to 'Edit', edit_chessfilm_path(@chessfilm) %> |
+  <%= link_to 'Back', chessfilms_path %> |
+  <%= link_to 'New Site', new_chessfilm_path %>
+
+</div>

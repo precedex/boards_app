@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171204161524) do
+ActiveRecord::Schema.define(version: 20180218174240) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,6 +23,18 @@ ActiveRecord::Schema.define(version: 20171204161524) do
   create_table "categorizations", force: true do |t|
     t.integer "resource_id"
     t.integer "category_id"
+  end
+
+  create_table "chessfilms", force: true do |t|
+    t.string "title"
+    t.string "year"
+    t.string "time"
+    t.string "director"
+    t.string "image"
+    t.text   "description"
+    t.string "imdb_link"
+    t.string "trailer_link"
+    t.string "full_link"
   end
 
   create_table "employers", force: true do |t|

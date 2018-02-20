@@ -99,6 +99,9 @@ BoardsApp::Application.routes.draw do
   # sites
   resources :sites
   
+  # chessfilms
+  resources :chessfilms
+  
   # calculators
   get    '/calculator',                   to: 'static_pages#calculator'
   get    '/t4p',                          to: 'static_pages#calculator'

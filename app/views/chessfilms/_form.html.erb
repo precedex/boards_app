@@ -1,0 +1,44 @@
+<%= form_for(@chessfilm) do |f| %>
+  <%= old_style_error_div @chessfilm %>
+
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_area :title %>
+  </div>
+  <div class="field">
+    <%= f.label :year %><br>
+    <%= f.text_field :year %>
+  </div>  
+  <div class="field">
+    <%= f.label :time %><br>
+    <%= f.text_field :time %>
+  </div>
+  <div class="field">
+    <%= f.label :director %><br>
+    <%= f.text_field :director %>
+  </div>
+  <div class="field">
+    <%= f.label :image %><br>
+    <%= f.text_field :image %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.label :imdb_link %><br>
+    <%= f.text_field :imdb_link %>
+  </div>
+  <div class="field">
+    <%= f.label :trailer_link %><br>
+    <%= f.text_field :trailer_link %>
+  </div>
+  <div class="field">
+    <%= f.label :full_link %><br>
+    <%= f.text_field :full_link %>
+  </div>
+  
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

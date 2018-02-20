@@ -1,0 +1,40 @@
+<div class = "chessfilms">
+  <% title "Chess Films" %>
+  <h1><%= yield(:title) %> </h1>
+  <p> I am attempting to watch every chess movie, TV show, and short film ever made. </p>
+  <hr>
+  <% @chessfilms.in_groups_of(4, false).each do |group| %> 
+    <div class='row'>   
+      <% group.each do |chessfilm| %>
+        <div class='col-xs-3'>  
+        
+          <a class="btn btn-default" role="button" href="<%= chessfilm.imdb_link %>" target='_blank'> 
+          
+          <% unless chessfilm.image.blank? %>
+            <%= image_tag(chessfilm.image, width: "100%") %>
+          <% else %>
+            <%= chessfilm.title %>
+          <% end %>   
+          </a>
+          <h3>Year: <%= chessfilm.year %></h3>
+          <h3>Run time: <%= chessfilm.time %> min</h3>
+          <h3>Director: <%= chessfilm.director %></h3>
+          
+          <% unless chessfilm.trailer_link.blank? %> <h3><%= link_to 'Trailer', chessfilm.trailer_link %></h3> <% end %>
+          <% unless chessfilm.full_link.blank? %> <h3><%= link_to 'Full Movie', chessfilm.full_link %></h3> <% end %>
+          <h4><%= chessfilm.description %></h4>
+
+<!--        
+          <div class = "list_actions">
+             <%= link_to 'New', new_chessfilm_path %>
+             <%= link_to 'Show', chessfilm %>
+             <%= link_to 'Edit', edit_chessfilm_path(chessfilm) %>
+             <%= link_to 'Destroy', chessfilm, method: :delete, data: { confirm: 'Are you sure?' } %>
+          </div>  
+-->
+            
+        </div>
+      <% end %>
+    </div>
+  <% end %> 
+</div>
