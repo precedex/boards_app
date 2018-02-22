@@ -148,6 +148,7 @@ class StaticPagesController < ApplicationController
     ]
     
     @study_strategy_adv = [
+      ["Advanced exam 2018 study plan (2/18)",             "https://forums.studentdoctor.net/threads/advanced-exam-2018-study-plan.1298298/"],
       ["ABA Advanced Exam (7/17)",                         "https://forums.studentdoctor.net/threads/aba-advanced-exam.1272098/"],
       ["Truelearn for the advanced exam (7/17)",           "https://forums.studentdoctor.net/threads/truelearn-for-the-advanced-exam.1270665/"],      
       ["Random topics for ABA Advanced Exam (6/17)",       "https://forums.studentdoctor.net/threads/random-topics-for-aba-advanced-exam.1262568/"],  
@@ -181,6 +182,7 @@ class StaticPagesController < ApplicationController
     ]
       
     @study_strategy_ite = [
+      ["2018 ITE (2/18)",                                  "https://forums.studentdoctor.net/threads/2018-ite.1298492/"],
       ["Intern Year ITE (11/17)",                          "https://forums.studentdoctor.net/threads/intern-year-ite.1288583/"],
       ["2017 ABA ITE Results (3/17)",                      "https://forums.studentdoctor.net/threads/2017-aba-ite-results.1249649/"],
       ["Studying for ITE (7/16)",                          "http://forums.studentdoctor.net/threads/studying-for-ite.1210873/"],
@@ -220,10 +222,15 @@ class StaticPagesController < ApplicationController
     @lovich = ["PowerPoint", "http://www.powershow.com/view/3c317a-MzI1Z/The_Things_I_Do_For_the_Residents_May_8_2008_Jessica_powerpoint_ppt_presentation"]
     @aba_training_programs = ["here", "http://www.theaba.org/Home/TrainingPrograms"]
     @the_anesthesia_consultant = ["The Anesthesia Consultant", 'http://theanesthesiaconsultant.com/2013/08/22/advice-for-passing-the-oral-board-exams-in-anesthesiology/']
-    @accrac34 = ["ACCRAC", "http://accrac.com/episode-34-oral-board-prep-with-drs-tran-and-beaudry/"]
+    @accrac = ["ACCRAC", "http://accrac.com"]
+    @accrac34 = ["34", "http://accrac.com/episode-34-oral-board-prep-with-drs-tran-and-beaudry/"]
+    @accrac71 = ["71", "http://accrac.com/episode-71-oral-board-prep-2-part-1/"]
+    @accrac72 = ["72", "http://accrac.com/episode-72-oral-board-prep-2-part-2/"]
+    @accracstem = ["sample exam", "http://accrac.com/wp-content/uploads/2018/02/Oral-board-stem.pdf"]
     @sdn = "https://forums.studentdoctor.net/forums/anesthesiology.45/"
 
     @study_strategy = [
+      ["Oral Board Help--list of online course (2/18)",                       "https://forums.studentdoctor.net/threads/oral-board-help-list-of-online-courses.1297701/"],
       ["2018 Applied Exam (SOE/OSCE) (2/18)",                                 "https://forums.studentdoctor.net/threads/2018-applied-exam-soe-osce.1297211/"],
       ["Oral Board Studying Resources (1/18)",                                "https://forums.studentdoctor.net/threads/oral-board-studying-resources.1295928/"],
       ["Oral Boards Recent Experiences (12/17)",                              "https://forums.studentdoctor.net/threads/oral-boards-recent-experiences.1290362/"],
