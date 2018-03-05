@@ -70,11 +70,11 @@ class StaticPagesController < ApplicationController
 
     @drug_dosing = [
       ["Narcotic Equivalence Converter", "http://medcalc.com/narcotics.html"],
-      ["Steroid Equivalence Converter",  "http://www.medcalc.com/steroid.html"],
+      ["Steroid Equivalence Converter",  "https://www.mdcalc.com/steroid-conversion-calculator"],
       ["PALS Drugs",                  "https://eccguidelines.heart.org/index.php/tables/2010-medications-for-pediatric-resuscitation/"],
       #["Peds Anesthesia Drugs",       "http://anesthesia.stonybrook.edu/teaching/peds-drug-dosages"],
       #["Peds Anesthesia Pocket Ref",  "http://pedianesthesia.ucsf.edu/pdf_pedirefcard.pdf"],
-      ["Periop Antibiotic Dosing",    "http://www.ashp.org/surgical-guidelines"],
+      ["Periop Antibiotic Dosing",    "https://www.ashp.org/-/media/assets/policy-guidelines/docs/therapeutic-guidelines/therapeutic-guidelines-antimicrobial-prophylaxis-surgery.ashx?la=en&hash=A15B4714417A51A03E5BDCAC150B94EAF899D49B"],
       ["PONV Prophylaxis",            "PONV.jpg"],
     ]
 
@@ -274,9 +274,10 @@ class StaticPagesController < ApplicationController
       ["Dr. Jensen Essential Oral Board P.R.E.P.",     "http://www.boardprep.com"],
       #["GadsenJones Anesthesiology Oral Board Review", "http://www.gadsdenjones.com"],
       ["Just Oral Boards",                             "http://www.justoralboards.com"],
+      ["Best Oral Board Prep",                         "http://www.bestoralboardprep.com"],
       #["Nail the Boards",                              "http://nailtheboards.com"],
       ["AceMedBoard",                                  "http://www.acemedboard.com"],
-      ["The Osler Institute",                          "http://www.osler.org/main/ane.html"],
+      #["The Osler Institute",                          "http://www.osler.org/main/ane.html"],
       ["Ultimate Board Prep",                          "http://www.ultimateboardprep.com"]
     ]
   end
@@ -339,6 +340,7 @@ class StaticPagesController < ApplicationController
   
   def echoboards
     @nbe = "http://www.echoboards.org"
+    @faq = "http://echoboards.org/EchoBoards/FAQ/EchoBoards/FAQ.aspx"
     @basic = "http://echoboards.org/EchoBoards/certs/Basic_PTEeXAM/EchoBoards/Content/Basic_PTEeXAM.aspx"
     @advanced = "http://echoboards.org/EchoBoards/certs/Advanced_PTEeXAM_/EchoBoards/Content/Advanced_PTEeXAM_.aspx"
     @fellowships = "http://www.scahq.org/FellowshipCareerOpportunities/AdultCardiothoracicAnesthesiologyFellowships/AccreditedFellowshipPrograms.aspx"
@@ -352,6 +354,7 @@ class StaticPagesController < ApplicationController
     @canada = "http://csecho.ca/resources/"
     @sdn = "https://forums.studentdoctor.net/forums/anesthesiology.45/"
     @study_strategy = [
+      ["Echo Boards Clarification (2/18)",                                    "https://forums.studentdoctor.net/threads/echo-boards-clarification.1299738/"],
       ["Advanced PTEeXAM Preparation (2/18)",                                 "https://forums.studentdoctor.net/threads/advanced-pteexam-preparation.1296878/"],
       ["Advanced PteEam 2017 (6/17)",                                         "https://forums.studentdoctor.net/threads/advanced-pteexam-2017.1262078/"],
       ["2017 exam of special competence transesophageal echo (7/17)",         "https://forums.studentdoctor.net/threads/2017-exam-of-special-competence-transesophageal-echo.1269908/"],
@@ -373,7 +376,7 @@ class StaticPagesController < ApplicationController
     @nbcrna = "http://www.nbcrna.com/Pages/default.aspx"
     @aana = "http://www.aana.com/Pages/default.aspx"
     @abns = "http://www.nursingcertification.org"
-    @handbook = "http://www.nbcrna.com/certification/SiteAssets/Pages/Program-Administration/NCE_Handbook.pdf"
+    @handbook = "https://www.nbcrna.com/docs/default-source/publications-documentation/handbooks/nce_hb(1).pdf?sfvrsn=5ed2310c_4"
     @thecrna = "http://thecrna.com"
     @nurse_anes = "http://www.nurse-anesthesia.org"
     
