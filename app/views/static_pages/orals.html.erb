@@ -6,8 +6,9 @@
     The <%= external_link_to *@part2 %> exam was replaced by the <%= external_link_to *@applied %> exam in 2017 with two components: </p>
     
     <ol>
-      <p><strong> Standardized Oral Examination (SOE) </strong></p>
-      <p><strong> Objective Structured Clinical Examination </strong>(<%= external_link_to *@osce %>)  </p>
+      <p><strong> Standardized Oral Examination (SOE) </strong> <em>(<%= external_link_to *@soeqs %>)</em> </p>
+
+      <p><strong> Objective Structured Clinical Examination (OSCE) </strong> <em>(<%= external_link_to *@osce %>, <%= external_link_to *@oscescenarios%>, <%= external_link_to *@oscefaq %>)</em>  </p>
     </ol>
   
   <p>
@@ -37,8 +38,13 @@
   </p>
   
   <p>
-    Advice from <%= external_link_to *@accrac %> (episode <%= external_link_to *@accrac34 %>) and <%= external_link_to *@accracstem %> with discussion (eps. <%= external_link_to *@accrac71 %> & <%= external_link_to *@accrac72 %>)
-  </p>
+    Excellent discussions from Anesthesia and Crtiical Care Reviews and Commentary (<%= external_link_to *@accrac %>) :
+  </p>  
+    
+    <ul> <%= external_link_to *@accrac34 %> : Oral Board Prep with Drs. Tran and Beaudry </ul>
+    <ul> <%= external_link_to *@accrac71 %> : Oral Board Prep 2: part 1 (<%= external_link_to *@accracstem71 %>) </ul> 
+    <ul> <%= external_link_to *@accrac72 %> : Oral Board Prep 2: part 2 </ul>
+    <ul> <%= external_link_to *@accrac75 %> : OB Oral Board Stem with Drs. Galvan and Hofkamp  (<%= external_link_to *@accracstem75 %>) </ul>
   
   <p>
     Oral board review <%= external_link_to "books", category_resources_path("Oral Board") %>
@@ -50,6 +56,10 @@
   
   <p>
     Excellent overview and <%= external_link_to *@lovich %> by Jessica Lovich-Sapola
+  </p>
+  
+  <p>
+    <%= external_link_to *@jensenweapons %> (1999) by Niels Jensen
   </p>
   
   <p>

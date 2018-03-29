@@ -215,18 +215,24 @@ class StaticPagesController < ApplicationController
   def orals
     @part2 = ["part 2", "http://www.theaba.org/Exams/Traditional-Part-2/About-Traditional-Part-2"]
     @applied = ["APPLIED", "http://www.theaba.org/Exams/APPLIED-(Staged-Exam)/About-APPLIED-(Staged-Exam)"]
-    @osce = ["OSCE", "http://www.theaba.org/PDFs/APPLIED-Exam/APPLIED-OSCE-ContentOutline"]
+    @soeqs = ["Sample Questions", "http://www.theaba.org/PDFs/APPLIED-Exam/SOE-Sample-Questions"]
+    @osce = ["Content Outline", "http://www.theaba.org/PDFs/APPLIED-Exam/APPLIED-OSCE-ContentOutline"]
+    @oscefaq = ["FAQ", "http://www.theaba.org/PDFs/APPLIED-Exam/OSCEs-FAQs"]
+    @oscescenarios = "Examples", "http://www.theaba.org/PDFs/APPLIED-Exam/OSCE-Exemplar-Scenarios"
     @aba_archive = ["videos", 'http://www.theaba.org/TRAINING-PROGRAMS/Traditional-Part-2/Traditional-Part-2-Videos']
     @aba_videos = ["videos", 'http://www.theaba.org/ABOUT/Videos']
     @exam_hints_pdf = ["Hints for Mastering the Orals", 'http://anesthesiaboardhints.homestead.com/HintsfortheAnesthesiologyBoardExaminationRev1.6.pdf']
     @lovich = ["PowerPoint", "http://www.powershow.com/view/3c317a-MzI1Z/The_Things_I_Do_For_the_Residents_May_8_2008_Jessica_powerpoint_ppt_presentation"]
     @aba_training_programs = ["here", "http://www.theaba.org/Home/TrainingPrograms"]
+    @jensenweapons = ["Outlining-Attacking the Stem Question: The Knockout Blow", "https://www.anesthesiologyboards.com/pdfs/outlining.pdf"]
     @the_anesthesia_consultant = ["The Anesthesia Consultant", 'http://theanesthesiaconsultant.com/2013/08/22/advice-for-passing-the-oral-board-exams-in-anesthesiology/']
     @accrac = ["ACCRAC", "http://accrac.com"]
-    @accrac34 = ["34", "http://accrac.com/episode-34-oral-board-prep-with-drs-tran-and-beaudry/"]
-    @accrac71 = ["71", "http://accrac.com/episode-71-oral-board-prep-2-part-1/"]
-    @accrac72 = ["72", "http://accrac.com/episode-72-oral-board-prep-2-part-2/"]
-    @accracstem = ["sample exam", "http://accrac.com/wp-content/uploads/2018/02/Oral-board-stem.pdf"]
+    @accrac34 = ["Episode 34", "http://accrac.com/episode-34-oral-board-prep-with-drs-tran-and-beaudry/"]
+    @accrac71 = ["Episode 71", "http://accrac.com/episode-71-oral-board-prep-2-part-1/"]
+    @accrac72 = ["Episode 72", "http://accrac.com/episode-72-oral-board-prep-2-part-2/"]
+    @accrac75 = ["Episode 75", "http://accrac.com/episode-75-ob-oral-board-stem-with-drs-galvan-and-hofkamp/"]
+    @accracstem71 = ["Stem and Questions", "http://accrac.com/wp-content/uploads/2018/02/Oral-board-stem.pdf"]
+    @accracstem75 = ["Stem and Questions", "http://accrac.com/wp-content/uploads/2018/02/ACCRAC-OB-Oral-Board-Stem-JMG-MPH.docx"]
     @sdn = "https://forums.studentdoctor.net/forums/anesthesiology.45/"
 
     @study_strategy = [

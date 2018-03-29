@@ -41,14 +41,14 @@ module ApplicationHelper
   end
 
   def on_exams_path?
-    current_page?(sites_writtenboards_path) ||
-    current_page?(sites_oralboards_path) ||
-    current_page?(sites_pedsboards_path) ||
-    current_page?(sites_painboards_path) ||
-    current_page?(sites_icuboards_path) ||
-    current_page?(sites_crnaboards_path) ||
-    current_page?(sites_echoboards_path) ||
-    current_page?(sites_moca_path) ||
+    current_page?(basicadvanced_path) ||
+    current_page?(applied_path) ||
+    current_page?(pediboards_path) ||
+    current_page?(painboards_path) ||
+    current_page?(icuboards_path) ||
+    current_page?(crnaboards_path) ||
+    current_page?(echoboards_path) ||
+    current_page?(moca_path) ||
     current_page?(informatics_path)
   end
 
