@@ -36,6 +36,16 @@ BoardsApp::Application.routes.draw do
   get    '/icuboards',                    to: 'static_pages#icuboards'
   get    '/crnaboards',                   to: 'static_pages#crnaboards'
   get    '/moca',                         to: 'static_pages#moca'
+  
+  
+  get    '/sites/writtenboards',          to: 'static_pages#writtens'
+  get    '/sites/oralboards',             to: 'static_pages#orals'
+  get    '/sites/pedsboards',             to: 'static_pages#pedsboards'
+  get    '/sites/painboards',             to: 'static_pages#painboards'
+  get    '/sites/echoboards',             to: 'static_pages#echoboards'
+  get    '/sites/icuboards',              to: 'static_pages#icuboards'
+  get    '/sites/crnaboards',             to: 'static_pages#crnaboards'
+  get    'sites/moca',                    to: 'static_pages#moca'
 
   # informatics
   get   'informatics/index',              to: 'informatics#index'
