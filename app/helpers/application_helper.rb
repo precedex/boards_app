@@ -43,6 +43,8 @@ module ApplicationHelper
   def on_exams_path?
     current_page?(basicadvanced_path) ||
     current_page?(applied_path) ||
+    current_page?(sites_writtenboards_path) ||
+    current_page?(sites_oralboards_path) ||
     current_page?(pediboards_path) ||
     current_page?(painboards_path) ||
     current_page?(icuboards_path) ||
