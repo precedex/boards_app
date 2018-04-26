@@ -380,6 +380,8 @@ class StaticPagesController < ApplicationController
   end
   
   def crnaboards
+    @aconline = "https://www.affordablecollegesonline.org/degrees/nursing-programs/crna/"
+    @accredited = "https://www.accreditedschoolsonline.org/medical-and-health/crna-programs/how-to-become/"
     @nbcrna = "http://www.nbcrna.com/Pages/default.aspx"
     @aana = "http://www.aana.com/Pages/default.aspx"
     @abns = "http://www.nursingcertification.org"
