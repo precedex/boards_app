@@ -383,7 +383,7 @@ class StaticPagesController < ApplicationController
     @aconline = "https://www.affordablecollegesonline.org/degrees/nursing-programs/crna/"
     @accredited = "https://www.accreditedschoolsonline.org/medical-and-health/crna-programs/how-to-become/"
     @nbcrna = "http://www.nbcrna.com/Pages/default.aspx"
-    @aana = "http://www.aana.com/Pages/default.aspx"
+    @aana = "http://www.aana.com/"
     @abns = "http://www.nursingcertification.org"
     @handbook = "https://www.nbcrna.com/docs/default-source/publications-documentation/handbooks/nce_hb(1).pdf?sfvrsn=5ed2310c_4"
     @thecrna = "http://thecrna.com"
