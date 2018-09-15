@@ -217,7 +217,7 @@ class StaticPagesController < ApplicationController
     @applied = ["APPLIED", "http://www.theaba.org/Exams/APPLIED-(Staged-Exam)/About-APPLIED-(Staged-Exam)"]
     @soeqs = ["Sample Questions", "http://www.theaba.org/PDFs/APPLIED-Exam/SOE-Sample-Questions"]
     @osce = ["Content Outline", "http://www.theaba.org/PDFs/APPLIED-Exam/APPLIED-OSCE-ContentOutline"]
-    @oscefaq = ["FAQ", "http://www.theaba.org/PDFs/APPLIED-Exam/OSCEs-FAQs"]
+    @oscefaq = ["FAQ", "http://www.theaba.org/PDFs/APPLIED-Exam/OSCE-FAQs"]
     @oscescenarios = "Examples", "http://www.theaba.org/PDFs/APPLIED-Exam/OSCE-Exemplar-Scenarios"
     @aba_archive = ["videos", 'http://www.theaba.org/TRAINING-PROGRAMS/Traditional-Part-2/Traditional-Part-2-Videos']
     @aba_videos = ["videos", 'http://www.theaba.org/ABOUT/Videos']
