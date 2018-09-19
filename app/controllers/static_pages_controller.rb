@@ -148,6 +148,7 @@ class StaticPagesController < ApplicationController
     ]
     
     @study_strategy_adv = [
+      ["2018 ABA Advanced Results (9/18)",                 "https://forums.studentdoctor.net/threads/2018-aba-advanced-results.1340309/"],
       ["Advanced exam 2018 study plan (2/18)",             "https://forums.studentdoctor.net/threads/advanced-exam-2018-study-plan.1298298/"],
       ["ABA Advanced Exam (7/17)",                         "https://forums.studentdoctor.net/threads/aba-advanced-exam.1272098/"],
       ["Truelearn for the advanced exam (7/17)",           "https://forums.studentdoctor.net/threads/truelearn-for-the-advanced-exam.1270665/"],      
@@ -299,6 +300,7 @@ class StaticPagesController < ApplicationController
     @peds_exam_questions = "http://www.theaba.org/PDFs/Pediatrics-Anesthesiology/PASampleQuestions"
     @sdn = "https://forums.studentdoctor.net/forums/anesthesiology.45/"
     @study_strategy = [
+      ["Pediatric question book (5/18)",                                     "https://forums.studentdoctor.net/threads/pediatric-question-book.1311062/"],
       ["Peds Anesthesia boards prep help. (6/16)",                           "http://forums.studentdoctor.net/threads/peds-anesthesia-boards-prep-help.1208153/"],
       ["Pediatric Anesthesia Study Books (7/14)",                            "http://forums.studentdoctor.net/threads/pediatric-anesthesia-study-books.1089468/"],
       ["Pediatric Anesthesia Boards (4/14)",                                 "http://forums.studentdoctor.net/threads/pediatric-anesthesia-boards.1065636/"],
@@ -361,6 +363,7 @@ class StaticPagesController < ApplicationController
     @canada = "http://csecho.ca/resources/"
     @sdn = "https://forums.studentdoctor.net/forums/anesthesiology.45/"
     @study_strategy = [
+      ["Advanced PTeExam 2018 discussion thread (7/18)",                      "https://forums.studentdoctor.net/threads/advanced-pteexam-2018-discussion-thread.1322808/"],
       ["Echo Boards Clarification (2/18)",                                    "https://forums.studentdoctor.net/threads/echo-boards-clarification.1299738/"],
       ["Advanced PTEeXAM Preparation (2/18)",                                 "https://forums.studentdoctor.net/threads/advanced-pteexam-preparation.1296878/"],
       ["Advanced PteEam 2017 (6/17)",                                         "https://forums.studentdoctor.net/threads/advanced-pteexam-2017.1262078/"],
