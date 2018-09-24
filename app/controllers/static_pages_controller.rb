@@ -237,8 +237,9 @@ class StaticPagesController < ApplicationController
     @sdn = "https://forums.studentdoctor.net/forums/anesthesiology.45/"
 
     @study_strategy = [
+      ["2019 Spring Oral Board Prep (9/18)",                                  "https://forums.studentdoctor.net/threads/2019-spring-oral-board-prep.1344538/"],
       ["Oral boards musings -- where is the line? (3/18)",                    "https://forums.studentdoctor.net/threads/oral-boards-musings-—-where-is-the-line.1301237/"],
-      ["Oral Board Help--list of online courses (2/18)",                       "https://forums.studentdoctor.net/threads/oral-board-help-list-of-online-courses.1297701/"],
+      ["Oral Board Help--list of online courses (2/18)",                      "https://forums.studentdoctor.net/threads/oral-board-help-list-of-online-courses.1297701/"],
       ["2018 Applied Exam (SOE/OSCE) (2/18)",                                 "https://forums.studentdoctor.net/threads/2018-applied-exam-soe-osce.1297211/"],
       ["Oral Board Studying Resources (1/18)",                                "https://forums.studentdoctor.net/threads/oral-board-studying-resources.1295928/"],
       ["Oral Boards Recent Experiences (12/17)",                              "https://forums.studentdoctor.net/threads/oral-boards-recent-experiences.1290362/"],
