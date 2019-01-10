@@ -11,9 +11,6 @@ class StaticPagesController < ApplicationController
   def feedback
     @feedback =   ["anesthesiahub@gmail.com", "mailto:anesthesiahub@gmail.com"]
   end
-  
-  def secret
-  end
 
   def tools
     @acls_algos = [
@@ -138,6 +135,7 @@ class StaticPagesController < ApplicationController
     @propvideocourse = "https://vimeo.com/ondemand/propofology"
     @sdn = "https://forums.studentdoctor.net/forums/anesthesiology.45/"
     @study_strategy_basic = [
+      ["PASS MACHINE basic exam materials (12/18)",        "https://forums.studentdoctor.net/threads/pass-machine-basic-exam-materials.1359113/"],
       ["Basic exam 2016 (6/16)",                           "http://forums.studentdoctor.net/threads/basic-exam-2016.1205018/"],
       ["ABA BASIC STUDY TIPS (4/16)",                      "http://forums.studentdoctor.net/threads/aba-basic-study-tips.1193899/"],
       ["Basic Exam Stats (2015) (8/15)",                   "http://forums.studentdoctor.net/threads/basic-exam-stats-2015.1156315/"],
@@ -149,6 +147,7 @@ class StaticPagesController < ApplicationController
     
     @study_strategy_adv = [
       ["2018 ABA Advanced Results (9/18)",                 "https://forums.studentdoctor.net/threads/2018-aba-advanced-results.1340309/"],
+      ["AnesthesiaQbank vs. M5 (7/18)",                    "https://forums.studentdoctor.net/threads/anesthesiaqbank-vs-m5.1321849/"],
       ["Advanced exam 2018 study plan (2/18)",             "https://forums.studentdoctor.net/threads/advanced-exam-2018-study-plan.1298298/"],
       ["ABA Advanced Exam (7/17)",                         "https://forums.studentdoctor.net/threads/aba-advanced-exam.1272098/"],
       ["Truelearn for the advanced exam (7/17)",           "https://forums.studentdoctor.net/threads/truelearn-for-the-advanced-exam.1270665/"],      
