@@ -106,7 +106,7 @@ class StaticPagesController < ApplicationController
     @contentoutline = ["content outline", "http://www.theaba.org/PDFs/BASIC-Exam/Basic-and-Advanced-ContentOutline"]
     @basicblueprint = ["blueprint", "http://www.theaba.org/PDFs/BASIC-Exam/BASIC-Exam-Blueprint"]
     @advancedblueprint = ["blueprint", "http://www.theaba.org/PDFs/ADVANCED-Exam/ADVANCED-Exam-Blueprint"]
-    @basicq = ["sample questions", "http://www.theaba.org/PDFs/BASIC-Exam/BASIC-Sample-Questions"]
+    @basicq = ["sample questions", "http://www.theaba.org/PDFs/BASIC-Exam/BASIC-Exam-Sample-Questions"]
     @advancedq = ["sample questions", "http://www.theaba.org/PDFs/ADVANCED-Exam/ADVANCED-Sample-Questions"]
     @part1 = ["Part 1", "http://www.theaba.org/Exams/Traditional-Part-1/About-Traditional-Part-1"]
     @part2 = ["Part 2", "http://www.theaba.org/Exams/Traditional-Part-2/About-Traditional-Part-2"]
@@ -135,6 +135,7 @@ class StaticPagesController < ApplicationController
     @propvideocourse = "https://vimeo.com/ondemand/propofology"
     @sdn = "https://forums.studentdoctor.net/forums/anesthesiology.45/"
     @study_strategy_basic = [
+      ["Anesthesiology Board Preps (3/19)",                "https://forums.studentdoctor.net/threads/anesthesiology-board-preps.1368402/"],
       ["PASS MACHINE basic exam materials (12/18)",        "https://forums.studentdoctor.net/threads/pass-machine-basic-exam-materials.1359113/"],
       ["Basic exam 2016 (6/16)",                           "http://forums.studentdoctor.net/threads/basic-exam-2016.1205018/"],
       ["ABA BASIC STUDY TIPS (4/16)",                      "http://forums.studentdoctor.net/threads/aba-basic-study-tips.1193899/"],
@@ -197,7 +198,7 @@ class StaticPagesController < ApplicationController
     @commercial_courses = [
       ["Anesthesia Exam",                                "http://www.anesthesiaexam.com"],
       ["AQB - anesthesiaQbank",                          "http://anesthesiaqbank.com"],
-      ["Beyond Anesthesia",                              "http://beyondanesthesia.com"],
+      #["Beyond Anesthesia",                              "http://beyondanesthesia.com"],
       ["Board Vitals - BASIC",                           "https://www.boardvitals.com/anesthesiology-basic-exam-board-review"],
       ["Board Vitals - ADVANCED",                        "https://www.boardvitals.com/anesthesiology-advanced-board-review"],
       ["Core Concepts Anesthesia Review",                "http://www.ccanesthesiareview.com/QOD/QOD.asp"],
@@ -236,6 +237,8 @@ class StaticPagesController < ApplicationController
     @sdn = "https://forums.studentdoctor.net/forums/anesthesiology.45/"
 
     @study_strategy = [
+      ["How long to prepare for the orals? (3/19)",                           "https://forums.studentdoctor.net/threads/how-long-to-prepare-for-the-orals.1368535/"],
+      ["Anesthesiology OSCE Exam (2/19)",                                     "https://forums.studentdoctor.net/threads/anesthesiology-osce-exam.1365099/"],
       ["My Experience/Retaking Oral Boards Advice. (1/19)",                   "https://forums.studentdoctor.net/threads/my-experience-retaking-oral-boards-advice.1361510/"],
       ["2019 Spring Oral Board Prep (9/18)",                                  "https://forums.studentdoctor.net/threads/2019-spring-oral-board-prep.1344538/"],
       ["Oral boards musings -- where is the line? (3/18)",                    "https://forums.studentdoctor.net/threads/oral-boards-musings-—-where-is-the-line.1301237/"],
@@ -285,7 +288,7 @@ class StaticPagesController < ApplicationController
       ["Just Oral Boards",                             "http://www.justoralboards.com"],
       ["Best Oral Board Prep",                         "http://www.bestoralboardprep.com"],
       #["Nail the Boards",                              "http://nailtheboards.com"],
-      ["AceMedBoard",                                  "http://www.acemedboard.com"],
+      #["AceMedBoard",                                  "http://www.acemedboard.com"],
       #["The Osler Institute",                          "http://www.osler.org/main/ane.html"],
       ["Ultimate Board Prep",                          "http://www.ultimateboardprep.com"]
     ]
@@ -298,7 +301,7 @@ class StaticPagesController < ApplicationController
     @wfsa = "http://www.wfsahq.org/resources/update-in-anaesthesia"
     @peds_exam_content = "http://www.theaba.org/PDFs/Pediatrics-Anesthesiology/PAContentOutline"
     @peds_exam_blueprint = "http://www.theaba.org/PDFs/Pediatrics-Anesthesiology/PA-Exam-Blueprint"
-    @peds_exam_questions = "http://www.theaba.org/PDFs/Pediatrics-Anesthesiology/PASampleQuestions"
+    @peds_exam_questions = "http://www.theaba.org/PDFs/Pediatrics-Anesthesiology/PA-Sample-Questions"
     @sdn = "https://forums.studentdoctor.net/forums/anesthesiology.45/"
     @study_strategy = [
       ["Pediatric question book (5/18)",                                     "https://forums.studentdoctor.net/threads/pediatric-question-book.1311062/"],
@@ -327,7 +330,7 @@ class StaticPagesController < ApplicationController
     @abpm = "http://www.abpm.org"
     @pain_exam_content = "http://www.theaba.org/PDFs/Pain-Medicine/PMContentOutline"
     @pain_exam_blueprint = "http://www.theaba.org/PDFs/Pain-Medicine/PM-Exam-Blueprint"
-    @pain_exam_questions = "http://www.theaba.org/PDFs/Pain-Medicine/PMExamSampleQuestions"
+    @pain_exam_questions = "http://www.theaba.org/PDFs/Pain-Medicine/PM-Sample-Questions"
     @rosenblum = "https://itunes.apple.com/us/podcast/anesthesiaexam-podcast/id987251541?mt=2"
     @sdn = "https://forums.studentdoctor.net/forums/anesthesiology.45/"
     @commercial_courses = [
