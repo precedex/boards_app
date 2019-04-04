@@ -5,7 +5,7 @@ class ProvidersController < ApplicationController
       @providers = []
     elsif params[:provider_type] == "crna"
       @providers = Provider.where(nil)
-      @providers = @providers.where(primary: "CERTIFIED REGISTERED NURSE ANESTHETIST")
+      @providers = @providers.where(primary: "CERTIFIED REGISTERED NURSE ANESTHETIST (CRNA)")
       @providers = @providers.lname(params[:last]) if params[:last].present?
       @providers = @providers.hospital(params[:hospital]) if params[:hospital].present?
       @providers = @providers.employer(params[:employer]) if params[:employer].present?

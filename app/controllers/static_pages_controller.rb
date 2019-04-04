@@ -119,10 +119,12 @@ class StaticPagesController < ApplicationController
     @aba_exam_summary = ["2014 Exam Summary (PDF)", "http://www.theaba.org/pdf/SAAA-Exams-Report.pdf"]
     @open_anesthesia_keywords = ["Open Anesthesia", "http://www.openanesthesia.org/OpenAnesthesia.org:KeywordBrowser"]
     @kentucky_keywords2016 = ["anesthesia keyword review lecture series 2016", "https://www.youtube.com/playlist?list=PLh0m5d4Yfc8zuGHKyc0UdaUAPqNLUOqnT"]
-    @kentucky_keywords2017 = ["2017", "https://www.youtube.com/playlist?list=PLh0m5d4Yfc8y6OtsSUVLRgHv-t4kk5k9e"]
+    @kentucky_keywords2017 = ["2017", "https://www.youtube.com/playlist?list=PLh0m5d4Yfc8y6OtsSUVLRgHv-t4kk5k9e"]    
+    @kentucky_playlists = ["Keyword and Lecture Video Library", "https://www.youtube.com/channel/UC_caxps8p1QaSXho_L6G0Fg/playlists"]
     @gap2014 = ["2014", "https://youtu.be/OqonxKcSEs4"]
     @gap2015 = ["2015", "https://youtu.be/qD_ch5_Z3tE"]
     @gap2016 = ["2016", "https://youtu.be/qecGo1NyUBg"]
+    @gap20178 = ["2017-8", "https://youtu.be/vAvLdl20orY"]
     @accrac = ["ACCRAC", "http://accrac.com"]
     @xi = ["Amanda Xi", "http://blog.amandaxi.com"]
     @xibasic = ["How to Study for the ITE, BASIC, and anesthesia", "http://blog.amandaxi.com/2017/09/21/study-resources-ite-basic-anesthesia/"]
@@ -344,6 +346,8 @@ class StaticPagesController < ApplicationController
     @icu_cert = ["critical care medicine examination", "http://www.theaba.org/Exams/Critical-Care-Medicine-Certification/Critical-Care-Medicine-Certification"]
     @icu_exam_content = "http://www.theaba.org/PDFs/Critical-Care-Medicine/ContentOutline_CCM"
     @icu_exam_blueprint = "http://www.theaba.org/PDFs/Critical-Care-Medicine/CCM-Exam-Blueprint"
+    @deranged = "https://derangedphysiology.com/main/home"
+    @cicm = "https://cicm.org.au/Trainees/Assessments-and-Examinations/Second-Part-Exam"
     @sdn = "https://forums.studentdoctor.net/forums/anesthesiology.45/"
     @study_strategy = [
       ["2017 CCM exam (9/17)", "https://forums.studentdoctor.net/threads/2017-ccm-exam.1278759/"],
