@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 ruby '2.6.3'
 
 gem 'rails', '5.2.3'
+gem 'puma'
 gem 'bootstrap-sass'
 gem 'bootstrap-switch-rails'
 gem 'nokogiri'

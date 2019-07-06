@@ -107,6 +107,8 @@ GEM
       mini_portile2 (~> 2.4.0)
     pg (0.21.0)
     public_suffix (3.1.1)
+    puma (4.0.0)
+      nio4r (~> 2.0)
     rack (2.0.7)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
@@ -220,6 +222,7 @@ DEPENDENCIES
   jquery-rails
   nokogiri
   pg (= 0.21.0)
+  puma
   rails (= 5.2.3)
   rails_12factor (= 0.0.2)
   rake
