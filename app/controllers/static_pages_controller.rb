@@ -127,7 +127,8 @@ class StaticPagesController < ApplicationController
     @gap20178 = ["2017-8", "https://youtu.be/vAvLdl20orY"]
     @accrac = ["ACCRAC", "http://accrac.com"]
     @xi = ["Amanda Xi", "http://blog.amandaxi.com"]
-    @xibasic = ["How to Study for the ITE, BASIC, and anesthesia", "http://blog.amandaxi.com/2017/09/21/study-resources-ite-basic-anesthesia/"]
+    @xibasic = ["How to Study for the ITE, BASIC, and anesthesia (2017)", "http://blog.amandaxi.com/2017/09/21/study-resources-ite-basic-anesthesia/"]
+    @xibasic2 = ["How to Study for the ABA BASIC exam (2019)", "http://blog.amandaxi.com/2019/04/08/how-to-study-for-the-aba-american-board-of-anesthesiology-basic-exam/"]
     @steinerarticles = ["articles", "http://www.anesthesiamadeeasy.com/resources"]
     @quizzes = ["quizzes", "http://www.proprofs.com/quiz-school/search.php?search=anesthesia"]
     @mathps = "/AnesthesiaMath-PS.pdf"
@@ -137,6 +138,7 @@ class StaticPagesController < ApplicationController
     @propvideocourse = "https://vimeo.com/ondemand/propofology"
     @sdn = "https://forums.studentdoctor.net/forums/anesthesiology.45/"
     @study_strategy_basic = [
+      ["Basic exam (6/19)",                                "https://forums.studentdoctor.net/threads/basic-exam.1377529/"],
       ["Anesthesiology Board Preps (3/19)",                "https://forums.studentdoctor.net/threads/anesthesiology-board-preps.1368402/"],
       ["PASS MACHINE basic exam materials (12/18)",        "https://forums.studentdoctor.net/threads/pass-machine-basic-exam-materials.1359113/"],
       ["Basic exam 2016 (6/16)",                           "http://forums.studentdoctor.net/threads/basic-exam-2016.1205018/"],
@@ -205,13 +207,14 @@ class StaticPagesController < ApplicationController
       ["Board Vitals - ADVANCED",                        "https://www.boardvitals.com/anesthesiology-advanced-board-review"],
       ["Core Concepts Anesthesia Review",                "http://www.ccanesthesiareview.com/QOD/QOD.asp"],
       ["Dr. Jensen Anesthesiology & Pain Board P.R.E.P", "http://www.anesthesiologyboards.com"],
-      ["Gas Questions",                                  "https://www.gasquestions.com"],
+      #["Gas Questions",                                  "https://www.gasquestions.com"],
       ["M5 Board Review",                                "http://m5boardreview.com"],
       ["Michael Ho: The Essential Written Board Review", "http://anconsultants.com/anesthesiology-written-board-review/"],
       ["Open Anesthesiology Self-Study Qbank",           "https://www.openanesthesia.org/members/join/#qbank-only"],
-      ["The Pass Machine",                               "http://www.thepassmachine.com/anesthesiology-certification-exam-prep-course.html"],
-      ["True Learn Anesthesiology",                      "http://www.truelearn.com/anesthesiology/"],
-      ["University of Pittsburgh Board Review",          "https://www.oakstone.com/focused-review-of-anesthesiology"]
+      ["The Pass Machine - BASIC",                       "https://www.thepassmachine.com/anesthesia-basic-board-review/"],
+      ["The Pass Machine - ADVANCED",                    "https://www.thepassmachine.com/anesthesia-advanced-board-review/"],
+      ["True Learn Anesthesiology",                      "http://www.truelearn.com/anesthesiology/"]
+      #["University of Pittsburgh Board Review",          "https://www.oakstone.com/focused-review-of-anesthesiology"]
     ]
   end
 
@@ -239,6 +242,7 @@ class StaticPagesController < ApplicationController
     @sdn = "https://forums.studentdoctor.net/forums/anesthesiology.45/"
 
     @study_strategy = [
+      ["Oral boards 2019 (3/19)",                                             "https://forums.studentdoctor.net/threads/oral-boards-2019.1368945/"],
       ["How long to prepare for the orals? (3/19)",                           "https://forums.studentdoctor.net/threads/how-long-to-prepare-for-the-orals.1368535/"],
       ["Anesthesiology OSCE Exam (2/19)",                                     "https://forums.studentdoctor.net/threads/anesthesiology-osce-exam.1365099/"],
       ["My Experience/Retaking Oral Boards Advice. (1/19)",                   "https://forums.studentdoctor.net/threads/my-experience-retaking-oral-boards-advice.1361510/"],
