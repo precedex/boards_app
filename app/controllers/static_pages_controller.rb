@@ -462,12 +462,12 @@ class StaticPagesController < ApplicationController
     @anesthesiamadeeasy = ["Anesthesia Made Easy", "http://anesthesiamadeeasy.com"]
     @propofology = ["Propofology", "http://www.propofology.com"]
     @lynessbook = ["An Absolute Beginner's Guide to Anaesthetics", "http://www.propofology.com/absolute-beginners-guide-to-anaesthetics.html"]
-    @acm = ["Anesthesia Clerkship Manual", "https://itunes.apple.com/us/book/anesthesia-clerkship-manual/id1151562335?mt=11"]
+    @acm = ["Anesthesia for Medical Students", "https://books.apple.com/us/book/anesthesia-for-medical-students/id1462284212"]
     @rca = ["Royal College of Anaesthetists Guide for Novice Trainees", "http://www.e-lfh.org.uk/e-learning-sessions/rcoa-novice/home.html"]
     @sea = ["SEA", "http://www.seahq.net"]
-    @seams = ["Medical Student Guide to Anesthesiology", "http://www.seahq.net/images/sea_msg.pdf"]
-    @steiner = ["Getting Into Anesthesiology", "http://www.anesthesiamadeeasy.com/wp-content/uploads/2015/05/Getting-into-Anesthesiology-PDF.pdf"]
-    @stanford = ["2017 CA-1 Tutorial Textbook", "http://ether.stanford.edu/ca1_new/FINAL%20CA-1%20Tutorial%20Textbook%202017.pdf"]
+    @seams = ["Medical Student Guide to Anesthesiology", "https://cdn.ymaws.com/www.seahq.org/resource/resmgr/files/MedicalStudent/MedicalStudentGuide.pdf"]
+    @steiner = ["Getting Into Anesthesiology", "https://www.anesthesiamadeeasy.com/gia"]
+    @stanford = ["2018 CA-1 Tutorial Textbook", "http://ether.stanford.edu/ca1_new/Final-%202018%20CA-1%20Tutorial%20Textbook.Smartphone%20or%20Tablet.pdf"]
     
   end
   
