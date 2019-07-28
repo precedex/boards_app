@@ -1,5 +1,5 @@
 class Site < ActiveRecord::Base
   def self.by_title
-    order("lower(title)")
+    order(Arel.sql("lower(title)"))
   end
 end

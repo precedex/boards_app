@@ -42,7 +42,7 @@ class StaticPagesController < ApplicationController
       ["Anaphylaxis",                       "Anaphylaxis.jpg"],
       ["Malignant Hyperthermia",            "https://www.mhaus.org/healthcare-professionals/managing-a-crisis/"],
       ["Local Anesthetic Toxity (ASRA)",    "https://www.asra.com/content/documents/checklist-for-local-anesthetic-toxicity-treatment-1-18-12.pdf"],
-      ["Pediatric Critical Events",  "http://www.pedsanesthesia.org/newnews/Critical_Event_Checklists.pdf?201310291500"],
+      ["Pediatric Critical Events",  "https://www.pedsanesthesia.org/wp-content/uploads/2018/11/SPAPediCrisisChecklistsNov2018.pdf"],
       ["Laryngospasm",               "http://www.maskinduction.com/uploads/3/1/6/4/31643965/laryngospasm_management_algorithm.pdf"]   
     ]
     
@@ -55,7 +55,7 @@ class StaticPagesController < ApplicationController
 
     @guidelines = [
       ["ACC/AHA 2014 Preop Testing", "http://circ.ahajournals.org/content/early/2014/07/31/CIR.0000000000000106.full.pdf"],
-      ["ASA Consensus Statement on ICDs/Pacemakers", "http://www.hrsonline.org/content/download/1432/20125/file/2011-HRS_ASA%20Perioperative%20Management.pdf"],
+      ["ASA Consensus Statement on ICDs/Pacemakers", "https://www.hrsonline.org/2011-expert-consensus-statement-perioperative-management-patients-implantable-defibrillators"],
       ["Machine Checkout Recommendations", "https://www.asahq.org/~/media/sites/asahq/files/public/resources/clinical-resources/finalcheckoutdesignguidelines.pdf"],
       ["SCA Clinical Practice & Guidelines", "http://www.scahq.org/ClinicalPracticeGuidelines/Guidelines.aspx"],
       ["Endocarditis Prophylaxis",   "endocarditis.jpg"],
@@ -402,7 +402,7 @@ class StaticPagesController < ApplicationController
     @abns = "http://www.nursingcertification.org"
     @handbook = "https://www.nbcrna.com/docs/default-source/publications-documentation/handbooks/nce_hb(1).pdf?sfvrsn=5ed2310c_4"
     @thecrna = "http://thecrna.com"
-    @nurse_anes = "http://www.nurse-anesthesia.org"
+    @nurse_anes = "http://nurseanesthetist.org/"
     
     @commercial_courses = [
       ["AQB - anesthesiaQbank",                                                     "http://anesthesiaqbank.com"],

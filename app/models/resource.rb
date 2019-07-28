@@ -5,6 +5,6 @@ class Resource < ActiveRecord::Base
   validates :title, presence: true
 
   def self.by_title
-    order("lower(title)")
+    order(Arel.sql("lower(title)"))
   end
 end

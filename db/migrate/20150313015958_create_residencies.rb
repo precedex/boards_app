@@ -1,4 +1,4 @@
-class CreateResidencies < ActiveRecord::Migration
+class CreateResidencies < ActiveRecord::Migration[5.2]
   def change
     create_table :residencies do |t|
       t.string :state

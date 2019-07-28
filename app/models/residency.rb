@@ -15,6 +15,6 @@ class Residency < ActiveRecord::Base
   end # end self.import(file)
   
   def self.by_state
-    order("lower(state)")
+    order(Arel.sql("lower(state)"))
   end
 end

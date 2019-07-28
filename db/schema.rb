@@ -1,4 +1,3 @@
-# encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -11,182 +10,179 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180218174240) do
+ActiveRecord::Schema.define(version: 2018_02_18_174240) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "categories", force: true do |t|
-    t.string "name"
+  create_table "categories", id: :serial, force: :cascade do |t|
+    t.string "name", limit: 255
   end
 
-  create_table "categorizations", force: true do |t|
+  create_table "categorizations", id: :serial, force: :cascade do |t|
     t.integer "resource_id"
     t.integer "category_id"
   end
 
-  create_table "chessfilms", force: true do |t|
-    t.string "title"
-    t.string "year"
-    t.string "time"
-    t.string "director"
-    t.string "image"
-    t.text   "description"
-    t.string "imdb_link"
-    t.string "trailer_link"
-    t.string "full_link"
+  create_table "chessfilms", id: :serial, force: :cascade do |t|
+    t.string "title", limit: 255
+    t.string "year", limit: 255
+    t.string "time", limit: 255
+    t.string "director", limit: 255
+    t.string "image", limit: 255
+    t.text "description"
+    t.string "imdb_link", limit: 255
+    t.string "trailer_link", limit: 255
+    t.string "full_link", limit: 255
   end
 
-  create_table "employers", force: true do |t|
-    t.string   "name_lgl"
-    t.integer  "n_employees"
-    t.text     "locations"
-    t.text     "hospitals"
-    t.string   "employer_type"
+  create_table "employers", id: :serial, force: :cascade do |t|
+    t.string "name_lgl", limit: 255
+    t.integer "n_employees"
+    t.text "locations"
+    t.text "hospitals"
+    t.string "employer_type", limit: 255
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "headings", force: true do |t|
-    t.string "code"
-    t.string "heading"
+  create_table "headings", id: :serial, force: :cascade do |t|
+    t.string "code", limit: 255
+    t.string "heading", limit: 255
   end
 
-  create_table "informatics", force: true do |t|
-    t.string "section"
-    t.string "topic"
-    t.string "acronym"
-    t.text   "information"
+  create_table "informatics", id: :serial, force: :cascade do |t|
+    t.string "section", limit: 255
+    t.string "topic", limit: 255
+    t.string "acronym", limit: 255
+    t.text "information"
   end
 
-  create_table "jewels", force: true do |t|
-    t.string "sku"
-    t.text   "name"
-    t.string "price"
-    t.string "collection"
-    t.text   "image"
+  create_table "jewels", id: :serial, force: :cascade do |t|
+    t.string "sku", limit: 255
+    t.text "name"
+    t.string "price", limit: 255
+    t.string "collection", limit: 255
+    t.text "image"
   end
 
-  create_table "lectures", force: true do |t|
-    t.string   "speaker"
-    t.string   "title"
-    t.string   "institution"
-    t.date     "date"
-    t.string   "link"
-    t.string   "topic"
+  create_table "lectures", id: :serial, force: :cascade do |t|
+    t.string "speaker", limit: 255
+    t.string "title", limit: 255
+    t.string "institution", limit: 255
+    t.date "date"
+    t.string "link", limit: 255
+    t.string "topic", limit: 255
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "movies", force: true do |t|
-    t.string   "group"
-    t.string   "title"
-    t.string   "url"
+  create_table "movies", id: :serial, force: :cascade do |t|
+    t.string "group", limit: 255
+    t.string "title", limit: 255
+    t.string "url", limit: 255
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "providers", force: true do |t|
-    t.string   "npi"
-    t.string   "last"
-    t.string   "first"
-    t.string   "middle"
-    t.string   "ms"
-    t.string   "grad"
-    t.string   "primary"
-    t.string   "secondary"
-    t.string   "name_lgl"
-    t.string   "name_common"
-    t.string   "size"
-    t.string   "city"
-    t.string   "state"
-    t.string   "aff1"
-    t.string   "aff2"
-    t.string   "aff3"
-    t.string   "aff4"
-    t.string   "aff5"
-    t.string   "aba"
+  create_table "providers", id: :serial, force: :cascade do |t|
+    t.string "npi", limit: 255
+    t.string "last", limit: 255
+    t.string "first", limit: 255
+    t.string "middle", limit: 255
+    t.string "ms", limit: 255
+    t.string "grad", limit: 255
+    t.string "primary", limit: 255
+    t.string "secondary", limit: 255
+    t.string "name_lgl", limit: 255
+    t.string "name_common", limit: 255
+    t.string "size", limit: 255
+    t.string "city", limit: 255
+    t.string "state", limit: 255
+    t.string "aff1", limit: 255
+    t.string "aff2", limit: 255
+    t.string "aff3", limit: 255
+    t.string "aff4", limit: 255
+    t.string "aff5", limit: 255
+    t.string "aba", limit: 255
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "questions", force: true do |t|
-    t.text     "stem"
-    t.string   "answer"
+  create_table "questions", id: :serial, force: :cascade do |t|
+    t.text "stem"
+    t.string "answer", limit: 255
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "option_a"
-    t.string   "option_b"
-    t.string   "option_c"
-    t.string   "option_d"
-    t.string   "option_e"
-    t.string   "image"
-    t.string   "exam"
+    t.string "option_a", limit: 255
+    t.string "option_b", limit: 255
+    t.string "option_c", limit: 255
+    t.string "option_d", limit: 255
+    t.string "option_e", limit: 255
+    t.string "image", limit: 255
+    t.string "exam", limit: 255
   end
 
-  create_table "residencies", force: true do |t|
-    t.string   "state"
-    t.string   "program"
-    t.string   "website"
+  create_table "residencies", force: :cascade do |t|
+    t.string "state"
+    t.string "program"
+    t.string "website"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "resources", id: :serial, force: :cascade do |t|
+    t.string "title", limit: 255
+    t.string "authors", limit: 255
+    t.text "description"
+    t.string "image_url", limit: 255
+    t.string "link", limit: 255
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer "edition"
+    t.integer "year"
   end
 
-  create_table "resources", force: true do |t|
-    t.string   "title"
-    t.string   "authors"
-    t.text     "description"
-    t.string   "image_url"
-    t.string   "link"
+  create_table "sites", id: :serial, force: :cascade do |t|
+    t.string "category", limit: 255
+    t.string "title", limit: 255
+    t.text "description"
+    t.string "link", limit: 255
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "edition"
-    t.integer  "year"
+    t.string "authors", limit: 255
+    t.string "image", limit: 255
+    t.string "rec", limit: 255
   end
 
-  create_table "sites", force: true do |t|
-    t.string   "category"
-    t.string   "title"
-    t.text     "description"
-    t.string   "link"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.string   "authors"
-    t.string   "image"
-    t.string   "rec"
-  end
-
-  create_table "subheadings", force: true do |t|
+  create_table "subheadings", id: :serial, force: :cascade do |t|
     t.integer "heading_id"
-    t.string  "code"
-    t.string  "subheading"
+    t.string "code", limit: 255
+    t.string "subheading", limit: 255
+    t.index ["heading_id"], name: "index_subheadings_on_heading_id"
   end
 
-  add_index "subheadings", ["heading_id"], name: "index_subheadings_on_heading_id", using: :btree
-
-  create_table "subsubheadings", force: true do |t|
+  create_table "subsubheadings", id: :serial, force: :cascade do |t|
     t.integer "subheading_id"
-    t.string  "code"
-    t.string  "subsubheading"
+    t.string "code", limit: 255
+    t.string "subsubheading", limit: 255
+    t.index ["subheading_id"], name: "index_subsubheadings_on_subheading_id"
   end
 
-  add_index "subsubheadings", ["subheading_id"], name: "index_subsubheadings_on_subheading_id", using: :btree
-
-  create_table "subsubsubheadings", force: true do |t|
+  create_table "subsubsubheadings", id: :serial, force: :cascade do |t|
     t.integer "subsubheading_id"
-    t.string  "code"
-    t.string  "subsubsubheading"
+    t.string "code", limit: 255
+    t.string "subsubsubheading", limit: 255
+    t.index ["subsubheading_id"], name: "index_subsubsubheadings_on_subsubheading_id"
   end
 
-  add_index "subsubsubheadings", ["subsubheading_id"], name: "index_subsubsubheadings_on_subsubheading_id", using: :btree
-
-  create_table "topicalizations", force: true do |t|
+  create_table "topicalizations", id: :serial, force: :cascade do |t|
     t.integer "question_id"
     t.integer "topic_id"
   end
 
-  create_table "topics", force: true do |t|
-    t.string "name"
+  create_table "topics", id: :serial, force: :cascade do |t|
+    t.string "name", limit: 255
   end
 
 end
