@@ -389,6 +389,7 @@ class StaticPagesController < ApplicationController
     ]    
     @commercial_courses = [
       ["PTE Masters",                                                         "http://www.ptemasters.com"],
+      ["ASA Basic Perioperative TEE Program",                                 "http://www.iteachu.com/courses/basic-tee/"],
       ["e-Echocardiography",                                                  "https://e-echocardiography.com/index.php"],
       ["Echo Board Study",                                                    "https://www.echoboardstudy.com/"]
     ]
