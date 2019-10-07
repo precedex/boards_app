@@ -36,14 +36,14 @@ ActiveRecord::Schema.define(version: 2018_02_18_174240) do
     t.string "full_link", limit: 255
   end
 
-  create_table "employers", id: :serial, force: :cascade do |t|
-    t.string "name_lgl", limit: 255
+  create_table "employers", force: :cascade do |t|
+    t.string "name_lgl"
     t.integer "n_employees"
     t.text "locations"
     t.text "hospitals"
-    t.string "employer_type", limit: 255
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.string "employer_type"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "headings", id: :serial, force: :cascade do |t|
@@ -85,28 +85,28 @@ ActiveRecord::Schema.define(version: 2018_02_18_174240) do
     t.datetime "updated_at"
   end
 
-  create_table "providers", id: :serial, force: :cascade do |t|
-    t.string "npi", limit: 255
-    t.string "last", limit: 255
-    t.string "first", limit: 255
-    t.string "middle", limit: 255
-    t.string "ms", limit: 255
-    t.string "grad", limit: 255
-    t.string "primary", limit: 255
-    t.string "secondary", limit: 255
-    t.string "name_lgl", limit: 255
-    t.string "name_common", limit: 255
-    t.string "size", limit: 255
-    t.string "city", limit: 255
-    t.string "state", limit: 255
-    t.string "aff1", limit: 255
-    t.string "aff2", limit: 255
-    t.string "aff3", limit: 255
-    t.string "aff4", limit: 255
-    t.string "aff5", limit: 255
-    t.string "aba", limit: 255
-    t.datetime "created_at"
-    t.datetime "updated_at"
+  create_table "providers", force: :cascade do |t|
+    t.string "npi"
+    t.string "last"
+    t.string "first"
+    t.string "middle"
+    t.string "ms"
+    t.string "grad"
+    t.string "primary"
+    t.string "secondary"
+    t.string "name_lgl"
+    t.string "name_common"
+    t.string "size"
+    t.string "city"
+    t.string "state"
+    t.string "aff1"
+    t.string "aff2"
+    t.string "aff3"
+    t.string "aff4"
+    t.string "aff5"
+    t.string "aba"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "questions", id: :serial, force: :cascade do |t|

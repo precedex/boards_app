@@ -151,6 +151,7 @@ class StaticPagesController < ApplicationController
     ]
     
     @study_strategy_adv = [
+      ["Advanced exam 2018-2019 (7/19)",                   "https://forums.studentdoctor.net/threads/advanced-exam-2018-2019.1383056/"],
       ["2018 ABA Advanced Results (9/18)",                 "https://forums.studentdoctor.net/threads/2018-aba-advanced-results.1340309/"],
       ["AnesthesiaQbank vs. M5 (7/18)",                    "https://forums.studentdoctor.net/threads/anesthesiaqbank-vs-m5.1321849/"],
       ["Advanced exam 2018 study plan (2/18)",             "https://forums.studentdoctor.net/threads/advanced-exam-2018-study-plan.1298298/"],
@@ -375,6 +376,7 @@ class StaticPagesController < ApplicationController
     @canada = "http://csecho.ca/resources/"
     @sdn = "https://forums.studentdoctor.net/forums/anesthesiology.45/"
     @study_strategy = [
+      ["Advanced PTeExam 2019 discussion thread (12/18)",                     "https://forums.studentdoctor.net/threads/advanced-pteexam-2019-discussion-thread.1359268/"],
       ["Advanced PTeExam 2018 discussion thread (7/18)",                      "https://forums.studentdoctor.net/threads/advanced-pteexam-2018-discussion-thread.1322808/"],
       ["Echo Boards Clarification (2/18)",                                    "https://forums.studentdoctor.net/threads/echo-boards-clarification.1299738/"],
       ["Advanced PTEeXAM Preparation (2/18)",                                 "https://forums.studentdoctor.net/threads/advanced-pteexam-preparation.1296878/"],
