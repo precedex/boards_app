@@ -125,6 +125,7 @@ class StaticPagesController < ApplicationController
     @gap2015 = ["2015", "https://youtu.be/qD_ch5_Z3tE"]
     @gap2016 = ["2016", "https://youtu.be/qecGo1NyUBg"]
     @gap20178 = ["2017-8", "https://youtu.be/vAvLdl20orY"]
+    @gap2019 = ["2019", "https://youtu.be/fpseLaUtDDE"]
     @accrac = ["ACCRAC", "http://accrac.com"]
     @xi = ["Amanda Xi", "http://blog.amandaxi.com"]
     @xibasic = ["How to Study for the ITE, BASIC, and anesthesia (2017)", "http://blog.amandaxi.com/2017/09/21/study-resources-ite-basic-anesthesia/"]
@@ -188,6 +189,7 @@ class StaticPagesController < ApplicationController
     ]
       
     @study_strategy_ite = [
+      ["Truelearn QB for ITE (11/19)",                     "https://forums.studentdoctor.net/threads/truelearn-qb-for-ite.1393056/"],
       ["2018 ITE (2/18)",                                  "https://forums.studentdoctor.net/threads/2018-ite.1298492/"],
       ["Intern Year ITE (11/17)",                          "https://forums.studentdoctor.net/threads/intern-year-ite.1288583/"],
       ["2017 ABA ITE Results (3/17)",                      "https://forums.studentdoctor.net/threads/2017-aba-ite-results.1249649/"],
@@ -461,7 +463,7 @@ class StaticPagesController < ApplicationController
         
     ]
     
-    @ua = ["Understanding Anesthesia", "http://www.understandinganesthesiology.com"]
+    @ua = ["Understanding Anesthesia", "https://anesthesiology.queensu.ca/source/Anesthesiology/UnderstandingAnesthesia1_1_2.pdf"]
     @anesthesiamadeeasy = ["Anesthesia Made Easy", "http://anesthesiamadeeasy.com"]
     @propofology = ["Propofology", "http://www.propofology.com"]
     @lynessbook = ["An Absolute Beginner's Guide to Anaesthetics", "http://www.propofology.com/absolute-beginners-guide-to-anaesthetics.html"]
