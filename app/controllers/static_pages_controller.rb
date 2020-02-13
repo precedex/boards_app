@@ -130,6 +130,7 @@ class StaticPagesController < ApplicationController
     @xi = ["Amanda Xi", "http://blog.amandaxi.com"]
     @xibasic = ["How to Study for the ITE, BASIC, and anesthesia (2017)", "http://blog.amandaxi.com/2017/09/21/study-resources-ite-basic-anesthesia/"]
     @xibasic2 = ["How to Study for the ABA BASIC exam (2019)", "http://blog.amandaxi.com/2019/04/08/how-to-study-for-the-aba-american-board-of-anesthesiology-basic-exam/"]
+    @xiadvanced = ["How to Study for the ABA ADVANCED exam (2020)", "http://blog.amandaxi.com/2020/01/28/how-to-study-for-the-aba-american-board-of-anesthesiology-advanced-exam/"]
     @steinerarticles = ["articles", "http://www.anesthesiamadeeasy.com/resources"]
     @quizzes = ["quizzes", "http://www.proprofs.com/quiz-school/search.php?search=anesthesia"]
     @mathps = "/AnesthesiaMath-PS.pdf"
