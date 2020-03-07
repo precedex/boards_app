@@ -140,9 +140,9 @@
           <td>
             <%= link_to provider.name_lgl, employers_path(:employer_type => params[:provider_type], :state => "", :name_lgl => provider.name_lgl) %>
           </td> 
-          <% if provider.aba %>
+        <!--  <% if provider.aba %>
           <td style = "text-align: center"> <%=external_link_to image_tag("abaorbit.png"), provider.aba %> </td>
-          <% end %>
+          <% end %> -->
         </tr>
       <% end %>  
     </tbody>
@@ -151,9 +151,10 @@
 
 </div>
   <br>
-  <strong> Last update October 7, 2019 </strong>
+  <strong> Last update March 5, 2020 </strong>
   
 <!--
+  
 <div>
   <h2 style = "font-size: 2em">Import a CSV File</h2>
     <%= form_tag import_providers_path, multipart: true do %>
@@ -161,5 +162,6 @@
     <%= submit_tag "Import CSV" %>
     <% end %>
 </div>
+  
 -->
 

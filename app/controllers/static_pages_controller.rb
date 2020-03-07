@@ -520,7 +520,7 @@ class StaticPagesController < ApplicationController
   end
   
   def stopbang
-    @chung  = "http://journal.publications.chestnet.org/data/Journals/CHEST/935074/50903.pdf"
+    @chung  = "https://journal.chestnet.org/article/S0012-3692(15)00018-5/pdf"
     @snore  = params[:snoring_checkbox] 
     @tired   = params[:tired_checkbox] 
     @observed = params[:observed_checkbox]
