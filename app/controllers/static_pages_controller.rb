@@ -368,7 +368,7 @@ class StaticPagesController < ApplicationController
     @faq = "http://echoboards.org/EchoBoards/FAQ/EchoBoards/FAQ.aspx"
     @basic = "http://echoboards.org/EchoBoards/certs/Basic_PTEeXAM/EchoBoards/Content/Basic_PTEeXAM.aspx"
     @advanced = "http://echoboards.org/EchoBoards/certs/Advanced_PTEeXAM_/EchoBoards/Content/Advanced_PTEeXAM_.aspx"
-    @fellowships = "http://www.scahq.org/FellowshipCareerOpportunities/AdultCardiothoracicAnesthesiologyFellowships/AccreditedFellowshipPrograms.aspx"
+    @fellowships = "https://www.scahq.org/Fellowships-Career-Development/ACGME-Accredited-Fellowship-Programs"
     @basictee = "http://www.asecho.org/wordpress/wp-content/uploads/2013/05/Basic-Perioperative-TEE-Exam.pdf"
     @basicpte = "http://www.echoboards.org/sites/default/files/2010_Basic_PTEeXAM_Content_Outline.pdf"
     @advancedpte = "http://echoboards.org/AsiCommon/Controls/BSA/Downloader.aspx?iDocumentStorageKey=a215472d-0061-4178-99ce-61562dc710e5&iFileTypeCode=PDF&iFileName=CONTENT%20OUTLINE"
