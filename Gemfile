@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 ruby '2.6.3'
-gem 'rails', '5.2.3'
+gem 'rails', '6.0.3.1'
+gem 'sprockets-rails', '2.3.3'
 gem 'puma'
 gem 'bootstrap-sass'
 gem 'bootstrap-switch-rails'
