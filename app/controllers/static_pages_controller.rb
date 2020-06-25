@@ -140,6 +140,7 @@ class StaticPagesController < ApplicationController
     @propvideocourse = "https://vimeo.com/ondemand/propofology"
     @sdn = "https://forums.studentdoctor.net/forums/anesthesiology.45/"
     @study_strategy_basic = [
+      ["ABA Basic 2020 Thread (6/20)",                     "https://forums.studentdoctor.net/threads/aba-basic-2020-thread.1413135/"],
       ["Basic exam (6/19)",                                "https://forums.studentdoctor.net/threads/basic-exam.1377529/"],
       ["Anesthesiology Board Preps (3/19)",                "https://forums.studentdoctor.net/threads/anesthesiology-board-preps.1368402/"],
       ["PASS MACHINE basic exam materials (12/18)",        "https://forums.studentdoctor.net/threads/pass-machine-basic-exam-materials.1359113/"],
@@ -246,6 +247,7 @@ class StaticPagesController < ApplicationController
     @sdn = "https://forums.studentdoctor.net/forums/anesthesiology.45/"
 
     @study_strategy = [
+      ["2020 oral boards (3/20)",                                             "https://forums.studentdoctor.net/threads/2020-oral-boards.1402076/"],                       
       ["Oral boards 2019 (3/19)",                                             "https://forums.studentdoctor.net/threads/oral-boards-2019.1368945/"],
       ["How long to prepare for the orals? (3/19)",                           "https://forums.studentdoctor.net/threads/how-long-to-prepare-for-the-orals.1368535/"],
       ["Anesthesiology OSCE Exam (2/19)",                                     "https://forums.studentdoctor.net/threads/anesthesiology-osce-exam.1365099/"],

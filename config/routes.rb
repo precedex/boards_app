@@ -71,8 +71,6 @@ BoardsApp::Application.routes.draw do
     collection { post :import }
   end
   
-  get   '/calendar',                      to: 'static_pages#calendar'
-  
   get   'lectures/index',                 to: 'lectures#index'
   get   'lectures/import'
   resources :lectures do

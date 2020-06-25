@@ -57,7 +57,6 @@ module ApplicationHelper
   def on_education_path?
     current_page?(residencies_path) ||
     current_page?(ms_path) ||
-    current_page?(calendar_path) ||
     current_page?(lectures_path) ||
     current_page?(regional_path) ||
     current_page?(sites_pediatric_path) ||
