@@ -5,8 +5,10 @@ class ResourcesController < ApplicationController
   def index
     @resources = if params[:category_id]
                    Category.friendly.find(params[:category_id]).resources.by_title
+                 elsif params[:search] == ''
+                   Resource.by_title
                  elsif params[:search]
-                   Resource.searchtitlesandauthors(params[:search]) 
+                   Resource.searchtitlesandauthors(params[:search])
                  else
                    Resource.by_title
                  end

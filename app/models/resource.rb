@@ -10,11 +10,7 @@ class Resource < ActiveRecord::Base
   end
   
   def self.searchtitlesandauthors(search)
-    if search
       Resource.where(MATCH_LIKE, search: "%#{search.downcase}%")
-    else
-      Resource.all
-    end
   end
   
 end
