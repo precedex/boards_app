@@ -57,7 +57,7 @@ class StaticPagesController < ApplicationController
       ["ACC/AHA 2014 Preop Testing", "http://circ.ahajournals.org/content/early/2014/07/31/CIR.0000000000000106.full.pdf"],
       ["ASA Consensus Statement on ICDs/Pacemakers", "https://www.hrsonline.org/2011-expert-consensus-statement-perioperative-management-patients-implantable-defibrillators"],
       ["Machine Checkout Recommendations", "https://www.asahq.org/~/media/sites/asahq/files/public/resources/clinical-resources/finalcheckoutdesignguidelines.pdf"],
-      ["SCA Clinical Practice & Guidelines", "http://www.scahq.org/ClinicalPracticeGuidelines/Guidelines.aspx"],
+      ["SCA Clinical Practice & Guidelines", "https://www.scahq.org/practice-resources/clinical-practice-guidelines/"],
       ["Endocarditis Prophylaxis",   "endocarditis.jpg"],
       ["Difficult Airway Society",    "http://www.das.uk.com/guidelines"],
       ["ASRA Neuraxial Anticoags",   "https://kr.ihc.com/ext/Dcmnt?ncid=520499512&tfrm=default"],
