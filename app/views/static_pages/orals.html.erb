@@ -2,34 +2,26 @@
 <%= render 'layouts/subheader' %>
 
 <div class="exams">
-  <p> The <%= external_link_to *@part2 %> exam was replaced by the <%= external_link_to *@applied %> exam in 2017 with two components: </p>
+  <p> The part 2 exam was replaced by the APPLIED exam in 2017 with two components: </p>
     
     <ol>
       <p><strong> Standardized Oral Examination (SOE) </strong> <em>(<%= external_link_to *@soeqs %>)</em> </p>
 
-      <p><strong> Objective Structured Clinical Examination (OSCE) </strong> <em>(<%= external_link_to *@osce %>, <%= external_link_to *@oscescenarios%>, <%= external_link_to *@oscefaq %>)</em>  </p>
+      <p><strong> Objective Structured Clinical Examination (OSCE) </strong> <em>(<%= external_link_to *@osce %>, <%= external_link_to *@oscescenarios%>)</em>  </p>
     </ol>
 
   <%= image_tag("AppliedResults11-17.png") %>
   <%= image_tag("aba_orals1519.png") %>
   
   <p>
-    The APPLIED exam is offered 9 weeks a year at the ABA assessment center in Raleigh, NC:
+    The APPLIED exam is normally offered 9 weeks a year at the ABA assessment center in Raleigh, NC.
+    The ABA has released a statement on the plan for the <%= external_link_to *@applied_2021 %>.
   </p>
-
-  <div class='center'>
-    <%= image_tag("Applied20.png") %>
-  </div>
   
   <br>
   
   <p>
     <u>Successful Candidate Behavior</u> and <u>Improper Candidate Behavior</u>   
-    <%= external_link_to *@aba_archive %> from the ABA.
-  </p>
-  
-  <p>
-    <u>What to Expect: The ABA Part 2 Examination</u> and <u>ABA Part 2 Examination Orientation</u>  
     <%= external_link_to *@aba_videos %> from the ABA.
   </p>
   

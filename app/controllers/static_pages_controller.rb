@@ -5,7 +5,7 @@ class StaticPagesController < ApplicationController
   def about
     @david_moss =    ["David Moss, MD",                     "https://www.tuftsmedicalcenter.org/PhysicianDirectory/David-Moss.aspx"]
     @tufts_medical = ["Tufts Medical Center",               "https://www.tuftsmedicalcenter.org"]
-    @floating =      ["The Floating Hospital for Children", "https://www.floatinghospital.org"]
+    @floating =      ["Tufts Children's Hospital", "https://www.tuftschildrenshospital.org/"]
   end
 
   def feedback
@@ -100,20 +100,13 @@ class StaticPagesController < ApplicationController
   end
 
   def writtens
-    @ite = ["In-Training Exam", "http://www.theaba.org/TRAINING-PROGRAMS/In-training-Exam/About-the-In-Training-Exam"]
-    @basic = ["BASIC", "http://www.theaba.org/Exams/BASIC-(Staged-Exam)/About-BASIC-(Staged-Exam)"]
-    @advanced = ["ADVANCED", "http://www.theaba.org/Exams/ADVANCED-(Staged-Exam)/About-ADVANCED-(Staged-Exam)"]
-    @contentoutline = ["content outline", "http://www.theaba.org/PDFs/BASIC-Exam/Basic-and-Advanced-ContentOutline"]
-    @basicblueprint = ["blueprint", "http://www.theaba.org/PDFs/BASIC-Exam/BASIC-Exam-Blueprint"]
-    @advancedblueprint = ["blueprint", "http://www.theaba.org/PDFs/ADVANCED-Exam/ADVANCED-Exam-Blueprint"]
-    @basicq = ["sample questions", "http://www.theaba.org/PDFs/BASIC-Exam/BASIC-Exam-Sample-Questions"]
-    @advancedq = ["sample questions", "http://www.theaba.org/PDFs/ADVANCED-Exam/ADVANCED-Sample-Questions"]
-    @part1 = ["Part 1", "http://www.theaba.org/Exams/Traditional-Part-1/About-Traditional-Part-1"]
-    @part2 = ["Part 2", "http://www.theaba.org/Exams/Traditional-Part-2/About-Traditional-Part-2"]
-    @staged = ["Staged Exams", "http://www.theaba.org/PDFs/BOI/StagedExaminations-BOI"]
-    @old_aba_exams = ["1990-1996 In-training Examinations", "http://www.theaba.org/TRAINING-PROGRAMS/In-training-Exam/Previous-Exams"]
-    @aba_training_programs = ["here", "http://www.theaba.org/Home/TrainingPrograms"]
-    @aba_content_outline = ["content outline", "http://www.theaba.org/PDFs/BASIC-Exam/Basic-and-Advanced-ContentOutline"]
+    @certification = ["certification", "https://theaba.org/what%20we%20do.html#CERTIFICATION"]
+    @staged = ["Staged Exams", "https://theaba.org/staged%20exams.html"]
+    @contentoutline = ["content outline", "https://theaba.org/pdfs/Initial_Certification_Content_Outline.pdf"]
+    @basicq = ["sample questions", "https://theaba.org/pdfs/BASIC_Questions.pdf"]
+    @basicblueprint = ["blueprint", "https://theaba.org/pdfs/BASIC_Blueprint.pdf"]
+    @advancedq = ["sample questions", "https://theaba.org/pdfs/ADVANCED_Questions.pdf"]
+    @advancedblueprint = ["blueprint", "https://theaba.org/pdfs/ADVANCED_Blueprint.pdf"]
     @ace = ["ACE Exam Questions", "http://anesthesia-training.net/misc/ace-tests/"]
     @gaps = ["Gaps in Knowledge", "http://www.theaba.org/PDFs/ITE-Exam/ITE-Gaps-in-Knowledge-Report.pdf"]
     @aba_exam_summary = ["2014 Exam Summary (PDF)", "http://www.theaba.org/pdf/SAAA-Exams-Report.pdf"]
@@ -224,17 +217,13 @@ class StaticPagesController < ApplicationController
   end
 
   def orals
-    @part2 = ["part 2", "http://www.theaba.org/Exams/Traditional-Part-2/About-Traditional-Part-2"]
-    @applied = ["APPLIED", "http://www.theaba.org/Exams/APPLIED-(Staged-Exam)/About-APPLIED-(Staged-Exam)"]
-    @soeqs = ["Sample Questions", "http://www.theaba.org/PDFs/APPLIED-Exam/SOE-Sample-Questions"]
-    @osce = ["Content Outline", "http://www.theaba.org/PDFs/APPLIED-Exam/APPLIED-OSCE-ContentOutline"]
-    @oscefaq = ["FAQ", "http://www.theaba.org/PDFs/APPLIED-Exam/OSCE-FAQs"]
-    @oscescenarios = "Examples", "http://www.theaba.org/PDFs/APPLIED-Exam/OSCE-Exemplar-Scenarios"
-    @aba_archive = ["videos", 'http://www.theaba.org/TRAINING-PROGRAMS/Traditional-Part-2/Traditional-Part-2-Videos']
-    @aba_videos = ["videos", 'http://www.theaba.org/ABOUT/Videos']
+    @soeqs = ["Sample Questions", "https://theaba.org/pdfs/SOE_Questions.pdf"]
+    @osce = ["Content Outline", "https://theaba.org/pdfs/OSCE_Content_Outline.pdf"]
+    @oscescenarios = "Examples", "https://theaba.org/pdfs/OSCE_Scenarios.pdf"
+    @aba_videos = ["videos", 'https://theaba.org/video%20gallery.html']
+    @applied_2021 = ["2021 APPLIED Exams", "http://aba-news.org/2020/06/our-plan-for-the-2021-applied-exams/"]
     @exam_hints_pdf = ["Hints for Mastering the Orals", 'http://anesthesiaboardhints.homestead.com/HintsfortheAnesthesiologyBoardExaminationRev1.6.pdf']
     @lovich = ["PowerPoint", "http://www.powershow.com/view/3c317a-MzI1Z/The_Things_I_Do_For_the_Residents_May_8_2008_Jessica_powerpoint_ppt_presentation"]
-    @aba_training_programs = ["here", "http://www.theaba.org/Home/TrainingPrograms"]
     @jensenweapons = ["Outlining-Attacking the Stem Question: The Knockout Blow", "https://www.anesthesiologyboards.com/pdfs/outlining.pdf"]
     @the_anesthesia_consultant = ["The Anesthesia Consultant", 'http://theanesthesiaconsultant.com/2013/08/22/advice-for-passing-the-oral-board-exams-in-anesthesiology/']
     @accrac = ["ACCRAC", "http://accrac.com"]
