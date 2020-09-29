@@ -296,13 +296,12 @@ class StaticPagesController < ApplicationController
   end
 
   def pedsboards
-    @peds_cert = ["certification", "http://www.theaba.org/Exams/Pediatric-Anesthesiology/Pediatric-Anesthesiology"]
     @pedsfellowships = "http://www.pedsanesthesia.org/fellowships/"
     @nrmp = "http://www.nrmp.org/fellowship-match-data/"
     @wfsa = "http://www.wfsahq.org/resources/update-in-anaesthesia"
-    @peds_exam_content = "http://www.theaba.org/PDFs/Pediatrics-Anesthesiology/PAContentOutline"
-    @peds_exam_blueprint = "http://www.theaba.org/PDFs/Pediatrics-Anesthesiology/PA-Exam-Blueprint"
-    @peds_exam_questions = "http://www.theaba.org/PDFs/Pediatrics-Anesthesiology/PA-Sample-Questions"
+    @peds_exam_content = "https://www.theaba.org/pdfs/PA_Content_Outline.pdf"
+    @peds_exam_blueprint = "https://www.theaba.org/pdfs/PA_Blueprint.pdf"
+    @peds_exam_questions = "https://www.theaba.org/pdfs/PA_Questions.pdf"
     @sdn = "https://forums.studentdoctor.net/forums/anesthesiology.45/"
     @study_strategy = [
       ["Pediatric question book (5/18)",                                     "https://forums.studentdoctor.net/threads/pediatric-question-book.1311062/"],
@@ -326,12 +325,11 @@ class StaticPagesController < ApplicationController
   end
   
   def painboards
-    @pain_cert = ["pain medicine examination", "http://www.theaba.org/Exams/Pain-Medicine-Certification/Pain-Medicine-Certification"]
     @nrmp = "http://www.nrmp.org/fellowship-match-data/"
     @abpm = "http://www.abpm.org"
-    @pain_exam_content = "http://www.theaba.org/PDFs/Pain-Medicine/PMContentOutline"
-    @pain_exam_blueprint = "http://www.theaba.org/PDFs/Pain-Medicine/PM-Exam-Blueprint"
-    @pain_exam_questions = "http://www.theaba.org/PDFs/Pain-Medicine/PM-Sample-Questions"
+    @pain_exam_content = "https://www.theaba.org/pdfs/PM_Content_Outline.pdf"
+    @pain_exam_blueprint = "https://www.theaba.org/pdfs/PM_Blueprint.pdf"
+    @pain_exam_questions = "https://www.theaba.org/pdfs/PM_Questions.pdf"
     @rosenblum = "https://itunes.apple.com/us/podcast/anesthesiaexam-podcast/id987251541?mt=2"
     @sdn = "https://forums.studentdoctor.net/forums/anesthesiology.45/"
     @commercial_courses = [
@@ -342,9 +340,9 @@ class StaticPagesController < ApplicationController
   end
   
   def icuboards
-    @icu_cert = ["critical care medicine examination", "http://www.theaba.org/Exams/Critical-Care-Medicine-Certification/Critical-Care-Medicine-Certification"]
-    @icu_exam_content = "http://www.theaba.org/PDFs/Critical-Care-Medicine/ContentOutline_CCM"
-    @icu_exam_blueprint = "http://www.theaba.org/PDFs/Critical-Care-Medicine/CCM-Exam-Blueprint"
+    @icu_exam_content = "https://www.theaba.org/pdfs/CCM_Content_Outline.pdf"
+    @icu_exam_blueprint = "https://www.theaba.org/pdfs/CCM_Blueprint.pdf"
+    @icu_exam_questions = "https://www.theaba.org/pdfs/CCM_Questions.pdf"
     @deranged = "https://derangedphysiology.com/main/home"
     @cicm = "https://cicm.org.au/Trainees/Assessments-and-Examinations/Second-Part-Exam"
     @sdn = "https://forums.studentdoctor.net/forums/anesthesiology.45/"
@@ -412,16 +410,12 @@ class StaticPagesController < ApplicationController
   end
   
   def moca
-    @aba = "http://www.theaba.org/MOCA/About-MOCA"
-    @abms = "http://www.abms.org"
-    @moca = "http://www.theaba.org/MOCA/About-MOCA"
-    @moca2 = "http://www.theaba.org/PDFs/MOCA/MOCA-2-0-FAQs"
-    @moca3 = "http://www.theaba.org/MOCA/MOCA-Timeline"
-    @mocaminute = "http://www.theaba.org/MOCA/MOCA-Minute"
+    @moca2about = "https://www.theaba.org/about%20moca%202.0.html"
+    @mocaminute = "https://www.theaba.org/pdfs/MOCA_Content_Outline.pdf"
     @sim = "http://education.asahq.org/sim/endorsed"
     @ppai = "http://education.asahq.org/PPAI"
-    @activities = "http://www.theaba.org/PDFs/MOCA/MOCA-2-0-Part-4-Requirements"
-    @cme = "http://www.theaba.org/PDFs/MOCA/ABA-Approved-CME"
+    @activities = "https://www.theaba.org/pdfs/MOCA_QI_Activities.pdf"
+    @cme = "https://www.theaba.org/pdfs/MOCA_Patient_Safety_CME.pdf"
     @sdn = "https://forums.studentdoctor.net/forums/anesthesiology.45/"
     @study_strategy = [
       ["MOCA 2.0 Deadline - Participate or NOT??? (3/16)",                                  "http://forums.studentdoctor.net/threads/moca-2-0-deadline-participate-or-not.1190644/"],

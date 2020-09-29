@@ -2,7 +2,7 @@
 <%= render 'layouts/subheader' %>
 
 <div class="exams">  
-  <p> Subspecialty certification in Critical Care medicine requires completion of a one-year fellowship and passing of the annual <%= external_link_to *@icu_cert%>.</p>
+  <p> Subspecialty certification in Critical Care medicine requires completion of a one-year fellowship and passing of the annual examination.</p>
   
   <p> Certification in critical care medicine began in 1986. The success rate on recent exams was:</p>
   
@@ -10,8 +10,9 @@
   <%= image_tag("aba_ccm1519.png") %>
       
   <p>
-    The ABA has posted the <%= external_link_to "content outline", @icu_exam_content %> and
-    <%= external_link_to "blueprint", @icu_exam_blueprint %>.
+    The ABA has posted the <%= external_link_to "content outline", @icu_exam_content %>,
+    <%= external_link_to "blueprint", @icu_exam_blueprint %>, and
+     <%= external_link_to "sample questions", @icu_exam_questions %>.
   </p>
   
   <p> Alex Yartsev's site, <%= external_link_to "Deranged Physiology", @deranged %>, on preparing for New Zealand's <%= external_link_to "CICM Part 2", @cicm %> may be helpful. </p>
