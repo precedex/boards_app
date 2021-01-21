@@ -14,26 +14,26 @@ class StaticPagesController < ApplicationController
 
   def tools
     @acls_algos = [
-      ["BLS Algorthim",               "https://eccguidelines.heart.org/wp-content/uploads/2015/09/BLS-Adult-Cardiac-Arrest-Algorithm---2015-Update.png"],
-      ["Cardiac Arrest Cycle",        "https://eccguidelines.heart.org/wp-content/uploads/2015/10/2010-Integrated_Updated-Circulation-ACLS-Cardiac-Arrest-Circular-Algorithm.png"],
-      ["Cardiac Arrest Algortihm",    "https://eccguidelines.heart.org/wp-content/uploads/2015/10/ACLS-Cardiac-Arrest-Algorithm.png"],
-      ["5 H's & 5 T's",               "https://eccguidelines.heart.org/index.php/tables/2010-treatable-causes-of-cardiac-arrest-the-hs-and-ts/"],
-      ["Bradycardia (with pulse)",    "https://eccguidelines.heart.org/wp-content/uploads/2015/10/2010-Integrated_Updated-Circulation-ACLS-Bradycardia-Algorithm.png"],
-      ["Tachycardia (with pulse)",    "https://eccguidelines.heart.org/wp-content/uploads/2015/10/2010-Integrated_Updated-Circulation-ACLS-Tachycardia-Algorithm.png"],
-      ["Acute Coronary Syndrome",     "https://eccguidelines.heart.org/wp-content/uploads/2015/10/2010-Integrated_Updated-Circulation-ACLS-Acute-Coronary-Syndromes-Algorithm.png"],
-      ["Suspected Stroke",            "http://crashingpatient.com/wp-content/images/acls/stroke.jpeg"],
-      ["Opioid-associated Emergency", "https://eccguidelines.heart.org/wp-content/uploads/2015/10/BLS-Opioid-Associated-Emergency-Algorithm.png"],
-      ["Cardiac Arrest in Pregnancy", "http://crashingpatient.com/wp-content/images/acls/maternal%20card.jpeg"]
+      ["BLS Algorthim",               "https://cpr.heart.org/-/media/cpr-files/cpr-guidelines-files/algorithms/algorithmbls_adult_200624.pdf?la=en"],
+      ["Cardiac Arrest Cycle",        "https://cpr.heart.org/-/media/cpr-files/cpr-guidelines-files/algorithms/algorithmacls_ca_circular_200612.pdf?la=en"],
+      ["Cardiac Arrest Algortihm",    "https://cpr.heart.org/-/media/cpr-files/cpr-guidelines-files/algorithms/algorithmacls_ca_200612.pdf?la=en"],
+      ["Bradycardia (with pulse)",    "https://cpr.heart.org/-/media/cpr-files/cpr-guidelines-files/algorithms/algorithmacls_bradycardia_200612.pdf"],
+      ["Tachycardia (with pulse)",    "https://cpr.heart.org/-/media/cpr-files/cpr-guidelines-files/algorithms/algorithmacls_tachycardia_200612.pdf"],
+      ["Post Cardiac Arrest Care",    "https://cpr.heart.org/-/media/cpr-files/cpr-guidelines-files/algorithms/algorithmacls_pcac_200622.pdf?la=en"],  
+     # ["Acute Coronary Syndrome",     "https://eccguidelines.heart.org/wp-content/uploads/2015/10/2010-Integrated_Updated-Circulation-ACLS-Acute-Coronary-Syndromes-Algorithm.png"],
+     # ["Suspected Stroke",            "http://crashingpatient.com/wp-content/images/acls/stroke.jpeg"],
+      ["Opioid-associated Emergency", "https://cpr.heart.org/-/media/cpr-files/cpr-guidelines-files/algorithms/algorithmopioidlay_responder_200615.pdf?la=en"],
+      ["Cardiac Arrest in Pregnancy", "https://cpr.heart.org/-/media/cpr-files/cpr-guidelines-files/algorithms/algorithmacls_ca_in_pregnancy_inhospital_200612.pdf?la=en"]
     ]
 
     @pals_algos = [
-      ["BLS Algorithm (single rescuer)", "https://eccguidelines.heart.org/wp-content/uploads/2015/10/BLS-Pediatric-Cardiac-Arrest-Single-Rescuer-Algorithm.png"],
-      ["BLS Algortihm (2+ rescuers)", "https://eccguidelines.heart.org/wp-content/uploads/2015/10/BLS-Pediatric-Cardiac-Arrest-2-or-More-Rescuers-Algorithm.png"],
-      ["Cardiac Arrest Algorithm", "https://eccguidelines.heart.org/wp-content/uploads/2015/10/PALS-Cardiac-Arrest-Algorithm.png"],
-      ["Bradycardia (with pulse)", "https://eccguidelines.heart.org/wp-content/uploads/2015/10/Pediatric-Bradycardia-With-a-Pulse-and-Poor-Perfusion-Algorithm.png"],
-      ["Tachycardia (with pulse)", "https://eccguidelines.heart.org/wp-content/uploads/2015/09/Pediatric-Tachycardia-With-a-Pulse-and-Poor-Perfusion-Algorithm.png"],
-      ["Neonatal Resuscitation Summary", "https://www.aap.org/en-us/Documents/nrp_guidelines_english.pdf"],
-      ["Neonatal Resuscitation Protocol",    "https://eccguidelines.heart.org/wp-content/uploads/2015/10/Neonatal-Resuscitation-Algorithm.png"]
+      ["BLS Algorithm (single rescuer)", "https://cpr.heart.org/-/media/cpr-files/cpr-guidelines-files/algorithms/algorithmbls_ped_single_rescuer_200624.pdf?la=en"],
+      ["BLS Algortihm (2+ rescuers)", "https://cpr.heart.org/-/media/cpr-files/cpr-guidelines-files/algorithms/algorithmbls_ped_2_rescuers_200624.pdf?la=en"],
+      ["Cardiac Arrest Algorithm", "https://cpr.heart.org/-/media/cpr-files/cpr-guidelines-files/algorithms/algorithmpals_ca_200707.pdf?la=en"],
+      ["Bradycardia (with pulse)", "https://cpr.heart.org/-/media/cpr-files/cpr-guidelines-files/algorithms/algorithmpals_bradycardia_200707.pdf?la=en"],
+      ["Tachycardia (with pulse)", "https://cpr.heart.org/-/media/cpr-files/cpr-guidelines-files/algorithms/algorithmpals_tachycardia_200618.pdf?la=en"],
+      ["Post Cardiac Arrest Care Checklist", "https://cpr.heart.org/-/media/cpr-files/cpr-guidelines-files/algorithms/pcac_checkllst_200814.pdf"],
+      ["Neonatal Resuscitation Algorithm",    "https://cpr.heart.org/-/media/cpr-files/cpr-guidelines-files/algorithms/algorithmneonatal_resuscitation_200615.pdf?la=en"]
     ]
 
     @critical_events = [
@@ -78,7 +78,7 @@ class StaticPagesController < ApplicationController
     @calculators = [
       ["Arterial Blood Gas Analyzer",    "http://www.mdcalc.com/arterial-blood-gas-abg-analyzer/"],
       ["Society of Thoracic Surgeons Cardiac Surgery Risk", "http://riskcalc.sts.org/stswebriskcalc/#/calculate"],
-      ["Gupta Perioperative Cardiac Risk", "http://www.qxmd.com/calculate-online/cardiology/gupta-perioperative-cardiac-risk"],
+      ["Gupta Perioperative Cardiac Risk", "https://qxmd.com/calculate/calculator_245/gupta-perioperative-cardiac-risk"],
       ["NSQIP Surgical Risk Calculator", "http://riskcalculator.facs.org"],
       ["Apgar Score",                    "http://www.mdcalc.com/apgar-score/"],
       ["Surgical Apgar Score",           "http://www.mdcalc.com/surgical-apgar-score-sas-post-operative-risk/"],
