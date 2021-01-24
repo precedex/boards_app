@@ -127,6 +127,7 @@ ActiveRecord::Schema.define(version: 2018_02_18_174240) do
     t.string "state"
     t.string "program"
     t.string "website"
+    t.string "video"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

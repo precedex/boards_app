@@ -16,6 +16,7 @@
       <tr>
         <th>State</th>
         <th>Program</th>
+        <th>Video</th>
       </tr>         
     </thead>
     <tbody>
@@ -23,6 +24,7 @@
         <tr>
           <td><%= residency.state %></td>
           <td><%= external_link_to residency.program, residency.website %></td>
+          <td><%= external_link_to image_tag("smallYT.png"), residency.video if residency.video %></td>
         </tr>
       <% end %>
     </tbody>
