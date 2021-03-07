@@ -68,7 +68,7 @@ class StaticPagesController < ApplicationController
     @drug_dosing = [
       ["Narcotic Equivalence Converter", "http://medcalc.com/narcotics.html"],
       ["Steroid Equivalence Converter",  "https://www.mdcalc.com/steroid-conversion-calculator"],
-      ["PALS Drugs",                  "https://eccguidelines.heart.org/index.php/tables/2010-medications-for-pediatric-resuscitation/"],
+      #["PALS Drugs",                  "https://eccguidelines.heart.org/index.php/tables/2010-medications-for-pediatric-resuscitation/"],
       #["Peds Anesthesia Drugs",       "http://anesthesia.stonybrook.edu/teaching/peds-drug-dosages"],
       #["Peds Anesthesia Pocket Ref",  "http://pedianesthesia.ucsf.edu/pdf_pedirefcard.pdf"],
       ["Periop Antibiotic Dosing",    "https://www.ashp.org/-/media/assets/policy-guidelines/docs/therapeutic-guidelines/therapeutic-guidelines-antimicrobial-prophylaxis-surgery.ashx?la=en&hash=A15B4714417A51A03E5BDCAC150B94EAF899D49B"],
