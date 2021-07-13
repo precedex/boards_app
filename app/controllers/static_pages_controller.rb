@@ -38,10 +38,10 @@ class StaticPagesController < ApplicationController
 
     @critical_events = [
       ["Difficult Airway Algorithm (2013)", "Airway.jpg"],
-      ["Ariadne Labs OR Crisis Checklists", "https://www.ariadnelabs.org/wp-content/uploads/sites/2/2015/08/OR-Crisis-Checklists-package-10-11-13.pdf"],
+      ["Ariadne Labs OR Crisis Checklists", "https://www.ariadnelabs.org/areas-of-work/surgery-or-crisis-checklists/"],
       ["Anaphylaxis",                       "Anaphylaxis.jpg"],
       ["Malignant Hyperthermia",            "https://www.mhaus.org/healthcare-professionals/managing-a-crisis/"],
-      ["Local Anesthetic Toxity (ASRA)",    "https://www.asra.com/content/documents/checklist-for-local-anesthetic-toxicity-treatment-1-18-12.pdf"],
+      ["Local Anesthetic Systemic Toxity (ASRA)",    "https://www.asra.com/guidelines-articles/original-articles/article-item/guidelines/2020/11/01/checklist-for-treatment-of-local-anesthetic-systemic-toxicity"],
       ["Pediatric Critical Events",  "https://www.pedsanesthesia.org/wp-content/uploads/2018/11/SPAPediCrisisChecklistsNov2018.pdf"],
       ["Laryngospasm",               "http://www.maskinduction.com/uploads/3/1/6/4/31643965/laryngospasm_management_algorithm.pdf"]   
     ]
@@ -60,9 +60,9 @@ class StaticPagesController < ApplicationController
       ["SCA Clinical Practice & Guidelines", "https://www.scahq.org/practice-resources/clinical-practice-guidelines/"],
       ["Endocarditis Prophylaxis",   "endocarditis.jpg"],
       ["Difficult Airway Society",    "http://www.das.uk.com/guidelines"],
-      ["ASRA Neuraxial Anticoags",   "https://kr.ihc.com/ext/Dcmnt?ncid=520499512&tfrm=default"],
+      ["ASRA Neuraxial Anticoags",   "https://rapm.bmj.com/content/rapm/43/3/263.full.pdf"],
       ["ASA Practice Guidance Resources", "http://www.asahq.org/quality-and-practice-management/standards-guidelines-and-related-resources-search"],
-      ["Sedation and Anesthesia in GI Endoscopy", "http://www.asge.org/uploadedFiles/Publications_and_Products/Practice_Guidelines/Sedation%20and%20Anesthesia%20in%20GI%20Endoscopy%202008.pdf"]
+      #["Sedation and Anesthesia in GI Endoscopy", "http://www.asge.org/uploadedFiles/Publications_and_Products/Practice_Guidelines/Sedation%20and%20Anesthesia%20in%20GI%20Endoscopy%202008.pdf"]
     ]
 
     @drug_dosing = [
@@ -80,6 +80,7 @@ class StaticPagesController < ApplicationController
       ["Society of Thoracic Surgeons Cardiac Surgery Risk", "http://riskcalc.sts.org/stswebriskcalc/#/calculate"],
       ["Gupta Perioperative Cardiac Risk", "https://qxmd.com/calculate/calculator_245/gupta-perioperative-cardiac-risk"],
       ["NSQIP Surgical Risk Calculator", "http://riskcalculator.facs.org"],
+      ["Caprini Score for VTE",          "https://www.mdcalc.com/caprini-score-venous-thromboembolism-2005"],                    
       ["Apgar Score",                    "http://www.mdcalc.com/apgar-score/"],
       ["Surgical Apgar Score",           "http://www.mdcalc.com/surgical-apgar-score-sas-post-operative-risk/"],
       ["MELD Score",                     "http://www.mdcalc.com/meld-score-model-for-end-stage-liver-disease-12-and-older/"],
@@ -108,7 +109,7 @@ class StaticPagesController < ApplicationController
     @advancedq = ["sample questions", "https://theaba.org/pdfs/ADVANCED_Questions.pdf"]
     @advancedblueprint = ["blueprint", "https://theaba.org/pdfs/ADVANCED_Blueprint.pdf"]
     @ace = ["ACE Exam Questions", "http://anesthesia-training.net/misc/ace-tests/"]
-    @gaps = ["Gaps in Knowledge", "http://www.theaba.org/PDFs/ITE-Exam/ITE-Gaps-in-Knowledge-Report.pdf"]
+    @gaps = ["Gaps in Knowledge", "https://theaba.org/pdfs/ITE_Gaps_Knowledge_Report.pdf"]
     @aba_exam_summary = ["2014 Exam Summary (PDF)", "http://www.theaba.org/pdf/SAAA-Exams-Report.pdf"]
     @open_anesthesia_keywords = ["Open Anesthesia", "http://www.openanesthesia.org/OpenAnesthesia.org:KeywordBrowser"]
     @kentucky_keywords2016 = ["anesthesia keyword review lecture series 2016", "https://www.youtube.com/playlist?list=PLh0m5d4Yfc8zuGHKyc0UdaUAPqNLUOqnT"]
@@ -119,6 +120,7 @@ class StaticPagesController < ApplicationController
     @gap2016 = ["2016", "https://youtu.be/qecGo1NyUBg"]
     @gap20178 = ["2017-8", "https://youtu.be/vAvLdl20orY"]
     @gap2019 = ["2019", "https://youtu.be/fpseLaUtDDE"]
+    @gap2020 = ["2020", "https://youtu.be/X9NEntK89fE"]
     @accrac = ["ACCRAC", "http://accrac.com"]
     @xi = ["Amanda Xi", "http://blog.amandaxi.com"]
     @xibasic = ["How to Study for the ITE, BASIC, and anesthesia (2017)", "http://blog.amandaxi.com/2017/09/21/study-resources-ite-basic-anesthesia/"]
