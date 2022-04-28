@@ -1,6 +1,6 @@
 state,program,website,video
 AL,U. Alabama,https://www.uab.edu/medicine/anesthesiology,
-AZ,U. Arizona,http://anesth.medicine.arizona.edu,
+AZ,U. Arizona,https://anesth.medicine.arizona.edu/,
 AZ,Mayo Clinic AZ,http://www.mayo.edu/mayo-clinic-school-of-graduate-medical-education/residencies-fellowships/anesthesiology/anesthesiology-residency-arizona,
 AR,U. Arkansas,http://anesthesiology.uams.edu,https://youtu.be/c-nj7YOz5K0
 CA,Harbor/UCLA,http://www.harbor-ucla.org/anesthesiology,
@@ -8,24 +8,24 @@ CA,Naval Medical Center San Diego,https://sandiego.tricare.mil/Graduate-Medical-
 CA,UC Davis,http://www.ucdmc.ucdavis.edu/anesthesiology,
 CA,UC Irvine,http://www.anesthesiology.uci.edu,
 CA,Loma Linda,http://www.lluanesthesia.com,
-CA,USC,http://keck.usc.edu/anesthesia,
+CA,USC,http://keck.usc.edu/anesthesia, https://youtu.be/laNZz3X02do
 CA,Cedars-Sinai,https://www.cedars-sinai.edu/education/graduate-medical/residency/anesthesiology.html,https://youtu.be/j1cJ-ax-aPQ
 CA,UCLA,https://www.uclahealth.org/anes,
-CA,UCSD,http://anesthesia.ucsd.edu/Pages/default.aspx,
+CA,UCSD,http://anesthesia.ucsd.edu/Pages/default.aspx, https://youtu.be/xPNo2RAx4No
 CA,UCSF,http://anesthesia.ucsf.edu/extranet/home/default.php,
 CA,Stanford,http://med.stanford.edu/anesthesia,
-CO,U. Colorado,http://www.ucdenver.edu/academics/colleges/medicalschool/departments/Anesthesiology/Pages/Anesthesiology.aspx,
+CO,U. Colorado,http://www.ucdenver.edu/academics/colleges/medicalschool/departments/Anesthesiology/Pages/Anesthesiology.aspx, https://youtu.be/h2FH6v1mF7s
 CT,Yale,http://medicine.yale.edu/anesthesiology,
 CT,U. Connecticut,https://health.uconn.edu/graduate-medical-education/anesthesiology-residency-program,
 DC,Georgetown,http://anesthesiology.georgetown.edu,
 DC,George Washington,http://smhs.gwu.edu/anesthesiology,
 DC,National Capital Consortium,https://walterreed.tricare.mil/Health-Services/Hospital-Care-Surgery/Anesthesia,
 FL,Mount Sinai,http://www.msmc.com/education/anesthesiology,
-FL,U. Florida Jacksonville,http://hscj.ufl.edu/anesthesiology,
+FL,U. Florida Jacksonville,http://hscj.ufl.edu/anesthesiology, https://youtu.be/OuBA_pkNUGU
 FL,Mayo Clinic Jacksonville,http://www.mayo.edu/msgme/residencies-fellowships/anesthesiology/anesthesiology-residency-florida,
-FL,U. Florida,http://www.anest.ufl.edu/,https://youtu.be/uWkojPCHBXQ
+FL,U. Florida,https://anest.ufl.edu/,https://youtu.be/uWkojPCHBXQ
 FL,Jackson Memorial (Miami),http://anesthesiology.med.miami.edu,
-GA,Medical College of GA,http://www.gru.edu/mcg/anes,
+GA,Medical College of GA,http://www.gru.edu/mcg/anes,https://youtu.be/GdUMCSuZKPs
 GA,Emory,http://www.anesthesiology.emory.edu,
 IL,U. Illinois,http://chicago.medicine.uic.edu/departments___programs/departments/anesthesiology,
 IL,U. Chicago,http://anesthesia.uchicago.edu,
@@ -36,7 +36,7 @@ IL,Northwestern,http://www.feinberg.northwestern.edu/sites/anesthesiology,
 IL,Rush,https://www.rushu.rush.edu/rush-medical-college/departments/anesthesiology,
 IN,Indiana U.,https://medicine.iu.edu/anesthesia,
 IO,U. Iowa,https://medicine.uiowa.edu/anesthesia,
-KA,U. Kansas,http://www.kumc.edu/anes,
+KA,U. Kansas,http://www.kumc.edu/anes,https://youtu.be/yP7GtB_OUvU
 KA,U. Kansas (Wichita),http://wichita.kumc.edu/anesthesiology.html,
 KY,U. Kentucky,http://www.wildcatanesthesia.com/,https://youtu.be/T1bCBu72DdE
 KY,U. Louisville,http://louisville.edu/medschool/anesthesiology/,https://youtu.be/Q6pFA8LBgkE
@@ -59,7 +59,7 @@ MA,U. Mass,http://www.umassmed.edu/anes,
 ME,Maine Medical,https://www.mainehealth.org/Services/Anesthesiology,
 MI,Wayne State,http://anesthesiology.med.wayne.edu,
 MI,Beaumont Health (Royal Oak),https://www.beaumont.edu/graduate-medical-education/residency-programs/anesthesiology,https://youtu.be/2uKSosgO0Kk
-MI,U. Michigan,https://medicine.umich.edu/dept/anesthesiology,https://youtu.be/I0A2BlU3LpA
+MI,U. Michigan,https://medicine.umich.edu/dept/anesthesiology,https://youtu.be/rswfPYTZx-g
 MI,Henry Ford,https://www.henryford.com/hcp/academic/anesthesiology,
 MI,Detroit Medical,http://www.dmc.org/anesthesiologyresidency,
 MN,Mayo Clinic,http://www.mayo.edu/msgme/residencies-fellowships/anesthesiology/anesthesiology-residency-minnesota,
@@ -70,7 +70,7 @@ MO,Washington University,http://www.anest.wustl.edu/,https://youtu.be/XyZ1ZVS93d
 MO,U. Missouri Kansas City,http://med.umkc.edu/anesthesiology,
 MO,St. Louis University,https://www.slu.edu/medicine/anesthesiology-critical-care/index.php,
 NC,U. North Carolina,http://www.med.unc.edu/anesthesiology,
-NC,Wake Forest,http://www.wakehealth.edu/School/Anesthesiology,
+NC,Wake Forest,https://school.wakehealth.edu/Departments/Anesthesiology,
 NC,Duke,http://anesthesiology.duke.edu,https://youtu.be/3TvmMzXL2es
 NE,U. Nebraska,https://www.unmc.edu/anesthesia,
 NH,Dartmouth-Hitchcock,https://gme.dartmouth-hitchcock.org/anesthesiology.html
@@ -92,11 +92,12 @@ NY,Mount Sinai,http://www.mssm.edu/departments-and-institutes/anesthesiology,htt
 NY,New York Medical College,https://www.nymc.edu/departments/academic-departments/school-of-medicine/anesthesiology,
 NY,New York-Presbyterian Brooklyn Methodist,https://www.nyp.org/brooklyn/medical-education/medical-residency-programs/anesthesiology,
 NY,NYU,http://www.med.nyu.edu/anes,
-NY,SUNY Downstate,http://www.downstate.edu/anesthesiology,
+NY,SUNY Downstate,https://www.downstate.edu/education-training/fellowship-residency-programs/anesthesiology/index.html,
 NY,SUNY Upstate,http://www.upstate.edu/anesthesiology,
 NY,SUNY Stony Brook,https://medicine.stonybrookmedicine.edu/anesthesiology,https://youtu.be/oCddo_OGQAg
-NY,U. Buffalo,http://www.smbs.buffalo.edu/anest/index.php,
+NY,U. Buffalo,http://www.smbs.buffalo.edu/anest/index.php,https://youtu.be/HMImumQKQnU
 NY,U. Rochester,https://www.urmc.rochester.edu/anesthesiology.aspx,
+NY,Vassar Brothers Medical Center, https://learning.nuvancehealth.org/residency-programs/anesthesiology-residency-program/,https://youtu.be/gkM3ehZMSC0
 OH,Ohio State,https://medicine.osu.edu/departments/anesthesiology,
 OH,U. Cincinnati,https://med.uc.edu/anesth,
 OH,Case Western,https://www.uhhospitals.org/services/anesthesiology-services,
@@ -117,7 +118,7 @@ PR,U. Puerto Rico,https://md.rcm.upr.edu/anesthesiology,
 RI,Brown University/Rhode Island Hospital,https://www.brown.edu/academics/medical/anesthesiology/,https://youtu.be/YTMZWqXVhv8
 SC,Medical U. South Carolina,http://www.musc.edu/anesthesia,
 TN,U. Tennessee,http://gsm.utmck.edu/anesthesiology/main.htm,
-TN,Vanderbilt,https://www.vumc.org/anesthesiology,
+TN,Vanderbilt,https://www.vumc.org/anesthesiology, https://youtu.be/9Ml1PntY8-k
 TX,UT Medical Branch,https://www.utmb.edu/anesthesia,
 TX,Texas Tech,https://www.ttuhsc.edu/medicine/anesthesiology,
 TX,San Antonio Uniformed Services,https://bamc.tricare.mil/About-Us/SAUSHEC/Residency-Information/Anesthesiology,
@@ -129,7 +130,7 @@ UT,U. Utah,http://medicine.utah.edu/anesthesiology/education/residency,
 VA,U. Virginia,https://med.virginia.edu/anesthesiology/,https://youtu.be/LvFV3-CCPQg
 VA,Virginia Commonwealth University,http://www.anesthesiology.vcu.edu,
 VA,Naval Medical Center Portsmouth,https://www.med.navy.mil/sites/nmcp/dept/sitepages/GMED/residencies.aspx,
-VT,U. Vermont,http://www.med.uvm.edu/anesthesiology,
+VT,U. Vermont,http://www.med.uvm.edu/anesthesiology,https://youtu.be/HI7n1MDP78I
 WA,U. Washington,http://depts.washington.edu/anesth/,https://youtu.be/51Tu5i3gf98
 WA,Virginia Mason,https://www.virginiamason.org/anesthesiology-residency,https://youtu.be/6kobMBDQyFc
 WV,West Virginia University,http://medicine.hsc.wvu.edu/anesth/,https://youtu.be/NhJK0Mcmm-k
