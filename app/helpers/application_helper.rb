@@ -37,7 +37,15 @@ module ApplicationHelper
   end
 
   def on_books_path?
-    current_page?(:controller => 'resources')
+    current_page?(resources_path) ||
+    current_page?(category_resources_path("Reference")) ||
+    current_page?(category_resources_path("Concise")) ||
+    current_page?(category_resources_path("Case-based")) ||
+    current_page?(category_resources_path("Pediatric")) ||
+    current_page?(category_resources_path("Cardiac")) ||
+    current_page?(category_resources_path("ICU")) ||
+    current_page?(category_resources_path("OB")) ||
+    current_page?(category_resources_path("Handbook"))
   end
 
   def on_exams_path?
