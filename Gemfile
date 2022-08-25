@@ -1,13 +1,11 @@
 source 'https://rubygems.org'
 ruby '3.1.2'
 gem 'rails', '7.0.2'
-gem 'sprockets-rails'
 gem 'puma'
 gem 'bootstrap-sass'
 gem 'bootstrap-switch-rails'
 gem 'nokogiri'
 gem 'pg'
-gem 'haml'
 gem 'friendly_id'
 gem 'rake'
 
