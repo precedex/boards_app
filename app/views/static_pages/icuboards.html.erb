@@ -6,13 +6,16 @@
   
   <p> Certification in critical care medicine began in 1986. The success rate on recent exams was:</p>
   
-  <%= image_tag("CCMResults11-17.png") %>
-  <%= image_tag("aba_ccm1519.png") %>
+  <%= image_tag 'ICU21.png', style: 'width:50%;' %>
       
   <p>
     The ABA has posted the <%= external_link_to "content outline", @icu_exam_content %>,
     <%= external_link_to "blueprint", @icu_exam_blueprint %>, and
      <%= external_link_to "sample questions", @icu_exam_questions %>.
+  </p>
+  
+  <p>
+    <%= external_link_to *@xi %>: <%= external_link_to *@xiicu %>
   </p>
   
   <p> Alex Yartsev's site, <%= external_link_to "Deranged Physiology", @deranged %>, on preparing for New Zealand's <%= external_link_to "CICM Part 2", @cicm %> may be helpful. </p>

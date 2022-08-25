@@ -2,7 +2,7 @@
 <%= render 'layouts/subheader' %>
 
 <div class="exams">
-  <p> The part 2 exam was replaced by the APPLIED exam in 2017 with two components: </p>
+  <p> The third staged exam, the APPLIED, has two components: </p>
     
     <ol>
       <p><strong> Standardized Oral Examination (SOE) </strong> <em>(<%= external_link_to *@soeqs %>)</em> </p>
@@ -10,15 +10,16 @@
       <p><strong> Objective Structured Clinical Examination (OSCE) </strong> <em>(<%= external_link_to *@osce %>, <%= external_link_to *@oscescenarios%>)</em>  </p>
     </ol>
 
-  <%= image_tag("AppliedResults11-17.png") %>
-  <%= image_tag("aba_orals1519.png") %>
-  
-  <p>
-    The APPLIED exam is normally offered 9 weeks a year at the ABA assessment center in Raleigh, NC.
-    The ABA has released a statement on the plan for the <%= external_link_to *@applied_2021 %>.
-  </p>
-  
-  <br>
+  <table>
+    <tr>
+      <th>
+        <%= image_tag 'SOE21.png', style: 'width:100%;' %>
+      </th>
+      <th>
+        <%= image_tag 'OSCE21.png', style: 'width:100%;' %>
+      </th>
+    </tr> 
+  </table>
   
   <p>
     <u>Successful Candidate Behavior</u> and <u>Improper Candidate Behavior</u>   
@@ -39,11 +40,15 @@
   </p>
   
   <p>
+  <%= external_link_to *@xi %>: <%= external_link_to *@xiapplied %>
+  </p>
+  
+  <p>
     John Doyle's <%= external_link_to *@exam_hints_pdf %> (2005)
   </p>
   
   <p>
-    Excellent overview and <%= external_link_to *@lovich %> by Jessica Lovich-Sapola
+    <%= external_link_to *@lovich %> by Jessica Lovich-Sapola
   </p>
   
   <p>

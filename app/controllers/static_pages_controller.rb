@@ -37,12 +37,12 @@ class StaticPagesController < ApplicationController
     ]
 
     @critical_events = [
-      ["Difficult Airway Algorithm (2013)", "Airway.jpg"],
+      ["2022 ASA Difficult Airway Guidelines", "https://pubs.asahq.org/anesthesiology/article/136/1/31/117915/2022-American-Society-of-Anesthesiologists"],
+      ["Stanford Anesthesia Emergency Manual", "http://web.stanford.edu/dept/anesthesia/em/epic-manual.pdf"],
       ["Ariadne Labs OR Crisis Checklists", "https://www.ariadnelabs.org/areas-of-work/surgery-or-crisis-checklists/"],
-      ["Anaphylaxis",                       "Anaphylaxis.jpg"],
       ["Malignant Hyperthermia",            "https://www.mhaus.org/healthcare-professionals/managing-a-crisis/"],
       ["Local Anesthetic Systemic Toxity (ASRA)",    "https://www.asra.com/guidelines-articles/original-articles/article-item/guidelines/2020/11/01/checklist-for-treatment-of-local-anesthetic-systemic-toxicity"],
-      ["Pediatric Critical Events",  "https://www.pedsanesthesia.org/wp-content/uploads/2018/11/SPAPediCrisisChecklistsNov2018.pdf"],
+      ["SPA Pediatric Critical Events",  "https://pedsanesthesia.org/wp-content/uploads/2020/11/SPAPediCrisisChecklistsNov2020.pdf"],
       ["Laryngospasm",               "http://www.maskinduction.com/uploads/3/1/6/4/31643965/laryngospasm_management_algorithm.pdf"]   
     ]
     
@@ -76,27 +76,27 @@ class StaticPagesController < ApplicationController
     ]
 
     @calculators = [
-      ["Arterial Blood Gas Analyzer",    "http://www.mdcalc.com/arterial-blood-gas-abg-analyzer/"],
+      ["Arterial Blood Gas Analyzer",    "https://www.mdcalc.com/calc/1741/arterial-blood-gas-abg-analyzer"],
       ["Society of Thoracic Surgeons Cardiac Surgery Risk", "http://riskcalc.sts.org/stswebriskcalc/#/calculate"],
       ["Gupta Perioperative Cardiac Risk", "https://qxmd.com/calculate/calculator_245/gupta-perioperative-cardiac-risk"],
       ["NSQIP Surgical Risk Calculator", "http://riskcalculator.facs.org"],
-      ["Caprini Score for VTE",          "https://www.mdcalc.com/caprini-score-venous-thromboembolism-2005"],                    
-      ["Apgar Score",                    "http://www.mdcalc.com/apgar-score/"],
-      ["Surgical Apgar Score",           "http://www.mdcalc.com/surgical-apgar-score-sas-post-operative-risk/"],
-      ["MELD Score",                     "http://www.mdcalc.com/meld-score-model-for-end-stage-liver-disease-12-and-older/"],
-      ["Child-Pugh Score",               "http://www.mdcalc.com/child-pugh-score-for-cirrhosis-mortality/"],
-      ["Injury Severity Score (ISS)",    "http://www.mdcalc.com/injury-severity-score-iss/"],
-      ["Allowable Blood Loss",           "http://easycalculation.com/medical/allowable-blood-loss.php"],
-      ["Parkland Formula",               "http://www.mdcalc.com/parkland-formula-for-burns/"],
-      ["Glascow Coma Scale",             "http://www.mdcalc.com/glasgow-coma-scale-score/"],
-      ["APACHE II",                      "https://www.mdcalc.com/apache-ii-score"],
-      ["BMI / BSA",                      "http://www.mdcalc.com/bmi-and-body-surface-area-bsa/"],
-      ["Ideal Body Weight",              "http://www.mdcalc.com/ideal-body-weight/"],
-      ["STOPBang (OSA)",                 "https://www.mdcalc.com/stop-bang-score-obstructive-sleep-apnea"],
-      ["Modified Mallampati Score",      "https://www.mdcalc.com/modified-mallampati-classification"],
-      ["A-a Gradient",                   "http://www.mdcalc.com/a-a-o2-gradient/"],
-      ["Cockgroft-Gault CrCl",           "http://www.mdcalc.com/creatinine-clearance-cockcroft-gault-equation/"],
-      ["Pediatric Endotracheal Tube Size",  "http://www.mdcalc.com/endotracheal-tube-ett-size-for-pediatrics/"],
+      ["Caprini Score for VTE",          "https://www.mdcalc.com/calc/3970/caprini-score-venous-thromboembolism-2005"],                    
+      ["Apgar Score",                    "https://www.mdcalc.com/calc/23/apgar-score"],
+      ["Surgical Apgar Score",           "https://www.mdcalc.com/calc/1826/surgical-apgar-score-sas-postoperative-risk"],
+      ["MELD Score",                     "https://www.mdcalc.com/calc/78/meld-score-model-end-stage-liver-disease-12-older"],
+      ["Child-Pugh Score",               "https://www.mdcalc.com/calc/340/child-pugh-score-cirrhosis-mortality"],
+      ["Injury Severity Score (ISS)",    "https://www.mdcalc.com/calc/1239/injury-severity-score-iss"],
+      ["Allowable Blood Loss",           "https://easycalculation.com/medical/allowable-blood-loss.php"],
+      ["Parkland Formula",               "https://www.mdcalc.com/calc/83/parkland-formula-burns"],
+      ["Glascow Coma Scale",             "https://www.mdcalc.com/calc/64/glasgow-coma-scale-score-gcs"],
+      ["APACHE II",                      "https://www.mdcalc.com/calc/1868/apache-ii-score"],
+      ["BMI / BSA",                      "https://www.mdcalc.com/calc/29/body-mass-index-bmi-body-surface-area-bsa"],
+      ["Ideal Body Weight",              "https://www.mdcalc.com/calc/68/ideal-body-weight-adjusted-body-weight"],
+      ["STOPBang (OSA)",                 "https://www.mdcalc.com/calc/3992/stop-bang-score-obstructive-sleep-apnea"],
+      ["Modified Mallampati Score",      "https://www.mdcalc.com/calc/3989/modified-mallampati-classification"],
+      ["A-a Gradient",                   "https://www.mdcalc.com/calc/243/a-a-o2-gradient"],
+      ["Cockgroft-Gault CrCl",           "https://www.mdcalc.com/calc/43/creatinine-clearance-cockcroft-gault-equation"],
+      ["Pediatric Endotracheal Tube Size",  "https://www.mdcalc.com/calc/58/pediatric-endotracheal-tube-ett-size"],
     ]
   end
 
@@ -149,6 +149,9 @@ class StaticPagesController < ApplicationController
     ]
     
     @study_strategy_adv = [
+      ["ABA Advanced 2022 (7/22)",                         "https://forums.studentdoctor.net/threads/aba-advanced-2022.1467013/"],
+      ["How did people sutdy for the Advanced Exam (3/22)","https://forums.studentdoctor.net/threads/how-did-people-study-for-the-advanced-exam.1459124/"],
+      ["Advanced 2021 (7/21)",                             "https://forums.studentdoctor.net/threads/advanced-2021.1446982/"],
       ["Advanced exam 2018-2019 (7/19)",                   "https://forums.studentdoctor.net/threads/advanced-exam-2018-2019.1383056/"],
       ["2018 ABA Advanced Results (9/18)",                 "https://forums.studentdoctor.net/threads/2018-aba-advanced-results.1340309/"],
       ["AnesthesiaQbank vs. M5 (7/18)",                    "https://forums.studentdoctor.net/threads/anesthesiaqbank-vs-m5.1321849/"],
@@ -201,13 +204,13 @@ class StaticPagesController < ApplicationController
 
     @commercial_courses = [
       ["Anesthesia Exam",                                "http://www.anesthesiaexam.com"],
-      ["AQB - anesthesiaQbank",                          "http://anesthesiaqbank.com"],
+      #["AQB - anesthesiaQbank",                          "http://anesthesiaqbank.com"],
       #["Beyond Anesthesia",                              "http://beyondanesthesia.com"],
       ["Board Vitals - BASIC",                           "https://www.boardvitals.com/anesthesiology-basic-exam-board-review"],
       ["Board Vitals - ADVANCED",                        "https://www.boardvitals.com/anesthesiology-advanced-board-review"],
       ["Core Concepts Anesthesia Review",                "http://www.ccanesthesiareview.com/QOD/QOD.asp"],
       ["Dr. Jensen Anesthesiology & Pain Board P.R.E.P", "http://www.anesthesiologyboards.com"],
-      #["Gas Questions",                                  "https://www.gasquestions.com"],
+      ["Gas Questions",                                  "https://www.gasquestions.com"],
       ["M5 Board Review",                                "http://m5boardreview.com"],
       ["Michael Ho: The Essential Written Board Review", "http://anconsultants.com/anesthesiology-written-board-review/"],
       ["Open Anesthesiology Self-Study Qbank",           "https://www.openanesthesia.org/members/join/#qbank-only"],
@@ -225,7 +228,9 @@ class StaticPagesController < ApplicationController
     @aba_videos = ["videos", 'https://theaba.org/video%20gallery.html']
     @applied_2021 = ["2021 APPLIED Exams", "http://aba-news.org/2020/06/our-plan-for-the-2021-applied-exams/"]
     @exam_hints_pdf = ["Hints for Mastering the Orals", 'http://anesthesiaboardhints.homestead.com/HintsfortheAnesthesiologyBoardExaminationRev1.6.pdf']
-    @lovich = ["PowerPoint", "http://www.powershow.com/view/3c317a-MzI1Z/The_Things_I_Do_For_the_Residents_May_8_2008_Jessica_powerpoint_ppt_presentation"]
+    @lovich = ["The Things I Do For the Residents (2008)", "http://www.powershow.com/view/3c317a-MzI1Z/The_Things_I_Do_For_the_Residents_May_8_2008_Jessica_powerpoint_ppt_presentation"]
+    @xi = ["Amanda Xi", "http://blog.amandaxi.com"]
+    @xiapplied = ["How I *actually* studied for the ABA Applied Exam & practical advice (2021)", "https://blog.amandaxi.com/2021/07/19/how-i-actually-studied-for-the-aba-applied-exam-anesthesia-oral-boards-practical-advice/"]
     @jensenweapons = ["Outlining-Attacking the Stem Question: The Knockout Blow", "https://www.anesthesiologyboards.com/pdfs/outlining.pdf"]
     @the_anesthesia_consultant = ["The Anesthesia Consultant", 'http://theanesthesiaconsultant.com/2013/08/22/advice-for-passing-the-oral-board-exams-in-anesthesiology/']
     @accrac = ["ACCRAC", "http://accrac.com"]
@@ -238,6 +243,7 @@ class StaticPagesController < ApplicationController
     @sdn = "https://forums.studentdoctor.net/forums/anesthesiology.45/"
 
     @study_strategy = [
+      ["Oral Boards 2022 (1/22)",                                             "https://forums.studentdoctor.net/threads/oral-boards-2022.1455593/"],
       ["2020 oral boards (3/20)",                                             "https://forums.studentdoctor.net/threads/2020-oral-boards.1402076/"],                       
       ["Oral boards 2019 (3/19)",                                             "https://forums.studentdoctor.net/threads/oral-boards-2019.1368945/"],
       ["How long to prepare for the orals? (3/19)",                           "https://forums.studentdoctor.net/threads/how-long-to-prepare-for-the-orals.1368535/"],
@@ -345,12 +351,15 @@ class StaticPagesController < ApplicationController
     @icu_exam_content = "https://www.theaba.org/pdfs/CCM_Content_Outline.pdf"
     @icu_exam_blueprint = "https://www.theaba.org/pdfs/CCM_Blueprint.pdf"
     @icu_exam_questions = "https://www.theaba.org/pdfs/CCM_Questions.pdf"
+    @xi = ["Amanda Xi", "http://blog.amandaxi.com"]
+    @xiicu = ["How I studied for the ABA critical care medicine board exam/certification (2022)", "https://blog.amandaxi.com/2022/08/17/how-i-studied-for-the-aba-anesthesia-critical-care-medicine-board-exam-certification/"]
     @deranged = "https://derangedphysiology.com/main/home"
     @cicm = "https://cicm.org.au/Trainees/Assessments-and-Examinations/Second-Part-Exam"
     @sdn = "https://forums.studentdoctor.net/forums/anesthesiology.45/"
     @study_strategy = [
-      ["2017 CCM exam (9/17)", "https://forums.studentdoctor.net/threads/2017-ccm-exam.1278759/"],
-      ["Review/Study for Anesthesiology Critical Care Exam (5/13)", "https://forums.studentdoctor.net/threads/review-study-for-anesthesiology-critical-care-exam.1007625/"]
+      ["Aba Critical Care boards (6/22)",                                    "https://forums.studentdoctor.net/threads/aba-critical-care-boards.1465183/"],
+      ["2017 CCM exam (9/17)",                                               "https://forums.studentdoctor.net/threads/2017-ccm-exam.1278759/"],
+      ["Review/Study for Anesthesiology Critical Care Exam (5/13)",          "https://forums.studentdoctor.net/threads/review-study-for-anesthesiology-critical-care-exam.1007625/"]
     ]    
   end
   
@@ -370,6 +379,7 @@ class StaticPagesController < ApplicationController
     @canada = "http://csecho.ca/resources/"
     @sdn = "https://forums.studentdoctor.net/forums/anesthesiology.45/"
     @study_strategy = [
+      ["APTE Exam (6/22)",                                                    "https://forums.studentdoctor.net/threads/apte-exam.1464343/"],          
       ["Advanced PTeExam 2019 discussion thread (12/18)",                     "https://forums.studentdoctor.net/threads/advanced-pteexam-2019-discussion-thread.1359268/"],
       ["Advanced PTeExam 2018 discussion thread (7/18)",                      "https://forums.studentdoctor.net/threads/advanced-pteexam-2018-discussion-thread.1322808/"],
       ["Echo Boards Clarification (2/18)",                                    "https://forums.studentdoctor.net/threads/echo-boards-clarification.1299738/"],
@@ -404,7 +414,7 @@ class StaticPagesController < ApplicationController
     @commercial_courses = [
       ["AQB - anesthesiaQbank",                                                     "http://anesthesiaqbank.com"],
       ["Valley Anesthesia",                                                         "http://www.valleyanesthesia.com"],
-      ["Prodigy Anesthesia",                                                        "http://www.prodigyanesthesia.net"],
+      ["Prodigy Anesthesia",                                                        "http://www.prodigyanesthesia.com"],
       ["Apex Anesthesia Review",                                                    "http://www.apexanesthesia.com"],
       ["Core Concepts Anesthesia Review",                                           "http://www.ccanesthesiareview.com"],
     # ["CRNABoardPrep.com",                                                         "http://www.crnaboardprep.com"]
