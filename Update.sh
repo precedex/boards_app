@@ -1,5 +1,5 @@
 #! /bin/bash
-bundle exec rake assets:precompile
+rake assets:precompile
 git status
 git add .
 git commit -m "adjustments"
