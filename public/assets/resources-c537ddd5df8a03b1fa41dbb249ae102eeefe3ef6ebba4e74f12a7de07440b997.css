@@ -1,0 +1,60 @@
+/* line 2, app/assets/stylesheets/resources.css.scss */
+.resources .btn {
+  padding: 5px;
+  font-size: 1.1em;
+  float: right;
+  margin: 1px;
+}
+
+/* line 9, app/assets/stylesheets/resources.css.scss */
+.resources table {
+  border-collapse: collapse;
+}
+
+/* line 13, app/assets/stylesheets/resources.css.scss */
+.resources table tr td {
+  padding: 10px;
+  vertical-align: top;
+}
+
+/* line 18, app/assets/stylesheets/resources.css.scss */
+.resources tr {
+  border-bottom: silver 1px solid;
+}
+
+/* line 22, app/assets/stylesheets/resources.css.scss */
+.resources dt {
+  font-family: "Helvetica";
+  letter-spacing: -1px;
+  font-size: 2.2em;
+  font-weight: lighter;
+}
+
+/* line 29, app/assets/stylesheets/resources.css.scss */
+.resources dd {
+  font-family: "Helvetica";
+  font-size: 1.5em;
+  font-weight: lighter;
+}
+
+/* line 35, app/assets/stylesheets/resources.css.scss */
+.resources dd.bold {
+  font-weight: bold;
+  font-size: 1.2em;
+  padding-bottom: 10px;
+}
+
+/* line 41, app/assets/stylesheets/resources.css.scss */
+.resources dd.description {
+  font-family: Helvetica;
+  font-weight: lighter;
+  font-size: 1.3em;
+  padding-bottom: 10px;
+}
+
+/* line 48, app/assets/stylesheets/resources.css.scss */
+.resources .list_actions {
+  font-size: 1em;
+  text-align: right;
+  padding-left: 1em;
+}

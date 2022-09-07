@@ -1,0 +1,46 @@
+/* line 5, app/assets/stylesheets/lectures.css.scss */
+table.pretty {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* line 10, app/assets/stylesheets/lectures.css.scss */
+.pretty th {
+  font-variant: small-caps;
+  font-size: 2em;
+}
+
+/* line 13, app/assets/stylesheets/lectures.css.scss */
+.pretty th a {
+  color: black;
+}
+
+/* line 16, app/assets/stylesheets/lectures.css.scss */
+.pretty th .current {
+  font-size: 1.2em;
+  padding-right: 30px;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
+}
+
+/* line 24, app/assets/stylesheets/lectures.css.scss */
+.pretty th .asc {
+  background-image: url(/assets/down_arrow-84b554bcb63338674ca85a0f5affb0639a8854e980cf6056971ad3ccb17e02eb.gif);
+}
+
+/* line 28, app/assets/stylesheets/lectures.css.scss */
+.pretty th .desc {
+  background-image: url(/assets/up_arrow-c5e535f28ad0d69f9d3004273052edba48242b701261c637853b2c95876ea813.gif);
+}
+
+/* line 32, app/assets/stylesheets/lectures.css.scss */
+.pretty td {
+  font-size: 1.4em;
+  padding: 5px;
+}
+
+/* line 37, app/assets/stylesheets/lectures.css.scss */
+.pretty tr {
+  border-bottom: silver 1px solid;
+}

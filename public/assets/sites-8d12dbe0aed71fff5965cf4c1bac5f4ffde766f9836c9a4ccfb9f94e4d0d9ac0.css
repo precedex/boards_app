@@ -1,0 +1,64 @@
+/* line 3, app/assets/stylesheets/sites.css.scss */
+.sites .header img {
+  float: left;
+  height: 250px;
+}
+
+/* line 8, app/assets/stylesheets/sites.css.scss */
+.sites .header h1 {
+  position: relative;
+  top: 50px;
+  padding-bottom: 30px;
+}
+
+/* line 15, app/assets/stylesheets/sites.css.scss */
+.sites hr {
+  margin-top: 120px;
+  width: 100%;
+}
+
+/* line 20, app/assets/stylesheets/sites.css.scss */
+.sites a.btn {
+  color: #FF595A;
+}
+
+/* line 24, app/assets/stylesheets/sites.css.scss */
+.sites .btn {
+  display: table-cell;
+  white-space: normal;
+  font-size: 2em;
+  text-align: center;
+  width: 300px;
+  height: 160px;
+  border: solid 1px #00ADBA;
+  border-radius: 30px;
+}
+
+/* line 35, app/assets/stylesheets/sites.css.scss */
+.sites .btn-rec {
+  border: dotted 4px #FF595A;
+}
+
+/* line 39, app/assets/stylesheets/sites.css.scss */
+.sites .btn-demo {
+  max-height: 50px;
+  max-width: 50px;
+  border-radius: 15px;
+}
+
+/* line 45, app/assets/stylesheets/sites.css.scss */
+.sites .btn img {
+  padding: 5px;
+  max-height: 150px;
+}
+
+/* line 50, app/assets/stylesheets/sites.css.scss */
+.sites table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 55, app/assets/stylesheets/sites.css.scss */
+.sites td {
+  padding: 3em;
+}

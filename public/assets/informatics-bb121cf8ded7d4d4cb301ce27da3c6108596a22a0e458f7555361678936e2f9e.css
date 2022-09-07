@@ -1,0 +1,93 @@
+/* line 2, app/assets/stylesheets/informatics.css.scss */
+.informatics .tabrow {
+  font-size: 2.2em;
+  font-weight: bolder;
+  font-variant: small-caps;
+  text-align: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 36px;
+  position: relative;
+}
+
+/* line 14, app/assets/stylesheets/informatics.css.scss */
+.informatics .tabrow a {
+  color: black;
+}
+
+/* line 16, app/assets/stylesheets/informatics.css.scss */
+.informatics .tabrow a:visited {
+  color: black;
+}
+
+/* line 17, app/assets/stylesheets/informatics.css.scss */
+.informatics .tabrow a:hover {
+  color: yellow;
+  text-decoration: none;
+}
+
+/* line 23, app/assets/stylesheets/informatics.css.scss */
+.informatics .tabrow li {
+  margin: 0 5px;
+  padding: 0 10px;
+  border: 1px solid #AAA;
+  background: #99ccff;
+  display: inline-block;
+  position: relative;
+  z-index: 0;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+/* line 36, app/assets/stylesheets/informatics.css.scss */
+.informatics .tabrow li.selected {
+  background: #FFF;
+  color: #000;
+  z-index: 2;
+  border-bottom-color: #FFF;
+}
+
+/* line 43, app/assets/stylesheets/informatics.css.scss */
+.informatics .tabrow:before {
+  z-index: 1;
+}
+
+/* line 47, app/assets/stylesheets/informatics.css.scss */
+.informatics .tabrow:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  border-bottom: 1px solid #AAA;
+  z-index: 1;
+}
+
+/* line 57, app/assets/stylesheets/informatics.css.scss */
+.informatics table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+/* line 61, app/assets/stylesheets/informatics.css.scss */
+.informatics td {
+  font-size: 1.3em;
+  padding: 10px;
+  border: 1px solid #c2c2d6;
+}
+
+/* line 67, app/assets/stylesheets/informatics.css.scss */
+.informatics h4 {
+  font-size: 2em;
+}
+
+/* line 71, app/assets/stylesheets/informatics.css.scss */
+.informatics h5 {
+  font-size: 1.3em;
+}
+
+/* line 75, app/assets/stylesheets/informatics.css.scss */
+.informatics h6 {
+  font-size: 1em;
+}

@@ -1,0 +1,31 @@
+/* line 5, app/assets/stylesheets/residencies.css.scss */
+table.pretty_b {
+  border-collapse: collapse;
+  text-align: center;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 13, app/assets/stylesheets/residencies.css.scss */
+.pretty_b th {
+  font-variant: small-caps;
+  font-size: 2em;
+  text-align: center;
+}
+
+/* line 16, app/assets/stylesheets/residencies.css.scss */
+.pretty_b th a {
+  color: black;
+}
+
+/* line 20, app/assets/stylesheets/residencies.css.scss */
+.pretty_b td {
+  font-size: 1.4em;
+  padding: 5px;
+}
+
+/* line 25, app/assets/stylesheets/residencies.css.scss */
+.pretty_b tr {
+  border-bottom: silver 1px solid;
+}

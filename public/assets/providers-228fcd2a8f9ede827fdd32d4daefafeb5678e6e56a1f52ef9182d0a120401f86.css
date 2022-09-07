@@ -1,0 +1,69 @@
+/* line 3, app/assets/stylesheets/providers.css.scss */
+.providers table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* line 8, app/assets/stylesheets/providers.css.scss */
+.providers th {
+  font-variant: small-caps;
+  font-size: 1.5em;
+  padding-left: 0.5em;
+}
+
+/* line 11, app/assets/stylesheets/providers.css.scss */
+.providers th a {
+  color: black;
+}
+
+/* line 14, app/assets/stylesheets/providers.css.scss */
+.providers th .current {
+  font-size: 1.2em;
+  padding-right: 30px;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
+}
+
+/* line 22, app/assets/stylesheets/providers.css.scss */
+.providers th .asc {
+  background-image: url(/assets/down_arrow-84b554bcb63338674ca85a0f5affb0639a8854e980cf6056971ad3ccb17e02eb.gif);
+}
+
+/* line 26, app/assets/stylesheets/providers.css.scss */
+.providers th .desc {
+  background-image: url(/assets/up_arrow-c5e535f28ad0d69f9d3004273052edba48242b701261c637853b2c95876ea813.gif);
+}
+
+/* line 31, app/assets/stylesheets/providers.css.scss */
+.providers td {
+  font-size: 1em;
+  border: 1px solid black;
+  padding: 7px;
+  vertical-align: center;
+}
+
+/* line 38, app/assets/stylesheets/providers.css.scss */
+.providers .provsearch td {
+  border: none;
+  text-align: right;
+  padding: 3px;
+}
+
+/* line 44, app/assets/stylesheets/providers.css.scss */
+.providers h1 {
+  font-size: 4em;
+  text-align: center;
+  padding: 10px;
+}
+
+/* line 50, app/assets/stylesheets/providers.css.scss */
+.providers p {
+  text-align: center;
+}
+
+/* line 54, app/assets/stylesheets/providers.css.scss */
+.providers form {
+  text-align: center;
+  font-size: 1.5em;
+}

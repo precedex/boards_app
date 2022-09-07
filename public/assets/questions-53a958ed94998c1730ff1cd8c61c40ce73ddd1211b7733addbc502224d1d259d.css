@@ -1,0 +1,32 @@
+/* line 2, app/assets/stylesheets/questions.css.scss */
+.questions h1 {
+  font-family: Avenir, Tahoma;
+  font-size: 2.4em;
+  text-align: center;
+  padding: 30px;
+  color: red;
+}
+
+/* line 10, app/assets/stylesheets/questions.css.scss */
+.questions p {
+  padding-top: 3em;
+}
+
+/* line 14, app/assets/stylesheets/questions.css.scss */
+.questions ul {
+  font-size: 2em;
+  list-style: none;
+  letter-spacing: -1px;
+  font-style: normal;
+}
+
+/* line 21, app/assets/stylesheets/questions.css.scss */
+.questions .btn {
+  float: right;
+  font-size: 1.5em;
+}
+
+/* line 26, app/assets/stylesheets/questions.css.scss */
+.questions hr {
+  border-width: 2px;
+}

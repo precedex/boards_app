@@ -1,0 +1,121 @@
+/* line 5, app/assets/stylesheets/static_pages.css.scss */
+.welcome {
+  text-align: center;
+}
+
+/* line 8, app/assets/stylesheets/static_pages.css.scss */
+.welcome .divider {
+  width: 6em;
+  height: auto;
+  display: inline-block;
+}
+
+/* line 14, app/assets/stylesheets/static_pages.css.scss */
+.welcome .btn {
+  font-size: 2.5em;
+  font-weight: lighter;
+}
+
+/* line 20, app/assets/stylesheets/static_pages.css.scss */
+.center {
+  text-align: center;
+}
+
+/* line 22, app/assets/stylesheets/static_pages.css.scss */
+.center img {
+  padding: 5px;
+}
+
+/* line 25, app/assets/stylesheets/static_pages.css.scss */
+.center label {
+  font-size: 1.5em;
+}
+
+/* line 30, app/assets/stylesheets/static_pages.css.scss */
+.calendar {
+  text-align: center;
+}
+
+/* line 35, app/assets/stylesheets/static_pages.css.scss */
+.exams p {
+  padding: 0;
+  display: list-item;
+  list-style: disc;
+}
+
+/* line 41, app/assets/stylesheets/static_pages.css.scss */
+.exams p.disclaimer {
+  font-style: italic;
+  font-size: 1.5em;
+  text-indent: 1em;
+  list-style: none;
+}
+
+/* line 48, app/assets/stylesheets/static_pages.css.scss */
+.exams ul {
+  font-size: 1.5em;
+  list-style: circle;
+  font-style: oblique;
+}
+
+/* line 56, app/assets/stylesheets/static_pages.css.scss */
+.moca table {
+  width: 100%;
+  table-layout: fixed;
+  text-align: center;
+  border: 1px solid black;
+  font-size: 1.8em;
+}
+
+/* line 63, app/assets/stylesheets/static_pages.css.scss */
+.moca th, .moca td {
+  text-align: center;
+  border: 1px solid;
+  padding: 10px;
+}
+
+/* line 68, app/assets/stylesheets/static_pages.css.scss */
+.moca dd {
+  font-size: 0.7em;
+}
+
+/* line 74, app/assets/stylesheets/static_pages.css.scss */
+.tools h1 {
+  font-size: 4.5em;
+  padding-bottom: 10px;
+}
+
+/* line 78, app/assets/stylesheets/static_pages.css.scss */
+.tools ul {
+  font-size: 1.7em;
+}
+
+/* line 85, app/assets/stylesheets/static_pages.css.scss */
+.cds h1 {
+  font-size: 3.5em;
+  padding-bottom: 2px;
+}
+
+/* line 89, app/assets/stylesheets/static_pages.css.scss */
+.cds h2 {
+  text-align: center;
+  font-size: 1.4em;
+  padding-bottom: 2em;
+}
+
+/* line 94, app/assets/stylesheets/static_pages.css.scss */
+.cds p {
+  padding: 0;
+}
+
+/* line 97, app/assets/stylesheets/static_pages.css.scss */
+.cds label {
+  font-size: 2em;
+  font-weight: lighter;
+  letter-spacing: -1px;
+}
+
+/* line 104, app/assets/stylesheets/static_pages.css.scss */
+.indent {
+  margin-left: 40px;
+}
